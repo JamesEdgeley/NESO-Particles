@@ -1,0 +1,64 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleRemover}{}\doxysection{NESO\+::Particles\+::Particle\+Remover Class Reference}
+\label{classNESO_1_1Particles_1_1ParticleRemover}\index{NESO::Particles::ParticleRemover@{NESO::Particles::ParticleRemover}}
+
+
+{\ttfamily \#include $<$particle\+\_\+remover.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleRemover_aab88645b10fd090513bfce3ed4b2892b}\label{classNESO_1_1Particles_1_1ParticleRemover_aab88645b10fd090513bfce3ed4b2892b}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover_aab88645b10fd090513bfce3ed4b2892b}{Particle\+Remover}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover}{Particle\+Remover}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleRemover_a9702df5e9cbb996a6d6443fdcebea1d6}\label{classNESO_1_1Particles_1_1ParticleRemover_a9702df5e9cbb996a6d6443fdcebea1d6}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover}{Particle\+Remover}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover_a9702df5e9cbb996a6d6443fdcebea1d6}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover}{Particle\+Remover}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover_a3330cc9a6bba8e0fc16242a6835201d8}{Particle\+Remover}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleRemover_abc90e91305dc090ff804ce6f0c209a67}{remove}} (Particle\+Group\+Shared\+Ptr particle\+\_\+group, Particle\+Dat\+Shared\+Ptr$<$ T $>$ particle\+\_\+dat, const U key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility to aid removing particles from a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} based on a condition. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleRemover_a3330cc9a6bba8e0fc16242a6835201d8}\label{classNESO_1_1Particles_1_1ParticleRemover_a3330cc9a6bba8e0fc16242a6835201d8}} 
+\index{NESO::Particles::ParticleRemover@{NESO::Particles::ParticleRemover}!ParticleRemover@{ParticleRemover}}
+\index{ParticleRemover@{ParticleRemover}!NESO::Particles::ParticleRemover@{NESO::Particles::ParticleRemover}}
+\doxysubsubsection{\texorpdfstring{ParticleRemover()}{ParticleRemover()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Remover\+::\+Particle\+Remover (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a remover that operates on Particle\+Groups that use the given \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleRemover_abc90e91305dc090ff804ce6f0c209a67}\label{classNESO_1_1Particles_1_1ParticleRemover_abc90e91305dc090ff804ce6f0c209a67}} 
+\index{NESO::Particles::ParticleRemover@{NESO::Particles::ParticleRemover}!remove@{remove}}
+\index{remove@{remove}!NESO::Particles::ParticleRemover@{NESO::Particles::ParticleRemover}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T , typename U $>$ \\
+void NESO\+::\+Particles\+::\+Particle\+Remover\+::remove (\begin{DoxyParamCaption}\item[{Particle\+Group\+Shared\+Ptr}]{particle\+\_\+group,  }\item[{Particle\+Dat\+Shared\+Ptr$<$ T $>$}]{particle\+\_\+dat,  }\item[{const U}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove particles from a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} based on a value in a Particle\+Dat. For each particle, compares the first value in the Particle\+Dat with the passed Key. Removes the particle if the value matches the key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} to remove particles from. \\
+\hline
+{\em particle\+\_\+dat} & Particle\+Dat to inspect to determine if particles should be removed. \\
+\hline
+{\em key} & Key to compare particle values with for removal. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/particle\+\_\+remover.\+hpp\end{DoxyCompactItemize}

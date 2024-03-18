@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="local__array_8hpp" kind="file" language="C++">
+    <compoundname>local_array.hpp</compoundname>
+    <includes refid="compute__target_8hpp" local="yes">../compute_target.hpp</includes>
+    <includes refid="access__descriptors_8hpp" local="yes">../loop/access_descriptors.hpp</includes>
+    <includes refid="particle__loop__base_8hpp" local="yes">../loop/particle_loop_base.hpp</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="particle__loop_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>../loop/access_descriptors.hpp</label>
+        <link refid="access__descriptors_8hpp"/>
+      </node>
+      <node id="2">
+        <label>../compute_target.hpp</label>
+        <link refid="compute__target_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="14">
+        <label>cstdint</label>
+      </node>
+      <node id="16">
+        <label>numeric</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp</label>
+        <link refid="local__array_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>optional</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>stack</label>
+      </node>
+      <node id="11">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="12">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdlib</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>mpi.h</label>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="21">
+        <label>memory</label>
+      </node>
+      <node id="20">
+        <label>../loop/particle_loop_base.hpp</label>
+        <link refid="particle__loop__base_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</label>
+        <link refid="parallel__initialisation_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</label>
+        <link refid="particle__loop_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification_impl.hpp</label>
+        <link refid="departing__particle__identification__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp"/>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping_impl.hpp</label>
+        <link refid="global__mapping__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp</label>
+        <link refid="local__array_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move_impl.hpp</label>
+        <link refid="cell__dat__move__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</label>
+        <link refid="particle__remover_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group_impl.hpp</label>
+        <link refid="particle__group__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp</label>
+        <link refid="particle__sub__group_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" prot="public">NESO::Particles::Access::LocalArray::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" prot="public">NESO::Particles::Access::LocalArray::Add</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" prot="public">NESO::Particles::Access::LocalArray::Write</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_0285f9de1a226fb130adb16fb121416fd" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1LocalArray" prot="public">NESO::Particles::LocalArray</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access">NESO::Particles::Access</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1LocalArray">NESO::Particles::Access::LocalArray</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation">NESO::Particles::ParticleLoopImplementation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_LOCAL_ARRAY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_LOCAL_ARRAY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../compute_target.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../loop/access_descriptors.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../loop/particle_loop_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles" kindref="compound">NESO::Particles</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration<sp/>of<sp/>ParticleLoop<sp/>such<sp/>that<sp/>LocalArray<sp/>can<sp/>define</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ParticleLoop<sp/>as<sp/>a<sp/>friend<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>KERNEL,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>ARGS&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ParticleLoop;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LocalArray;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT</ref><sp/>=<sp/>T<sp/>*;</highlight></codeline>
+<codeline lineno="18" refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT</ref><sp/>=<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespaceNESO_1_1Particles_1_1Access_1_1LocalArray" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Access::LocalArray<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" kindref="compound">Read</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ad86c908bf97d84c164e98da779fa38d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ad86c908bf97d84c164e98da779fa38d8" kindref="member">Read</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ae26d25fe6ebe1ced076ea206046c190c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ae26d25fe6ebe1ced076ea206046c190c" kindref="member">at</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" kindref="member">ptr</ref>[component];<sp/>}</highlight></codeline>
+<codeline lineno="38" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1a4b0e7af4fd8cf87442866e3b8149354b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1a4b0e7af4fd8cf87442866e3b8149354b" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" kindref="member">ptr</ref>[component];<sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" kindref="compound">Add</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a81d620bbfed7525aa969db0a4f6b35d2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a81d620bbfed7525aa969db0a4f6b35d2" kindref="member">Add</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a7e90b46cbcb88ba7457bdcd7013f98de" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a7e90b46cbcb88ba7457bdcd7013f98de" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a4bf86305063c59e716b92f8bf7abc8a9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>T<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a4bf86305063c59e716b92f8bf7abc8a9" kindref="member">fetch_add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>sycl::atomic_ref&lt;T,<sp/>sycl::memory_order::relaxed,<sp/>sycl::memory_scope::device&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element_atomic(<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a7e90b46cbcb88ba7457bdcd7013f98de" kindref="member">ptr</ref>[component]);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>element_atomic.fetch_add(value);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" kindref="compound">Write</ref><sp/>{</highlight></codeline>
+<codeline lineno="64" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1a91b0bc01bacf4f0e10d15f2d2613fb64" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1a91b0bc01bacf4f0e10d15f2d2613fb64" kindref="member">Write</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1aea9eb5b010eb134895fabe805639a161" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1aea9eb5b010eb134895fabe805639a161" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="66" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1ad75b61cf61e79b8f927840f6b27f884d" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1ad75b61cf61e79b8f927840f6b27f884d" kindref="member">at</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1aea9eb5b010eb134895fabe805639a161" kindref="member">ptr</ref>[component];<sp/>}</highlight></codeline>
+<codeline lineno="67" refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1a92037888267b0dc90f8762cea16e1daa" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1a92037888267b0dc90f8762cea16e1daa" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1aea9eb5b010eb134895fabe805639a161" kindref="member">ptr</ref>[component];<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Access::LocalArray</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ParticleLoopImplementation<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Read&lt;LocalArray&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="78" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4_1a1f6806ffdb46fc667dd11fd0dbe38bbf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4_1a1f6806ffdb46fc667dd11fd0dbe38bbf" kindref="member">type</ref><sp/>=<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01LocalArray_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Write&lt;LocalArray&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="84" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01LocalArray_3_01T_01_4_01_4_01_4_1a35a18860604a881718841c2696c3072f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01LocalArray_3_01T_01_4_01_4_01_4_1a35a18860604a881718841c2696c3072f" kindref="member">type</ref><sp/>=<sp/>T<sp/>*;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Add&lt;LocalArray&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="90" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4_1a9e2716b1c20c34795c0c99dec239a210" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4_1a9e2716b1c20c34795c0c99dec239a210" kindref="member">type</ref><sp/>=<sp/>T<sp/>*;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Read&lt;LocalArray&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="97" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4_1a390bd9a28f721ff440dc53b3af4eb0fc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" kindref="compound">Access::LocalArray::Read&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_0285f9de1a226fb130adb16fb121416fd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Write&lt;LocalArray&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="103" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_0285f9de1a226fb130adb16fb121416fd_1afbdf44c35c8285b6417a871e71351d05" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" kindref="compound">Access::LocalArray::Write&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="108" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Add&lt;LocalArray&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="109" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4_1a7a211cca393de1e8365c2b30ebdf8561" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" kindref="compound">Access::LocalArray::Add&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="115" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aa8e07c011ff287848e35372ca9f51755" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*rhs,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" kindref="compound">Access::LocalArray::Read&lt;T&gt;</ref><sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" kindref="member">ptr</ref><sp/>=<sp/>rhs;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="123" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aec1840e8cdc1dec2ac6f21d8797de342" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,<sp/>T<sp/>*rhs,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" kindref="compound">Access::LocalArray::Write&lt;T&gt;</ref><sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write_1aea9eb5b010eb134895fabe805639a161" kindref="member">ptr</ref><sp/>=<sp/>rhs;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="131" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a1c1c383ffe44fd112cda1c3e07f42013" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,<sp/>T<sp/>*rhs,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" kindref="compound">Access::LocalArray::Add&lt;T&gt;</ref><sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add_1a7e90b46cbcb88ba7457bdcd7013f98de" kindref="member">ptr</ref><sp/>=<sp/>rhs;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="141" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a4677fb06ce6977f614e0977b1a4f0abb" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt;<ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.obj-&gt;impl_get_const();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="150" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a55429e7f632e9628341ef31663b02f7a" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt;<ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.obj-&gt;impl_get();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="159" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a8542f7782a689c5e53f488ec19342f30" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt;<ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.obj-&gt;impl_get();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ParticleLoopImplementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classNESO_1_1Particles_1_1LocalArray" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref><sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>allows<sp/>the<sp/>ParticleLoop<sp/>to<sp/>access<sp/>the<sp/>implementation<sp/>methods.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="classNESO_1_1Particles_1_1LocalArray_1a5781ba095359438118ce96e2e0eb4a8d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>KERNEL,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>ARGS&gt;<sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref>;</highlight></codeline>
+<codeline lineno="172" refid="classNESO_1_1Particles_1_1LocalArray_1a4ddfdda2d7c388004c484761a5c4d48d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>ParticleLoopImplementation::create_loop_arg&lt;T&gt;(</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt;<ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a);</highlight></codeline>
+<codeline lineno="176" refid="classNESO_1_1Particles_1_1LocalArray_1afa815c18689faa61d7fb150d102d4d00" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT&lt;T&gt;</ref><sp/>ParticleLoopImplementation::create_loop_arg&lt;T&gt;(</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt;<ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a);</highlight></codeline>
+<codeline lineno="179" refid="classNESO_1_1Particles_1_1LocalArray_1aabfed7d59b626415893a5662870d1134" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT&lt;T&gt;</ref><sp/>ParticleLoopImplementation::create_loop_arg&lt;T&gt;(</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt;<ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="184" refid="classNESO_1_1Particles_1_1LocalArray_1a867f8c868e6d4bb5cad9d68d366a4c16" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;BufferDevice&lt;T&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a867f8c868e6d4bb5cad9d68d366a4c16" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="classNESO_1_1Particles_1_1LocalArray_1a168a2e028898b12ee18c7ff19017d66b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT&lt;T&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a168a2e028898b12ee18c7ff19017d66b" kindref="member">impl_get</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;buffer-&gt;ptr;<sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="classNESO_1_1Particles_1_1LocalArray_1a67b8f857f21d353d8214887413640721" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT&lt;T&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a67b8f857f21d353d8214887413640721" kindref="member">impl_get_const</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;buffer-&gt;ptr;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="202" refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>;</highlight></codeline>
+<codeline lineno="204" refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" refkind="member"><highlight class="normal"><sp/><sp/>std::size_t<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="classNESO_1_1Particles_1_1LocalArray_1a1e25ebcf08883d3bd274aff26751bde4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1e25ebcf08883d3bd274aff26751bde4" kindref="member">LocalArray</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="classNESO_1_1Particles_1_1LocalArray_1a3dd86a041d43cbc957b44bbabb183ba9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1LocalArray_1a3dd86a041d43cbc957b44bbabb183ba9" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray&lt;T&gt;</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="classNESO_1_1Particles_1_1LocalArray_1a41ef5a425cbba3edd2f6769b20dd9849" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a41ef5a425cbba3edd2f6769b20dd9849" kindref="member">LocalArray</ref>(<ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::optional&lt;T&gt;<sp/>init_value<sp/>=<sp/>std::nullopt)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>(<ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>(<ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;buffer<sp/>=<sp/>std::make_shared&lt;BufferDevice&lt;T&gt;&gt;(<ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>,<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(init_value)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1LocalArray_1a1d6cd28ef09b9b0ba16af44b00236fb3" kindref="member">fill</ref>(init_value.value());</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="classNESO_1_1Particles_1_1LocalArray_1a1d6cd28ef09b9b0ba16af44b00236fb3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1d6cd28ef09b9b0ba16af44b00236fb3" kindref="member">fill</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>*ptr<sp/>=<sp/>this-&gt;buffer-&gt;ptr;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>-&gt;queue.fill(ptr,<sp/>value,<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>).wait_and_throw();</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classNESO_1_1Particles_1_1LocalArray_1aeb5c8a3b3251de83956aa8a2c88d887b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1aeb5c8a3b3251de83956aa8a2c88d887b" kindref="member">LocalArray</ref>(<ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;data)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>(<ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>,<sp/>data.<ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1LocalArray_1af152b5deef5e267e581a3176211f2d22" kindref="member">set</ref>(data);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="classNESO_1_1Particles_1_1LocalArray_1a49d60843b617bce0d7b2c0f47db8b7eb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>sycl::event<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a49d60843b617bce0d7b2c0f47db8b7eb" kindref="member">set_async</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;data)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(data.size()<sp/>==<sp/>this-&gt;size,<sp/></highlight><highlight class="stringliteral">&quot;Input<sp/>data<sp/>is<sp/>incorrectly<sp/>sized.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>size_bytes<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)<sp/>*<sp/>this-&gt;size;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size_bytes)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>copy_event<sp/>=</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>-&gt;queue.memcpy(this-&gt;buffer-&gt;ptr,<sp/>data.data(),<sp/>size_bytes);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>copy_event;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sycl::event();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="classNESO_1_1Particles_1_1LocalArray_1af152b5deef5e267e581a3176211f2d22" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1af152b5deef5e267e581a3176211f2d22" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;data)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1LocalArray_1a49d60843b617bce0d7b2c0f47db8b7eb" kindref="member">set_async</ref>(data).wait_and_throw();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="classNESO_1_1Particles_1_1LocalArray_1a3f26e18774be52e6442b4c163add1c7b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>sycl::event<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a3f26e18774be52e6442b4c163add1c7b" kindref="member">get_async</ref>(std::vector&lt;T&gt;<sp/>&amp;data)<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(data.size()<sp/>==<sp/>this-&gt;size,<sp/></highlight><highlight class="stringliteral">&quot;Input<sp/>data<sp/>is<sp/>incorrectly<sp/>sized.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>size_bytes<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)<sp/>*<sp/>this-&gt;size;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size_bytes)<sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>copy_event<sp/>=</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" kindref="member">sycl_target</ref>-&gt;queue.memcpy(data.data(),<sp/>this-&gt;buffer-&gt;ptr,<sp/>size_bytes);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>copy_event;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sycl::event();</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="classNESO_1_1Particles_1_1LocalArray_1aed695b7908c03d811c3a03f70356d285" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1aed695b7908c03d811c3a03f70356d285" kindref="member">get</ref>(std::vector&lt;T&gt;<sp/>&amp;data)<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1LocalArray_1a3f26e18774be52e6442b4c163add1c7b" kindref="member">get_async</ref>(data).wait_and_throw();</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="classNESO_1_1Particles_1_1LocalArray_1afe71e36012a10dc50549ac7147048d90" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1afe71e36012a10dc50549ac7147048d90" kindref="member">get</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>data(this-&gt;size);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1LocalArray_1afe71e36012a10dc50549ac7147048d90" kindref="member">get</ref>(data);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classNESO_1_1Particles_1_1LocalArray_1a300e08e1194d5ecc300d6e1cf518a0d6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a300e08e1194d5ecc300d6e1cf518a0d6" kindref="member">realloc_no_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;size<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;buffer-&gt;realloc_no_copy(<ref refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp"/>
+  </compounddef>
+</doxygen>

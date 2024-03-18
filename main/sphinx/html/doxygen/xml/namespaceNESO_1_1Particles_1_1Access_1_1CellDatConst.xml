@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1Access_1_1CellDatConst" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::Access::CellDatConst</compoundname>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Read" prot="public">NESO::Particles::Access::CellDatConst::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add" prot="public">NESO::Particles::Access::CellDatConst::Add</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines the access implementations and types for <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1GlobalArray" kindref="compound">GlobalArray</ref> objects. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="264" column="1"/>
+  </compounddef>
+</doxygen>

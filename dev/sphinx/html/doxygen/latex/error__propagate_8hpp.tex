@@ -1,0 +1,55 @@
+\hypertarget{error__propagate_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/error\+\_\+propagate.hpp File Reference}
+\label{error__propagate_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/error\_propagate.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/error\_propagate.hpp}}
+{\ttfamily \#include \char`\"{}compute\+\_\+target.\+hpp\char`\"{}}\newline
+Include dependency graph for error\+\_\+propagate.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error__propagate_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error__propagate_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate}{NESO\+::\+Particles\+::\+Error\+Propagate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{error__propagate_8hpp_a67fc7335167723058dce2657bee1eae0}{NESO\+\_\+\+KERNEL\+\_\+\+ASSERT}}(expr,  ep\+\_\+ptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{error__propagate_8hpp_a67fc7335167723058dce2657bee1eae0}\label{error__propagate_8hpp_a67fc7335167723058dce2657bee1eae0}} 
+\index{error\_propagate.hpp@{error\_propagate.hpp}!NESO\_KERNEL\_ASSERT@{NESO\_KERNEL\_ASSERT}}
+\index{NESO\_KERNEL\_ASSERT@{NESO\_KERNEL\_ASSERT}!error\_propagate.hpp@{error\_propagate.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_KERNEL\_ASSERT}{NESO\_KERNEL\_ASSERT}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+KERNEL\+\_\+\+ASSERT(\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{ep\+\_\+ptr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (!(expr)) \{                                                               \(\backslash\)}
+\DoxyCodeLine{    sycl::atomic\_ref<int, sycl::memory\_order::relaxed,                         \(\backslash\)}
+\DoxyCodeLine{                     sycl::memory\_scope::device>                               \(\backslash\)}
+\DoxyCodeLine{        neso\_error\_atomic(ep\_ptr[0]);                                          \(\backslash\)}
+\DoxyCodeLine{    neso\_error\_atomic.fetch\_add(1);                                            \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}

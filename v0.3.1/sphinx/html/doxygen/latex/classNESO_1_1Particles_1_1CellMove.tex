@@ -1,0 +1,119 @@
+\hypertarget{classNESO_1_1Particles_1_1CellMove}{}\doxysection{NESO\+::Particles\+::Cell\+Move Class Reference}
+\label{classNESO_1_1Particles_1_1CellMove}\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+
+
+{\ttfamily \#include $<$cell\+\_\+dat\+\_\+move.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_aecdfcd20fb1a73dd4b97b23dd275b916}{Cell\+Move}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_a45d827d322aabb3dd3fd860822d32e86}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_a9468c3f3401f7cf41d8df399c21a2328}{$\sim$\+Cell\+Move}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_ad4e046aa7dbacd258ac75847a138cfc9}{Cell\+Move}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_ae59322f14d15a13372e0e1980baaa070}{sycl\+\_\+target}}, const int ncell, \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&layer\+\_\+compressor, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&particle\+\_\+dats\+\_\+real, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&particle\+\_\+dats\+\_\+int)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_a6d855f5a5f6a3390f94387a74780b826}{set\+\_\+cell\+\_\+id\+\_\+dat}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ cell\+\_\+id\+\_\+dat)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_a316e35c53829369c5c435276ba45eb65}{move}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove_ae59322f14d15a13372e0e1980baaa070}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}} is the implementation that moves particles between cells. When a particle moves to a new cell the corresponding data is moved to the new cell in all the Particle\+Dat instances. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_aecdfcd20fb1a73dd4b97b23dd275b916}\label{classNESO_1_1Particles_1_1CellMove_aecdfcd20fb1a73dd4b97b23dd275b916}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!CellMove@{CellMove}}
+\index{CellMove@{CellMove}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{CellMove()}{CellMove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cell\+Move\+::\+Cell\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_a9468c3f3401f7cf41d8df399c21a2328}\label{classNESO_1_1Particles_1_1CellMove_a9468c3f3401f7cf41d8df399c21a2328}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!````~CellMove@{$\sim$CellMove}}
+\index{````~CellMove@{$\sim$CellMove}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{$\sim$CellMove()}{~CellMove()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cell\+Move\+::$\sim$\+Cell\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_ad4e046aa7dbacd258ac75847a138cfc9}\label{classNESO_1_1Particles_1_1CellMove_ad4e046aa7dbacd258ac75847a138cfc9}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!CellMove@{CellMove}}
+\index{CellMove@{CellMove}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{CellMove()}{CellMove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cell\+Move\+::\+Cell\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const int}]{ncell,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&}]{layer\+\_\+compressor,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&}]{particle\+\_\+dats\+\_\+real,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&}]{particle\+\_\+dats\+\_\+int }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a cell move instance to move particles between cells.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em ncell} & Total number of cells. \\
+\hline
+{\em layer\+\_\+compressor} & \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} to use to compress Particle\+Dat instances. \\
+\hline
+{\em particle\+\_\+dats\+\_\+real} & Container of REAL Particle\+Dat. \\
+\hline
+{\em particle\+\_\+dats\+\_\+int} & Container of INT Particle\+Dat. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_a316e35c53829369c5c435276ba45eb65}\label{classNESO_1_1Particles_1_1CellMove_a316e35c53829369c5c435276ba45eb65}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!move@{move}}
+\index{move@{move}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cell\+Move\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Move particles between cells (on this MPI rank) using the cell ids on the particles. \mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_a45d827d322aabb3dd3fd860822d32e86}\label{classNESO_1_1Particles_1_1CellMove_a45d827d322aabb3dd3fd860822d32e86}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}}\& NESO\+::\+Particles\+::\+Cell\+Move\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1CellMove}{Cell\+Move}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_a6d855f5a5f6a3390f94387a74780b826}\label{classNESO_1_1Particles_1_1CellMove_a6d855f5a5f6a3390f94387a74780b826}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!set\_cell\_id\_dat@{set\_cell\_id\_dat}}
+\index{set\_cell\_id\_dat@{set\_cell\_id\_dat}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{set\_cell\_id\_dat()}{set\_cell\_id\_dat()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cell\+Move\+::set\+\_\+cell\+\_\+id\+\_\+dat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{cell\+\_\+id\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the Particle\+Dat to use as a source for cell ids.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+\_\+id\+\_\+dat} & Particle\+Dat to use for cell ids. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellMove_ae59322f14d15a13372e0e1980baaa070}\label{classNESO_1_1Particles_1_1CellMove_ae59322f14d15a13372e0e1980baaa070}} 
+\index{NESO::Particles::CellMove@{NESO::Particles::CellMove}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::CellMove@{NESO::Particles::CellMove}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Cell\+Move\+::sycl\+\_\+target}
+
+
+
+Compute device used by the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{cell__dat__move_8hpp}{cell\+\_\+dat\+\_\+move.\+hpp}}\end{DoxyCompactItemize}

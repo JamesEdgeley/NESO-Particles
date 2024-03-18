@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1LocalArray" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::LocalArray</compoundname>
+    <includes refid="local__array_8hpp" local="no">local_array.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1LocalArray_1a5781ba095359438118ce96e2e0eb4a8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KERNEL</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>ARGS</declname>
+            <defname>ARGS</defname>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class ParticleLoop</definition>
+        <argsstring></argsstring>
+        <name>ParticleLoop</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="171" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1LocalArray_1a4ddfdda2d7c388004c484761a5c4d48d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetConstT&lt;T&gt; ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; LocalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="172" column="3"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1LocalArray_1afa815c18689faa61d7fb150d102d4d00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetT&lt;T&gt; ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; LocalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="176" column="3"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1LocalArray_1aabfed7d59b626415893a5662870d1134" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetT&lt;T&gt; ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; LocalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="179" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LocalArray_1a867f8c868e6d4bb5cad9d68d366a4c16" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; T &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDevice&lt;T&gt; &gt; NESO::Particles::LocalArray&lt; T &gt;::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="184" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::LocalArray&lt; T &gt;::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>The <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> the <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> is created on. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="202" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t NESO::Particles::LocalArray&lt; T &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The number of elements in the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="204" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a168a2e028898b12ee18c7ff19017d66b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetT&lt;T&gt; NESO::Particles::LocalArray&lt; T &gt;::impl_get</definition>
+        <argsstring>()</argsstring>
+        <name>impl_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-const pointer to underlying device data. Intended for friend access from <ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="190" column="29" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a67b8f857f21d353d8214887413640721" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetConstT&lt;T&gt; NESO::Particles::LocalArray&lt; T &gt;::impl_get_const</definition>
+        <argsstring>()</argsstring>
+        <name>impl_get_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Const pointer to underlying device data. Intended for friend access from <ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="196" column="34" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="196" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a1e25ebcf08883d3bd274aff26751bde4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::LocalArray&lt; T &gt;::LocalArray</definition>
+        <argsstring>()=default</argsstring>
+        <name>LocalArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="206" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a3dd86a041d43cbc957b44bbabb183ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; &amp;</type>
+        <definition>LocalArray&lt;T&gt;&amp; NESO::Particles::LocalArray&lt; T &gt;::operator=</definition>
+        <argsstring>(const LocalArray&lt; T &gt; &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that the copy operator creates shallow copies of the array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="211" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a41ef5a425cbba3edd2f6769b20dd9849" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::LocalArray&lt; T &gt;::LocalArray</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, const std::size_t size, const std::optional&lt; T &gt; init_value=std::nullopt)</argsstring>
+        <name>LocalArray</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; T &gt;</type>
+          <declname>init_value</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> on a compute target and given size.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to create <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements in array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to initialise values to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="220" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="220" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a1d6cd28ef09b9b0ba16af44b00236fb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::LocalArray&lt; T &gt;::fill</definition>
+        <argsstring>(const T value)</argsstring>
+        <name>fill</name>
+        <param>
+          <type>const T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill the array with a value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to fill the array with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="234" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1aeb5c8a3b3251de83956aa8a2c88d887b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::LocalArray&lt; T &gt;::LocalArray</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, const std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>LocalArray</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> on a compute target and given size.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to create <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector to initialise array values to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="245" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a49d60843b617bce0d7b2c0f47db8b7eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::LocalArray&lt; T &gt;::set_async</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>set_async</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asynchronously set the values in the local array to those in a std::vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Event to wait on before using new values in <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="256" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="256" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1af152b5deef5e267e581a3176211f2d22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::LocalArray&lt; T &gt;::set</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the values in the local array to those in a std::vector. Blocks until the copy is complete.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="274" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="274" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a3f26e18774be52e6442b4c163add1c7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::LocalArray&lt; T &gt;::get_async</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>get_async</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asynchronously get the values in the local array into a std::vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Event to wait on before using new values in the std::vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="284" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="284" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1aed695b7908c03d811c3a03f70356d285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::LocalArray&lt; T &gt;::get</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the values in the local array into a std::vector. Blocks until copy is complete.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="302" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1afe71e36012a10dc50549ac7147048d90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; NESO::Particles::LocalArray&lt; T &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the values in the local array into a std::vector.</para>
+<para><simplesect kind="return"><para>std::vector of values in the <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="311" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="311" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalArray_1a300e08e1194d5ecc300d6e1cf518a0d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::LocalArray&lt; T &gt;::realloc_no_copy</definition>
+        <argsstring>(const size_t size)</argsstring>
+        <name>realloc_no_copy</name>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reallocate the buffer to hold the requested number of elements. Current contents is not copied to the new buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements this buffer should hold. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="323" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="323" bodyend="326"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Container to hold an array of values on each MPI rank. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="169" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="169" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a867f8c868e6d4bb5cad9d68d366a4c16" prot="protected" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>buffer</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a1d6cd28ef09b9b0ba16af44b00236fb3" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>fill</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1aed695b7908c03d811c3a03f70356d285" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1afe71e36012a10dc50549ac7147048d90" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a3f26e18774be52e6442b4c163add1c7b" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>get_async</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a168a2e028898b12ee18c7ff19017d66b" prot="protected" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>impl_get</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a67b8f857f21d353d8214887413640721" prot="protected" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>impl_get_const</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a1e25ebcf08883d3bd274aff26751bde4" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>LocalArray</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a41ef5a425cbba3edd2f6769b20dd9849" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>LocalArray</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1aeb5c8a3b3251de83956aa8a2c88d887b" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>LocalArray</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a3dd86a041d43cbc957b44bbabb183ba9" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a5781ba095359438118ce96e2e0eb4a8d" prot="private" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>ParticleLoop</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a4ddfdda2d7c388004c484761a5c4d48d" prot="private" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1afa815c18689faa61d7fb150d102d4d00" prot="private" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1aabfed7d59b626415893a5662870d1134" prot="private" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a300e08e1194d5ecc300d6e1cf518a0d6" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>realloc_no_copy</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1af152b5deef5e267e581a3176211f2d22" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>set</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a49d60843b617bce0d7b2c0f47db8b7eb" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>set_async</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a42c35915ad691819818ea8a3a0c9eb83" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>size</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalArray_1a1080c5294d385dc23f0c94d914ce5a0b" prot="public" virt="non-virtual"><scope>NESO::Particles::LocalArray</scope><name>sycl_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

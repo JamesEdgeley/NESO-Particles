@@ -1,0 +1,80 @@
+\hypertarget{classNESO_1_1Particles_1_1ErrorPropagate}{}\doxysection{NESO\+::Particles\+::Error\+Propagate Class Reference}
+\label{classNESO_1_1Particles_1_1ErrorPropagate}\index{NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ErrorPropagate_a73aad8193fabf2f7ba6555f2f3ace61e}\label{classNESO_1_1Particles_1_1ErrorPropagate_a73aad8193fabf2f7ba6555f2f3ace61e}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate_a73aad8193fabf2f7ba6555f2f3ace61e}{Error\+Propagate}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate}{Error\+Propagate}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ErrorPropagate_a9744aa41a11af18ce18ebbe667b13ef3}\label{classNESO_1_1Particles_1_1ErrorPropagate_a9744aa41a11af18ce18ebbe667b13ef3}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate}{Error\+Propagate}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate_a9744aa41a11af18ce18ebbe667b13ef3}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate}{Error\+Propagate}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate_a68d166290dd3b8de24f0401e401e6b30}{Error\+Propagate}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target)
+\item 
+int $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate_aaf0ac677547a02fe39f9510c35c0ee0f}{device\+\_\+ptr}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate_ad3d8689f2ce6bb5723326d90e2a8baa6}{check\+\_\+and\+\_\+throw}} (const char $\ast$error\+\_\+msg)
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1ErrorPropagate_a0d4d16d545d4f8594dbc83900b06bfe5}{get\+\_\+flag}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to propagate errors thrown from inside a SYCL kernel 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ErrorPropagate_a68d166290dd3b8de24f0401e401e6b30}\label{classNESO_1_1Particles_1_1ErrorPropagate_a68d166290dd3b8de24f0401e401e6b30}} 
+\index{NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}!ErrorPropagate@{ErrorPropagate}}
+\index{ErrorPropagate@{ErrorPropagate}!NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}}
+\doxysubsubsection{\texorpdfstring{ErrorPropagate()}{ErrorPropagate()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Error\+Propagate\+::\+Error\+Propagate (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new instance to track assertions thrown in SYCL kernels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr used for the kernel. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ErrorPropagate_ad3d8689f2ce6bb5723326d90e2a8baa6}\label{classNESO_1_1Particles_1_1ErrorPropagate_ad3d8689f2ce6bb5723326d90e2a8baa6}} 
+\index{NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}!check\_and\_throw@{check\_and\_throw}}
+\index{check\_and\_throw@{check\_and\_throw}!NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}}
+\doxysubsubsection{\texorpdfstring{check\_and\_throw()}{check\_and\_throw()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Error\+Propagate\+::check\+\_\+and\+\_\+throw (\begin{DoxyParamCaption}\item[{const char $\ast$}]{error\+\_\+msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check the stored integer. If the integer is non-\/zero throw an error with the passed message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+\_\+msg} & Message to throw if stored integer is non-\/zero. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ErrorPropagate_aaf0ac677547a02fe39f9510c35c0ee0f}\label{classNESO_1_1Particles_1_1ErrorPropagate_aaf0ac677547a02fe39f9510c35c0ee0f}} 
+\index{NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}!device\_ptr@{device\_ptr}}
+\index{device\_ptr@{device\_ptr}!NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}}
+\doxysubsubsection{\texorpdfstring{device\_ptr()}{device\_ptr()}}
+{\footnotesize\ttfamily int$\ast$ NESO\+::\+Particles\+::\+Error\+Propagate\+::device\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the int device pointer for use in a SYCL kernel. This pointer should be incremented atomically with some positive integer to indicate an error occured in the kernel. \mbox{\Hypertarget{classNESO_1_1Particles_1_1ErrorPropagate_a0d4d16d545d4f8594dbc83900b06bfe5}\label{classNESO_1_1Particles_1_1ErrorPropagate_a0d4d16d545d4f8594dbc83900b06bfe5}} 
+\index{NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}!get\_flag@{get\_flag}}
+\index{get\_flag@{get\_flag}!NESO::Particles::ErrorPropagate@{NESO::Particles::ErrorPropagate}}
+\doxysubsubsection{\texorpdfstring{get\_flag()}{get\_flag()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Error\+Propagate\+::get\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the current value of the flag on the host.
+
+\begin{DoxyReturn}{Returns}
+flag. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/compute\+\_\+target.\+hpp\end{DoxyCompactItemize}

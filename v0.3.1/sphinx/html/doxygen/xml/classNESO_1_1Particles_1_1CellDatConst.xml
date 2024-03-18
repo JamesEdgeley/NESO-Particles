@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1CellDatConst" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::CellDatConst</compoundname>
+    <includes refid="cell__dat_8hpp" local="no">cell_dat.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CellDatConst_1a9809e12dfcda3ff94694b46c3b3b73aa" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* NESO::Particles::CellDatConst&lt; T &gt;::d_ptr</definition>
+        <argsstring></argsstring>
+        <name>d_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="99" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CellDatConst_1a3e289a18c05d86c216e99509214c9173" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::CellDatConst&lt; T &gt;::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="100" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::CellDatConst&lt; T &gt;::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>Compute device used by the instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="109" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::CellDatConst&lt; T &gt;::ncells</definition>
+        <argsstring></argsstring>
+        <name>ncells</name>
+        <briefdescription>
+<para>Number of cells, labeled 0,...,N-1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="111" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::CellDatConst&lt; T &gt;::nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <briefdescription>
+<para>Number of rows in each cell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="113" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::CellDatConst&lt; T &gt;::ncol</definition>
+        <argsstring></argsstring>
+        <name>ncol</name>
+        <briefdescription>
+<para>Number of columns in each cell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="115" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1a9d551075897310caea741a2e05bac9d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CellDatConst&lt; T &gt;::CellDatConst</definition>
+        <argsstring>(const CellDatConst &amp;st)=delete</argsstring>
+        <name>CellDatConst</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="104" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1a773f946bfeeba849250f19ad292e3342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> &amp;</type>
+        <definition>CellDatConst&amp; NESO::Particles::CellDatConst&lt; T &gt;::operator=</definition>
+        <argsstring>(CellDatConst const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="106" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1addd45393036cb2b6a5b54ef4d69ad15e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CellDatConst&lt; T &gt;::~CellDatConst</definition>
+        <argsstring>()</argsstring>
+        <name>~CellDatConst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="116" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1a5ddbedbf811b2fd433083b14542951df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CellDatConst&lt; T &gt;::CellDatConst</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, const int ncells, const int nrow, const int ncol)</argsstring>
+        <name>CellDatConst</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ncells</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nrow</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ncol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create new <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> on the specified compute target with a fixed cell count, fixed number of rows per cell and fixed number of columns per cell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of cells. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nrow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="127" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="127" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1aa60a6a3d78d0406b1d65eabd295d988f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::CellDatConst&lt; T &gt;::idx</definition>
+        <argsstring>(const int cell, const int row, const int col)</argsstring>
+        <name>idx</name>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function to index into the stored data. Note column major format.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cell index to index into. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row to access. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Linear index into data structure for the specified row and column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="145" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1a0cb0df0ac8345020c683c2d5f047e117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* NESO::Particles::CellDatConst&lt; T &gt;::device_ptr</definition>
+        <argsstring>()</argsstring>
+        <name>device_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the device pointer for the underlying data. Only accessible on the device.</para>
+<para><simplesect kind="return"><para>Returns a device pointer on the compute target. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="155" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1a177a9d573346877782b07a47fefaf49f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" kindref="member">CellData</ref>&lt; T &gt;</type>
+        <definition>CellData&lt;T&gt; NESO::Particles::CellDatConst&lt; T &gt;::get_cell</definition>
+        <argsstring>(const int cell)</argsstring>
+        <name>get_cell</name>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the data stored in a provided cell on the host as a CellData instance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cell to access the underlying data for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Cell data for cell. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="164" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="164" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CellDatConst_1ab86f9f319854dc3a28ed5372e8e3fd5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::CellDatConst&lt; T &gt;::set_cell</definition>
+        <argsstring>(const int cell, CellData&lt; T &gt; cell_data)</argsstring>
+        <name>set_cell</name>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" kindref="member">CellData</ref>&lt; T &gt;</type>
+          <declname>cell_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the data in a cell using a CellData instance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cell to set data for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cell_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="185" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="185" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Container that allocates on the device a matrix of fixed size nrow X ncol for N cells. Data stored in column major format. i.e. Data order from slowest to fastest is: cell, column, row. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="97" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="97" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a9d551075897310caea741a2e05bac9d8" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>CellDatConst</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a5ddbedbf811b2fd433083b14542951df" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>CellDatConst</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a9809e12dfcda3ff94694b46c3b3b73aa" prot="private" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>d_ptr</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a0cb0df0ac8345020c683c2d5f047e117" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>device_ptr</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a177a9d573346877782b07a47fefaf49f" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>get_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1aa60a6a3d78d0406b1d65eabd295d988f" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>idx</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>ncells</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>ncol</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>nrow</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a773f946bfeeba849250f19ad292e3342" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1ab86f9f319854dc3a28ed5372e8e3fd5f" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>set_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1a3e289a18c05d86c216e99509214c9173" prot="private" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>stride</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1CellDatConst_1addd45393036cb2b6a5b54ef4d69ad15e" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConst</scope><name>~CellDatConst</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

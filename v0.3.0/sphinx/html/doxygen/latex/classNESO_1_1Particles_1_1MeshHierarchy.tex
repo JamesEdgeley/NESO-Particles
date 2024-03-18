@@ -1,0 +1,302 @@
+\hypertarget{classNESO_1_1Particles_1_1MeshHierarchy}{}\doxysection{NESO\+::Particles\+::Mesh\+Hierarchy Class Reference}
+\label{classNESO_1_1Particles_1_1MeshHierarchy}\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+
+
+{\ttfamily \#include $<$mesh\+\_\+hierarchy.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Mesh\+Hierarchy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classNESO_1_1Particles_1_1MeshHierarchy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a9336742ad95387f8f671803ce092703c}\label{classNESO_1_1Particles_1_1MeshHierarchy_a9336742ad95387f8f671803ce092703c}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a9336742ad95387f8f671803ce092703c}{Mesh\+Hierarchy}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_accfb2175ef8e3ddeb7024c318775a288}\label{classNESO_1_1Particles_1_1MeshHierarchy_accfb2175ef8e3ddeb7024c318775a288}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_accfb2175ef8e3ddeb7024c318775a288}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a05cc08eb86a18f61186600d72848607e}{Mesh\+Hierarchy}} (MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a5bd867f0688dc5d388132d21033dacde}{comm}}, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a5c01d67f7157937f8c49423b0b7d7c79}{ndim}}, std\+::vector$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a14f654aae7848c5cec73cf3eb496a8d4}{dims}}, std\+::vector$<$ double $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a747865352c84961c99be8764a52d172c}{origin}}, const double extent=1.\+0, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_abf8c89a05b8b1da85661d1d8cf6c2d56}{subdivision\+\_\+order}}=1)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_abc5fe7d018848f7db36377687523e479}{free}} ()
+\item 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a748a2341bb66027355a195f3c193ccb1}{tuple\+\_\+to\+\_\+linear\+\_\+global}} (INT $\ast$index\+\_\+tuple)
+\item 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a714b58f12ac6b9100596a60c506d163b}{tuple\+\_\+to\+\_\+linear\+\_\+coarse}} (INT $\ast$index\+\_\+tuple)
+\item 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a78d91c35f5b18a3af6da8effe9b21bd8}{tuple\+\_\+to\+\_\+linear\+\_\+fine}} (INT $\ast$index\+\_\+tuple)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a4252d5e33b5665a4bd1a92b00d45d2b7}{linear\+\_\+to\+\_\+tuple\+\_\+global}} (INT linear, INT $\ast$index)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_ad52c4af8b604c43b7a80a26703561050}{linear\+\_\+to\+\_\+tuple\+\_\+coarse}} (INT linear, INT $\ast$index)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a973f0cbd38a2b40e677936a5e79d65e9}{linear\+\_\+to\+\_\+tuple\+\_\+fine}} (INT linear, INT $\ast$index)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_af99fdfedb6e6e95d6efcca44be59d252}{claim\+\_\+initialise}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a669d2a990c31291445fa557240364103}{claim\+\_\+cell}} (const INT index, int weight)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a25e94b17f09720fb2bc1b5f3f1d2980b}{claim\+\_\+finalise}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a9f961b33d6e5437de0c12c3b2f210e2a}{get\+\_\+owner}} (INT index)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_ac7d2f65b5902930cfa0d457a8fbbbe72}{get\+\_\+owners}} (const int nqueries, INT $\ast$indices, int $\ast$ranks)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a5bd867f0688dc5d388132d21033dacde}\label{classNESO_1_1Particles_1_1MeshHierarchy_a5bd867f0688dc5d388132d21033dacde}} 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a5bd867f0688dc5d388132d21033dacde}{comm}}
+\begin{DoxyCompactList}\small\item\em MPI communicator on which this mesh is decomposed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a766ac53737bd72c08a7dcea93f1f1e93}\label{classNESO_1_1Particles_1_1MeshHierarchy_a766ac53737bd72c08a7dcea93f1f1e93}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a766ac53737bd72c08a7dcea93f1f1e93}{comm\+\_\+pair}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} instance that contains the inter and intra communicators. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a5c01d67f7157937f8c49423b0b7d7c79}\label{classNESO_1_1Particles_1_1MeshHierarchy_a5c01d67f7157937f8c49423b0b7d7c79}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a5c01d67f7157937f8c49423b0b7d7c79}{ndim}}
+\begin{DoxyCompactList}\small\item\em Number of mesh dimensions (1,2 or 3). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a14f654aae7848c5cec73cf3eb496a8d4}\label{classNESO_1_1Particles_1_1MeshHierarchy_a14f654aae7848c5cec73cf3eb496a8d4}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a14f654aae7848c5cec73cf3eb496a8d4}{dims}}
+\begin{DoxyCompactList}\small\item\em Number of coarse cells in each dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a747865352c84961c99be8764a52d172c}\label{classNESO_1_1Particles_1_1MeshHierarchy_a747865352c84961c99be8764a52d172c}} 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a747865352c84961c99be8764a52d172c}{origin}}
+\begin{DoxyCompactList}\small\item\em Origin of the coarse mesh in each dimension. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_abf8c89a05b8b1da85661d1d8cf6c2d56}{subdivision\+\_\+order}}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a8d63634b776c4cba2312a70bcde349cc}\label{classNESO_1_1Particles_1_1MeshHierarchy_a8d63634b776c4cba2312a70bcde349cc}} 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a8d63634b776c4cba2312a70bcde349cc}{cell\+\_\+width\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em Cell width of the coarse cells. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_aed36e7bf169d892d9248eef79069e46e}\label{classNESO_1_1Particles_1_1MeshHierarchy_aed36e7bf169d892d9248eef79069e46e}} 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_aed36e7bf169d892d9248eef79069e46e}{cell\+\_\+width\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em Cell width of the fine cells. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a7df094936d44f93a27b4eccf48f2c588}\label{classNESO_1_1Particles_1_1MeshHierarchy_a7df094936d44f93a27b4eccf48f2c588}} 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a7df094936d44f93a27b4eccf48f2c588}{inverse\+\_\+cell\+\_\+width\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em {\ttfamily 1/cell\+\_\+width\+\_\+coarse}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a77067404cd29bad8bce7d02cf6d56638}\label{classNESO_1_1Particles_1_1MeshHierarchy_a77067404cd29bad8bce7d02cf6d56638}} 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a77067404cd29bad8bce7d02cf6d56638}{inverse\+\_\+cell\+\_\+width\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em {\ttfamily 1/cell\+\_\+width\+\_\+fine}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a80955e0dd833ac418e7f8873aca6e464}\label{classNESO_1_1Particles_1_1MeshHierarchy_a80955e0dd833ac418e7f8873aca6e464}} 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a80955e0dd833ac418e7f8873aca6e464}{ncells\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em Global number of coarse cells. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a094cc70d517126a349c4e7a27266338d}\label{classNESO_1_1Particles_1_1MeshHierarchy_a094cc70d517126a349c4e7a27266338d}} 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a094cc70d517126a349c4e7a27266338d}{ncells\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em Number of fine cells in each coarse cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a2ab0dcdee2e493b037b7f09d5704444f}\label{classNESO_1_1Particles_1_1MeshHierarchy_a2ab0dcdee2e493b037b7f09d5704444f}} 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a2ab0dcdee2e493b037b7f09d5704444f}{ncells\+\_\+dim\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em Number of fine cells per dimension in each coarse cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a168516eb1e7b771d870d2edb5e37d275}\label{classNESO_1_1Particles_1_1MeshHierarchy_a168516eb1e7b771d870d2edb5e37d275}} 
+INT \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy_a168516eb1e7b771d870d2edb5e37d275}{ncells\+\_\+global}}
+\begin{DoxyCompactList}\small\item\em Global number of fine cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure to place a coarse mesh over an arbitrary shaped domain. Each cell in the coarse mesh is a cubes/square that contains a fine mesh also of cubes/squares. Each cell is indexed with a tuple for the coarse mesh and a tuple for the fine mesh in the coarse cell. Each cell in the fine mesh is owned by a unique MPI rank.
+
+This class contains the description of the coarse and fine meshes and the map from fine cells to owning MPI rank. The map is accessible on all MPI ranks and is stored once per MPI shared memory region. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a05cc08eb86a18f61186600d72848607e}\label{classNESO_1_1Particles_1_1MeshHierarchy_a05cc08eb86a18f61186600d72848607e}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!MeshHierarchy@{MeshHierarchy}}
+\index{MeshHierarchy@{MeshHierarchy}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{MeshHierarchy()}{MeshHierarchy()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::\+Mesh\+Hierarchy (\begin{DoxyParamCaption}\item[{MPI\+\_\+\+Comm}]{comm,  }\item[{const int}]{ndim,  }\item[{std\+::vector$<$ int $>$}]{dims,  }\item[{std\+::vector$<$ double $>$}]{origin,  }\item[{const double}]{extent = {\ttfamily 1.0},  }\item[{const int}]{subdivision\+\_\+order = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a mesh hierarchy decomposed over the given MPI communicator with a specified number and shape of coarse cells and subdivision order. Must be called collectively on the communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comm} & MPI communicator to use for decomposition. \\
+\hline
+{\em ndim} & Number of dimensions (1,2 or 3). \\
+\hline
+{\em dims} & Number of coarse cells in each dimension. \\
+\hline
+{\em origin} & Origin to use for mesh. \\
+\hline
+{\em extent} & Cell width of a coarse cell in each dimension. \\
+\hline
+{\em subdivision\+\_\+order} & Number of times to subdivide each coarse cell in each dimension to produce the fine mesh. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a669d2a990c31291445fa557240364103}\label{classNESO_1_1Particles_1_1MeshHierarchy_a669d2a990c31291445fa557240364103}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!claim\_cell@{claim\_cell}}
+\index{claim\_cell@{claim\_cell}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{claim\_cell()}{claim\_cell()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::claim\+\_\+cell (\begin{DoxyParamCaption}\item[{const INT}]{index,  }\item[{int}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Claim a cell in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} with a certain weight. The rank that claims with the highest weight owns the cell. In the case of weight contention the highest rank is given the cell. Weights should be an integer in the range \textquotesingle{}\mbox{[}1, int\+\_\+max-\/1\mbox{]}\textquotesingle{}. Claim with the highest weight will be assigned the cell.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Global linear index to cell to claim. \\
+\hline
+{\em weight} & Weight to claim the cell with. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a25e94b17f09720fb2bc1b5f3f1d2980b}\label{classNESO_1_1Particles_1_1MeshHierarchy_a25e94b17f09720fb2bc1b5f3f1d2980b}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!claim\_finalise@{claim\_finalise}}
+\index{claim\_finalise@{claim\_finalise}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{claim\_finalise()}{claim\_finalise()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::claim\+\_\+finalise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Mark the end of an epoch where ranks claim global cells. Collective on communicator. \mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_af99fdfedb6e6e95d6efcca44be59d252}\label{classNESO_1_1Particles_1_1MeshHierarchy_af99fdfedb6e6e95d6efcca44be59d252}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!claim\_initialise@{claim\_initialise}}
+\index{claim\_initialise@{claim\_initialise}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{claim\_initialise()}{claim\_initialise()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::claim\+\_\+initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Mark the start of an epoch where ranks claim global cells. Collective on communicator. \mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_abc5fe7d018848f7db36377687523e479}\label{classNESO_1_1Particles_1_1MeshHierarchy_abc5fe7d018848f7db36377687523e479}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!free@{free}}
+\index{free@{free}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Free all data structures associated with this object. Must be called collectively on the communicator. \mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a9f961b33d6e5437de0c12c3b2f210e2a}\label{classNESO_1_1Particles_1_1MeshHierarchy_a9f961b33d6e5437de0c12c3b2f210e2a}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!get\_owner@{get\_owner}}
+\index{get\_owner@{get\_owner}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{get\_owner()}{get\_owner()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::get\+\_\+owner (\begin{DoxyParamCaption}\item[{INT}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the owning MPI rank for a linear cell index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Global linear index of cell to query the owning rank of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Owning MPI rank. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_ac7d2f65b5902930cfa0d457a8fbbbe72}\label{classNESO_1_1Particles_1_1MeshHierarchy_ac7d2f65b5902930cfa0d457a8fbbbe72}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!get\_owners@{get\_owners}}
+\index{get\_owners@{get\_owners}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{get\_owners()}{get\_owners()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::get\+\_\+owners (\begin{DoxyParamCaption}\item[{const int}]{nqueries,  }\item[{INT $\ast$}]{indices,  }\item[{int $\ast$}]{ranks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the owning MPI ranks for n indices in global tuple form.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nqueries} & Number of cells to query. \\
+\hline
+{\em indices} & Array containing {\ttfamily nqueries} global index tuples. \\
+\hline
+{\em ranks} & Array owning ranks will be stored in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_ad52c4af8b604c43b7a80a26703561050}\label{classNESO_1_1Particles_1_1MeshHierarchy_ad52c4af8b604c43b7a80a26703561050}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!linear\_to\_tuple\_coarse@{linear\_to\_tuple\_coarse}}
+\index{linear\_to\_tuple\_coarse@{linear\_to\_tuple\_coarse}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{linear\_to\_tuple\_coarse()}{linear\_to\_tuple\_coarse()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::linear\+\_\+to\+\_\+tuple\+\_\+coarse (\begin{DoxyParamCaption}\item[{INT}]{linear,  }\item[{INT $\ast$}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a coarse mesh linear index into a tuple index. tuple should be\+: 1D\+: (coarse\+\_\+x,) 2D\+: (coarse\+\_\+x, coarse\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z,)
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & Linear index to convert. \\
+\hline
+{\em index} & Output, index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a973f0cbd38a2b40e677936a5e79d65e9}\label{classNESO_1_1Particles_1_1MeshHierarchy_a973f0cbd38a2b40e677936a5e79d65e9}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!linear\_to\_tuple\_fine@{linear\_to\_tuple\_fine}}
+\index{linear\_to\_tuple\_fine@{linear\_to\_tuple\_fine}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{linear\_to\_tuple\_fine()}{linear\_to\_tuple\_fine()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::linear\+\_\+to\+\_\+tuple\+\_\+fine (\begin{DoxyParamCaption}\item[{INT}]{linear,  }\item[{INT $\ast$}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a fine mesh linear index into a tuple index. tuple should be\+: 1D\+: (fine\+\_\+x,) 2D\+: (fine\+\_\+x, fine\+\_\+y) 3D\+: (fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & Linear index to convert. \\
+\hline
+{\em index} & Output, index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a4252d5e33b5665a4bd1a92b00d45d2b7}\label{classNESO_1_1Particles_1_1MeshHierarchy_a4252d5e33b5665a4bd1a92b00d45d2b7}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!linear\_to\_tuple\_global@{linear\_to\_tuple\_global}}
+\index{linear\_to\_tuple\_global@{linear\_to\_tuple\_global}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{linear\_to\_tuple\_global()}{linear\_to\_tuple\_global()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::linear\+\_\+to\+\_\+tuple\+\_\+global (\begin{DoxyParamCaption}\item[{INT}]{linear,  }\item[{INT $\ast$}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a global mesh linear index into a tuple index. tuple should be\+: 1D\+: (coarse\+\_\+x, fine\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y, fine\+\_\+x, fine\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z, fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & Linear index to convert. \\
+\hline
+{\em index} & Output, index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a714b58f12ac6b9100596a60c506d163b}\label{classNESO_1_1Particles_1_1MeshHierarchy_a714b58f12ac6b9100596a60c506d163b}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!tuple\_to\_linear\_coarse@{tuple\_to\_linear\_coarse}}
+\index{tuple\_to\_linear\_coarse@{tuple\_to\_linear\_coarse}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{tuple\_to\_linear\_coarse()}{tuple\_to\_linear\_coarse()}}
+{\footnotesize\ttfamily INT NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::tuple\+\_\+to\+\_\+linear\+\_\+coarse (\begin{DoxyParamCaption}\item[{INT $\ast$}]{index\+\_\+tuple }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a coarse mesh index represented by a tuple into a linear index. tuple should be\+: 1D\+: (coarse\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+tuple} & Index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a78d91c35f5b18a3af6da8effe9b21bd8}\label{classNESO_1_1Particles_1_1MeshHierarchy_a78d91c35f5b18a3af6da8effe9b21bd8}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!tuple\_to\_linear\_fine@{tuple\_to\_linear\_fine}}
+\index{tuple\_to\_linear\_fine@{tuple\_to\_linear\_fine}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{tuple\_to\_linear\_fine()}{tuple\_to\_linear\_fine()}}
+{\footnotesize\ttfamily INT NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::tuple\+\_\+to\+\_\+linear\+\_\+fine (\begin{DoxyParamCaption}\item[{INT $\ast$}]{index\+\_\+tuple }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a fine mesh index represented by a tuple into a linear index. tuple should be\+: 1D\+: (fine\+\_\+x) 2D\+: (fine\+\_\+x, fine\+\_\+y) 3D\+: (fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+tuple} & Index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_a748a2341bb66027355a195f3c193ccb1}\label{classNESO_1_1Particles_1_1MeshHierarchy_a748a2341bb66027355a195f3c193ccb1}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!tuple\_to\_linear\_global@{tuple\_to\_linear\_global}}
+\index{tuple\_to\_linear\_global@{tuple\_to\_linear\_global}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{tuple\_to\_linear\_global()}{tuple\_to\_linear\_global()}}
+{\footnotesize\ttfamily INT NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::tuple\+\_\+to\+\_\+linear\+\_\+global (\begin{DoxyParamCaption}\item[{INT $\ast$}]{index\+\_\+tuple }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a global index represented by a tuple into a linear index. tuple should be\+: 1D\+: (coarse\+\_\+x, fine\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y, fine\+\_\+x, fine\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z, fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+tuple} & Index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchy_abf8c89a05b8b1da85661d1d8cf6c2d56}\label{classNESO_1_1Particles_1_1MeshHierarchy_abf8c89a05b8b1da85661d1d8cf6c2d56}} 
+\index{NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}!subdivision\_order@{subdivision\_order}}
+\index{subdivision\_order@{subdivision\_order}!NESO::Particles::MeshHierarchy@{NESO::Particles::MeshHierarchy}}
+\doxysubsubsection{\texorpdfstring{subdivision\_order}{subdivision\_order}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+::subdivision\+\_\+order}
+
+The fine mesh cells have width {\ttfamily cell\+\_\+width\+\_\+coarse / 2$^\wedge$p} for subdivision order p. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/mesh\+\_\+hierarchy.\+hpp\end{DoxyCompactItemize}

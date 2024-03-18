@@ -1,0 +1,224 @@
+\hypertarget{classNESO_1_1Particles_1_1SYCLTarget}{}\doxysection{NESO\+::Particles\+::SYCLTarget Class Reference}
+\label{classNESO_1_1Particles_1_1SYCLTarget}\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::SYCLTarget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1SYCLTarget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a1d679853013a4b67a0883378add51dc0}{SYCLTarget}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_ad10647c1238a0f016aaa262aaff500dd}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a924afce0bb239991413771fd2254013c}{SYCLTarget}} (const int gpu\+\_\+device, MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_abb607ca8492a7a29082d7d4c23ffefb1}{comm}}, int local\+\_\+rank=-\/1)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_ae347865364f693955c1cb69f6eccaa5e}{$\sim$\+SYCLTarget}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_ab606d13eb81af0d2b6c51d31f755a4ae}{print\+\_\+device\+\_\+info}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a049cff60dfcccfefeb7b59b2f27c2db1}{free}} ()
+\item 
+void $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_aadec63cba71d351b617d544a36d577d5}{malloc\+\_\+device}} (size\+\_\+t size\+\_\+bytes)
+\item 
+void $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a93d9320f2655bdb887ab9a8398a030b0}{malloc\+\_\+host}} (size\+\_\+t size\+\_\+bytes)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a0dad49ff080e8d96155b6c13bfaf26e5}{free}} (T $\ast$ptr\+\_\+in)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_af3ef5873f83476daf5b8134c89f20380}{check\+\_\+ptrs}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a607a5b1d5b3078642a2b7b2940e59732}{check\+\_\+ptr}} (unsigned char $\ast$ptr\+\_\+user, const size\+\_\+t size\+\_\+bytes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sycl\+::device \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a0dff55210b17655aea30b6da975db5a7}{device}}
+\begin{DoxyCompactList}\small\item\em SYCL device in use. \end{DoxyCompactList}\item 
+sycl\+::queue \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a95689246305f03b63e80867736f29726}{queue}}
+\begin{DoxyCompactList}\small\item\em Main SYCL queue to use. \end{DoxyCompactList}\item 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_abb607ca8492a7a29082d7d4c23ffefb1}{comm}}
+\begin{DoxyCompactList}\small\item\em Parent MPI communicator to use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_a7317afc757d61abac977af2875d1435f}{comm\+\_\+pair}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap}{Profile\+Map}} \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget_aa76c7f29750a02899daf9d9bed0ee41a}{profile\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap}{Profile\+Map}} to log profiling data related to this \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container for SYCL devices and queues such that they can be easily passed around. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a1d679853013a4b67a0883378add51dc0}\label{classNESO_1_1Particles_1_1SYCLTarget_a1d679853013a4b67a0883378add51dc0}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!SYCLTarget@{SYCLTarget}}
+\index{SYCLTarget@{SYCLTarget}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{SYCLTarget()}{SYCLTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+SYCLTarget\+::\+SYCLTarget (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a924afce0bb239991413771fd2254013c}\label{classNESO_1_1Particles_1_1SYCLTarget_a924afce0bb239991413771fd2254013c}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!SYCLTarget@{SYCLTarget}}
+\index{SYCLTarget@{SYCLTarget}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{SYCLTarget()}{SYCLTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+SYCLTarget\+::\+SYCLTarget (\begin{DoxyParamCaption}\item[{const int}]{gpu\+\_\+device,  }\item[{MPI\+\_\+\+Comm}]{comm,  }\item[{int}]{local\+\_\+rank = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} using a flag to specifiy device type and a parent MPI communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpu\+\_\+device} & Specify how to search for SYCL device. 0 uses default selector, 1 explicitly use a GPU selector and -\/1 use an explicit CPU selector. \\
+\hline
+{\em comm} & MPI Communicator on which the \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} is based. \\
+\hline
+{\em local\+\_\+rank} & (optional) Explicitly pass the local rank used to assign devices to MPI ranks. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_ae347865364f693955c1cb69f6eccaa5e}\label{classNESO_1_1Particles_1_1SYCLTarget_ae347865364f693955c1cb69f6eccaa5e}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!````~SYCLTarget@{$\sim$SYCLTarget}}
+\index{````~SYCLTarget@{$\sim$SYCLTarget}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{$\sim$SYCLTarget()}{~SYCLTarget()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+SYCLTarget\+::$\sim$\+SYCLTarget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a607a5b1d5b3078642a2b7b2940e59732}\label{classNESO_1_1Particles_1_1SYCLTarget_a607a5b1d5b3078642a2b7b2940e59732}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!check\_ptr@{check\_ptr}}
+\index{check\_ptr@{check\_ptr}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{check\_ptr()}{check\_ptr()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+SYCLTarget\+::check\+\_\+ptr (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{ptr\+\_\+user,  }\item[{const size\+\_\+t}]{size\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_af3ef5873f83476daf5b8134c89f20380}\label{classNESO_1_1Particles_1_1SYCLTarget_af3ef5873f83476daf5b8134c89f20380}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!check\_ptrs@{check\_ptrs}}
+\index{check\_ptrs@{check\_ptrs}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{check\_ptrs()}{check\_ptrs()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+SYCLTarget\+::check\+\_\+ptrs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a049cff60dfcccfefeb7b59b2f27c2db1}\label{classNESO_1_1Particles_1_1SYCLTarget_a049cff60dfcccfefeb7b59b2f27c2db1}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!free@{free}}
+\index{free@{free}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+SYCLTarget\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Free the \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} and underlying \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a0dad49ff080e8d96155b6c13bfaf26e5}\label{classNESO_1_1Particles_1_1SYCLTarget_a0dad49ff080e8d96155b6c13bfaf26e5}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!free@{free}}
+\index{free@{free}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void NESO\+::\+Particles\+::\+SYCLTarget\+::free (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Free a pointer allocated with malloc\+\_\+device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr\+\_\+in} & Pointer to free. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_aadec63cba71d351b617d544a36d577d5}\label{classNESO_1_1Particles_1_1SYCLTarget_aadec63cba71d351b617d544a36d577d5}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!malloc\_device@{malloc\_device}}
+\index{malloc\_device@{malloc\_device}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{malloc\_device()}{malloc\_device()}}
+{\footnotesize\ttfamily void$\ast$ NESO\+::\+Particles\+::\+SYCLTarget\+::malloc\+\_\+device (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allocate memory on device using sycl\+::malloc\+\_\+device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+bytes} & Number of bytes to allocate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a93d9320f2655bdb887ab9a8398a030b0}\label{classNESO_1_1Particles_1_1SYCLTarget_a93d9320f2655bdb887ab9a8398a030b0}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!malloc\_host@{malloc\_host}}
+\index{malloc\_host@{malloc\_host}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{malloc\_host()}{malloc\_host()}}
+{\footnotesize\ttfamily void$\ast$ NESO\+::\+Particles\+::\+SYCLTarget\+::malloc\+\_\+host (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allocate memory on the host using sycl\+::malloc\+\_\+host.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+bytes} & Number of bytes to allocate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_ad10647c1238a0f016aaa262aaff500dd}\label{classNESO_1_1Particles_1_1SYCLTarget_ad10647c1238a0f016aaa262aaff500dd}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}}\& NESO\+::\+Particles\+::\+SYCLTarget\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_ab606d13eb81af0d2b6c51d31f755a4ae}\label{classNESO_1_1Particles_1_1SYCLTarget_ab606d13eb81af0d2b6c51d31f755a4ae}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!print\_device\_info@{print\_device\_info}}
+\index{print\_device\_info@{print\_device\_info}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{print\_device\_info()}{print\_device\_info()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+SYCLTarget\+::print\+\_\+device\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print information to stdout about the current SYCL device (on MPI rank 0). 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_abb607ca8492a7a29082d7d4c23ffefb1}\label{classNESO_1_1Particles_1_1SYCLTarget_abb607ca8492a7a29082d7d4c23ffefb1}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!comm@{comm}}
+\index{comm@{comm}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{comm}{comm}}
+{\footnotesize\ttfamily MPI\+\_\+\+Comm NESO\+::\+Particles\+::\+SYCLTarget\+::comm}
+
+
+
+Parent MPI communicator to use. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a7317afc757d61abac977af2875d1435f}\label{classNESO_1_1Particles_1_1SYCLTarget_a7317afc757d61abac977af2875d1435f}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!comm\_pair@{comm\_pair}}
+\index{comm\_pair@{comm\_pair}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{comm\_pair}{comm\_pair}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} NESO\+::\+Particles\+::\+SYCLTarget\+::comm\+\_\+pair}
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} to pass around inter and intra communicators for shared memory regions. \mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a0dff55210b17655aea30b6da975db5a7}\label{classNESO_1_1Particles_1_1SYCLTarget_a0dff55210b17655aea30b6da975db5a7}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!device@{device}}
+\index{device@{device}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily sycl\+::device NESO\+::\+Particles\+::\+SYCLTarget\+::device}
+
+
+
+SYCL device in use. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_aa76c7f29750a02899daf9d9bed0ee41a}\label{classNESO_1_1Particles_1_1SYCLTarget_aa76c7f29750a02899daf9d9bed0ee41a}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!profile\_map@{profile\_map}}
+\index{profile\_map@{profile\_map}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{profile\_map}{profile\_map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap}{Profile\+Map}} NESO\+::\+Particles\+::\+SYCLTarget\+::profile\+\_\+map}
+
+
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap}{Profile\+Map}} to log profiling data related to this \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}}. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SYCLTarget_a95689246305f03b63e80867736f29726}\label{classNESO_1_1Particles_1_1SYCLTarget_a95689246305f03b63e80867736f29726}} 
+\index{NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}!queue@{queue}}
+\index{queue@{queue}!NESO::Particles::SYCLTarget@{NESO::Particles::SYCLTarget}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily sycl\+::queue NESO\+::\+Particles\+::\+SYCLTarget\+::queue}
+
+
+
+Main SYCL queue to use. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{compute__target_8hpp}{compute\+\_\+target.\+hpp}}\end{DoxyCompactItemize}

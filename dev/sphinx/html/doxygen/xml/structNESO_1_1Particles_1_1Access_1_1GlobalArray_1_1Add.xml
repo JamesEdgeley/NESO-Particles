@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::GlobalArray::Add</compoundname>
+    <includes refid="global__array_8hpp" local="no">global_array.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add_1a6a093b8d1aa68f7a3908e534dcc33eda" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* NESO::Particles::Access::GlobalArray::Add&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="49" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add_1ab9d1dd65793654526be9d8f07ce649e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::GlobalArray::Add&lt; T &gt;::Add</definition>
+        <argsstring>()=default</argsstring>
+        <name>Add</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="48" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add_1a7b9e418862cbaba990ebf8097c208ce6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::Access::GlobalArray::Add&lt; T &gt;::add</definition>
+        <argsstring>(const int component, const T value)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This does not return a value as the returned value would be a partial sum on this MPI rank. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="54" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:GlobalArray::Read&lt;T&gt; and Access:GlobalArray::Add&lt;T&gt; are the kernel argument types for accessing <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1GlobalArray" kindref="compound">GlobalArray</ref> data in a kernel. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="46" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="46" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add_1ab9d1dd65793654526be9d8f07ce649e8" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::GlobalArray::Add</scope><name>Add</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add_1a7b9e418862cbaba990ebf8097c208ce6" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::GlobalArray::Add</scope><name>add</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add_1a6a093b8d1aa68f7a3908e534dcc33eda" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::GlobalArray::Add</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

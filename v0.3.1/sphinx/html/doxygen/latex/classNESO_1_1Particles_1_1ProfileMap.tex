@@ -1,0 +1,115 @@
+\hypertarget{classNESO_1_1Particles_1_1ProfileMap}{}\doxysection{NESO\+::Particles\+::Profile\+Map Class Reference}
+\label{classNESO_1_1Particles_1_1ProfileMap}\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+
+
+{\ttfamily \#include $<$profiling.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_a604e04565ba184572484a62f412c73d8}{$\sim$\+Profile\+Map}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_a6b1414ec2954592963938d319a842ef9}{Profile\+Map}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_addffa4b53d0ea648a344e559156527a7}{set}} (const std\+::string key1, const std\+::string key2, const int64\+\_\+t value\+\_\+integral, const double value\+\_\+real=0.\+0)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_adee09a83843d24cf24b62da61a9ceeb3}{inc}} (const std\+::string key1, const std\+::string key2, const int64\+\_\+t value\+\_\+integral, const double value\+\_\+real=0.\+0)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_a356df0d9f3cadb70dddb6426697bfe5a}{reset}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_ac21555c8934f144d74ddc8c3fa22b0ce}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, \mbox{\hyperlink{structNESO_1_1Particles_1_1ProfileEntry}{Profile\+Entry}} $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ProfileMap_a80c87d2252e92507585b2fb8d6e343b9}{profile}}
+\begin{DoxyCompactList}\small\item\em Main data structure storing profiling data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data structure for profiling data. Fundamentally is a map from key to key to value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_a604e04565ba184572484a62f412c73d8}\label{classNESO_1_1Particles_1_1ProfileMap_a604e04565ba184572484a62f412c73d8}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!````~ProfileMap@{$\sim$ProfileMap}}
+\index{````~ProfileMap@{$\sim$ProfileMap}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{$\sim$ProfileMap()}{~ProfileMap()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Profile\+Map\+::$\sim$\+Profile\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_a6b1414ec2954592963938d319a842ef9}\label{classNESO_1_1Particles_1_1ProfileMap_a6b1414ec2954592963938d319a842ef9}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!ProfileMap@{ProfileMap}}
+\index{ProfileMap@{ProfileMap}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{ProfileMap()}{ProfileMap()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Profile\+Map\+::\+Profile\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new empty instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_adee09a83843d24cf24b62da61a9ceeb3}\label{classNESO_1_1Particles_1_1ProfileMap_adee09a83843d24cf24b62da61a9ceeb3}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!inc@{inc}}
+\index{inc@{inc}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{inc()}{inc()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Profile\+Map\+::inc (\begin{DoxyParamCaption}\item[{const std\+::string}]{key1,  }\item[{const std\+::string}]{key2,  }\item[{const int64\+\_\+t}]{value\+\_\+integral,  }\item[{const double}]{value\+\_\+real = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increment a profiling entry in the data structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key1} & First key for the entry. \\
+\hline
+{\em key2} & Second key for the entry. \\
+\hline
+{\em value\+\_\+integral} & Integral value for the entry to add to current value. \\
+\hline
+{\em value\+\_\+real} & Floating point value for the entry to add to current value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_ac21555c8934f144d74ddc8c3fa22b0ce}\label{classNESO_1_1Particles_1_1ProfileMap_ac21555c8934f144d74ddc8c3fa22b0ce}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!print@{print}}
+\index{print@{print}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Profile\+Map\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the profiling data. \mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_a356df0d9f3cadb70dddb6426697bfe5a}\label{classNESO_1_1Particles_1_1ProfileMap_a356df0d9f3cadb70dddb6426697bfe5a}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!reset@{reset}}
+\index{reset@{reset}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Profile\+Map\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the profiling data by emptying the current set of keys and values. \mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_addffa4b53d0ea648a344e559156527a7}\label{classNESO_1_1Particles_1_1ProfileMap_addffa4b53d0ea648a344e559156527a7}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!set@{set}}
+\index{set@{set}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Profile\+Map\+::set (\begin{DoxyParamCaption}\item[{const std\+::string}]{key1,  }\item[{const std\+::string}]{key2,  }\item[{const int64\+\_\+t}]{value\+\_\+integral,  }\item[{const double}]{value\+\_\+real = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set or create a new profiling entry in the data structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key1} & First key for the entry. \\
+\hline
+{\em key2} & Second key for the entry. \\
+\hline
+{\em value\+\_\+integral} & Integral value for the entry. \\
+\hline
+{\em value\+\_\+real} & Floating point value for the entry. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ProfileMap_a80c87d2252e92507585b2fb8d6e343b9}\label{classNESO_1_1Particles_1_1ProfileMap_a80c87d2252e92507585b2fb8d6e343b9}} 
+\index{NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}!profile@{profile}}
+\index{profile@{profile}!NESO::Particles::ProfileMap@{NESO::Particles::ProfileMap}}
+\doxysubsubsection{\texorpdfstring{profile}{profile}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::map$<$std\+::string, \mbox{\hyperlink{structNESO_1_1Particles_1_1ProfileEntry}{Profile\+Entry}}$>$ $>$ NESO\+::\+Particles\+::\+Profile\+Map\+::profile}
+
+
+
+Main data structure storing profiling data. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{profiling_8hpp}{profiling.\+hpp}}\end{DoxyCompactItemize}

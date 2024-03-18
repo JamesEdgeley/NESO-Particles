@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::LocalArray::Read</compoundname>
+    <includes refid="particle__loop_8hpp" local="no">particle_loop.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" prot="public" static="no" mutable="no">
+        <type>T const  *</type>
+        <definition>T const* NESO::Particles::Access::LocalArray::Read&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="197" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ad86c908bf97d84c164e98da779fa38d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::LocalArray::Read&lt; T &gt;::Read</definition>
+        <argsstring>()=default</argsstring>
+        <name>Read</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="196" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ae26d25fe6ebe1ced076ea206046c190c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T NESO::Particles::Access::LocalArray::Read&lt; T &gt;::at</definition>
+        <argsstring>(const int component)</argsstring>
+        <name>at</name>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="198" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1a4b0e7af4fd8cf87442866e3b8149354b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; NESO::Particles::Access::LocalArray::Read&lt; T &gt;::operator[]</definition>
+        <argsstring>(const int component)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="199" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="199" bodyend="199"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:LocalArray::Read&lt;T&gt; and Access:LocalArray::Add&lt;T&gt; are the kernel argument types for accessing <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1LocalArray" kindref="compound">LocalArray</ref> data in a kernel. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="194" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="194" bodyend="200"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ae26d25fe6ebe1ced076ea206046c190c" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::LocalArray::Read</scope><name>at</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1a4b0e7af4fd8cf87442866e3b8149354b" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::LocalArray::Read</scope><name>operator[]</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1af5325c62604db34a39f19d38bbe6dccb" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::LocalArray::Read</scope><name>ptr</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read_1ad86c908bf97d84c164e98da779fa38d8" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::LocalArray::Read</scope><name>Read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Particle Products &#8212; NESO-Particles  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79a58105" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'concept/particle_products';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.2';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://excalibur-neptune.github.io/NESO-Particles/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        </script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Particle Sub Group" href="particle_sub_group.html" />
+    <link rel="prev" title="Particle Loop" href="particle_loop.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">NESO-Particles  documentation</p>
+  
+</a></div>
+    
+      <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../concept.html">
+                        Concept
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-user.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-developer.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../concept.html">
+                        Concept
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-user.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-developer.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../concept.html">Concept</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="concept.html">Overarching Concepts and Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="particle_loop.html">Particle Loop</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Particle Products</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#properties-of-new-particles">Properties of New Particles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#property-ordering">Property Ordering</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="particle_sub_group.html">Particle Sub Group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide-user.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide-developer.html">Developer Guide</a></li>
+</ul>
+</div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../concept.html" class="nav-link">Concept</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Particle Products</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="particle-products">
+<h1>Particle Products<a class="headerlink" href="#particle-products" title="Link to this heading">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>We consider a scenario where N existing particles are to each create M new particles.
+These new particles will ultimately be added to the <cite>ParticleGroup</cite> which contains the original N particles and hence each of the NM new particles require all of the properties to be set to sensible values.
+The particle properties can always be modified after the new particles are added to the <cite>ParticleGroup</cite> by using a <cite>ParticleLoop</cite> therefore here we discuss methods to define particle properties before the particles are added.</p>
+<p>Particles are created via the <cite>DescendantProducts</cite> data structure which provides space for each of the new particle properties.
+These particle properties are accessed from each of the N parent particles from a <cite>ParticleLoop</cite> kernel.
+Once a <cite>DescendantProducts</cite> instance is populated with values those values can be used to create new particles in the parent <cite>ParticleGroup</cite> by calling <cite>add_particles_local</cite> with the new properties.</p>
+<section id="properties-of-new-particles">
+<h3>Properties of New Particles<a class="headerlink" href="#properties-of-new-particles" title="Link to this heading">#</a></h3>
+<p>When a new <cite>DescendantProducts</cite> instance is created the number of output products M per existing particle is specified along with the REAL and INT particle properties which will be explicitly set in the <cite>ParticleLoop</cite> kernel.
+This kernel must also set the parent particle of the new product particle by calling <cite>set_parent</cite> for the product particle to be included when <cite>add_particles_local</cite> is called.</p>
+<p>The <cite>set_parent</cite> mechanism provides two functions, firstly it defines the product as a product which should be included when <cite>add_particles_local</cite> is called.
+This <cite>set_parent</cite> call can be intentionally omitted to mask off any number of the M products which ultimately were not required.
+Secondly for particle properties which are not defined in the <cite>DescendantProducts</cite> constructor the <cite>set_parent</cite> call defines the parent particle from which these properties should be copied.</p>
+<p>The destination <cite>ParticleGroup</cite> for the new particle products has a set of particle properties for each of the particles in the <cite>ParticleGroup</cite>.
+When the <cite>DescendantProducts</cite> are are added via <cite>add_particles_local</cite> there are two options.
+If the property is explicitly defined in the <cite>DescendantProducts</cite> instance then the component values, for all particles and all components of that property, are copied from the <cite>DescendantProducts</cite> into the corresponding <cite>ParticleDats</cite> in the <cite>ParticleGroup</cite>.
+If a property is defined in the <cite>ParticleGroup</cite> and not in the <cite>DescendantProducts</cite> then for all new particle entries in the <cite>DescendantProducts</cite> the component values for that property are copied from the parents specified in the <cite>DescendantProducts</cite>.</p>
+<p>Note that the decision to copy property values from a parent particle or from a <cite>DescendantProducts</cite> entry is taken property wise for all particles for all components of the property.
+If finer control is required, e.g. to inherit particle properties on a per particle or per component level, then the user should specify the property in the <cite>DescendantProducts</cite> instance and populate the new properties for all particles and components in the <cite>ParticleLoop</cite> kernel which is responsible for populating the entries in the <cite>DescendantProducts</cite> instance.</p>
+</section>
+<section id="property-ordering">
+<h3>Property Ordering<a class="headerlink" href="#property-ordering" title="Link to this heading">#</a></h3>
+<p>In the <cite>ParticleLoop</cite> kernel which sets the properties of the new products the property, and component, are specified by an integer index instead of the <cite>Sym</cite> objects used in host code.
+The ordering of the properties is defined as the order in which particle properties are specified for the <cite>DescendantProducts</cite> specification.
+This ordering is contiguous within all properties of the same data type, e.g. if two INT properties are specified then the integer properties are indexed with 0 and 1 and if three REAL properties are specified then the real valued properties are indexed 0,1 and 2.
+Interlacing of INT and REAL properties in the specification is ignored, the properties are indexed within the set of properties that have the same type in the order they are specified.</p>
+</section>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h2>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-number">Listing 8 </span><span class="caption-text">Example creating particles in a ParticleLoop and adding the new particle to a ParticleGroup.</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">descendant_products_example</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="cm">/* For this example we assume that the particle group has the following REAL</span>
+<span class="cm">     and INT properties with the specified number of components:</span>
+<span class="cm">    </span>
+<span class="cm">     REAL</span>
+<span class="cm">     ----</span>
+<span class="cm">      P 2 (positions)</span>
+<span class="cm">      V 3</span>
+<span class="cm">      Q 1</span>
+<span class="cm">    </span>
+<span class="cm">     INT</span>
+<span class="cm">     ---</span>
+<span class="cm">     CELL_ID 1 (cell id)</span>
+<span class="cm">     ID 1</span>
+<span class="cm">   */</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="cm">/*</span>
+<span class="cm">   Example print output with 5 particles in particle_group:</span>
+
+<span class="cm">  particle_group-&gt;print(</span>
+<span class="cm">    Sym&lt;REAL&gt;(&quot;P&quot;),</span>
+<span class="cm">    Sym&lt;REAL&gt;(&quot;V&quot;),</span>
+<span class="cm">    Sym&lt;REAL&gt;(&quot;Q&quot;),</span>
+<span class="cm">    Sym&lt;INT&gt;(&quot;CELL_ID&quot;),</span>
+<span class="cm">    Sym&lt;INT&gt;(&quot;ID&quot;)</span>
+<span class="cm">  );</span>
+<span class="cm">    </span>
+<span class="cm">================================================================================</span>
+<span class="cm">------- 194 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 0.503483 3.132274 | -1.029170 -0.238606 0.833977 | 1.000000 | 194 | 3 |</span>
+<span class="cm">------- 205 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 3.443890 3.179283 | -1.879651 -0.262682 -0.862215 | 1.000000 | 205 | 2 |</span>
+<span class="cm">------- 217 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 2.443217 3.438988 | 1.305861 -1.304251 -0.096116 | 1.000000 | 217 | 1 |</span>
+<span class="cm">------- 285 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 3.271273 4.276710 | -0.101299 -0.826377 0.081399 | 1.000000 | 285 | 0 |</span>
+<span class="cm">------- 419 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 0.993615 6.648731 | -0.338175 0.151852 -1.346172 | 1.000000 | 419 | 4 |</span>
+<span class="cm">================================================================================</span>
+<span class="cm">  */</span>
+
+<span class="w">  </span><span class="c1">// We create a DescendantProducts with the following specification.</span>
+<span class="w">  </span><span class="c1">// The number of components for a property must match the number of</span>
+<span class="w">  </span><span class="c1">// components in the ParticleGroup the products are added to.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">product_spec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">product_matrix_spec</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleSpec</span><span class="p">(</span>
+<span class="w">      </span><span class="n">ParticleProp</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">3</span><span class="p">),</span>
+<span class="w">      </span><span class="n">ParticleProp</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Q&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="w">      </span><span class="n">ParticleProp</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">INT</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;ID&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="cm">/* Re-visiting the properties in the particle group and the product</span>
+<span class="cm">     specification:</span>
+
+<span class="cm">    REAL</span>
+<span class="cm">    ----</span>
+<span class="cm">    P: Is a ParticleGroup property not in the product spec therefore the values</span>
+<span class="cm">       will be copied from the parent particles.</span>
+<span class="cm">    V: Is defined in the product spec and the values set in the</span>
+<span class="cm">       DescendantProducts will be used for the new particles.</span>
+<span class="cm">    Q: Is defined in the product spec and the values set in the</span>
+<span class="cm">       DescendantProducts will be used for the new particles.</span>
+<span class="cm">    </span>
+<span class="cm">    INT</span>
+<span class="cm">    ---</span>
+<span class="cm">    CELL_ID: Is a ParticleGroup property not in the product spec therefore the</span>
+<span class="cm">             values will be copied from the parent particles.</span>
+<span class="cm">    ID: Is defined in the product spec and the values set in the</span>
+<span class="cm">    DescendantProducts will be used for the new particles.</span>
+<span class="cm">  */</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Create a DescendantProducts with the above product spec for at most 2</span>
+<span class="w">  </span><span class="c1">// products per parent particle.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num_products_per_particle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">dp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">DescendantProducts</span><span class="o">&gt;</span><span class="p">(</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">sycl_target</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">product_spec</span><span class="p">,</span>
+<span class="w">    </span><span class="n">num_products_per_particle</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Define a ParticleLoop which creates the products from the parent</span>
+<span class="w">  </span><span class="c1">// particles.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">DP</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">parent_index</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">Q</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">ID</span>
+<span class="w">    </span><span class="p">){</span>
+<span class="w">      </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">childx</span><span class="o">=</span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">childx</span><span class="o">&lt;</span><span class="n">num_products_per_particle</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">childx</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="c1">// Enable this product by calling set_parent</span>
+<span class="w">        </span><span class="n">DP</span><span class="p">.</span><span class="n">set_parent</span><span class="p">(</span><span class="n">parent_index</span><span class="p">,</span><span class="w"> </span><span class="n">childx</span><span class="p">);</span>
+<span class="w">        </span>
+<span class="w">        </span><span class="c1">// The V property was the first REAL product we specified and therefore</span>
+<span class="w">        </span><span class="c1">// has property index 0 for at_real.</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">V_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">dimx</span><span class="o">=</span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">&lt;</span><span class="mi">3</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">++</span><span class="p">){</span>
+<span class="w">          </span><span class="c1">// Copy V from parent but negate the sign.</span>
+<span class="w">          </span><span class="n">DP</span><span class="p">.</span><span class="n">at_real</span><span class="p">(</span><span class="n">parent_index</span><span class="p">,</span><span class="w"> </span><span class="n">childx</span><span class="p">,</span><span class="w"> </span><span class="n">V_index</span><span class="p">,</span><span class="w"> </span><span class="n">dimx</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-1.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">dimx</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// The Q property was the second REAL product specified and hence has</span>
+<span class="w">        </span><span class="c1">// property index 1 for set_real.</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Q_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// Simply copy the parent Q value in this kernel.</span>
+<span class="w">        </span><span class="n">DP</span><span class="p">.</span><span class="n">at_real</span><span class="p">(</span><span class="n">parent_index</span><span class="p">,</span><span class="w"> </span><span class="n">childx</span><span class="p">,</span><span class="w"> </span><span class="n">Q_index</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Q</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// The ID property is the first INT property we specified and hence has</span>
+<span class="w">        </span><span class="c1">// index 0 for at_int.</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ID_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// Copy parent ID but modify it.</span>
+<span class="w">        </span><span class="n">DP</span><span class="p">.</span><span class="n">at_int</span><span class="p">(</span><span class="n">parent_index</span><span class="p">,</span><span class="w"> </span><span class="n">childx</span><span class="p">,</span><span class="w"> </span><span class="n">ID_index</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">ID</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">          </span><span class="o">-</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">childx</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">write</span><span class="p">(</span><span class="n">dp</span><span class="p">),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">ParticleLoopIndex</span><span class="p">{}),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Q&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">INT</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;ID&quot;</span><span class="p">))</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Before a loop is executed that accesses a DescendantProducts data</span>
+<span class="w">  </span><span class="c1">// structure the reset method must be called with the number of particles in</span>
+<span class="w">  </span><span class="c1">// the iteration set of the loop.</span>
+<span class="w">  </span><span class="n">dp</span><span class="o">-&gt;</span><span class="n">reset</span><span class="p">(</span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">get_npart_local</span><span class="p">());</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Execute the loop to create the products.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Finally add the new products to the ParticleGroup.</span>
+<span class="w">  </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">add_particles_local</span><span class="p">(</span><span class="n">dp</span><span class="p">);</span>
+
+<span class="w">  </span><span class="cm">/* Example print output with 5 particles in particle_group:</span>
+
+<span class="cm">  particle_group-&gt;print(</span>
+<span class="cm">    Sym&lt;REAL&gt;(&quot;P&quot;),</span>
+<span class="cm">    Sym&lt;REAL&gt;(&quot;V&quot;),</span>
+<span class="cm">    Sym&lt;REAL&gt;(&quot;Q&quot;),</span>
+<span class="cm">    Sym&lt;INT&gt;(&quot;CELL_ID&quot;),</span>
+<span class="cm">    Sym&lt;INT&gt;(&quot;ID&quot;)</span>
+<span class="cm">  );</span>
+
+<span class="cm">================================================================================</span>
+<span class="cm">------- 194 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 0.503483 3.132274 | -1.029170 -0.238606 0.833977 | 1.000000 | 194 | 3 |</span>
+<span class="cm">| 0.503483 3.132274 | 1.029170 0.238606 -0.833977 | 1.000000 | 194 | -3 |</span>
+<span class="cm">| 0.503483 3.132274 | 1.029170 0.238606 -0.833977 | 1.000000 | 194 | -103 |</span>
+<span class="cm">------- 205 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 3.443890 3.179283 | -1.879651 -0.262682 -0.862215 | 1.000000 | 205 | 2 |</span>
+<span class="cm">| 3.443890 3.179283 | 1.879651 0.262682 0.862215 | 1.000000 | 205 | -102 |</span>
+<span class="cm">| 3.443890 3.179283 | 1.879651 0.262682 0.862215 | 1.000000 | 205 | -2 |</span>
+<span class="cm">------- 217 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 2.443217 3.438988 | 1.305861 -1.304251 -0.096116 | 1.000000 | 217 | 1 |</span>
+<span class="cm">| 2.443217 3.438988 | -1.305861 1.304251 0.096116 | 1.000000 | 217 | -1 |</span>
+<span class="cm">| 2.443217 3.438988 | -1.305861 1.304251 0.096116 | 1.000000 | 217 | -101 |</span>
+<span class="cm">------- 285 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 3.271273 4.276710 | -0.101299 -0.826377 0.081399 | 1.000000 | 285 | 0 |</span>
+<span class="cm">| 3.271273 4.276710 | 0.101299 0.826377 -0.081399 | 1.000000 | 285 | -100 |</span>
+<span class="cm">| 3.271273 4.276710 | 0.101299 0.826377 -0.081399 | 1.000000 | 285 | 0 |</span>
+<span class="cm">------- 419 -------</span>
+<span class="cm">| P | V | Q | CELL_ID | ID |</span>
+<span class="cm">| 0.993615 6.648731 | -0.338175 0.151852 -1.346172 | 1.000000 | 419 | 4 |</span>
+<span class="cm">| 0.993615 6.648731 | 0.338175 -0.151852 1.346172 | 1.000000 | 419 | -4 |</span>
+<span class="cm">| 0.993615 6.648731 | 0.338175 -0.151852 1.346172 | 1.000000 | 419 | -104 |</span>
+<span class="cm">================================================================================</span>
+<span class="cm">  */</span>
+
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="particle_loop.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Particle Loop</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="particle_sub_group.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Particle Sub Group</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-new-particles">Properties of New Particles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#property-ordering">Property Ordering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/concept/particle_products.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2022, UKAEA.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/tmp/repo-checkout/NESO-Particles/include</compoundname>
+    <innerfile refid="access_8hpp">access.hpp</innerfile>
+    <innerfile refid="boundary__conditions_8hpp">boundary_conditions.hpp</innerfile>
+    <innerfile refid="cartesian__mesh_8hpp">cartesian_mesh.hpp</innerfile>
+    <innerfile refid="cell__binning_8hpp">cell_binning.hpp</innerfile>
+    <innerfile refid="cell__dat_8hpp">cell_dat.hpp</innerfile>
+    <innerfile refid="cell__dat__compression_8hpp">cell_dat_compression.hpp</innerfile>
+    <innerfile refid="cell__dat__move_8hpp">cell_dat_move.hpp</innerfile>
+    <innerfile refid="communication_8hpp">communication.hpp</innerfile>
+    <innerfile refid="compute__target_8hpp">compute_target.hpp</innerfile>
+    <innerfile refid="departing__particle__identification_8hpp">departing_particle_identification.hpp</innerfile>
+    <innerfile refid="domain_8hpp">domain.hpp</innerfile>
+    <innerfile refid="global__mapping_8hpp">global_mapping.hpp</innerfile>
+    <innerfile refid="global__move_8hpp">global_move.hpp</innerfile>
+    <innerfile refid="global__move__exchange_8hpp">global_move_exchange.hpp</innerfile>
+    <innerfile refid="local__mapping_8hpp">local_mapping.hpp</innerfile>
+    <innerfile refid="local__move_8hpp">local_move.hpp</innerfile>
+    <innerfile refid="mesh__hierarchy_8hpp">mesh_hierarchy.hpp</innerfile>
+    <innerfile refid="mesh__interface_8hpp">mesh_interface.hpp</innerfile>
+    <innerfile refid="mesh__interface__local__decomp_8hpp">mesh_interface_local_decomp.hpp</innerfile>
+    <innerfile refid="neso__particles_8hpp">neso_particles.hpp</innerfile>
+    <innerfile refid="packing__unpacking_8hpp">packing_unpacking.hpp</innerfile>
+    <innerfile refid="parallel__initialisation_8hpp">parallel_initialisation.hpp</innerfile>
+    <innerfile refid="particle__dat_8hpp">particle_dat.hpp</innerfile>
+    <innerfile refid="particle__group_8hpp">particle_group.hpp</innerfile>
+    <innerfile refid="particle__io_8hpp">particle_io.hpp</innerfile>
+    <innerfile refid="particle__remover_8hpp">particle_remover.hpp</innerfile>
+    <innerfile refid="particle__set_8hpp">particle_set.hpp</innerfile>
+    <innerfile refid="particle__spec_8hpp">particle_spec.hpp</innerfile>
+    <innerfile refid="profiling_8hpp">profiling.hpp</innerfile>
+    <innerfile refid="typedefs_8hpp">typedefs.hpp</innerfile>
+    <innerfile refid="utility_8hpp">utility.hpp</innerfile>
+    <innerfile refid="utility__mesh__hierarchy__plotting_8hpp">utility_mesh_hierarchy_plotting.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/"/>
+  </compounddef>
+</doxygen>

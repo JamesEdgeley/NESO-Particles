@@ -1,0 +1,152 @@
+\hypertarget{namespaceNESO_1_1Particles_1_1Access}{}\doxysection{NESO\+::Particles\+::Access Namespace Reference}
+\label{namespaceNESO_1_1Particles_1_1Access}\index{NESO::Particles::Access@{NESO::Particles::Access}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1CellDat}{Cell\+Dat}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1CellDatConst}{Cell\+Dat\+Const}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1DescendantProducts}{Descendant\+Products}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1GlobalArray}{Global\+Array}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1LocalArray}{Local\+Array}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1LoopIndex}{Loop\+Index}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1ParticleDat}{Particle\+Dat}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix}{Product\+Matrix}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1SymVector}{Sym\+Vector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1AccessGeneric}{Access\+Generic}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Read}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Write}{Write}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Add}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Min}{Min}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Max}{Max}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Read}}$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a5ac4ad4b7778690c9189204fbc612c14}{read}} (T t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Write}{Write}}$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_ab23cc37df2a295331f0390b81c7ff6e7}{write}} (T t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Add}}$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a70dc48e6380d04b2afdf8c644e44e2e8}{add}} (T t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Min}{Min}}$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a1241d8db57a1cf3c8a5ac101bb058b3a}{min}} (T t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Max}{Max}}$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a42fc14049b4d594f610ad62b9100aac7}{max}} (T t)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Types and functions relating to access descriptors for loops. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Access_a70dc48e6380d04b2afdf8c644e44e2e8}\label{namespaceNESO_1_1Particles_1_1Access_a70dc48e6380d04b2afdf8c644e44e2e8}} 
+\index{NESO::Particles::Access@{NESO::Particles::Access}!add@{add}}
+\index{add@{add}!NESO::Particles::Access@{NESO::Particles::Access}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Add}}$<$T$>$ NESO\+::\+Particles\+::\+Access\+::add (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function that allows a loop to be constructed with a write parameter which is atomic addition passed like\+:
+
+Access\+::add(object)
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Object to pass with atomic add access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Access\+::\+Add}} object that wraps passed object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Access_a42fc14049b4d594f610ad62b9100aac7}\label{namespaceNESO_1_1Particles_1_1Access_a42fc14049b4d594f610ad62b9100aac7}} 
+\index{NESO::Particles::Access@{NESO::Particles::Access}!max@{max}}
+\index{max@{max}!NESO::Particles::Access@{NESO::Particles::Access}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Max}{Max}}$<$T$>$ NESO\+::\+Particles\+::\+Access\+::max (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function that allows a loop to be constructed with a write parameter which is atomic maximum passed like\+:
+
+Access\+::max(object)
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Object to pass with atomic max access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Max}{Access\+::\+Max}} object that wraps passed object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Access_a1241d8db57a1cf3c8a5ac101bb058b3a}\label{namespaceNESO_1_1Particles_1_1Access_a1241d8db57a1cf3c8a5ac101bb058b3a}} 
+\index{NESO::Particles::Access@{NESO::Particles::Access}!min@{min}}
+\index{min@{min}!NESO::Particles::Access@{NESO::Particles::Access}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Min}{Min}}$<$T$>$ NESO\+::\+Particles\+::\+Access\+::min (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function that allows a loop to be constructed with a write parameter which is atomic minimum passed like\+:
+
+Access\+::min(object)
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Object to pass with atomic min access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Min}{Access\+::\+Min}} object that wraps passed object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Access_a5ac4ad4b7778690c9189204fbc612c14}\label{namespaceNESO_1_1Particles_1_1Access_a5ac4ad4b7778690c9189204fbc612c14}} 
+\index{NESO::Particles::Access@{NESO::Particles::Access}!read@{read}}
+\index{read@{read}!NESO::Particles::Access@{NESO::Particles::Access}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Read}}$<$T$>$ NESO\+::\+Particles\+::\+Access\+::read (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function that allows a loop to be constructed with a read-\/only parameter passed like\+:
+
+Access\+::read(object)
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Object to pass with read-\/only access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Access\+::\+Read}} object that wraps passed object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Access_ab23cc37df2a295331f0390b81c7ff6e7}\label{namespaceNESO_1_1Particles_1_1Access_ab23cc37df2a295331f0390b81c7ff6e7}} 
+\index{NESO::Particles::Access@{NESO::Particles::Access}!write@{write}}
+\index{write@{write}!NESO::Particles::Access@{NESO::Particles::Access}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Write}{Write}}$<$T$>$ NESO\+::\+Particles\+::\+Access\+::write (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function that allows a loop to be constructed with a write parameter passed like\+:
+
+Access\+::write(object)
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Object to pass with write access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Write}{Access\+::\+Write}} object that wraps passed object. 
+\end{DoxyReturn}

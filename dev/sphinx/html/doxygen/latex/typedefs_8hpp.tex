@@ -1,0 +1,181 @@
+\hypertarget{typedefs_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/typedefs.hpp File Reference}
+\label{typedefs_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/typedefs.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/typedefs.hpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$mpi.\+h$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for typedefs.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{typedefs_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{typedefs_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_ac780e64fe76ab7e5f6b07c55de92d018}{NESOASSERT}}(expr,  msg)~  \mbox{\hyperlink{namespaceNESO_1_1Particles_a58a7701e1c16ffe089d968f0820e741c}{NESO\+::\+Particles\+::neso\+\_\+particles\+\_\+assert}}(\#expr, expr, \+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, msg)
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a6fa47dac66424a8e3c836d769295213b}{NESOWARN}}(expr,  msg)~  \{\}
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a74e75242132eaabbc1c512488a135926}{MIN}}(x,  y)~(((x) $<$ (y)) ? (x) \+: (y))
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_aacc3ee1a7f283f8ef65cea31f4436a95}{MAX}}(x,  y)~(((x) $<$ (y)) ? (y) \+: (x))
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a996f7be338ccb40d1a2a5abc1ad61759}{ABS}}(x)~(((x) $>$= 0) ? (x) \+: (-\/(x)))
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a5d1a8c9c922159fa89383b1edfff480a}{NESO\+\_\+\+PARTICLES\+\_\+\+BLOCK\+\_\+\+SIZE}}~1024
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_ac7b3da8d0a6f346d5cc29efac55b8f8f}{NESO\+\_\+\+PARTICLES\+\_\+\+DEVICE\+\_\+\+LABEL}}~\char`\"{}GPU\char`\"{}
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a49185d8c3d0463cb2e8b74ce3c3c748b}{NESO\+\_\+\+PARTICLES\+\_\+\+ITER\+\_\+\+PARTICLES}}~1
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_af46a30761be3bf33a5795d727a6b265b}{NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+START}}~  if ((((INT)idx) \% pl\+\_\+stride) $<$ (pl\+\_\+npart\+\_\+cell\mbox{[}((INT)idx) / pl\+\_\+stride\mbox{]})) \{
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a9399b4a60fb59dc4fb64afec7024b94a}{NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+END}}~\}
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_a4bcfdab5451c0629e1791d2daf8577e0}{NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+CELL}}~(((INT)idx) / pl\+\_\+stride)
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_ae79ed2a4a60edec3d2099571143ae6c9}{NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+LAYER}}~(((INT)idx) \% pl\+\_\+stride)
+\item 
+\#define \mbox{\hyperlink{typedefs_8hpp_ad891d028b019d7d42d0b62d3bf17bd4d}{DEBUG\+\_\+\+OOB\+\_\+\+WIDTH}}~1000
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef double \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{NESO\+::\+Particles\+::\+REAL}}
+\item 
+typedef int64\+\_\+t \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{NESO\+::\+Particles\+::\+INT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceNESO_1_1Particles_a58a7701e1c16ffe089d968f0820e741c}{NESO\+::\+Particles\+::neso\+\_\+particles\+\_\+assert}} (const char $\ast$expr\+\_\+str, bool expr, const char $\ast$file, int line, const char $\ast$msg)
+\item 
+void \mbox{\hyperlink{namespaceNESO_1_1Particles_a15e925bc0a6552f710049633183c01b4}{NESO\+::\+Particles\+::neso\+\_\+particles\+\_\+warn}} (const char $\ast$expr\+\_\+str, bool expr, const char $\ast$file, int line, const char $\ast$msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a7e70e7e0a6406d02bf26fa4963560685}{NESO\+::\+Particles\+::reverse\+\_\+argsort}} (const std\+::vector$<$ T $>$ \&array)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_a202a6eb226f05b938bd3773241b50f09}{NESO\+::\+Particles\+::get\+\_\+decomp\+\_\+1d}} (const T N\+\_\+compute\+\_\+units, const T N\+\_\+work\+\_\+items, const T work\+\_\+unit, T $\ast$rstart, T $\ast$rend)
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_a617e737f93036830a23e0b381e02c44b}{NESO\+::\+Particles\+::nprint\+\_\+recurse}} (int flag, U next)
+\item 
+{\footnotesize template$<$typename U , typename... T$>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_a56e0c9187a32f5a35f38e1af6910d45a}{NESO\+::\+Particles\+::nprint\+\_\+recurse}} (int flag, U next, T... args)
+\item 
+{\footnotesize template$<$typename... T$>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_a5c30c64658955dcc040138de5223791e}{NESO\+::\+Particles\+::nprint}} (T... args)
+\item 
+int \mbox{\hyperlink{namespaceNESO_1_1Particles_a299d1b6d8c08acb7f8e1fb6fa06fa887}{NESO\+::\+Particles\+::get\+\_\+required\+\_\+mpi\+\_\+thread\+\_\+level}} ()
+\item 
+void \mbox{\hyperlink{namespaceNESO_1_1Particles_a0dd4eceaa7f7b2715030fbdda84cbaf8}{NESO\+::\+Particles\+::test\+\_\+provided\+\_\+thread\+\_\+level}} (const int level)
+\item 
+void \mbox{\hyperlink{namespaceNESO_1_1Particles_a182b23c27c2467294e51b3bbff8869a3}{NESO\+::\+Particles\+::initialise\+\_\+mpi}} (int $\ast$argc, char $\ast$$\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{typedefs_8hpp_a996f7be338ccb40d1a2a5abc1ad61759}\label{typedefs_8hpp_a996f7be338ccb40d1a2a5abc1ad61759}} 
+\index{typedefs.hpp@{typedefs.hpp}!ABS@{ABS}}
+\index{ABS@{ABS}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{ABS}{ABS}}
+{\footnotesize\ttfamily \#define ABS(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((x) $>$= 0) ? (x) \+: (-\/(x)))}
+
+\mbox{\Hypertarget{typedefs_8hpp_ad891d028b019d7d42d0b62d3bf17bd4d}\label{typedefs_8hpp_ad891d028b019d7d42d0b62d3bf17bd4d}} 
+\index{typedefs.hpp@{typedefs.hpp}!DEBUG\_OOB\_WIDTH@{DEBUG\_OOB\_WIDTH}}
+\index{DEBUG\_OOB\_WIDTH@{DEBUG\_OOB\_WIDTH}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_OOB\_WIDTH}{DEBUG\_OOB\_WIDTH}}
+{\footnotesize\ttfamily \#define DEBUG\+\_\+\+OOB\+\_\+\+WIDTH~1000}
+
+\mbox{\Hypertarget{typedefs_8hpp_aacc3ee1a7f283f8ef65cea31f4436a95}\label{typedefs_8hpp_aacc3ee1a7f283f8ef65cea31f4436a95}} 
+\index{typedefs.hpp@{typedefs.hpp}!MAX@{MAX}}
+\index{MAX@{MAX}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define MAX(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((x) $<$ (y)) ? (y) \+: (x))}
+
+\mbox{\Hypertarget{typedefs_8hpp_a74e75242132eaabbc1c512488a135926}\label{typedefs_8hpp_a74e75242132eaabbc1c512488a135926}} 
+\index{typedefs.hpp@{typedefs.hpp}!MIN@{MIN}}
+\index{MIN@{MIN}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define MIN(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((x) $<$ (y)) ? (x) \+: (y))}
+
+\mbox{\Hypertarget{typedefs_8hpp_a5d1a8c9c922159fa89383b1edfff480a}\label{typedefs_8hpp_a5d1a8c9c922159fa89383b1edfff480a}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_BLOCK\_SIZE@{NESO\_PARTICLES\_BLOCK\_SIZE}}
+\index{NESO\_PARTICLES\_BLOCK\_SIZE@{NESO\_PARTICLES\_BLOCK\_SIZE}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_BLOCK\_SIZE}{NESO\_PARTICLES\_BLOCK\_SIZE}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+BLOCK\+\_\+\+SIZE~1024}
+
+\mbox{\Hypertarget{typedefs_8hpp_ac7b3da8d0a6f346d5cc29efac55b8f8f}\label{typedefs_8hpp_ac7b3da8d0a6f346d5cc29efac55b8f8f}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_DEVICE\_LABEL@{NESO\_PARTICLES\_DEVICE\_LABEL}}
+\index{NESO\_PARTICLES\_DEVICE\_LABEL@{NESO\_PARTICLES\_DEVICE\_LABEL}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_DEVICE\_LABEL}{NESO\_PARTICLES\_DEVICE\_LABEL}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+DEVICE\+\_\+\+LABEL~\char`\"{}GPU\char`\"{}}
+
+\mbox{\Hypertarget{typedefs_8hpp_a49185d8c3d0463cb2e8b74ce3c3c748b}\label{typedefs_8hpp_a49185d8c3d0463cb2e8b74ce3c3c748b}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_ITER\_PARTICLES@{NESO\_PARTICLES\_ITER\_PARTICLES}}
+\index{NESO\_PARTICLES\_ITER\_PARTICLES@{NESO\_PARTICLES\_ITER\_PARTICLES}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_ITER\_PARTICLES}{NESO\_PARTICLES\_ITER\_PARTICLES}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+ITER\+\_\+\+PARTICLES~1}
+
+\mbox{\Hypertarget{typedefs_8hpp_a4bcfdab5451c0629e1791d2daf8577e0}\label{typedefs_8hpp_a4bcfdab5451c0629e1791d2daf8577e0}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_KERNEL\_CELL@{NESO\_PARTICLES\_KERNEL\_CELL}}
+\index{NESO\_PARTICLES\_KERNEL\_CELL@{NESO\_PARTICLES\_KERNEL\_CELL}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_KERNEL\_CELL}{NESO\_PARTICLES\_KERNEL\_CELL}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+CELL~(((INT)idx) / pl\+\_\+stride)}
+
+\mbox{\Hypertarget{typedefs_8hpp_a9399b4a60fb59dc4fb64afec7024b94a}\label{typedefs_8hpp_a9399b4a60fb59dc4fb64afec7024b94a}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_KERNEL\_END@{NESO\_PARTICLES\_KERNEL\_END}}
+\index{NESO\_PARTICLES\_KERNEL\_END@{NESO\_PARTICLES\_KERNEL\_END}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_KERNEL\_END}{NESO\_PARTICLES\_KERNEL\_END}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+END~\}}
+
+\mbox{\Hypertarget{typedefs_8hpp_ae79ed2a4a60edec3d2099571143ae6c9}\label{typedefs_8hpp_ae79ed2a4a60edec3d2099571143ae6c9}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_KERNEL\_LAYER@{NESO\_PARTICLES\_KERNEL\_LAYER}}
+\index{NESO\_PARTICLES\_KERNEL\_LAYER@{NESO\_PARTICLES\_KERNEL\_LAYER}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_KERNEL\_LAYER}{NESO\_PARTICLES\_KERNEL\_LAYER}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+LAYER~(((INT)idx) \% pl\+\_\+stride)}
+
+\mbox{\Hypertarget{typedefs_8hpp_af46a30761be3bf33a5795d727a6b265b}\label{typedefs_8hpp_af46a30761be3bf33a5795d727a6b265b}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESO\_PARTICLES\_KERNEL\_START@{NESO\_PARTICLES\_KERNEL\_START}}
+\index{NESO\_PARTICLES\_KERNEL\_START@{NESO\_PARTICLES\_KERNEL\_START}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESO\_PARTICLES\_KERNEL\_START}{NESO\_PARTICLES\_KERNEL\_START}}
+{\footnotesize\ttfamily \#define NESO\+\_\+\+PARTICLES\+\_\+\+KERNEL\+\_\+\+START~  if ((((INT)idx) \% pl\+\_\+stride) $<$ (pl\+\_\+npart\+\_\+cell\mbox{[}((INT)idx) / pl\+\_\+stride\mbox{]})) \{}
+
+\mbox{\Hypertarget{typedefs_8hpp_ac780e64fe76ab7e5f6b07c55de92d018}\label{typedefs_8hpp_ac780e64fe76ab7e5f6b07c55de92d018}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESOASSERT@{NESOASSERT}}
+\index{NESOASSERT@{NESOASSERT}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESOASSERT}{NESOASSERT}}
+{\footnotesize\ttfamily \#define NESOASSERT(\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{msg }\end{DoxyParamCaption})~  \mbox{\hyperlink{namespaceNESO_1_1Particles_a58a7701e1c16ffe089d968f0820e741c}{NESO\+::\+Particles\+::neso\+\_\+particles\+\_\+assert}}(\#expr, expr, \+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+, msg)}
+
+This is a helper macro to call the function neso\+\_\+particles\+\_\+assert. Users should call this helper macro NESOASSERT like
+
+\mbox{\hyperlink{typedefs_8hpp_ac780e64fe76ab7e5f6b07c55de92d018}{NESOASSERT(conditional, message)}};
+
+To check conditionals within their code. \mbox{\Hypertarget{typedefs_8hpp_a6fa47dac66424a8e3c836d769295213b}\label{typedefs_8hpp_a6fa47dac66424a8e3c836d769295213b}} 
+\index{typedefs.hpp@{typedefs.hpp}!NESOWARN@{NESOWARN}}
+\index{NESOWARN@{NESOWARN}!typedefs.hpp@{typedefs.hpp}}
+\doxysubsubsection{\texorpdfstring{NESOWARN}{NESOWARN}}
+{\footnotesize\ttfamily \#define NESOWARN(\begin{DoxyParamCaption}\item[{}]{expr,  }\item[{}]{msg }\end{DoxyParamCaption})~  \{\}}
+
+This is a helper macro to call the function neso\+\_\+particles\+\_\+warn. Users should call this helper macro NESOWARN like
+
+\mbox{\hyperlink{typedefs_8hpp_a6fa47dac66424a8e3c836d769295213b}{NESOWARN(conditional, message)}};
+
+To check conditionals within their code. 

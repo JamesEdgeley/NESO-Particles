@@ -1,0 +1,60 @@
+\hypertarget{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor}{}\doxysection{NESO\+::Particles\+::Raw\+Pointer\+Column\+Major\+Row\+Accessor$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor}\index{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$@{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$}}
+
+
+{\ttfamily \#include $<$access.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor_a9626627cad428fad430644f631148cd5}{Raw\+Pointer\+Column\+Major\+Row\+Accessor}} (T $\ast$d\+\_\+ptr, const int stride)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorColumnAccessor}{Raw\+Pointer\+Column\+Major\+Column\+Accessor}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor_a37770bde800b50b41d62c0ea7e646ada}{operator\mbox{[}$\,$\mbox{]}}} (const int rowx)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Raw\+Pointer\+Column\+Major\+Row\+Accessor$<$ T $>$}
+
+One of a pair of classes that enable indexing like foo\mbox{[}row\mbox{]}\mbox{[}col\mbox{]} for an object foo which stores data in a column major format. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor_a9626627cad428fad430644f631148cd5}\label{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor_a9626627cad428fad430644f631148cd5}} 
+\index{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$@{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$}!RawPointerColumnMajorRowAccessor@{RawPointerColumnMajorRowAccessor}}
+\index{RawPointerColumnMajorRowAccessor@{RawPointerColumnMajorRowAccessor}!NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$@{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RawPointerColumnMajorRowAccessor()}{RawPointerColumnMajorRowAccessor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor}{NESO\+::\+Particles\+::\+Raw\+Pointer\+Column\+Major\+Row\+Accessor}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor}{Raw\+Pointer\+Column\+Major\+Row\+Accessor}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{d\+\_\+ptr,  }\item[{const int}]{stride }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create new instance to access data through a pointer which stores 2D data in a column major format using a given stride.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\+\_\+ptr} & Base Object to index into. \\
+\hline
+{\em stride} & Number of rows in the 2D object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor_a37770bde800b50b41d62c0ea7e646ada}\label{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor_a37770bde800b50b41d62c0ea7e646ada}} 
+\index{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$@{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$@{NESO::Particles::RawPointerColumnMajorRowAccessor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorColumnAccessor}{Raw\+Pointer\+Column\+Major\+Column\+Accessor}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor}{NESO\+::\+Particles\+::\+Raw\+Pointer\+Column\+Major\+Row\+Accessor}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{rowx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a \mbox{\hyperlink{classNESO_1_1Particles_1_1RawPointerColumnMajorColumnAccessor}{Raw\+Pointer\+Column\+Major\+Column\+Accessor}} instance which defines a subscript operator that can be used to access any column of the specified row.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rowx} & Row to provide access to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/access.\+hpp\end{DoxyCompactItemize}

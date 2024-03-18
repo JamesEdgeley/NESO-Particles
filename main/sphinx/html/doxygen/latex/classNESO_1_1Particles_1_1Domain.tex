@@ -1,0 +1,102 @@
+\hypertarget{classNESO_1_1Particles_1_1Domain}{}\doxysection{NESO\+::Particles\+::Domain Class Reference}
+\label{classNESO_1_1Particles_1_1Domain}\index{NESO::Particles::Domain@{NESO::Particles::Domain}}
+
+
+{\ttfamily \#include $<$domain.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_a7cc67be4e8caf9da5a47e6cc2ef53534}{Domain}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_a857652345bd54632079ac2e476a8d49e}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_ac37ba223a455d9a85a393910d75367b9}{Domain}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_af1414ddefa54150d126f00f41e5b747d}{HMesh\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_a336a2383ac3247f11f93a950ea40df04}{mesh}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a7556c18624e086cb8721c30ac70552a1}{Local\+Mapper\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_aab882997417a032c729e4768d1ce56d6}{local\+\_\+mapper}}=\mbox{\hyperlink{namespaceNESO_1_1Particles_ab99d5d2044bb3ccf4467b3d8f17c9dec}{Dummy\+Local\+Mapper}}())
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_abaffc031655fa012ee764c2755ee7115}{$\sim$\+Domain}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_af1414ddefa54150d126f00f41e5b747d}{HMesh\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_a336a2383ac3247f11f93a950ea40df04}{mesh}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} derived mesh instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a7556c18624e086cb8721c30ac70552a1}{Local\+Mapper\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain_aab882997417a032c729e4768d1ce56d6}{local\+\_\+mapper}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper}{Local\+Mapper}} derived class instance to bin particles into mesh cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A domain wraps a mesh with useful methods such as how to bin particles into local cells on that mesh type. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1Domain_a7cc67be4e8caf9da5a47e6cc2ef53534}\label{classNESO_1_1Particles_1_1Domain_a7cc67be4e8caf9da5a47e6cc2ef53534}} 
+\index{NESO::Particles::Domain@{NESO::Particles::Domain}!Domain@{Domain}}
+\index{Domain@{Domain}!NESO::Particles::Domain@{NESO::Particles::Domain}}
+\doxysubsubsection{\texorpdfstring{Domain()}{Domain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Domain\+::\+Domain (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1Domain_ac37ba223a455d9a85a393910d75367b9}\label{classNESO_1_1Particles_1_1Domain_ac37ba223a455d9a85a393910d75367b9}} 
+\index{NESO::Particles::Domain@{NESO::Particles::Domain}!Domain@{Domain}}
+\index{Domain@{Domain}!NESO::Particles::Domain@{NESO::Particles::Domain}}
+\doxysubsubsection{\texorpdfstring{Domain()}{Domain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Domain\+::\+Domain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_af1414ddefa54150d126f00f41e5b747d}{HMesh\+Shared\+Ptr}}}]{mesh,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a7556c18624e086cb8721c30ac70552a1}{Local\+Mapper\+Shared\+Ptr}}}]{local\+\_\+mapper = {\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_ab99d5d2044bb3ccf4467b3d8f17c9dec}{Dummy\+Local\+Mapper}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} derived mesh object. \\
+\hline
+{\em local\+\_\+mapper} & Object to map particle positions into mesh cells. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1Domain_abaffc031655fa012ee764c2755ee7115}\label{classNESO_1_1Particles_1_1Domain_abaffc031655fa012ee764c2755ee7115}} 
+\index{NESO::Particles::Domain@{NESO::Particles::Domain}!````~Domain@{$\sim$Domain}}
+\index{````~Domain@{$\sim$Domain}!NESO::Particles::Domain@{NESO::Particles::Domain}}
+\doxysubsubsection{\texorpdfstring{$\sim$Domain()}{~Domain()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Domain\+::$\sim$\+Domain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1Domain_a857652345bd54632079ac2e476a8d49e}\label{classNESO_1_1Particles_1_1Domain_a857652345bd54632079ac2e476a8d49e}} 
+\index{NESO::Particles::Domain@{NESO::Particles::Domain}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::Domain@{NESO::Particles::Domain}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}}\& NESO\+::\+Particles\+::\+Domain\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Domain}{Domain}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1Domain_aab882997417a032c729e4768d1ce56d6}\label{classNESO_1_1Particles_1_1Domain_aab882997417a032c729e4768d1ce56d6}} 
+\index{NESO::Particles::Domain@{NESO::Particles::Domain}!local\_mapper@{local\_mapper}}
+\index{local\_mapper@{local\_mapper}!NESO::Particles::Domain@{NESO::Particles::Domain}}
+\doxysubsubsection{\texorpdfstring{local\_mapper}{local\_mapper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a7556c18624e086cb8721c30ac70552a1}{Local\+Mapper\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Domain\+::local\+\_\+mapper}
+
+
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper}{Local\+Mapper}} derived class instance to bin particles into mesh cells. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1Domain_a336a2383ac3247f11f93a950ea40df04}\label{classNESO_1_1Particles_1_1Domain_a336a2383ac3247f11f93a950ea40df04}} 
+\index{NESO::Particles::Domain@{NESO::Particles::Domain}!mesh@{mesh}}
+\index{mesh@{mesh}!NESO::Particles::Domain@{NESO::Particles::Domain}}
+\doxysubsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_af1414ddefa54150d126f00f41e5b747d}{HMesh\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Domain\+::mesh}
+
+
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} derived mesh instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{domain_8hpp}{domain.\+hpp}}\end{DoxyCompactItemize}

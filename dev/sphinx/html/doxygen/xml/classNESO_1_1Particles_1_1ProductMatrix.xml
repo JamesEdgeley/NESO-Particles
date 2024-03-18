@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ProductMatrix" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ProductMatrix</compoundname>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1DescendantProducts" prot="public" virt="non-virtual">NESO::Particles::DescendantProducts</derivedcompoundref>
+    <includes refid="product__matrix_8hpp" local="no">product_matrix.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1ProductMatrix_1accfc1abb2f69f7720d802ebc0e73117e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ParticleGroup</definition>
+        <argsstring></argsstring>
+        <name>ParticleGroup</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="431" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1ProductMatrix_1afebb1772502f56862f18d953fed55a1c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref></type>
+        <definition>ProductMatrixGetConst ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; ProductMatrix * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="433" column="3"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1ProductMatrix_1a860de4f83b61dce730da0e64edbf60c9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref></type>
+        <definition>ProductMatrixGet ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; ProductMatrix * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="436" column="34"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1ProductMatrix_1a710b2c5b5ae95808ff6fb8c025937ae3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref></type>
+        <definition>ProductMatrixGet ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; ProductMatrix * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="439" column="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1a4de28c1890fe75fe7dea47580a8eb920" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDevice&lt;REAL&gt; &gt; NESO::Particles::ProductMatrix::d_data_real</definition>
+        <argsstring></argsstring>
+        <name>d_data_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="444" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1acd8862302e451df9bf66deacd64b3036" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDevice&lt;INT&gt; &gt; NESO::Particles::ProductMatrix::d_data_int</definition>
+        <argsstring></argsstring>
+        <name>d_data_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="445" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1ae42ded6981e0e85018ea7e619995aa88" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDeviceHost&lt;int&gt; &gt; NESO::Particles::ProductMatrix::dh_offsets_real</definition>
+        <argsstring></argsstring>
+        <name>dh_offsets_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="446" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1a2e84197159db429c900407a9c2a046da" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDeviceHost&lt;int&gt; &gt; NESO::Particles::ProductMatrix::dh_offsets_int</definition>
+        <argsstring></argsstring>
+        <name>dh_offsets_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="447" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::ProductMatrix::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>The <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> products are created on. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="462" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrix::num_products</definition>
+        <argsstring></argsstring>
+        <name>num_products</name>
+        <briefdescription>
+<para>The number of products stored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="464" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ProductMatrixSpec&gt; NESO::Particles::ProductMatrix::spec</definition>
+        <argsstring></argsstring>
+        <name>spec</name>
+        <briefdescription>
+<para>The specification of the products. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="466" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProductMatrix_1a7a85c983fe3d19e2a3a49fcd50db9ca1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref></type>
+        <definition>ProductMatrixGet NESO::Particles::ProductMatrix::impl_get</definition>
+        <argsstring>()</argsstring>
+        <name>impl_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="449" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="449" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProductMatrix_1a3bc081cdac6a89a5882917806845027c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref></type>
+        <definition>ProductMatrixGetConst NESO::Particles::ProductMatrix::impl_get_const</definition>
+        <argsstring>()</argsstring>
+        <name>impl_get_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="454" column="32" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="454" bodyend="458"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProductMatrix_1a1e99906277466047744de32bd3be98bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ProductMatrix::ProductMatrix</definition>
+        <argsstring>()=default</argsstring>
+        <name>ProductMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="468" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProductMatrix_1a9fee81f0ff3286fc1f4c72a6dd928b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> &amp;</type>
+        <definition>ProductMatrix&amp; NESO::Particles::ProductMatrix::operator=</definition>
+        <argsstring>(const ProductMatrix &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that the copy operator creates shallow copies of the array. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="473" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProductMatrix_1a99922a29e95d64ce9e8db21626a87372" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ProductMatrix::ProductMatrix</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, std::shared_ptr&lt; ProductMatrixSpec &gt; spec)</argsstring>
+        <name>ProductMatrix</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> &gt;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new product matrix on the <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref>. The reset method should be called with the desired number of output particles before a loop is executed which requires space for those output particles.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device on which particle loops will be executed using the product matrix. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A specification for the output particle properties. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="484" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="484" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProductMatrix_1aa1cab6680f0e17928d253ba02ebc581f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::ProductMatrix::reset</definition>
+        <argsstring>(const int num_products)</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1DescendantProducts_1accc49400b892df3bbeba560dab700fb0">reset</reimplementedby>
+        <param>
+          <type>const int</type>
+          <declname>num_products</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate space for a number of particle properties and fill the matrix with the default values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of output particles to set in matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="520" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="520" bodyend="558"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Type to store N products which can be passed to a <ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref>. Fundamentally this class allocates two matrices, one for REAL valued properties and one for INT value properties. These matrices are allocated column major. Each output particle populates a row in these two matrices. The column ordering is based on the ordering of properties and there components in the input particle specification. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NESO::Particles::DescendantProducts</label>
+        <link refid="classNESO_1_1Particles_1_1DescendantProducts"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ProductMatrix</label>
+        <link refid="classNESO_1_1Particles_1_1ProductMatrix"/>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="430" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="430" bodyend="559"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1acd8862302e451df9bf66deacd64b3036" prot="protected" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>d_data_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a4de28c1890fe75fe7dea47580a8eb920" prot="protected" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>d_data_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a2e84197159db429c900407a9c2a046da" prot="protected" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>dh_offsets_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1ae42ded6981e0e85018ea7e619995aa88" prot="protected" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>dh_offsets_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a7a85c983fe3d19e2a3a49fcd50db9ca1" prot="protected" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>impl_get</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a3bc081cdac6a89a5882917806845027c" prot="protected" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>impl_get_const</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>num_products</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a9fee81f0ff3286fc1f4c72a6dd928b8e" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1accfc1abb2f69f7720d802ebc0e73117e" prot="private" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>ParticleGroup</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1afebb1772502f56862f18d953fed55a1c" prot="private" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a860de4f83b61dce730da0e64edbf60c9" prot="private" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a710b2c5b5ae95808ff6fb8c025937ae3" prot="private" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a1e99906277466047744de32bd3be98bc" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>ProductMatrix</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a99922a29e95d64ce9e8db21626a87372" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>ProductMatrix</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1aa1cab6680f0e17928d253ba02ebc581f" prot="public" virt="virtual"><scope>NESO::Particles::ProductMatrix</scope><name>reset</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>spec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrix</scope><name>sycl_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

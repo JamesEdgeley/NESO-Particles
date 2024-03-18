@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1NDRangePeel1D" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::NDRangePeel1D</compoundname>
+    <includes refid="compute__target_8hpp" local="no">compute_target.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1NDRangePeel1D_1ace10098a8bd4b67a432ae5458af04058" prot="public" static="no" mutable="no">
+        <type>sycl::nd_range&lt; 1 &gt;</type>
+        <definition>sycl::nd_range&lt;1&gt; NESO::Particles::NDRangePeel1D::loop_main</definition>
+        <argsstring></argsstring>
+        <name>loop_main</name>
+        <briefdescription>
+<para>The main iteration set which does not need masking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="736" column="18" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1NDRangePeel1D_1affa4eced0e2023879643ea0c554817ca" prot="public" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool NESO::Particles::NDRangePeel1D::peel_exists</definition>
+        <argsstring></argsstring>
+        <name>peel_exists</name>
+        <briefdescription>
+<para>Bool to indicate if there is a peel loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="738" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="738" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1NDRangePeel1D_1a6b17a5d64e62a8f719211664295fbb95" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t NESO::Particles::NDRangePeel1D::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>Offset to apply to peel loop indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="740" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1NDRangePeel1D_1a1b95033b969cd755193922fde416f578" prot="public" static="no" mutable="no">
+        <type>sycl::nd_range&lt; 1 &gt;</type>
+        <definition>sycl::nd_range&lt;1&gt; NESO::Particles::NDRangePeel1D::loop_peel</definition>
+        <argsstring></argsstring>
+        <name>loop_peel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peel loop description. Indicies from the loop should have offset added to compute the global index. This loop should be masked by a conditional for the original loop bounds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="744" column="18" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="744" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main loop with peel loop for 1D nd_range. The peel loop should be masked to remove the workitems past the loop extents. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="734" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="734" bodyend="745"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1NDRangePeel1D_1ace10098a8bd4b67a432ae5458af04058" prot="public" virt="non-virtual"><scope>NESO::Particles::NDRangePeel1D</scope><name>loop_main</name></member>
+      <member refid="structNESO_1_1Particles_1_1NDRangePeel1D_1a1b95033b969cd755193922fde416f578" prot="public" virt="non-virtual"><scope>NESO::Particles::NDRangePeel1D</scope><name>loop_peel</name></member>
+      <member refid="structNESO_1_1Particles_1_1NDRangePeel1D_1a6b17a5d64e62a8f719211664295fbb95" prot="public" virt="non-virtual"><scope>NESO::Particles::NDRangePeel1D</scope><name>offset</name></member>
+      <member refid="structNESO_1_1Particles_1_1NDRangePeel1D_1affa4eced0e2023879643ea0c554817ca" prot="public" virt="non-virtual"><scope>NESO::Particles::NDRangePeel1D</scope><name>peel_exists</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

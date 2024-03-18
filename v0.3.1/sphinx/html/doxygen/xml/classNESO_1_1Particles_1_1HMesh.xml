@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1HMesh" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>NESO::Particles::HMesh</compoundname>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1CartesianHMesh" prot="public" virt="non-virtual">NESO::Particles::CartesianHMesh</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh" prot="public" virt="non-virtual">NESO::Particles::LocalDecompositionHMesh</derivedcompoundref>
+    <includes refid="mesh__interface_8hpp" local="no">mesh_interface.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a07e88fbd3fde82da445d5d03e1d29a2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>MPI_Comm</type>
+        <definition>virtual MPI_Comm NESO::Particles::HMesh::get_comm</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_comm</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a61e22ca1236760fc3c74a2ec6e978dde">get_comm</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a2f0983cb6f026176b939fd7c4de4efa3">get_comm</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the MPI communicator of the mesh.</para>
+<para><simplesect kind="return"><para>MPI communicator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="26" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a5a54487466baf12ce0697ed5dbca40f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int NESO::Particles::HMesh::get_ndim</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_ndim</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a687bf6d4cdaad64d640dee2e9034c244">get_ndim</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a4c6df7883453d097eeb5a153af369326">get_ndim</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of dimensions of the mesh.</para>
+<para><simplesect kind="return"><para>Number of mesh dimensions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="32" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a0074b083bd8ec1ac315f6c2daa63fd3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>std::vector&lt; int &gt; &amp;</type>
+        <definition>virtual std::vector&lt;int&gt;&amp; NESO::Particles::HMesh::get_dims</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_dims</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7e28ff09b2f53db3dcd41b20c9463df1">get_dims</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a1a898c1f7686b3e84dc119fbe2358318">get_dims</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Mesh dimensions.</para>
+<para><simplesect kind="return"><para>Mesh dimensions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="38" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a16d9b144b278a99ceeacf51f92407df9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int NESO::Particles::HMesh::get_subdivision_order</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_subdivision_order</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1ae8dea487a82a0879ea7ba80f0bbf9859">get_subdivision_order</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a098bee7aa761fac5de054ebce0bf527e">get_subdivision_order</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the subdivision order of the mesh.</para>
+<para><simplesect kind="return"><para>Subdivision order. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="44" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a9502fe682f0c46c43b02a0cdde9b36c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int NESO::Particles::HMesh::get_cell_count</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_cell_count</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a0250e153380bbc87ed4144afb6b2aef2">get_cell_count</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1aef97237c250f0c130daec4a5ea6fb110">get_cell_count</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total number of cells in the mesh.</para>
+<para><simplesect kind="return"><para>Total number of mesh cells. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="50" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a1ed691f0d27045975da1d955a27ff187" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double NESO::Particles::HMesh::get_cell_width_coarse</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_cell_width_coarse</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a3d29bd78564760990c858a58bb8b5ad2">get_cell_width_coarse</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1ae3926223baea2300378e4e93da3de7da">get_cell_width_coarse</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the mesh width of the coarse cells in the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>.</para>
+<para><simplesect kind="return"><para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> coarse cell width. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="56" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a8f7e74defa516008452d08fab1e50e31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double NESO::Particles::HMesh::get_cell_width_fine</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_cell_width_fine</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7faf49e285d0e991b57ced2dfaff01d5">get_cell_width_fine</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a5b5ff9826830d2d7bfd22768736ca675">get_cell_width_fine</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the mesh width of the fine cells in the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>.</para>
+<para><simplesect kind="return"><para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> fine cell width. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="62" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a33715117ccdc60c35b5fd847b9aabee6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double NESO::Particles::HMesh::get_inverse_cell_width_coarse</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_inverse_cell_width_coarse</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a40d816dea521c9409587511fb87c821c">get_inverse_cell_width_coarse</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a2a49a7e7dbe342e131de260e9c140469">get_inverse_cell_width_coarse</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the inverse mesh width of the coarse cells in the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>.</para>
+<para><simplesect kind="return"><para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> inverse coarse cell width. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="68" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a7f67ffe6dbdf0179323ff5ff57feffec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double NESO::Particles::HMesh::get_inverse_cell_width_fine</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_inverse_cell_width_fine</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a6abf9e2d497c0f6923f21e312515a2c8">get_inverse_cell_width_fine</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a555369a598f9ed4065f780249bbf05bc">get_inverse_cell_width_fine</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the inverse mesh width of the fine cells in the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>.</para>
+<para><simplesect kind="return"><para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> inverse fine cell width. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="74" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1aa0d3df44d2b22f85ac172e6909636d73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int NESO::Particles::HMesh::get_ncells_coarse</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_ncells_coarse</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad235e643aee9ae702ec31402af373953">get_ncells_coarse</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a87c3408ec7da37071db6979a18a2e3d4">get_ncells_coarse</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the global number of coarse cells.</para>
+<para><simplesect kind="return"><para>Global number of coarse cells. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="80" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1afb69786167374b41ef43171eb709e18a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int NESO::Particles::HMesh::get_ncells_fine</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_ncells_fine</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba8252d636f4ec12310daea635c94bd4">get_ncells_fine</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a27c7745098ba929e60dd531b98e0842d">get_ncells_fine</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of fine cells per coarse cell.</para>
+<para><simplesect kind="return"><para>Number of fine cells per coarse cell. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="86" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1aeb36fa4184c486c4803b46313b5e89c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> &gt;</type>
+        <definition>virtual std::shared_ptr&lt;MeshHierarchy&gt; NESO::Particles::HMesh::get_mesh_hierarchy</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_mesh_hierarchy</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1ae64f066c98a6a3575974ceb31a8dbca2">get_mesh_hierarchy</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a2955462a93495c2f91c879eed28ec39a">get_mesh_hierarchy</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> instance placed over the mesh.</para>
+<para><simplesect kind="return"><para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> placed over the mesh. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="92" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a770f6e841482bca0c692fd29a69354b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::HMesh::free</definition>
+        <argsstring>()=0</argsstring>
+        <name>free</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1ab3ca2bb9454da866c3a38932a0c139b7">free</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a290f6d9a76af07332c6fea9256f2a4c0">free</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the mesh and associated communicators. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="96" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1ade3a7dd15b6b430959736bdbc86604a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>std::vector&lt; int &gt; &amp;</type>
+        <definition>virtual std::vector&lt;int&gt;&amp; NESO::Particles::HMesh::get_local_communication_neighbours</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_local_communication_neighbours</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a0801f962e60e704f018c361dc329056e">get_local_communication_neighbours</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1aea283a61fd09870dc4f7f049f6113084">get_local_communication_neighbours</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a std::vector of MPI ranks which should be used to setup local communication patterns.</para>
+<para><simplesect kind="return"><para>std::vector of MPI ranks. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="103" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1HMesh_1a78f858884ad665ddaa0a353b21d49a3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::HMesh::get_point_in_subdomain</definition>
+        <argsstring>(double *point)=0</argsstring>
+        <name>get_point_in_subdomain</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMesh_1a578437abb851f5cf2326f423efdbeaf6">get_point_in_subdomain</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh_1a85162fba1c0d752c0b9b3526721466ca">get_point_in_subdomain</reimplementedby>
+        <param>
+          <type>double *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a point in the domain that should be in, or at least close to, the sub-domain on this MPI process. Useful for parallel initialisation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to array of size equal to at least the number of mesh dimensions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="111" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract base class for mesh types over which a <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> is placed. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>NESO::Particles::LocalDecompositionHMesh</label>
+        <link refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::HMesh</label>
+        <link refid="classNESO_1_1Particles_1_1HMesh"/>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::CartesianHMesh</label>
+        <link refid="classNESO_1_1Particles_1_1CartesianHMesh"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="18" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" bodystart="18" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a770f6e841482bca0c692fd29a69354b3" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>free</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a9502fe682f0c46c43b02a0cdde9b36c5" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_cell_count</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a1ed691f0d27045975da1d955a27ff187" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_cell_width_coarse</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a8f7e74defa516008452d08fab1e50e31" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_cell_width_fine</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a07e88fbd3fde82da445d5d03e1d29a2a" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_comm</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a0074b083bd8ec1ac315f6c2daa63fd3d" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_dims</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a33715117ccdc60c35b5fd847b9aabee6" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_inverse_cell_width_coarse</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a7f67ffe6dbdf0179323ff5ff57feffec" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_inverse_cell_width_fine</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1ade3a7dd15b6b430959736bdbc86604a2" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_local_communication_neighbours</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1aeb36fa4184c486c4803b46313b5e89c7" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_mesh_hierarchy</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1aa0d3df44d2b22f85ac172e6909636d73" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_ncells_coarse</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1afb69786167374b41ef43171eb709e18a" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_ncells_fine</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a5a54487466baf12ce0697ed5dbca40f4" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_ndim</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a78f858884ad665ddaa0a353b21d49a3a" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_point_in_subdomain</name></member>
+      <member refid="classNESO_1_1Particles_1_1HMesh_1a16d9b144b278a99ceeacf51f92407df9" prot="public" virt="pure-virtual"><scope>NESO::Particles::HMesh</scope><name>get_subdivision_order</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

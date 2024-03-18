@@ -1,0 +1,127 @@
+\hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree}{}\doxysection{NESO\+::Particles\+::Blocked\+Binary\+Tree$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1BlockedBinaryTree}\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+
+
+{\ttfamily \#include $<$blocked\+\_\+binary\+\_\+tree.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_a83fa95f40817aa7888477d338953bee8}{$\sim$\+Blocked\+Binary\+Tree}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_a021852201bef92fbc8d465dfff2ace91}{Blocked\+Binary\+Tree}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_a87b3511d969ee58d4cbb9c91cc57826b}{sycl\+\_\+target}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_acfd6549f07e80c346ba510b2f76ce3f4}{add}} (const KEY\+\_\+\+TYPE key, const VALUE\+\_\+\+TYPE value)
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_a3cfceb476f878d0065b5dbb17e8c8d81}{host\+\_\+get}} (const KEY\+\_\+\+TYPE key, VALUE\+\_\+\+TYPE $\ast$value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_a87b3511d969ee58d4cbb9c91cc57826b}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} on which the tree is allocated. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1BlockedBinaryNode}{Blocked\+Binary\+Node}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$ $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_ab2b9c691a44477cc500a5f6df70b3439}{root}}
+\begin{DoxyCompactList}\small\item\em The root node of the tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ KEY\+\_\+\+TYPE, \mbox{\hyperlink{structNESO_1_1Particles_1_1BlockedBinaryNode}{Blocked\+Binary\+Node}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$ $\ast$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree_aa973a438ebbd88d98ad26bc3b2f15ff6}{nodes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename KEY\+\_\+\+TYPE, typename VALUE\+\_\+\+TYPE, INT WIDTH$>$\newline
+class NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$}
+
+Create a blocked key-\/value map with a given block size. This class creates the tree and provides methods to get and set key-\/value pairs. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_a83fa95f40817aa7888477d338953bee8}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_a83fa95f40817aa7888477d338953bee8}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!````~BlockedBinaryTree@{$\sim$BlockedBinaryTree}}
+\index{````~BlockedBinaryTree@{$\sim$BlockedBinaryTree}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlockedBinaryTree()}{~BlockedBinaryTree()}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::$\sim$\mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{Blocked\+Binary\+Tree}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_a021852201bef92fbc8d465dfff2ace91}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_a021852201bef92fbc8d465dfff2ace91}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!BlockedBinaryTree@{BlockedBinaryTree}}
+\index{BlockedBinaryTree@{BlockedBinaryTree}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{BlockedBinaryTree()}{BlockedBinaryTree()}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{Blocked\+Binary\+Tree}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new tree on a given SYCL device. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_acfd6549f07e80c346ba510b2f76ce3f4}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_acfd6549f07e80c346ba510b2f76ce3f4}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!add@{add}}
+\index{add@{add}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::add (\begin{DoxyParamCaption}\item[{const KEY\+\_\+\+TYPE}]{key,  }\item[{const VALUE\+\_\+\+TYPE}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a key-\/value pair to the container.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to add to container. \\
+\hline
+{\em value} & Value to add to container under given key. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_a3cfceb476f878d0065b5dbb17e8c8d81}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_a3cfceb476f878d0065b5dbb17e8c8d81}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!host\_get@{host\_get}}
+\index{host\_get@{host\_get}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{host\_get()}{host\_get()}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::host\+\_\+get (\begin{DoxyParamCaption}\item[{const KEY\+\_\+\+TYPE}]{key,  }\item[{VALUE\+\_\+\+TYPE $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Host callable method to retrieve the value that corresponds to a given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em key} & Key to retrieve value for. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em value} & Pointer to value type in which to place output value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the key is found in the container otherwise false. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_aa973a438ebbd88d98ad26bc3b2f15ff6}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_aa973a438ebbd88d98ad26bc3b2f15ff6}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!nodes@{nodes}}
+\index{nodes@{nodes}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+std\+::map$<$KEY\+\_\+\+TYPE, \mbox{\hyperlink{structNESO_1_1Particles_1_1BlockedBinaryNode}{Blocked\+Binary\+Node}}$<$KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH$>$ $\ast$$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::nodes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_ab2b9c691a44477cc500a5f6df70b3439}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_ab2b9c691a44477cc500a5f6df70b3439}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!root@{root}}
+\index{root@{root}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1BlockedBinaryNode}{Blocked\+Binary\+Node}}$<$KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH$>$$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::root}
+
+
+
+The root node of the tree. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BlockedBinaryTree_a87b3511d969ee58d4cbb9c91cc57826b}\label{classNESO_1_1Particles_1_1BlockedBinaryTree_a87b3511d969ee58d4cbb9c91cc57826b}} 
+\index{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$@{NESO::Particles::BlockedBinaryTree$<$ KEY\_TYPE, VALUE\_TYPE, WIDTH $>$}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily template$<$typename KEY\+\_\+\+TYPE , typename VALUE\+\_\+\+TYPE , INT WIDTH$>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BlockedBinaryTree}{NESO\+::\+Particles\+::\+Blocked\+Binary\+Tree}}$<$ KEY\+\_\+\+TYPE, VALUE\+\_\+\+TYPE, WIDTH $>$\+::sycl\+\_\+target}
+
+
+
+The \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} on which the tree is allocated. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/\mbox{\hyperlink{blocked__binary__tree_8hpp}{blocked\+\_\+binary\+\_\+tree.\+hpp}}\end{DoxyCompactItemize}

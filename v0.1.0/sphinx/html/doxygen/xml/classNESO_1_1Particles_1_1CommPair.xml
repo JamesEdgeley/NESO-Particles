@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1CommPair" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::CommPair</compoundname>
+    <includes refid="communication_8hpp" local="no">communication.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a61a5381a49129ba25df0da8ba56ffbb6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NESO::Particles::CommPair::allocated</definition>
+        <argsstring></argsstring>
+        <name>allocated</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="20" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" prot="public" static="no" mutable="no">
+        <type>MPI_Comm</type>
+        <definition>MPI_Comm NESO::Particles::CommPair::comm_parent</definition>
+        <argsstring></argsstring>
+        <name>comm_parent</name>
+        <briefdescription>
+<para>Parent (i.e. global for the simulation) MPI communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="29" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a0121da39bd4339625700611e46ee9350" prot="public" static="no" mutable="no">
+        <type>MPI_Comm</type>
+        <definition>MPI_Comm NESO::Particles::CommPair::comm_inter</definition>
+        <argsstring></argsstring>
+        <name>comm_inter</name>
+        <briefdescription>
+<para>Communicator between one rank on each shared memory region. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="31" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a822c3eb44d971baa887075a5d67f54ab" prot="public" static="no" mutable="no">
+        <type>MPI_Comm</type>
+        <definition>MPI_Comm NESO::Particles::CommPair::comm_intra</definition>
+        <argsstring></argsstring>
+        <name>comm_intra</name>
+        <briefdescription>
+<para>Communicator between the ranks in a shared memory region. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="33" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1afc5bc62604f7216469e42df1de8b8d3c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CommPair::rank_parent</definition>
+        <argsstring></argsstring>
+        <name>rank_parent</name>
+        <briefdescription>
+<para>MPI rank in the parent communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="35" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1ad40e7fb5b7e644354629de04d24d80dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CommPair::rank_inter</definition>
+        <argsstring></argsstring>
+        <name>rank_inter</name>
+        <briefdescription>
+<para>MPI rank in the inter shared memory region communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="37" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CommPair::rank_intra</definition>
+        <argsstring></argsstring>
+        <name>rank_intra</name>
+        <briefdescription>
+<para>MPI rank within the shared memory region communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="39" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a03a30c8e1ac6a9070f92d96f1fc9d02e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CommPair::size_parent</definition>
+        <argsstring></argsstring>
+        <name>size_parent</name>
+        <briefdescription>
+<para>Size of the parent communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="41" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a95402d5a1704b6877dc3d7fd61596091" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CommPair::size_inter</definition>
+        <argsstring></argsstring>
+        <name>size_inter</name>
+        <briefdescription>
+<para>Size of the inter shared memory communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="43" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CommPair_1a6a2b1aec91c2221b3f4dfc8236501f55" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CommPair::size_intra</definition>
+        <argsstring></argsstring>
+        <name>size_intra</name>
+        <briefdescription>
+<para>Size of the intra shared memory communicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="45" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CommPair_1af79d05f88315886c83272ca0114df905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CommPair::CommPair</definition>
+        <argsstring>(const CommPair &amp;st)=delete</argsstring>
+        <name>CommPair</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="24" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CommPair_1ac1d07be47035eea24ce83529a7461f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref> &amp;</type>
+        <definition>CommPair&amp; NESO::Particles::CommPair::operator=</definition>
+        <argsstring>(CommPair const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="26" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CommPair_1ad5a3673349488a171f5cecabd253e684" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CommPair::~CommPair</definition>
+        <argsstring>()</argsstring>
+        <name>~CommPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="47" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CommPair_1a5f061fe0334ba0cb20bb1935fe3d699e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CommPair::CommPair</definition>
+        <argsstring>()</argsstring>
+        <name>CommPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="48" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CommPair_1acce347ceb02cf088b0424eb3f91fb4bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CommPair::CommPair</definition>
+        <argsstring>(MPI_Comm comm_parent)</argsstring>
+        <name>CommPair</name>
+        <param>
+          <type>MPI_Comm</type>
+          <declname>comm_parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new set of inter and intra shared memory region communicators from a parent communicator. Must be called collectively on the parent communicator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MPI communicator to derive intra and inter communicators from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="58" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="58" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CommPair_1a78b3ae9c7dfb105c37198df8e27f56c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::CommPair::free</definition>
+        <argsstring>()</argsstring>
+        <name>free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the communicators held by the <ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref> instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="86" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="86" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wrapper around a pair of inter and intra MPI Comms for shared memory purposes. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="17" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="17" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a61a5381a49129ba25df0da8ba56ffbb6" prot="private" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>allocated</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a0121da39bd4339625700611e46ee9350" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>comm_inter</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a822c3eb44d971baa887075a5d67f54ab" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>comm_intra</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>comm_parent</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1af79d05f88315886c83272ca0114df905" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>CommPair</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a5f061fe0334ba0cb20bb1935fe3d699e" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>CommPair</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1acce347ceb02cf088b0424eb3f91fb4bf" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>CommPair</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a78b3ae9c7dfb105c37198df8e27f56c8" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>free</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1ac1d07be47035eea24ce83529a7461f64" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1ad40e7fb5b7e644354629de04d24d80dd" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>rank_inter</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>rank_intra</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1afc5bc62604f7216469e42df1de8b8d3c" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>rank_parent</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a95402d5a1704b6877dc3d7fd61596091" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>size_inter</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a6a2b1aec91c2221b3f4dfc8236501f55" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>size_intra</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1a03a30c8e1ac6a9070f92d96f1fc9d02e" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>size_parent</name></member>
+      <member refid="classNESO_1_1Particles_1_1CommPair_1ad5a3673349488a171f5cecabd253e684" prot="public" virt="non-virtual"><scope>NESO::Particles::CommPair</scope><name>~CommPair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

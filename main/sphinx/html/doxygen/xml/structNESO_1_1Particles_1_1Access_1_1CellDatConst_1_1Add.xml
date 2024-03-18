@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::CellDatConst::Add</compoundname>
+    <includes refid="particle__loop_8hpp" local="no">particle_loop.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1afa7c1080b2741a5656d7bb1731289784" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* NESO::Particles::Access::CellDatConst::Add&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="288" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1a9d69b74ec49fea3294f8f8f7645d981e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::CellDatConst::Add&lt; T &gt;::nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="289" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1a833006335cdd76db3479528de65b72a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::CellDatConst::Add&lt; T &gt;::Add</definition>
+        <argsstring>()=default</argsstring>
+        <name>Add</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="287" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1aaf494c021a9651e3d627b70ca4cd4c7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T NESO::Particles::Access::CellDatConst::Add&lt; T &gt;::fetch_add</definition>
+        <argsstring>(const int row, const int col, const T value)</argsstring>
+        <name>fetch_add</name>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="290" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="290" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:CellDatConst::Read&lt;T&gt; and Access:CellDatConst::Add&lt;T&gt; are the kernel argument types for accessing <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1CellDatConst" kindref="compound">CellDatConst</ref> data in a kernel. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="285" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="285" bodyend="295"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1a833006335cdd76db3479528de65b72a8" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Add</scope><name>Add</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1aaf494c021a9651e3d627b70ca4cd4c7d" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Add</scope><name>fetch_add</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1a9d69b74ec49fea3294f8f8f7645d981e" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Add</scope><name>nrow</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add_1afa7c1080b2741a5656d7bb1731289784" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Add</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

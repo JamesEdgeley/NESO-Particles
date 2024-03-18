@@ -1,0 +1,48 @@
+\hypertarget{utility_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/utility.hpp File Reference}
+\label{utility_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/utility.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/utility.hpp}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}access.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compute\+\_\+target.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mesh\+\_\+interface.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle\+\_\+spec.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}typedefs.\+hpp\char`\"{}}\newline
+Include dependency graph for utility.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utility_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{utility_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename RNG $>$ }\\std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_ae28b0a937067e5c00e9401ff73fb2c4a}{NESO\+::\+Particles\+::uniform\+\_\+within\+\_\+extents}} (const int N, const int ndim, const double $\ast$extents, RNG \&rng)
+\item 
+{\footnotesize template$<$typename RNG $>$ }\\std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a9177dd1e204cea852ab99e76de499e34}{NESO\+::\+Particles\+::normal\+\_\+distribution}} (const int N, const int ndim, const double mu, const double sigma, RNG \&rng)
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_ab36e9d15212f4ff29731112924e206ff}{NESO\+::\+Particles\+::uniform\+\_\+within\+\_\+extents}} (const int N, const int ndim, const double $\ast$extents)
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_ac5503b9d174146b912fdc2d383e24f03}{NESO\+::\+Particles\+::normal\+\_\+distribution}} (const int N, const int ndim, const double mu, const double sigma)
+\item 
+void \mbox{\hyperlink{namespaceNESO_1_1Particles_aec4562e07b451ce4de54258918c4cd46}{NESO\+::\+Particles\+::uniform\+\_\+within\+\_\+cartesian\+\_\+cells}} (Cartesian\+HMesh\+Shared\+Ptr mesh, const int npart\+\_\+per\+\_\+cell, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&positions, std\+::vector$<$ int $>$ \&cells, std\+::optional$<$ std\+::mt19937 $>$ rng\+\_\+in=std\+::nullopt)
+\end{DoxyCompactItemize}

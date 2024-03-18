@@ -1,0 +1,212 @@
+\hypertarget{classNESO_1_1Particles_1_1DepartingIdentify}{}\doxysection{NESO\+::Particles\+::Departing\+Identify Class Reference}
+\label{classNESO_1_1Particles_1_1DepartingIdentify}\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+
+
+{\ttfamily \#include $<$departing\+\_\+particle\+\_\+identification.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Departing\+Identify\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1DepartingIdentify__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_aac36b74a2c87b8ba7034114877075acb}{Departing\+Identify}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify}{Departing\+Identify}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify}{Departing\+Identify}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a0e529d1bdf306bf1831f1ae99ae1a641}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify}{Departing\+Identify}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a9caa49f0ea7793cf42d0281821324085}{$\sim$\+Departing\+Identify}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_ab5817946925112d45d76ca575aab74b6}{Departing\+Identify}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} sycl\+\_\+target)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a9d076b06b5db8e3eb555baf0cb8f9b90}{set\+\_\+mpi\+\_\+rank\+\_\+dat}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_aac0ba1c3e5de874e3bf432c9971e0517}{mpi\+\_\+rank\+\_\+dat}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a78353941655376f9bdf480e0eb41dc7a}{identify}} (const int rank\+\_\+component=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_af0732059f969e722310d5046dde08bcb}{dh\+\_\+send\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Array of unique MPI ranks that particles should be sent to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_ac50ec25a7c282c5e9c3006e26f7cc495}{dh\+\_\+send\+\_\+counts\+\_\+all\+\_\+ranks}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a95fdd4a5ad91fc81d2b99d4784c21a32}{dh\+\_\+send\+\_\+rank\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em Map from MPI ranks to an index that orders the send ranks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_aec32f699a13496ed792c06ff60bd52b8}{d\+\_\+pack\+\_\+cells}}
+\begin{DoxyCompactList}\small\item\em Array that contains the source cells of departing particles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a7fa10ec0b803463395e1c6a3d209fc44}{d\+\_\+pack\+\_\+layers\+\_\+src}}
+\begin{DoxyCompactList}\small\item\em Array that contains the source layers (rows) of departing particles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_ac73f269ed574ecef837ac7f2d801a463}{d\+\_\+pack\+\_\+layers\+\_\+dst}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_a1129f19f164bcd22c5fb2d820675c39f}{dh\+\_\+num\+\_\+ranks\+\_\+send}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_ae9e8d0adee8e0feeaa4fa2e3e9f6ec04}{dh\+\_\+num\+\_\+particle\+\_\+send}}
+\begin{DoxyCompactList}\small\item\em Size one array to accumulate the total number of leaving particles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify_aac0ba1c3e5de874e3bf432c9971e0517}{mpi\+\_\+rank\+\_\+dat}}
+\begin{DoxyCompactList}\small\item\em Particle\+Dat containing MPI ranks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to identify which particles are leaving and MPI rank based on which MPI rank is stored in the NESO\+\_\+\+MPI\+\_\+\+RANK Particle\+Dat 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_aac36b74a2c87b8ba7034114877075acb}\label{classNESO_1_1Particles_1_1DepartingIdentify_aac36b74a2c87b8ba7034114877075acb}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!DepartingIdentify@{DepartingIdentify}}
+\index{DepartingIdentify@{DepartingIdentify}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{DepartingIdentify()}{DepartingIdentify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Departing\+Identify\+::\+Departing\+Identify (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify}{Departing\+Identify}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a9caa49f0ea7793cf42d0281821324085}\label{classNESO_1_1Particles_1_1DepartingIdentify_a9caa49f0ea7793cf42d0281821324085}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!````~DepartingIdentify@{$\sim$DepartingIdentify}}
+\index{````~DepartingIdentify@{$\sim$DepartingIdentify}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{$\sim$DepartingIdentify()}{~DepartingIdentify()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Departing\+Identify\+::$\sim$\+Departing\+Identify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_ab5817946925112d45d76ca575aab74b6}\label{classNESO_1_1Particles_1_1DepartingIdentify_ab5817946925112d45d76ca575aab74b6}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!DepartingIdentify@{DepartingIdentify}}
+\index{DepartingIdentify@{DepartingIdentify}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{DepartingIdentify()}{DepartingIdentify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Departing\+Identify\+::\+Departing\+Identify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new instance of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a78353941655376f9bdf480e0eb41dc7a}\label{classNESO_1_1Particles_1_1DepartingIdentify_a78353941655376f9bdf480e0eb41dc7a}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!identify@{identify}}
+\index{identify@{identify}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{identify()}{identify()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Departing\+Identify\+::identify (\begin{DoxyParamCaption}\item[{const int}]{rank\+\_\+component = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Identify particles which should be packed and sent to remote MPI ranks. The argument indicates which component of the MPI ranks dat that should be inspected for MPI rank. The intention is that component 0 indicates remote MPI ranks where the particle should be sent through a global communication pattern. Component 1 indicates a remote rank where the particle should be sent through a neighbour based \char`\"{}local\char`\"{} communication pattern. Negative MPI ranks are ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank\+\_\+component} & Component to inspect for MPI rank. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a0e529d1bdf306bf1831f1ae99ae1a641}\label{classNESO_1_1Particles_1_1DepartingIdentify_a0e529d1bdf306bf1831f1ae99ae1a641}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify}{Departing\+Identify}}\& NESO\+::\+Particles\+::\+Departing\+Identify\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1DepartingIdentify}{Departing\+Identify}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a9d076b06b5db8e3eb555baf0cb8f9b90}\label{classNESO_1_1Particles_1_1DepartingIdentify_a9d076b06b5db8e3eb555baf0cb8f9b90}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!set\_mpi\_rank\_dat@{set\_mpi\_rank\_dat}}
+\index{set\_mpi\_rank\_dat@{set\_mpi\_rank\_dat}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{set\_mpi\_rank\_dat()}{set\_mpi\_rank\_dat()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Departing\+Identify\+::set\+\_\+mpi\+\_\+rank\+\_\+dat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{mpi\+\_\+rank\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the Particle\+Dat that contains particle MPI ranks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mpi\+\_\+rank\+\_\+dat} & Particle\+Dat containing MPI ranks. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_aec32f699a13496ed792c06ff60bd52b8}\label{classNESO_1_1Particles_1_1DepartingIdentify_aec32f699a13496ed792c06ff60bd52b8}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!d\_pack\_cells@{d\_pack\_cells}}
+\index{d\_pack\_cells@{d\_pack\_cells}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{d\_pack\_cells}{d\_pack\_cells}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::d\+\_\+pack\+\_\+cells}
+
+
+
+Array that contains the source cells of departing particles. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_ac73f269ed574ecef837ac7f2d801a463}\label{classNESO_1_1Particles_1_1DepartingIdentify_ac73f269ed574ecef837ac7f2d801a463}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!d\_pack\_layers\_dst@{d\_pack\_layers\_dst}}
+\index{d\_pack\_layers\_dst@{d\_pack\_layers\_dst}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{d\_pack\_layers\_dst}{d\_pack\_layers\_dst}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::d\+\_\+pack\+\_\+layers\+\_\+dst}
+
+Array that contains the destination layers in the packing buffer of departing particles. \mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a7fa10ec0b803463395e1c6a3d209fc44}\label{classNESO_1_1Particles_1_1DepartingIdentify_a7fa10ec0b803463395e1c6a3d209fc44}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!d\_pack\_layers\_src@{d\_pack\_layers\_src}}
+\index{d\_pack\_layers\_src@{d\_pack\_layers\_src}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{d\_pack\_layers\_src}{d\_pack\_layers\_src}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::d\+\_\+pack\+\_\+layers\+\_\+src}
+
+
+
+Array that contains the source layers (rows) of departing particles. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_ae9e8d0adee8e0feeaa4fa2e3e9f6ec04}\label{classNESO_1_1Particles_1_1DepartingIdentify_ae9e8d0adee8e0feeaa4fa2e3e9f6ec04}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!dh\_num\_particle\_send@{dh\_num\_particle\_send}}
+\index{dh\_num\_particle\_send@{dh\_num\_particle\_send}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{dh\_num\_particle\_send}{dh\_num\_particle\_send}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::dh\+\_\+num\+\_\+particle\+\_\+send}
+
+
+
+Size one array to accumulate the total number of leaving particles. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a1129f19f164bcd22c5fb2d820675c39f}\label{classNESO_1_1Particles_1_1DepartingIdentify_a1129f19f164bcd22c5fb2d820675c39f}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!dh\_num\_ranks\_send@{dh\_num\_ranks\_send}}
+\index{dh\_num\_ranks\_send@{dh\_num\_ranks\_send}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{dh\_num\_ranks\_send}{dh\_num\_ranks\_send}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::dh\+\_\+num\+\_\+ranks\+\_\+send}
+
+Size one array to accumulate the number of remote ranks particles should be sent to. \mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_ac50ec25a7c282c5e9c3006e26f7cc495}\label{classNESO_1_1Particles_1_1DepartingIdentify_ac50ec25a7c282c5e9c3006e26f7cc495}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!dh\_send\_counts\_all\_ranks@{dh\_send\_counts\_all\_ranks}}
+\index{dh\_send\_counts\_all\_ranks@{dh\_send\_counts\_all\_ranks}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{dh\_send\_counts\_all\_ranks}{dh\_send\_counts\_all\_ranks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::dh\+\_\+send\+\_\+counts\+\_\+all\+\_\+ranks}
+
+Array of length equal to the communicator size indicating how many particles should be sent to each rank. \mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_a95fdd4a5ad91fc81d2b99d4784c21a32}\label{classNESO_1_1Particles_1_1DepartingIdentify_a95fdd4a5ad91fc81d2b99d4784c21a32}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!dh\_send\_rank\_map@{dh\_send\_rank\_map}}
+\index{dh\_send\_rank\_map@{dh\_send\_rank\_map}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{dh\_send\_rank\_map}{dh\_send\_rank\_map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::dh\+\_\+send\+\_\+rank\+\_\+map}
+
+
+
+Map from MPI ranks to an index that orders the send ranks. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_af0732059f969e722310d5046dde08bcb}\label{classNESO_1_1Particles_1_1DepartingIdentify_af0732059f969e722310d5046dde08bcb}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!dh\_send\_ranks@{dh\_send\_ranks}}
+\index{dh\_send\_ranks@{dh\_send\_ranks}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{dh\_send\_ranks}{dh\_send\_ranks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::dh\+\_\+send\+\_\+ranks}
+
+
+
+Array of unique MPI ranks that particles should be sent to. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1DepartingIdentify_aac0ba1c3e5de874e3bf432c9971e0517}\label{classNESO_1_1Particles_1_1DepartingIdentify_aac0ba1c3e5de874e3bf432c9971e0517}} 
+\index{NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}!mpi\_rank\_dat@{mpi\_rank\_dat}}
+\index{mpi\_rank\_dat@{mpi\_rank\_dat}!NESO::Particles::DepartingIdentify@{NESO::Particles::DepartingIdentify}}
+\doxysubsubsection{\texorpdfstring{mpi\_rank\_dat}{mpi\_rank\_dat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+Departing\+Identify\+::mpi\+\_\+rank\+\_\+dat}
+
+
+
+Particle\+Dat containing MPI ranks. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{departing__particle__identification_8hpp}{departing\+\_\+particle\+\_\+identification.\+hpp}}\end{DoxyCompactItemize}

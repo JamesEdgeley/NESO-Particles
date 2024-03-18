@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01SymVector_3_01T_01_4_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; SymVector&lt; T &gt; &gt; &gt;</compoundname>
+    <includes refid="sym__vector_8hpp" local="no">sym_vector.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01SymVector_3_01T_01_4_01_4_01_4_1a9193899502900d1c926c5f7c3f43c5fb" prot="public" static="no">
+        <type>T *const *const **</type>
+        <definition>using NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; SymVector&lt; T &gt; &gt; &gt;::type =  T *const *const **</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="75" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Loop parameter for read access of a <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref>. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="74" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="74" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01SymVector_3_01T_01_4_01_4_01_4_1a9193899502900d1c926c5f7c3f43c5fb" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; SymVector&lt; T &gt; &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

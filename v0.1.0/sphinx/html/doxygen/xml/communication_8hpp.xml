@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="communication_8hpp" kind="file" language="C++">
+    <compoundname>communication.hpp</compoundname>
+    <includes refid="typedefs_8hpp" local="yes">typedefs.hpp</includes>
+    <includes local="no">mpi.h</includes>
+    <includedby refid="compute__target_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp</includedby>
+    <includedby refid="departing__particle__identification_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification.hpp</includedby>
+    <includedby refid="global__move_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/global_move.hpp</includedby>
+    <includedby refid="global__move__exchange_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/global_move_exchange.hpp</includedby>
+    <includedby refid="local__move_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/local_move.hpp</includedby>
+    <includedby refid="mesh__hierarchy_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>numeric</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>mpi.h</label>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="23">
+        <label>/tmp/repo-checkout/NESO-Particles/include/mesh_interface_local_decomp.hpp</label>
+        <link refid="mesh__interface__local__decomp_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move.hpp</label>
+        <link refid="global__move_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp</label>
+        <link refid="compute__target_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp</label>
+        <link refid="local__mapping_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</label>
+        <link refid="cell__dat__move_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move_exchange.hpp</label>
+        <link refid="global__move__exchange_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp_source"/>
+      </node>
+      <node id="18">
+        <label>/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp</label>
+        <link refid="packing__unpacking_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</label>
+        <link refid="cell__dat__compression_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/tmp/repo-checkout/NESO-Particles/include/utility.hpp</label>
+        <link refid="utility_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</label>
+        <link refid="particle__dat_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp</label>
+        <link refid="mesh__hierarchy_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp</label>
+        <link refid="particle__set_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification.hpp</label>
+        <link refid="departing__particle__identification_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_move.hpp</label>
+        <link refid="local__move_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp</label>
+        <link refid="mesh__interface_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/tmp/repo-checkout/NESO-Particles/include/domain.hpp</label>
+        <link refid="domain_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNESO_1_1Particles_1_1CommPair" prot="public">NESO::Particles::CommPair</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="communication_8hpp_1a84f3dc60641da0ddf162ed6d8b1f7178" prot="public" static="no">
+        <name>_MACRO_STRING</name>
+        <param><defname>x</defname></param>
+        <initializer>#x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="7" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="communication_8hpp_1a18d295a837ac71add5578860b55e5502" prot="public" static="no">
+        <name>STR</name>
+        <param><defname>x</defname></param>
+        <initializer>_MACRO_STRING(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="8" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="communication_8hpp_1a33b992f9d2178a2b11a3e307ac559bab" prot="public" static="no">
+        <name>MPICHK</name>
+        <param><defname>cmd</defname></param>
+        <initializer>NESOASSERT(cmd == MPI_SUCCESS, &quot;MPI ERROR&quot;);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" line="9" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/communication.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_COMMUNICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_COMMUNICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MACRO_STRING(x)<sp/>#x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR(x)<sp/>_MACRO_STRING(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MPICHK(cmd)<sp/>NESOASSERT(cmd<sp/>==<sp/>MPI_SUCCESS,<sp/>&quot;MPI<sp/>ERROR&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NESO::Particles<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classNESO_1_1Particles_1_1CommPair" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classNESO_1_1Particles_1_1CommPair_1af79d05f88315886c83272ca0114df905" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1af79d05f88315886c83272ca0114df905" kindref="member">CommPair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref><sp/>&amp;st)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26" refid="classNESO_1_1Particles_1_1CommPair_1ac1d07be47035eea24ce83529a7461f64" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CommPair_1ac1d07be47035eea24ce83529a7461f64" kindref="member">operator=</ref>(<ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;a)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" refkind="member"><highlight class="normal"><sp/><sp/>MPI_Comm<sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" kindref="member">comm_parent</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classNESO_1_1Particles_1_1CommPair_1a0121da39bd4339625700611e46ee9350" refkind="member"><highlight class="normal"><sp/><sp/>MPI_Comm<sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a0121da39bd4339625700611e46ee9350" kindref="member">comm_inter</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classNESO_1_1Particles_1_1CommPair_1a822c3eb44d971baa887075a5d67f54ab" refkind="member"><highlight class="normal"><sp/><sp/>MPI_Comm<sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a822c3eb44d971baa887075a5d67f54ab" kindref="member">comm_intra</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classNESO_1_1Particles_1_1CommPair_1afc5bc62604f7216469e42df1de8b8d3c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1afc5bc62604f7216469e42df1de8b8d3c" kindref="member">rank_parent</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classNESO_1_1Particles_1_1CommPair_1ad40e7fb5b7e644354629de04d24d80dd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1ad40e7fb5b7e644354629de04d24d80dd" kindref="member">rank_inter</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" kindref="member">rank_intra</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classNESO_1_1Particles_1_1CommPair_1a03a30c8e1ac6a9070f92d96f1fc9d02e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a03a30c8e1ac6a9070f92d96f1fc9d02e" kindref="member">size_parent</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classNESO_1_1Particles_1_1CommPair_1a95402d5a1704b6877dc3d7fd61596091" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a95402d5a1704b6877dc3d7fd61596091" kindref="member">size_inter</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classNESO_1_1Particles_1_1CommPair_1a6a2b1aec91c2221b3f4dfc8236501f55" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a6a2b1aec91c2221b3f4dfc8236501f55" kindref="member">size_intra</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>~<ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref>(){};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref>(){};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classNESO_1_1Particles_1_1CommPair_1acce347ceb02cf088b0424eb3f91fb4bf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1acce347ceb02cf088b0424eb3f91fb4bf" kindref="member">CommPair</ref>(MPI_Comm<sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" kindref="member">comm_parent</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;comm_parent<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" kindref="member">comm_parent</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1afc5bc62604f7216469e42df1de8b8d3c" kindref="member">rank_parent</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_rank(<ref refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" kindref="member">comm_parent</ref>,<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CommPair_1afc5bc62604f7216469e42df1de8b8d3c" kindref="member">rank_parent</ref>))</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_split_type(<ref refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" kindref="member">comm_parent</ref>,<sp/>MPI_COMM_TYPE_SHARED,<sp/>0,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPI_INFO_NULL,<sp/>&amp;this-&gt;comm_intra))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" kindref="member">rank_intra</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_rank(this-&gt;comm_intra,<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" kindref="member">rank_intra</ref>))</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colour_intra<sp/>=<sp/>(<ref refid="classNESO_1_1Particles_1_1CommPair_1ad05280f3448bbfe566c4e5136b2f3ea4" kindref="member">rank_intra</ref><sp/>==<sp/>0)<sp/>?<sp/>1<sp/>:<sp/>MPI_UNDEFINED;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_split(<ref refid="classNESO_1_1Particles_1_1CommPair_1a3cbd6b0c78a13beefb79b2f94b7915e1" kindref="member">comm_parent</ref>,<sp/>colour_intra,<sp/>0,<sp/>&amp;this-&gt;comm_inter))</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;allocated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_rank(this-&gt;comm_parent,<sp/>&amp;this-&gt;rank_parent))</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_rank(this-&gt;comm_intra,<sp/>&amp;this-&gt;rank_intra))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_size(this-&gt;comm_parent,<sp/>&amp;this-&gt;size_parent))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_size(this-&gt;comm_intra,<sp/>&amp;this-&gt;size_intra))</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classNESO_1_1Particles_1_1CommPair_1a0121da39bd4339625700611e46ee9350" kindref="member">comm_inter</ref><sp/>!=<sp/>MPI_COMM_NULL)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_rank(this-&gt;comm_inter,<sp/>&amp;this-&gt;rank_inter))</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_size(this-&gt;comm_inter,<sp/>&amp;this-&gt;size_inter))</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classNESO_1_1Particles_1_1CommPair_1a78b3ae9c7dfb105c37198df8e27f56c8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CommPair_1a78b3ae9c7dfb105c37198df8e27f56c8" kindref="member">free</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Initialized(&amp;flag))</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allocated<sp/>&amp;&amp;<sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((this-&gt;comm_intra<sp/>!=<sp/>MPI_COMM_NULL)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(this-&gt;comm_intra<sp/>!=<sp/>MPI_COMM_WORLD))<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_free(&amp;this-&gt;comm_intra))</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;comm_intra<sp/>=<sp/>MPI_COMM_NULL;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((this-&gt;comm_inter<sp/>!=<sp/>MPI_COMM_NULL)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(this-&gt;comm_inter<sp/>!=<sp/>MPI_COMM_WORLD))<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_free(&amp;this-&gt;comm_inter))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;comm_intra<sp/>=<sp/>MPI_COMM_NULL;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;allocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/communication.hpp"/>
+  </compounddef>
+</doxygen>

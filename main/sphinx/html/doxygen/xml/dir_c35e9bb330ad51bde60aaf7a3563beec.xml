@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c35e9bb330ad51bde60aaf7a3563beec" kind="dir">
+    <compoundname>/tmp/repo-checkout/NESO-Particles/include/containers</compoundname>
+    <innerfile refid="blocked__binary__tree_8hpp">blocked_binary_tree.hpp</innerfile>
+    <innerfile refid="global__array_8hpp">global_array.hpp</innerfile>
+    <innerfile refid="local__array_8hpp">local_array.hpp</innerfile>
+    <innerfile refid="tuple_8hpp">tuple.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::LoopParameter</compoundname>
+    <includes refid="particle__loop__base_8hpp" local="no">particle_loop_base.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_1ac010fe7c2d8f8e00c7aa06b6191c5ff4" prot="public" static="no">
+        <type>void *</type>
+        <definition>using NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; T &gt;::type =  void *</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="21" column="32" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref> types define the type collected from a data structure prior to calling the loop. The loop is responsible for computing the kernel argument from the loop argument. e.g. in the ParticleDat case the <ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref> is the pointer type that points to the data for all cells, layers and components. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="21" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="21" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_1ac010fe7c2d8f8e00c7aa06b6191c5ff4" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::LoopParameter</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

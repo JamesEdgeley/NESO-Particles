@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ProductMatrixGet" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ProductMatrixGet</compoundname>
+    <includes refid="product__matrix_8hpp" local="no">product_matrix.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGet_1ac9e69f2a7f0c1a0e95891b20a26bd291" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> *</type>
+        <definition>REAL* NESO::Particles::ProductMatrixGet::ptr_real</definition>
+        <argsstring></argsstring>
+        <name>ptr_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="19" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGet_1a79dd138947ccaaedb1b6255561676301" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+        <definition>INT* NESO::Particles::ProductMatrixGet::ptr_int</definition>
+        <argsstring></argsstring>
+        <name>ptr_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="20" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGet_1a27ecaa82dceb6278936325eb17307e5a" prot="public" static="no" mutable="no">
+        <type>int const  *</type>
+        <definition>int const* NESO::Particles::ProductMatrixGet::offsets_real</definition>
+        <argsstring></argsstring>
+        <name>offsets_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="21" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGet_1a8c68504b405bda965b11c02d8a5087a2" prot="public" static="no" mutable="no">
+        <type>int const  *</type>
+        <definition>int const* NESO::Particles::ProductMatrixGet::offsets_int</definition>
+        <argsstring></argsstring>
+        <name>offsets_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="22" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGet_1a7a8e24db445e735a2c882bbfa31ddf07" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixGet::num_products</definition>
+        <argsstring></argsstring>
+        <name>num_products</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="23" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="18" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="18" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a7a8e24db445e735a2c882bbfa31ddf07" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGet</scope><name>num_products</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a8c68504b405bda965b11c02d8a5087a2" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGet</scope><name>offsets_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a27ecaa82dceb6278936325eb17307e5a" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGet</scope><name>offsets_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a79dd138947ccaaedb1b6255561676301" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGet</scope><name>ptr_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGet_1ac9e69f2a7f0c1a0e95891b20a26bd291" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGet</scope><name>ptr_real</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

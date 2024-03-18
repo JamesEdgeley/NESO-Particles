@@ -1,0 +1,66 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleLoopBase}{}\doxysection{NESO\+::Particles\+::Particle\+Loop\+Base Class Reference}
+\label{classNESO_1_1Particles_1_1ParticleLoopBase}\index{NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}}
+
+
+{\ttfamily \#include $<$particle\+\_\+loop.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Particle\+Loop\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1ParticleLoopBase__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoopBase_a07102212ac27dc8f2eb45a99b4f284bf}{execute}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoopBase_a6579b72a9eef91d7bebf41e021b3895a}{submit}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoopBase_a9037d55ec2fc33a423abf900b2fb2e16}{wait}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}} such that the templated \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}} can be cast to a base type for storage. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleLoopBase_a07102212ac27dc8f2eb45a99b4f284bf}\label{classNESO_1_1Particles_1_1ParticleLoopBase_a07102212ac27dc8f2eb45a99b4f284bf}} 
+\index{NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}!execute@{execute}}
+\index{execute@{execute}!NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void NESO\+::\+Particles\+::\+Particle\+Loop\+Base\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+Execute the particle loop and block until completion. Must be called Collectively on the communicator. 
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop_a8ee2985df88fdc9dd648530ea112eec6}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS $>$}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop_a8ee2985df88fdc9dd648530ea112eec6}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS... $>$}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleLoopBase_a6579b72a9eef91d7bebf41e021b3895a}\label{classNESO_1_1Particles_1_1ParticleLoopBase_a6579b72a9eef91d7bebf41e021b3895a}} 
+\index{NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}!submit@{submit}}
+\index{submit@{submit}!NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily virtual void NESO\+::\+Particles\+::\+Particle\+Loop\+Base\+::submit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+Launch the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}} and return. Must be called collectively over the MPI communicator of the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}. Loop execution is complete when the corresponding call to wait returns. 
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoopSubGroup_a2cdcc0431689b050fe1643e02ce1d042}{NESO\+::\+Particles\+::\+Particle\+Loop\+Sub\+Group$<$ KERNEL, ARGS $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop_afa8dae77bf2d51d174c96058d6cf0452}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS $>$}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop_afa8dae77bf2d51d174c96058d6cf0452}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS... $>$}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleLoopBase_a9037d55ec2fc33a423abf900b2fb2e16}\label{classNESO_1_1Particles_1_1ParticleLoopBase_a9037d55ec2fc33a423abf900b2fb2e16}} 
+\index{NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}!wait@{wait}}
+\index{wait@{wait}!NESO::Particles::ParticleLoopBase@{NESO::Particles::ParticleLoopBase}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily virtual void NESO\+::\+Particles\+::\+Particle\+Loop\+Base\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+Wait for loop execution to complete. On completion perform post-\/loop actions. Must be called collectively on communicator. 
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop_a88ce6aec00dbba8778a34b77a5eaf5f5}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS $>$}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop_a88ce6aec00dbba8778a34b77a5eaf5f5}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS... $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/loop/\mbox{\hyperlink{particle__loop_8hpp}{particle\+\_\+loop.\+hpp}}\end{DoxyCompactItemize}

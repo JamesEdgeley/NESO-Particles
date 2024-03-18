@@ -1,0 +1,185 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleSpec}{}\doxysection{NESO\+::Particles\+::Particle\+Spec Class Reference}
+\label{classNESO_1_1Particles_1_1ParticleSpec}\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+
+
+{\ttfamily \#include $<$particle\+\_\+spec.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... T$>$ }\\\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_abb928645e1251558fe1dd4485e060ab4}{Particle\+Spec}} (T... args)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_a4774c3014ac35134c43ffeb718705ebc}{Particle\+Spec}} (std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_aa33c982494fe5adb6007f3daad7fb622}{properties\+\_\+real}}, std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_aeb5bac880755c38534d630b16de36004}{properties\+\_\+int}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_a276b2968f86135d0aa2b990818f103d1}{push}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ pp)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_adab06be6b2b8bd82f0ba97c12bf6ec12}{push}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ pp)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_a4a75309d550ea3115d1cfb25087723d0}{contains}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ T $>$ pp)
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_aab7f0948986b490bc1101b20daac8cd3}{contains}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} \&ps)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_a20848bf58ee0af826d6a4727f5061623}{remove}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ T $>$ pp)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_a30ba7521427ced460f4bedf5258669a2}{Particle\+Spec}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_ab753875cb1714f3a79369fa8bcd8d4e8}{$\sim$\+Particle\+Spec}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_aa33c982494fe5adb6007f3daad7fb622}{properties\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em Collection of REAL \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec_aeb5bac880755c38534d630b16de36004}{properties\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em Collection of INT \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} is a particle specification described by a collection of particle properties. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_abb928645e1251558fe1dd4485e060ab4}\label{classNESO_1_1Particles_1_1ParticleSpec_abb928645e1251558fe1dd4485e060ab4}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!ParticleSpec@{ParticleSpec}}
+\index{ParticleSpec@{ParticleSpec}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{ParticleSpec()}{ParticleSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+NESO\+::\+Particles\+::\+Particle\+Spec\+::\+Particle\+Spec (\begin{DoxyParamCaption}\item[{T...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor to create a particle specification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} is called with a set of \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} arguments. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_a4774c3014ac35134c43ffeb718705ebc}\label{classNESO_1_1Particles_1_1ParticleSpec_a4774c3014ac35134c43ffeb718705ebc}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!ParticleSpec@{ParticleSpec}}
+\index{ParticleSpec@{ParticleSpec}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{ParticleSpec()}{ParticleSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Spec\+::\+Particle\+Spec (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&}]{properties\+\_\+real,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&}]{properties\+\_\+int }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a particle specification from a vector of REAL properties and a vector of INT properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties\+\_\+real} & REAL particle properties. \\
+\hline
+{\em properties\+\_\+int} & INT particle properties. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_a30ba7521427ced460f4bedf5258669a2}\label{classNESO_1_1Particles_1_1ParticleSpec_a30ba7521427ced460f4bedf5258669a2}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!ParticleSpec@{ParticleSpec}}
+\index{ParticleSpec@{ParticleSpec}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{ParticleSpec()}{ParticleSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Spec\+::\+Particle\+Spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_ab753875cb1714f3a79369fa8bcd8d4e8}\label{classNESO_1_1Particles_1_1ParticleSpec_ab753875cb1714f3a79369fa8bcd8d4e8}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!````~ParticleSpec@{$\sim$ParticleSpec}}
+\index{````~ParticleSpec@{$\sim$ParticleSpec}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleSpec()}{~ParticleSpec()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Spec\+::$\sim$\+Particle\+Spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_a4a75309d550ea3115d1cfb25087723d0}\label{classNESO_1_1Particles_1_1ParticleSpec_a4a75309d550ea3115d1cfb25087723d0}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!contains@{contains}}
+\index{contains@{contains}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool NESO\+::\+Particles\+::\+Particle\+Spec\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ T $>$}]{pp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} is contained in this specification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if passed \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} is in this \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_aab7f0948986b490bc1101b20daac8cd3}\label{classNESO_1_1Particles_1_1ParticleSpec_aab7f0948986b490bc1101b20daac8cd3}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!contains@{contains}}
+\index{contains@{contains}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Spec\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} \&}]{ps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if a passed \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} is a subset of this \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the passed particle spec is a subset of this particle spec. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_adab06be6b2b8bd82f0ba97c12bf6ec12}\label{classNESO_1_1Particles_1_1ParticleSpec_adab06be6b2b8bd82f0ba97c12bf6ec12}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!push@{push}}
+\index{push@{push}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Spec\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{pp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push a Particle\+Prop$<$\+INT$>$ property onto the specification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & Particle\+Prop$<$\+INT$>$ to add to the specification. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_a276b2968f86135d0aa2b990818f103d1}\label{classNESO_1_1Particles_1_1ParticleSpec_a276b2968f86135d0aa2b990818f103d1}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!push@{push}}
+\index{push@{push}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Spec\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$}]{pp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push a Particle\+Prop$<$\+REAL$>$ property onto the specification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & Particle\+Prop$<$\+REAL$>$ to add to the specification. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_a20848bf58ee0af826d6a4727f5061623}\label{classNESO_1_1Particles_1_1ParticleSpec_a20848bf58ee0af826d6a4727f5061623}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!remove@{remove}}
+\index{remove@{remove}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void NESO\+::\+Particles\+::\+Particle\+Spec\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ T $>$}]{pp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a particle property from the specification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} to remove from the specification. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_aeb5bac880755c38534d630b16de36004}\label{classNESO_1_1Particles_1_1ParticleSpec_aeb5bac880755c38534d630b16de36004}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!properties\_int@{properties\_int}}
+\index{properties\_int@{properties\_int}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{properties\_int}{properties\_int}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ $>$ NESO\+::\+Particles\+::\+Particle\+Spec\+::properties\+\_\+int}
+
+
+
+Collection of INT \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSpec_aa33c982494fe5adb6007f3daad7fb622}\label{classNESO_1_1Particles_1_1ParticleSpec_aa33c982494fe5adb6007f3daad7fb622}} 
+\index{NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}!properties\_real@{properties\_real}}
+\index{properties\_real@{properties\_real}!NESO::Particles::ParticleSpec@{NESO::Particles::ParticleSpec}}
+\doxysubsubsection{\texorpdfstring{properties\_real}{properties\_real}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$ $>$ NESO\+::\+Particles\+::\+Particle\+Spec\+::properties\+\_\+real}
+
+
+
+Collection of REAL \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{particle__spec_8hpp}{particle\+\_\+spec.\+hpp}}\end{DoxyCompactItemize}

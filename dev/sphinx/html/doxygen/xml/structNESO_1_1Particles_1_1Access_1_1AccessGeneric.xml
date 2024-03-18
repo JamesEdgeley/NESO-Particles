@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1AccessGeneric" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::AccessGeneric</compoundname>
+    <derivedcompoundref refid="structNESO_1_1Particles_1_1Access_1_1Add" prot="public" virt="non-virtual">NESO::Particles::Access::Add&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structNESO_1_1Particles_1_1Access_1_1Max" prot="public" virt="non-virtual">NESO::Particles::Access::Max&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structNESO_1_1Particles_1_1Access_1_1Min" prot="public" virt="non-virtual">NESO::Particles::Access::Min&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structNESO_1_1Particles_1_1Access_1_1Read" prot="public" virt="non-virtual">NESO::Particles::Access::Read&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structNESO_1_1Particles_1_1Access_1_1Write" prot="public" virt="non-virtual">NESO::Particles::Access::Write&lt; T &gt;</derivedcompoundref>
+    <includes refid="access__descriptors_8hpp" local="no">access_descriptors.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1AccessGeneric_1adcf2b692e27c42e30bfedea17d68a4bc" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T NESO::Particles::Access::AccessGeneric&lt; T &gt;::obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="11" column="34" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic base type for an access descriptor around an object of type T. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NESO::Particles::Access::AccessGeneric&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric"/>
+      </node>
+      <node id="6">
+        <label>NESO::Particles::Access::Write&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Write"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>NESO::Particles::Access::Read&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Read"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NESO::Particles::Access::Max&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Max"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>NESO::Particles::Access::Min&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Min"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::Access::Add&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Add"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="11" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="11" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric_1adcf2b692e27c42e30bfedea17d68a4bc" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::AccessGeneric</scope><name>obj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

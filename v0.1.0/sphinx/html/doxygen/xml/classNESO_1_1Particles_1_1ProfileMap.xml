@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ProfileMap" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ProfileMap</compoundname>
+    <includes refid="profiling_8hpp" local="no">profiling.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ProfileMap_1a80c87d2252e92507585b2fb8d6e343b9" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::map&lt; std::string, <ref refid="structNESO_1_1Particles_1_1ProfileEntry" kindref="compound">ProfileEntry</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::map&lt;std::string, ProfileEntry&gt; &gt; NESO::Particles::ProfileMap::profile</definition>
+        <argsstring></argsstring>
+        <name>profile</name>
+        <briefdescription>
+<para>Main data structure storing profiling data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="35" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProfileMap_1a604e04565ba184572484a62f412c73d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ProfileMap::~ProfileMap</definition>
+        <argsstring>()</argsstring>
+        <name>~ProfileMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="36" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProfileMap_1a6b1414ec2954592963938d319a842ef9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ProfileMap::ProfileMap</definition>
+        <argsstring>()</argsstring>
+        <name>ProfileMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new empty instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="41" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProfileMap_1addffa4b53d0ea648a344e559156527a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ProfileMap::set</definition>
+        <argsstring>(const std::string key1, const std::string key2, const int64_t value_integral, const double value_real=0.0)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const std::string</type>
+          <declname>key1</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>key2</declname>
+        </param>
+        <param>
+          <type>const int64_t</type>
+          <declname>value_integral</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value_real</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set or create a new profiling entry in the data structure.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First key for the entry. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second key for the entry. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_integral</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integral value for the entry. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_real</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Floating point value for the entry. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="51" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProfileMap_1adee09a83843d24cf24b62da61a9ceeb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ProfileMap::inc</definition>
+        <argsstring>(const std::string key1, const std::string key2, const int64_t value_integral, const double value_real=0.0)</argsstring>
+        <name>inc</name>
+        <param>
+          <type>const std::string</type>
+          <declname>key1</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>key2</declname>
+        </param>
+        <param>
+          <type>const int64_t</type>
+          <declname>value_integral</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value_real</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increment a profiling entry in the data structure.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First key for the entry. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second key for the entry. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_integral</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integral value for the entry to add to current value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_real</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Floating point value for the entry to add to current value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="66" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProfileMap_1a356df0d9f3cadb70dddb6426697bfe5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ProfileMap::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the profiling data by emptying the current set of keys and values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="75" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ProfileMap_1ac21555c8934f144d74ddc8c3fa22b0ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ProfileMap::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print the profiling data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="80" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="80" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure for profiling data. Fundamentally is a map from key to key to value. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="31" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="31" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1adee09a83843d24cf24b62da61a9ceeb3" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>inc</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1ac21555c8934f144d74ddc8c3fa22b0ce" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>print</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1a80c87d2252e92507585b2fb8d6e343b9" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>profile</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1a6b1414ec2954592963938d319a842ef9" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>ProfileMap</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1a356df0d9f3cadb70dddb6426697bfe5a" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>reset</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1addffa4b53d0ea648a344e559156527a7" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>set</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProfileMap_1a604e04565ba184572484a62f412c73d8" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileMap</scope><name>~ProfileMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+\hypertarget{classNESO_1_1Particles_1_1CellDataT}{}\doxysection{NESO\+::Particles\+::Cell\+DataT$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1CellDataT}\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+
+
+{\ttfamily \#include $<$cell\+\_\+dat.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a5c4693dd505378c15384bdb21296c3d1}{Cell\+DataT}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a0b8c2eb41931c16bb092f4e77d565360}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a074e298a44600699e2d9595b83a33995}{Cell\+DataT}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} sycl\+\_\+target, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_af8a83e5ff0c5472706a3f316b44b1d5e}{nrow}}, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a87ea64d751cc9b9991a139ba9966498d}{ncol}})
+\item 
+std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a40d261b18d22e1c514c5e089168bc066}{operator\mbox{[}$\,$\mbox{]}}} (int col)
+\item 
+T \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_ab345263dad7325522a06625aea7b14c5}{at}} (const int row, const int col)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a7239e8ce1c811dc2575c87f422d4593b}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_af8a83e5ff0c5472706a3f316b44b1d5e}{nrow}}
+\begin{DoxyCompactList}\small\item\em Number of rows in the 2D data structure. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a87ea64d751cc9b9991a139ba9966498d}{ncol}}
+\begin{DoxyCompactList}\small\item\em Number of columns in the 2D data structure. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ T $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT_a35f98601c9df8edee0364daa60c888ec}{data}}
+\begin{DoxyCompactList}\small\item\em 2D data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Cell\+Data\+T$<$ T $>$}
+
+Container for the data within a single cell stored on the host. Data is store column wise. The data is typically particle data for a single Particle\+Dat for a single cell and exists as a 2D data structure. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a5c4693dd505378c15384bdb21296c3d1}\label{classNESO_1_1Particles_1_1CellDataT_a5c4693dd505378c15384bdb21296c3d1}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!CellDataT@{CellDataT}}
+\index{CellDataT@{CellDataT}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CellDataT()}{CellDataT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}}$<$ T $>$ \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a074e298a44600699e2d9595b83a33995}\label{classNESO_1_1Particles_1_1CellDataT_a074e298a44600699e2d9595b83a33995}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!CellDataT@{CellDataT}}
+\index{CellDataT@{CellDataT}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CellDataT()}{CellDataT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const int}]{nrow,  }\item[{const int}]{ncol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new, empty and uninitialised container for 2D data of the specified shape.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em nrow} & Number of rows. \\
+\hline
+{\em ncol} & Number of columns. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_ab345263dad7325522a06625aea7b14c5}\label{classNESO_1_1Particles_1_1CellDataT_ab345263dad7325522a06625aea7b14c5}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!at@{at}}
+\index{at@{at}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{const int}]{row,  }\item[{const int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access}{Access}} data with more standard (row, column) indexing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Row to access. \\
+\hline
+{\em col} & Column to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to accessed element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a0b8c2eb41931c16bb092f4e77d565360}\label{classNESO_1_1Particles_1_1CellDataT_a0b8c2eb41931c16bb092f4e77d565360}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}}\& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}}$<$ T $>$ const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a40d261b18d22e1c514c5e089168bc066}\label{classNESO_1_1Particles_1_1CellDataT_a40d261b18d22e1c514c5e089168bc066}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$\& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subscript operator for cell data. Data should be indexed by column then row. e.\+g. Cell\+Data cell\+\_\+data; T value = $\ast$cell\+\_\+data\mbox{[}col\mbox{]}\mbox{[}row\mbox{]}; \mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a7239e8ce1c811dc2575c87f422d4593b}\label{classNESO_1_1Particles_1_1CellDataT_a7239e8ce1c811dc2575c87f422d4593b}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!print@{print}}
+\index{print@{print}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the contents of the \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{Cell\+DataT}} instance. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a35f98601c9df8edee0364daa60c888ec}\label{classNESO_1_1Particles_1_1CellDataT_a35f98601c9df8edee0364daa60c888ec}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!data@{data}}
+\index{data@{data}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$std\+::vector$<$T$>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::data}
+
+
+
+2D data. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_a87ea64d751cc9b9991a139ba9966498d}\label{classNESO_1_1Particles_1_1CellDataT_a87ea64d751cc9b9991a139ba9966498d}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!ncol@{ncol}}
+\index{ncol@{ncol}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ncol}{ncol}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::ncol}
+
+
+
+Number of columns in the 2D data structure. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDataT_af8a83e5ff0c5472706a3f316b44b1d5e}\label{classNESO_1_1Particles_1_1CellDataT_af8a83e5ff0c5472706a3f316b44b1d5e}} 
+\index{NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}!nrow@{nrow}}
+\index{nrow@{nrow}!NESO::Particles::CellDataT$<$ T $>$@{NESO::Particles::CellDataT$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{nrow}{nrow}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDataT}{NESO\+::\+Particles\+::\+Cell\+DataT}}$<$ T $>$\+::nrow}
+
+
+
+Number of rows in the 2D data structure. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{cell__dat_8hpp}{cell\+\_\+dat.\+hpp}}\end{DoxyCompactItemize}

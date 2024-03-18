@@ -1,0 +1,372 @@
+\hypertarget{classNESO_1_1Particles_1_1CartesianHMesh}{}\doxysection{NESO\+::Particles\+::Cartesian\+HMesh Class Reference}
+\label{classNESO_1_1Particles_1_1CartesianHMesh}\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+
+
+{\ttfamily \#include $<$mesh\+\_\+interface.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Cartesian\+HMesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classNESO_1_1Particles_1_1CartesianHMesh__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for NESO\+::Particles\+::Cartesian\+HMesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classNESO_1_1Particles_1_1CartesianHMesh__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a274c157779c81b40bae5c090a1d9f253}\label{classNESO_1_1Particles_1_1CartesianHMesh_a274c157779c81b40bae5c090a1d9f253}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a274c157779c81b40bae5c090a1d9f253}{Cartesian\+HMesh}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a1eb5ff90498e1164d7c3a82289b114d0}\label{classNESO_1_1Particles_1_1CartesianHMesh_a1eb5ff90498e1164d7c3a82289b114d0}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a1eb5ff90498e1164d7c3a82289b114d0}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a99e2af5d0bf9fb19660d38154501ca5f}{Cartesian\+HMesh}} (MPI\+\_\+\+Comm comm, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_aa14bb64ab36cef1f11cac10ac3c20fc3}{ndim}}, std\+::vector$<$ int $>$ \&\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ad74d5a877561eab0982460f59333e866}{dims}}, const double extent=1.\+0, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a1f0ec9e1385f85d9a6613e545962bc6e}{subdivision\+\_\+order}}=1, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a4d73a69cae57175761d29cd6b4c350d1}{stencil\+\_\+width}}=0)
+\item 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a61e22ca1236760fc3c74a2ec6e978dde}{get\+\_\+comm}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a687bf6d4cdaad64d640dee2e9034c244}{get\+\_\+ndim}} ()
+\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a7e28ff09b2f53db3dcd41b20c9463df1}{get\+\_\+dims}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ae8dea487a82a0879ea7ba80f0bbf9859}{get\+\_\+subdivision\+\_\+order}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a3d29bd78564760990c858a58bb8b5ad2}{get\+\_\+cell\+\_\+width\+\_\+coarse}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a7faf49e285d0e991b57ced2dfaff01d5}{get\+\_\+cell\+\_\+width\+\_\+fine}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a40d816dea521c9409587511fb87c821c}{get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+coarse}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a6abf9e2d497c0f6923f21e312515a2c8}{get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+fine}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ad235e643aee9ae702ec31402af373953}{get\+\_\+ncells\+\_\+coarse}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_aba8252d636f4ec12310daea635c94bd4}{get\+\_\+ncells\+\_\+fine}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a0250e153380bbc87ed4144afb6b2aef2}{get\+\_\+cell\+\_\+count}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ae64f066c98a6a3575974ceb31a8dbca2}{get\+\_\+mesh\+\_\+hierarchy}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_aba7a278c572e8372ab507c9fab1958f0}{mesh\+\_\+tuple\+\_\+to\+\_\+mh\+\_\+tuple}} (const INT $\ast$index\+\_\+mesh, INT $\ast$index\+\_\+mh)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ab3ca2bb9454da866c3a38932a0c139b7}{free}} ()
+\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a0801f962e60e704f018c361dc329056e}{get\+\_\+local\+\_\+communication\+\_\+neighbours}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_abe1a67771740c9addc8b97b4c757d51e}\label{classNESO_1_1Particles_1_1CartesianHMesh_abe1a67771740c9addc8b97b4c757d51e}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_abe1a67771740c9addc8b97b4c757d51e}{cell\+\_\+starts}} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\begin{DoxyCompactList}\small\item\em Holds the first cell this rank owns in each dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a1cf3aa75b1b25e528ee2343a159ff832}\label{classNESO_1_1Particles_1_1CartesianHMesh_a1cf3aa75b1b25e528ee2343a159ff832}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a1cf3aa75b1b25e528ee2343a159ff832}{cell\+\_\+ends}} \mbox{[}3\mbox{]} = \{1, 1, 1\}
+\begin{DoxyCompactList}\small\item\em Holds the last cell+1 this ranks owns in each dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a893752a9b806d8146f274a222b09bb03}\label{classNESO_1_1Particles_1_1CartesianHMesh_a893752a9b806d8146f274a222b09bb03}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a893752a9b806d8146f274a222b09bb03}{cell\+\_\+counts}} = \{0, 0, 0\}
+\begin{DoxyCompactList}\small\item\em Global number of cells in each dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a7e1531f51c06adc7df6a670a9a2c78f2}\label{classNESO_1_1Particles_1_1CartesianHMesh_a7e1531f51c06adc7df6a670a9a2c78f2}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a7e1531f51c06adc7df6a670a9a2c78f2}{cell\+\_\+counts\+\_\+local}} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\begin{DoxyCompactList}\small\item\em Local number of cells in each dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_ad31121e484a2a987ca160f79a92849f6}\label{classNESO_1_1Particles_1_1CartesianHMesh_ad31121e484a2a987ca160f79a92849f6}} 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ad31121e484a2a987ca160f79a92849f6}{global\+\_\+extents}} \mbox{[}3\mbox{]} = \{0.\+0, 0.\+0, 0.\+0\}
+\begin{DoxyCompactList}\small\item\em Global extents of the mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a4d73a69cae57175761d29cd6b4c350d1}\label{classNESO_1_1Particles_1_1CartesianHMesh_a4d73a69cae57175761d29cd6b4c350d1}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a4d73a69cae57175761d29cd6b4c350d1}{stencil\+\_\+width}}
+\begin{DoxyCompactList}\small\item\em Width of the stencil used to determine which MPI ranks are neighbours. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_aa14bb64ab36cef1f11cac10ac3c20fc3}\label{classNESO_1_1Particles_1_1CartesianHMesh_aa14bb64ab36cef1f11cac10ac3c20fc3}} 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_aa14bb64ab36cef1f11cac10ac3c20fc3}{ndim}}
+\begin{DoxyCompactList}\small\item\em Number of dimensions of the mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_ad74d5a877561eab0982460f59333e866}\label{classNESO_1_1Particles_1_1CartesianHMesh_ad74d5a877561eab0982460f59333e866}} 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_ad74d5a877561eab0982460f59333e866}{dims}}
+\begin{DoxyCompactList}\small\item\em Vector holding the number of coarse cells in each dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a1f0ec9e1385f85d9a6613e545962bc6e}\label{classNESO_1_1Particles_1_1CartesianHMesh_a1f0ec9e1385f85d9a6613e545962bc6e}} 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a1f0ec9e1385f85d9a6613e545962bc6e}{subdivision\+\_\+order}}
+\begin{DoxyCompactList}\small\item\em Subdivision order to determine number of fine cells per coarse cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_aa30863dd18469dcef907b59c15e00c10}\label{classNESO_1_1Particles_1_1CartesianHMesh_aa30863dd18469dcef907b59c15e00c10}} 
+const double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_aa30863dd18469dcef907b59c15e00c10}{cell\+\_\+width\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em Width of coarse cells, uniform in all dimensions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a7d3c2e7c5f273eb002e14f834fc559da}\label{classNESO_1_1Particles_1_1CartesianHMesh_a7d3c2e7c5f273eb002e14f834fc559da}} 
+const double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a7d3c2e7c5f273eb002e14f834fc559da}{cell\+\_\+width\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em Width of fine cells, uniform in all dimensions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a972257f85b725203b5abbbfacac5d4ea}\label{classNESO_1_1Particles_1_1CartesianHMesh_a972257f85b725203b5abbbfacac5d4ea}} 
+const double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a972257f85b725203b5abbbfacac5d4ea}{inverse\+\_\+cell\+\_\+width\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em Inverse of the coarse cell width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_aa59af26a276782681ec0a2627957b188}\label{classNESO_1_1Particles_1_1CartesianHMesh_aa59af26a276782681ec0a2627957b188}} 
+const double \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_aa59af26a276782681ec0a2627957b188}{inverse\+\_\+cell\+\_\+width\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em Inverse of the fine cell width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a54242d8d1338890359f9f0c30a70b3a8}\label{classNESO_1_1Particles_1_1CartesianHMesh_a54242d8d1338890359f9f0c30a70b3a8}} 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a54242d8d1338890359f9f0c30a70b3a8}{ncells\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em Global number of coarse cells. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a67194f4476262e73312ea4fdddc850d7}\label{classNESO_1_1Particles_1_1CartesianHMesh_a67194f4476262e73312ea4fdddc850d7}} 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh_a67194f4476262e73312ea4fdddc850d7}{ncells\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em Number of coarse cells per fine cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Example mesh that duplicates a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} as a \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} for examples and testing. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a99e2af5d0bf9fb19660d38154501ca5f}\label{classNESO_1_1Particles_1_1CartesianHMesh_a99e2af5d0bf9fb19660d38154501ca5f}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!CartesianHMesh@{CartesianHMesh}}
+\index{CartesianHMesh@{CartesianHMesh}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{CartesianHMesh()}{CartesianHMesh()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::\+Cartesian\+HMesh (\begin{DoxyParamCaption}\item[{MPI\+\_\+\+Comm}]{comm,  }\item[{const int}]{ndim,  }\item[{std\+::vector$<$ int $>$ \&}]{dims,  }\item[{const double}]{extent = {\ttfamily 1.0},  }\item[{const int}]{subdivision\+\_\+order = {\ttfamily 1},  }\item[{const int}]{stencil\+\_\+width = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a mesh over a given MPI communicator with a specified shape.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comm} & MPI Communicator to use for decomposition. \\
+\hline
+{\em ndim} & Number of dimensions. \\
+\hline
+{\em dims} & Number of coarse cells in each dimension. \\
+\hline
+{\em extent} & Width of each coarse cell in each dimension. \\
+\hline
+{\em subdivision\+\_\+order} & Number of times to subdivide each coarse cell to produce the fine cells. \\
+\hline
+{\em stencil\+\_\+width} & Width of the stencil, in number of cells, used to determine MPI neighbours. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_ab3ca2bb9454da866c3a38932a0c139b7}\label{classNESO_1_1Particles_1_1CartesianHMesh_ab3ca2bb9454da866c3a38932a0c139b7}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!free@{free}}
+\index{free@{free}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Free the mesh and any associated communicators. 
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a770f6e841482bca0c692fd29a69354b3}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a0250e153380bbc87ed4144afb6b2aef2}\label{classNESO_1_1Particles_1_1CartesianHMesh_a0250e153380bbc87ed4144afb6b2aef2}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_cell\_count@{get\_cell\_count}}
+\index{get\_cell\_count@{get\_cell\_count}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_count()}{get\_cell\_count()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+cell\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the total number of cells in the mesh.
+
+\begin{DoxyReturn}{Returns}
+Total number of mesh cells. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a9502fe682f0c46c43b02a0cdde9b36c5}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a3d29bd78564760990c858a58bb8b5ad2}\label{classNESO_1_1Particles_1_1CartesianHMesh_a3d29bd78564760990c858a58bb8b5ad2}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_cell\_width\_coarse@{get\_cell\_width\_coarse}}
+\index{get\_cell\_width\_coarse@{get\_cell\_width\_coarse}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_width\_coarse()}{get\_cell\_width\_coarse()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+cell\+\_\+width\+\_\+coarse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the mesh width of the coarse cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} coarse cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a1ed691f0d27045975da1d955a27ff187}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a7faf49e285d0e991b57ced2dfaff01d5}\label{classNESO_1_1Particles_1_1CartesianHMesh_a7faf49e285d0e991b57ced2dfaff01d5}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_cell\_width\_fine@{get\_cell\_width\_fine}}
+\index{get\_cell\_width\_fine@{get\_cell\_width\_fine}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_width\_fine()}{get\_cell\_width\_fine()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+cell\+\_\+width\+\_\+fine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the mesh width of the fine cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} fine cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a8f7e74defa516008452d08fab1e50e31}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a61e22ca1236760fc3c74a2ec6e978dde}\label{classNESO_1_1Particles_1_1CartesianHMesh_a61e22ca1236760fc3c74a2ec6e978dde}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_comm@{get\_comm}}
+\index{get\_comm@{get\_comm}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_comm()}{get\_comm()}}
+{\footnotesize\ttfamily MPI\+\_\+\+Comm NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the MPI communicator of the mesh.
+
+\begin{DoxyReturn}{Returns}
+MPI communicator. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a07e88fbd3fde82da445d5d03e1d29a2a}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a7e28ff09b2f53db3dcd41b20c9463df1}\label{classNESO_1_1Particles_1_1CartesianHMesh_a7e28ff09b2f53db3dcd41b20c9463df1}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_dims@{get\_dims}}
+\index{get\_dims@{get\_dims}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_dims()}{get\_dims()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the Mesh dimensions.
+
+\begin{DoxyReturn}{Returns}
+Mesh dimensions. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a0074b083bd8ec1ac315f6c2daa63fd3d}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a40d816dea521c9409587511fb87c821c}\label{classNESO_1_1Particles_1_1CartesianHMesh_a40d816dea521c9409587511fb87c821c}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_inverse\_cell\_width\_coarse@{get\_inverse\_cell\_width\_coarse}}
+\index{get\_inverse\_cell\_width\_coarse@{get\_inverse\_cell\_width\_coarse}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_inverse\_cell\_width\_coarse()}{get\_inverse\_cell\_width\_coarse()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+coarse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the inverse mesh width of the coarse cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} inverse coarse cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a33715117ccdc60c35b5fd847b9aabee6}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a6abf9e2d497c0f6923f21e312515a2c8}\label{classNESO_1_1Particles_1_1CartesianHMesh_a6abf9e2d497c0f6923f21e312515a2c8}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_inverse\_cell\_width\_fine@{get\_inverse\_cell\_width\_fine}}
+\index{get\_inverse\_cell\_width\_fine@{get\_inverse\_cell\_width\_fine}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_inverse\_cell\_width\_fine()}{get\_inverse\_cell\_width\_fine()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+fine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the inverse mesh width of the fine cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} inverse fine cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a7f67ffe6dbdf0179323ff5ff57feffec}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a0801f962e60e704f018c361dc329056e}\label{classNESO_1_1Particles_1_1CartesianHMesh_a0801f962e60e704f018c361dc329056e}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_local\_communication\_neighbours@{get\_local\_communication\_neighbours}}
+\index{get\_local\_communication\_neighbours@{get\_local\_communication\_neighbours}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_local\_communication\_neighbours()}{get\_local\_communication\_neighbours()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+local\+\_\+communication\+\_\+neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get a std\+::vector of MPI ranks which should be used to setup local communication patterns.
+
+\begin{DoxyReturn}{Returns}
+std\+::vector of MPI ranks. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_ade3a7dd15b6b430959736bdbc86604a2}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_ae64f066c98a6a3575974ceb31a8dbca2}\label{classNESO_1_1Particles_1_1CartesianHMesh_ae64f066c98a6a3575974ceb31a8dbca2}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_mesh\_hierarchy@{get\_mesh\_hierarchy}}
+\index{get\_mesh\_hierarchy@{get\_mesh\_hierarchy}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_mesh\_hierarchy()}{get\_mesh\_hierarchy()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}$>$ NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+mesh\+\_\+hierarchy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} instance placed over the mesh.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} placed over the mesh. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_aeb36fa4184c486c4803b46313b5e89c7}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_ad235e643aee9ae702ec31402af373953}\label{classNESO_1_1Particles_1_1CartesianHMesh_ad235e643aee9ae702ec31402af373953}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_ncells\_coarse@{get\_ncells\_coarse}}
+\index{get\_ncells\_coarse@{get\_ncells\_coarse}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_ncells\_coarse()}{get\_ncells\_coarse()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+ncells\+\_\+coarse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the global number of coarse cells.
+
+\begin{DoxyReturn}{Returns}
+Global number of coarse cells. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_aa0d3df44d2b22f85ac172e6909636d73}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_aba8252d636f4ec12310daea635c94bd4}\label{classNESO_1_1Particles_1_1CartesianHMesh_aba8252d636f4ec12310daea635c94bd4}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_ncells\_fine@{get\_ncells\_fine}}
+\index{get\_ncells\_fine@{get\_ncells\_fine}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_ncells\_fine()}{get\_ncells\_fine()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+ncells\+\_\+fine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the number of fine cells per coarse cell.
+
+\begin{DoxyReturn}{Returns}
+Number of fine cells per coarse cell. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_afb69786167374b41ef43171eb709e18a}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_a687bf6d4cdaad64d640dee2e9034c244}\label{classNESO_1_1Particles_1_1CartesianHMesh_a687bf6d4cdaad64d640dee2e9034c244}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_ndim@{get\_ndim}}
+\index{get\_ndim@{get\_ndim}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_ndim()}{get\_ndim()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+ndim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the number of dimensions of the mesh.
+
+\begin{DoxyReturn}{Returns}
+Number of mesh dimensions. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a5a54487466baf12ce0697ed5dbca40f4}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_ae8dea487a82a0879ea7ba80f0bbf9859}\label{classNESO_1_1Particles_1_1CartesianHMesh_ae8dea487a82a0879ea7ba80f0bbf9859}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!get\_subdivision\_order@{get\_subdivision\_order}}
+\index{get\_subdivision\_order@{get\_subdivision\_order}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_subdivision\_order()}{get\_subdivision\_order()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::get\+\_\+subdivision\+\_\+order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the subdivision order of the mesh.
+
+\begin{DoxyReturn}{Returns}
+Subdivision order. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a16d9b144b278a99ceeacf51f92407df9}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMesh_aba7a278c572e8372ab507c9fab1958f0}\label{classNESO_1_1Particles_1_1CartesianHMesh_aba7a278c572e8372ab507c9fab1958f0}} 
+\index{NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}!mesh\_tuple\_to\_mh\_tuple@{mesh\_tuple\_to\_mh\_tuple}}
+\index{mesh\_tuple\_to\_mh\_tuple@{mesh\_tuple\_to\_mh\_tuple}!NESO::Particles::CartesianHMesh@{NESO::Particles::CartesianHMesh}}
+\doxysubsubsection{\texorpdfstring{mesh\_tuple\_to\_mh\_tuple()}{mesh\_tuple\_to\_mh\_tuple()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cartesian\+HMesh\+::mesh\+\_\+tuple\+\_\+to\+\_\+mh\+\_\+tuple (\begin{DoxyParamCaption}\item[{const INT $\ast$}]{index\+\_\+mesh,  }\item[{INT $\ast$}]{index\+\_\+mh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a mesh index (index\+\_\+x, index\+\_\+y, ...) for this cartesian mesh to the format for a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}\+: (coarse\+\_\+x, coarse\+\_\+y,.., fine\+\_\+x, fine\+\_\+y,...).
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+mesh} & Input tuple index on mesh. \\
+\hline
+{\em index\+\_\+mh} & Output tuple index on \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/mesh\+\_\+interface.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,345 @@
+\hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh}{}\doxysection{NESO\+::Particles\+::Local\+Decomposition\+HMesh Class Reference}
+\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh}\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+
+
+{\ttfamily \#include $<$mesh\+\_\+interface\+\_\+local\+\_\+decomp.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Local\+Decomposition\+HMesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classNESO_1_1Particles_1_1LocalDecompositionHMesh__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for NESO\+::Particles\+::Local\+Decomposition\+HMesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classNESO_1_1Particles_1_1LocalDecompositionHMesh__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a5f244334f8db75a2d3d05e91bb1d28ef}{Local\+Decomposition\+HMesh}} (const int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ad3aba870402e98266682aad67d16fdee}{ndim}}, std\+::vector$<$ double $>$ origin, std\+::vector$<$ double $>$ extents, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a7e73418f1c5a6326e6d78661195fff65}{cell\+\_\+count}}, MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ababd8169231839e88216cefc077df9ad}{comm}}=MPI\+\_\+\+COMM\+\_\+\+WORLD)
+\item 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2f0983cb6f026176b939fd7c4de4efa3}{get\+\_\+comm}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a4c6df7883453d097eeb5a153af369326}{get\+\_\+ndim}} ()
+\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1a898c1f7686b3e84dc119fbe2358318}{get\+\_\+dims}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a098bee7aa761fac5de054ebce0bf527e}{get\+\_\+subdivision\+\_\+order}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_aef97237c250f0c130daec4a5ea6fb110}{get\+\_\+cell\+\_\+count}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ae3926223baea2300378e4e93da3de7da}{get\+\_\+cell\+\_\+width\+\_\+coarse}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a5b5ff9826830d2d7bfd22768736ca675}{get\+\_\+cell\+\_\+width\+\_\+fine}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2a49a7e7dbe342e131de260e9c140469}{get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+coarse}} ()
+\item 
+double \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a555369a598f9ed4065f780249bbf05bc}{get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+fine}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a87c3408ec7da37071db6979a18a2e3d4}{get\+\_\+ncells\+\_\+coarse}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a27c7745098ba929e60dd531b98e0842d}{get\+\_\+ncells\+\_\+fine}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2955462a93495c2f91c879eed28ec39a}{get\+\_\+mesh\+\_\+hierarchy}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a290f6d9a76af07332c6fea9256f2a4c0}{free}} ()
+\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_aea283a61fd09870dc4f7f049f6113084}{get\+\_\+local\+\_\+communication\+\_\+neighbours}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a85162fba1c0d752c0b9b3526721466ca}{get\+\_\+point\+\_\+in\+\_\+subdomain}} (double $\ast$point)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ad3aba870402e98266682aad67d16fdee}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ad3aba870402e98266682aad67d16fdee}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ad3aba870402e98266682aad67d16fdee}{ndim}}
+\begin{DoxyCompactList}\small\item\em Number of dimensions (physical). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a69ddd14da97e8b8a681fde5fd9950505}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a69ddd14da97e8b8a681fde5fd9950505}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a69ddd14da97e8b8a681fde5fd9950505}{subdivision\+\_\+order}}
+\begin{DoxyCompactList}\small\item\em Subdivision order of \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ababd8169231839e88216cefc077df9ad}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ababd8169231839e88216cefc077df9ad}} 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ababd8169231839e88216cefc077df9ad}{comm}}
+\begin{DoxyCompactList}\small\item\em MPI Communicator used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1e24bb8c9c4b865c34455637779a3ebd}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1e24bb8c9c4b865c34455637779a3ebd}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1e24bb8c9c4b865c34455637779a3ebd}{mesh\+\_\+hierarchy}}
+\begin{DoxyCompactList}\small\item\em Underlying \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a7e73418f1c5a6326e6d78661195fff65}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a7e73418f1c5a6326e6d78661195fff65}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a7e73418f1c5a6326e6d78661195fff65}{cell\+\_\+count}}
+\begin{DoxyCompactList}\small\item\em Number of cells, i.\+e. Number of Nektar++ elements on this rank. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a8c4f2cddbaf52ca6556911f736f0f70a}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a8c4f2cddbaf52ca6556911f736f0f70a}} 
+std\+::array$<$ double, 3 $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a8c4f2cddbaf52ca6556911f736f0f70a}{global\+\_\+origin}}
+\begin{DoxyCompactList}\small\item\em Global origin of domain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a936d8b65ea99300107996de067ce7ae5}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a936d8b65ea99300107996de067ce7ae5}} 
+std\+::array$<$ double, 3 $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a936d8b65ea99300107996de067ce7ae5}{global\+\_\+extents}}
+\begin{DoxyCompactList}\small\item\em Global extents of global bounding box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1cec894688ba803b1a836325da8a88b8}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1cec894688ba803b1a836325da8a88b8}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1cec894688ba803b1a836325da8a88b8}{neighbour\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Vector of nearby ranks which local exchange patterns can be setup with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} type that does not attempt to build any global mapping data structures. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a5f244334f8db75a2d3d05e91bb1d28ef}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a5f244334f8db75a2d3d05e91bb1d28ef}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!LocalDecompositionHMesh@{LocalDecompositionHMesh}}
+\index{LocalDecompositionHMesh@{LocalDecompositionHMesh}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{LocalDecompositionHMesh()}{LocalDecompositionHMesh()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::\+Local\+Decomposition\+HMesh (\begin{DoxyParamCaption}\item[{const int}]{ndim,  }\item[{std\+::vector$<$ double $>$}]{origin,  }\item[{std\+::vector$<$ double $>$}]{extents,  }\item[{const int}]{cell\+\_\+count,  }\item[{MPI\+\_\+\+Comm}]{comm = {\ttfamily MPI\+\_\+COMM\+\_\+WORLD} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ndim} & Number of dimensions. \\
+\hline
+{\em origin} & Origin to use. \\
+\hline
+{\em extents} & Cartesian extents of the domain. \\
+\hline
+{\em cell\+\_\+count} & Number of cells in the mesh. \\
+\hline
+{\em comm} & MPI communicator to use. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a290f6d9a76af07332c6fea9256f2a4c0}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a290f6d9a76af07332c6fea9256f2a4c0}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!free@{free}}
+\index{free@{free}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Free the mesh and associated communicators. 
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a770f6e841482bca0c692fd29a69354b3}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_aef97237c250f0c130daec4a5ea6fb110}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_aef97237c250f0c130daec4a5ea6fb110}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_cell\_count@{get\_cell\_count}}
+\index{get\_cell\_count@{get\_cell\_count}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_count()}{get\_cell\_count()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+cell\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the total number of cells in the mesh on this MPI rank, i.\+e. the number of Nektar++ elements on this MPI rank.
+
+\begin{DoxyReturn}{Returns}
+Total number of mesh cells on this MPI rank. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a9502fe682f0c46c43b02a0cdde9b36c5}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ae3926223baea2300378e4e93da3de7da}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_ae3926223baea2300378e4e93da3de7da}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_cell\_width\_coarse@{get\_cell\_width\_coarse}}
+\index{get\_cell\_width\_coarse@{get\_cell\_width\_coarse}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_width\_coarse()}{get\_cell\_width\_coarse()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+cell\+\_\+width\+\_\+coarse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the mesh width of the coarse cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} coarse cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a1ed691f0d27045975da1d955a27ff187}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a5b5ff9826830d2d7bfd22768736ca675}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a5b5ff9826830d2d7bfd22768736ca675}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_cell\_width\_fine@{get\_cell\_width\_fine}}
+\index{get\_cell\_width\_fine@{get\_cell\_width\_fine}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_width\_fine()}{get\_cell\_width\_fine()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+cell\+\_\+width\+\_\+fine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the mesh width of the fine cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} fine cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a8f7e74defa516008452d08fab1e50e31}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2f0983cb6f026176b939fd7c4de4efa3}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2f0983cb6f026176b939fd7c4de4efa3}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_comm@{get\_comm}}
+\index{get\_comm@{get\_comm}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_comm()}{get\_comm()}}
+{\footnotesize\ttfamily MPI\+\_\+\+Comm NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the MPI communicator of the mesh.
+
+\begin{DoxyReturn}{Returns}
+MPI communicator. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a07e88fbd3fde82da445d5d03e1d29a2a}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1a898c1f7686b3e84dc119fbe2358318}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a1a898c1f7686b3e84dc119fbe2358318}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_dims@{get\_dims}}
+\index{get\_dims@{get\_dims}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_dims()}{get\_dims()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the Mesh dimensions.
+
+\begin{DoxyReturn}{Returns}
+Mesh dimensions. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a0074b083bd8ec1ac315f6c2daa63fd3d}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2a49a7e7dbe342e131de260e9c140469}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2a49a7e7dbe342e131de260e9c140469}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_inverse\_cell\_width\_coarse@{get\_inverse\_cell\_width\_coarse}}
+\index{get\_inverse\_cell\_width\_coarse@{get\_inverse\_cell\_width\_coarse}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_inverse\_cell\_width\_coarse()}{get\_inverse\_cell\_width\_coarse()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+coarse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the inverse mesh width of the coarse cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} inverse coarse cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a33715117ccdc60c35b5fd847b9aabee6}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a555369a598f9ed4065f780249bbf05bc}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a555369a598f9ed4065f780249bbf05bc}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_inverse\_cell\_width\_fine@{get\_inverse\_cell\_width\_fine}}
+\index{get\_inverse\_cell\_width\_fine@{get\_inverse\_cell\_width\_fine}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_inverse\_cell\_width\_fine()}{get\_inverse\_cell\_width\_fine()}}
+{\footnotesize\ttfamily double NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+inverse\+\_\+cell\+\_\+width\+\_\+fine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the inverse mesh width of the fine cells in the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} inverse fine cell width. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a7f67ffe6dbdf0179323ff5ff57feffec}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_aea283a61fd09870dc4f7f049f6113084}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_aea283a61fd09870dc4f7f049f6113084}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_local\_communication\_neighbours@{get\_local\_communication\_neighbours}}
+\index{get\_local\_communication\_neighbours@{get\_local\_communication\_neighbours}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_local\_communication\_neighbours()}{get\_local\_communication\_neighbours()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+local\+\_\+communication\+\_\+neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get a std\+::vector of MPI ranks which should be used to setup local communication patterns.
+
+\begin{DoxyReturn}{Returns}
+std\+::vector of MPI ranks. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_ade3a7dd15b6b430959736bdbc86604a2}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2955462a93495c2f91c879eed28ec39a}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a2955462a93495c2f91c879eed28ec39a}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_mesh\_hierarchy@{get\_mesh\_hierarchy}}
+\index{get\_mesh\_hierarchy@{get\_mesh\_hierarchy}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_mesh\_hierarchy()}{get\_mesh\_hierarchy()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}$>$ NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+mesh\+\_\+hierarchy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} instance placed over the mesh.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} placed over the mesh. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_aeb36fa4184c486c4803b46313b5e89c7}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a87c3408ec7da37071db6979a18a2e3d4}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a87c3408ec7da37071db6979a18a2e3d4}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_ncells\_coarse@{get\_ncells\_coarse}}
+\index{get\_ncells\_coarse@{get\_ncells\_coarse}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_ncells\_coarse()}{get\_ncells\_coarse()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+ncells\+\_\+coarse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the global number of coarse cells.
+
+\begin{DoxyReturn}{Returns}
+Global number of coarse cells. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_aa0d3df44d2b22f85ac172e6909636d73}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a27c7745098ba929e60dd531b98e0842d}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a27c7745098ba929e60dd531b98e0842d}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_ncells\_fine@{get\_ncells\_fine}}
+\index{get\_ncells\_fine@{get\_ncells\_fine}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_ncells\_fine()}{get\_ncells\_fine()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+ncells\+\_\+fine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the number of fine cells per coarse cell.
+
+\begin{DoxyReturn}{Returns}
+Number of fine cells per coarse cell. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_afb69786167374b41ef43171eb709e18a}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a4c6df7883453d097eeb5a153af369326}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a4c6df7883453d097eeb5a153af369326}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_ndim@{get\_ndim}}
+\index{get\_ndim@{get\_ndim}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_ndim()}{get\_ndim()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+ndim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the number of dimensions of the mesh.
+
+\begin{DoxyReturn}{Returns}
+Number of mesh dimensions. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a5a54487466baf12ce0697ed5dbca40f4}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a85162fba1c0d752c0b9b3526721466ca}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a85162fba1c0d752c0b9b3526721466ca}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_point\_in\_subdomain@{get\_point\_in\_subdomain}}
+\index{get\_point\_in\_subdomain@{get\_point\_in\_subdomain}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_point\_in\_subdomain()}{get\_point\_in\_subdomain()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+point\+\_\+in\+\_\+subdomain (\begin{DoxyParamCaption}\item[{double $\ast$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get a point in the domain that should be in, or at least close to, the sub-\/domain on this MPI process. Useful for parallel initialisation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Pointer to array of size equal to at least the number of mesh dimensions. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a78f858884ad665ddaa0a353b21d49a3a}{NESO\+::\+Particles\+::\+HMesh}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a098bee7aa761fac5de054ebce0bf527e}\label{classNESO_1_1Particles_1_1LocalDecompositionHMesh_a098bee7aa761fac5de054ebce0bf527e}} 
+\index{NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}!get\_subdivision\_order@{get\_subdivision\_order}}
+\index{get\_subdivision\_order@{get\_subdivision\_order}!NESO::Particles::LocalDecompositionHMesh@{NESO::Particles::LocalDecompositionHMesh}}
+\doxysubsubsection{\texorpdfstring{get\_subdivision\_order()}{get\_subdivision\_order()}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Local\+Decomposition\+HMesh\+::get\+\_\+subdivision\+\_\+order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the subdivision order of the mesh.
+
+\begin{DoxyReturn}{Returns}
+Subdivision order. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh_a16d9b144b278a99ceeacf51f92407df9}{NESO\+::\+Particles\+::\+HMesh}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/mesh\+\_\+interface\+\_\+local\+\_\+decomp.\+hpp\end{DoxyCompactItemize}

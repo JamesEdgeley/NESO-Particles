@@ -1,0 +1,77 @@
+\hypertarget{global__array_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/global\+\_\+array.hpp File Reference}
+\label{global__array_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/containers/global\_array.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/containers/global\_array.hpp}}
+{\ttfamily \#include \char`\"{}../compute\+\_\+target.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../typedefs.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../communication.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../loop/access\+\_\+descriptors.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../loop/particle\+\_\+loop\+\_\+base.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$mpi.\+h$>$}\newline
+{\ttfamily \#include $<$optional$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for global\+\_\+array.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{global__array_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{global__array_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Read}{NESO\+::\+Particles\+::\+Access\+::\+Global\+Array\+::\+Read$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add}{NESO\+::\+Particles\+::\+Access\+::\+Global\+Array\+::\+Add$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01GlobalArray_3_01T_01_4_01_4_01_4}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Loop\+Parameter$<$ Access\+::\+Read$<$ Global\+Array$<$ T $>$ $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01GlobalArray_3_01T_01_4_01_4_01_4}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Loop\+Parameter$<$ Access\+::\+Add$<$ Global\+Array$<$ T $>$ $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_0162c1cf6eba4b5cf6448eddf3e1dd66fc}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Kernel\+Parameter$<$ Access\+::\+Read$<$ Global\+Array$<$ T $>$ $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01GlobalArray_3_01T_01_4_01_4_01_4}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Kernel\+Parameter$<$ Access\+::\+Add$<$ Global\+Array$<$ T $>$ $>$ $>$}}
+\item 
+class \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access}{NESO\+::\+Particles\+::\+Access}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1GlobalArray}{NESO\+::\+Particles\+::\+Access\+::\+Global\+Array}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceNESO_1_1Particles_a35560e9559a0a254e218ba54c08c3204}{NESO\+::\+Particles\+::\+Global\+Array\+Impl\+GetT}} = T $\ast$
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceNESO_1_1Particles_a9f23675b1b14a8be48d5b433693195ed}{NESO\+::\+Particles\+::\+Global\+Array\+Impl\+Get\+ConstT}} = T const $\ast$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_abc5b9a590ec5bd3335c6d9874d6cd640}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::create\+\_\+kernel\+\_\+arg}} (Particle\+Loop\+Iteration \&iterationx, T const $\ast$rhs, Access\+::\+Global\+Array\+::\+Read$<$ T $>$ \&lhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_a539d3b05015ffc149ffa2107b21807e2}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::create\+\_\+kernel\+\_\+arg}} (Particle\+Loop\+Iteration \&iterationx, T $\ast$rhs, Access\+::\+Global\+Array\+::\+Add$<$ T $>$ \&lhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_ad6384ea6e06770c4a4ae7ddd64c12ba9}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::post\+\_\+loop}} (Particle\+Loop\+Global\+Info $\ast$global\+\_\+info, Access\+::\+Add$<$ Global\+Array$<$ T $>$ $\ast$ $>$ \&arg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Global\+Array\+Impl\+Get\+ConstT$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_a15111d7e2d4495a2445002a64255c69c}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (Particle\+Loop\+Global\+Info $\ast$global\+\_\+info, sycl\+::handler \&cgh, Access\+::\+Read$<$ Global\+Array$<$ T $>$ $\ast$ $>$ \&a)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Global\+Array\+Impl\+GetT$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_a001d55150b95f6f2839f39be82c17ba8}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (Particle\+Loop\+Global\+Info $\ast$global\+\_\+info, sycl\+::handler \&cgh, Access\+::\+Add$<$ Global\+Array$<$ T $>$ $\ast$ $>$ \&a)
+\end{DoxyCompactItemize}

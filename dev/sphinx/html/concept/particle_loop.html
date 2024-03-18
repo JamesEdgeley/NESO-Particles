@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Particle Loop &#8212; NESO-Particles  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79a58105" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'concept/particle_loop';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.2';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://excalibur-neptune.github.io/NESO-Particles/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        </script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Particle Products" href="particle_products.html" />
+    <link rel="prev" title="Overarching Concepts and Motivation" href="concept.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">NESO-Particles  documentation</p>
+  
+</a></div>
+    
+      <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../concept.html">
+                        Concept
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-user.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-developer.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../concept.html">
+                        Concept
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-user.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../guide-developer.html">
+                        Developer Guide
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../concept.html">Concept</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="concept.html">Overarching Concepts and Motivation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Particle Loop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#advection-example">Advection Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-data-structures">Additional Data Structures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#localarray">LocalArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#globalarray">GlobalArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#celldatconst-and-celldat">CellDatConst and CellDat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#symvector">SymVector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#particleloopindex">ParticleLoopIndex</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="particle_products.html">Particle Products</a></li>
+<li class="toctree-l2"><a class="reference internal" href="particle_sub_group.html">Particle Sub Group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide-user.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide-developer.html">Developer Guide</a></li>
+</ul>
+</div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../concept.html" class="nav-link">Concept</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Particle Loop</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="particle-loop">
+<h1>Particle Loop<a class="headerlink" href="#particle-loop" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>In NESO-Particles (NP) a “Particle Loop” is a loop over all particles in a collection of particles.
+For each particle in the iteration set a user provided kernel is executed.
+This user provided kernel may access the data stored on each particle (ParticleDats) and access global data.
+For each data structure accessed by the kernel the user must provide an access descriptor.
+This access descriptor describes exactly how the data will be accessed, e.g. read-only.
+The provided kernel must be written such that the result of execution of the loop is independent of the execution order of the loop, i.e. parallel and unsequenced in C++ terminology.
+The particle loop abstraction follows the particle loop abstraction in <a class="reference internal" href="#saunders2018" id="id1"><span>[SAUNDERS2018]</span></a>.</p>
+<section id="advection-example">
+<h3>Advection Example<a class="headerlink" href="#advection-example" title="Link to this heading">#</a></h3>
+<p>In the code listings below we present and describe an example ParticleLoop.
+This example loop assumes that a ParticleGroup has been created with “P” and “V” particle properties which are real valued and have at least two components.</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-number">Listing 1 </span><span class="caption-text">Example of a ParticleLoop which performs a simple advection operation.</span><a class="headerlink" href="#id2" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">advection_example</span><span class="p">(</span>
+<span class="w">    </span><span class="c1">// Input ParticleGroup - we will loop over all particles in this</span>
+<span class="w">    </span><span class="c1">// ParticleGroup.</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// These constants are captured by value into the kernel lambda.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ndim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">REAL</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.001</span><span class="p">;</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;advection_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Optional name for the loop - for profiling.</span>
+
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span><span class="w">      </span><span class="c1">// Iteration set is defined as all particles in this</span>
+<span class="w">                         </span><span class="c1">// ParticleGroup.</span>
+
+<span class="w">    </span><span class="c1">// This lambda defines the kernel to be executed for</span>
+<span class="w">    </span><span class="c1">// all particles in the iteration set.</span>
+<span class="w">    </span><span class="c1">// The [=] captures the ndim and dt variables by value. A [&amp;] would capture</span>
+<span class="w">    </span><span class="c1">// these variables by reference.</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">P</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">V</span><span class="p">){</span><span class="w"> </span><span class="c1">// These parameters have a one-to-one correspondence</span>
+<span class="w">                         </span><span class="c1">// with the loop arguments that follow the kernel in</span>
+<span class="w">                         </span><span class="c1">// the call to particle_loop.</span>
+<span class="w">      </span>
+<span class="w">      </span><span class="c1">// Loop over the P particle property and update the values with values</span>
+<span class="w">      </span><span class="c1">// read from the V property.</span>
+<span class="w">      </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">dimx</span><span class="o">=</span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">&lt;</span><span class="n">ndim</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="n">P</span><span class="p">[</span><span class="n">dimx</span><span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="n">dimx</span><span class="p">];</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// The remaining arguments passed to the particle loop are the link between</span>
+<span class="w">    </span><span class="c1">// the kernel parameters and the data structures which the loop accesses.</span>
+<span class="w">    </span><span class="c1">// Each argument is passed as a combination of an access descriptor and a</span>
+<span class="w">    </span><span class="c1">// data structure. </span>
+<span class="w">    </span>
+<span class="w">    </span><span class="c1">// In this example the data structure is a ParticleDat and it is referenced</span>
+<span class="w">    </span><span class="c1">// by the symbol for the ParticleDat in the ParticleGroup. Here we indicate</span>
+<span class="w">    </span><span class="c1">// that the &quot;P&quot; ParticleDat is accessed in a write mode.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">write</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;P&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="c1">// Here we pass the V ParticleDat to the particle loop and indicate that</span>
+<span class="w">    </span><span class="c1">// these particle properties are accessed in a read-only mode in the</span>
+<span class="w">    </span><span class="c1">// particle loop.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">))</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Execute the ParticleLoop. A ParticleLoop can be executed multiple times</span>
+<span class="w">  </span><span class="c1">// without reconstruction.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>The particle loop can be executed asynchronously via calls to “submit” and “wait”.</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-number">Listing 2 </span><span class="caption-text">Duplicate of the advection ParticleLoop example with the comments removed and asynchronous execution.</span><a class="headerlink" href="#id3" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">advection_example_no_comments</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ndim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">REAL</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.001</span><span class="p">;</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;advection_example&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">P</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">V</span><span class="p">){</span>
+<span class="w">      </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">dimx</span><span class="o">=</span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">&lt;</span><span class="n">ndim</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="c1">// .at is an alternative access method</span>
+<span class="w">        </span><span class="n">P</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">dimx</span><span class="p">)</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">dimx</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">write</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;P&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">))</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Launch the particle loop.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">submit</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// Wait for execution of the particle loop to complete.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">wait</span><span class="p">();</span>
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<table class="table" id="id4">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">ParticleDat&lt;T&gt; Access</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::ParticleDat::Read&lt;T&gt;</p></td>
+<td><p>Components accessed for the particle via .at or subscript which returns a const reference.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Write</p></td>
+<td><p>Access::ParticleDat::Write&lt;T&gt;</p></td>
+<td><p>Components accessed for the particle via .at or subscript which returns a modifiable reference.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="additional-data-structures">
+<h2>Additional Data Structures<a class="headerlink" href="#additional-data-structures" title="Link to this heading">#</a></h2>
+<p>In the advection example we described a particle loop that only accessed particle data.
+In addition to particle data particle loops may access additional data structures which are not tied to a particular particle.</p>
+<p>The “LocalArray” data structure is an array type which is local to the MPI rank on which it is defined, i.e. no MPI communication occurs.
+The local array type can be considered similar to the std::vector type.
+The “GlobalArray” type is an array type where a copy of the array is stored on each MPI rank and access to the array is collective over the MPI communicator on which the global array is defined.
+The “CellDatConst” type is a matrix type defined with fixed size (the “Const” part of the name) and data type for each cell in a mesh.
+A matrix with a fixed number of rows and a variable number of columns per cell can be created per cell with the “CellDat” data structure.
+Due to the SYCL language restrictions the number of kernel arguments must be fixed at compilation time, the “SymVector” data structure applies indirection to allow a “vector” of particle properties to be passed at runtime.
+The “ParticleLoopIndex” provides access to indexing information for the particle within the particle loop kernel.</p>
+<p>These additional data structures must be passed to a particle loop with an access mode which is commutative.
+In practice only commutative access modes are defined for these data structures and attempting to pass them to a particle loop with an inappropriate access descriptor will result in a compile time error.</p>
+<section id="localarray">
+<h3>LocalArray<a class="headerlink" href="#localarray" title="Link to this heading">#</a></h3>
+<p>The local array type is local to each MPI rank. No communication between MPI ranks is performed by the particle loop.
+The local array can be accessed in particle loops with “read” and “add” access modes.</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-number">Listing 3 </span><span class="caption-text">Particle loop example where a local array is incremented by each particle and another local array is read by each particle.</span><a class="headerlink" href="#id5" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">local_array_example</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Create a new LocalArray on the same SYCLTarget as the particle group.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">local_array_add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">LocalArray</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;&gt;</span><span class="p">(</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">sycl_target</span><span class="p">,</span><span class="w"> </span><span class="c1">// Compute target to use.</span>
+<span class="w">    </span><span class="mi">2</span><span class="p">,</span><span class="w">                           </span><span class="c1">// Number of elements in the array.</span>
+<span class="w">    </span><span class="mi">0</span><span class="w">                            </span><span class="c1">// Initial value for elements.</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Create a local array using initial values from a std::vector.</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="w"> </span><span class="n">d0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.0</span><span class="p">};</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">local_array_read</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">LocalArray</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;&gt;</span><span class="p">(</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">sycl_target</span><span class="p">,</span><span class="w"> </span><span class="c1">// Compute device.</span>
+<span class="w">    </span><span class="n">d0</span><span class="w">                           </span><span class="c1">// Initial values and size definition.</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;local_array_example&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// LA_ADD is the parameter for the LocalArray with &quot;add&quot; access and LA_READ</span>
+<span class="w">    </span><span class="c1">// is the parameter for the LocalArray with read-only access.</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">ID</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">LA_ADD</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">LA_READ</span><span class="p">){</span>
+<span class="w">      </span>
+<span class="w">      </span><span class="c1">// Increment the first component of LA_ADD by 1.</span>
+<span class="w">      </span><span class="n">LA_ADD</span><span class="p">.</span><span class="n">fetch_add</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">      </span><span class="c1">// Increment the second component of LA_ADD with the entry in ID[0].</span>
+<span class="w">      </span><span class="n">LA_ADD</span><span class="p">.</span><span class="n">fetch_add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">ID</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span>
+<span class="w">      </span><span class="c1">// Read from LA_READ and assign the values to the V particle component.</span>
+<span class="w">      </span><span class="n">V</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LA_READ</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">      </span><span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LA_READ</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">      </span><span class="n">V</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LA_READ</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// Particle property access descriptors.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">INT</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;ID&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">write</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="c1">// LocalArray access descriptors.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">add</span><span class="p">(</span><span class="n">local_array_add</span><span class="p">),</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">local_array_read</span><span class="p">)</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Execute the loop.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Get the contents of the local array in a std::vector.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">vec0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">local_array_add</span><span class="o">-&gt;</span><span class="n">get</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<table class="table" id="id6">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">LocalArray&lt;T&gt; Access</span><a class="headerlink" href="#id6" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::LocalArray::Read&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at or subscript which returns a const reference.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Write</p></td>
+<td><p>Access::LocalArray::Write&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at or subscript which returns a modifiable reference. It is the responsiblity of the user to avoid write conflicts and race conditions between loop iterations.</p></td>
+</tr>
+<tr class="row-even"><td><p>Add</p></td>
+<td><p>Access::LocalArray::Add&lt;T&gt;</p></td>
+<td><p>fetch_add(index, value) atomically increments the element referenced by the index with the passed value. Returns the previous value stored at the index. Users may assume that the memory region accessed is the same for all invocations of the kernel. Hence adding 1 for each particle gives a total ordering for each participating calls.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="globalarray">
+<h3>GlobalArray<a class="headerlink" href="#globalarray" title="Link to this heading">#</a></h3>
+<p>Unlike the local array, a global array is intended to have identical values across MPI ranks.
+The global array can be accessed in “read” and “add” access modes.
+When accessed with “add” access modes the particle loop must be executed collectively across all MPI ranks.
+On completion of the loop the local entries of each global array are globally combined (Allreduce).</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-number">Listing 4 </span><span class="caption-text">Particle loop example where a global array is incremented by each particle.</span><a class="headerlink" href="#id7" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">global_array_example</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Create a new GlobalArray on the same SYCLTarget as the particle group.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">global_array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">GlobalArray</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;&gt;</span><span class="p">(</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">sycl_target</span><span class="p">,</span><span class="w"> </span><span class="c1">// Compute target to use.</span>
+<span class="w">    </span><span class="mi">1</span><span class="p">,</span><span class="w">                           </span><span class="c1">// Number of elements in the array.</span>
+<span class="w">    </span><span class="mi">0</span><span class="w">                            </span><span class="c1">// Initial value for elements.</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;global_array_example&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">GA</span><span class="p">){</span>
+<span class="w">      </span><span class="c1">// Kinetic energy of this particle.</span>
+<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="n">REAL</span><span class="w"> </span><span class="n">kinetic_energy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">        </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">V</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">      </span><span class="c1">// Increment the first component of the global array with the</span>
+<span class="w">      </span><span class="c1">// contribution from this particle.</span>
+<span class="w">      </span><span class="n">GA</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">kinetic_energy</span><span class="p">);</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// Particle property access descriptor.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="c1">// GlobalArray access descriptor.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">add</span><span class="p">(</span><span class="n">global_array</span><span class="p">)</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Execute the loop. This must be called collectively on the MPI communicator</span>
+<span class="w">  </span><span class="c1">// of the SYCLTarget as the add operation is collective.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// Get the contents of the global array in a std::vector. The first element</span>
+<span class="w">  </span><span class="c1">// would be the kinetic energy of all particles in the ParticleGroup.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">vec0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">global_array</span><span class="o">-&gt;</span><span class="n">get</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<table class="table" id="id8">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">GlobalArray&lt;T&gt; Access</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::GlobalArray::Read&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at or subscript which returns a const reference.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Add</p></td>
+<td><p>Access::GlobalArray::Add&lt;T&gt;</p></td>
+<td><p>add(index, value) atomically increments the element referenced by the index with the passed value. On loop execution completion values are all-reduced across all MPI ranks.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="celldatconst-and-celldat">
+<h3>CellDatConst and CellDat<a class="headerlink" href="#celldatconst-and-celldat" title="Link to this heading">#</a></h3>
+<p>The CellDatConst data structure stores a constant sized matrix per mesh cell.
+When accessed from a particle loop both the read and add access descriptors expose the matrix which corresponds to the cell in which the particle resides.</p>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-number">Listing 5 </span><span class="caption-text">Particle loop example where a CellDatConst is accessed by the ParticleLoop. CellDat is accessed in a ParticleLoop in an identical manner.</span><a class="headerlink" href="#id9" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">cell_dat_const_example</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Get the number of cells on this MPI rank.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cell_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">domain</span><span class="o">-&gt;</span><span class="n">mesh</span><span class="o">-&gt;</span><span class="n">get_cell_count</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// Create a 3x1 matrix for cell_count cells.</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">g1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CellDatConst</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="p">(</span>
+<span class="w">      </span><span class="n">particle_group</span><span class="o">-&gt;</span><span class="n">sycl_target</span><span class="p">,</span><span class="w"> </span><span class="n">cell_count</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// For each cell get the current matrix and zero the values then write back</span>
+<span class="w">  </span><span class="c1">// to the data structure.</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">cx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">cx</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cell_count</span><span class="p">;</span><span class="w"> </span><span class="n">cx</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">cell_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g1</span><span class="o">-&gt;</span><span class="n">get_cell</span><span class="p">(</span><span class="n">cx</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cell_data</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cell_data</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cell_data</span><span class="o">-&gt;</span><span class="n">at</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">g1</span><span class="o">-&gt;</span><span class="n">set_cell</span><span class="p">(</span><span class="n">cx</span><span class="p">,</span><span class="w"> </span><span class="n">cell_data</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Alternatively all entries in all cells of the CellDatConst may be filled</span>
+<span class="w">  </span><span class="c1">// with a value.</span>
+<span class="w">  </span><span class="n">g1</span><span class="o">-&gt;</span><span class="n">fill</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;cell_dat_const_example&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">V</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">GA</span><span class="p">){</span>
+<span class="w">      </span><span class="c1">// Increment the matrix in each cell with the velocities of particles in</span>
+<span class="w">      </span><span class="c1">// that cell.</span>
+<span class="w">      </span><span class="n">GA</span><span class="p">.</span><span class="n">fetch_add</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">GA</span><span class="p">.</span><span class="n">fetch_add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">GA</span><span class="p">.</span><span class="n">fetch_add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">V</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// Particle property access descriptor.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">)),</span>
+<span class="w">    </span><span class="c1">// CellDatConst access descriptor.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">add</span><span class="p">(</span><span class="n">g1</span><span class="p">)</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// Execute the loop.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// After loop execution the 3x1 matrix in each cell will contain the sum of</span>
+<span class="w">  </span><span class="c1">// the particle velocities in each cell.</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">cx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">cx</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cell_count</span><span class="p">;</span><span class="w"> </span><span class="n">cx</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">cell_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g1</span><span class="o">-&gt;</span><span class="n">get_cell</span><span class="p">(</span><span class="n">cx</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// use cell data</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<table class="table" id="id10">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">CellDatConst&lt;T&gt; Access</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::CellDatConst::Read&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at(row, col) or subscript (linearised index) which returns a const reference.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Add</p></td>
+<td><p>Access::CellDatConst::Add&lt;T&gt;</p></td>
+<td><p>fetch_add(row, col, value) atomically increments the element referenced by the index with the passed value. Returns the previous value stored at the index. Users may assume that the memory region accessed is the same for all invocations of the kernel. Hence adding 1 for each particle gives a total ordering for each participating calls.</p></td>
+</tr>
+<tr class="row-even"><td><p>Min</p></td>
+<td><p>Access::CellDatConst::Min&lt;T&gt;</p></td>
+<td><p>fetch_min(row, col, value) atomically computes the minimum of element referenced by the index and the passed value. Returns the previous value stored at the index.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Max</p></td>
+<td><p>Access::CellDatConst::Max&lt;T&gt;</p></td>
+<td><p>fetch_max(row, col, value) atomically computes the maximum of element referenced by the index and the passed value. Returns the previous value stored at the index.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table" id="id11">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">CellDat&lt;T&gt; Access</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::CellDat::Read&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at(row, col) which returns a const reference.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Add</p></td>
+<td><p>Access::CellDat::Add&lt;T&gt;</p></td>
+<td><p>fetch_add(row, col, value) atomically increments the element referenced by the index with the passed value. Returns the previous value stored at the index. Users may assume that the memory region accessed is the same for all invocations of the kernel. Hence adding 1 for each particle gives a total ordering for each participating calls.</p></td>
+</tr>
+<tr class="row-even"><td><p>Write</p></td>
+<td><p>Access::CellDat::Write&lt;T&gt;</p></td>
+<td><p>Write using a modifiable reference provided by .at(row, col). It is the users responsibility that no write conflicts or race conditions occur.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="symvector">
+<h3>SymVector<a class="headerlink" href="#symvector" title="Link to this heading">#</a></h3>
+<p>SymVector enables passing a set of ParticleDats to the ParticleGroup where the number of ParticleDats is only known at runtime.
+The indexing of the data structure in the kernel is via the positional index of the ParticleDat relative to the construction of the SymVector.</p>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-number">Listing 6 </span><span class="caption-text">Particle loop example where a SymVector is accessed by the ParticleLoop.</span><a class="headerlink" href="#id12" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sym_vector_example</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="c1">// These constants are captured by value into the kernel lambda.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ndim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">REAL</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.001</span><span class="p">;</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;sym_vector_example&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">dats_vector</span><span class="p">){</span>
+<span class="w">      </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">dimx</span><span class="o">=</span><span class="mi">0</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">&lt;</span><span class="n">ndim</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">dimx</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="c1">// P has index 0 in dats_vector as it is first in the sym_vector.</span>
+<span class="w">        </span><span class="c1">// V has index 1 in dats_vector as it is second.</span>
+<span class="w">        </span><span class="n">dats_vector</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">dimx</span><span class="p">)</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dats_vector</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">dimx</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span><span class="w">     </span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// We state that all ParticleDats in the SymVector are write access.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">write</span><span class="p">(</span>
+<span class="w">      </span><span class="c1">// Helper function to create a SymVector.</span>
+<span class="w">      </span><span class="n">sym_vector</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span>
+<span class="w">        </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">        </span><span class="c1">// This argument may also be a std::vector of Syms.</span>
+<span class="w">        </span><span class="p">{</span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;P&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">Sym</span><span class="o">&lt;</span><span class="n">REAL</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;V&quot;</span><span class="p">)}</span>
+<span class="w">      </span><span class="p">)</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Execute the loop.</span>
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<table class="table" id="id13">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">SymVector&lt;T&gt; Access</span><a class="headerlink" href="#id13" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::SymVector::Read&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at or subscript which returns a const reference.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Write</p></td>
+<td><p>Access::SymVector::Write&lt;T&gt;</p></td>
+<td><p>Components accessed for each array element via .at or subscript which returns a reference.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="particleloopindex">
+<h3>ParticleLoopIndex<a class="headerlink" href="#particleloopindex" title="Link to this heading">#</a></h3>
+<p>Some data structures are indexed by the cell and layer of the particle.
+The ParticleLoopIndex is a data structure that can be read in a ParticleLoop to provide this information.
+This data structure is read-only.</p>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-number">Listing 7 </span><span class="caption-text">Particle loop example where a ParticleLoopIndex is accessed by the ParticleLoop.</span><a class="headerlink" href="#id14" title="Link to this code">#</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">advection_example_loop_index</span><span class="p">(</span>
+<span class="w">    </span><span class="n">ParticleGroupSharedPtr</span><span class="w"> </span><span class="n">particle_group</span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">particle_loop</span><span class="p">(</span>
+<span class="w">    </span><span class="s">&quot;loop_index_example&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">particle_group</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="n">index</span><span class="p">){</span>
+<span class="w">      </span><span class="c1">// Dummy output variable we store the indices in for this example.</span>
+<span class="w">      </span><span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span><span class="w"> </span><span class="n">INT</span><span class="w"> </span><span class="n">tmp</span><span class="p">;</span>
+<span class="w">      </span><span class="c1">// The cell containing the particle.</span>
+<span class="w">      </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">cell</span><span class="p">;</span><span class="w"> </span>
+<span class="w">      </span><span class="c1">// The row (layer) containing the particle.</span>
+<span class="w">      </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">layer</span><span class="p">;</span><span class="w"> </span>
+<span class="w">      </span><span class="c1">// The linear index of the particle on the calling MPI rank. </span>
+<span class="w">      </span><span class="c1">// This index is in [0, A-&gt;get_npart_local()).</span>
+<span class="w">      </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">get_local_linear_index</span><span class="p">();</span><span class="w"> </span>
+<span class="w">      </span><span class="c1">// The linear index of the particle in the current ParticleLoop. </span>
+<span class="w">      </span><span class="c1">// This index is in [0, &lt;size of ParticleLoop iteration set&gt;).</span>
+<span class="w">      </span><span class="n">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">.</span><span class="n">get_loop_linear_index</span><span class="p">();</span><span class="w"> </span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// Note the extra {} that creates an instance of the type.</span>
+<span class="w">    </span><span class="n">Access</span><span class="o">::</span><span class="n">read</span><span class="p">(</span><span class="n">ParticleLoopIndex</span><span class="p">{})</span>
+<span class="w">  </span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">loop</span><span class="o">-&gt;</span><span class="n">execute</span><span class="p">();</span>
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<table class="table" id="id15">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">ParticleLoopIndex Access</span><a class="headerlink" href="#id15" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Access Descriptors</p></th>
+<th class="head"><p>Kernel Types</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Read</p></td>
+<td><p>Access::ParticleLoopIndex::Read</p></td>
+<td><p>Indices accessed via .cell, .layer, .get_local_linear_index and .get_loop_linear_index.</p></td>
+</tr>
+</tbody>
+</table>
+<div role="list" class="citation-list">
+<div class="citation" id="saunders2018" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">SAUNDERS2018</a><span class="fn-bracket">]</span></span>
+<p>A domain specific language for performance portable molecular dynamics algorithms. <a class="reference external" href="https://doi.org/10.1016/j.cpc.2017.11.006">CPC</a> , <a class="reference external" href="https://arxiv.org/abs/1704.03329">arXiv</a>.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="concept.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Overarching Concepts and Motivation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="particle_products.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Particle Products</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advection-example">Advection Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-data-structures">Additional Data Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#localarray">LocalArray</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#globalarray">GlobalArray</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#celldatconst-and-celldat">CellDatConst and CellDat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symvector">SymVector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particleloopindex">ParticleLoopIndex</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/concept/particle_loop.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2022, UKAEA.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

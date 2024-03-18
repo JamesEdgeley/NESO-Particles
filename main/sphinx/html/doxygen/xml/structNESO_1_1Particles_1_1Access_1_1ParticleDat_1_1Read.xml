@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::ParticleDat::Read</compoundname>
+    <includes refid="particle__loop_8hpp" local="no">particle_loop.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" prot="public" static="no" mutable="no">
+        <type>T const  *const  *</type>
+        <definition>T const* const* NESO::Particles::Access::ParticleDat::Read&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+<para>Pointer to underlying data for a cell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="165" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::ParticleDat::Read&lt; T &gt;::layer</definition>
+        <argsstring></argsstring>
+        <name>layer</name>
+        <briefdescription>
+<para>Stores which particle in the cell this instance refers to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="167" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0d79259e42c4a6f0b838203450af6000" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; NESO::Particles::Access::ParticleDat::Read&lt; T &gt;::operator[]</definition>
+        <argsstring>(const int component)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="168" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a48fbed16e2ae30caf20c1e9d104ad5d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; NESO::Particles::Access::ParticleDat::Read&lt; T &gt;::at</definition>
+        <argsstring>(const int component)</argsstring>
+        <name>at</name>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="171" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="171" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:ParticleDat::Read&lt;T&gt; and Access:ParticleDat::Read&lt;T&gt; are the kernel argument types for accessing particle data in a kernel. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="163" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="163" bodyend="172"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a48fbed16e2ae30caf20c1e9d104ad5d1" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ParticleDat::Read</scope><name>at</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ParticleDat::Read</scope><name>layer</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0d79259e42c4a6f0b838203450af6000" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ParticleDat::Read</scope><name>operator[]</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ParticleDat::Read</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

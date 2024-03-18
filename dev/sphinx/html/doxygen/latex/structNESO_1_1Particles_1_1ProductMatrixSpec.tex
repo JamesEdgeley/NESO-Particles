@@ -1,0 +1,308 @@
+\hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec}{}\doxysection{NESO\+::Particles\+::Product\+Matrix\+Spec Struct Reference}
+\label{structNESO_1_1Particles_1_1ProductMatrixSpec}\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+
+
+{\ttfamily \#include $<$product\+\_\+matrix.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Product\+Matrix\+Spec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{structNESO_1_1Particles_1_1ProductMatrixSpec__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a158f2d9e91561033eccc01802cb09a24}{Product\+Matrix\+Spec}} ()=default
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec}{Product\+Matrix\+Spec}} \& \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_ae9072103019d477721f463db865f1dc4}{operator=}} (const \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec}{Product\+Matrix\+Spec}} \&)=default
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a5dfc076cb0df6971d26a272813af1fb1}{Product\+Matrix\+Spec}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} \&\mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a7d894ef4cd7fe3bac8bf0c44cd53b7ab}{particle\+\_\+spec}})
+\item 
+void \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a9b402151bc42788762a21a3439ff0604}{set\+\_\+default\+\_\+value}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ sym, const int component, const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} value)
+\item 
+void \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a2c52ff03bd412f9e1fddfa2eab35495f}{set\+\_\+default\+\_\+value}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ sym, const int component, const \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} value)
+\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_acdb63dc057ce80cd35ec56d1f9be8b03}{get\+\_\+sym\+\_\+index}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ sym) const
+\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a32a2d4fdf26bd2e56d3e0eecec888eb6}{get\+\_\+sym\+\_\+index}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ sym) const
+\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a1a9616219ab019b6d7c749d6199c0cb9}{get\+\_\+num\+\_\+components}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ sym)
+\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a832cc86477fee3843edcd029398007d3}{get\+\_\+num\+\_\+components}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ sym)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_ae273bdefefb8f958d4bf4cb7a0c7a7b5}{num\+\_\+components\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em The total number of components of type REAL stored. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a9a7054fdc1b3a2474181858351e412bc}{num\+\_\+components\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em The total number of components of type INT stored. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a60cbd37a27921801cf7114e34fcfa029}{num\+\_\+properties\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em The number of REAL particle properties. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a2d2ca1d16e2ac053c2a84e6523297f60}{num\+\_\+properties\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em The number of INT particle properties. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_ac72e1a4ad5464c7b97678c02c0af32ad}{syms\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em The vector of REAL Syms. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_aea4cc983e388d36ebb3ab47d02e2713d}{syms\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em The vector of INT Syms. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a9b2431397961c923f4f58ad08159a699}{components\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em The number of components per output property for REAL. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_ad9ff6164237eb6d74171549702fff442}{components\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em The number of components per output property for INT. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::pair$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, int $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a4553b2c502650c65d4c4db1bcc9f3c7f}{default\+\_\+values\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em Default values applied on call to reset for REAL. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::pair$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, int $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a9f1269bcfdbc18f0ebdd1b4ad1c29d55}{default\+\_\+values\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em Default values applied on call to reset for INT. \end{DoxyCompactList}\item 
+std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, int $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a71678c9c640af008237c72b7b4031f29}{map\+\_\+sym\+\_\+index\+\_\+real}}
+\begin{DoxyCompactList}\small\item\em Map from sym to integer index. \end{DoxyCompactList}\item 
+std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, int $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a1e1e971fce76dee24f8b97331a91f328}{map\+\_\+sym\+\_\+index\+\_\+int}}
+\begin{DoxyCompactList}\small\item\em Map from sym to integer index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec_a7d894ef4cd7fe3bac8bf0c44cd53b7ab}{particle\+\_\+spec}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} the instance was created from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Type to describe the particle properties of products. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a158f2d9e91561033eccc01802cb09a24}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a158f2d9e91561033eccc01802cb09a24}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!ProductMatrixSpec@{ProductMatrixSpec}}
+\index{ProductMatrixSpec@{ProductMatrixSpec}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{ProductMatrixSpec()}{ProductMatrixSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::\+Product\+Matrix\+Spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a5dfc076cb0df6971d26a272813af1fb1}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a5dfc076cb0df6971d26a272813af1fb1}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!ProductMatrixSpec@{ProductMatrixSpec}}
+\index{ProductMatrixSpec@{ProductMatrixSpec}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{ProductMatrixSpec()}{ProductMatrixSpec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::\+Product\+Matrix\+Spec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} \&}]{particle\+\_\+spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a specification for products based on a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+spec} & Specification for product particle properties. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a832cc86477fee3843edcd029398007d3}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a832cc86477fee3843edcd029398007d3}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!get\_num\_components@{get\_num\_components}}
+\index{get\_num\_components@{get\_num\_components}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{get\_num\_components()}{get\_num\_components()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::get\+\_\+num\+\_\+components (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the number of components this spec stores for a \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a1a9616219ab019b6d7c749d6199c0cb9}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a1a9616219ab019b6d7c749d6199c0cb9}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!get\_num\_components@{get\_num\_components}}
+\index{get\_num\_components@{get\_num\_components}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{get\_num\_components()}{get\_num\_components()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::get\+\_\+num\+\_\+components (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the number of components this spec stores for a \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a32a2d4fdf26bd2e56d3e0eecec888eb6}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a32a2d4fdf26bd2e56d3e0eecec888eb6}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!get\_sym\_index@{get\_sym\_index}}
+\index{get\_sym\_index@{get\_sym\_index}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{get\_sym\_index()}{get\_sym\_index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::get\+\_\+sym\+\_\+index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{sym }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the integer index that corresponds to a \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} in the specification. Returns -\/1 if the \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} is not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_acdb63dc057ce80cd35ec56d1f9be8b03}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_acdb63dc057ce80cd35ec56d1f9be8b03}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!get\_sym\_index@{get\_sym\_index}}
+\index{get\_sym\_index@{get\_sym\_index}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{get\_sym\_index()}{get\_sym\_index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::get\+\_\+sym\+\_\+index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$}]{sym }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the integer index that corresponds to a \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} in the specification. Returns -\/1 if the \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} is not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_ae9072103019d477721f463db865f1dc4}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_ae9072103019d477721f463db865f1dc4}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec}{Product\+Matrix\+Spec}}\& NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec}{Product\+Matrix\+Spec}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a9b402151bc42788762a21a3439ff0604}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a9b402151bc42788762a21a3439ff0604}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!set\_default\_value@{set\_default\_value}}
+\index{set\_default\_value@{set\_default\_value}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{set\_default\_value()}{set\_default\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::set\+\_\+default\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{sym,  }\item[{const int}]{component,  }\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the default value for a particle property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} of particle property. \\
+\hline
+{\em component} & Component of particle property. \\
+\hline
+{\em value} & Default value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a2c52ff03bd412f9e1fddfa2eab35495f}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a2c52ff03bd412f9e1fddfa2eab35495f}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!set\_default\_value@{set\_default\_value}}
+\index{set\_default\_value@{set\_default\_value}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{set\_default\_value()}{set\_default\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::set\+\_\+default\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$}]{sym,  }\item[{const int}]{component,  }\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the default value for a particle property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} of particle property. \\
+\hline
+{\em component} & Component of particle property. \\
+\hline
+{\em value} & Default value to set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_ad9ff6164237eb6d74171549702fff442}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_ad9ff6164237eb6d74171549702fff442}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!components\_int@{components\_int}}
+\index{components\_int@{components\_int}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{components\_int}{components\_int}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::components\+\_\+int}
+
+
+
+The number of components per output property for INT. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a9b2431397961c923f4f58ad08159a699}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a9b2431397961c923f4f58ad08159a699}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!components\_real@{components\_real}}
+\index{components\_real@{components\_real}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{components\_real}{components\_real}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::components\+\_\+real}
+
+
+
+The number of components per output property for REAL. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a9f1269bcfdbc18f0ebdd1b4ad1c29d55}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a9f1269bcfdbc18f0ebdd1b4ad1c29d55}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!default\_values\_int@{default\_values\_int}}
+\index{default\_values\_int@{default\_values\_int}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{default\_values\_int}{default\_values\_int}}
+{\footnotesize\ttfamily std\+::map$<$std\+::pair$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$, int$>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::default\+\_\+values\+\_\+int}
+
+
+
+Default values applied on call to reset for INT. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a4553b2c502650c65d4c4db1bcc9f3c7f}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a4553b2c502650c65d4c4db1bcc9f3c7f}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!default\_values\_real@{default\_values\_real}}
+\index{default\_values\_real@{default\_values\_real}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{default\_values\_real}{default\_values\_real}}
+{\footnotesize\ttfamily std\+::map$<$std\+::pair$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$, int$>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::default\+\_\+values\+\_\+real}
+
+
+
+Default values applied on call to reset for REAL. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a1e1e971fce76dee24f8b97331a91f328}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a1e1e971fce76dee24f8b97331a91f328}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!map\_sym\_index\_int@{map\_sym\_index\_int}}
+\index{map\_sym\_index\_int@{map\_sym\_index\_int}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{map\_sym\_index\_int}{map\_sym\_index\_int}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$, int$>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::map\+\_\+sym\+\_\+index\+\_\+int}
+
+
+
+Map from sym to integer index. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a71678c9c640af008237c72b7b4031f29}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a71678c9c640af008237c72b7b4031f29}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!map\_sym\_index\_real@{map\_sym\_index\_real}}
+\index{map\_sym\_index\_real@{map\_sym\_index\_real}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{map\_sym\_index\_real}{map\_sym\_index\_real}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$, int$>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::map\+\_\+sym\+\_\+index\+\_\+real}
+
+
+
+Map from sym to integer index. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a9a7054fdc1b3a2474181858351e412bc}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a9a7054fdc1b3a2474181858351e412bc}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!num\_components\_int@{num\_components\_int}}
+\index{num\_components\_int@{num\_components\_int}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{num\_components\_int}{num\_components\_int}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::num\+\_\+components\+\_\+int}
+
+
+
+The total number of components of type INT stored. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_ae273bdefefb8f958d4bf4cb7a0c7a7b5}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_ae273bdefefb8f958d4bf4cb7a0c7a7b5}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!num\_components\_real@{num\_components\_real}}
+\index{num\_components\_real@{num\_components\_real}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{num\_components\_real}{num\_components\_real}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::num\+\_\+components\+\_\+real}
+
+
+
+The total number of components of type REAL stored. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a2d2ca1d16e2ac053c2a84e6523297f60}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a2d2ca1d16e2ac053c2a84e6523297f60}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!num\_properties\_int@{num\_properties\_int}}
+\index{num\_properties\_int@{num\_properties\_int}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{num\_properties\_int}{num\_properties\_int}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::num\+\_\+properties\+\_\+int}
+
+
+
+The number of INT particle properties. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a60cbd37a27921801cf7114e34fcfa029}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a60cbd37a27921801cf7114e34fcfa029}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!num\_properties\_real@{num\_properties\_real}}
+\index{num\_properties\_real@{num\_properties\_real}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{num\_properties\_real}{num\_properties\_real}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::num\+\_\+properties\+\_\+real}
+
+
+
+The number of REAL particle properties. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_a7d894ef4cd7fe3bac8bf0c44cd53b7ab}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_a7d894ef4cd7fe3bac8bf0c44cd53b7ab}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!particle\_spec@{particle\_spec}}
+\index{particle\_spec@{particle\_spec}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{particle\_spec}{particle\_spec}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::particle\+\_\+spec}
+
+
+
+The \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} the instance was created from. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_aea4cc983e388d36ebb3ab47d02e2713d}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_aea4cc983e388d36ebb3ab47d02e2713d}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!syms\_int@{syms\_int}}
+\index{syms\_int@{syms\_int}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{syms\_int}{syms\_int}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ $>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::syms\+\_\+int}
+
+
+
+The vector of INT Syms. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ProductMatrixSpec_ac72e1a4ad5464c7b97678c02c0af32ad}\label{structNESO_1_1Particles_1_1ProductMatrixSpec_ac72e1a4ad5464c7b97678c02c0af32ad}} 
+\index{NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}!syms\_real@{syms\_real}}
+\index{syms\_real@{syms\_real}!NESO::Particles::ProductMatrixSpec@{NESO::Particles::ProductMatrixSpec}}
+\doxysubsubsection{\texorpdfstring{syms\_real}{syms\_real}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$ $>$ NESO\+::\+Particles\+::\+Product\+Matrix\+Spec\+::syms\+\_\+real}
+
+
+
+The vector of REAL Syms. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/\mbox{\hyperlink{product__matrix_8hpp}{product\+\_\+matrix.\+hpp}}\end{DoxyCompactItemize}

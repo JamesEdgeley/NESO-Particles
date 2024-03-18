@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structParticleLoopIndex" kind="struct" language="C++" prot="public">
+    <compoundname>ParticleLoopIndex</compoundname>
+    <includes refid="particle__loop_8hpp" local="no">particle_loop.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The type to pass to a ParticleLoop to read the ParticleLoop loop index in a kernel. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="303" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="303" bodyend="303"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,249 @@
+\hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange}{}\doxysection{NESO\+::Particles\+::Global\+Move\+Exchange Class Reference}
+\label{classNESO_1_1Particles_1_1GlobalMoveExchange}\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+
+
+{\ttfamily \#include $<$global\+\_\+move\+\_\+exchange.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Global\+Move\+Exchange\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classNESO_1_1Particles_1_1GlobalMoveExchange__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a9c74ceaf484498e4d527b36a3857a890}{Global\+Move\+Exchange}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange}{Global\+Move\+Exchange}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange}{Global\+Move\+Exchange}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a4d86b3a60ad2790a6c52fbd0097678e1}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange}{Global\+Move\+Exchange}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_af0c1a2cab7aa37edb8fb47f60743e9a2}{free}} ()
+\begin{DoxyCompactList}\small\item\em Explicitly free a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} without relying on out-\/of-\/scope. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_adf62653b2b45c3842e37b3c3040119ef}{$\sim$\+Global\+Move\+Exchange}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a4e36dc154a81cd8287fea47b64504878}{Global\+Move\+Exchange}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a93dd925e7caea0a3a49368ba31fe6273}{sycl\+\_\+target}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a8cb010381350703dd6573b0942d1c355}{npart\+\_\+exchange\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a91e4bd6015ae9c5708f94801141f2d93}{npart\+\_\+exchange\+\_\+sendrecv}} (const int \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a411559d0d1274a385e4a307eabee9e1f}{num\+\_\+remote\+\_\+send\+\_\+ranks}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \&dh\+\_\+send\+\_\+ranks, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \&\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a572657f62023deee09896c469399604c}{h\+\_\+send\+\_\+rank\+\_\+npart}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a5571cc995e89f82718f70e867ae9638e}{npart\+\_\+exchange\+\_\+finalise}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a084867559ac57da08f543fcf7ffc3454}{exchange\+\_\+init}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} \&particle\+\_\+packer, \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleUnpacker}{Particle\+Unpacker}} \&particle\+\_\+unpacker)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a40ac44ef9108a57fad3a66ae228c952a}{exchange\+\_\+finalise}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleUnpacker}{Particle\+Unpacker}} \&particle\+\_\+unpacker)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a411559d0d1274a385e4a307eabee9e1f}{num\+\_\+remote\+\_\+send\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Number of remote ranks to send particles to. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_afe16f3c58cdfa6b013bac7dd71a90252}{num\+\_\+remote\+\_\+recv\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Number of remote ranks to recv particles from. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a5fa2321cda4a89d2fa5f80e62c90bb0c}{h\+\_\+send\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Host array of MPI ranks to send particles to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a8c58724adb1805b14ae0c31360b4647a}{h\+\_\+recv\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Host array of MPI ranks to recv particles from. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a572657f62023deee09896c469399604c}{h\+\_\+send\+\_\+rank\+\_\+npart}}
+\begin{DoxyCompactList}\small\item\em Host array of particle counts for each send rank. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_ab7eccd24286e1a5b539f29cd1d595641}{h\+\_\+recv\+\_\+rank\+\_\+npart}}
+\begin{DoxyCompactList}\small\item\em Host array of particle counts for each recv rank. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange_a93dd925e7caea0a3a49368ba31fe6273}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles the efficient and asynchronous exchange of particle counts and data between MPI ranks when moving particles between cells of the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a9c74ceaf484498e4d527b36a3857a890}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a9c74ceaf484498e4d527b36a3857a890}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!GlobalMoveExchange@{GlobalMoveExchange}}
+\index{GlobalMoveExchange@{GlobalMoveExchange}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{GlobalMoveExchange()}{GlobalMoveExchange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::\+Global\+Move\+Exchange (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange}{Global\+Move\+Exchange}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_adf62653b2b45c3842e37b3c3040119ef}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_adf62653b2b45c3842e37b3c3040119ef}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!````~GlobalMoveExchange@{$\sim$GlobalMoveExchange}}
+\index{````~GlobalMoveExchange@{$\sim$GlobalMoveExchange}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{$\sim$GlobalMoveExchange()}{~GlobalMoveExchange()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::$\sim$\+Global\+Move\+Exchange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a4e36dc154a81cd8287fea47b64504878}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a4e36dc154a81cd8287fea47b64504878}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!GlobalMoveExchange@{GlobalMoveExchange}}
+\index{GlobalMoveExchange@{GlobalMoveExchange}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{GlobalMoveExchange()}{GlobalMoveExchange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::\+Global\+Move\+Exchange (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new instance to exchange particle counts and data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a40ac44ef9108a57fad3a66ae228c952a}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a40ac44ef9108a57fad3a66ae228c952a}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!exchange\_finalise@{exchange\_finalise}}
+\index{exchange\_finalise@{exchange\_finalise}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{exchange\_finalise()}{exchange\_finalise()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::exchange\+\_\+finalise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleUnpacker}{Particle\+Unpacker}} \&}]{particle\+\_\+unpacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finalise the exchange the particle data. Collective on the communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+unpacker} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleUnpacker}{Particle\+Unpacker}} instance to use to unpack particle data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a084867559ac57da08f543fcf7ffc3454}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a084867559ac57da08f543fcf7ffc3454}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!exchange\_init@{exchange\_init}}
+\index{exchange\_init@{exchange\_init}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{exchange\_init()}{exchange\_init()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::exchange\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} \&}]{particle\+\_\+packer,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleUnpacker}{Particle\+Unpacker}} \&}]{particle\+\_\+unpacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start the exchange the particle data. Collective on the communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+packer} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} instance to pack particle data. \\
+\hline
+{\em particle\+\_\+unpacker} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleUnpacker}{Particle\+Unpacker}} instance to use to unpack particle data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_af0c1a2cab7aa37edb8fb47f60743e9a2}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_af0c1a2cab7aa37edb8fb47f60743e9a2}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!free@{free}}
+\index{free@{free}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Explicitly free a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} without relying on out-\/of-\/scope. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a5571cc995e89f82718f70e867ae9638e}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a5571cc995e89f82718f70e867ae9638e}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!npart\_exchange\_finalise@{npart\_exchange\_finalise}}
+\index{npart\_exchange\_finalise@{npart\_exchange\_finalise}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{npart\_exchange\_finalise()}{npart\_exchange\_finalise()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::npart\+\_\+exchange\+\_\+finalise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finalise the communication which indicates to remote ranks the number of ranks that will send them particles. \mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a8cb010381350703dd6573b0942d1c355}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a8cb010381350703dd6573b0942d1c355}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!npart\_exchange\_init@{npart\_exchange\_init}}
+\index{npart\_exchange\_init@{npart\_exchange\_init}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{npart\_exchange\_init()}{npart\_exchange\_init()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::npart\+\_\+exchange\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialise the start of a new epoch where global communication is identified. Collective on the communicator. \mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a91e4bd6015ae9c5708f94801141f2d93}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a91e4bd6015ae9c5708f94801141f2d93}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!npart\_exchange\_sendrecv@{npart\_exchange\_sendrecv}}
+\index{npart\_exchange\_sendrecv@{npart\_exchange\_sendrecv}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{npart\_exchange\_sendrecv()}{npart\_exchange\_sendrecv()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::npart\+\_\+exchange\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+remote\+\_\+send\+\_\+ranks,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \&}]{dh\+\_\+send\+\_\+ranks,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \&}]{h\+\_\+send\+\_\+rank\+\_\+npart }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Communicate how many ranks will send particles to each rank. Collective on the communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+remote\+\_\+send\+\_\+ranks} & Number of remote ranks particles will be sent to. \\
+\hline
+{\em dh\+\_\+send\+\_\+ranks} & Array of remote ranks particles will be sent to. \\
+\hline
+{\em h\+\_\+send\+\_\+rank\+\_\+npart} & Array of particle counts that will be sent to each rank. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a4d86b3a60ad2790a6c52fbd0097678e1}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a4d86b3a60ad2790a6c52fbd0097678e1}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange}{Global\+Move\+Exchange}}\& NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMoveExchange}{Global\+Move\+Exchange}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_ab7eccd24286e1a5b539f29cd1d595641}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_ab7eccd24286e1a5b539f29cd1d595641}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!h\_recv\_rank\_npart@{h\_recv\_rank\_npart}}
+\index{h\_recv\_rank\_npart@{h\_recv\_rank\_npart}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{h\_recv\_rank\_npart}{h\_recv\_rank\_npart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::h\+\_\+recv\+\_\+rank\+\_\+npart}
+
+
+
+Host array of particle counts for each recv rank. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a8c58724adb1805b14ae0c31360b4647a}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a8c58724adb1805b14ae0c31360b4647a}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!h\_recv\_ranks@{h\_recv\_ranks}}
+\index{h\_recv\_ranks@{h\_recv\_ranks}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{h\_recv\_ranks}{h\_recv\_ranks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::h\+\_\+recv\+\_\+ranks}
+
+
+
+Host array of MPI ranks to recv particles from. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a572657f62023deee09896c469399604c}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a572657f62023deee09896c469399604c}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!h\_send\_rank\_npart@{h\_send\_rank\_npart}}
+\index{h\_send\_rank\_npart@{h\_send\_rank\_npart}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{h\_send\_rank\_npart}{h\_send\_rank\_npart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::h\+\_\+send\+\_\+rank\+\_\+npart}
+
+
+
+Host array of particle counts for each send rank. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a5fa2321cda4a89d2fa5f80e62c90bb0c}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a5fa2321cda4a89d2fa5f80e62c90bb0c}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!h\_send\_ranks@{h\_send\_ranks}}
+\index{h\_send\_ranks@{h\_send\_ranks}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{h\_send\_ranks}{h\_send\_ranks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$int$>$ NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::h\+\_\+send\+\_\+ranks}
+
+
+
+Host array of MPI ranks to send particles to. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_afe16f3c58cdfa6b013bac7dd71a90252}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_afe16f3c58cdfa6b013bac7dd71a90252}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!num\_remote\_recv\_ranks@{num\_remote\_recv\_ranks}}
+\index{num\_remote\_recv\_ranks@{num\_remote\_recv\_ranks}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{num\_remote\_recv\_ranks}{num\_remote\_recv\_ranks}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::num\+\_\+remote\+\_\+recv\+\_\+ranks}
+
+
+
+Number of remote ranks to recv particles from. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a411559d0d1274a385e4a307eabee9e1f}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a411559d0d1274a385e4a307eabee9e1f}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!num\_remote\_send\_ranks@{num\_remote\_send\_ranks}}
+\index{num\_remote\_send\_ranks@{num\_remote\_send\_ranks}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{num\_remote\_send\_ranks}{num\_remote\_send\_ranks}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::num\+\_\+remote\+\_\+send\+\_\+ranks}
+
+
+
+Number of remote ranks to send particles to. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMoveExchange_a93dd925e7caea0a3a49368ba31fe6273}\label{classNESO_1_1Particles_1_1GlobalMoveExchange_a93dd925e7caea0a3a49368ba31fe6273}} 
+\index{NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::GlobalMoveExchange@{NESO::Particles::GlobalMoveExchange}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Global\+Move\+Exchange\+::sycl\+\_\+target}
+
+
+
+Compute device used by the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{global__move__exchange_8hpp}{global\+\_\+move\+\_\+exchange.\+hpp}}\end{DoxyCompactItemize}

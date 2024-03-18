@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1CartesianPeriodic" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::CartesianPeriodic</compoundname>
+    <includes refid="boundary__conditions_8hpp" local="no">boundary_conditions.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianPeriodic_1a2d49c1353813887a92318126454e6a41" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>BufferDevice&lt;REAL&gt; NESO::Particles::CartesianPeriodic::d_extents</definition>
+        <argsstring></argsstring>
+        <name>d_extents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="25" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianPeriodic_1a1d0d790326e2f8222cbd7abf9e341ca1" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::CartesianPeriodic::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="26" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianPeriodic_1adabf96a7dc54bd9949f24c46711a45ba" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;CartesianHMesh&gt; NESO::Particles::CartesianPeriodic::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="27" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianPeriodic_1a24e6a29eca3f71d095632097df9bd710" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;REAL&gt; NESO::Particles::CartesianPeriodic::position_dat</definition>
+        <argsstring></argsstring>
+        <name>position_dat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="28" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianPeriodic_1aa1711b0d8a9de5f5415d694aaad5547c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1adb62770883a0f2a6ac09c556a4357341" kindref="member">ParticleLoopSharedPtr</ref></type>
+        <definition>ParticleLoopSharedPtr NESO::Particles::CartesianPeriodic::pbc_loop</definition>
+        <argsstring></argsstring>
+        <name>pbc_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="29" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianPeriodic_1ac1c494b71ac7cb624b9d57473da1f595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianPeriodic::CartesianPeriodic</definition>
+        <argsstring>(const CartesianPeriodic &amp;st)=delete</argsstring>
+        <name>CartesianPeriodic</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1CartesianPeriodic" kindref="compound">CartesianPeriodic</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="33" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianPeriodic_1a3e56e30314ac15cc6610bc4982f03327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1CartesianPeriodic" kindref="compound">CartesianPeriodic</ref> &amp;</type>
+        <definition>CartesianPeriodic&amp; NESO::Particles::CartesianPeriodic::operator=</definition>
+        <argsstring>(CartesianPeriodic const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1CartesianPeriodic" kindref="compound">CartesianPeriodic</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="35" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianPeriodic_1a102a17c3ffda9f822c130a54ef78c22b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianPeriodic::~CartesianPeriodic</definition>
+        <argsstring>()</argsstring>
+        <name>~CartesianPeriodic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="37" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianPeriodic_1a42bda3724b3d5ee5638f5ddb4d8f6ad1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianPeriodic::CartesianPeriodic</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, std::shared_ptr&lt; CartesianHMesh &gt; mesh, ParticleDatSharedPtr&lt; REAL &gt; position_dat)</argsstring>
+        <name>CartesianPeriodic</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref> &gt;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>position_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct instance to apply periodic boundary conditions to particles within the passed ParticleDat.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CartedianHMesh instance to use a domain for the particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat containing particle positions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="47" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="47" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianPeriodic_1ae5b72078175edbb6e21646476ce2c6c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianPeriodic::CartesianPeriodic</definition>
+        <argsstring>(std::shared_ptr&lt; CartesianHMesh &gt; mesh, ParticleGroupSharedPtr particle_group)</argsstring>
+        <name>CartesianPeriodic</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref> &gt;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a5b25ad0df23c80f6feed27e2527a5c51" kindref="member">ParticleGroupSharedPtr</ref></type>
+          <declname>particle_group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct instance to apply periodic boundary conditions to particles within the passed ParticleDat.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CartedianHMesh instance to use a domain for the particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> to apply periodic boundary conditions to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="92" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="92" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianPeriodic_1ad49a261f10b8ce33786cf5f70a9b9924" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::CartesianPeriodic::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply periodic boundary conditions to the particle positions in the ParticleDat this instance was created with. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="103" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="103" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Periodic boundary conditions implementation designed to work with a <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref>. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" line="23" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp" bodystart="23" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1ac1c494b71ac7cb624b9d57473da1f595" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>CartesianPeriodic</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1a42bda3724b3d5ee5638f5ddb4d8f6ad1" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>CartesianPeriodic</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1ae5b72078175edbb6e21646476ce2c6c8" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>CartesianPeriodic</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1a2d49c1353813887a92318126454e6a41" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>d_extents</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1ad49a261f10b8ce33786cf5f70a9b9924" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>execute</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1adabf96a7dc54bd9949f24c46711a45ba" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>mesh</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1a3e56e30314ac15cc6610bc4982f03327" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1aa1711b0d8a9de5f5415d694aaad5547c" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>pbc_loop</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1a24e6a29eca3f71d095632097df9bd710" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>position_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1a1d0d790326e2f8222cbd7abf9e341ca1" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianPeriodic_1a102a17c3ffda9f822c130a54ef78c22b" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianPeriodic</scope><name>~CartesianPeriodic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

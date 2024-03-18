@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::CellDat::Add</compoundname>
+    <includes refid="containers_2cell__dat_8hpp" local="no">cell_dat.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1ae4ec4e546f73b210f8833aa53bb9e76c" prot="public" static="no" mutable="no">
+        <type>T ***</type>
+        <definition>T*** NESO::Particles::Access::CellDat::Add&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="36" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1a4a7c8d1a2319d60c276e1f05fbc795e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::CellDat::Add&lt; T &gt;::cell</definition>
+        <argsstring></argsstring>
+        <name>cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="37" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1a26872f3cbd8121df2cb59979e9204941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::CellDat::Add&lt; T &gt;::Add</definition>
+        <argsstring>()=default</argsstring>
+        <name>Add</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1adbac1240ec76002e91f9527f1ddc720a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T NESO::Particles::Access::CellDat::Add&lt; T &gt;::fetch_add</definition>
+        <argsstring>(const int row, const int col, const T value)</argsstring>
+        <name>fetch_add</name>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="38" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:CellDat::Add&lt;T&gt; add access cellwise. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="33" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="33" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1a26872f3cbd8121df2cb59979e9204941" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Add</scope><name>Add</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1a4a7c8d1a2319d60c276e1f05fbc795e7" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Add</scope><name>cell</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1adbac1240ec76002e91f9527f1ddc720a" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Add</scope><name>fetch_add</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add_1ae4ec4e546f73b210f8833aa53bb9e76c" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Add</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+\hypertarget{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{}\doxysection{NESO\+::Particles\+::Column\+Major\+Column\+Accessor$<$ T, U $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}\index{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$}}
+
+
+{\ttfamily \#include $<$access.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor_aa66a6c6be2bdf894f4d02cb7d6cad708}{Column\+Major\+Column\+Accessor}} (T$<$ U $>$ \&base, const int \&stride, const int \&rowx)
+\item 
+U \& \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor_abd7fc2683e804ef3dabf34b8ff5aa657}{operator\mbox{[}$\,$\mbox{]}}} (const int \&colx)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$template$<$ typename... $>$ class T, typename U$>$\newline
+class NESO\+::\+Particles\+::\+Column\+Major\+Column\+Accessor$<$ T, U $>$}
+
+One of a pair of classes that enable indexing like foo\mbox{[}row\mbox{]}\mbox{[}col\mbox{]} for an object foo which stores data in a column major format. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor_aa66a6c6be2bdf894f4d02cb7d6cad708}\label{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor_aa66a6c6be2bdf894f4d02cb7d6cad708}} 
+\index{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$}!ColumnMajorColumnAccessor@{ColumnMajorColumnAccessor}}
+\index{ColumnMajorColumnAccessor@{ColumnMajorColumnAccessor}!NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$}}
+\doxysubsubsection{\texorpdfstring{ColumnMajorColumnAccessor()}{ColumnMajorColumnAccessor()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename U $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{NESO\+::\+Particles\+::\+Column\+Major\+Column\+Accessor}}$<$ T, U $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{Column\+Major\+Column\+Accessor}} (\begin{DoxyParamCaption}\item[{T$<$ U $>$ \&}]{base,  }\item[{const int \&}]{stride,  }\item[{const int \&}]{rowx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create new instance to underlying data structure of type {\ttfamily T$<$U$>$} which stores 2D data in a column major format using a given stride.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & Object to index into. \\
+\hline
+{\em stride} & Number of rows in the 2D object. \\
+\hline
+{\em rowx} & Row to access. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor_abd7fc2683e804ef3dabf34b8ff5aa657}\label{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor_abd7fc2683e804ef3dabf34b8ff5aa657}} 
+\index{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorColumnAccessor$<$ T, U $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename U $>$ \\
+U\& \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{NESO\+::\+Particles\+::\+Column\+Major\+Column\+Accessor}}$<$ T, U $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int \&}]{colx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Access element at column, row is provided in the constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em colx} & Column to access. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{access_8hpp}{access.\+hpp}}\end{DoxyCompactItemize}

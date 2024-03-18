@@ -1,0 +1,113 @@
+\hypertarget{classNESO_1_1Particles_1_1LocalMove}{}\doxysection{NESO\+::Particles\+::Local\+Move Class Reference}
+\label{classNESO_1_1Particles_1_1LocalMove}\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+
+
+{\ttfamily \#include $<$local\+\_\+move.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_aa082fc92548a3649a8f759b21d83667b}\label{classNESO_1_1Particles_1_1LocalMove_aa082fc92548a3649a8f759b21d83667b}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_aa082fc92548a3649a8f759b21d83667b}{Local\+Move}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove}{Local\+Move}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_a169c99a07ef8c6aee9515a203778e9f8}\label{classNESO_1_1Particles_1_1LocalMove_a169c99a07ef8c6aee9515a203778e9f8}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove}{Local\+Move}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_a169c99a07ef8c6aee9515a203778e9f8}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove}{Local\+Move}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_a57557ec213609115ed38c561342dbdfb}{Local\+Move}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target, \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&layer\+\_\+compressor, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ REAL $>$, Particle\+Dat\+Shared\+Ptr$<$ REAL $>$$>$ \&particle\+\_\+dats\+\_\+real, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ INT $>$, Particle\+Dat\+Shared\+Ptr$<$ INT $>$$>$ \&particle\+\_\+dats\+\_\+int, const int nranks=0, const int $\ast$ranks=nullptr)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_aaece3a0387c8c87d4e4c6910e1343c16}{set\+\_\+mpi\+\_\+rank\+\_\+dat}} (Particle\+Dat\+Shared\+Ptr$<$ INT $>$ mpi\+\_\+rank\+\_\+dat)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_a64baa81f3030372dca798aa277f2c4f2}{npart\+\_\+exchange\+\_\+sendrecv}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_a76ee4660daf819ac552eb176e07f3bcd}{exchange\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_adb1192af37932582d31bda4335a9a8a8}{exchange\+\_\+finalise}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_aa0f2a1ad652d9442bc8d6b8e2b57058a}{move}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_a9ae69a9dbd913776bf793e82171b0751}\label{classNESO_1_1Particles_1_1LocalMove_a9ae69a9dbd913776bf793e82171b0751}} 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_a9ae69a9dbd913776bf793e82171b0751}{comm}}
+\begin{DoxyCompactList}\small\item\em The MPI communicator in use by the instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_a01e8a53931ef8119d485c5663e76bc9b}\label{classNESO_1_1Particles_1_1LocalMove_a01e8a53931ef8119d485c5663e76bc9b}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_a01e8a53931ef8119d485c5663e76bc9b}{num\+\_\+remote\+\_\+send\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Number of remote ranks this rank could send particles to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_af824bf0891d7254b3b9bb90f5c492b66}\label{classNESO_1_1Particles_1_1LocalMove_af824bf0891d7254b3b9bb90f5c492b66}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMove_af824bf0891d7254b3b9bb90f5c492b66}{num\+\_\+remote\+\_\+recv\+\_\+ranks}}
+\begin{DoxyCompactList}\small\item\em Number of remote ranks this rank could receive from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to move particles between MPI ranks that are considered neighbours. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_a57557ec213609115ed38c561342dbdfb}\label{classNESO_1_1Particles_1_1LocalMove_a57557ec213609115ed38c561342dbdfb}} 
+\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}!LocalMove@{LocalMove}}
+\index{LocalMove@{LocalMove}!NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+\doxysubsubsection{\texorpdfstring{LocalMove()}{LocalMove()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Local\+Move\+::\+Local\+Move (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&}]{layer\+\_\+compressor,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ REAL $>$, Particle\+Dat\+Shared\+Ptr$<$ REAL $>$$>$ \&}]{particle\+\_\+dats\+\_\+real,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ INT $>$, Particle\+Dat\+Shared\+Ptr$<$ INT $>$$>$ \&}]{particle\+\_\+dats\+\_\+int,  }\item[{const int}]{nranks = {\ttfamily 0},  }\item[{const int $\ast$}]{ranks = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new instance to move particles between neighbouring MPI ranks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em layer\+\_\+compressor} & \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} instance used to compress Particle\+Dat instances. \\
+\hline
+{\em particle\+\_\+dats\+\_\+real} & Container of REAL valued Particle\+Dat instances. \\
+\hline
+{\em particle\+\_\+dats\+\_\+int} & Container of INT valued Particle\+Dat instances. \\
+\hline
+{\em nranks} & Number of remote ranks to consider as neighbours that this rank could send to. \\
+\hline
+{\em ranks} & Remote ranks to consider as neighbours that this rank could send to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_adb1192af37932582d31bda4335a9a8a8}\label{classNESO_1_1Particles_1_1LocalMove_adb1192af37932582d31bda4335a9a8a8}} 
+\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}!exchange\_finalise@{exchange\_finalise}}
+\index{exchange\_finalise@{exchange\_finalise}!NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+\doxysubsubsection{\texorpdfstring{exchange\_finalise()}{exchange\_finalise()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Move\+::exchange\+\_\+finalise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Wait for the exchange of particle data to complete. Received data is ready to be unpacked on completion. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_a76ee4660daf819ac552eb176e07f3bcd}\label{classNESO_1_1Particles_1_1LocalMove_a76ee4660daf819ac552eb176e07f3bcd}} 
+\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}!exchange\_init@{exchange\_init}}
+\index{exchange\_init@{exchange\_init}!NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+\doxysubsubsection{\texorpdfstring{exchange\_init()}{exchange\_init()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Move\+::exchange\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start the communication that exchanges particle data between neighbouring ranks. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_aa0f2a1ad652d9442bc8d6b8e2b57058a}\label{classNESO_1_1Particles_1_1LocalMove_aa0f2a1ad652d9442bc8d6b8e2b57058a}} 
+\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}!move@{move}}
+\index{move@{move}!NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Move\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Top level method that performs all the required steps to transfer particles between neighbouring MPI ranks. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_a64baa81f3030372dca798aa277f2c4f2}\label{classNESO_1_1Particles_1_1LocalMove_a64baa81f3030372dca798aa277f2c4f2}} 
+\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}!npart\_exchange\_sendrecv@{npart\_exchange\_sendrecv}}
+\index{npart\_exchange\_sendrecv@{npart\_exchange\_sendrecv}!NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+\doxysubsubsection{\texorpdfstring{npart\_exchange\_sendrecv()}{npart\_exchange\_sendrecv()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Move\+::npart\+\_\+exchange\+\_\+sendrecv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Exchange the particle counts that will be send and received between neighbours. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMove_aaece3a0387c8c87d4e4c6910e1343c16}\label{classNESO_1_1Particles_1_1LocalMove_aaece3a0387c8c87d4e4c6910e1343c16}} 
+\index{NESO::Particles::LocalMove@{NESO::Particles::LocalMove}!set\_mpi\_rank\_dat@{set\_mpi\_rank\_dat}}
+\index{set\_mpi\_rank\_dat@{set\_mpi\_rank\_dat}!NESO::Particles::LocalMove@{NESO::Particles::LocalMove}}
+\doxysubsubsection{\texorpdfstring{set\_mpi\_rank\_dat()}{set\_mpi\_rank\_dat()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Local\+Move\+::set\+\_\+mpi\+\_\+rank\+\_\+dat (\begin{DoxyParamCaption}\item[{Particle\+Dat\+Shared\+Ptr$<$ INT $>$}]{mpi\+\_\+rank\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the Particle\+Dat to use for MPI ranks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mpi\+\_\+rank\+\_\+dat} & Particle\+Dat to use for particle positions. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/local\+\_\+move.\+hpp\end{DoxyCompactItemize}

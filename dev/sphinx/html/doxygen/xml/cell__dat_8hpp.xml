@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="cell__dat_8hpp" kind="file" language="C++">
+    <compoundname>cell_dat.hpp</compoundname>
+    <includes refid="containers_2cell__dat_8hpp" local="yes">containers/cell_dat.hpp</includes>
+    <includes refid="cell__dat__const_8hpp" local="yes">containers/cell_dat_const.hpp</includes>
+    <includes refid="cell__data_8hpp" local="yes">containers/cell_data.hpp</includes>
+    <includedby refid="cell__dat__compression_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</includedby>
+    <includedby refid="cell__dat__move_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</includedby>
+    <includedby refid="particle__loop_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</includedby>
+    <includedby refid="particle__dat_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</includedby>
+    <includedby refid="particle__group_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <incdepgraph>
+      <node id="21">
+        <label>access_descriptors.hpp</label>
+        <link refid="access__descriptors_8hpp"/>
+      </node>
+      <node id="4">
+        <label>../compute_target.hpp</label>
+        <link refid="compute__target_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="16">
+        <label>cstdint</label>
+      </node>
+      <node id="18">
+        <label>numeric</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="19">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>optional</label>
+      </node>
+      <node id="25">
+        <label>containers/cell_dat_const.hpp</label>
+        <link refid="cell__dat__const_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>stack</label>
+      </node>
+      <node id="13">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>array</label>
+      </node>
+      <node id="14">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="17">
+        <label>iostream</label>
+      </node>
+      <node id="24">
+        <label>cell_data.hpp</label>
+        <link refid="cell__data_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>mpi.h</label>
+      </node>
+      <node id="2">
+        <label>containers/cell_dat.hpp</label>
+        <link refid="containers_2cell__dat_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="22">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>../loop/particle_loop_base.hpp</label>
+        <link refid="particle__loop__base_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="14">
+        <label>/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</label>
+        <link refid="parallel__initialisation_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp</label>
+        <link refid="descendant__products_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move.hpp</label>
+        <link refid="global__move_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</label>
+        <link refid="particle__loop_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp</label>
+        <link refid="local__mapping_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</label>
+        <link refid="cell__dat__move_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification_impl.hpp</label>
+        <link refid="departing__particle__identification__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move_exchange.hpp</label>
+        <link refid="global__move__exchange_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp"/>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp</label>
+        <link refid="sym__vector_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp</label>
+        <link refid="packing__unpacking_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping_impl.hpp</label>
+        <link refid="global__mapping__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</label>
+        <link refid="cell__dat__compression_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</label>
+        <link refid="particle__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move_impl.hpp</label>
+        <link refid="cell__dat__move__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp</label>
+        <link refid="particle__loop__index_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification.hpp</label>
+        <link refid="departing__particle__identification_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp</label>
+        <link refid="pli__particle__dat_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</label>
+        <link refid="particle__remover_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group_impl.hpp</label>
+        <link refid="particle__group__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_move.hpp</label>
+        <link refid="local__move_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp</label>
+        <link refid="particle__sub__group_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/tmp/repo-checkout/NESO-Particles/include/domain.hpp</label>
+        <link refid="domain_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_CELL_DAT_INCLUDE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_CELL_DAT_INCLUDE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="containers_2cell__dat_8hpp" kindref="compound">containers/cell_dat.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cell__dat__const_8hpp" kindref="compound">containers/cell_dat_const.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cell__data_8hpp" kindref="compound">containers/cell_data.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp"/>
+  </compounddef>
+</doxygen>

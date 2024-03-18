@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="product__matrix_8hpp" kind="file" language="C++">
+    <compoundname>product_matrix.hpp</compoundname>
+    <includes refid="compute__target_8hpp" local="yes">../compute_target.hpp</includes>
+    <includes refid="access__descriptors_8hpp" local="yes">../loop/access_descriptors.hpp</includes>
+    <includes refid="particle__loop__base_8hpp" local="yes">../loop/particle_loop_base.hpp</includes>
+    <includes refid="particle__spec_8hpp" local="yes">../particle_spec.hpp</includes>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">numeric</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="descendant__products_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp</includedby>
+    <includedby refid="particle__loop_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</includedby>
+    <includedby refid="particle__group_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp</label>
+        <link refid="product__matrix_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../loop/access_descriptors.hpp</label>
+        <link refid="access__descriptors_8hpp"/>
+      </node>
+      <node id="2">
+        <label>../compute_target.hpp</label>
+        <link refid="compute__target_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="14">
+        <label>cstdint</label>
+      </node>
+      <node id="23">
+        <label>../particle_spec.hpp</label>
+        <link refid="particle__spec_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>numeric</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="17">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>optional</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>stack</label>
+      </node>
+      <node id="11">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="12">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdlib</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>mpi.h</label>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="21">
+        <label>memory</label>
+      </node>
+      <node id="20">
+        <label>../loop/particle_loop_base.hpp</label>
+        <link refid="particle__loop__base_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</label>
+        <link refid="parallel__initialisation_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp</label>
+        <link refid="product__matrix_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp</label>
+        <link refid="descendant__products_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</label>
+        <link refid="particle__loop_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification_impl.hpp</label>
+        <link refid="departing__particle__identification__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp"/>
+      </node>
+      <node id="16">
+        <label>/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp</label>
+        <link refid="sym__vector_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping_impl.hpp</label>
+        <link refid="global__mapping__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move_impl.hpp</label>
+        <link refid="cell__dat__move__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp</label>
+        <link refid="particle__loop__index_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp</label>
+        <link refid="pli__particle__dat_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</label>
+        <link refid="particle__remover_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group_impl.hpp</label>
+        <link refid="particle__group__impl_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp</label>
+        <link refid="particle__sub__group_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structNESO_1_1Particles_1_1ProductMatrixGet" prot="public">NESO::Particles::ProductMatrixGet</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" prot="public">NESO::Particles::ProductMatrixGetConst</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" prot="public">NESO::Particles::Access::ProductMatrix::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add" prot="public">NESO::Particles::Access::ProductMatrix::Add</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" prot="public">NESO::Particles::Access::ProductMatrix::Write</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ProductMatrixSpec" prot="public">NESO::Particles::ProductMatrixSpec</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ProductMatrix" prot="public">NESO::Particles::ProductMatrix</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access">NESO::Particles::Access</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix">NESO::Particles::Access::ProductMatrix</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation">NESO::Particles::ParticleLoopImplementation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_PRODUCT_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_PRODUCT_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../compute_target.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../loop/access_descriptors.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../loop/particle_loop_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../particle_spec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles" kindref="compound">NESO::Particles</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ProductMatrix;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structNESO_1_1Particles_1_1ProductMatrixGet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="structNESO_1_1Particles_1_1ProductMatrixGet_1ac9e69f2a7f0c1a0e95891b20a26bd291" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1ac9e69f2a7f0c1a0e95891b20a26bd291" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a79dd138947ccaaedb1b6255561676301" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a79dd138947ccaaedb1b6255561676301" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="21" refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a27ecaa82dceb6278936325eb17307e5a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a27ecaa82dceb6278936325eb17307e5a" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="22" refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a8c68504b405bda965b11c02d8a5087a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a8c68504b405bda965b11c02d8a5087a2" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a7a8e24db445e735a2c882bbfa31ddf07" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a7a8e24db445e735a2c882bbfa31ddf07" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a6b7948ee6a0f420eb2064e207e0bf7c6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a6b7948ee6a0f420eb2064e207e0bf7c6" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a3d0ef94213054ab1ff3b247d15401a9a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a3d0ef94213054ab1ff3b247d15401a9a" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="29" refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1acdf3a3c4288178483f219b558350d87d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1acdf3a3c4288178483f219b558350d87d" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a7746eaa22c0e658a819ef028fcd36d25" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a7746eaa22c0e658a819ef028fcd36d25" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a19384039656e013c133882369a7903eb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a19384039656e013c133882369a7903eb" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Access::ProductMatrix<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" kindref="compound">Read</ref><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a5a8bb615e2efca50b383a6bd1840baeb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a5a8bb615e2efca50b383a6bd1840baeb" kindref="member">Read</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1acef5ea2a30b64a45035e739c18d73bef" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1acef5ea2a30b64a45035e739c18d73bef" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a1c51f50f8a92ea3611498963257f3174" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a1c51f50f8a92ea3611498963257f3174" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a109e69e77b81d0144db17443a1227c98" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a109e69e77b81d0144db17443a1227c98" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3a6a280fcc226f9e7d2f2de5206ac0b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3a6a280fcc226f9e7d2f2de5206ac0b3" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3b2e41e70e358a3f3e3c9608f2bad802" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3b2e41e70e358a3f3e3c9608f2bad802" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1ae59a3f0e8e1cfecdad0a520f27831002" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1ae59a3f0e8e1cfecdad0a520f27831002" kindref="member">at_real</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>property,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1acef5ea2a30b64a45035e739c18d73bef" kindref="member">ptr_real</ref>[(<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a109e69e77b81d0144db17443a1227c98" kindref="member">offsets_real</ref>[property]<sp/>+<sp/>component)<sp/>*<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3b2e41e70e358a3f3e3c9608f2bad802" kindref="member">num_products</ref><sp/>+</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1aa4b3e9fa140498c5784103cc949c4275" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1aa4b3e9fa140498c5784103cc949c4275" kindref="member">at_int</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>property,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a1c51f50f8a92ea3611498963257f3174" kindref="member">ptr_int</ref>[(<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3a6a280fcc226f9e7d2f2de5206ac0b3" kindref="member">offsets_int</ref>[property]<sp/>+<sp/>component)<sp/>*<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3b2e41e70e358a3f3e3c9608f2bad802" kindref="member">num_products</ref><sp/>+</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add" kindref="compound">Add</ref><sp/>{</highlight></codeline>
+<codeline lineno="90" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a092f0b2f2ce70f1799a9773fabea88e3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a092f0b2f2ce70f1799a9773fabea88e3" kindref="member">Add</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a9c918c0a7f3803454be7e1fed082e9b7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a9c918c0a7f3803454be7e1fed082e9b7" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1ae4d38dada5b74b84f9279e4bc5b7127a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1ae4d38dada5b74b84f9279e4bc5b7127a" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="93" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a936654066f9d1c28c8f0cf5b71895d9b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a936654066f9d1c28c8f0cf5b71895d9b" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="94" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a9aa679139ab41ab7933c70524373d475" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a9aa679139ab41ab7933c70524373d475" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="95" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a0b8bee33aa8a7dd349d12871f6f7a33d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a0b8bee33aa8a7dd349d12871f6f7a33d" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a7a7e9b30db9274b11fe195df68f3f875" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a7a7e9b30db9274b11fe195df68f3f875" kindref="member">fetch_add_real</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>property,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>sycl::atomic_ref&lt;<ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref>,<sp/>sycl::memory_order::relaxed,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::memory_scope::device&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element_atomic(</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a9c918c0a7f3803454be7e1fed082e9b7" kindref="member">ptr_real</ref>[(<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a936654066f9d1c28c8f0cf5b71895d9b" kindref="member">offsets_real</ref>[property]<sp/>+<sp/>component)<sp/>*<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a0b8bee33aa8a7dd349d12871f6f7a33d" kindref="member">num_products</ref><sp/>+</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product]);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>element_atomic.fetch_add(value);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1aec8797408d6d3c99f8f4f5fbb2bf962c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1aec8797408d6d3c99f8f4f5fbb2bf962c" kindref="member">fetch_add_int</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>property,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>sycl::atomic_ref&lt;<ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>,<sp/>sycl::memory_order::relaxed,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::memory_scope::device&gt;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>element_atomic(</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1ae4d38dada5b74b84f9279e4bc5b7127a" kindref="member">ptr_int</ref>[(<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a9aa679139ab41ab7933c70524373d475" kindref="member">offsets_int</ref>[property]<sp/>+<sp/>component)<sp/>*<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add_1a0b8bee33aa8a7dd349d12871f6f7a33d" kindref="member">num_products</ref><sp/>+</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product]);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>element_atomic.fetch_add(value);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kindref="compound">Write</ref><sp/>{</highlight></codeline>
+<codeline lineno="145" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1af23f6e0c2e44e5b874209cdbeb1d924f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1af23f6e0c2e44e5b874209cdbeb1d924f" kindref="member">Write</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a84911c8a18e14671a1bb5bab56f4483e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a84911c8a18e14671a1bb5bab56f4483e" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="147" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a090627d1289b79d0b210a2cd801b4d17" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a090627d1289b79d0b210a2cd801b4d17" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="148" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a99796ac07983f837061a0431ceba2a83" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a99796ac07983f837061a0431ceba2a83" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="149" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1ae3b26a8cd3f6e7e6810f7389c6f1159a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1ae3b26a8cd3f6e7e6810f7389c6f1159a" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="150" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1abf7bbb38a2afed9d48b85cface0d92f6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1abf7bbb38a2afed9d48b85cface0d92f6" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a509e7d32ab1a794ac559676b22bad978" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a509e7d32ab1a794ac559676b22bad978" kindref="member">at_real</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>property,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a84911c8a18e14671a1bb5bab56f4483e" kindref="member">ptr_real</ref>[(<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a99796ac07983f837061a0431ceba2a83" kindref="member">offsets_real</ref>[property]<sp/>+<sp/>component)<sp/>*<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1abf7bbb38a2afed9d48b85cface0d92f6" kindref="member">num_products</ref><sp/>+</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product];</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a8be413685b28a0e67fbd287747b9292b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a8be413685b28a0e67fbd287747b9292b" kindref="member">at_int</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>product,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>property,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a090627d1289b79d0b210a2cd801b4d17" kindref="member">ptr_int</ref>[(<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1ae3b26a8cd3f6e7e6810f7389c6f1159a" kindref="member">offsets_int</ref>[property]<sp/>+<sp/>component)<sp/>*<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1abf7bbb38a2afed9d48b85cface0d92f6" kindref="member">num_products</ref><sp/>+</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>product];</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Access::ProductMatrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ParticleLoopImplementation<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Read&lt;ProductMatrix&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="191" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4_1ad3a99ff4c5e4dddc3c5870e0de5b75e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="196" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Write&lt;ProductMatrix&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="197" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4_1ab2b6fa53c812eaf717f4a4244fa3d852" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="202" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Add&lt;ProductMatrix&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="203" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4_1a3c39df5571f31b84f5dc7493a21573c2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="208" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Read&lt;ProductMatrix&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="209" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4_1ab679244d745da98d8fc47fbef03cce3f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" kindref="compound">Access::ProductMatrix::Read</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="214" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Write&lt;ProductMatrix&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="215" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4_1ac0a1d10e0f37b9ce48707d6dbdf7aeeb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kindref="compound">Access::ProductMatrix::Write</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="220" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Add&lt;ProductMatrix&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="221" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4_1ab22420cec1d095486f39645f22a4e817" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add" kindref="compound">Access::ProductMatrix::Add</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="226" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a0ee19bf5c390251e52103e36ee91a767" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref><sp/>&amp;rhs,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" kindref="compound">Access::ProductMatrix::Read</ref><sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1acef5ea2a30b64a45035e739c18d73bef" kindref="member">ptr_real</ref><sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a6b7948ee6a0f420eb2064e207e0bf7c6" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a1c51f50f8a92ea3611498963257f3174" kindref="member">ptr_int</ref><sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a3d0ef94213054ab1ff3b247d15401a9a" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a109e69e77b81d0144db17443a1227c98" kindref="member">offsets_real</ref><sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1acdf3a3c4288178483f219b558350d87d" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3a6a280fcc226f9e7d2f2de5206ac0b3" kindref="member">offsets_int</ref><sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a7746eaa22c0e658a819ef028fcd36d25" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read_1a3b2e41e70e358a3f3e3c9608f2bad802" kindref="member">num_products</ref><sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a19384039656e013c133882369a7903eb" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="239" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ac8c49152dbbf36c173e490c9578f6127" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/>&amp;rhs,<sp/>T<sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>lhs.ptr_real<sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1ac9e69f2a7f0c1a0e95891b20a26bd291" kindref="member">ptr_real</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>lhs.ptr_int<sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a79dd138947ccaaedb1b6255561676301" kindref="member">ptr_int</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>lhs.offsets_real<sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a27ecaa82dceb6278936325eb17307e5a" kindref="member">offsets_real</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>lhs.offsets_int<sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a8c68504b405bda965b11c02d8a5087a2" kindref="member">offsets_int</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>lhs.num_products<sp/>=<sp/>rhs.<ref refid="structNESO_1_1Particles_1_1ProductMatrixGet_1a7a8e24db445e735a2c882bbfa31ddf07" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(ParticleLoopGlobalInfo<sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read&lt;ProductMatrix *&gt;</ref><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(ParticleLoopGlobalInfo<sp/>*global_info,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write&lt;ProductMatrix *&gt;</ref><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(ParticleLoopGlobalInfo<sp/>*global_info,</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add&lt;ProductMatrix *&gt;</ref><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ParticleLoopImplementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="structNESO_1_1Particles_1_1ProductMatrixSpec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref><sp/>{</highlight></codeline>
+<codeline lineno="274" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae273bdefefb8f958d4bf4cb7a0c7a7b5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae273bdefefb8f958d4bf4cb7a0c7a7b5" kindref="member">num_components_real</ref>;</highlight></codeline>
+<codeline lineno="276" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9a7054fdc1b3a2474181858351e412bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9a7054fdc1b3a2474181858351e412bc" kindref="member">num_components_int</ref>;</highlight></codeline>
+<codeline lineno="278" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" kindref="member">num_properties_real</ref>;</highlight></codeline>
+<codeline lineno="280" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" kindref="member">num_properties_int</ref>;</highlight></codeline>
+<codeline lineno="282" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ac72e1a4ad5464c7b97678c02c0af32ad" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Sym&lt;REAL&gt;&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ac72e1a4ad5464c7b97678c02c0af32ad" kindref="member">syms_real</ref>;</highlight></codeline>
+<codeline lineno="284" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1aea4cc983e388d36ebb3ab47d02e2713d" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Sym&lt;INT&gt;&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1aea4cc983e388d36ebb3ab47d02e2713d" kindref="member">syms_int</ref>;</highlight></codeline>
+<codeline lineno="286" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b2431397961c923f4f58ad08159a699" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b2431397961c923f4f58ad08159a699" kindref="member">components_real</ref>;</highlight></codeline>
+<codeline lineno="288" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ad9ff6164237eb6d74171549702fff442" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ad9ff6164237eb6d74171549702fff442" kindref="member">components_int</ref>;</highlight></codeline>
+<codeline lineno="290" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a4553b2c502650c65d4c4db1bcc9f3c7f" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;std::pair&lt;Sym&lt;REAL&gt;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;,<sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref>&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a4553b2c502650c65d4c4db1bcc9f3c7f" kindref="member">default_values_real</ref>;</highlight></codeline>
+<codeline lineno="292" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9f1269bcfdbc18f0ebdd1b4ad1c29d55" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;std::pair&lt;Sym&lt;INT&gt;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;,<sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9f1269bcfdbc18f0ebdd1b4ad1c29d55" kindref="member">default_values_int</ref>;</highlight></codeline>
+<codeline lineno="294" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a71678c9c640af008237c72b7b4031f29" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;Sym&lt;REAL&gt;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a71678c9c640af008237c72b7b4031f29" kindref="member">map_sym_index_real</ref>;</highlight></codeline>
+<codeline lineno="296" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1e1e971fce76dee24f8b97331a91f328" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;Sym&lt;INT&gt;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1e1e971fce76dee24f8b97331a91f328" kindref="member">map_sym_index_int</ref>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a158f2d9e91561033eccc01802cb09a24" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a158f2d9e91561033eccc01802cb09a24" kindref="member">ProductMatrixSpec</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="302" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae9072103019d477721f463db865f1dc4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae9072103019d477721f463db865f1dc4" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a5dfc076cb0df6971d26a272813af1fb1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a5dfc076cb0df6971d26a272813af1fb1" kindref="member">ProductMatrixSpec</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>(<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;num_properties_real<sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" kindref="member">properties_real</ref>.size();</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;num_properties_int<sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" kindref="member">properties_int</ref>.size();</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;components_real<sp/>=<sp/>std::vector&lt;int&gt;(<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" kindref="member">num_properties_real</ref>);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;components_int<sp/>=<sp/>std::vector&lt;int&gt;(<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" kindref="member">num_properties_int</ref>);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;syms_real<sp/>=<sp/>std::vector&lt;Sym&lt;REAL&gt;&gt;(<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" kindref="member">num_properties_real</ref>);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;syms_int<sp/>=<sp/>std::vector&lt;Sym&lt;INT&gt;&gt;(<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" kindref="member">num_properties_int</ref>);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px<sp/>=<sp/>0;<sp/>px<sp/>&lt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" kindref="member">num_properties_real</ref>;<sp/>px++)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;components_real.at(px)<sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" kindref="member">properties_real</ref>.at(px).ncomp;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sym<sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" kindref="member">properties_real</ref>.at(px).sym;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;syms_real.at(px)<sp/>=<sp/>sym;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;map_sym_index_real[sym]<sp/>=<sp/>px;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px<sp/>=<sp/>0;<sp/>px<sp/>&lt;<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" kindref="member">num_properties_int</ref>;<sp/>px++)<sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;components_int.at(px)<sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" kindref="member">properties_int</ref>.at(px).ncomp;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sym<sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" kindref="member">particle_spec</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" kindref="member">properties_int</ref>.at(px).sym;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;syms_int.at(px)<sp/>=<sp/>sym;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;map_sym_index_int[sym]<sp/>=<sp/>px;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;num_components_real<sp/>=<sp/>std::accumulate(this-&gt;components_real.begin(),</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;components_real.end(),<sp/>0);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;num_components_int<sp/>=<sp/>std::accumulate(this-&gt;components_int.begin(),</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;components_int.end(),<sp/>0);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b402151bc42788762a21a3439ff0604" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b402151bc42788762a21a3439ff0604" kindref="member">set_default_value</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;default_values_int[{sym,<sp/>component}]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2c52ff03bd412f9e1fddfa2eab35495f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2c52ff03bd412f9e1fddfa2eab35495f" kindref="member">set_default_value</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component,</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;default_values_real[{sym,<sp/>component}]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1acdb63dc057ce80cd35ec56d1f9be8b03" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1acdb63dc057ce80cd35ec56d1f9be8b03" kindref="member">get_sym_index</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>this-&gt;map_sym_index_real.find(sym);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>==<sp/>this-&gt;map_sym_index_real.end())<sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it-&gt;second;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a32a2d4fdf26bd2e56d3e0eecec888eb6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a32a2d4fdf26bd2e56d3e0eecec888eb6" kindref="member">get_sym_index</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>this-&gt;map_sym_index_int.find(sym);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>==<sp/>this-&gt;map_sym_index_int.end())<sp/>{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it-&gt;second;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1a9616219ab019b6d7c749d6199c0cb9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1a9616219ab019b6d7c749d6199c0cb9" kindref="member">get_num_components</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>this-&gt;<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1acdb63dc057ce80cd35ec56d1f9be8b03" kindref="member">get_sym_index</ref>(sym);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;components_real.at(index);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a832cc86477fee3843edcd029398007d3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a832cc86477fee3843edcd029398007d3" kindref="member">get_num_components</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>this-&gt;<ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1acdb63dc057ce80cd35ec56d1f9be8b03" kindref="member">get_sym_index</ref>(sym);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;components_int.at(index);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ProductMatrixSpec&gt;</highlight></codeline>
+<codeline lineno="418" refid="namespaceNESO_1_1Particles_1aa6deabc4271b453cf01c32cac1a945fd" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1aa6deabc4271b453cf01c32cac1a945fd" kindref="member">product_matrix_spec</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/>particle_spec)<sp/>{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_shared&lt;ProductMatrixSpec&gt;(particle_spec);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430" refid="classNESO_1_1Particles_1_1ProductMatrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref><sp/>{</highlight></codeline>
+<codeline lineno="431" refid="classNESO_1_1Particles_1_1ProductMatrix_1accfc1abb2f69f7720d802ebc0e73117e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref></highlight></codeline>
+<codeline lineno="433" refid="classNESO_1_1Particles_1_1ProductMatrix_1afebb1772502f56862f18d953fed55a1c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">ParticleLoopImplementation::create_loop_arg</ref>(</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read&lt;ProductMatrix *&gt;</ref><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="436" refid="classNESO_1_1Particles_1_1ProductMatrix_1a860de4f83b61dce730da0e64edbf60c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">ParticleLoopImplementation::create_loop_arg</ref>(</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write&lt;ProductMatrix *&gt;</ref><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="439" refid="classNESO_1_1Particles_1_1ProductMatrix_1a710b2c5b5ae95808ff6fb8c025937ae3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">ParticleLoopImplementation::create_loop_arg</ref>(</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add&lt;ProductMatrix *&gt;</ref><sp/>&amp;a);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="444" refid="classNESO_1_1Particles_1_1ProductMatrix_1a4de28c1890fe75fe7dea47580a8eb920" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;BufferDevice&lt;REAL&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a4de28c1890fe75fe7dea47580a8eb920" kindref="member">d_data_real</ref>;</highlight></codeline>
+<codeline lineno="445" refid="classNESO_1_1Particles_1_1ProductMatrix_1acd8862302e451df9bf66deacd64b3036" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;BufferDevice&lt;INT&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1acd8862302e451df9bf66deacd64b3036" kindref="member">d_data_int</ref>;</highlight></codeline>
+<codeline lineno="446" refid="classNESO_1_1Particles_1_1ProductMatrix_1ae42ded6981e0e85018ea7e619995aa88" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;BufferDeviceHost&lt;int&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1ae42ded6981e0e85018ea7e619995aa88" kindref="member">dh_offsets_real</ref>;</highlight></codeline>
+<codeline lineno="447" refid="classNESO_1_1Particles_1_1ProductMatrix_1a2e84197159db429c900407a9c2a046da" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;BufferDeviceHost&lt;int&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a2e84197159db429c900407a9c2a046da" kindref="member">dh_offsets_int</ref>;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449" refid="classNESO_1_1Particles_1_1ProductMatrix_1a7a85c983fe3d19e2a3a49fcd50db9ca1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a7a85c983fe3d19e2a3a49fcd50db9ca1" kindref="member">impl_get</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{this-&gt;d_data_real-&gt;ptr,<sp/>this-&gt;d_data_int-&gt;ptr,</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_real-&gt;d_buffer.ptr,</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_int-&gt;d_buffer.ptr,<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>};</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="454" refid="classNESO_1_1Particles_1_1ProductMatrix_1a3bc081cdac6a89a5882917806845027c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a3bc081cdac6a89a5882917806845027c" kindref="member">impl_get_const</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{this-&gt;d_data_real-&gt;ptr,<sp/>this-&gt;d_data_int-&gt;ptr,</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_real-&gt;d_buffer.ptr,</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_int-&gt;d_buffer.ptr,<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>};</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="462" refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>;</highlight></codeline>
+<codeline lineno="464" refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="466" refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;ProductMatrixSpec&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468" refid="classNESO_1_1Particles_1_1ProductMatrix_1a1e99906277466047744de32bd3be98bc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a1e99906277466047744de32bd3be98bc" kindref="member">ProductMatrix</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473" refid="classNESO_1_1Particles_1_1ProductMatrix_1a9fee81f0ff3286fc1f4c72a6dd928b8e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a9fee81f0ff3286fc1f4c72a6dd928b8e" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="classNESO_1_1Particles_1_1ProductMatrix_1a99922a29e95d64ce9e8db21626a87372" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a99922a29e95d64ce9e8db21626a87372" kindref="member">ProductMatrix</ref>(<ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>,</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;ProductMatrixSpec&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>)</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sycl_target<sp/>is<sp/>nullptr.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;d_data_real<sp/>=<sp/>std::make_shared&lt;BufferDevice&lt;REAL&gt;&gt;(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;d_data_int<sp/>=<sp/>std::make_shared&lt;BufferDevice&lt;INT&gt;&gt;(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>offsets<sp/>are<sp/>functions<sp/>of<sp/>the<sp/>properties<sp/>and<sp/>components<sp/>not<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>products</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>REAL<sp/>offsets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>h_offsets_real(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_real.size());</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/>std::exclusive_scan(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_real.begin(),</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_real.end(),<sp/>h_offsets_real.begin(),<sp/>0);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_real<sp/>=</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_shared&lt;BufferDeviceHost&lt;int&gt;&gt;(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>,<sp/>h_offsets_real);</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_real-&gt;host_to_device();</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INT<sp/>offsets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>h_offsets_int(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_int.size());</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/>std::exclusive_scan(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_int.begin(),</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_int.end(),<sp/>h_offsets_int.begin(),<sp/>0);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_int<sp/>=</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_shared&lt;BufferDeviceHost&lt;int&gt;&gt;(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" kindref="member">sycl_target</ref>,<sp/>h_offsets_int);</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;dh_offsets_int-&gt;host_to_device();</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520" refid="classNESO_1_1Particles_1_1ProductMatrix_1aa1cab6680f0e17928d253ba02ebc581f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aa1cab6680f0e17928d253ba02ebc581f" kindref="member">reset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref><sp/>=<sp/>this-&gt;spec.get();</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ProductMatrix<sp/>is<sp/>not<sp/>initialised.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;num_products<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;d_data_real-&gt;realloc_no_copy(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref><sp/>*</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;num_components_real);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;d_data_int-&gt;realloc_no_copy(<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;num_components_int);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref><sp/>es;</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reset<sp/>the<sp/>values<sp/>to<sp/>either<sp/>0<sp/>or<sp/>the<sp/>set<sp/>default<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sx<sp/>=<sp/>0;<sp/>sx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;num_properties_real;<sp/>sx++)<sp/>{</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx<sp/>=<sp/>0;<sp/>cx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_real[sx];<sp/>cx++)<sp/>{</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;Sym&lt;REAL&gt;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;<sp/>key<sp/>=<sp/>{<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;syms_real.at(sx),<sp/>cx};</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>value<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;default_values_real.count(key)<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;default_values_real.at(key)</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sym_offset<sp/>=<sp/>this-&gt;dh_offsets_real-&gt;h_buffer.ptr[sx];</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>*column_start<sp/>=</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;d_data_real-&gt;ptr<sp/>+<sp/>(sym_offset<sp/>+<sp/>cx)<sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>es.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.fill(column_start,<sp/>value,<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>));</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sx<sp/>=<sp/>0;<sp/>sx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;num_properties_int;<sp/>sx++)<sp/>{</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx<sp/>=<sp/>0;<sp/>cx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;components_int[sx];<sp/>cx++)<sp/>{</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;Sym&lt;INT&gt;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;<sp/>key<sp/>=<sp/>{<ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;syms_int.at(sx),<sp/>cx};</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>value<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;default_values_int.count(key)<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" kindref="member">spec</ref>-&gt;default_values_int.at(key)</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sym_offset<sp/>=<sp/>this-&gt;dh_offsets_int-&gt;h_buffer.ptr[sx];</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>*column_start<sp/>=</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;d_data_int-&gt;ptr<sp/>+<sp/>(sym_offset<sp/>+<sp/>cx)<sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>es.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.fill(column_start,<sp/>value,<sp/><ref refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" kindref="member">num_products</ref>));</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>es.<ref refid="classNESO_1_1Particles_1_1EventStack_1a6904b30365c9a305408d7db689487aa3" kindref="member">wait</ref>();</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="559"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ProductMatrix&gt;</highlight></codeline>
+<codeline lineno="569" refid="namespaceNESO_1_1Particles_1a914c9c125729aade07b9ff53fa35d978" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1a914c9c125729aade07b9ff53fa35d978" kindref="member">product_matrix</ref>(<ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/>sycl_target,</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;ProductMatrixSpec&gt;<sp/>spec)<sp/>{</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_shared&lt;ProductMatrix&gt;(sycl_target,<sp/>spec);</highlight></codeline>
+<codeline lineno="572"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ParticleLoopImplementation<sp/>{</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ProductMatrixGetConst</highlight></codeline>
+<codeline lineno="579" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a590eb99e2ec1c2031619df1e138e4542" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read&lt;ProductMatrix *&gt;</ref><sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.<ref refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric_1adcf2b692e27c42e30bfedea17d68a4bc" kindref="member">obj</ref>-&gt;impl_get_const();</highlight></codeline>
+<codeline lineno="582"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="586" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aebefb762a94879b583f0ab81d2f46a0b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write&lt;ProductMatrix *&gt;</ref><sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.<ref refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric_1adcf2b692e27c42e30bfedea17d68a4bc" kindref="member">obj</ref>-&gt;impl_get();</highlight></codeline>
+<codeline lineno="590"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="594" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a2cf18f64a4f7ced48179a1b52c26108e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add&lt;ProductMatrix *&gt;</ref><sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.<ref refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric_1adcf2b692e27c42e30bfedea17d68a4bc" kindref="member">obj</ref>-&gt;impl_get();</highlight></codeline>
+<codeline lineno="598"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ParticleLoopImplementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp"/>
+  </compounddef>
+</doxygen>

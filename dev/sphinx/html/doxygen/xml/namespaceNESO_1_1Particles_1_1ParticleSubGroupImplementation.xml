@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1ParticleSubGroupImplementation" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::ParticleSubGroupImplementation</compoundname>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector" prot="public">NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="32" column="1"/>
+  </compounddef>
+</doxygen>

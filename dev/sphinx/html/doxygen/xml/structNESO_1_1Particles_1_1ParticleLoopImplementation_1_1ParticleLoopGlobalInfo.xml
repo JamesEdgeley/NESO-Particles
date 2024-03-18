@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</compoundname>
+    <includes refid="particle__loop__base_8hpp" local="no">particle_loop_base.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a9a254c839e1e865b04a9ff8fdeccd144" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> *</type>
+        <definition>ParticleGroup* NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo::particle_group</definition>
+        <argsstring></argsstring>
+        <name>particle_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="34" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a05370e994dd44b2de2c1c07e2b3b7988" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+        <definition>INT* NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo::d_npart_cell_es</definition>
+        <argsstring></argsstring>
+        <name>d_npart_cell_es</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="35" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a0b6d3d2fbc06111d71a08d213cb46a70" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+        <definition>INT* NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo::d_npart_cell_es_lb</definition>
+        <argsstring></argsstring>
+        <name>d_npart_cell_es_lb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="36" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a1bf3e6bcc0078c710eb4c567a3aee33b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo::starting_cell</definition>
+        <argsstring></argsstring>
+        <name>starting_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="38" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a80615647da76026c561622557f98a8ae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo::loop_type_int</definition>
+        <argsstring></argsstring>
+        <name>loop_type_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="39" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The description of the iteration set to pass to the objects used in the loop. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>NESO::Particles::BufferDevice&lt; INT &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>NESO::Particles::GlobalMove</label>
+        <link refid="classNESO_1_1Particles_1_1GlobalMove"/>
+      </node>
+      <node id="4">
+        <label>NESO::Particles::ParticleSpec</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleSpec"/>
+      </node>
+      <node id="6">
+        <label>NESO::Particles::BufferBase&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferBase"/>
+      </node>
+      <node id="8">
+        <label>NESO::Particles::CellMove</label>
+        <link refid="classNESO_1_1Particles_1_1CellMove"/>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::ParticleGroup</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleGroup"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>layer_compressor</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>particle_spec</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>h_npart_cell</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>d_npart_cell</edgelabel>
+          <edgelabel>d_remove_cells</edgelabel>
+          <edgelabel>d_remove_layers</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>cell_move_ctx</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>global_move_ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</label>
+        <link refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>particle_group</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>NESO::Particles::BufferHost&lt; INT &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NESO::Particles::LayerCompressor</label>
+        <link refid="classNESO_1_1Particles_1_1LayerCompressor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="33" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="33" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a05370e994dd44b2de2c1c07e2b3b7988" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</scope><name>d_npart_cell_es</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a0b6d3d2fbc06111d71a08d213cb46a70" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</scope><name>d_npart_cell_es_lb</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a80615647da76026c561622557f98a8ae" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</scope><name>loop_type_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a9a254c839e1e865b04a9ff8fdeccd144" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</scope><name>particle_group</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a1bf3e6bcc0078c710eb4c567a3aee33b" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</scope><name>starting_cell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

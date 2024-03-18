@@ -1,0 +1,195 @@
+\hypertarget{classNESO_1_1Particles_1_1SymVector}{}\doxysection{NESO\+::Particles\+::Sym\+Vector$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1SymVector}\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+
+
+{\ttfamily \#include $<$sym\+\_\+vector.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_ab8db358d7654043215ca3e61384509d9}{Sym\+Vector}} ()=default
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_a73c9a9dbc5392397f343ec797aeeb7c5}{operator=}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_a56040d20b783375cc7e722288dbf580b}{Sym\+Vector}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} particle\+\_\+group, std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$$>$ syms)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_ad47fb754a82e4e3c814df58e8d94d1ce}{Sym\+Vector}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} particle\+\_\+group, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$$>$ syms)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ T $>$ $>$ const  \& \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_abc1c1abb006dd7d9175bb057f5e29763}{get\+\_\+particle\+\_\+dats}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_af6e766053e4015ce02797fd909f08cf8}{create}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} sycl\+\_\+target)
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a2036902331af5fea0fcb270cfd6170fc}{Sym\+Vector\+Impl\+GetT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_ab0fcee2e0222c8d26702bdbdb242eec7}{impl\+\_\+get}} ()
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_aa900ac23bad7d69c2ee62ace9696890d}{Sym\+Vector\+Impl\+Get\+ConstT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_af281ae9bff8c1ae32349c9c06423158d}{impl\+\_\+get\+\_\+const}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ T $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_acacf076d555515eadecdeb58d9a5a1b7}{dats}}
+\begin{DoxyCompactList}\small\item\em The Particle\+Dats referenced by the \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ T $\ast$$\ast$$\ast$ $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_aed9df9b41bd92e621c121fc1cd1def13}{dh\+\_\+root\+\_\+ptrs}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ T $\ast$const $\ast$const $\ast$ $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_a6dcce16d098ca2af80138329760b070c}{dh\+\_\+root\+\_\+const\+\_\+ptrs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\class \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_a5781ba095359438118ce96e2e0eb4a8d}{Particle\+Loop}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_aa900ac23bad7d69c2ee62ace9696890d}{Sym\+Vector\+Impl\+Get\+ConstT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_a63410b82546b8469751810b7df952e4c}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$global\+\_\+info, sycl\+::handler \&cgh, \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Access\+::\+Read}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ $\ast$ $>$ \&a)
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a2036902331af5fea0fcb270cfd6170fc}{Sym\+Vector\+Impl\+GetT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector_aea94868a7db8693685f1d9fd9465b8f3}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$global\+\_\+info, sycl\+::handler \&cgh, \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Write}{Access\+::\+Write}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ $\ast$ $>$ \&a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Sym\+Vector$<$ T $>$}
+
+Enables Particle\+Dats to be accessed in Particle\+Loops with a number of Particle\+Dats determined at runtime. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_ab8db358d7654043215ca3e61384509d9}\label{classNESO_1_1Particles_1_1SymVector_ab8db358d7654043215ca3e61384509d9}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!SymVector@{SymVector}}
+\index{SymVector@{SymVector}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SymVector()}{SymVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_a56040d20b783375cc7e722288dbf580b}\label{classNESO_1_1Particles_1_1SymVector_a56040d20b783375cc7e722288dbf580b}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!SymVector@{SymVector}}
+\index{SymVector@{SymVector}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SymVector()}{SymVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}}}]{particle\+\_\+group,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$$>$}]{syms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}} using a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} and a std\+::vector of Syms.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} to use. \\
+\hline
+{\em syms} & Vector of Syms to use from particle\+\_\+group. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_ad47fb754a82e4e3c814df58e8d94d1ce}\label{classNESO_1_1Particles_1_1SymVector_ad47fb754a82e4e3c814df58e8d94d1ce}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!SymVector@{SymVector}}
+\index{SymVector@{SymVector}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SymVector()}{SymVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}}}]{particle\+\_\+group,  }\item[{std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$$>$}]{syms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}} using a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} and an initialiser list of syms, e.\+g.
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}(particle\+\_\+group, \{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}}(\char`\"{}a\char`\"{}), \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}}(\char`\"{}b\char`\"{})\});
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} to use. \\
+\hline
+{\em syms} & Syms to use from particle\+\_\+group. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_af6e766053e4015ce02797fd909f08cf8}\label{classNESO_1_1Particles_1_1SymVector_af6e766053e4015ce02797fd909f08cf8}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!create@{create}}
+\index{create@{create}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_abc1c1abb006dd7d9175bb057f5e29763}\label{classNESO_1_1Particles_1_1SymVector_abc1c1abb006dd7d9175bb057f5e29763}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!get\_particle\_dats@{get\_particle\_dats}}
+\index{get\_particle\_dats@{get\_particle\_dats}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_particle\_dats()}{get\_particle\_dats()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$T$>$ $>$ const\& \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::get\+\_\+particle\+\_\+dats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The Particle\+Dats that form the \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_ab0fcee2e0222c8d26702bdbdb242eec7}\label{classNESO_1_1Particles_1_1SymVector_ab0fcee2e0222c8d26702bdbdb242eec7}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!impl\_get@{impl\_get}}
+\index{impl\_get@{impl\_get}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get()}{impl\_get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a2036902331af5fea0fcb270cfd6170fc}{Sym\+Vector\+Impl\+GetT}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::impl\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_af281ae9bff8c1ae32349c9c06423158d}\label{classNESO_1_1Particles_1_1SymVector_af281ae9bff8c1ae32349c9c06423158d}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!impl\_get\_const@{impl\_get\_const}}
+\index{impl\_get\_const@{impl\_get\_const}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get\_const()}{impl\_get\_const()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_aa900ac23bad7d69c2ee62ace9696890d}{Sym\+Vector\+Impl\+Get\+ConstT}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::impl\+\_\+get\+\_\+const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_a73c9a9dbc5392397f343ec797aeeb7c5}\label{classNESO_1_1Particles_1_1SymVector_a73c9a9dbc5392397f343ec797aeeb7c5}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$T$>$\& \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_a5781ba095359438118ce96e2e0eb4a8d}\label{classNESO_1_1Particles_1_1SymVector_a5781ba095359438118ce96e2e0eb4a8d}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!ParticleLoop@{ParticleLoop}}
+\index{ParticleLoop@{ParticleLoop}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoop}{ParticleLoop}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename KERNEL , typename... ARGS$>$ \\
+friend class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_a63410b82546b8469751810b7df952e4c}\label{classNESO_1_1Particles_1_1SymVector_a63410b82546b8469751810b7df952e4c}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}}
+\index{ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopImplementation::create\_loop\_arg}{ParticleLoopImplementation::create\_loop\_arg}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_aa900ac23bad7d69c2ee62ace9696890d}{Sym\+Vector\+Impl\+Get\+ConstT}}$<$T$>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_acc145e1ca44fcfde703b028c42a14b83}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$}]{global\+\_\+info,  }\item[{sycl\+::handler \&}]{cgh,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Access\+::\+Read}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ $\ast$ $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_aea94868a7db8693685f1d9fd9465b8f3}\label{classNESO_1_1Particles_1_1SymVector_aea94868a7db8693685f1d9fd9465b8f3}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}}
+\index{ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopImplementation::create\_loop\_arg}{ParticleLoopImplementation::create\_loop\_arg}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a2036902331af5fea0fcb270cfd6170fc}{Sym\+Vector\+Impl\+GetT}}$<$T$>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_acc145e1ca44fcfde703b028c42a14b83}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$}]{global\+\_\+info,  }\item[{sycl\+::handler \&}]{cgh,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Write}{Access\+::\+Write}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}$<$ T $>$ $\ast$ $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_acacf076d555515eadecdeb58d9a5a1b7}\label{classNESO_1_1Particles_1_1SymVector_acacf076d555515eadecdeb58d9a5a1b7}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!dats@{dats}}
+\index{dats@{dats}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dats}{dats}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$T$>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::dats\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The Particle\+Dats referenced by the \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{Sym\+Vector}}. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_a6dcce16d098ca2af80138329760b070c}\label{classNESO_1_1Particles_1_1SymVector_a6dcce16d098ca2af80138329760b070c}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!dh\_root\_const\_ptrs@{dh\_root\_const\_ptrs}}
+\index{dh\_root\_const\_ptrs@{dh\_root\_const\_ptrs}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dh\_root\_const\_ptrs}{dh\_root\_const\_ptrs}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$T $\ast$const $\ast$const $\ast$$>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::dh\+\_\+root\+\_\+const\+\_\+ptrs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1SymVector_aed9df9b41bd92e621c121fc1cd1def13}\label{classNESO_1_1Particles_1_1SymVector_aed9df9b41bd92e621c121fc1cd1def13}} 
+\index{NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}!dh\_root\_ptrs@{dh\_root\_ptrs}}
+\index{dh\_root\_ptrs@{dh\_root\_ptrs}!NESO::Particles::SymVector$<$ T $>$@{NESO::Particles::SymVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dh\_root\_ptrs}{dh\_root\_ptrs}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$T $\ast$$\ast$$\ast$$>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1SymVector}{NESO\+::\+Particles\+::\+Sym\+Vector}}$<$ T $>$\+::dh\+\_\+root\+\_\+ptrs\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/\mbox{\hyperlink{sym__vector_8hpp}{sym\+\_\+vector.\+hpp}}\end{DoxyCompactItemize}

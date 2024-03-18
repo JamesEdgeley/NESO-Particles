@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticleLoopBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>NESO::Particles::ParticleLoopBase</compoundname>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1ParticleLoop" prot="public" virt="non-virtual">NESO::Particles::ParticleLoop&lt; KERNEL, ARGS... &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1ParticleLoop" prot="public" virt="non-virtual">NESO::Particles::ParticleLoop&lt; KERNEL, ARGS &gt;</derivedcompoundref>
+    <includes refid="particle__loop__base_8hpp" local="no">particle_loop_base.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleLoopBase_1a233034f6af9641769f4d3983a2774874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::ParticleLoopBase::execute</definition>
+        <argsstring>(const std::optional&lt; int &gt; cell=std::nullopt)=0</argsstring>
+        <name>execute</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoop_1a9dc351b7fdff46aabc878fff6273b36b">execute</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoop_1a9dc351b7fdff46aabc878fff6273b36b">execute</reimplementedby>
+        <param>
+          <type>const std::optional&lt; int &gt;</type>
+          <declname>cell</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the particle loop and block until completion. Must be called Collectively on the communicator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="79" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleLoopBase_1a76b7989b69559ff3aabbce47c5887991" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::ParticleLoopBase::submit</definition>
+        <argsstring>(const std::optional&lt; int &gt; cell=std::nullopt)=0</argsstring>
+        <name>submit</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoop_1a410b425ab28a3f808921b0cff4cf8b1d">submit</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoop_1a410b425ab28a3f808921b0cff4cf8b1d">submit</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoopSubGroup_1ada2161430296df2dd9e4474975da0bb4">submit</reimplementedby>
+        <param>
+          <type>const std::optional&lt; int &gt;</type>
+          <declname>cell</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Launch the <ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref> and return. Must be called collectively over the MPI communicator of the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. Loop execution is complete when the corresponding call to wait returns. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="86" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleLoopBase_1a9037d55ec2fc33a423abf900b2fb2e16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::ParticleLoopBase::wait</definition>
+        <argsstring>()=0</argsstring>
+        <name>wait</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoop_1a88ce6aec00dbba8778a34b77a5eaf5f5">wait</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1ParticleLoop_1a88ce6aec00dbba8778a34b77a5eaf5f5">wait</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait for loop execution to complete. On completion perform post-loop actions. Must be called collectively on communicator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="92" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract base class for <ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref> such that the templated <ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref> can be cast to a base type for storage. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>NESO::Particles::ParticleLoop&lt; KERNEL, ARGS &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleLoop"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::ParticleLoop&lt; KERNEL, ARGS... &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleLoop"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ParticleLoopBase</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleLoopBase"/>
+      </node>
+      <node id="3">
+        <label>NESO::Particles::ParticleLoopSubGroup&lt; KERNEL, ARGS &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleLoopSubGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="73" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="73" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticleLoopBase_1a233034f6af9641769f4d3983a2774874" prot="public" virt="pure-virtual"><scope>NESO::Particles::ParticleLoopBase</scope><name>execute</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleLoopBase_1a76b7989b69559ff3aabbce47c5887991" prot="public" virt="pure-virtual"><scope>NESO::Particles::ParticleLoopBase</scope><name>submit</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleLoopBase_1a9037d55ec2fc33a423abf900b2fb2e16" prot="public" virt="pure-virtual"><scope>NESO::Particles::ParticleLoopBase</scope><name>wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

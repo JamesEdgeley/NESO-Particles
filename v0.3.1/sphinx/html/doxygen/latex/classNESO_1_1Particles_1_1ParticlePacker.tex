@@ -1,0 +1,222 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticlePacker}{}\doxysection{NESO\+::Particles\+::Particle\+Packer Class Reference}
+\label{classNESO_1_1Particles_1_1ParticlePacker}\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+
+
+{\ttfamily \#include $<$packing\+\_\+unpacking.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Particle\+Packer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1ParticlePacker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_ae4f6b79e90319ae6c976f46a9163839a}{Particle\+Packer}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_adc7c15a88f4d2851e78aa30b26289970}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a0df003f9b14cc17d6a978399c5040fa6}{$\sim$\+Particle\+Packer}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a06fdb7bc5146dd01e56e75e20a715102}{Particle\+Packer}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a8fce60cd3fb7862eb8b8bace70a9f140}{sycl\+\_\+target}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a958c121cd372f5929bb7f38619c21e6f}{reset}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a3d4b17442e2172570233c93728c006af}{get\+\_\+packed\+\_\+data\+\_\+on\+\_\+host}} (const int num\+\_\+remote\+\_\+send\+\_\+ranks, const int $\ast$h\+\_\+send\+\_\+rank\+\_\+npart\+\_\+ptr)
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a9b5aa6c7ac4a48567b1457b48f59670f}{pack}} (const int num\+\_\+remote\+\_\+send\+\_\+ranks, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \&h\+\_\+send\+\_\+rank\+\_\+npart, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \&dh\+\_\+send\+\_\+rank\+\_\+map, const int num\+\_\+particles\+\_\+leaving, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \&d\+\_\+pack\+\_\+cells, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \&d\+\_\+pack\+\_\+layers\+\_\+src, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \&d\+\_\+pack\+\_\+layers\+\_\+dst, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&particle\+\_\+dats\+\_\+real, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&particle\+\_\+dats\+\_\+int, const int rank\+\_\+component=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a19f7b76085c64261b9daa264c26efa4e}{num\+\_\+bytes\+\_\+per\+\_\+particle}}
+\begin{DoxyCompactList}\small\item\em Number of bytes required per particle packed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDat}{Cell\+Dat}}$<$ char $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_ab69790841ea1dd03285478766da2c3bf}{cell\+\_\+dat}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDat}{Cell\+Dat}} used to pack the particles to be sent to each remote rank on the. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ char $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a03aa87bdd4e068ad82903ccea35b0721}{h\+\_\+send\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em Host buffer to copy packed data to before sending using MPI routines. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_ae942b271c89d4a8b0853daeb3ea39cbc}{h\+\_\+send\+\_\+offsets}}
+\begin{DoxyCompactList}\small\item\em Vector of offsets to index into the host send buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a5fc895cd38be36753f4b2f9aee576d77}{required\+\_\+send\+\_\+buffer\+\_\+length}}
+\begin{DoxyCompactList}\small\item\em Required length of the send buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker_a8fce60cd3fb7862eb8b8bace70a9f140}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to pack particle data to send using MPI operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_ae4f6b79e90319ae6c976f46a9163839a}\label{classNESO_1_1Particles_1_1ParticlePacker_ae4f6b79e90319ae6c976f46a9163839a}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!ParticlePacker@{ParticlePacker}}
+\index{ParticlePacker@{ParticlePacker}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{ParticlePacker()}{ParticlePacker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Packer\+::\+Particle\+Packer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a0df003f9b14cc17d6a978399c5040fa6}\label{classNESO_1_1Particles_1_1ParticlePacker_a0df003f9b14cc17d6a978399c5040fa6}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!````~ParticlePacker@{$\sim$ParticlePacker}}
+\index{````~ParticlePacker@{$\sim$ParticlePacker}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticlePacker()}{~ParticlePacker()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Packer\+::$\sim$\+Particle\+Packer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a06fdb7bc5146dd01e56e75e20a715102}\label{classNESO_1_1Particles_1_1ParticlePacker_a06fdb7bc5146dd01e56e75e20a715102}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!ParticlePacker@{ParticlePacker}}
+\index{ParticlePacker@{ParticlePacker}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{ParticlePacker()}{ParticlePacker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Packer\+::\+Particle\+Packer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a particle packing object on a compute device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a3d4b17442e2172570233c93728c006af}\label{classNESO_1_1Particles_1_1ParticlePacker_a3d4b17442e2172570233c93728c006af}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!get\_packed\_data\_on\_host@{get\_packed\_data\_on\_host}}
+\index{get\_packed\_data\_on\_host@{get\_packed\_data\_on\_host}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{get\_packed\_data\_on\_host()}{get\_packed\_data\_on\_host()}}
+{\footnotesize\ttfamily char$\ast$ NESO\+::\+Particles\+::\+Particle\+Packer\+::get\+\_\+packed\+\_\+data\+\_\+on\+\_\+host (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+remote\+\_\+send\+\_\+ranks,  }\item[{const int $\ast$}]{h\+\_\+send\+\_\+rank\+\_\+npart\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the packed particle data on the host such that it can be sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+remote\+\_\+send\+\_\+ranks} & Number of remote ranks involved in send. \\
+\hline
+{\em h\+\_\+send\+\_\+rank\+\_\+npart\+\_\+ptr} & Host accessible pointer holding the number of particles to be sent to each remote rank. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to host allocated buffer holding the packed particle data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_adc7c15a88f4d2851e78aa30b26289970}\label{classNESO_1_1Particles_1_1ParticlePacker_adc7c15a88f4d2851e78aa30b26289970}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}}\& NESO\+::\+Particles\+::\+Particle\+Packer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticlePacker}{Particle\+Packer}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a9b5aa6c7ac4a48567b1457b48f59670f}\label{classNESO_1_1Particles_1_1ParticlePacker_a9b5aa6c7ac4a48567b1457b48f59670f}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!pack@{pack}}
+\index{pack@{pack}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{pack()}{pack()}}
+{\footnotesize\ttfamily sycl\+::event NESO\+::\+Particles\+::\+Particle\+Packer\+::pack (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+remote\+\_\+send\+\_\+ranks,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ int $>$ \&}]{h\+\_\+send\+\_\+rank\+\_\+npart,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ \&}]{dh\+\_\+send\+\_\+rank\+\_\+map,  }\item[{const int}]{num\+\_\+particles\+\_\+leaving,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \&}]{d\+\_\+pack\+\_\+cells,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \&}]{d\+\_\+pack\+\_\+layers\+\_\+src,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ int $>$ \&}]{d\+\_\+pack\+\_\+layers\+\_\+dst,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&}]{particle\+\_\+dats\+\_\+real,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&}]{particle\+\_\+dats\+\_\+int,  }\item[{const int}]{rank\+\_\+component = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pack particle data on the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+remote\+\_\+send\+\_\+ranks} & Number of remote ranks involved in send. \\
+\hline
+{\em h\+\_\+send\+\_\+rank\+\_\+npart} & Host buffer holding the number of particles to be sent to each remote rank. \\
+\hline
+{\em dh\+\_\+send\+\_\+rank\+\_\+map} & Maps MPI ranks to the cell in the packing \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDat}{Cell\+Dat}}. \\
+\hline
+{\em num\+\_\+particles\+\_\+leaving} & Total number of particles to pack. \\
+\hline
+{\em d\+\_\+pack\+\_\+cells} & \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}} holding the cells of particles to pack. \\
+\hline
+{\em d\+\_\+pack\+\_\+layers\+\_\+src} & \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}} holding the layers(rows) of particles to pack. \\
+\hline
+{\em d\+\_\+pack\+\_\+layers\+\_\+dst} & \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}} holding the destination layers in the packing \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDat}{Cell\+Dat}}. \\
+\hline
+{\em particle\+\_\+dats\+\_\+real} & Container of REAL Particle\+Dat instances to pack. \\
+\hline
+{\em particle\+\_\+dats\+\_\+int} & Container of INT Particle\+Dat instances to pack. \\
+\hline
+{\em rank\+\_\+component} & Component of MPI rank Particle\+Dat to inspect for destination MPI rank. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sycl\+::event to wait on for packing completion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a958c121cd372f5929bb7f38619c21e6f}\label{classNESO_1_1Particles_1_1ParticlePacker_a958c121cd372f5929bb7f38619c21e6f}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!reset@{reset}}
+\index{reset@{reset}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Packer\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the instance before packing particle data. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_ab69790841ea1dd03285478766da2c3bf}\label{classNESO_1_1Particles_1_1ParticlePacker_ab69790841ea1dd03285478766da2c3bf}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!cell\_dat@{cell\_dat}}
+\index{cell\_dat@{cell\_dat}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{cell\_dat}{cell\_dat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDat}{Cell\+Dat}}$<$char$>$ NESO\+::\+Particles\+::\+Particle\+Packer\+::cell\+\_\+dat}
+
+
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDat}{Cell\+Dat}} used to pack the particles to be sent to each remote rank on the. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a03aa87bdd4e068ad82903ccea35b0721}\label{classNESO_1_1Particles_1_1ParticlePacker_a03aa87bdd4e068ad82903ccea35b0721}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!h\_send\_buffer@{h\_send\_buffer}}
+\index{h\_send\_buffer@{h\_send\_buffer}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{h\_send\_buffer}{h\_send\_buffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$char$>$ NESO\+::\+Particles\+::\+Particle\+Packer\+::h\+\_\+send\+\_\+buffer}
+
+
+
+Host buffer to copy packed data to before sending using MPI routines. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_ae942b271c89d4a8b0853daeb3ea39cbc}\label{classNESO_1_1Particles_1_1ParticlePacker_ae942b271c89d4a8b0853daeb3ea39cbc}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!h\_send\_offsets@{h\_send\_offsets}}
+\index{h\_send\_offsets@{h\_send\_offsets}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{h\_send\_offsets}{h\_send\_offsets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+Particle\+Packer\+::h\+\_\+send\+\_\+offsets}
+
+
+
+Vector of offsets to index into the host send buffer. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a19f7b76085c64261b9daa264c26efa4e}\label{classNESO_1_1Particles_1_1ParticlePacker_a19f7b76085c64261b9daa264c26efa4e}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!num\_bytes\_per\_particle@{num\_bytes\_per\_particle}}
+\index{num\_bytes\_per\_particle@{num\_bytes\_per\_particle}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{num\_bytes\_per\_particle}{num\_bytes\_per\_particle}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Particle\+Packer\+::num\+\_\+bytes\+\_\+per\+\_\+particle}
+
+
+
+Number of bytes required per particle packed. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a5fc895cd38be36753f4b2f9aee576d77}\label{classNESO_1_1Particles_1_1ParticlePacker_a5fc895cd38be36753f4b2f9aee576d77}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!required\_send\_buffer\_length@{required\_send\_buffer\_length}}
+\index{required\_send\_buffer\_length@{required\_send\_buffer\_length}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{required\_send\_buffer\_length}{required\_send\_buffer\_length}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Particle\+Packer\+::required\+\_\+send\+\_\+buffer\+\_\+length}
+
+
+
+Required length of the send buffer. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticlePacker_a8fce60cd3fb7862eb8b8bace70a9f140}\label{classNESO_1_1Particles_1_1ParticlePacker_a8fce60cd3fb7862eb8b8bace70a9f140}} 
+\index{NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::ParticlePacker@{NESO::Particles::ParticlePacker}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Particle\+Packer\+::sycl\+\_\+target}
+
+
+
+Compute device used by the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{packing__unpacking_8hpp}{packing\+\_\+unpacking.\+hpp}}\end{DoxyCompactItemize}

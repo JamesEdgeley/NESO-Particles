@@ -1,0 +1,263 @@
+\hypertarget{classNESO_1_1Particles_1_1LocalArray}{}\doxysection{NESO\+::Particles\+::Local\+Array$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1LocalArray}\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+
+
+{\ttfamily \#include $<$local\+\_\+array.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a1e25ebcf08883d3bd274aff26751bde4}{Local\+Array}} ()=default
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$ T $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a3dd86a041d43cbc957b44bbabb183ba9}{operator=}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a41ef5a425cbba3edd2f6769b20dd9849}{Local\+Array}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a1080c5294d385dc23f0c94d914ce5a0b}{sycl\+\_\+target}}, const std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a42c35915ad691819818ea8a3a0c9eb83}{size}}, const std\+::optional$<$ T $>$ init\+\_\+value=std\+::nullopt)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a1d6cd28ef09b9b0ba16af44b00236fb3}{fill}} (const T value)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_aeb5c8a3b3251de83956aa8a2c88d887b}{Local\+Array}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a1080c5294d385dc23f0c94d914ce5a0b}{sycl\+\_\+target}}, const std\+::vector$<$ T $>$ \&data)
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a49d60843b617bce0d7b2c0f47db8b7eb}{set\+\_\+async}} (const std\+::vector$<$ T $>$ \&data)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_af152b5deef5e267e581a3176211f2d22}{set}} (const std\+::vector$<$ T $>$ \&data)
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a3f26e18774be52e6442b4c163add1c7b}{get\+\_\+async}} (std\+::vector$<$ T $>$ \&data)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_aed695b7908c03d811c3a03f70356d285}{get}} (std\+::vector$<$ T $>$ \&data)
+\item 
+std\+::vector$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_afe71e36012a10dc50549ac7147048d90}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a1080c5294d385dc23f0c94d914ce5a0b}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} the \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} is created on. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a42c35915ad691819818ea8a3a0c9eb83}{size}}
+\begin{DoxyCompactList}\small\item\em The number of elements in the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_af0b3e2a2884378a7fd4a9efff85a6922}{impl\+\_\+get}} ()
+\item 
+T const  $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a3e88e386be8cb4652324f7b9a58136ce}{impl\+\_\+get\+\_\+const}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ T $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a867f8c868e6d4bb5cad9d68d366a4c16}{buffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\class \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray_a5781ba095359438118ce96e2e0eb4a8d}{Particle\+Loop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Local\+Array$<$ T $>$}
+
+Container to hold an array of values on each MPI rank. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a1e25ebcf08883d3bd274aff26751bde4}\label{classNESO_1_1Particles_1_1LocalArray_a1e25ebcf08883d3bd274aff26751bde4}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!LocalArray@{LocalArray}}
+\index{LocalArray@{LocalArray}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LocalArray()}{LocalArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a41ef5a425cbba3edd2f6769b20dd9849}\label{classNESO_1_1Particles_1_1LocalArray_a41ef5a425cbba3edd2f6769b20dd9849}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!LocalArray@{LocalArray}}
+\index{LocalArray@{LocalArray}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LocalArray()}{LocalArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const std\+::size\+\_\+t}]{size,  }\item[{const std\+::optional$<$ T $>$}]{init\+\_\+value = {\ttfamily std\+:\+:nullopt} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} on a compute target and given size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & Device to create \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} on. \\
+\hline
+{\em size} & Number of elements in array. \\
+\hline
+{\em Default} & value to initialise values to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_aeb5c8a3b3251de83956aa8a2c88d887b}\label{classNESO_1_1Particles_1_1LocalArray_aeb5c8a3b3251de83956aa8a2c88d887b}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!LocalArray@{LocalArray}}
+\index{LocalArray@{LocalArray}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LocalArray()}{LocalArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} on a compute target and given size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & Device to create \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} on. \\
+\hline
+{\em data} & Vector to initialise array values to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a1d6cd28ef09b9b0ba16af44b00236fb3}\label{classNESO_1_1Particles_1_1LocalArray_a1d6cd28ef09b9b0ba16af44b00236fb3}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!fill@{fill}}
+\index{fill@{fill}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::fill (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill the array with a value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to fill the array with. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_afe71e36012a10dc50549ac7147048d90}\label{classNESO_1_1Particles_1_1LocalArray_afe71e36012a10dc50549ac7147048d90}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!get@{get}}
+\index{get@{get}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the values in the local array into a std\+::vector.
+
+\begin{DoxyReturn}{Returns}
+std\+::vector of values in the \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_aed695b7908c03d811c3a03f70356d285}\label{classNESO_1_1Particles_1_1LocalArray_aed695b7908c03d811c3a03f70356d285}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!get@{get}}
+\index{get@{get}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the values in the local array into a std\+::vector. Blocks until copy is complete.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em data} & Input vector to copy values from \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} into. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a3f26e18774be52e6442b4c163add1c7b}\label{classNESO_1_1Particles_1_1LocalArray_a3f26e18774be52e6442b4c163add1c7b}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!get\_async@{get\_async}}
+\index{get\_async@{get\_async}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_async()}{get\_async()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::get\+\_\+async (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Asynchronously get the values in the local array into a std\+::vector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em data} & Input vector to copy values from \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Event to wait on before using new values in the std\+::vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_af0b3e2a2884378a7fd4a9efff85a6922}\label{classNESO_1_1Particles_1_1LocalArray_af0b3e2a2884378a7fd4a9efff85a6922}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!impl\_get@{impl\_get}}
+\index{impl\_get@{impl\_get}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get()}{impl\_get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::impl\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Non-\/const pointer to underlying device data. Intended for friend access from \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a3e88e386be8cb4652324f7b9a58136ce}\label{classNESO_1_1Particles_1_1LocalArray_a3e88e386be8cb4652324f7b9a58136ce}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!impl\_get\_const@{impl\_get\_const}}
+\index{impl\_get\_const@{impl\_get\_const}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get\_const()}{impl\_get\_const()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T const$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::impl\+\_\+get\+\_\+const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Const pointer to underlying device data. Intended for friend access from \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a3dd86a041d43cbc957b44bbabb183ba9}\label{classNESO_1_1Particles_1_1LocalArray_a3dd86a041d43cbc957b44bbabb183ba9}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$T$>$\& \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Note that the copy operator creates shallow copies of the array. \mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_af152b5deef5e267e581a3176211f2d22}\label{classNESO_1_1Particles_1_1LocalArray_af152b5deef5e267e581a3176211f2d22}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!set@{set}}
+\index{set@{set}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the values in the local array to those in a std\+::vector. Blocks until the copy is complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Input vector to copy values from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a49d60843b617bce0d7b2c0f47db8b7eb}\label{classNESO_1_1Particles_1_1LocalArray_a49d60843b617bce0d7b2c0f47db8b7eb}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!set\_async@{set\_async}}
+\index{set\_async@{set\_async}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set\_async()}{set\_async()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::set\+\_\+async (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Asynchronously set the values in the local array to those in a std\+::vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Input vector to copy values from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Event to wait on before using new values in \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a5781ba095359438118ce96e2e0eb4a8d}\label{classNESO_1_1Particles_1_1LocalArray_a5781ba095359438118ce96e2e0eb4a8d}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!ParticleLoop@{ParticleLoop}}
+\index{ParticleLoop@{ParticleLoop}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoop}{ParticleLoop}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename KERNEL , typename... ARGS$>$ \\
+friend class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a867f8c868e6d4bb5cad9d68d366a4c16}\label{classNESO_1_1Particles_1_1LocalArray_a867f8c868e6d4bb5cad9d68d366a4c16}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!buffer@{buffer}}
+\index{buffer@{buffer}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$T$>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a42c35915ad691819818ea8a3a0c9eb83}\label{classNESO_1_1Particles_1_1LocalArray_a42c35915ad691819818ea8a3a0c9eb83}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!size@{size}}
+\index{size@{size}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::size}
+
+
+
+The number of elements in the array. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalArray_a1080c5294d385dc23f0c94d914ce5a0b}\label{classNESO_1_1Particles_1_1LocalArray_a1080c5294d385dc23f0c94d914ce5a0b}} 
+\index{NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::LocalArray$<$ T $>$@{NESO::Particles::LocalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{NESO\+::\+Particles\+::\+Local\+Array}}$<$ T $>$\+::sycl\+\_\+target}
+
+
+
+The \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} the \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}} is created on. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/\mbox{\hyperlink{local__array_8hpp}{local\+\_\+array.\+hpp}}\end{DoxyCompactItemize}

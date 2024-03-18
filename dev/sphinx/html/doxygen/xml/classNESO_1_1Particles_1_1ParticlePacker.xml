@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticlePacker" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticlePacker</compoundname>
+    <includes refid="packing__unpacking_8hpp" local="no">packing_unpacking.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1ab12bd0fece30aafc1720580d7c2cb524" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticlePacker::num_dats_real</definition>
+        <argsstring></argsstring>
+        <name>num_dats_real</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="24" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1ad3842ae34fb667de4985e48b682099f1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticlePacker::num_dats_int</definition>
+        <argsstring></argsstring>
+        <name>num_dats_int</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="25" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a04fb5bdca8e9c6c15d6382402b5e9819" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> *const *const * &gt;</type>
+        <definition>BufferDeviceHost&lt;REAL *const *const *&gt; NESO::Particles::ParticlePacker::dh_particle_dat_ptr_real</definition>
+        <argsstring></argsstring>
+        <name>dh_particle_dat_ptr_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="26" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a6a04f26b0d407a9c6e5a84b558b1d649" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *const *const * &gt;</type>
+        <definition>BufferDeviceHost&lt;INT *const *const *&gt; NESO::Particles::ParticlePacker::dh_particle_dat_ptr_int</definition>
+        <argsstring></argsstring>
+        <name>dh_particle_dat_ptr_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="27" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a1a3e3fc80078dc6cc023f4fd4d53e853" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::ParticlePacker::dh_particle_dat_ncomp_real</definition>
+        <argsstring></argsstring>
+        <name>dh_particle_dat_ncomp_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="28" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1aa59bab2002c4fb7d6f1ef091e65994a0" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::ParticlePacker::dh_particle_dat_ncomp_int</definition>
+        <argsstring></argsstring>
+        <name>dh_particle_dat_ncomp_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="29" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a19f7b76085c64261b9daa264c26efa4e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticlePacker::num_bytes_per_particle</definition>
+        <argsstring></argsstring>
+        <name>num_bytes_per_particle</name>
+        <briefdescription>
+<para>Number of bytes required per particle packed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="89" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1ab69790841ea1dd03285478766da2c3bf" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>&lt; char &gt;</type>
+        <definition>CellDat&lt;char&gt; NESO::Particles::ParticlePacker::cell_dat</definition>
+        <argsstring></argsstring>
+        <name>cell_dat</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref> used to pack the particles to be sent to each remote rank on the. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="92" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a03aa87bdd4e068ad82903ccea35b0721" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; char &gt;</type>
+        <definition>BufferHost&lt;char&gt; NESO::Particles::ParticlePacker::h_send_buffer</definition>
+        <argsstring></argsstring>
+        <name>h_send_buffer</name>
+        <briefdescription>
+<para>Host buffer to copy packed data to before sending using MPI routines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="94" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1ae942b271c89d4a8b0853daeb3ea39cbc" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferHost&lt;INT&gt; NESO::Particles::ParticlePacker::h_send_offsets</definition>
+        <argsstring></argsstring>
+        <name>h_send_offsets</name>
+        <briefdescription>
+<para>Vector of offsets to index into the host send buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="96" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a5fc895cd38be36753f4b2f9aee576d77" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::ParticlePacker::required_send_buffer_length</definition>
+        <argsstring></argsstring>
+        <name>required_send_buffer_length</name>
+        <briefdescription>
+<para>Required length of the send buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="98" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticlePacker_1a8fce60cd3fb7862eb8b8bace70a9f140" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::ParticlePacker::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>Compute device used by the instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="100" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1a1e399aed9d07d921dd43601082829e29" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NESO::Particles::ParticlePacker::particle_size</definition>
+        <argsstring>(std::map&lt; Sym&lt; REAL &gt;, ParticleDatSharedPtr&lt; REAL &gt;&gt; &amp;particle_dats_real, std::map&lt; Sym&lt; INT &gt;, ParticleDatSharedPtr&lt; INT &gt;&gt; &amp;particle_dats_int)</argsstring>
+        <name>particle_size</name>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_real</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_int</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="31" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1aa335c90e2f29c6b25208e779fbf63436" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticlePacker::get_particle_dat_info</definition>
+        <argsstring>(std::map&lt; Sym&lt; REAL &gt;, ParticleDatSharedPtr&lt; REAL &gt;&gt; &amp;particle_dats_real, std::map&lt; Sym&lt; INT &gt;, ParticleDatSharedPtr&lt; INT &gt;&gt; &amp;particle_dats_int)</argsstring>
+        <name>get_particle_dat_info</name>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_real</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_int</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="44" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="44" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1ae4f6b79e90319ae6c976f46a9163839a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticlePacker::ParticlePacker</definition>
+        <argsstring>(const ParticlePacker &amp;st)=delete</argsstring>
+        <name>ParticlePacker</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1ParticlePacker" kindref="compound">ParticlePacker</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="84" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1adc7c15a88f4d2851e78aa30b26289970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticlePacker" kindref="compound">ParticlePacker</ref> &amp;</type>
+        <definition>ParticlePacker&amp; NESO::Particles::ParticlePacker::operator=</definition>
+        <argsstring>(ParticlePacker const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticlePacker" kindref="compound">ParticlePacker</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1a0df003f9b14cc17d6a978399c5040fa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticlePacker::~ParticlePacker</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticlePacker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="101" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1a06fdb7bc5146dd01e56e75e20a715102" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticlePacker::ParticlePacker</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target)</argsstring>
+        <name>ParticlePacker</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a particle packing object on a compute device.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="107" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1a958c121cd372f5929bb7f38619c21e6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticlePacker::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the instance before packing particle data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="119" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1a3d4b17442e2172570233c93728c006af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* NESO::Particles::ParticlePacker::get_packed_data_on_host</definition>
+        <argsstring>(const int num_remote_send_ranks, const int *h_send_rank_npart_ptr)</argsstring>
+        <name>get_packed_data_on_host</name>
+        <param>
+          <type>const int</type>
+          <declname>num_remote_send_ranks</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>h_send_rank_npart_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the packed particle data on the host such that it can be sent.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_remote_send_ranks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of remote ranks involved in send. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_send_rank_npart_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host accessible pointer holding the number of particles to be sent to each remote rank. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to host allocated buffer holding the packed particle data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="129" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="129" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticlePacker_1a9b5aa6c7ac4a48567b1457b48f59670f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::ParticlePacker::pack</definition>
+        <argsstring>(const int num_remote_send_ranks, BufferHost&lt; int &gt; &amp;h_send_rank_npart, BufferDeviceHost&lt; int &gt; &amp;dh_send_rank_map, const int num_particles_leaving, BufferDevice&lt; int &gt; &amp;d_pack_cells, BufferDevice&lt; int &gt; &amp;d_pack_layers_src, BufferDevice&lt; int &gt; &amp;d_pack_layers_dst, std::map&lt; Sym&lt; REAL &gt;, ParticleDatSharedPtr&lt; REAL &gt;&gt; &amp;particle_dats_real, std::map&lt; Sym&lt; INT &gt;, ParticleDatSharedPtr&lt; INT &gt;&gt; &amp;particle_dats_int, const int rank_component=0)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>const int</type>
+          <declname>num_remote_send_ranks</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; int &gt; &amp;</type>
+          <declname>h_send_rank_npart</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt; &amp;</type>
+          <declname>dh_send_rank_map</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>num_particles_leaving</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt; &amp;</type>
+          <declname>d_pack_cells</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt; &amp;</type>
+          <declname>d_pack_layers_src</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt; &amp;</type>
+          <declname>d_pack_layers_dst</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_real</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_int</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>rank_component</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pack particle data on the device.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_remote_send_ranks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of remote ranks involved in send. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_send_rank_npart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host buffer holding the number of particles to be sent to each remote rank. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dh_send_rank_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maps MPI ranks to the cell in the packing <ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_particles_leaving</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total number of particles to pack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d_pack_cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref> holding the cells of particles to pack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d_pack_layers_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref> holding the layers(rows) of particles to pack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d_pack_layers_dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref> holding the destination layers in the packing <ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_dats_real</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of REAL ParticleDat instances to pack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_dats_int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of INT ParticleDat instances to pack. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rank_component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of MPI rank ParticleDat to inspect for destination MPI rank. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sycl::event to wait on for packing completion. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="181" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="181" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to pack particle data to send using MPI operations. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>NESO::Particles::BufferBase&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferBase"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ParticlePacker</label>
+        <link refid="classNESO_1_1Particles_1_1ParticlePacker"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cell_dat</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>h_send_buffer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>h_send_offsets</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NESO::Particles::BufferHost&lt; char &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::CellDat&lt; char &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1CellDat"/>
+      </node>
+      <node id="5">
+        <label>NESO::Particles::BufferHost&lt; INT &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" line="22" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp" bodystart="22" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1ab69790841ea1dd03285478766da2c3bf" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>cell_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1aa59bab2002c4fb7d6f1ef091e65994a0" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>dh_particle_dat_ncomp_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a1a3e3fc80078dc6cc023f4fd4d53e853" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>dh_particle_dat_ncomp_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a6a04f26b0d407a9c6e5a84b558b1d649" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>dh_particle_dat_ptr_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a04fb5bdca8e9c6c15d6382402b5e9819" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>dh_particle_dat_ptr_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a3d4b17442e2172570233c93728c006af" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>get_packed_data_on_host</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1aa335c90e2f29c6b25208e779fbf63436" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>get_particle_dat_info</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a03aa87bdd4e068ad82903ccea35b0721" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>h_send_buffer</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1ae942b271c89d4a8b0853daeb3ea39cbc" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>h_send_offsets</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a19f7b76085c64261b9daa264c26efa4e" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>num_bytes_per_particle</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1ad3842ae34fb667de4985e48b682099f1" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>num_dats_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1ab12bd0fece30aafc1720580d7c2cb524" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>num_dats_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1adc7c15a88f4d2851e78aa30b26289970" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a9b5aa6c7ac4a48567b1457b48f59670f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>pack</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a1e399aed9d07d921dd43601082829e29" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>particle_size</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1ae4f6b79e90319ae6c976f46a9163839a" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>ParticlePacker</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a06fdb7bc5146dd01e56e75e20a715102" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>ParticlePacker</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a5fc895cd38be36753f4b2f9aee576d77" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>required_send_buffer_length</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a958c121cd372f5929bb7f38619c21e6f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>reset</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a8fce60cd3fb7862eb8b8bace70a9f140" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticlePacker_1a0df003f9b14cc17d6a978399c5040fa6" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticlePacker</scope><name>~ParticlePacker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="NESO::Particles::LocalMapper" name="NESO::Particles::LocalMapper">
+<area shape="rect" id="node1" title=" " alt="" coords="108,5,320,32"/>
+<area shape="rect" id="node2" href="$classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT.html" title=" " alt="" coords="5,80,196,121"/>
+<area shape="rect" id="node3" href="$classNESO_1_1Particles_1_1DummyLocalMapperT.html" title=" " alt="" coords="220,80,435,121"/>
+</map>

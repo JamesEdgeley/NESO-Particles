@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1BlockedBinaryTree" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::BlockedBinaryTree</compoundname>
+    <includes refid="blocked__binary__tree_8hpp" local="no">blocked_binary_tree.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename KEY_TYPE</type>
+      </param>
+      <param>
+        <type>typename VALUE_TYPE</type>
+      </param>
+      <param>
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <declname>WIDTH</declname>
+        <defname>WIDTH</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1aa973a438ebbd88d98ad26bc3b2f15ff6" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; KEY_TYPE, <ref refid="structNESO_1_1Particles_1_1BlockedBinaryNode" kindref="compound">BlockedBinaryNode</ref>&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; * &gt;</type>
+        <definition>std::map&lt;KEY_TYPE, BlockedBinaryNode&lt;KEY_TYPE, VALUE_TYPE, WIDTH&gt; *&gt; NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="223" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1a87b3511d969ee58d4cbb9c91cc57826b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>The <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> on which the tree is allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="227" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1ab2b9c691a44477cc500a5f6df70b3439" prot="public" static="no" mutable="no">
+        <type><ref refid="structNESO_1_1Particles_1_1BlockedBinaryNode" kindref="compound">BlockedBinaryNode</ref>&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; *</type>
+        <definition>BlockedBinaryNode&lt;KEY_TYPE, VALUE_TYPE, WIDTH&gt;* NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+<para>The root node of the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="229" column="21" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1a83fa95f40817aa7888477d338953bee8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::~BlockedBinaryTree</definition>
+        <argsstring>()</argsstring>
+        <name>~BlockedBinaryTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="231" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="231" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1a021852201bef92fbc8d465dfff2ace91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::BlockedBinaryTree</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target)</argsstring>
+        <name>BlockedBinaryTree</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new tree on a given SYCL device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="240" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="240" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1acfd6549f07e80c346ba510b2f76ce3f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::add</definition>
+        <argsstring>(const KEY_TYPE key, const VALUE_TYPE value)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const VALUE_TYPE</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a key-value pair to the container.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to add to container. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to add to container under given key. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="257" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="257" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BlockedBinaryTree_1a3cfceb476f878d0065b5dbb17e8c8d81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::BlockedBinaryTree&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::host_get</definition>
+        <argsstring>(const KEY_TYPE key, VALUE_TYPE *value)</argsstring>
+        <name>host_get</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>VALUE_TYPE *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Host callable method to retrieve the value that corresponds to a given key.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to retrieve value for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to value type in which to place output value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the key is found in the container otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="314" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="314" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Create a blocked key-value map with a given block size. This class creates the tree and provides methods to get and set key-value pairs. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="221" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="221" bodyend="337"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1acfd6549f07e80c346ba510b2f76ce3f4" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>add</name></member>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1a021852201bef92fbc8d465dfff2ace91" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>BlockedBinaryTree</name></member>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1a3cfceb476f878d0065b5dbb17e8c8d81" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>host_get</name></member>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1aa973a438ebbd88d98ad26bc3b2f15ff6" prot="protected" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>nodes</name></member>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1ab2b9c691a44477cc500a5f6df70b3439" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>root</name></member>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1a87b3511d969ee58d4cbb9c91cc57826b" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1BlockedBinaryTree_1a83fa95f40817aa7888477d338953bee8" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryTree</scope><name>~BlockedBinaryTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

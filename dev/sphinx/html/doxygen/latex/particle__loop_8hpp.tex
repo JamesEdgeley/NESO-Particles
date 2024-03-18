@@ -1,0 +1,69 @@
+\hypertarget{particle__loop_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/loop/particle\+\_\+loop.hpp File Reference}
+\label{particle__loop_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/loop/particle\_loop.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/loop/particle\_loop.hpp}}
+{\ttfamily \#include \char`\"{}../cell\+\_\+dat.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../compute\+\_\+target.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../containers/descendant\+\_\+products.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../containers/global\+\_\+array.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../containers/local\+\_\+array.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../containers/product\+\_\+matrix.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../containers/sym\+\_\+vector.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../containers/tuple.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../particle\+\_\+dat.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../particle\+\_\+spec.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle\+\_\+loop\+\_\+base.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle\+\_\+loop\+\_\+index.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pli\+\_\+particle\+\_\+dat.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$CL/sycl.\+hpp$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$optional$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for particle\+\_\+loop.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{particle__loop_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{particle__loop_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Loop\+Parameter$<$ T$<$ std\+::shared\+\_\+ptr$<$ U $>$ $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Kernel\+Parameter$<$ T$<$ std\+::shared\+\_\+ptr$<$ U $>$ $>$ $>$}}
+\item 
+class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{NESO\+::\+Particles\+::\+Particle\+Loop$<$ KERNEL, ARGS $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation}{NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\Particle\+Loop\+Shared\+Ptr \mbox{\hyperlink{namespaceNESO_1_1Particles_ac8ce793be06689e1febc30afd7b2c09a}{NESO\+::\+Particles\+::particle\+\_\+loop}} (Particle\+Group\+Shared\+Ptr particle\+\_\+group, KERNEL kernel, ARGS... args)
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\Particle\+Loop\+Shared\+Ptr \mbox{\hyperlink{namespaceNESO_1_1Particles_add5a24d6b784beb4c4f1b49a8d0e7fe8}{NESO\+::\+Particles\+::particle\+\_\+loop}} (const std\+::string name, Particle\+Group\+Shared\+Ptr particle\+\_\+group, KERNEL kernel, ARGS... args)
+\item 
+{\footnotesize template$<$typename DAT\+\_\+\+TYPE , typename KERNEL , typename... ARGS$>$ }\\Particle\+Loop\+Shared\+Ptr \mbox{\hyperlink{namespaceNESO_1_1Particles_ac39559fd7615177f4bea988330474e67}{NESO\+::\+Particles\+::particle\+\_\+loop}} (Particle\+Dat\+Shared\+Ptr$<$ DAT\+\_\+\+TYPE $>$ particle\+\_\+dat, KERNEL kernel, ARGS... args)
+\item 
+{\footnotesize template$<$typename DAT\+\_\+\+TYPE , typename KERNEL , typename... ARGS$>$ }\\Particle\+Loop\+Shared\+Ptr \mbox{\hyperlink{namespaceNESO_1_1Particles_a2d2b830cd8c2a23de6ec055664aa035b}{NESO\+::\+Particles\+::particle\+\_\+loop}} (const std\+::string name, Particle\+Dat\+Shared\+Ptr$<$ DAT\+\_\+\+TYPE $>$ particle\+\_\+dat, KERNEL kernel, ARGS... args)
+\end{DoxyCompactItemize}

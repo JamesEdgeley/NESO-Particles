@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1BlockedBinaryNode" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::BlockedBinaryNode</compoundname>
+    <includes refid="blocked__binary__tree_8hpp" local="no">blocked_binary_tree.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename KEY_TYPE</type>
+      </param>
+      <param>
+        <type>typename VALUE_TYPE</type>
+      </param>
+      <param>
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <declname>WIDTH</declname>
+        <defname>WIDTH</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1ae05008d128c2d7e06d4ddcbccf41af46" prot="public" static="no" mutable="no">
+        <type>KEY_TYPE</type>
+        <definition>KEY_TYPE NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::node_key</definition>
+        <argsstring></argsstring>
+        <name>node_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The starting key this node in the tree holds, i.e. with WIDTH=8 node 2 holds keys [8,15]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="21" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1aa29feb565e1ae3308371bd23eb7bc52a" prot="public" static="no" mutable="no">
+        <type><ref refid="structNESO_1_1Particles_1_1BlockedBinaryNode" kindref="compound">BlockedBinaryNode</ref>&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; *</type>
+        <definition>BlockedBinaryNode&lt;KEY_TYPE, VALUE_TYPE, WIDTH&gt;* NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::lhs</definition>
+        <argsstring></argsstring>
+        <name>lhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the node which forms the left hand branch from this node. May be nullptr if this node does not exist. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="24" column="21" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1ab0364680cfa700c2aa3fb07871efba07" prot="public" static="no" mutable="no">
+        <type><ref refid="structNESO_1_1Particles_1_1BlockedBinaryNode" kindref="compound">BlockedBinaryNode</ref>&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; *</type>
+        <definition>BlockedBinaryNode&lt;KEY_TYPE, VALUE_TYPE, WIDTH&gt;* NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::rhs</definition>
+        <argsstring></argsstring>
+        <name>rhs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the node which forms the right hand branch from this node. May be nullptr if this node does not exist. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="27" column="21" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1aa464b3139668b1548a03725ae350ca98" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::exists[WIDTH]</definition>
+        <argsstring>[WIDTH]</argsstring>
+        <name>exists</name>
+        <briefdescription>
+<para>Bools that indicate if the entries in the data member are actual values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="29" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a98ad5127fa8caeba4b5bea8fdb3e1649" prot="public" static="no" mutable="no">
+        <type>VALUE_TYPE</type>
+        <definition>VALUE_TYPE NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::data[WIDTH]</definition>
+        <argsstring>[WIDTH]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The storage for the values the tree holds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="31" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a8b047356b3c4935543dbb7bcf13036bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the node to a default state with no child nodes and no data held. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="36" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a5192e4c6712fe0108e3c9a8d6de1b0a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::is_node</definition>
+        <argsstring>(const KEY_TYPE node_key)</argsstring>
+        <name>is_node</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>node_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if the node corresponds to the input node key.#</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node key to test. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if this node corresponds to the input node key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="86" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a2ccdf37e0bb3d0963459b5151b68c5e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1BlockedBinaryNode" kindref="compound">BlockedBinaryNode</ref>&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; *</type>
+        <definition>BlockedBinaryNode&lt;KEY_TYPE, VALUE_TYPE, WIDTH&gt;* NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::next</definition>
+        <argsstring>(const KEY_TYPE node_key)</argsstring>
+        <name>next</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>node_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assuming a node does not match a requested node key, return the child branch which might contain the node. If the node key matches the current node returns the current node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node key currently being searched for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to child node (may be nullptr). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="99" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="99" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1ae79fdd28139cfc8162b8b0f8d4969ad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::get_location</definition>
+        <argsstring>(const KEY_TYPE key, bool **leaf_set, VALUE_TYPE **value)</argsstring>
+        <name>get_location</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool **</type>
+          <declname>leaf_set</declname>
+        </param>
+        <param>
+          <type>VALUE_TYPE **</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a given global key find the leaf location for the value and the bool that indicates if the value is set. If the key is not in the tree return false.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global key to find location of value for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">leaf_set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return location that points to the flag that indicates if the value is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return location for a pointer to the value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the key is located in the tree otherwise false. The leaf_set and value parameters only contain meaningful values if the return value is true. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="122" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="122" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a322f04aa99a08d305290ced43faf9f23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::get</definition>
+        <argsstring>(const KEY_TYPE key, VALUE_TYPE *value)</argsstring>
+        <name>get</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>VALUE_TYPE *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a given key find and return the stored value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input global key to retrieve value for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to value, only valid if the key is found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the key is found in the tree otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="152" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="152" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1af3916de86d9dbb8cfba92c2b27bc1279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::set</definition>
+        <argsstring>(const KEY_TYPE key, const VALUE_TYPE value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const VALUE_TYPE</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a given key store the corresponding value in the tree. This function assumes that the node is already allocated and placed in the tree according to the node_key.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global key to store value against. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input value to store pointed to by key. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the value was successfully stored. A return value of false indicates the node which should store the value is not present in the tree. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="175" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="175" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a9c9088935ae4a74d30361a160296073d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::add_node</definition>
+        <argsstring>(BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; *node)</argsstring>
+        <name>add_node</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1BlockedBinaryNode" kindref="compound">BlockedBinaryNode</ref>&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an allocated node to the tree under a given node key. The <computeroutput>node_key</computeroutput> member of the added node will be used to determine tree placement.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node to place into the tree. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="194" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="194" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a060cecdc456824367be53c885e29f3f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KEY_TYPE</type>
+        <definition>static KEY_TYPE NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::get_node_key</definition>
+        <argsstring>(const KEY_TYPE key)</argsstring>
+        <name>get_node_key</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a given input key (in the global key space) get the node key which contains the values for the key.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input key to index into the tree with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Node key that indicates the node in the tree which contains the key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="53" column="26" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="53" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1BlockedBinaryNode_1a37a016614d55432b8f0e7241c7c631ed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>KEY_TYPE</type>
+        <definition>static KEY_TYPE NESO::Particles::BlockedBinaryNode&lt; KEY_TYPE, VALUE_TYPE, WIDTH &gt;::get_leaf_key</definition>
+        <argsstring>(const KEY_TYPE key)</argsstring>
+        <name>get_leaf_key</name>
+        <param>
+          <type>const KEY_TYPE</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For a given input key (in the global key space) get the leaf key which can be used to index into the data member on the node which contains the key - see <computeroutput>get_node_key</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input key to index into container. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Index into data member that corresponds to the input key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="71" column="26" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="71" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic node in a tree where each node stores an array of VALUE_TYPE elements of length WIDTH. <computeroutput><ref refid="classNESO_1_1Particles_1_1BlockedBinaryTree" kindref="compound">BlockedBinaryTree</ref></computeroutput> is the class that actually creates the tree. This type should be trivially copyable to the device. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" line="17" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/blocked_binary_tree.hpp" bodystart="17" bodyend="214"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a9c9088935ae4a74d30361a160296073d" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>add_node</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a98ad5127fa8caeba4b5bea8fdb3e1649" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>data</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1aa464b3139668b1548a03725ae350ca98" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>exists</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a322f04aa99a08d305290ced43faf9f23" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>get</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a37a016614d55432b8f0e7241c7c631ed" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>get_leaf_key</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1ae79fdd28139cfc8162b8b0f8d4969ad4" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>get_location</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a060cecdc456824367be53c885e29f3f3" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>get_node_key</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a5192e4c6712fe0108e3c9a8d6de1b0a2" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>is_node</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1aa29feb565e1ae3308371bd23eb7bc52a" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>lhs</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a2ccdf37e0bb3d0963459b5151b68c5e5" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>next</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1ae05008d128c2d7e06d4ddcbccf41af46" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>node_key</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1a8b047356b3c4935543dbb7bcf13036bd" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>reset</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1ab0364680cfa700c2aa3fb07871efba07" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>rhs</name></member>
+      <member refid="structNESO_1_1Particles_1_1BlockedBinaryNode_1af3916de86d9dbb8cfba92c2b27bc1279" prot="public" virt="non-virtual"><scope>NESO::Particles::BlockedBinaryNode</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

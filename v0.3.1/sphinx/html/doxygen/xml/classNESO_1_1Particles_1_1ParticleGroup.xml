@@ -1,0 +1,1262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticleGroup" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleGroup</compoundname>
+    <includes refid="particle__group_8hpp" local="no">particle_group.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a393781ee7ee245b9e0359841d66570e6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleGroup::ncell</definition>
+        <argsstring></argsstring>
+        <name>ncell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="36" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a031bc2f3b393603078c7e9c991c4ae51" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferHost&lt;INT&gt; NESO::Particles::ParticleGroup::h_npart_cell</definition>
+        <argsstring></argsstring>
+        <name>h_npart_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="37" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1aa41c251ccbeaf915f8d608360943802b" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::ParticleGroup::d_remove_cells</definition>
+        <argsstring></argsstring>
+        <name>d_remove_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="39" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a4295399671c4ba3988526082fe00a94c" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::ParticleGroup::d_remove_layers</definition>
+        <argsstring></argsstring>
+        <name>d_remove_layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="40" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a19ffb8fceaa5301e0902662c87736f4f" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1GlobalMove" kindref="compound">GlobalMove</ref></type>
+        <definition>GlobalMove NESO::Particles::ParticleGroup::global_move_ctx</definition>
+        <argsstring></argsstring>
+        <name>global_move_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="52" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a7062cfe2a8ef4eb5c16375ce34dcd0fb" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap" kindref="compound">MeshHierarchyGlobalMap</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MeshHierarchyGlobalMap&gt; NESO::Particles::ParticleGroup::mesh_hierarchy_global_map</definition>
+        <argsstring></argsstring>
+        <name>mesh_hierarchy_global_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="54" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a95e12f5126376a9133a19bc8cd640d0a" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1LocalMove" kindref="compound">LocalMove</ref></type>
+        <definition>LocalMove NESO::Particles::ParticleGroup::local_move_ctx</definition>
+        <argsstring></argsstring>
+        <name>local_move_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="56" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1aba2dc6d1f576207359b1cccbaca82b8d" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1CellMove" kindref="compound">CellMove</ref></type>
+        <definition>CellMove NESO::Particles::ParticleGroup::cell_move_ctx</definition>
+        <argsstring></argsstring>
+        <name>cell_move_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="58" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1acb0ee8bf51e52a9f386c437db2427a20" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ae44a4731c000de97b12328292de6b7c5" kindref="member">DomainSharedPtr</ref></type>
+        <definition>DomainSharedPtr NESO::Particles::ParticleGroup::domain</definition>
+        <argsstring></argsstring>
+        <name>domain</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Domain" kindref="compound">Domain</ref> this instance is defined over. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="67" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a79b4175ae60189ea6806b3714cb1fad4" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::ParticleGroup::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>Compute device used by the instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="69" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a9dd5dc6101f1c5d24461cbcd5bbf7656" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::map&lt;Sym&lt;REAL&gt;, ParticleDatSharedPtr&lt;REAL&gt; &gt; NESO::Particles::ParticleGroup::particle_dats_real</definition>
+        <argsstring></argsstring>
+        <name>particle_dats_real</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Map from <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> instances to REAL valued ParticleDat instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="71" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a20cf9525b901adab4381a6e5f978ae6f" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::map&lt;Sym&lt;INT&gt;, ParticleDatSharedPtr&lt;INT&gt; &gt; NESO::Particles::ParticleGroup::particle_dats_int</definition>
+        <argsstring></argsstring>
+        <name>particle_dats_int</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Map from <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> instances to INT valued ParticleDat instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="73" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1af53fa2192c6c8da6bd1ff4b981481730" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;Sym&lt;REAL&gt; &gt; NESO::Particles::ParticleGroup::position_sym</definition>
+        <argsstring></argsstring>
+        <name>position_sym</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> of ParticleDat storing particle positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="76" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a4d4175cb8ddb7bb3cf37d5a56be3bd1c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;REAL&gt; NESO::Particles::ParticleGroup::position_dat</definition>
+        <argsstring></argsstring>
+        <name>position_dat</name>
+        <briefdescription>
+<para>ParticleDat storing particle positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="78" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1acc66165803d60ad512ebc99740f35b51" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;Sym&lt;INT&gt; &gt; NESO::Particles::ParticleGroup::cell_id_sym</definition>
+        <argsstring></argsstring>
+        <name>cell_id_sym</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> of ParticleDat storing particle cell ids. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="80" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a9d2d18287dc1ab64a1adf7fd9b611ab7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt; NESO::Particles::ParticleGroup::cell_id_dat</definition>
+        <argsstring></argsstring>
+        <name>cell_id_dat</name>
+        <briefdescription>
+<para>ParticleDat storing particle cell ids. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="82" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a8d2c1da4f699a2cebef3d1da26b40e64" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;Sym&lt;INT&gt; &gt; NESO::Particles::ParticleGroup::mpi_rank_sym</definition>
+        <argsstring></argsstring>
+        <name>mpi_rank_sym</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> of ParticleDat storing particle MPI ranks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="84" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a5390097031ae828bf336ff9c0850447b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt; NESO::Particles::ParticleGroup::mpi_rank_dat</definition>
+        <argsstring></argsstring>
+        <name>mpi_rank_dat</name>
+        <briefdescription>
+<para>ParticleDat storing particle MPI ranks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="86" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a4291b050f055345ac7852b54a7c2b367" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref></type>
+        <definition>ParticleSpec NESO::Particles::ParticleGroup::particle_spec</definition>
+        <argsstring></argsstring>
+        <name>particle_spec</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> of all the ParticleDats of this <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="89" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleGroup_1a9de7e072d3a9a4c793c23e36dd8010fd" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1LayerCompressor" kindref="compound">LayerCompressor</ref></type>
+        <definition>LayerCompressor NESO::Particles::ParticleGroup::layer_compressor</definition>
+        <argsstring></argsstring>
+        <name>layer_compressor</name>
+        <briefdescription>
+<para>Layer compression instance for dats when particles are removed from cells. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="92" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a11f100022583f2d57ed1be30ae33219c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::realloc_dat</definition>
+        <argsstring>(ParticleDatSharedPtr&lt; T &gt; &amp;dat)</argsstring>
+        <name>realloc_dat</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="42" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1aec9049cd06abb57cca06f3105bdc61ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::push_particle_spec</definition>
+        <argsstring>(ParticleProp&lt; T &gt; prop)</argsstring>
+        <name>push_particle_spec</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; T &gt;</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="46" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a8de3a677c9da2427ee036908b7a95eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleGroup::ParticleGroup</definition>
+        <argsstring>(const ParticleGroup &amp;st)=delete</argsstring>
+        <name>ParticleGroup</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="62" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a21cf8e3c5ae4d74b43799935075580a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+        <definition>ParticleGroup&amp; NESO::Particles::ParticleGroup::operator=</definition>
+        <argsstring>(ParticleGroup const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="64" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a9d748cdd20923ff733ec2ebd6b1afd6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::free</definition>
+        <argsstring>()</argsstring>
+        <name>free</name>
+        <briefdescription>
+<para>Explicitly free a <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> without relying on out-of-scope. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="96" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a048daf94cb6be0d24d918ec000c575f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleGroup::ParticleGroup</definition>
+        <argsstring>(DomainSharedPtr domain, ParticleSpec &amp;particle_spec, SYCLTargetSharedPtr sycl_target)</argsstring>
+        <name>ParticleGroup</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ae44a4731c000de97b12328292de6b7c5" kindref="member">DomainSharedPtr</ref></type>
+          <declname>domain</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> &amp;</type>
+          <declname>particle_spec</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Domain" kindref="compound">Domain</ref> instance containing these particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> that describes the ParticleDat instances required. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="106" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="106" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1aec8c2b589deba06f1b47330648dac4c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleGroup::~ParticleGroup</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticleGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="156" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a35092af27430a143db0dbc40430e8c62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::add_particle_dat</definition>
+        <argsstring>(ParticleDatSharedPtr&lt; REAL &gt; particle_dat)</argsstring>
+        <name>add_particle_dat</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>particle_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a ParticleDat to the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> after construction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New ParticleDat to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="163" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="405" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1ae3221692337199231ad4364715f379df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::add_particle_dat</definition>
+        <argsstring>(ParticleDatSharedPtr&lt; INT &gt; particle_dat)</argsstring>
+        <name>add_particle_dat</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>particle_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a ParticleDat to the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> after construction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New ParticleDat to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="170" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="422" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1ae056f815037640ac0e5ed081537c1266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::add_particles</definition>
+        <argsstring>()</argsstring>
+        <name>add_particles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add particles to the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. Any rank may add particles that exist anywhere in the domain. This call is collective across the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> and ranks that do not add particles should not pass any new particle data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="178" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="439" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1aae10fe6d169135aa46e267f97edf9cae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::add_particles</definition>
+        <argsstring>(U particle_data)</argsstring>
+        <name>add_particles</name>
+        <param>
+          <type>U</type>
+          <declname>particle_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add particles to the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. Any rank may add particles that exist anywhere in the domain. This call is collective across the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> and ranks that do not add particles should not pass any new particle data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New particle data to add to the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="188" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="441" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a6770d444576949f95e15c0a21c2b9580" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::add_particles_local</definition>
+        <argsstring>(ParticleSet &amp;particle_data)</argsstring>
+        <name>add_particles_local</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleSet" kindref="compound">ParticleSet</ref> &amp;</type>
+          <declname>particle_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add particles only to this MPI rank. It is assumed that the added particles are in the domain region owned by this MPI rank. If not, see <computeroutput><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1ae056f815037640ac0e5ed081537c1266" kindref="member">ParticleGroup::add_particles</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New particles to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="197" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="459" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a3c55a244c06cf94f24b279fea9118ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleGroup::get_npart_local</definition>
+        <argsstring>()</argsstring>
+        <name>get_npart_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total number of particles on this MPI rank.</para>
+<para><simplesect kind="return"><para>Local particle count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="204" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1aa73319f02b633a53b274d881d19a20fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleGroup::contains_dat</definition>
+        <argsstring>(Sym&lt; REAL &gt; sym)</argsstring>
+        <name>contains_dat</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine if the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> contains a ParticleDat of a given name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Symbol of ParticleDat. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if ParticleDat exists on this <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="212" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1ad478ab98e2109b3bce1a871c7596f82d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleGroup::contains_dat</definition>
+        <argsstring>(Sym&lt; INT &gt; sym)</argsstring>
+        <name>contains_dat</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine if the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> contains a ParticleDat of a given name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Symbol of ParticleDat. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if ParticleDat exists on this <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="222" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; T &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;T&gt; NESO::Particles::ParticleGroup::get_dat</definition>
+        <argsstring>(Sym&lt; T &gt; sym, const bool check_exists=true)</argsstring>
+        <name>get_dat</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; T &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>check_exists</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Template for get_dat method called like: <ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" kindref="member">ParticleGroup::get_dat</ref>(Sym&lt;REAL&gt;(&quot;POS&quot;)) for a real valued ParticleDat.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of ParticleDat. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>check_exists</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Check if the dat exists, default true. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ParticleDatSharedPtr&lt;T&gt; particle dat. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="235" column="31" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="235" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1af6f2a39dfcd135ab1a8d347954c1a995" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &amp;</type>
+        <definition>ParticleDatSharedPtr&lt;REAL&gt;&amp; NESO::Particles::ParticleGroup::operator[]</definition>
+        <argsstring>(Sym&lt; REAL &gt; sym)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Users are recomended to use &quot;get_dat&quot; instead. Enables access to the ParticleDat instances using the subscript operators.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;REAL&gt; of ParticleDat to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="251" column="31" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a4e23ba882491c2d20d06862de2eecf89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt;&amp; NESO::Particles::ParticleGroup::operator[]</definition>
+        <argsstring>(Sym&lt; INT &gt; sym)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Users are recomended to use &quot;get_dat&quot; instead. Enables access to the ParticleDat instances using the subscript operators.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;INT&gt; of ParticleDat to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="260" column="31" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a2a5d4700600c15fb2bde7ac65855bdc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" kindref="member">CellData</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>CellData&lt;REAL&gt; NESO::Particles::ParticleGroup::get_cell</definition>
+        <argsstring>(Sym&lt; REAL &gt; sym, const int cell)</argsstring>
+        <name>get_cell</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a CellData instance that holds all the particle data for a ParticleDat for a cell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;REAL&gt; indicating which ParticleDat to access. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cell index to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CellData for requested cell. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="272" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="272" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1aa7fdef4e1698d0a404c9702225cefff0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" kindref="member">CellData</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>CellData&lt;INT&gt; NESO::Particles::ParticleGroup::get_cell</definition>
+        <argsstring>(Sym&lt; INT &gt; sym, const int cell)</argsstring>
+        <name>get_cell</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a CellData instance that holds all the particle data for a ParticleDat for a cell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;INT&gt; indicating which ParticleDat to access. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cell index to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CellData for requested cell. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="284" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="284" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a813a563022ab10a145ecc08d2357d086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::remove_particles</definition>
+        <argsstring>(const int npart, const std::vector&lt; INT &gt; &amp;cells, const std::vector&lt; INT &gt; &amp;layers)</argsstring>
+        <name>remove_particles</name>
+        <param>
+          <type>const int</type>
+          <declname>npart</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+          <declname>cells</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+          <declname>layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove particles from the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>npart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of particles to remove. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of particle cells. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>layers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of particle layers(rows). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="295" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="515" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1ab506d1809f86cbf2b15ac616589c347a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::remove_particles</definition>
+        <argsstring>(const int npart, T *usm_cells, T *usm_layers)</argsstring>
+        <name>remove_particles</name>
+        <param>
+          <type>const int</type>
+          <declname>npart</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>usm_cells</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>usm_layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove particles from the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>npart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of particles to remove. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usm_cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device accessible array of particle cells. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usm_layers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device accessible array of particle layers(rows). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="305" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="509" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a21389d0a2476918d35af038a6a54d23b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::ParticleGroup::get_npart_cell</definition>
+        <argsstring>(const int cell)</argsstring>
+        <name>get_npart_cell</name>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of particles in a cell.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cell to query. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of particles in queried cell. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="313" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="313" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1ad2c6b1b9c8c12897d7f0c7e72dab86c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> &amp;</type>
+        <definition>ParticleSpec&amp; NESO::Particles::ParticleGroup::get_particle_spec</definition>
+        <argsstring>()</argsstring>
+        <name>get_particle_spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> of the ParticleDats stored in this <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>.</para>
+<para><simplesect kind="return"><para><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> of stored particles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="322" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="322" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a41f3dda81613c672467d34625d854391" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::global_move</definition>
+        <argsstring>()</argsstring>
+        <name>global_move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the MPI ranks in the first component of the MPI rank dat to move particles globally using the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> of the mesh in the domain.</para>
+<para>Must be called collectively on the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="330" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="552" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1aa35f9ba01eff5b809c315e144e4bf19e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::local_move</definition>
+        <argsstring>()</argsstring>
+        <name>local_move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Use the MPI ranks in the second component of the MPI rank dat to move particles to neighbouring ranks using the neighbouring ranks defined on the mesh.</para>
+<para>Must be called collectively on the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="338" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="562" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a4071b09fcb79eb20fcd5fda772ebe138" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::hybrid_move</definition>
+        <argsstring>()</argsstring>
+        <name>hybrid_move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform a global move using non-negative MPI ranks in the first component of the MPI rank dat. Then bin moved particles into local cells to obtain any required ranks for the local move. Second perform a local move to move particles based on the MPI rank stored in the second component of the MPI rank dat.</para>
+<para>Must be called collectively on the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="348" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="645" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a0c0d3f9d6c4f60f72aa89af634b850f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NESO::Particles::ParticleGroup::particle_size</definition>
+        <argsstring>()</argsstring>
+        <name>particle_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bytes required to store the data for one particle.</para>
+<para><simplesect kind="return"><para>Number of bytes required to store one particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="354" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="448" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a4c36162067136b3892f1758554811ea0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::cell_move</definition>
+        <argsstring>()</argsstring>
+        <name>cell_move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move particles between cells using the cell ids stored in the cell id dat. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="359" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1ad3ba3e015dcefaa7419e67e30c16b787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::set_npart_cell_from_dat</definition>
+        <argsstring>()</argsstring>
+        <name>set_npart_cell_from_dat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy the particle counts per cell from the position ParticleDat to the npart cell array of the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="368" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="368" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a4f93fa94ba688d32baf556cb568fd07f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::print</definition>
+        <argsstring>(T... args)</argsstring>
+        <name>print</name>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print particle data for all particles for the specified ParticleDats.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;REAL&gt; or Sym&lt;INT&gt; instances that indicate which particle data to print. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="380" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="578" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a966af3932641b732ae640b87ffc8cbff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::remove_particle_dat</definition>
+        <argsstring>(Sym&lt; REAL &gt; sym)</argsstring>
+        <name>remove_particle_dat</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a ParticleDat from the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> object that refers to a ParticleDat </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="387" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="387" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleGroup_1a9ddf82001341b2bf04f857b7e2447f12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleGroup::remove_particle_dat</definition>
+        <argsstring>(Sym&lt; INT &gt; sym)</argsstring>
+        <name>remove_particle_dat</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a ParticleDat from the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> object that refers to a ParticleDat </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="397" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="397" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Fundamentally a <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> is a collection of ParticleDats, domain and a compute device. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>NESO::Particles::ParticleSpec</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleSpec"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ParticleGroup</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleGroup"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>layer_compressor</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>particle_spec</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::LayerCompressor</label>
+        <link refid="classNESO_1_1Particles_1_1LayerCompressor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="34" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="34" bodyend="402"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a35092af27430a143db0dbc40430e8c62" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>add_particle_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1ae3221692337199231ad4364715f379df" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>add_particle_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1ae056f815037640ac0e5ed081537c1266" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>add_particles</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aae10fe6d169135aa46e267f97edf9cae" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>add_particles</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a6770d444576949f95e15c0a21c2b9580" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>add_particles_local</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a9d2d18287dc1ab64a1adf7fd9b611ab7" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>cell_id_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1acc66165803d60ad512ebc99740f35b51" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>cell_id_sym</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4c36162067136b3892f1758554811ea0" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>cell_move</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aba2dc6d1f576207359b1cccbaca82b8d" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>cell_move_ctx</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aa73319f02b633a53b274d881d19a20fe" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>contains_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1ad478ab98e2109b3bce1a871c7596f82d" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>contains_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aa41c251ccbeaf915f8d608360943802b" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>d_remove_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4295399671c4ba3988526082fe00a94c" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>d_remove_layers</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1acb0ee8bf51e52a9f386c437db2427a20" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>domain</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a9d748cdd20923ff733ec2ebd6b1afd6f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>free</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a2a5d4700600c15fb2bde7ac65855bdc0" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>get_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aa7fdef4e1698d0a404c9702225cefff0" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>get_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>get_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a21389d0a2476918d35af038a6a54d23b" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>get_npart_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a3c55a244c06cf94f24b279fea9118ae5" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>get_npart_local</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1ad2c6b1b9c8c12897d7f0c7e72dab86c6" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>get_particle_spec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a41f3dda81613c672467d34625d854391" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>global_move</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a19ffb8fceaa5301e0902662c87736f4f" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>global_move_ctx</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a031bc2f3b393603078c7e9c991c4ae51" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>h_npart_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4071b09fcb79eb20fcd5fda772ebe138" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>hybrid_move</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a9de7e072d3a9a4c793c23e36dd8010fd" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>layer_compressor</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aa35f9ba01eff5b809c315e144e4bf19e" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>local_move</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a95e12f5126376a9133a19bc8cd640d0a" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>local_move_ctx</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a7062cfe2a8ef4eb5c16375ce34dcd0fb" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>mesh_hierarchy_global_map</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a5390097031ae828bf336ff9c0850447b" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>mpi_rank_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a8d2c1da4f699a2cebef3d1da26b40e64" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>mpi_rank_sym</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a393781ee7ee245b9e0359841d66570e6" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>ncell</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a21cf8e3c5ae4d74b43799935075580a8" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1af6f2a39dfcd135ab1a8d347954c1a995" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>operator[]</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4e23ba882491c2d20d06862de2eecf89" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>operator[]</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a20cf9525b901adab4381a6e5f978ae6f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>particle_dats_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a9dd5dc6101f1c5d24461cbcd5bbf7656" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>particle_dats_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a0c0d3f9d6c4f60f72aa89af634b850f0" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>particle_size</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4291b050f055345ac7852b54a7c2b367" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>particle_spec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a8de3a677c9da2427ee036908b7a95eca" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>ParticleGroup</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a048daf94cb6be0d24d918ec000c575f7" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>ParticleGroup</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4d4175cb8ddb7bb3cf37d5a56be3bd1c" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>position_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1af53fa2192c6c8da6bd1ff4b981481730" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>position_sym</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a4f93fa94ba688d32baf556cb568fd07f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>print</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aec9049cd06abb57cca06f3105bdc61ac" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>push_particle_spec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a11f100022583f2d57ed1be30ae33219c" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>realloc_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a966af3932641b732ae640b87ffc8cbff" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>remove_particle_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a9ddf82001341b2bf04f857b7e2447f12" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>remove_particle_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a813a563022ab10a145ecc08d2357d086" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>remove_particles</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1ab506d1809f86cbf2b15ac616589c347a" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>remove_particles</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1ad3ba3e015dcefaa7419e67e30c16b787" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>set_npart_cell_from_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1a79b4175ae60189ea6806b3714cb1fad4" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleGroup_1aec8c2b589deba06f1b47330648dac4c3" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleGroup</scope><name>~ParticleGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

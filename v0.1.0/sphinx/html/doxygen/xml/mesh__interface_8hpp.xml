@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mesh__interface_8hpp" kind="file" language="C++">
+    <compoundname>mesh_interface.hpp</compoundname>
+    <includes refid="mesh__hierarchy_8hpp" local="yes">mesh_hierarchy.hpp</includes>
+    <includes refid="typedefs_8hpp" local="yes">typedefs.hpp</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mpi.h</includes>
+    <includes local="no">set</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="domain_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/domain.hpp</includedby>
+    <includedby refid="mesh__interface__local__decomp_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/mesh_interface_local_decomp.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>compute_target.hpp</label>
+        <link refid="compute__target_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="20">
+        <label>cmath</label>
+      </node>
+      <node id="9">
+        <label>numeric</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>mesh_hierarchy.hpp</label>
+        <link refid="mesh__hierarchy_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stack</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>utility</label>
+      </node>
+      <node id="14">
+        <label>array</label>
+      </node>
+      <node id="4">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstdlib</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="19">
+        <label>chrono</label>
+      </node>
+      <node id="11">
+        <label>mpi.h</label>
+      </node>
+      <node id="23">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="22">
+        <label>memory</label>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp</label>
+        <link refid="mesh__interface_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/mesh_interface_local_decomp.hpp</label>
+        <link refid="mesh__interface__local__decomp_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp_source"/>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp</label>
+        <link refid="mesh__interface_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/domain.hpp</label>
+        <link refid="domain_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNESO_1_1Particles_1_1HMesh" prot="public">NESO::Particles::HMesh</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CartesianHMesh" prot="public">NESO::Particles::CartesianHMesh</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_MESH_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_MESH_INTERFACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mesh_hierarchy.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NESO::Particles<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classNESO_1_1Particles_1_1HMesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classNESO_1_1Particles_1_1HMesh_1a07e88fbd3fde82da445d5d03e1d29a2a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MPI_Comm<sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a07e88fbd3fde82da445d5d03e1d29a2a" kindref="member">get_comm</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32" refid="classNESO_1_1Particles_1_1HMesh_1a5a54487466baf12ce0697ed5dbca40f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a5a54487466baf12ce0697ed5dbca40f4" kindref="member">get_ndim</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38" refid="classNESO_1_1Particles_1_1HMesh_1a0074b083bd8ec1ac315f6c2daa63fd3d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1HMesh_1a0074b083bd8ec1ac315f6c2daa63fd3d" kindref="member">get_dims</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44" refid="classNESO_1_1Particles_1_1HMesh_1a16d9b144b278a99ceeacf51f92407df9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a16d9b144b278a99ceeacf51f92407df9" kindref="member">get_subdivision_order</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50" refid="classNESO_1_1Particles_1_1HMesh_1a9502fe682f0c46c43b02a0cdde9b36c5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a9502fe682f0c46c43b02a0cdde9b36c5" kindref="member">get_cell_count</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56" refid="classNESO_1_1Particles_1_1HMesh_1a1ed691f0d27045975da1d955a27ff187" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a1ed691f0d27045975da1d955a27ff187" kindref="member">get_cell_width_coarse</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62" refid="classNESO_1_1Particles_1_1HMesh_1a8f7e74defa516008452d08fab1e50e31" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a8f7e74defa516008452d08fab1e50e31" kindref="member">get_cell_width_fine</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68" refid="classNESO_1_1Particles_1_1HMesh_1a33715117ccdc60c35b5fd847b9aabee6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a33715117ccdc60c35b5fd847b9aabee6" kindref="member">get_inverse_cell_width_coarse</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74" refid="classNESO_1_1Particles_1_1HMesh_1a7f67ffe6dbdf0179323ff5ff57feffec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a7f67ffe6dbdf0179323ff5ff57feffec" kindref="member">get_inverse_cell_width_fine</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80" refid="classNESO_1_1Particles_1_1HMesh_1aa0d3df44d2b22f85ac172e6909636d73" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1aa0d3df44d2b22f85ac172e6909636d73" kindref="member">get_ncells_coarse</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86" refid="classNESO_1_1Particles_1_1HMesh_1afb69786167374b41ef43171eb709e18a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1afb69786167374b41ef43171eb709e18a" kindref="member">get_ncells_fine</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92" refid="classNESO_1_1Particles_1_1HMesh_1aeb36fa4184c486c4803b46313b5e89c7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MeshHierarchy&gt;<sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1aeb36fa4184c486c4803b46313b5e89c7" kindref="member">get_mesh_hierarchy</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="96" refid="classNESO_1_1Particles_1_1HMesh_1a770f6e841482bca0c692fd29a69354b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh_1a770f6e841482bca0c692fd29a69354b3" kindref="member">free</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103" refid="classNESO_1_1Particles_1_1HMesh_1ade3a7dd15b6b430959736bdbc86604a2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1HMesh_1ade3a7dd15b6b430959736bdbc86604a2" kindref="member">get_local_communication_neighbours</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;HMesh&gt;<sp/>HMeshSharedPtr;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classNESO_1_1Particles_1_1CartesianHMesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_count;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>MPI_Comm<sp/>comm;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>MPI_Comm<sp/>comm_cart;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>periods[3]<sp/>=<sp/>{1,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coords[3]<sp/>=<sp/>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpi_dims[3]<sp/>=<sp/>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;MeshHierarchy&gt;<sp/>mesh_hierarchy;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>neighbour_ranks;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="127" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a274c157779c81b40bae5c090a1d9f253" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a274c157779c81b40bae5c090a1d9f253" kindref="member">CartesianHMesh</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref><sp/>&amp;st)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1eb5ff90498e1164d7c3a82289b114d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1eb5ff90498e1164d7c3a82289b114d0" kindref="member">operator=</ref>(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;a)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" kindref="member">cell_starts</ref>[3]<sp/>=<sp/>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="134" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" kindref="member">cell_ends</ref>[3]<sp/>=<sp/>{1,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="136" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a893752a9b806d8146f274a222b09bb03" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a893752a9b806d8146f274a222b09bb03" kindref="member">cell_counts</ref><sp/>=<sp/>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="138" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7e1531f51c06adc7df6a670a9a2c78f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7e1531f51c06adc7df6a670a9a2c78f2" kindref="member">cell_counts_local</ref>[3]<sp/>=<sp/>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="140" refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad31121e484a2a987ca160f79a92849f6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad31121e484a2a987ca160f79a92849f6" kindref="member">global_extents</ref>[3]<sp/>=<sp/>{0.0,<sp/>0.0,<sp/>0.0};</highlight></codeline>
+<codeline lineno="142" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" kindref="member">stencil_width</ref>;</highlight></codeline>
+<codeline lineno="144" refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>;</highlight></codeline>
+<codeline lineno="148" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>;</highlight></codeline>
+<codeline lineno="150" refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa30863dd18469dcef907b59c15e00c10" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa30863dd18469dcef907b59c15e00c10" kindref="member">cell_width_coarse</ref>;</highlight></codeline>
+<codeline lineno="152" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7d3c2e7c5f273eb002e14f834fc559da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7d3c2e7c5f273eb002e14f834fc559da" kindref="member">cell_width_fine</ref>;</highlight></codeline>
+<codeline lineno="154" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a972257f85b725203b5abbbfacac5d4ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a972257f85b725203b5abbbfacac5d4ea" kindref="member">inverse_cell_width_coarse</ref>;</highlight></codeline>
+<codeline lineno="156" refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa59af26a276782681ec0a2627957b188" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa59af26a276782681ec0a2627957b188" kindref="member">inverse_cell_width_fine</ref>;</highlight></codeline>
+<codeline lineno="158" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a54242d8d1338890359f9f0c30a70b3a8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a54242d8d1338890359f9f0c30a70b3a8" kindref="member">ncells_coarse</ref>;</highlight></codeline>
+<codeline lineno="160" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a67194f4476262e73312ea4fdddc850d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a67194f4476262e73312ea4fdddc850d7" kindref="member">ncells_fine</ref>;</highlight></codeline>
+<codeline lineno="173" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a99e2af5d0bf9fb19660d38154501ca5f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a99e2af5d0bf9fb19660d38154501ca5f" kindref="member">CartesianHMesh</ref>(MPI_Comm<sp/>comm,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>extent<sp/>=<sp/>1.0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" kindref="member">stencil_width</ref><sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>comm(comm),<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>),</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" kindref="member">stencil_width</ref>(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" kindref="member">stencil_width</ref>),</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa30863dd18469dcef907b59c15e00c10" kindref="member">cell_width_coarse</ref>(extent),</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7d3c2e7c5f273eb002e14f834fc559da" kindref="member">cell_width_fine</ref>(extent<sp/>/<sp/>((double)std::pow(2,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>))),</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a972257f85b725203b5abbbfacac5d4ea" kindref="member">inverse_cell_width_coarse</ref>(1.0<sp/>/<sp/>extent),</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa59af26a276782681ec0a2627957b188" kindref="member">inverse_cell_width_fine</ref>(((double)std::pow(2,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>))<sp/>/</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extent),</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a54242d8d1338890359f9f0c30a70b3a8" kindref="member">ncells_coarse</ref>(reduce_mul(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>)),</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a67194f4476262e73312ea4fdddc850d7" kindref="member">ncells_fine</ref>(std::pow(std::pow(2,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>basic<sp/>error<sp/>checking<sp/>of<sp/>inputs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>.size()<sp/>&gt;=<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/></highlight><highlight class="stringliteral">&quot;vector<sp/>of<sp/>dims<sp/>too<sp/>small&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>NESOASSERT(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>[dimx]<sp/>&gt;<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Dim<sp/>size<sp/>is<sp/>&lt;=<sp/>0<sp/>in<sp/>a<sp/>direction.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa30863dd18469dcef907b59c15e00c10" kindref="member">cell_width_coarse</ref><sp/>&gt;<sp/>0.0,<sp/></highlight><highlight class="stringliteral">&quot;Extent<sp/>&lt;=<sp/>0.0<sp/>passed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref><sp/>&gt;=<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Negative<sp/>subdivision<sp/>order<sp/>passed.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mpi<sp/>decompose</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mpi_dims<sp/>has<sp/>monotonically<sp/>decreasing<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank,<sp/>size;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_size(comm,<sp/>&amp;size));</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_rank(comm,<sp/>&amp;rank));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Dims_create(size,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/>mpi_dims));</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a893752a9b806d8146f274a222b09bb03" kindref="member">cell_counts</ref>[dimx]<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>[dimx]<sp/>*<sp/>std::pow(2,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad31121e484a2a987ca160f79a92849f6" kindref="member">global_extents</ref>[dimx]<sp/>=<sp/>extent<sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>[dimx];</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>direction<sp/>with<sp/>most<sp/>cells<sp/>first<sp/>to<sp/>match<sp/>mpi_dims<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cell_count_ordering<sp/>=<sp/>reverse_argsort(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a893752a9b806d8146f274a222b09bb03" kindref="member">cell_counts</ref>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reorder<sp/>the<sp/>mpi_dims<sp/>to<sp/>match<sp/>the<sp/>actual<sp/>domain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>mpi_dims_reordered(<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mpi_dims_reordered[cell_count_ordering[dimx]]<sp/>=<sp/>mpi_dims[dimx];</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>MPI<sp/>cart<sp/>comm<sp/>with<sp/>a<sp/>decomposition<sp/>that<sp/>roughly<sp/>makes<sp/>sense<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>shape<sp/>of<sp/>the<sp/>domain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Cart_create(comm,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/>mpi_dims_reordered.data(),<sp/>periods,<sp/>1,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;comm_cart));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;allocated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>information<sp/>about<sp/>the<sp/>cart<sp/>comm<sp/>that<sp/>was<sp/>actually<sp/>created</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Cart_get(comm_cart,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/>mpi_dims,<sp/>periods,<sp/>coords));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>each<sp/>dimension<sp/>compute<sp/>the<sp/>portion<sp/>owned<sp/>by<sp/>this<sp/>rank</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>get_decomp_1d(mpi_dims[dimx],<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a893752a9b806d8146f274a222b09bb03" kindref="member">cell_counts</ref>[dimx],<sp/>coords[dimx],</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" kindref="member">cell_starts</ref>[dimx],<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" kindref="member">cell_ends</ref>[dimx]);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>origin(2);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>origin[0]<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>origin[1]<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>this<sp/>mesh<sp/>the<sp/>hierarchy<sp/>is<sp/>simply<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>mesh</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;mesh_hierarchy<sp/>=<sp/>std::make_shared&lt;MeshHierarchy&gt;(</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comm_cart,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>,<sp/>origin,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa30863dd18469dcef907b59c15e00c10" kindref="member">cell_width_coarse</ref>,<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setup<sp/>the<sp/>hierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mesh<sp/>tuple<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>INT<sp/>index_mesh[3];</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mesh_hierarchy<sp/>tuple<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>INT<sp/>index_mh[6];</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>mesh_hierarchy-&gt;claim_initialise();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>store<sp/>the<sp/>size<sp/>of<sp/>the<sp/>local<sp/>subdomain<sp/>such<sp/>that<sp/>local<sp/>linear<sp/>indices<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>computed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tmp_width<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" kindref="member">cell_ends</ref>[dimx]<sp/>-<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" kindref="member">cell_starts</ref>[dimx];</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>NESOASSERT(tmp_width<sp/>&gt;<sp/>0,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;A<sp/>domain<sp/>of<sp/>width<sp/>&lt;=<sp/>0<sp/>cells<sp/>does<sp/>not<sp/>make<sp/>sense&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cell_counts_local[dimx]<sp/>=<sp/>tmp_width;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>loop<sp/>over<sp/>owned<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;cell_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cz<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" kindref="member">cell_starts</ref>[2];<sp/>cz<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" kindref="member">cell_ends</ref>[2];<sp/>cz++)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>index_mesh[2]<sp/>=<sp/>cz;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cy<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" kindref="member">cell_starts</ref>[1];<sp/>cy<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" kindref="member">cell_ends</ref>[1];<sp/>cy++)<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_mesh[1]<sp/>=<sp/>cy;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx<sp/>=<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1abe1a67771740c9addc8b97b4c757d51e" kindref="member">cell_starts</ref>[0];<sp/>cx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1cf3aa75b1b25e528ee2343a159ff832" kindref="member">cell_ends</ref>[0];<sp/>cx++)<sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_mesh[0]<sp/>=<sp/>cx;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>convert<sp/>mesh<sp/>tuple<sp/>index<sp/>to<sp/>mesh<sp/>hierarchy<sp/>tuple<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba7a278c572e8372ab507c9fab1958f0" kindref="member">mesh_tuple_to_mh_tuple</ref>(index_mesh,<sp/>index_mh);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>convert<sp/>mesh<sp/>hierarchy<sp/>tuple<sp/>index<sp/>to<sp/>global<sp/>linear<sp/>index<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MeshHierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>index_global<sp/>=</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mesh_hierarchy-&gt;tuple_to_linear_global(index_mh);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>claim<sp/>ownership<sp/>of<sp/>the<sp/>current<sp/>cell<sp/>in<sp/>the<sp/>MeshHierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mesh_hierarchy-&gt;claim_cell(index_global,<sp/>1);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cell_count++;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>mesh_hierarchy-&gt;claim_finalise();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>MPI<sp/>ranks<sp/>owning<sp/>cells<sp/>within<sp/>the<sp/>stencil<sp/>region</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stencil_cell_starts[3]<sp/>=<sp/>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stencil_cell_ends[3]<sp/>=<sp/>{1,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stencil_cell_starts[dimx]<sp/>=<sp/>this-&gt;cell_starts[dimx]<sp/>-<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" kindref="member">stencil_width</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stencil_cell_ends[dimx]<sp/>=<sp/>this-&gt;cell_ends[dimx]<sp/>+<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a4d73a69cae57175761d29cd6b4c350d1" kindref="member">stencil_width</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;int&gt;<sp/>neighbour_ranks_set;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scz<sp/>=<sp/>stencil_cell_starts[2];<sp/>scz<sp/>&lt;<sp/>stencil_cell_ends[2];<sp/>scz++)<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cz<sp/>=<sp/>(scz<sp/>+<sp/>this-&gt;stencil_width<sp/>*<sp/>this-&gt;cell_counts[2])<sp/>%</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAX(this-&gt;cell_counts[2],<sp/>1);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>index_mesh[2]<sp/>=<sp/>cz;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scy<sp/>=<sp/>stencil_cell_starts[1];<sp/>scy<sp/>&lt;<sp/>stencil_cell_ends[1];</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scy++)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cy<sp/>=<sp/>(scy<sp/>+<sp/>this-&gt;stencil_width<sp/>*<sp/>this-&gt;cell_counts[1])<sp/>%</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAX(this-&gt;cell_counts[1],<sp/>1);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_mesh[1]<sp/>=<sp/>cy;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scx<sp/>=<sp/>stencil_cell_starts[0];<sp/>scx<sp/>&lt;<sp/>stencil_cell_ends[0];</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scx++)<sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx<sp/>=<sp/>(scx<sp/>+<sp/>this-&gt;stencil_width<sp/>*<sp/>this-&gt;cell_counts[0])<sp/>%</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cell_counts[0];</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index_mesh[0]<sp/>=<sp/>cx;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>convert<sp/>mesh<sp/>tuple<sp/>index<sp/>to<sp/>mesh<sp/>hierarchy<sp/>tuple<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba7a278c572e8372ab507c9fab1958f0" kindref="member">mesh_tuple_to_mh_tuple</ref>(index_mesh,<sp/>index_mh);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>convert<sp/>mesh<sp/>hierarchy<sp/>tuple<sp/>index<sp/>to<sp/>global<sp/>linear<sp/>index<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MeshHierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>index_global<sp/>=</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mesh_hierarchy-&gt;tuple_to_linear_global(index_mh);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>claim<sp/>ownership<sp/>of<sp/>the<sp/>current<sp/>cell<sp/>in<sp/>the<sp/>MeshHierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>owning_rank<sp/>=<sp/>this-&gt;mesh_hierarchy-&gt;get_owner(index_global);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbour_ranks_set.insert(owning_rank);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;neighbour_ranks.reserve(neighbour_ranks_set.size());</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rankx<sp/>:<sp/>neighbour_ranks_set)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;neighbour_ranks.push_back(rankx);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a61e22ca1236760fc3c74a2ec6e978dde" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>MPI_Comm<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a61e22ca1236760fc3c74a2ec6e978dde" kindref="member">get_comm</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;comm_cart;<sp/>};</highlight></codeline>
+<codeline lineno="322" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a687bf6d4cdaad64d640dee2e9034c244" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a687bf6d4cdaad64d640dee2e9034c244" kindref="member">get_ndim</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="323" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7e28ff09b2f53db3dcd41b20c9463df1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7e28ff09b2f53db3dcd41b20c9463df1" kindref="member">get_dims</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad74d5a877561eab0982460f59333e866" kindref="member">dims</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="324" refid="classNESO_1_1Particles_1_1CartesianHMesh_1ae8dea487a82a0879ea7ba80f0bbf9859" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ae8dea487a82a0879ea7ba80f0bbf9859" kindref="member">get_subdivision_order</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a1f0ec9e1385f85d9a6613e545962bc6e" kindref="member">subdivision_order</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="325" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a3d29bd78564760990c858a58bb8b5ad2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a3d29bd78564760990c858a58bb8b5ad2" kindref="member">get_cell_width_coarse</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa30863dd18469dcef907b59c15e00c10" kindref="member">cell_width_coarse</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="326" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7faf49e285d0e991b57ced2dfaff01d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7faf49e285d0e991b57ced2dfaff01d5" kindref="member">get_cell_width_fine</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a7d3c2e7c5f273eb002e14f834fc559da" kindref="member">cell_width_fine</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="327" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a40d816dea521c9409587511fb87c821c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a40d816dea521c9409587511fb87c821c" kindref="member">get_inverse_cell_width_coarse</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a972257f85b725203b5abbbfacac5d4ea" kindref="member">inverse_cell_width_coarse</ref>;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="330" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a6abf9e2d497c0f6923f21e312515a2c8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a6abf9e2d497c0f6923f21e312515a2c8" kindref="member">get_inverse_cell_width_fine</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa59af26a276782681ec0a2627957b188" kindref="member">inverse_cell_width_fine</ref>;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="333" refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad235e643aee9ae702ec31402af373953" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ad235e643aee9ae702ec31402af373953" kindref="member">get_ncells_coarse</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a54242d8d1338890359f9f0c30a70b3a8" kindref="member">ncells_coarse</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="334" refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba8252d636f4ec12310daea635c94bd4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba8252d636f4ec12310daea635c94bd4" kindref="member">get_ncells_fine</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a67194f4476262e73312ea4fdddc850d7" kindref="member">ncells_fine</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="335" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a0250e153380bbc87ed4144afb6b2aef2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a0250e153380bbc87ed4144afb6b2aef2" kindref="member">get_cell_count</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;cell_count;<sp/>};</highlight></codeline>
+<codeline lineno="336" refid="classNESO_1_1Particles_1_1CartesianHMesh_1ae64f066c98a6a3575974ceb31a8dbca2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;MeshHierarchy&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ae64f066c98a6a3575974ceb31a8dbca2" kindref="member">get_mesh_hierarchy</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;mesh_hierarchy;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba7a278c572e8372ab507c9fab1958f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aba7a278c572e8372ab507c9fab1958f0" kindref="member">mesh_tuple_to_mh_tuple</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>*index_mesh,<sp/>INT<sp/>*index_mh)<sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dimx<sp/>=<sp/>0;<sp/>dimx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>;<sp/>dimx++)<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pq<sp/>=<sp/>std::div((</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)index_mesh[dimx],</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)mesh_hierarchy-&gt;ncells_dim_fine);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>index_mh[dimx]<sp/>=<sp/>pq.quot;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>index_mh[dimx<sp/>+<sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1aa14bb64ab36cef1f11cac10ac3c20fc3" kindref="member">ndim</ref>]<sp/>=<sp/>pq.rem;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360" refid="classNESO_1_1Particles_1_1CartesianHMesh_1ab3ca2bb9454da866c3a38932a0c139b7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1ab3ca2bb9454da866c3a38932a0c139b7" kindref="member">free</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flag;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>MPICHK(MPI_Initialized(&amp;flag))</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allocated<sp/>&amp;&amp;<sp/>flag)<sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>MPICHK(MPI_Comm_free(&amp;this-&gt;comm_cart))</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;comm_cart<sp/>=<sp/>MPI_COMM_NULL;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;allocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>mesh_hierarchy-&gt;free();</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="classNESO_1_1Particles_1_1CartesianHMesh_1a0801f962e60e704f018c361dc329056e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CartesianHMesh_1a0801f962e60e704f018c361dc329056e" kindref="member">get_local_communication_neighbours</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;neighbour_ranks;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;CartesianHMesh&gt;<sp/>CartesianHMeshSharedPtr;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp"/>
+  </compounddef>
+</doxygen>

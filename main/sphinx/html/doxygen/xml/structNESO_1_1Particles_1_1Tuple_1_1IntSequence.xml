@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Tuple_1_1IntSequence" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Tuple::IntSequence</compoundname>
+    <includes refid="tuple_8hpp" local="no">tuple.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t...</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="48" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="48" bodyend="48"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

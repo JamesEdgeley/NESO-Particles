@@ -1,0 +1,147 @@
+\hypertarget{classNESO_1_1Particles_1_1BufferHost}{}\doxysection{NESO\+::Particles\+::Buffer\+Host$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1BufferHost}\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Buffer\+Host$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classNESO_1_1Particles_1_1BufferHost__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for NESO\+::Particles\+::Buffer\+Host$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classNESO_1_1Particles_1_1BufferHost__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_ad50c8481769546787ab629bdd152ea2c}{Buffer\+Host}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a625118154c8248135f1373fd36efc2ba}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_af3a79babe6b0874a2594c3655813e45d}{Buffer\+Host}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_aa4087d350a7b29359e57c29c0fbf03e1}{sycl\+\_\+target}}, size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a3524b68561d41cef6d751619ec350302}{size}})
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a91f777832d21db0b5654440e04deaed3}{Buffer\+Host}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_aa4087d350a7b29359e57c29c0fbf03e1}{sycl\+\_\+target}}, const std\+::vector$<$ T $>$ \&vec)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a3a455c68f58ed3c5134e294c768135c4}{$\sim$\+Buffer\+Host}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual T $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{malloc\+\_\+wrapper}} (const std\+::size\+\_\+t num\+\_\+bytes) override
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a5c88dc54a1b4cf1c5e243c2ded7e0f15}{free\+\_\+wrapper}} (T $\ast$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a4fa4e9e6d9ee4062b32ad8423ac2d5c6}{ptr}}) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Buffer\+Host$<$ T $>$}
+
+Container around USM host allocated memory that can be resized. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_ad50c8481769546787ab629bdd152ea2c}\label{classNESO_1_1Particles_1_1BufferHost_ad50c8481769546787ab629bdd152ea2c}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!BufferHost@{BufferHost}}
+\index{BufferHost@{BufferHost}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferHost()}{BufferHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ T $>$ \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_af3a79babe6b0874a2594c3655813e45d}\label{classNESO_1_1Particles_1_1BufferHost_af3a79babe6b0874a2594c3655813e45d}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!BufferHost@{BufferHost}}
+\index{BufferHost@{BufferHost}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferHost()}{BufferHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} of a given number of elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em size} & Number of elements. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_a91f777832d21db0b5654440e04deaed3}\label{classNESO_1_1Particles_1_1BufferHost_a91f777832d21db0b5654440e04deaed3}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!BufferHost@{BufferHost}}
+\index{BufferHost@{BufferHost}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferHost()}{BufferHost()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const std\+::vector$<$ T $>$ \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} from a std\+::vector. Note, this does not operate like a sycl\+::buffer and is a copy of the source vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em vec} & Input vector to copy data from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_a3a455c68f58ed3c5134e294c768135c4}\label{classNESO_1_1Particles_1_1BufferHost_a3a455c68f58ed3c5134e294c768135c4}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!````~BufferHost@{$\sim$BufferHost}}
+\index{````~BufferHost@{$\sim$BufferHost}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BufferHost()}{~BufferHost()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_a5c88dc54a1b4cf1c5e243c2ded7e0f15}\label{classNESO_1_1Particles_1_1BufferHost_a5c88dc54a1b4cf1c5e243c2ded7e0f15}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!free\_wrapper@{free\_wrapper}}
+\index{free\_wrapper@{free\_wrapper}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{free\_wrapper()}{free\_wrapper()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::free\+\_\+wrapper (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a08f1396df310f41a669ba2958fb3ce9f}{NESO\+::\+Particles\+::\+Buffer\+Base$<$ T $>$}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}\label{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!malloc\_wrapper@{malloc\_wrapper}}
+\index{malloc\_wrapper@{malloc\_wrapper}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{malloc\_wrapper()}{malloc\_wrapper()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual T$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::malloc\+\_\+wrapper (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{num\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_af7d84ef8e5d2df1cb9809627662db794}{NESO\+::\+Particles\+::\+Buffer\+Base$<$ T $>$}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferHost_a625118154c8248135f1373fd36efc2ba}\label{classNESO_1_1Particles_1_1BufferHost_a625118154c8248135f1373fd36efc2ba}} 
+\index{NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::BufferHost$<$ T $>$@{NESO::Particles::BufferHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}\& \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{NESO\+::\+Particles\+::\+Buffer\+Host}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ T $>$ const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{compute__target_8hpp}{compute\+\_\+target.\+hpp}}\end{DoxyCompactItemize}

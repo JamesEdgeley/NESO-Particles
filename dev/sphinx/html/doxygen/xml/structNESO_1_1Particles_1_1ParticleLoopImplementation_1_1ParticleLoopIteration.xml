@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration</compoundname>
+    <includes refid="particle__loop__base_8hpp" local="no">particle_loop_base.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a6b53c8bf288714704a4fc20b3b5d4f82" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>The overarching outer loop index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="47" column="10" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a7fab228d88184acd657deb68b6d6610d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration::cellx</definition>
+        <argsstring></argsstring>
+        <name>cellx</name>
+        <briefdescription>
+<para>The cell the particle resides in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="49" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a205c4b02cd903f1e1a1caf5d48227453" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration::layerx</definition>
+        <argsstring></argsstring>
+        <name>layerx</name>
+        <briefdescription>
+<para>The layer (row) the particle resides in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="51" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a200f700080edd504201aac3ee1739f69" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration::loop_layerx</definition>
+        <argsstring></argsstring>
+        <name>loop_layerx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The layer of the particle in the particle loop iteration set. e.g. not all looping types visit all the particles in a cell. layerx_loop is a linear contiguous index for the particles which are visited in each cell. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="55" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The description of the iteration index to pas to objects used in the loop. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="45" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="45" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a7fab228d88184acd657deb68b6d6610d" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration</scope><name>cellx</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a6b53c8bf288714704a4fc20b3b5d4f82" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration</scope><name>index</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a205c4b02cd903f1e1a1caf5d48227453" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration</scope><name>layerx</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a200f700080edd504201aac3ee1739f69" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration</scope><name>loop_layerx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

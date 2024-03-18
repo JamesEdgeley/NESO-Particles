@@ -1,0 +1,1043 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles" kind="namespace" language="C++">
+    <compoundname>NESO::Particles</compoundname>
+    <innerclass refid="classNESO_1_1Particles_1_1ColumnMajorColumnAccessor" prot="public">NESO::Particles::ColumnMajorColumnAccessor</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor" prot="public">NESO::Particles::ColumnMajorRowAccessor</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1RawPointerColumnMajorColumnAccessor" prot="public">NESO::Particles::RawPointerColumnMajorColumnAccessor</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1RawPointerColumnMajorRowAccessor" prot="public">NESO::Particles::RawPointerColumnMajorRowAccessor</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CartesianPeriodic" prot="public">NESO::Particles::CartesianPeriodic</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" prot="public">NESO::Particles::CartesianHMeshLocalMapperT</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CartesianCellBin" prot="public">NESO::Particles::CartesianCellBin</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CellDataT" prot="public">NESO::Particles::CellDataT</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CellDatConst" prot="public">NESO::Particles::CellDatConst</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CellDat" prot="public">NESO::Particles::CellDat</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1LayerCompressor" prot="public">NESO::Particles::LayerCompressor</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CellMove" prot="public">NESO::Particles::CellMove</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CommPair" prot="public">NESO::Particles::CommPair</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1SYCLTarget" prot="public">NESO::Particles::SYCLTarget</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1BufferDevice" prot="public">NESO::Particles::BufferDevice</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1BufferShared" prot="public">NESO::Particles::BufferShared</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1BufferHost" prot="public">NESO::Particles::BufferHost</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1BufferDeviceHost" prot="public">NESO::Particles::BufferDeviceHost</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1EventStack" prot="public">NESO::Particles::EventStack</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ErrorPropagate" prot="public">NESO::Particles::ErrorPropagate</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1DepartingIdentify" prot="public">NESO::Particles::DepartingIdentify</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1Domain" prot="public">NESO::Particles::Domain</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap" prot="public">NESO::Particles::MeshHierarchyGlobalMap</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1GlobalMove" prot="public">NESO::Particles::GlobalMove</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1GlobalMoveExchange" prot="public">NESO::Particles::GlobalMoveExchange</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1LocalMapper" prot="public">NESO::Particles::LocalMapper</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1DummyLocalMapperT" prot="public">NESO::Particles::DummyLocalMapperT</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1LocalMove" prot="public">NESO::Particles::LocalMove</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1MeshHierarchy" prot="public">NESO::Particles::MeshHierarchy</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1HMesh" prot="public">NESO::Particles::HMesh</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CartesianHMesh" prot="public">NESO::Particles::CartesianHMesh</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1LocalDecompositionHMesh" prot="public">NESO::Particles::LocalDecompositionHMesh</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticlePacker" prot="public">NESO::Particles::ParticlePacker</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleUnpacker" prot="public">NESO::Particles::ParticleUnpacker</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleDatT" prot="public">NESO::Particles::ParticleDatT</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleGroup" prot="public">NESO::Particles::ParticleGroup</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1H5Part" prot="public">NESO::Particles::H5Part</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleRemover" prot="public">NESO::Particles::ParticleRemover</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleSet" prot="public">NESO::Particles::ParticleSet</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1Sym" prot="public">NESO::Particles::Sym</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleProp" prot="public">NESO::Particles::ParticleProp</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleSpec" prot="public">NESO::Particles::ParticleSpec</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1SymStore" prot="public">NESO::Particles::SymStore</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ProfileEntry" prot="public">NESO::Particles::ProfileEntry</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ProfileMap" prot="public">NESO::Particles::ProfileMap</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter" prot="public">NESO::Particles::VTKMeshHierarchyCellsWriter</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT</ref>&lt; T &gt; &gt;</type>
+        <definition>using NESO::Particles::CellData = typedef std::shared_ptr&lt;CellDataT&lt;T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>CellData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="90" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;SYCLTarget&gt; NESO::Particles::SYCLTargetSharedPtr</definition>
+        <argsstring></argsstring>
+        <name>SYCLTargetSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="289" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1ae44a4731c000de97b12328292de6b7c5" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1Domain" kindref="compound">Domain</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;Domain&gt; NESO::Particles::DomainSharedPtr</definition>
+        <argsstring></argsstring>
+        <name>DomainSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/domain.hpp" line="45" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/domain.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a7556c18624e086cb8721c30ac70552a1" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1LocalMapper" kindref="compound">LocalMapper</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;LocalMapper&gt; NESO::Particles::LocalMapperSharedPtr</definition>
+        <argsstring></argsstring>
+        <name>LocalMapperSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="43" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1af1414ddefa54150d126f00f41e5b747d" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;HMesh&gt; NESO::Particles::HMeshSharedPtr</definition>
+        <argsstring></argsstring>
+        <name>HMeshSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="114" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a072de8fe41e7c3032cea5a3c577b6981" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;CartesianHMesh&gt; NESO::Particles::CartesianHMeshSharedPtr</definition>
+        <argsstring></argsstring>
+        <name>CartesianHMeshSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" line="393" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_interface.hpp" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1ParticleDatT" kindref="compound">ParticleDatT</ref>&lt; T &gt; &gt;</type>
+        <definition>using NESO::Particles::ParticleDatSharedPtr = typedef std::shared_ptr&lt;ParticleDatT&lt;T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>ParticleDatSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" line="410" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a36922f3691d365c84df0ccf64fc90ac9" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;ParticleGroup&gt; NESO::Particles::ParticleGroupSharedPtr</definition>
+        <argsstring></argsstring>
+        <name>ParticleGroupSharedPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="660" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double NESO::Particles::REAL</definition>
+        <argsstring></argsstring>
+        <name>REAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="68" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t NESO::Particles::INT</definition>
+        <argsstring></argsstring>
+        <name>INT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="69" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceNESO_1_1Particles_1ac24d673e917184357690c85a8cae409c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <initializer>= std::numeric_limits&lt;int&gt;::min()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="17" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a8dec9607382859741953383f51bcd446" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" kindref="compound">CartesianHMeshLocalMapperT</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;CartesianHMeshLocalMapperT&gt; NESO::Particles::CartesianHMeshLocalMapper</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, CartesianHMeshSharedPtr mesh)</argsstring>
+        <name>CartesianHMeshLocalMapper</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a072de8fe41e7c3032cea5a3c577b6981" kindref="member">CartesianHMeshSharedPtr</ref></type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="308" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a1ded7f6b696ceae64f0e386a19fc9e85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::get_local_mpi_rank</definition>
+        <argsstring>(MPI_Comm comm, int default_rank=-1)</argsstring>
+        <name>get_local_mpi_rank</name>
+        <param>
+          <type>MPI_Comm</type>
+          <declname>comm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>default_rank</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine a local MPI rank based on environment variables and shared memory splitting.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MPI_Comm to try and deduce local rank from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>default_rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) MPI rank to use if one cannot be determined from environment variables or SHM intra comm. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="30" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="30" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ae047d1d641a93bd4e831429091bc3b6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::reset_mpi_ranks</definition>
+        <argsstring>(ParticleDatSharedPtr&lt; INT &gt; &amp;mpi_rank_dat)</argsstring>
+        <name>reset_mpi_ranks</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+          <declname>mpi_rank_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set all components 0 and 1 of particles to -1 in the passed ParticleDat.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mpi_rank_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat containing MPI ranks to reset. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="305" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="305" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ab99d5d2044bb3ccf4467b3d8f17c9dec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1DummyLocalMapperT" kindref="compound">DummyLocalMapperT</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;DummyLocalMapperT&gt; NESO::Particles::DummyLocalMapper</definition>
+        <argsstring>()</argsstring>
+        <name>DummyLocalMapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="74" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ac4a7f860e0e3795b10aa4c97a4feda89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::parallel_advection_initialisation</definition>
+        <argsstring>(ParticleGroupSharedPtr particle_group, const int num_steps=20)</argsstring>
+        <name>parallel_advection_initialisation</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a36922f3691d365c84df0ccf64fc90ac9" kindref="member">ParticleGroupSharedPtr</ref></type>
+          <declname>particle_group</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>num_steps</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialisation utility to aid parallel creation of particle distributions. This function performs the all-to-all movement that occurs when a <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> contains particles with positions (far) outside the owned region of space. For example consider if each MPI rank creates N particles uniformly distributed over the entire simulation domain then the call to <computeroutput>hybrid_move</computeroutput> would have a cost equal to the number of MPI ranks squared.</para>
+<para>This function gives each particle a temporary position in the owned subdomain then moves the particles in a straight line to the original positions in the positions ParticleDat. It is assumed that the simulation domain is convex.</para>
+<para>This function is used by adding particles with <computeroutput><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a6770d444576949f95e15c0a21c2b9580" kindref="member">ParticleGroup.add_particles_local</ref></computeroutput> on each rank then collectively calling this function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> to initialise by moving particles to the positions in the position ParticleDat. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional number of steps to move particles over. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp" line="202" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp" bodystart="202" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ac8c576cdfa97a8900563312ecc17eadf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; T &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;T&gt; NESO::Particles::ParticleDat</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, const Sym&lt; T &gt; sym, int ncomp, int ncell, bool positions=false)</argsstring>
+        <name>ParticleDat</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; T &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ncomp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ncell</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>positions</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" line="413" column="29" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" bodystart="413" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1aed07ff1ec743401767a52a945a285a0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; T &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;T&gt; NESO::Particles::ParticleDat</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, ParticleProp&lt; T &gt; prop, int ncell)</argsstring>
+        <name>ParticleDat</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; T &gt;</type>
+          <declname>prop</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ncell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" line="420" column="29" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" bodystart="420" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a6fbbd0c9a0b9d8808c1c6fa9a1a5fc70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string NESO::Particles::fixed_width_format</definition>
+        <argsstring>(INT value)</argsstring>
+        <name>fixed_width_format</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="567" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="567" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1adab45acb66663ead4d94f24b76bb0733" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string NESO::Particles::fixed_width_format</definition>
+        <argsstring>(REAL value)</argsstring>
+        <name>fixed_width_format</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="572" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="572" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1adc9f456b4e2feaed3199df4ba07eac75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::chrono::high_resolution_clock::time_point</type>
+        <definition>std::chrono::high_resolution_clock::time_point NESO::Particles::profile_timestamp</definition>
+        <argsstring>()</argsstring>
+        <name>profile_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a time stamp that can be used with profile_elapsed.</para>
+<para><simplesect kind="return"><para>Time stamp. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="96" column="55" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1aacbf134855b1ae4b7fbdefbcb8cc1b8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double NESO::Particles::profile_elapsed</definition>
+        <argsstring>(std::chrono::high_resolution_clock::time_point time_start, std::chrono::high_resolution_clock::time_point time_end)</argsstring>
+        <name>profile_elapsed</name>
+        <param>
+          <type>std::chrono::high_resolution_clock::time_point</type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type>std::chrono::high_resolution_clock::time_point</type>
+          <declname>time_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute and return the time in seconds between two time stamps created with profile_timestamp.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start time stamp. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End time stamp. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Elapsed time in seconds between time stamps. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="109" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1aa5aa5ba3effdb2ff3929748c8a941b5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int NESO::Particles::reduce_mul</definition>
+        <argsstring>(const int nel, std::vector&lt; int &gt; &amp;values)</argsstring>
+        <name>reduce_mul</name>
+        <param>
+          <type>const int</type>
+          <declname>nel</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="16" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a58a7701e1c16ffe089d968f0820e741c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::neso_particles_assert</definition>
+        <argsstring>(const char *expr_str, bool expr, const char *file, int line, const char *msg)</argsstring>
+        <name>neso_particles_assert</name>
+        <param>
+          <type>const char *</type>
+          <declname>expr_str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a helper function to assert conditions are satisfied and terminate execution if not. An error is output on stderr and MPI_Abort is called if MPI is initialised. Users should call the corresponding helper macro NESOASSERT like</para>
+<para><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT(conditional, message)</ref>;</para>
+<para>To check conditionals within their code.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string identifying the conditional to check. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bool resulting from the evaluation of the expression. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filename containing the call to neso_particles_assert. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number for the call to neso_particles assert. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to print to stderr on evaluation of conditional to false. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="52" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="52" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a7e70e7e0a6406d02bf26fa4963560685" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; NESO::Particles::reverse_argsort</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;array)</argsstring>
+        <name>reverse_argsort</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="72" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a202a6eb226f05b938bd3773241b50f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::get_decomp_1d</definition>
+        <argsstring>(const T N_compute_units, const T N_work_items, const T work_unit, T *rstart, T *rend)</argsstring>
+        <name>get_decomp_1d</name>
+        <param>
+          <type>const T</type>
+          <declname>N_compute_units</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>N_work_items</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>work_unit</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>rstart</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>rend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="87" column="6" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="87" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a617e737f93036830a23e0b381e02c44b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::nprint_recurse</definition>
+        <argsstring>(int flag, U next)</argsstring>
+        <name>nprint_recurse</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>U</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="102" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="102" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a56e0c9187a32f5a35f38e1af6910d45a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::nprint_recurse</definition>
+        <argsstring>(int flag, U next, T... args)</argsstring>
+        <name>nprint_recurse</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>U</type>
+          <declname>next</declname>
+        </param>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="110" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a5c30c64658955dcc040138de5223791e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::nprint</definition>
+        <argsstring>(T... args)</argsstring>
+        <name>nprint</name>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" line="118" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/typedefs.hpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ae28b0a937067e5c00e9401ff73fb2c4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RNG</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; NESO::Particles::uniform_within_extents</definition>
+        <argsstring>(const int N, const int ndim, const double *extents, RNG &amp;rng)</argsstring>
+        <name>uniform_within_extents</name>
+        <param>
+          <type>const int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ndim</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>extents</declname>
+        </param>
+        <param>
+          <type>RNG &amp;</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a uniform distribution of particle positions within a set of extents.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points to generate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extent of each of the dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rng</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RNG to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(N)x(ndim) set of positions stored for each column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" line="28" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" bodystart="28" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1a9177dd1e204cea852ab99e76de499e34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RNG</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; NESO::Particles::normal_distribution</definition>
+        <argsstring>(const int N, const int ndim, const double mu, const double sigma, RNG &amp;rng)</argsstring>
+        <name>normal_distribution</name>
+        <param>
+          <type>const int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ndim</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>RNG &amp;</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create (N)x(ndim) set of samples from a Gaussian distribution.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points to generate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mean to use for Gaussian distribution. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sigma to use for Gaussian distribution. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rng</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RNG to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(N)x(ndim) set of samples stored per column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" line="56" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" bodystart="56" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ab36e9d15212f4ff29731112924e206ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; NESO::Particles::uniform_within_extents</definition>
+        <argsstring>(const int N, const int ndim, const double *extents)</argsstring>
+        <name>uniform_within_extents</name>
+        <param>
+          <type>const int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ndim</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>extents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a uniform distribution of particle positions within a set of extents.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points to generate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extent of each of the dimensions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(N)x(ndim) set of positions stored for each column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" line="80" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1ac5503b9d174146b912fdc2d383e24f03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;double&gt; &gt; NESO::Particles::normal_distribution</definition>
+        <argsstring>(const int N, const int ndim, const double mu, const double sigma)</argsstring>
+        <name>normal_distribution</name>
+        <param>
+          <type>const int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ndim</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create (N)x(ndim) set of samples from a Gaussian distribution.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points to generate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ndim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mean to use for Gaussian distribution. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sigma to use for Gaussian distribution. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(N)x(ndim) set of samples stored per column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" line="95" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility.hpp" bodystart="95" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/access.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

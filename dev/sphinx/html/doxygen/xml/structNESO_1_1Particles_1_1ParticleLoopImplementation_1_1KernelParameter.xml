@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::KernelParameter</compoundname>
+    <includes refid="particle__loop__base_8hpp" local="no">particle_loop_base.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_1ab7dde805fc38e32cfc0695e9a0b32837" prot="public" static="no">
+        <type>void</type>
+        <definition>using NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; T &gt;::type =  void</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="27" column="34" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref> types define the types passed to the kernel for each data structure type for each access descriptor. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="27" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="27" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_1ab7dde805fc38e32cfc0695e9a0b32837" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::KernelParameter</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

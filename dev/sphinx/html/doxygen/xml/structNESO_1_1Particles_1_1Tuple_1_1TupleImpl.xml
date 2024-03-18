@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Tuple::TupleImpl</compoundname>
+    <derivedcompoundref refid="structNESO_1_1Particles_1_1Tuple_1_1TupleBaseRec_3_01INDEX_00_01U_00_01V_8_8_8_01_4" prot="public" virt="non-virtual">NESO::Particles::Tuple::TupleBaseRec&lt; INDEX, U, V... &gt;</derivedcompoundref>
+    <includes refid="tuple_8hpp" local="no">tuple.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>std::size_t</type>
+        <declname>INDEX</declname>
+        <defname>INDEX</defname>
+      </param>
+      <param>
+        <type>typename U</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1a7e904648cb492c2d7c9cafe97782d42e" prot="public" static="no" mutable="no">
+        <type>U</type>
+        <definition>U NESO::Particles::Tuple::TupleImpl&lt; INDEX, U &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="8" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1a5dddac930e084c5b4445d9cfbc9a11d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Tuple::TupleImpl&lt; INDEX, U &gt;::TupleImpl</definition>
+        <argsstring>()=default</argsstring>
+        <name>TupleImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="9" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1afe0565692122e99c4afeea4733942f94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>U &amp;</type>
+        <definition>U&amp; NESO::Particles::Tuple::TupleImpl&lt; INDEX, U &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="10" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1a30aed22fe1dc8a770fe139ec66d0a396" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const U &amp;</type>
+        <definition>const U&amp; NESO::Particles::Tuple::TupleImpl&lt; INDEX, U &gt;::get_const</definition>
+        <argsstring>() const</argsstring>
+        <name>get_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="11" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NESO::Particles::Tuple::TupleBaseRec&lt; INDEX, U, V... &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Tuple_1_1TupleBaseRec_3_01INDEX_00_01U_00_01V_8_8_8_01_4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::Tuple::TupleImpl&lt; INDEX, U &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl"/>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="7" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1afe0565692122e99c4afeea4733942f94" prot="public" virt="non-virtual"><scope>NESO::Particles::Tuple::TupleImpl</scope><name>get</name></member>
+      <member refid="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1a30aed22fe1dc8a770fe139ec66d0a396" prot="public" virt="non-virtual"><scope>NESO::Particles::Tuple::TupleImpl</scope><name>get_const</name></member>
+      <member refid="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1a5dddac930e084c5b4445d9cfbc9a11d9" prot="public" virt="non-virtual"><scope>NESO::Particles::Tuple::TupleImpl</scope><name>TupleImpl</name></member>
+      <member refid="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl_1a7e904648cb492c2d7c9cafe97782d42e" prot="public" virt="non-virtual"><scope>NESO::Particles::Tuple::TupleImpl</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

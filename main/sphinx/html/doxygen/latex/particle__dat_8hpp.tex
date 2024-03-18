@@ -1,0 +1,53 @@
+\hypertarget{particle__dat_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/particle\+\_\+dat.hpp File Reference}
+\label{particle__dat_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/particle\_dat.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/particle\_dat.hpp}}
+{\ttfamily \#include $<$CL/sycl.\+hpp$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}access.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cell\+\_\+dat.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compute\+\_\+target.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle\+\_\+set.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}particle\+\_\+spec.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}typedefs.\+hpp\char`\"{}}\newline
+Include dependency graph for particle\+\_\+dat.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{particle__dat_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{particle__dat_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleDatT}{NESO\+::\+Particles\+::\+Particle\+Dat\+T$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{NESO\+::\+Particles\+::\+Particle\+Dat\+Shared\+Ptr}} = std\+::shared\+\_\+ptr$<$ Particle\+DatT$<$ T $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\Particle\+Dat\+Shared\+Ptr$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_ac8c576cdfa97a8900563312ecc17eadf}{NESO\+::\+Particles\+::\+Particle\+Dat}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target, const Sym$<$ T $>$ sym, int ncomp, int ncell, bool positions=false)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Particle\+Dat\+Shared\+Ptr$<$ T $>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_aed07ff1ec743401767a52a945a285a0f}{NESO\+::\+Particles\+::\+Particle\+Dat}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target, Particle\+Prop$<$ T $>$ prop, int ncell)
+\end{DoxyCompactItemize}

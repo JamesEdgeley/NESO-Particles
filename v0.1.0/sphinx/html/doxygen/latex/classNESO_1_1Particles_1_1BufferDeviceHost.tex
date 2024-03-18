@@ -1,0 +1,141 @@
+\hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost}{}\doxysection{NESO\+::Particles\+::Buffer\+Device\+Host$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1BufferDeviceHost}\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a6bea6e297d85770e66ec31a489b1124e}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a6bea6e297d85770e66ec31a489b1124e}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a6bea6e297d85770e66ec31a489b1124e}{Buffer\+Device\+Host}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a05e6aa0544dff428b733473ae224d373}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a05e6aa0544dff428b733473ae224d373}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a05e6aa0544dff428b733473ae224d373}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_acc9746bde169dcb477c0c2049e262e2f}{Buffer\+Device\+Host}} (SYCLTarget\+Shared\+Ptr \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a602e35154b4a6e6f52ca21a604bd03b7}{sycl\+\_\+target}}, size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a283a6ed6915381585ceacb1e6a0b76ba}{size}})
+\item 
+size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_aaed114b01a513e5f225cd1832ddb0248}{size\+\_\+bytes}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a0a22e4edb8bc351f1968eb04d821ad69}{realloc\+\_\+no\+\_\+copy}} (const size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a283a6ed6915381585ceacb1e6a0b76ba}{size}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a05a8c58f476616576a3eb15d4f8a185e}{host\+\_\+to\+\_\+device}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a83c4d8b9ad98ba60aaab700a40750653}{device\+\_\+to\+\_\+host}} ()
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a0e104498ab81355a75220e43830776d7}{async\+\_\+host\+\_\+to\+\_\+device}} ()
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a226b5f71b3afe4cb3506114142014e0c}{async\+\_\+device\+\_\+to\+\_\+host}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a602e35154b4a6e6f52ca21a604bd03b7}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a602e35154b4a6e6f52ca21a604bd03b7}} 
+SYCLTarget\+Shared\+Ptr \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a602e35154b4a6e6f52ca21a604bd03b7}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a283a6ed6915381585ceacb1e6a0b76ba}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a283a6ed6915381585ceacb1e6a0b76ba}} 
+size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a283a6ed6915381585ceacb1e6a0b76ba}{size}}
+\begin{DoxyCompactList}\small\item\em Size of the allocation on device and host. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a1ff186642e20b8eab83618f270d2399f}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a1ff186642e20b8eab83618f270d2399f}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a1ff186642e20b8eab83618f270d2399f}{d\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em Wrapped \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a83aa01895446461fd429ccbbb3284f04}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a83aa01895446461fd429ccbbb3284f04}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost_a83aa01895446461fd429ccbbb3284f04}{h\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em Wrapped \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Buffer\+Device\+Host$<$ T $>$}
+
+Wrapper around a \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice}{Buffer\+Device}} and a \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost}{Buffer\+Host}} to store data on the device and the host. To be used as an alternative to \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{Buffer\+Shared}} where the programmer wants to explicitly handle when data is copied between the device and the host. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_acc9746bde169dcb477c0c2049e262e2f}\label{classNESO_1_1Particles_1_1BufferDeviceHost_acc9746bde169dcb477c0c2049e262e2f}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!BufferDeviceHost@{BufferDeviceHost}}
+\index{BufferDeviceHost@{BufferDeviceHost}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferDeviceHost()}{BufferDeviceHost()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}} (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}} of the request size on the requested compute target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em size} & Number of elements to initially allocate on the device and host. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a226b5f71b3afe4cb3506114142014e0c}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a226b5f71b3afe4cb3506114142014e0c}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!async\_device\_to\_host@{async\_device\_to\_host}}
+\index{async\_device\_to\_host@{async\_device\_to\_host}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{async\_device\_to\_host()}{async\_device\_to\_host()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::async\+\_\+device\+\_\+to\+\_\+host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start an asynchronous copy of the device data to the host buffer.
+
+\begin{DoxyReturn}{Returns}
+sycl\+::event to wait on for completion of data movement. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a0e104498ab81355a75220e43830776d7}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a0e104498ab81355a75220e43830776d7}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!async\_host\_to\_device@{async\_host\_to\_device}}
+\index{async\_host\_to\_device@{async\_host\_to\_device}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{async\_host\_to\_device()}{async\_host\_to\_device()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::async\+\_\+host\+\_\+to\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start an asynchronous copy of the host data to the device buffer.
+
+\begin{DoxyReturn}{Returns}
+sycl\+::event to wait on for completion of data movement. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a83c4d8b9ad98ba60aaab700a40750653}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a83c4d8b9ad98ba60aaab700a40750653}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!device\_to\_host@{device\_to\_host}}
+\index{device\_to\_host@{device\_to\_host}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{device\_to\_host()}{device\_to\_host()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::device\+\_\+to\+\_\+host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy the contents of the device buffer to the host buffer. \mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a05a8c58f476616576a3eb15d4f8a185e}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a05a8c58f476616576a3eb15d4f8a185e}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!host\_to\_device@{host\_to\_device}}
+\index{host\_to\_device@{host\_to\_device}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{host\_to\_device()}{host\_to\_device()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::host\+\_\+to\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy the contents of the host buffer to the device buffer. \mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_a0a22e4edb8bc351f1968eb04d821ad69}\label{classNESO_1_1Particles_1_1BufferDeviceHost_a0a22e4edb8bc351f1968eb04d821ad69}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!realloc\_no\_copy@{realloc\_no\_copy}}
+\index{realloc\_no\_copy@{realloc\_no\_copy}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{realloc\_no\_copy()}{realloc\_no\_copy()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::realloc\+\_\+no\+\_\+copy (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reallocate both the device and host buffers to hold at least the requested number of elements. May or may not reduce the buffer size if called with a size less than the current allocation. Current contents is not copied to the new buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Minimum number of elements this buffer should be able to hold. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferDeviceHost_aaed114b01a513e5f225cd1832ddb0248}\label{classNESO_1_1Particles_1_1BufferDeviceHost_aaed114b01a513e5f225cd1832ddb0248}} 
+\index{NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}!size\_bytes@{size\_bytes}}
+\index{size\_bytes@{size\_bytes}!NESO::Particles::BufferDeviceHost$<$ T $>$@{NESO::Particles::BufferDeviceHost$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size\_bytes()}{size\_bytes()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{NESO\+::\+Particles\+::\+Buffer\+Device\+Host}}$<$ T $>$\+::size\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the size in bytes of the allocation on the host and device.
+
+\begin{DoxyReturn}{Returns}
+Number of bytes allocated on the host and device. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/compute\+\_\+target.\+hpp\end{DoxyCompactItemize}

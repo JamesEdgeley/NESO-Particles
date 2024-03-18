@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::CellDatConst::Min</compoundname>
+    <includes refid="cell__dat__const_8hpp" local="no">cell_dat_const.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1a0a567a01dd020c473dfaa625a10ecbef" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* NESO::Particles::Access::CellDatConst::Min&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="69" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1a3a83305948e83f49d16baed55872fc63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::CellDatConst::Min&lt; T &gt;::nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="70" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1af4cfc85ca66ef0d3ddb2e4fc6bce065c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::CellDatConst::Min&lt; T &gt;::Min</definition>
+        <argsstring>()=default</argsstring>
+        <name>Min</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="68" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1af9d796e8b84e14e4fd2d8bf27bc86eb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T NESO::Particles::Access::CellDatConst::Min&lt; T &gt;::fetch_min</definition>
+        <argsstring>(const int row, const int col, const T value)</argsstring>
+        <name>fetch_min</name>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="71" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:CellDatConst::Read&lt;T&gt; and Access:CellDatConst::Min&lt;T&gt; are the kernel argument types for accessing <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1CellDatConst" kindref="compound">CellDatConst</ref> data in a kernel. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="66" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="66" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1af9d796e8b84e14e4fd2d8bf27bc86eb6" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Min</scope><name>fetch_min</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1af4cfc85ca66ef0d3ddb2e4fc6bce065c" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Min</scope><name>Min</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1a3a83305948e83f49d16baed55872fc63" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Min</scope><name>nrow</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min_1a0a567a01dd020c473dfaa625a10ecbef" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDatConst::Min</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleSet}{}\doxysection{NESO\+::Particles\+::Particle\+Set Class Reference}
+\label{classNESO_1_1Particles_1_1ParticleSet}\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+
+
+{\ttfamily \#include $<$particle\+\_\+set.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_adb7bb1f58d5af74e0e85ac3e3621db51}{Particle\+Set}} (const int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_af6abbaa68af8817e480a2a38729fdee4}{npart}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} particle\+\_\+spec)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{Column\+Major\+Row\+Accessor}}$<$ std\+::vector, \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_a8cf5ad3e7d843c65a8a035241da24d70}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ sym)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{Column\+Major\+Row\+Accessor}}$<$ std\+::vector, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_a80fd4d962068fd061658bc3f86ba5268}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ sym)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_aff3d2126647e5e04fde3a563c0047f97}{get}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ const \&sym)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_ac0b4d60b8367771ac39ec5e50ac680b5}{get}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ const \&sym)
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_adbe4ff16691f65c28823499732a676df}{contains}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ const \&sym)
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_adf9297b62539afc1289babf49c389ca9}{contains}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ const \&sym)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet_af6abbaa68af8817e480a2a38729fdee4}{npart}}
+\begin{DoxyCompactList}\small\item\em Number of particles stored in the container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container to hold particle data for a set of particles. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_adb7bb1f58d5af74e0e85ac3e3621db51}\label{classNESO_1_1Particles_1_1ParticleSet_adb7bb1f58d5af74e0e85ac3e3621db51}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!ParticleSet@{ParticleSet}}
+\index{ParticleSet@{ParticleSet}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{ParticleSet()}{ParticleSet()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Set\+::\+Particle\+Set (\begin{DoxyParamCaption}\item[{const int}]{npart,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}}}]{particle\+\_\+spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for a set of particles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em npart} & Number of particles required. \\
+\hline
+{\em particle\+\_\+spec} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSpec}{Particle\+Spec}} instance that describes the particle properties. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_adf9297b62539afc1289babf49c389ca9}\label{classNESO_1_1Particles_1_1ParticleSet_adf9297b62539afc1289babf49c389ca9}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!contains@{contains}}
+\index{contains@{contains}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Set\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ const \&}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test to see if this \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet}{Particle\+Set}} contains data for a given \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}} to test for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool indicating if data exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_adbe4ff16691f65c28823499732a676df}\label{classNESO_1_1Particles_1_1ParticleSet_adbe4ff16691f65c28823499732a676df}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!contains@{contains}}
+\index{contains@{contains}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Set\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ const \&}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test to see if this \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet}{Particle\+Set}} contains data for a given \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+REAL$>$}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+REAL$>$}} to test for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool indicating if data exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_ac0b4d60b8367771ac39ec5e50ac680b5}\label{classNESO_1_1Particles_1_1ParticleSet_ac0b4d60b8367771ac39ec5e50ac680b5}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!get@{get}}
+\index{get@{get}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$\& NESO\+::\+Particles\+::\+Particle\+Set\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ const \&}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the vector of values describing the particle data for a given \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}}. Will return an empty std\+::vector if the passed \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} is not a stored property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}} to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector of data or empty std\+::vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_aff3d2126647e5e04fde3a563c0047f97}\label{classNESO_1_1Particles_1_1ParticleSet_aff3d2126647e5e04fde3a563c0047f97}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!get@{get}}
+\index{get@{get}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$\& NESO\+::\+Particles\+::\+Particle\+Set\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$ const \&}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the vector of values describing the particle data for a given \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+REAL$>$}}. Will return an empty std\+::vector if the passed \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}} is not a stored property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+REAL$>$}} to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector of data or empty std\+::vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_a80fd4d962068fd061658bc3f86ba5268}\label{classNESO_1_1Particles_1_1ParticleSet_a80fd4d962068fd061658bc3f86ba5268}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{Column\+Major\+Row\+Accessor}}$<$std\+::vector, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+Particle\+Set\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access}{Access}} the std\+::vectors that correspond to a \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_a8cf5ad3e7d843c65a8a035241da24d70}\label{classNESO_1_1Particles_1_1ParticleSet_a8cf5ad3e7d843c65a8a035241da24d70}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{Column\+Major\+Row\+Accessor}}$<$std\+::vector, \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$>$ NESO\+::\+Particles\+::\+Particle\+Set\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access}{Access}} the std\+::vectors that correspond to a \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+REAL$>$}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSet_af6abbaa68af8817e480a2a38729fdee4}\label{classNESO_1_1Particles_1_1ParticleSet_af6abbaa68af8817e480a2a38729fdee4}} 
+\index{NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}!npart@{npart}}
+\index{npart@{npart}!NESO::Particles::ParticleSet@{NESO::Particles::ParticleSet}}
+\doxysubsubsection{\texorpdfstring{npart}{npart}}
+{\footnotesize\ttfamily const int NESO\+::\+Particles\+::\+Particle\+Set\+::npart}
+
+
+
+Number of particles stored in the container. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{particle__set_8hpp}{particle\+\_\+set.\+hpp}}\end{DoxyCompactItemize}

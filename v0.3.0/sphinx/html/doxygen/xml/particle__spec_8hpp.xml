@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="particle__spec_8hpp" kind="file" language="C++">
+    <compoundname>particle_spec.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">map</includes>
+    <includes local="no">mpi.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="typedefs_8hpp" local="yes">typedefs.hpp</includes>
+    <includedby refid="cell__dat__compression_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</includedby>
+    <includedby refid="cell__dat__move_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <includedby refid="particle__dat_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</includedby>
+    <includedby refid="particle__group_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</includedby>
+    <includedby refid="particle__io_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</includedby>
+    <includedby refid="particle__set_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp</includedby>
+    <includedby refid="utility_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/utility.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp</label>
+        <link refid="particle__spec_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>numeric</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="7">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cstdlib</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>mpi.h</label>
+      </node>
+      <node id="8">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</label>
+        <link refid="parallel__initialisation_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move.hpp</label>
+        <link refid="global__move_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp</label>
+        <link refid="particle__spec_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp</label>
+        <link refid="local__mapping_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</label>
+        <link refid="cell__dat__move_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move_exchange.hpp</label>
+        <link refid="global__move__exchange_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp_source"/>
+      </node>
+      <node id="18">
+        <label>/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp</label>
+        <link refid="packing__unpacking_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</label>
+        <link refid="cell__dat__compression_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/tmp/repo-checkout/NESO-Particles/include/utility.hpp</label>
+        <link refid="utility_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</label>
+        <link refid="particle__dat_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp</label>
+        <link refid="particle__set_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</label>
+        <link refid="particle__remover_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_move.hpp</label>
+        <link refid="local__move_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/tmp/repo-checkout/NESO-Particles/include/domain.hpp</label>
+        <link refid="domain_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNESO_1_1Particles_1_1Sym" prot="public">NESO::Particles::Sym</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleProp" prot="public">NESO::Particles::ParticleProp</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleSpec" prot="public">NESO::Particles::ParticleSpec</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1SymStore" prot="public">NESO::Particles::SymStore</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_PARTICLE_SPEC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_PARTICLE_SPEC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NESO::Particles<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classNESO_1_1Particles_1_1Sym" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classNESO_1_1Particles_1_1Sym_1acac6a22f889856f215eb7dd6e9cb71ee" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1Sym_1acac6a22f889856f215eb7dd6e9cb71ee" kindref="member">Sym</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" kindref="member">name</ref>)<sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" kindref="member">name</ref>(<ref refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" kindref="member">name</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classNESO_1_1Particles_1_1Sym_1a5f1a9a50c684a926f94614011ab43bd0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym_1a5f1a9a50c684a926f94614011ab43bd0" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref><sp/>&amp;sym)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;name<sp/>&lt;<sp/>sym.<ref refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" kindref="member">name</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classNESO_1_1Particles_1_1ParticleProp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="classNESO_1_1Particles_1_1ParticleProp_1a60c68a6bd53095a43f974fd71d056eec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;T&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a60c68a6bd53095a43f974fd71d056eec" kindref="member">sym</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classNESO_1_1Particles_1_1ParticleProp_1ad774a362bdf20b7117513981202891e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1ad774a362bdf20b7117513981202891e8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classNESO_1_1Particles_1_1ParticleProp_1a0643ad84ce2f6eeb068e3ef36b880f74" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a0643ad84ce2f6eeb068e3ef36b880f74" kindref="member">ncomp</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classNESO_1_1Particles_1_1ParticleProp_1ac6acc14b172233fec0485a60ae266bba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1ac6acc14b172233fec0485a60ae266bba" kindref="member">positions</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classNESO_1_1Particles_1_1ParticleProp_1a305f4ca093f7569d540b4e6879fb204d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a305f4ca093f7569d540b4e6879fb204d" kindref="member">ParticleProp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;T&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a60c68a6bd53095a43f974fd71d056eec" kindref="member">sym</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a0643ad84ce2f6eeb068e3ef36b880f74" kindref="member">ncomp</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1ac6acc14b172233fec0485a60ae266bba" kindref="member">positions</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a60c68a6bd53095a43f974fd71d056eec" kindref="member">sym</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleProp_1a60c68a6bd53095a43f974fd71d056eec" kindref="member">sym</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1ad774a362bdf20b7117513981202891e8" kindref="member">name</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleProp_1a60c68a6bd53095a43f974fd71d056eec" kindref="member">sym</ref>.<ref refid="classNESO_1_1Particles_1_1ParticleProp_1ad774a362bdf20b7117513981202891e8" kindref="member">name</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1a0643ad84ce2f6eeb068e3ef36b880f74" kindref="member">ncomp</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleProp_1a0643ad84ce2f6eeb068e3ef36b880f74" kindref="member">ncomp</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp_1ac6acc14b172233fec0485a60ae266bba" kindref="member">positions</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleProp_1ac6acc14b172233fec0485a60ae266bba" kindref="member">positions</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classNESO_1_1Particles_1_1ParticleSpec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(T...<sp/>args)<sp/>{<sp/>this-&gt;push(args...);<sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp&lt;REAL&gt;</ref><sp/>pp,<sp/>T...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" kindref="member">properties_real</ref>.push_back(pp);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;push(args...);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp&lt;INT&gt;</ref><sp/>pp,<sp/>T...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" kindref="member">properties_int</ref>.push_back(pp);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;push(args...);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83" refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;ParticleProp&lt;REAL&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" kindref="member">properties_real</ref>;</highlight></codeline>
+<codeline lineno="85" refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;ParticleProp&lt;INT&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" kindref="member">properties_int</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classNESO_1_1Particles_1_1ParticleSpec_1abb928645e1251558fe1dd4485e060ab4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec_1abb928645e1251558fe1dd4485e060ab4" kindref="member">ParticleSpec</ref>(T...<sp/>args)<sp/>{<sp/>this-&gt;push(args...);<sp/>};</highlight></codeline>
+<codeline lineno="98" refid="classNESO_1_1Particles_1_1ParticleSpec_1a276b2968f86135d0aa2b990818f103d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec_1a276b2968f86135d0aa2b990818f103d1" kindref="member">push</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp&lt;REAL&gt;</ref><sp/>pp)<sp/>{<sp/>this-&gt;properties_real.push_back(pp);<sp/>}</highlight></codeline>
+<codeline lineno="104" refid="classNESO_1_1Particles_1_1ParticleSpec_1adab06be6b2b8bd82f0ba97c12bf6ec12" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec_1adab06be6b2b8bd82f0ba97c12bf6ec12" kindref="member">push</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp&lt;INT&gt;</ref><sp/>pp)<sp/>{<sp/>this-&gt;properties_int.push_back(pp);<sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref>(){};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>~ParticleSpec(){};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classNESO_1_1Particles_1_1SymStore" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1SymStore" kindref="compound">SymStore</ref><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(T...<sp/>args)<sp/>{<sp/>this-&gt;push(args...);<sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>pp)<sp/>{<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" kindref="member">syms_real</ref>.push_back(pp);<sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>pp)<sp/>{<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" kindref="member">syms_int</ref>.push_back(pp);<sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>pp,<sp/>T...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" kindref="member">syms_real</ref>.push_back(pp);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;push(args...);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>pp,<sp/>T...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" kindref="member">syms_int</ref>.push_back(pp);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;push(args...);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="129" refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Sym&lt;REAL&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" kindref="member">syms_real</ref>;</highlight></codeline>
+<codeline lineno="131" refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;Sym&lt;INT&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" kindref="member">syms_int</ref>;</highlight></codeline>
+<codeline lineno="138" refid="classNESO_1_1Particles_1_1SymStore_1afcbc3000e80860047fcf7c1702ae60ed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/><ref refid="classNESO_1_1Particles_1_1SymStore_1afcbc3000e80860047fcf7c1702ae60ed" kindref="member">SymStore</ref>(T...<sp/>args)<sp/>{<sp/>this-&gt;push(args...);<sp/>};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1SymStore" kindref="compound">SymStore</ref>(){};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>~SymStore(){};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp"/>
+  </compounddef>
+</doxygen>

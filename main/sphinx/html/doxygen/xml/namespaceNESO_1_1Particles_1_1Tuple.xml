@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1Tuple" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::Tuple</compoundname>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1TupleImpl" prot="public">NESO::Particles::Tuple::TupleImpl</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1TupleBaseRec" prot="public">NESO::Particles::Tuple::TupleBaseRec</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1TupleBaseRec_3_01INDEX_00_01U_00_01V_8_8_8_01_4" prot="public">NESO::Particles::Tuple::TupleBaseRec&lt; INDEX, U, V... &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1Tuple" prot="public">NESO::Particles::Tuple::Tuple</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1GetIndexType" prot="public">NESO::Particles::Tuple::GetIndexType</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1GetIndexType_3_010_00_01T_00_01U_8_8_8_01_4" prot="public">NESO::Particles::Tuple::GetIndexType&lt; 0, T, U... &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1IntSequence" prot="public">NESO::Particles::Tuple::IntSequence</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence" prot="public">NESO::Particles::Tuple::GenerateIntSequence</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence_3_010_00_01S_8_8_8_01_4" prot="public">NESO::Particles::Tuple::GenerateIntSequence&lt; 0, S... &gt;</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Tuple_1ad8460cb9999e2f20091ed925d957d035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>INDEX</declname>
+            <defname>INDEX</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>U</declname>
+            <defname>U</defname>
+          </param>
+        </templateparamlist>
+        <type>auto &amp;</type>
+        <definition>auto&amp; NESO::Particles::Tuple::get</definition>
+        <argsstring>(Tuple&lt; U... &gt; &amp;u)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Tuple_1_1Tuple" kindref="compound">Tuple</ref>&lt; U... &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="36" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Tuple_1a5c955ed06bd2639704bee5c012b49aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>INDEX</declname>
+            <defname>INDEX</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>U</declname>
+            <defname>U</defname>
+          </param>
+        </templateparamlist>
+        <type>const auto &amp;</type>
+        <definition>const auto&amp; NESO::Particles::Tuple::get</definition>
+        <argsstring>(const Tuple&lt; U... &gt; &amp;u)</argsstring>
+        <name>get</name>
+        <param>
+          <type>const <ref refid="structNESO_1_1Particles_1_1Tuple_1_1Tuple" kindref="compound">Tuple</ref>&lt; U... &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="42" column="26" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Tuple_1a5f612c16a11a9637a24c973bc0562da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KERNEL</type>
+          </param>
+          <param>
+            <type>size_t...</type>
+            <declname>S</declname>
+            <defname>S</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>ARGS</declname>
+            <defname>ARGS</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto NESO::Particles::Tuple::apply_inner</definition>
+        <argsstring>(KERNEL &amp;kernel, IntSequence&lt; S... &gt;, Tuple&lt; ARGS... &gt; &amp;args)</argsstring>
+        <name>apply_inner</name>
+        <param>
+          <type>KERNEL &amp;</type>
+          <declname>kernel</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Tuple_1_1IntSequence" kindref="compound">IntSequence</ref>&lt; S... &gt;</type>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Tuple_1_1Tuple" kindref="compound">Tuple</ref>&lt; ARGS... &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="59" column="6" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Tuple_1aedb8f9eaf627021cd3aa1df8b4d669a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename KERNEL</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>ARGS</declname>
+            <defname>ARGS</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto NESO::Particles::Tuple::apply</definition>
+        <argsstring>(KERNEL kernel, Tuple&lt; ARGS... &gt; &amp;args)</argsstring>
+        <name>apply</name>
+        <param>
+          <type>KERNEL</type>
+          <declname>kernel</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Tuple_1_1Tuple" kindref="compound">Tuple</ref>&lt; ARGS... &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="64" column="6" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,55 @@
+\hypertarget{classNESO_1_1Particles_1_1EventStack}{}\doxysection{NESO\+::Particles\+::Event\+Stack Class Reference}
+\label{classNESO_1_1Particles_1_1EventStack}\index{NESO::Particles::EventStack@{NESO::Particles::EventStack}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1EventStack_a104310aa29a06bceb5b46acf95c42692}{$\sim$\+Event\+Stack}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1EventStack_aba1faf2650782e9543c9a44860541870}{Event\+Stack}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1EventStack_aee8a0be331891915bf8dccd4359aea20}{push}} (sycl\+::event e)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1EventStack_a6904b30365c9a305408d7db689487aa3}{wait}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to hold a collection of sycl\+::event instances which can be waited on. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1EventStack_a104310aa29a06bceb5b46acf95c42692}\label{classNESO_1_1Particles_1_1EventStack_a104310aa29a06bceb5b46acf95c42692}} 
+\index{NESO::Particles::EventStack@{NESO::Particles::EventStack}!````~EventStack@{$\sim$EventStack}}
+\index{````~EventStack@{$\sim$EventStack}!NESO::Particles::EventStack@{NESO::Particles::EventStack}}
+\doxysubsubsection{\texorpdfstring{$\sim$EventStack()}{~EventStack()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Event\+Stack\+::$\sim$\+Event\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1EventStack_aba1faf2650782e9543c9a44860541870}\label{classNESO_1_1Particles_1_1EventStack_aba1faf2650782e9543c9a44860541870}} 
+\index{NESO::Particles::EventStack@{NESO::Particles::EventStack}!EventStack@{EventStack}}
+\index{EventStack@{EventStack}!NESO::Particles::EventStack@{NESO::Particles::EventStack}}
+\doxysubsubsection{\texorpdfstring{EventStack()}{EventStack()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Event\+Stack\+::\+Event\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new and empty stack of events. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1EventStack_aee8a0be331891915bf8dccd4359aea20}\label{classNESO_1_1Particles_1_1EventStack_aee8a0be331891915bf8dccd4359aea20}} 
+\index{NESO::Particles::EventStack@{NESO::Particles::EventStack}!push@{push}}
+\index{push@{push}!NESO::Particles::EventStack@{NESO::Particles::EventStack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Event\+Stack\+::push (\begin{DoxyParamCaption}\item[{sycl\+::event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push a sycl\+::event onto the event stack. \mbox{\Hypertarget{classNESO_1_1Particles_1_1EventStack_a6904b30365c9a305408d7db689487aa3}\label{classNESO_1_1Particles_1_1EventStack_a6904b30365c9a305408d7db689487aa3}} 
+\index{NESO::Particles::EventStack@{NESO::Particles::EventStack}!wait@{wait}}
+\index{wait@{wait}!NESO::Particles::EventStack@{NESO::Particles::EventStack}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Event\+Stack\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Wait for all events held in the stack to complete before returning. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{compute__target_8hpp}{compute\+\_\+target.\+hpp}}\end{DoxyCompactItemize}

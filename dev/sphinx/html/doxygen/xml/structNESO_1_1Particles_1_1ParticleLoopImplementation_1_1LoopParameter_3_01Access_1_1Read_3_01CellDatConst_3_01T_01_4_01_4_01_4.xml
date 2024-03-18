@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01CellDatConst_3_01T_01_4_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; CellDatConst&lt; T &gt; &gt; &gt;</compoundname>
+    <includes refid="cell__dat__const_8hpp" local="no">cell_dat_const.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01CellDatConst_3_01T_01_4_01_4_01_4_1a17049e352fedd6cd90d3843f72d2f537" prot="public" static="no">
+        <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst" kindref="compound">CellDatConstDeviceTypeConst</ref>&lt; T &gt;</type>
+        <definition>using NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; CellDatConst&lt; T &gt; &gt; &gt;::type =  CellDatConstDeviceTypeConst&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="102" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Loop parameter for read access of a <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref>. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="101" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="101" bodyend="103"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01CellDatConst_3_01T_01_4_01_4_01_4_1a17049e352fedd6cd90d3843f72d2f537" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; CellDatConst&lt; T &gt; &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

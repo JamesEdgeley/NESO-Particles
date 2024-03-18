@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ProfileEntry" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ProfileEntry</compoundname>
+    <includes refid="profiling_8hpp" local="no">profiling.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProfileEntry_1a924e4bbcc0b9aa7d04c11f682446bab7" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t NESO::Particles::ProfileEntry::value_integral</definition>
+        <argsstring></argsstring>
+        <name>value_integral</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Integral value stored on the entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="22" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProfileEntry_1a7180200f82159f9bea29efcfbdaa738b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double NESO::Particles::ProfileEntry::value_real</definition>
+        <argsstring></argsstring>
+        <name>value_real</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>Floating point value stored on the entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="24" column="10" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure to describe an entry in the profiling data structure. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" line="20" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/profiling.hpp" bodystart="20" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ProfileEntry_1a924e4bbcc0b9aa7d04c11f682446bab7" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileEntry</scope><name>value_integral</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProfileEntry_1a7180200f82159f9bea29efcfbdaa738b" prot="public" virt="non-virtual"><scope>NESO::Particles::ProfileEntry</scope><name>value_real</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

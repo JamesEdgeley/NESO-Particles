@@ -1,0 +1,256 @@
+\hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper}{}\doxysection{NESO\+::Particles\+::Mesh\+Hierarchy\+Device\+Mapper Struct Reference}
+\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper}\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+
+
+{\ttfamily \#include $<$mesh\+\_\+hierarchy.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a3ea972bf017e2178c1b3ff0cb23c7531}{map\+\_\+to\+\_\+tuple}} (const \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $\ast$position, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$cell) const
+\item 
+void \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a62ae46c3a695837c7ea27cae75ac039e}{map\+\_\+tuple\+\_\+to\+\_\+cart\+\_\+tuple}} (const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$mh\+\_\+tuple, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$cart\+\_\+tuple) const
+\item 
+void \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a5a1d3bf23049e5f2f61fdc70a85c29ed}{map\+\_\+to\+\_\+cart\+\_\+tuple\+\_\+no\+\_\+trunc}} (const \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $\ast$position, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$cell) const
+\item 
+void \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a22fb400a42050d04eb1f6e3df86f36fb}{cart\+\_\+tuple\+\_\+to\+\_\+tuple}} (const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$cart\+\_\+tuple, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$mh\+\_\+tuple) const
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a8e5b7922c2fd0493e21d9c92808419d8}{tuple\+\_\+to\+\_\+linear\+\_\+global}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$index\+\_\+tuple) const
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ab082becf0a8edaa001c49c3cf64d3826}{tuple\+\_\+to\+\_\+linear\+\_\+coarse}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$index\+\_\+tuple) const
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a852bfb9a0cb534c597ebf099d8c36a31}{tuple\+\_\+to\+\_\+linear\+\_\+fine}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$index\+\_\+tuple) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a2f28614b0853623d4812d1c065af5e0e}{ndim}}
+\begin{DoxyCompactList}\small\item\em Number of spatial dimensions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a3806c60bbf13391695e8bd48cccc4384}{origin}}
+\begin{DoxyCompactList}\small\item\em ndim sized array holding the mesh origin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ae562025cc52bb8f2301f5abf4f2b8644}{dims}}
+\begin{DoxyCompactList}\small\item\em ndim sized array holding the number of coarse cells in each direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a7ee50d7f88ab2321d911655090c9c4b2}{inverse\+\_\+cell\+\_\+width\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em The inverse of the coarse cell width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ab0ae6c0eab6b5a1503acad3c405dbb4f}{inverse\+\_\+cell\+\_\+width\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em The inverse of the fine cell width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a87aafa2a2e2066a633befef4caee5f9c}{cell\+\_\+width\+\_\+coarse}}
+\begin{DoxyCompactList}\small\item\em The coarse cell width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a300d3cd396a7dc167828ff12c7d27a44}{cell\+\_\+width\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em The fine cell width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a11a0b1bd1c656b92f6f99ab90852a7a9}{ncells\+\_\+dim\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em The number of fine cells in each dimension per dimension. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a9b798367e8b1deef9f3e93b2717a68d8}{ncells\+\_\+fine}}
+\begin{DoxyCompactList}\small\item\em The total number of fine cells per coarse cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A struct to aid binning points into \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} cells. This type is device copyable such that points can be easilly binned into cells on the device. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a22fb400a42050d04eb1f6e3df86f36fb}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a22fb400a42050d04eb1f6e3df86f36fb}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!cart\_tuple\_to\_tuple@{cart\_tuple\_to\_tuple}}
+\index{cart\_tuple\_to\_tuple@{cart\_tuple\_to\_tuple}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{cart\_tuple\_to\_tuple()}{cart\_tuple\_to\_tuple()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::cart\+\_\+tuple\+\_\+to\+\_\+tuple (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{cart\+\_\+tuple,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{mh\+\_\+tuple }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a Cartesian tuple index into a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} global tuple index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cart\+\_\+tuple} & Cartesian tuple to convert. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em mh\+\_\+tuple} & \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} global tuple representation of input tuple. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a5a1d3bf23049e5f2f61fdc70a85c29ed}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a5a1d3bf23049e5f2f61fdc70a85c29ed}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!map\_to\_cart\_tuple\_no\_trunc@{map\_to\_cart\_tuple\_no\_trunc}}
+\index{map\_to\_cart\_tuple\_no\_trunc@{map\_to\_cart\_tuple\_no\_trunc}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{map\_to\_cart\_tuple\_no\_trunc()}{map\_to\_cart\_tuple\_no\_trunc()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::map\+\_\+to\+\_\+cart\+\_\+tuple\+\_\+no\+\_\+trunc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $\ast$}]{position,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{cell }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Map position into the cartesian grid. Do not attempt to trucate the position into the mesh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em position} & Input position to map into the Cartesian view of the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em cell} & N dimensional tuple that maps into the Cartesian view of the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a3ea972bf017e2178c1b3ff0cb23c7531}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a3ea972bf017e2178c1b3ff0cb23c7531}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!map\_to\_tuple@{map\_to\_tuple}}
+\index{map\_to\_tuple@{map\_to\_tuple}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{map\_to\_tuple()}{map\_to\_tuple()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::map\+\_\+to\+\_\+tuple (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $\ast$}]{position,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{cell }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+For an input point find the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} cell that contains the point in tuple form. Output tuple should be\+: 1D\+: (coarse\+\_\+x, fine\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y, fine\+\_\+x, fine\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z, fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em position} & Input position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em cell} & Ouput, index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a62ae46c3a695837c7ea27cae75ac039e}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a62ae46c3a695837c7ea27cae75ac039e}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!map\_tuple\_to\_cart\_tuple@{map\_tuple\_to\_cart\_tuple}}
+\index{map\_tuple\_to\_cart\_tuple@{map\_tuple\_to\_cart\_tuple}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{map\_tuple\_to\_cart\_tuple()}{map\_tuple\_to\_cart\_tuple()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::map\+\_\+tuple\+\_\+to\+\_\+cart\+\_\+tuple (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{mh\+\_\+tuple,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{cart\+\_\+tuple }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+For an input \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} tuple output the tuple which would index into a standard Cartesian mesh of the same structure. Input tuple should be\+: 1D\+: (coarse\+\_\+x, fine\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y, fine\+\_\+x, fine\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z, fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mh\+\_\+tuple} & Input tuple in global \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} form. \\
+\hline
+\mbox{\texttt{ out}}  & {\em cart\+\_\+tuple} & N dimensional tuple which indexes into the Cartesian mesh view of the \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ab082becf0a8edaa001c49c3cf64d3826}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ab082becf0a8edaa001c49c3cf64d3826}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!tuple\_to\_linear\_coarse@{tuple\_to\_linear\_coarse}}
+\index{tuple\_to\_linear\_coarse@{tuple\_to\_linear\_coarse}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{tuple\_to\_linear\_coarse()}{tuple\_to\_linear\_coarse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::tuple\+\_\+to\+\_\+linear\+\_\+coarse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{index\+\_\+tuple }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a coarse mesh index represented by a tuple into a linear index. tuple should be\+: 1D\+: (coarse\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+tuple} & Index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a852bfb9a0cb534c597ebf099d8c36a31}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a852bfb9a0cb534c597ebf099d8c36a31}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!tuple\_to\_linear\_fine@{tuple\_to\_linear\_fine}}
+\index{tuple\_to\_linear\_fine@{tuple\_to\_linear\_fine}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{tuple\_to\_linear\_fine()}{tuple\_to\_linear\_fine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::tuple\+\_\+to\+\_\+linear\+\_\+fine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{index\+\_\+tuple }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a fine mesh index represented by a tuple into a linear index. tuple should be\+: 1D\+: (fine\+\_\+x) 2D\+: (fine\+\_\+x, fine\+\_\+y) 3D\+: (fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+tuple} & Index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a8e5b7922c2fd0493e21d9c92808419d8}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a8e5b7922c2fd0493e21d9c92808419d8}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!tuple\_to\_linear\_global@{tuple\_to\_linear\_global}}
+\index{tuple\_to\_linear\_global@{tuple\_to\_linear\_global}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{tuple\_to\_linear\_global()}{tuple\_to\_linear\_global()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::tuple\+\_\+to\+\_\+linear\+\_\+global (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{index\+\_\+tuple }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a global index represented by a tuple into a linear index. tuple should be\+: 1D\+: (coarse\+\_\+x, fine\+\_\+x) 2D\+: (coarse\+\_\+x, coarse\+\_\+y, fine\+\_\+x, fine\+\_\+y) 3D\+: (coarse\+\_\+x, coarse\+\_\+y, coarse\+\_\+z, fine\+\_\+x, fine\+\_\+y, fine\+\_\+z)
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+\_\+tuple} & Index represented as a tuple. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a87aafa2a2e2066a633befef4caee5f9c}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a87aafa2a2e2066a633befef4caee5f9c}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!cell\_width\_coarse@{cell\_width\_coarse}}
+\index{cell\_width\_coarse@{cell\_width\_coarse}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{cell\_width\_coarse}{cell\_width\_coarse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::cell\+\_\+width\+\_\+coarse}
+
+
+
+The coarse cell width. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a300d3cd396a7dc167828ff12c7d27a44}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a300d3cd396a7dc167828ff12c7d27a44}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!cell\_width\_fine@{cell\_width\_fine}}
+\index{cell\_width\_fine@{cell\_width\_fine}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{cell\_width\_fine}{cell\_width\_fine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::cell\+\_\+width\+\_\+fine}
+
+
+
+The fine cell width. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ae562025cc52bb8f2301f5abf4f2b8644}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ae562025cc52bb8f2301f5abf4f2b8644}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!dims@{dims}}
+\index{dims@{dims}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{dims}{dims}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$\ast$ NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::dims}
+
+
+
+ndim sized array holding the number of coarse cells in each direction. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a7ee50d7f88ab2321d911655090c9c4b2}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a7ee50d7f88ab2321d911655090c9c4b2}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!inverse\_cell\_width\_coarse@{inverse\_cell\_width\_coarse}}
+\index{inverse\_cell\_width\_coarse@{inverse\_cell\_width\_coarse}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{inverse\_cell\_width\_coarse}{inverse\_cell\_width\_coarse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::inverse\+\_\+cell\+\_\+width\+\_\+coarse}
+
+
+
+The inverse of the coarse cell width. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ab0ae6c0eab6b5a1503acad3c405dbb4f}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_ab0ae6c0eab6b5a1503acad3c405dbb4f}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!inverse\_cell\_width\_fine@{inverse\_cell\_width\_fine}}
+\index{inverse\_cell\_width\_fine@{inverse\_cell\_width\_fine}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{inverse\_cell\_width\_fine}{inverse\_cell\_width\_fine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::inverse\+\_\+cell\+\_\+width\+\_\+fine}
+
+
+
+The inverse of the fine cell width. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a11a0b1bd1c656b92f6f99ab90852a7a9}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a11a0b1bd1c656b92f6f99ab90852a7a9}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!ncells\_dim\_fine@{ncells\_dim\_fine}}
+\index{ncells\_dim\_fine@{ncells\_dim\_fine}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{ncells\_dim\_fine}{ncells\_dim\_fine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::ncells\+\_\+dim\+\_\+fine}
+
+
+
+The number of fine cells in each dimension per dimension. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a9b798367e8b1deef9f3e93b2717a68d8}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a9b798367e8b1deef9f3e93b2717a68d8}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!ncells\_fine@{ncells\_fine}}
+\index{ncells\_fine@{ncells\_fine}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{ncells\_fine}{ncells\_fine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::ncells\+\_\+fine}
+
+
+
+The total number of fine cells per coarse cell. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a2f28614b0853623d4812d1c065af5e0e}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a2f28614b0853623d4812d1c065af5e0e}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!ndim@{ndim}}
+\index{ndim@{ndim}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{ndim}{ndim}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::ndim}
+
+
+
+Number of spatial dimensions. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a3806c60bbf13391695e8bd48cccc4384}\label{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_a3806c60bbf13391695e8bd48cccc4384}} 
+\index{NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}!origin@{origin}}
+\index{origin@{origin}!NESO::Particles::MeshHierarchyDeviceMapper@{NESO::Particles::MeshHierarchyDeviceMapper}}
+\doxysubsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$\ast$ NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Device\+Mapper\+::origin}
+
+
+
+ndim sized array holding the mesh origin. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{mesh__hierarchy_8hpp}{mesh\+\_\+hierarchy.\+hpp}}\end{DoxyCompactItemize}

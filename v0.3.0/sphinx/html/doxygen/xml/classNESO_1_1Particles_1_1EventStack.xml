@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1EventStack" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::EventStack</compoundname>
+    <includes refid="compute__target_8hpp" local="no">compute_target.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1EventStack_1a7d238870e2ba3ee89a5f277c4c45825f" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; sycl::event &gt;</type>
+        <definition>std::stack&lt;sycl::event&gt; NESO::Particles::EventStack::stack</definition>
+        <argsstring></argsstring>
+        <name>stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="617" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1EventStack_1a104310aa29a06bceb5b46acf95c42692" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::EventStack::~EventStack</definition>
+        <argsstring>()</argsstring>
+        <name>~EventStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="620" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="620" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1EventStack_1aba1faf2650782e9543c9a44860541870" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::EventStack::EventStack</definition>
+        <argsstring>()</argsstring>
+        <name>EventStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new and empty stack of events. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="625" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="625" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::EventStack::push</definition>
+        <argsstring>(sycl::event e)</argsstring>
+        <name>push</name>
+        <param>
+          <type>sycl::event</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a sycl::event onto the event stack. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="630" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="630" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1EventStack_1a6904b30365c9a305408d7db689487aa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::EventStack::wait</definition>
+        <argsstring>()</argsstring>
+        <name>wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait for all events held in the stack to complete before returning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="635" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="635" bodyend="640"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper class to hold a collection of sycl::event instances which can be waited on. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="615" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="615" bodyend="641"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1EventStack_1aba1faf2650782e9543c9a44860541870" prot="public" virt="non-virtual"><scope>NESO::Particles::EventStack</scope><name>EventStack</name></member>
+      <member refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" prot="public" virt="non-virtual"><scope>NESO::Particles::EventStack</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1EventStack_1a7d238870e2ba3ee89a5f277c4c45825f" prot="private" virt="non-virtual"><scope>NESO::Particles::EventStack</scope><name>stack</name></member>
+      <member refid="classNESO_1_1Particles_1_1EventStack_1a6904b30365c9a305408d7db689487aa3" prot="public" virt="non-virtual"><scope>NESO::Particles::EventStack</scope><name>wait</name></member>
+      <member refid="classNESO_1_1Particles_1_1EventStack_1a104310aa29a06bceb5b46acf95c42692" prot="public" virt="non-virtual"><scope>NESO::Particles::EventStack</scope><name>~EventStack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

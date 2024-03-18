@@ -1,0 +1,60 @@
+\hypertarget{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{}\doxysection{NESO\+::Particles\+::Column\+Major\+Row\+Accessor$<$ T, U $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}\index{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$}}
+
+
+{\ttfamily \#include $<$access.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor_a5ad38729f448c0b7f35466955622ac81}{Column\+Major\+Row\+Accessor}} (T$<$ U $>$ \&base, const int \&stride)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{Column\+Major\+Column\+Accessor}}$<$ T, U $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor_a146b1c0b3906b73f3e6bf631ae155c27}{operator\mbox{[}$\,$\mbox{]}}} (const int \&rowx)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$template$<$ typename... $>$ class T, typename U$>$\newline
+class NESO\+::\+Particles\+::\+Column\+Major\+Row\+Accessor$<$ T, U $>$}
+
+One of a pair of classes that enable indexing like foo\mbox{[}row\mbox{]}\mbox{[}col\mbox{]} for an object foo which stores data in a column major format. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ColumnMajorRowAccessor_a5ad38729f448c0b7f35466955622ac81}\label{classNESO_1_1Particles_1_1ColumnMajorRowAccessor_a5ad38729f448c0b7f35466955622ac81}} 
+\index{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$}!ColumnMajorRowAccessor@{ColumnMajorRowAccessor}}
+\index{ColumnMajorRowAccessor@{ColumnMajorRowAccessor}!NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$}}
+\doxysubsubsection{\texorpdfstring{ColumnMajorRowAccessor()}{ColumnMajorRowAccessor()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename U $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{NESO\+::\+Particles\+::\+Column\+Major\+Row\+Accessor}}$<$ T, U $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{Column\+Major\+Row\+Accessor}} (\begin{DoxyParamCaption}\item[{T$<$ U $>$ \&}]{base,  }\item[{const int \&}]{stride }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create new instance to underlying data structure of type {\ttfamily T$<$U$>$} which stores 2D data in a column major format using a given stride.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & Object to index into. \\
+\hline
+{\em stride} & Number of rows in the 2D object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ColumnMajorRowAccessor_a146b1c0b3906b73f3e6bf631ae155c27}\label{classNESO_1_1Particles_1_1ColumnMajorRowAccessor_a146b1c0b3906b73f3e6bf631ae155c27}} 
+\index{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$@{NESO::Particles::ColumnMajorRowAccessor$<$ T, U $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename U $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{Column\+Major\+Column\+Accessor}}$<$T, U$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorRowAccessor}{NESO\+::\+Particles\+::\+Column\+Major\+Row\+Accessor}}$<$ T, U $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int \&}]{rowx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a \mbox{\hyperlink{classNESO_1_1Particles_1_1ColumnMajorColumnAccessor}{Column\+Major\+Column\+Accessor}} instance which defines a subscript operator that can be used to access any column of the specified row.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rowx} & Row to provide access to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{access_8hpp}{access.\+hpp}}\end{DoxyCompactItemize}

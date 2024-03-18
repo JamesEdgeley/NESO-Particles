@@ -1,0 +1,847 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="pli__particle__dat_8hpp" kind="file" language="C++">
+    <compoundname>pli_particle_dat.hpp</compoundname>
+    <includes refid="particle__loop__base_8hpp" local="yes">../loop/particle_loop_base.hpp</includes>
+    <includes refid="particle__group_8hpp" local="yes">../particle_group.hpp</includes>
+    <includedby refid="particle__loop_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</includedby>
+    <incdepgraph>
+      <node id="24">
+        <label>access.hpp</label>
+        <link refid="access_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>containers/product_matrix.hpp</label>
+        <link refid="product__matrix_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>access_descriptors.hpp</label>
+        <link refid="access__descriptors_8hpp"/>
+      </node>
+      <node id="46">
+        <label>global_move.hpp</label>
+        <link refid="global__move_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>functional</label>
+      </node>
+      <node id="33">
+        <label>limits</label>
+      </node>
+      <node id="3">
+        <label>../compute_target.hpp</label>
+        <link refid="compute__target_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="35">
+        <label>particle_spec.hpp</label>
+        <link refid="particle__spec_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>local_mapping.hpp</label>
+        <link refid="local__mapping_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>cell_dat_move.hpp</label>
+        <link refid="cell__dat__move_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>cmath</label>
+      </node>
+      <node id="48">
+        <label>global_move_exchange.hpp</label>
+        <link refid="global__move__exchange_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>numeric</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="49">
+        <label>packing_unpacking.hpp</label>
+        <link refid="packing__unpacking_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>cell_dat_compression.hpp</label>
+        <link refid="cell__dat__compression_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../particle_group.hpp</label>
+        <link refid="particle__group_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>particle_dat.hpp</label>
+        <link refid="particle__dat_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>mesh_hierarchy.hpp</label>
+        <link refid="mesh__hierarchy_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>particle_set.hpp</label>
+        <link refid="particle__set_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>optional</label>
+      </node>
+      <node id="28">
+        <label>containers/cell_dat_const.hpp</label>
+        <link refid="cell__dat__const_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>departing_particle_identification.hpp</label>
+        <link refid="departing__particle__identification_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>stack</label>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp</label>
+        <link refid="pli__particle__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>utility</label>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="13">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="27">
+        <label>cell_data.hpp</label>
+        <link refid="cell__data_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>local_move.hpp</label>
+        <link refid="local__move_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>chrono</label>
+      </node>
+      <node id="8">
+        <label>mpi.h</label>
+      </node>
+      <node id="26">
+        <label>containers/cell_dat.hpp</label>
+        <link refid="containers_2cell__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>set</label>
+      </node>
+      <node id="45">
+        <label>global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="37">
+        <label>error_propagate.hpp</label>
+        <link refid="error__propagate_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>memory</label>
+      </node>
+      <node id="2">
+        <label>../loop/particle_loop_base.hpp</label>
+        <link refid="particle__loop__base_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>mesh_interface.hpp</label>
+        <link refid="mesh__interface_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>domain.hpp</label>
+        <link refid="domain_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</label>
+        <link refid="parallel__initialisation_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</label>
+        <link refid="particle__loop_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification_impl.hpp</label>
+        <link refid="departing__particle__identification__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp"/>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping_impl.hpp</label>
+        <link refid="global__mapping__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move_impl.hpp</label>
+        <link refid="cell__dat__move__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp</label>
+        <link refid="pli__particle__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</label>
+        <link refid="particle__remover_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group_impl.hpp</label>
+        <link refid="particle__group__impl_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp</label>
+        <link refid="particle__sub__group_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" prot="public">NESO::Particles::Access::ParticleDat::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" prot="public">NESO::Particles::Access::ParticleDat::Write</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ParticleDatT_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Padf37f47bdda97bcd844c99704effa7d" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_016acffd4a313eef947f0de332a72831a3" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_08a0335dad42b7beb98cf42b48e78b19f" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access">NESO::Particles::Access</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1ParticleDat">NESO::Particles::Access::ParticleDat</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation">NESO::Particles::ParticleLoopImplementation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_PLI_PARTICLE_DAT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_PLI_PARTICLE_DAT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../loop/particle_loop_base.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../particle_group.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespaceNESO_1_1Particles_1_1Access_1_1ParticleDat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1Access_1_1ParticleDat" kindref="compound">NESO::Particles::Access::ParticleDat</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">Read</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="19" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" kindref="member">layer</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0d79259e42c4a6f0b838203450af6000" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0d79259e42c4a6f0b838203450af6000" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" kindref="member">ptr</ref>[component][this-&gt;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" kindref="member">layer</ref>];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a48fbed16e2ae30caf20c1e9d104ad5d1" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a48fbed16e2ae30caf20c1e9d104ad5d1" kindref="member">at</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" kindref="member">ptr</ref>[component][this-&gt;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" kindref="member">layer</ref>];<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">Write</ref><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a102800c6ff081c2b0d61a106d6a2faad" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>**<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a102800c6ff081c2b0d61a106d6a2faad" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a31fc2a86aea6e9e67743627fe001a693" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a31fc2a86aea6e9e67743627fe001a693" kindref="member">layer</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a37ce022a167ba20aa0dbe41766a8e618" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a37ce022a167ba20aa0dbe41766a8e618" kindref="member">operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a102800c6ff081c2b0d61a106d6a2faad" kindref="member">ptr</ref>[component][this-&gt;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a31fc2a86aea6e9e67743627fe001a693" kindref="member">layer</ref>];<sp/>}</highlight></codeline>
+<codeline lineno="32" refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a393e8cdc67b47d177a195188fdcb837a" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>&amp;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a393e8cdc67b47d177a195188fdcb837a" kindref="member">at</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>component)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a102800c6ff081c2b0d61a106d6a2faad" kindref="member">ptr</ref>[component][this-&gt;<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a31fc2a86aea6e9e67743627fe001a693" kindref="member">layer</ref>];<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles::Access::ParticleDat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation" kindref="compound">NESO::Particles::ParticleLoopImplementation</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Read&lt;Sym&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="43" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4_1ae0d92e3c9b4b6a402b6c134b4aa2b8b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4_1ae0d92e3c9b4b6a402b6c134b4aa2b8b3" kindref="member">type</ref><sp/>=<sp/>T<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Write&lt;Sym&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4_1ab2baeea3c27ebc061f03546dd051386a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4_1ab2baeea3c27ebc061f03546dd051386a" kindref="member">type</ref><sp/>=<sp/>T<sp/>***;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ParticleDatT_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Read&lt;ParticleDatT&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="55" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ParticleDatT_3_01T_01_4_01_4_01_4_1a18ff1c0f809d13a1c147d4c12d9e1619" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ParticleDatT_3_01T_01_4_01_4_01_4_1a18ff1c0f809d13a1c147d4c12d9e1619" kindref="member">type</ref><sp/>=<sp/>T<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Padf37f47bdda97bcd844c99704effa7d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt;Access::Write&lt;ParticleDatT&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="61" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Padf37f47bdda97bcd844c99704effa7d_1a1086cfc3a247e7108a794a38cad8f48a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Padf37f47bdda97bcd844c99704effa7d_1a1086cfc3a247e7108a794a38cad8f48a" kindref="member">type</ref><sp/>=<sp/>T<sp/>***;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Read&lt;Sym&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="67" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4_1aaa3737dbff183da1899a45c87d0e0b39" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">Access::ParticleDat::Read&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Write&lt;Sym&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="73" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4_1a5704e79b6e5807f7e8f02e446f77dd0c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">Access::ParticleDat::Write&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_016acffd4a313eef947f0de332a72831a3" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Read&lt;ParticleDatT&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="79" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_016acffd4a313eef947f0de332a72831a3_1a8b53ed92bfc9b23842b5cc4807aa183a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">Access::ParticleDat::Read&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_08a0335dad42b7beb98cf42b48e78b19f" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" kindref="compound">KernelParameter</ref>&lt;Access::Write&lt;ParticleDatT&lt;T&gt;&gt;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="85" refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_08a0335dad42b7beb98cf42b48e78b19f_1acd789e870eaa04d56efc83c336763b2d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">type</ref><sp/>=<sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">Access::ParticleDat::Write&lt;T&gt;</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ab57d44f62ea102bdb35a06ab150222e1" kindref="member">ParticleDatImplGetConstT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="93" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ae274b406321a2fefc287760e85c38d9d" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt;<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sym<sp/>=<sp/>*a.obj;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>global_info-&gt;<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a9a254c839e1e865b04a9ff8fdeccd144" kindref="member">particle_group</ref>-&gt;<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" kindref="member">get_dat</ref>(sym)-&gt;impl_get_const();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a40440ca7be104e7a3cc72b43b839e2a6" kindref="member">ParticleDatImplGetT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="103" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a5e348a82f1a14404cac0cca6fca6f483" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt;<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sym<sp/>=<sp/>*a.obj;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>global_info-&gt;<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo_1a9a254c839e1e865b04a9ff8fdeccd144" kindref="member">particle_group</ref>-&gt;<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" kindref="member">get_dat</ref>(sym)-&gt;impl_get();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ab57d44f62ea102bdb35a06ab150222e1" kindref="member">ParticleDatImplGetConstT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="113" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aba2d95dedbe67ff392a7dd96fe48b37e" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt;<ref refid="classNESO_1_1Particles_1_1ParticleDatT" kindref="compound">ParticleDatT&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.obj-&gt;impl_get_const();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a40440ca7be104e7a3cc72b43b839e2a6" kindref="member">ParticleDatImplGetT&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="122" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a5e7a3099fbe6d8f208f0635aa2c53128" refkind="member"><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" kindref="member">create_loop_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref><sp/>*global_info,<sp/>sycl::handler<sp/>&amp;cgh,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt;<ref refid="classNESO_1_1Particles_1_1ParticleDatT" kindref="compound">ParticleDatT&lt;T&gt;</ref><sp/>*&gt;<sp/>&amp;a)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.obj-&gt;impl_get();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="131" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a2d30c993c1c18ca6504faa88dd12af5f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*rhs,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">Access::ParticleDat::Read&lt;T&gt;</ref><sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a202cd2dfe84cab5209743e335a31900a" kindref="member">layer</ref><sp/>=<sp/>iterationx.<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a205c4b02cd903f1e1a1caf5d48227453" kindref="member">layerx</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read_1a0e644cb9b504466285cd96ac53cb4205" kindref="member">ptr</ref><sp/>=<sp/>rhs[iterationx.<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a7fab228d88184acd657deb68b6d6610d" kindref="member">cellx</ref>];</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="141" refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a4979201168e994fae6d89e2dd3c202d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" kindref="member">create_kernel_arg</ref>(<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref><sp/>&amp;iterationx,<sp/>T<sp/>***rhs,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">Access::ParticleDat::Write&lt;T&gt;</ref><sp/>&amp;lhs)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a31fc2a86aea6e9e67743627fe001a693" kindref="member">layer</ref><sp/>=<sp/>iterationx.<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a205c4b02cd903f1e1a1caf5d48227453" kindref="member">layerx</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>lhs.<ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write_1a102800c6ff081c2b0d61a106d6a2faad" kindref="member">ptr</ref><sp/>=<sp/>rhs[iterationx.<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration_1a7fab228d88184acd657deb68b6d6610d" kindref="member">cellx</ref>];</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles::ParticleLoopImplementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp"/>
+  </compounddef>
+</doxygen>

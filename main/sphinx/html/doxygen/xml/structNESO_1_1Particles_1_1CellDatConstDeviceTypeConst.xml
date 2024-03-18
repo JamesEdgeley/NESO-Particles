@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::CellDatConstDeviceTypeConst</compoundname>
+    <includes refid="cell__dat_8hpp" local="no">cell_dat.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst_1aa17bb4980d402436b4aa740399a1e373" prot="public" static="no" mutable="no">
+        <type>T const  *</type>
+        <definition>T const* NESO::Particles::CellDatConstDeviceTypeConst&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="117" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst_1af8bbb1a873f3c56ce625925a06647222" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CellDatConstDeviceTypeConst&lt; T &gt;::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="118" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst_1aa2f1824a362b4615ccf8c28923539bfe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CellDatConstDeviceTypeConst&lt; T &gt;::nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="119" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" line="116" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp" bodystart="116" bodyend="120"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst_1aa2f1824a362b4615ccf8c28923539bfe" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConstDeviceTypeConst</scope><name>nrow</name></member>
+      <member refid="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst_1aa17bb4980d402436b4aa740399a1e373" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConstDeviceTypeConst</scope><name>ptr</name></member>
+      <member refid="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst_1af8bbb1a873f3c56ce625925a06647222" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConstDeviceTypeConst</scope><name>stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

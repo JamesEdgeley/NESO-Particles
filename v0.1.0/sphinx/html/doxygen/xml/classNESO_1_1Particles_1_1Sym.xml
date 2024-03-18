@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1Sym" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::Sym</compoundname>
+    <includes refid="particle__spec_8hpp" local="no">particle_spec.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename U</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string NESO::Particles::Sym&lt; U &gt;::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Name of the symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="21" column="21" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1Sym_1acac6a22f889856f215eb7dd6e9cb71ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Sym&lt; U &gt;::Sym</definition>
+        <argsstring>(const std::string name)</argsstring>
+        <name>Sym</name>
+        <param>
+          <type>const std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of new symbol. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="28" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1Sym_1a5f1a9a50c684a926f94614011ab43bd0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::Sym&lt; U &gt;::operator&lt;</definition>
+        <argsstring>(const Sym &amp;sym) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Comparison of <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> types.</para>
+<para>std::map uses std::less as default comparison operator</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> to compare against. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="36" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Symbol describing a type of data and a name. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="17" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="17" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1Sym_1a522c0e287abadc4117ce5fb983f87176" prot="public" virt="non-virtual"><scope>NESO::Particles::Sym</scope><name>name</name></member>
+      <member refid="classNESO_1_1Particles_1_1Sym_1a5f1a9a50c684a926f94614011ab43bd0" prot="public" virt="non-virtual"><scope>NESO::Particles::Sym</scope><name>operator&lt;</name></member>
+      <member refid="classNESO_1_1Particles_1_1Sym_1acac6a22f889856f215eb7dd6e9cb71ee" prot="public" virt="non-virtual"><scope>NESO::Particles::Sym</scope><name>Sym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleDatVersionT" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleDatVersionT</compoundname>
+    <includes refid="particle__group_8hpp" local="no">particle_group.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a4cab5bdab35d6583dffddd95b1c97159" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>Sym&lt;INT&gt; NESO::Particles::ParticleDatVersionT::si</definition>
+        <argsstring></argsstring>
+        <name>si</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="41" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a49c63a96cb041ce1fc2cc7cb0f32f09e" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>Sym&lt;REAL&gt; NESO::Particles::ParticleDatVersionT::sr</definition>
+        <argsstring></argsstring>
+        <name>sr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="42" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a69f3fb6506b40a14568d6af33cf496d1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleDatVersionT::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="43" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a9fab82c6d931e5c1890e1143263908d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleDatVersionT::ParticleDatVersionT</definition>
+        <argsstring>(Sym&lt; INT &gt; s)</argsstring>
+        <name>ParticleDatVersionT</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="45" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1abb787ea7b7656ee0d2b9b9ecdaa5135f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleDatVersionT::ParticleDatVersionT</definition>
+        <argsstring>(Sym&lt; REAL &gt; s)</argsstring>
+        <name>ParticleDatVersionT</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="49" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a959b831b128acba5f0b25a2d52ecf20d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleDatVersionT::ParticleDatVersionT</definition>
+        <argsstring>()</argsstring>
+        <name>ParticleDatVersionT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="53" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a25f6b0ec7198221408f7124a153af7f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref> &amp;</type>
+        <definition>ParticleDatVersionT&amp; NESO::Particles::ParticleDatVersionT::operator=</definition>
+        <argsstring>(const ParticleDatVersionT &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="54" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1adbfc95edfb65bddc6f824b72d7207fe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref> &amp;</type>
+        <definition>ParticleDatVersionT&amp; NESO::Particles::ParticleDatVersionT::operator=</definition>
+        <argsstring>(const Sym&lt; INT &gt; &amp;s)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="55" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1af57e14647d815e7086585c36d1246eb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref> &amp;</type>
+        <definition>ParticleDatVersionT&amp; NESO::Particles::ParticleDatVersionT::operator=</definition>
+        <argsstring>(const Sym&lt; REAL &gt; &amp;s)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="60" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ParticleDatVersionT_1a705d8b290c5a31edb028a326b76f241c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleDatVersionT::operator&lt;</definition>
+        <argsstring>(const ParticleDatVersionT &amp;v) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="65" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="65" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Type to replace std::variant&lt;<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref>, <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref>&gt; as the version tracking key as this has been causing segfaults. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>NESO::Particles::Sym&lt; REAL &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1Sym"/>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::Sym&lt; INT &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1Sym"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ParticleDatVersionT</label>
+        <link refid="structNESO_1_1Particles_1_1ParticleDatVersionT"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>si</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" line="40" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp" bodystart="40" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a69f3fb6506b40a14568d6af33cf496d1" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>index</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a705d8b290c5a31edb028a326b76f241c" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>operator&lt;</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a25f6b0ec7198221408f7124a153af7f0" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>operator=</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1adbfc95edfb65bddc6f824b72d7207fe0" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>operator=</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1af57e14647d815e7086585c36d1246eb7" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>operator=</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a9fab82c6d931e5c1890e1143263908d6" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>ParticleDatVersionT</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1abb787ea7b7656ee0d2b9b9ecdaa5135f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>ParticleDatVersionT</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a959b831b128acba5f0b25a2d52ecf20d" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>ParticleDatVersionT</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a4cab5bdab35d6583dffddd95b1c97159" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>si</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a49c63a96cb041ce1fc2cc7cb0f32f09e" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleDatVersionT</scope><name>sr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

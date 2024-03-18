@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="cell__dat_8hpp" kind="file" language="C++">
+    <compoundname>cell_dat.hpp</compoundname>
+    <includes local="no">CL/sycl.hpp</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">stack</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="access_8hpp" local="yes">access.hpp</includes>
+    <includes refid="compute__target_8hpp" local="yes">compute_target.hpp</includes>
+    <includes refid="profiling_8hpp" local="yes">profiling.hpp</includes>
+    <includes refid="typedefs_8hpp" local="yes">typedefs.hpp</includes>
+    <includedby refid="cell__dat__compression_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</includedby>
+    <includedby refid="cell__dat__move_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <includedby refid="particle__dat_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</includedby>
+    <includedby refid="particle__group_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>access.hpp</label>
+        <link refid="access_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>compute_target.hpp</label>
+        <link refid="compute__target_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="11">
+        <label>cstdint</label>
+      </node>
+      <node id="14">
+        <label>numeric</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>cstdio</label>
+      </node>
+      <node id="20">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>stack</label>
+      </node>
+      <node id="19">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>array</label>
+      </node>
+      <node id="10">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cstdlib</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>chrono</label>
+      </node>
+      <node id="18">
+        <label>mpi.h</label>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move.hpp</label>
+        <link refid="global__move_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp</label>
+        <link refid="local__mapping_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move.hpp</label>
+        <link refid="cell__dat__move_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_move_exchange.hpp</label>
+        <link refid="global__move__exchange_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp_source"/>
+      </node>
+      <node id="16">
+        <label>/tmp/repo-checkout/NESO-Particles/include/packing_unpacking.hpp</label>
+        <link refid="packing__unpacking_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp</label>
+        <link refid="cell__dat__compression_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp</label>
+        <link refid="particle__dat_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/local_move.hpp</label>
+        <link refid="local__move_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/domain.hpp</label>
+        <link refid="domain_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNESO_1_1Particles_1_1CellDataT" prot="public">NESO::Particles::CellDataT</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CellDatConst" prot="public">NESO::Particles::CellDatConst</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1CellDat" prot="public">NESO::Particles::CellDat</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_CELL_DAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_CELL_DAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CL/sycl.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;access.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;compute_target.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;profiling.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NESO::Particles<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classNESO_1_1Particles_1_1CellDataT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>std::format<sp/>is<sp/>C++20.......</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>std::string<sp/>format(INT<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err<sp/>=<sp/>snprintf(buffer,<sp/>128,<sp/></highlight><highlight class="stringliteral">&quot;%ld&quot;</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(buffer);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>std::string<sp/>format(REAL<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err<sp/>=<sp/>snprintf(buffer,<sp/>128,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(buffer);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>std::string<sp/>format(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(1,<sp/>value);<sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>SYCLTargetSharedPtr<sp/>sycl_target;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classNESO_1_1Particles_1_1CellDataT_1a5c4693dd505378c15384bdb21296c3d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a5c4693dd505378c15384bdb21296c3d1" kindref="member">CellDataT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT</ref><sp/>&amp;st)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="classNESO_1_1Particles_1_1CellDataT_1a0b8c2eb41931c16bb092f4e77d565360" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CellDataT_1a0b8c2eb41931c16bb092f4e77d565360" kindref="member">operator=</ref>(<ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;a)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classNESO_1_1Particles_1_1CellDataT_1a35f98601c9df8edee0364daa60c888ec" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::vector&lt;T&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a35f98601c9df8edee0364daa60c888ec" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classNESO_1_1Particles_1_1CellDataT_1a074e298a44600699e2d9595b83a33995" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a074e298a44600699e2d9595b83a33995" kindref="member">CellDataT</ref>(SYCLTargetSharedPtr<sp/>sycl_target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>sycl_target(sycl_target),<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref>(<ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>(<ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;data<sp/>=<sp/>std::vector&lt;std::vector&lt;T&gt;&gt;(<ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;data[colx]<sp/>=<sp/>std::vector&lt;T&gt;(<ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classNESO_1_1Particles_1_1CellDataT_1a40d261b18d22e1c514c5e089168bc066" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;T&gt;<sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CellDataT_1a40d261b18d22e1c514c5e089168bc066" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;data[col];<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classNESO_1_1Particles_1_1CellDataT_1a7239e8ce1c811dc2575c87f422d4593b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a7239e8ce1c811dc2575c87f422d4593b" kindref="member">print</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rowx<sp/>=<sp/>0;<sp/>rowx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref>;<sp/>rowx++)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>this-&gt;format(this-&gt;data[colx][rowx])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>CellData<sp/>=<sp/>std::shared_ptr&lt;CellDataT&lt;T&gt;&gt;;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classNESO_1_1Particles_1_1CellDatConst" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>T<sp/>*d_ptr;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104" refid="classNESO_1_1Particles_1_1CellDatConst_1a9d551075897310caea741a2e05bac9d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a9d551075897310caea741a2e05bac9d8" kindref="member">CellDatConst</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref><sp/>&amp;st)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106" refid="classNESO_1_1Particles_1_1CellDatConst_1a773f946bfeeba849250f19ad292e3342" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a773f946bfeeba849250f19ad292e3342" kindref="member">operator=</ref>(<ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;a)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" refkind="member"><highlight class="normal"><sp/><sp/>SYCLTargetSharedPtr<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>;</highlight></codeline>
+<codeline lineno="111" refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" kindref="member">ncells</ref>;</highlight></codeline>
+<codeline lineno="113" refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref>;</highlight></codeline>
+<codeline lineno="115" refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>~<ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref>()<sp/>{<sp/>sycl::free(this-&gt;d_ptr,<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>-&gt;queue);<sp/>};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classNESO_1_1Particles_1_1CellDatConst_1a5ddbedbf811b2fd433083b14542951df" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a5ddbedbf811b2fd433083b14542951df" kindref="member">CellDatConst</ref>(SYCLTargetSharedPtr<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" kindref="member">ncells</ref>,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>(<ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" kindref="member">ncells</ref>(<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" kindref="member">ncells</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref>(<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>(<ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>),</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stride(<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;d_ptr<sp/>=</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl::malloc_device&lt;T&gt;(<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" kindref="member">ncells</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>,<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>-&gt;queue);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.fill(this-&gt;d_ptr,<sp/>((T)0),<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a8763c16f5be425db164c65e9ad5a44e1" kindref="member">ncells</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.wait();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classNESO_1_1Particles_1_1CellDatConst_1aa60a6a3d78d0406b1d65eabd295d988f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1aa60a6a3d78d0406b1d65eabd295d988f" kindref="member">idx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;stride<sp/>*<sp/>cell)<sp/>+<sp/>(this-&gt;nrow<sp/>*<sp/>col<sp/>+<sp/>row);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classNESO_1_1Particles_1_1CellDatConst_1a0cb0df0ac8345020c683c2d5f047e117" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>*<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a0cb0df0ac8345020c683c2d5f047e117" kindref="member">device_ptr</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;d_ptr;<sp/>};</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classNESO_1_1Particles_1_1CellDatConst_1a177a9d573346877782b07a47fefaf49f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>CellData&lt;T&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1a177a9d573346877782b07a47fefaf49f" kindref="member">get_cell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cell_data<sp/>=<sp/>std::make_shared&lt;CellDataT&lt;T&gt;&gt;(this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDatConst_1af159149ec8ebc2b48cab658e4a80d041" kindref="member">sycl_target</ref>,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDatConst_1a7dc4328fed6965d7dc849bac72096fad" kindref="member">nrow</ref>,<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref><sp/>se;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>se.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data-&gt;data[colx].data(),</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;this-&gt;d_ptr[cell<sp/>*<sp/>this-&gt;stride<sp/>+<sp/>colx<sp/>*<sp/>this-&gt;nrow],</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>se.<ref refid="classNESO_1_1Particles_1_1EventStack_1a6904b30365c9a305408d7db689487aa3" kindref="member">wait</ref>();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cell_data;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185" refid="classNESO_1_1Particles_1_1CellDatConst_1ab86f9f319854dc3a28ed5372e8e3fd5f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDatConst_1ab86f9f319854dc3a28ed5372e8e3fd5f" kindref="member">set_cell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell,<sp/>CellData&lt;T&gt;<sp/>cell_data)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data-&gt;nrow<sp/>&gt;=<sp/>this-&gt;nrow,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellData<sp/>as<sp/>insuffient<sp/>row<sp/>count.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data-&gt;ncol<sp/>&gt;=<sp/>this-&gt;ncol,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellData<sp/>as<sp/>insuffient<sp/>column<sp/>count.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref><sp/>se;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDatConst_1ac4ca81e668841fe1c94134cbc4aed853" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>se.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;this-&gt;d_ptr[cell<sp/>*<sp/>this-&gt;stride<sp/>+<sp/>colx<sp/>*<sp/>this-&gt;nrow],</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data-&gt;data[colx].data(),<sp/>this-&gt;nrow<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)));</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>se.<ref refid="classNESO_1_1Particles_1_1EventStack_1a6904b30365c9a305408d7db689487aa3" kindref="member">wait</ref>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="classNESO_1_1Particles_1_1CellDat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>T<sp/>***d_ptr;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>std::vector&lt;T<sp/>**&gt;<sp/>h_ptr_cells;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>std::vector&lt;T<sp/>*&gt;<sp/>h_ptr_cols;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrow_max<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref><sp/>stack_events;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>std::stack&lt;T<sp/>*&gt;<sp/>stack_ptrs;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="220" refid="classNESO_1_1Particles_1_1CellDat_1a1612409d20c89d5d2f4f96d9a9246f4b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a1612409d20c89d5d2f4f96d9a9246f4b" kindref="member">CellDat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref><sp/>&amp;st)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222" refid="classNESO_1_1Particles_1_1CellDat_1a2838258a95f1d5b8784578e4c81e2698" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1CellDat_1a2838258a95f1d5b8784578e4c81e2698" kindref="member">operator=</ref>(<ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;a)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" refkind="member"><highlight class="normal"><sp/><sp/>SYCLTargetSharedPtr<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>;</highlight></codeline>
+<codeline lineno="227" refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>;</highlight></codeline>
+<codeline lineno="229" refid="classNESO_1_1Particles_1_1CellDat_1adf2f33e82dcd4856a767208d57dc1983" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;INT&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1adf2f33e82dcd4856a767208d57dc1983" kindref="member">nrow</ref>;</highlight></codeline>
+<codeline lineno="231" refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;</highlight></codeline>
+<codeline lineno="233" refid="classNESO_1_1Particles_1_1CellDat_1a47aea2900fd6a7a9a76f23aa82cfb69b" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;INT&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a47aea2900fd6a7a9a76f23aa82cfb69b" kindref="member">nrow_alloc</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>~<ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>;<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;free(this-&gt;h_ptr_cells[cellx]);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref><sp/>*<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;h_ptr_cols[colx]<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;free(this-&gt;h_ptr_cols[colx]);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;free(this-&gt;d_ptr);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="classNESO_1_1Particles_1_1CellDat_1a8223d8fa58e271af716380574355f0d7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a8223d8fa58e271af716380574355f0d7" kindref="member">CellDat</ref>(SYCLTargetSharedPtr<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>,</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>(<ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>(<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>),<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>(<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>),<sp/>nrow_max(0)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nrow<sp/>=<sp/>std::vector&lt;INT&gt;(<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;d_ptr<sp/>=</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(T<sp/>***)this-&gt;sycl_target-&gt;malloc_device(<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T<sp/>**));</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cells<sp/>=<sp/>std::vector&lt;T<sp/>**&gt;(<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols<sp/>=<sp/>std::vector&lt;T<sp/>*&gt;(<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref><sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nrow_alloc<sp/>=<sp/>std::vector&lt;INT&gt;(<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>;<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow_alloc[cellx]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow[cellx]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cells[cellx]<sp/>=</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(T<sp/>**)this-&gt;sycl_target-&gt;malloc_device(<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T<sp/>*));</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols[cellx<sp/>*<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref><sp/>+<sp/>colx]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;queue.memcpy(d_ptr,<sp/>this-&gt;h_ptr_cells.data(),</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T<sp/>*));</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.wait();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="classNESO_1_1Particles_1_1CellDat_1ac3541457758308f4b979ff270fde8794" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ac3541457758308f4b979ff270fde8794" kindref="member">set_nrow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>cell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>nrow_required)<sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t0<sp/>=<sp/>profile_timestamp();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell<sp/>&gt;=<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Cell<sp/>index<sp/>is<sp/>negative&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Cell<sp/>index<sp/>is<sp/>&gt;=<sp/>ncells&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(nrow_required<sp/>&gt;=<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;Requested<sp/>number<sp/>of<sp/>rows<sp/>is<sp/>negative&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrow_required<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1adf2f33e82dcd4856a767208d57dc1983" kindref="member">nrow</ref>[cell])<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow[cell]<sp/>=<sp/>nrow_required;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow_max<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;profile_map.inc(</highlight><highlight class="stringliteral">&quot;CellDat&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;set_nrow&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile_elapsed(t0,<sp/>profile_timestamp()));</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>nrow_alloced<sp/>=<sp/>this-&gt;nrow_alloc[cell];</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INT<sp/>nrow_existing<sp/>=<sp/>this-&gt;nrow[cell];</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrow_required<sp/>!=<sp/>nrow_existing)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrow_required<sp/>&gt;<sp/>nrow_alloced)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*col_ptr_old<sp/>=<sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>colx];</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;stack_ptrs.push(col_ptr_old);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*col_ptr_new<sp/>=</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(T<sp/>*)this-&gt;sycl_target-&gt;malloc_device(nrow_required<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NESOASSERT(col_ptr_new<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bad<sp/>pointer<sp/>from<sp/>malloc_device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrow_alloced<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;stack_events.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col_ptr_new,<sp/>col_ptr_old,<sp/>nrow_existing<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)));</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>colx]<sp/>=<sp/>col_ptr_new;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow_alloc[cell]<sp/>=<sp/>nrow_required;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;stack_events.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(<ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cells[cell],<sp/>&amp;this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol],</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;ncol<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T<sp/>*)));</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow[cell]<sp/>=<sp/>nrow_required;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow_max<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;profile_map.inc(</highlight><highlight class="stringliteral">&quot;CellDat&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;set_nrow&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile_elapsed(t0,<sp/>profile_timestamp()));</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="classNESO_1_1Particles_1_1CellDat_1a9f37c5dfbcc18d9e7fdea2bc2363cc65" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a9f37c5dfbcc18d9e7fdea2bc2363cc65" kindref="member">wait_set_nrow</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>events<sp/>-<sp/>memcpys</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;stack_events.<ref refid="classNESO_1_1Particles_1_1EventStack_1a6904b30365c9a305408d7db689487aa3" kindref="member">wait</ref>();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>can<sp/>now<sp/>free<sp/>the<sp/>pointers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!this-&gt;stack_ptrs.empty())<sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ptr<sp/>=<sp/>this-&gt;stack_ptrs.top();</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;free(ptr);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;stack_ptrs.pop();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="classNESO_1_1Particles_1_1CellDat_1a9da9e602bcf86ab73c249b094a4bedc2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a9da9e602bcf86ab73c249b094a4bedc2" kindref="member">compute_nrow_max</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nrow_max<sp/>=</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*std::max_element(std::begin(this-&gt;nrow),<sp/>std::end(this-&gt;nrow));</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;nrow_max;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="classNESO_1_1Particles_1_1CellDat_1af0899e1ce1a5974bb40db6ea556a0509" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1af0899e1ce1a5974bb40db6ea556a0509" kindref="member">get_nrow_max</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow_max<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1a9da9e602bcf86ab73c249b094a4bedc2" kindref="member">compute_nrow_max</ref>();</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;nrow_max;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="classNESO_1_1Particles_1_1CellDat_1ab892cccd210e814ff26c6cbda5b9b4ee" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>CellData&lt;T&gt;<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ab892cccd210e814ff26c6cbda5b9b4ee" kindref="member">get_cell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell)<sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t0<sp/>=<sp/>profile_timestamp();</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cell_data<sp/>=<sp/>std::make_shared&lt;CellDataT&lt;T&gt;&gt;(</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>,<sp/>this-&gt;nrow[cell],<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow[cell]<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data-&gt;data[colx].data(),</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>colx],</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow[cell]<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.wait();</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;profile_map.inc(</highlight><highlight class="stringliteral">&quot;CellDat&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;get_cell&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile_elapsed(t0,<sp/>profile_timestamp()));</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cell_data;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407" refid="classNESO_1_1Particles_1_1CellDat_1a73db3b4bb62cf56337cf6324e89d987d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a73db3b4bb62cf56337cf6324e89d987d" kindref="member">get_cell_async</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell,<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT&lt;T&gt;</ref><sp/>&amp;cell_data,</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref><sp/>&amp;event_stack)<sp/>{</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t0<sp/>=<sp/>profile_timestamp();</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data.<ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref><sp/>&gt;=<sp/>this-&gt;nrow[cell],</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellDataT<sp/>has<sp/>insufficent<sp/>number<sp/>of<sp/>rows&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data.<ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref><sp/>&gt;=<sp/>this-&gt;ncol,</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellDataT<sp/>has<sp/>insufficent<sp/>number<sp/>of<sp/>columns&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow[cell]<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event_stack.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data.<ref refid="classNESO_1_1Particles_1_1CellDataT_1a35f98601c9df8edee0364daa60c888ec" kindref="member">data</ref>[colx].data(),</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>colx],</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;nrow[cell]<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)));</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;profile_map.inc(</highlight><highlight class="stringliteral">&quot;CellDat&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;get_cell_async&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile_elapsed(t0,<sp/>profile_timestamp()));</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436" refid="classNESO_1_1Particles_1_1CellDat_1a9ce5fe09a9def51739e97b1b541d0495" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a9ce5fe09a9def51739e97b1b541d0495" kindref="member">set_cell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell,<sp/>CellData&lt;T&gt;<sp/>cell_data)<sp/>{</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t0<sp/>=<sp/>profile_timestamp();</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data-&gt;nrow<sp/>&gt;=<sp/>this-&gt;nrow[cell],</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellData<sp/>as<sp/>insuffient<sp/>row<sp/>count.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data-&gt;ncol<sp/>&gt;=<sp/>this-&gt;ncol,</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellData<sp/>as<sp/>insuffient<sp/>column<sp/>count.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow[cell]<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>colx],</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data-&gt;data[colx].data(),<sp/>this-&gt;nrow[cell]<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T));</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target-&gt;queue.wait();</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;profile_map.inc(</highlight><highlight class="stringliteral">&quot;CellDat&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;set_cell&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile_elapsed(t0,<sp/>profile_timestamp()));</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="classNESO_1_1Particles_1_1CellDat_1a0da9505c86e721950d87c64a42263b5d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a0da9505c86e721950d87c64a42263b5d" kindref="member">set_cell_async</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell,<sp/><ref refid="classNESO_1_1Particles_1_1CellDataT" kindref="compound">CellDataT&lt;T&gt;</ref><sp/>&amp;cell_data,</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref><sp/>&amp;event_stack)<sp/>{</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t0<sp/>=<sp/>profile_timestamp();</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data.<ref refid="classNESO_1_1Particles_1_1CellDataT_1af8a83e5ff0c5472706a3f316b44b1d5e" kindref="member">nrow</ref><sp/>&gt;=<sp/>this-&gt;nrow[cell],</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellData<sp/>as<sp/>insuffient<sp/>row<sp/>count.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>NESOASSERT(cell_data.<ref refid="classNESO_1_1Particles_1_1CellDataT_1a87ea64d751cc9b9991a139ba9966498d" kindref="member">ncol</ref><sp/>&gt;=<sp/>this-&gt;ncol,</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CellData<sp/>as<sp/>insuffient<sp/>column<sp/>count.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;nrow[cell]<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab076ffb3d534e96b4e420e637c311e01" kindref="member">ncol</ref>;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>event_stack.<ref refid="classNESO_1_1Particles_1_1EventStack_1aee8a0be331891915bf8dccd4359aea20" kindref="member">push</ref>(this-&gt;sycl_target-&gt;queue.memcpy(</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>colx],</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data.<ref refid="classNESO_1_1Particles_1_1CellDataT_1a35f98601c9df8edee0364daa60c888ec" kindref="member">data</ref>[colx].data(),<sp/>this-&gt;nrow[cell]<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T)));</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a6193266152265fe7e24d726a0aaade43" kindref="member">sycl_target</ref>-&gt;profile_map.inc(</highlight><highlight class="stringliteral">&quot;CellDat&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;set_cell_async&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile_elapsed(t0,<sp/>profile_timestamp()));</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494" refid="classNESO_1_1Particles_1_1CellDat_1a3336c29bf70884484f342a378c5e5df9" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>***<ref refid="classNESO_1_1Particles_1_1CellDat_1a3336c29bf70884484f342a378c5e5df9" kindref="member">device_ptr</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;d_ptr;<sp/>};</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503" refid="classNESO_1_1Particles_1_1CellDat_1aabd661d502c996945f0523075f04f856" refkind="member"><highlight class="normal"><sp/><sp/>T<sp/>*<ref refid="classNESO_1_1Particles_1_1CellDat_1aabd661d502c996945f0523075f04f856" kindref="member">col_device_ptr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col)<sp/>{</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;h_ptr_cols[cell<sp/>*<sp/>this-&gt;ncol<sp/>+<sp/>col];</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514" refid="classNESO_1_1Particles_1_1CellDat_1ad546a3f2e5b40a3523baa0ceb12d1aa4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1ad546a3f2e5b40a3523baa0ceb12d1aa4" kindref="member">print</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>-1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/>start<sp/>=<sp/>(start<sp/>&lt;<sp/>0)<sp/>?<sp/>0<sp/>:<sp/>start;</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>end<sp/>=<sp/>(end<sp/>&lt;<sp/>0)<sp/>?<sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1afe91231f3a7dc05dd0db26383357e310" kindref="member">ncells</ref><sp/>:<sp/>end;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx<sp/>=<sp/>start;<sp/>cx<sp/>&lt;<sp/>end;<sp/>cx++)<sp/>{</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-------<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cell<sp/>=<sp/>this-&gt;<ref refid="classNESO_1_1Particles_1_1CellDat_1ab892cccd210e814ff26c6cbda5b9b4ee" kindref="member">get_cell</ref>(cx);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cell-&gt;print();</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-----------------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532" refid="classNESO_1_1Particles_1_1CellDat_1a7de6b79686658384c7f44f7367f73143" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1CellDat_1a7de6b79686658384c7f44f7367f73143" kindref="member">row_size</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)this-&gt;ncol)<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T);<sp/>}</highlight></codeline>
+<codeline lineno="533"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat.hpp"/>
+  </compounddef>
+</doxygen>

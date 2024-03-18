@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1BufferHost" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::BufferHost</compoundname>
+    <basecompoundref refid="classNESO_1_1Particles_1_1BufferBase" prot="public" virt="non-virtual">NESO::Particles::BufferBase&lt; T &gt;</basecompoundref>
+    <includes refid="compute__target_8hpp" local="no">compute_target.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>T *</type>
+        <definition>virtual T* NESO::Particles::BufferHost&lt; T &gt;::malloc_wrapper</definition>
+        <argsstring>(const std::size_t num_bytes) override</argsstring>
+        <name>malloc_wrapper</name>
+        <reimplements refid="classNESO_1_1Particles_1_1BufferBase_1af7d84ef8e5d2df1cb9809627662db794">malloc_wrapper</reimplements>
+        <param>
+          <type>const std::size_t</type>
+          <declname>num_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="514" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="514" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1a5c88dc54a1b4cf1c5e243c2ded7e0f15" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::BufferHost&lt; T &gt;::free_wrapper</definition>
+        <argsstring>(T *ptr) override</argsstring>
+        <name>free_wrapper</name>
+        <reimplements refid="classNESO_1_1Particles_1_1BufferBase_1a08f1396df310f41a669ba2958fb3ce9f">free_wrapper</reimplements>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="517" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="517" bodyend="519"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1ad50c8481769546787ab629bdd152ea2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferHost&lt; T &gt;::BufferHost</definition>
+        <argsstring>(const BufferHost &amp;st)=delete</argsstring>
+        <name>BufferHost</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="523" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1a625118154c8248135f1373fd36efc2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref> &amp;</type>
+        <definition>BufferHost&amp; NESO::Particles::BufferHost&lt; T &gt;::operator=</definition>
+        <argsstring>(BufferHost const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="525" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1af3a79babe6b0874a2594c3655813e45d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferHost&lt; T &gt;::BufferHost</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, size_t size)</argsstring>
+        <name>BufferHost</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref> of a given number of elements.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="533" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="533" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1a91f777832d21db0b5654440e04deaed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferHost&lt; T &gt;::BufferHost</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, const std::vector&lt; T &gt; &amp;vec)</argsstring>
+        <name>BufferHost</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref> from a std::vector. Note, this does not operate like a sycl::buffer and is a copy of the source vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy data from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="545" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="545" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferHost_1a3a455c68f58ed3c5134e294c768135c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferHost&lt; T &gt;::~BufferHost</definition>
+        <argsstring>()</argsstring>
+        <name>~BufferHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="550" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="550" bodyend="550"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Container around USM host allocated memory that can be resized. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NESO::Particles::BufferBase&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferBase"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::BufferHost&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NESO::Particles::BufferBase&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferBase"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::BufferHost&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="512" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="512" bodyend="551"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a9afa08d6887c98eac5ecd6b1122f2bac" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>assert_allocated</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a4c88a1e8642563dbe58b26f035d42010" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>BufferBase</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1ad50c8481769546787ab629bdd152ea2c" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>BufferHost</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1af3a79babe6b0874a2594c3655813e45d" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>BufferHost</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1a91f777832d21db0b5654440e04deaed3" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>BufferHost</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1a5c88dc54a1b4cf1c5e243c2ded7e0f15" prot="protected" virt="virtual"><scope>NESO::Particles::BufferHost</scope><name>free_wrapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1aff8a6488dfe7c319b1d3b6cf00e432a5" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>generic_free</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae7117c28e09351b63bf666eded1583ca" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>generic_init</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a7574fdbba3df6fd9d47eeeb616efcc08" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae56bd99f1ca953323d3e9450dd4a15ff" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae77b2e1f9d942deb752bc0497be5d84e" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>get_async</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982" prot="protected" virt="virtual"><scope>NESO::Particles::BufferHost</scope><name>malloc_wrapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1a625118154c8248135f1373fd36efc2ba" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a4fa4e9e6d9ee4062b32ad8423ac2d5c6" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>ptr</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1abc60eb9a9d24f1f1113a1b0f9bfe5247" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>realloc_no_copy</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae989a4598f4df4e39bf70e6d3e6c8f33" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>set</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a169e070870fe8f13b1f2d659b2cb78b0" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>set_async</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a3524b68561d41cef6d751619ec350302" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>size</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ababd32d56ecd6ff5928b5871273f2857" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>size_bytes</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1aa4087d350a7b29359e57c29c0fbf03e1" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferHost_1a3a455c68f58ed3c5134e294c768135c4" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferHost</scope><name>~BufferHost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

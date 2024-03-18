@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; T&lt; std::shared_ptr&lt; U &gt; &gt; &gt;</compoundname>
+    <includes refid="particle__loop_8hpp" local="no">particle_loop.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>template&lt; typename &gt; typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename U</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4_1af24391a0de8a3c55a6d945cdc03565a9" prot="public" static="no">
+        <type>typename <ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" kindref="compound">LoopParameter</ref>&lt; T&lt; U &gt; &gt;::<ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4_1af24391a0de8a3c55a6d945cdc03565a9" kindref="member">type</ref></type>
+        <definition>using NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; T&lt; std::shared_ptr&lt; U &gt; &gt; &gt;::type =  typename LoopParameter&lt;T&lt;U&gt; &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="122" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Catch all for args passed as shared ptrs </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="121" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="121" bodyend="123"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4_1af24391a0de8a3c55a6d945cdc03565a9" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; T&lt; std::shared_ptr&lt; U &gt; &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

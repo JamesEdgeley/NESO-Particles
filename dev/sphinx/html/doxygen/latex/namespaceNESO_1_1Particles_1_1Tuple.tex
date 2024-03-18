@@ -1,0 +1,65 @@
+\hypertarget{namespaceNESO_1_1Particles_1_1Tuple}{}\doxysection{NESO\+::Particles\+::Tuple Namespace Reference}
+\label{namespaceNESO_1_1Particles_1_1Tuple}\index{NESO::Particles::Tuple@{NESO::Particles::Tuple}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1TupleImpl}{Tuple\+Impl}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1TupleBaseRec}{Tuple\+Base\+Rec}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1TupleBaseRec_3_01INDEX_00_01U_00_01V_8_8_8_01_4}{Tuple\+Base\+Rec$<$ INDEX, U, V... $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1GetIndexType}{Get\+Index\+Type}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1GetIndexType_3_010_00_01T_00_01U_8_8_8_01_4}{Get\+Index\+Type$<$ 0, T, U... $>$}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1IntSequence}{Int\+Sequence}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence}{Generate\+Int\+Sequence}}
+\item 
+struct \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence_3_010_00_01S_8_8_8_01_4}{Generate\+Int\+Sequence$<$ 0, S... $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t INDEX, typename... U$>$ }\\auto \& \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Tuple_ad8460cb9999e2f20091ed925d957d035}{get}} (\mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ U... $>$ \&u)
+\item 
+{\footnotesize template$<$size\+\_\+t INDEX, typename... U$>$ }\\const auto \& \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Tuple_a5c955ed06bd2639704bee5c012b49aa7}{get}} (const \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ U... $>$ \&u)
+\item 
+{\footnotesize template$<$typename KERNEL , size\+\_\+t... S, typename... ARGS$>$ }\\auto \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Tuple_a5f612c16a11a9637a24c973bc0562da5}{apply\+\_\+inner}} (KERNEL \&kernel, \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1IntSequence}{Int\+Sequence}}$<$ S... $>$, \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ ARGS... $>$ \&args)
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\auto \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Tuple_aedb8f9eaf627021cd3aa1df8b4d669a4}{apply}} (KERNEL kernel, \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ ARGS... $>$ \&args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Tuple_aedb8f9eaf627021cd3aa1df8b4d669a4}\label{namespaceNESO_1_1Particles_1_1Tuple_aedb8f9eaf627021cd3aa1df8b4d669a4}} 
+\index{NESO::Particles::Tuple@{NESO::Particles::Tuple}!apply@{apply}}
+\index{apply@{apply}!NESO::Particles::Tuple@{NESO::Particles::Tuple}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily template$<$typename KERNEL , typename... ARGS$>$ \\
+auto NESO\+::\+Particles\+::\+Tuple\+::apply (\begin{DoxyParamCaption}\item[{KERNEL}]{kernel,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ ARGS... $>$ \&}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Tuple_a5f612c16a11a9637a24c973bc0562da5}\label{namespaceNESO_1_1Particles_1_1Tuple_a5f612c16a11a9637a24c973bc0562da5}} 
+\index{NESO::Particles::Tuple@{NESO::Particles::Tuple}!apply\_inner@{apply\_inner}}
+\index{apply\_inner@{apply\_inner}!NESO::Particles::Tuple@{NESO::Particles::Tuple}}
+\doxysubsubsection{\texorpdfstring{apply\_inner()}{apply\_inner()}}
+{\footnotesize\ttfamily template$<$typename KERNEL , size\+\_\+t... S, typename... ARGS$>$ \\
+auto NESO\+::\+Particles\+::\+Tuple\+::apply\+\_\+inner (\begin{DoxyParamCaption}\item[{KERNEL \&}]{kernel,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1IntSequence}{Int\+Sequence}}$<$ S... $>$}]{,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ ARGS... $>$ \&}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Tuple_a5c955ed06bd2639704bee5c012b49aa7}\label{namespaceNESO_1_1Particles_1_1Tuple_a5c955ed06bd2639704bee5c012b49aa7}} 
+\index{NESO::Particles::Tuple@{NESO::Particles::Tuple}!get@{get}}
+\index{get@{get}!NESO::Particles::Tuple@{NESO::Particles::Tuple}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t INDEX, typename... U$>$ \\
+const auto\& NESO\+::\+Particles\+::\+Tuple\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ U... $>$ \&}]{u }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceNESO_1_1Particles_1_1Tuple_ad8460cb9999e2f20091ed925d957d035}\label{namespaceNESO_1_1Particles_1_1Tuple_ad8460cb9999e2f20091ed925d957d035}} 
+\index{NESO::Particles::Tuple@{NESO::Particles::Tuple}!get@{get}}
+\index{get@{get}!NESO::Particles::Tuple@{NESO::Particles::Tuple}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$size\+\_\+t INDEX, typename... U$>$ \\
+auto\& NESO\+::\+Particles\+::\+Tuple\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Tuple_1_1Tuple}{Tuple}}$<$ U... $>$ \&}]{u }\end{DoxyParamCaption})}
+

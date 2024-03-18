@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1BufferBase" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>NESO::Particles::BufferBase</compoundname>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; REAL &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; int &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; INT &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; char &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; REAL *** &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; INT *** &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; REAL &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; int &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; MPI_Request &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; INT &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; MPI_Status &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; char &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; REAL *** &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; INT *** &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferDevice" prot="public" virt="non-virtual">NESO::Particles::BufferDevice&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferHost" prot="public" virt="non-virtual">NESO::Particles::BufferHost&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1BufferShared" prot="public" virt="non-virtual">NESO::Particles::BufferShared&lt; T &gt;</derivedcompoundref>
+    <includes refid="compute__target_8hpp" local="no">compute_target.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferBase_1aa4087d350a7b29359e57c29c0fbf03e1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::BufferBase&lt; T &gt;::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>Compute device used by the instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="320" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferBase_1a4fa4e9e6d9ee4062b32ad8423ac2d5c6" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* NESO::Particles::BufferBase&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+<para>SYCL USM pointer to data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="322" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferBase_1a3524b68561d41cef6d751619ec350302" prot="public" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t NESO::Particles::BufferBase&lt; T &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Number of elements allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="324" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1af7d84ef8e5d2df1cb9809627662db794" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>T *</type>
+        <definition>virtual T* NESO::Particles::BufferBase&lt; T &gt;::malloc_wrapper</definition>
+        <argsstring>(const std::size_t num_bytes)=0</argsstring>
+        <name>malloc_wrapper</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1abaa600d953d48844ca62dc35beb5cfd5">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferShared_1aeb4391bc97436634530dc9d5afd708f2">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a4021d447d00078a6cbc912256336a982">malloc_wrapper</reimplementedby>
+        <param>
+          <type>const std::size_t</type>
+          <declname>num_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="293" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1a08f1396df310f41a669ba2958fb3ce9f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::BufferBase&lt; T &gt;::free_wrapper</definition>
+        <argsstring>(T *ptr)=0</argsstring>
+        <name>free_wrapper</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferDevice_1a741fa9b6b7334f2ba614219ad7840174">free_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferShared_1a44b9eba712ad6292867c5397d04e126f">free_wrapper</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1BufferHost_1a5c88dc54a1b4cf1c5e243c2ded7e0f15">free_wrapper</reimplementedby>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="294" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1ae7117c28e09351b63bf666eded1583ca" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferBase&lt; T &gt;::generic_init</definition>
+        <argsstring>()</argsstring>
+        <name>generic_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="296" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="296" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1aff8a6488dfe7c319b1d3b6cf00e432a5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferBase&lt; T &gt;::generic_free</definition>
+        <argsstring>()</argsstring>
+        <name>generic_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="303" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="303" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1a4c88a1e8642563dbe58b26f035d42010" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferBase&lt; T &gt;::BufferBase</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, std::size_t size)</argsstring>
+        <name>BufferBase</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="310" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="310" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1a9afa08d6887c98eac5ecd6b1122f2bac" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferBase&lt; T &gt;::assert_allocated</definition>
+        <argsstring>()</argsstring>
+        <name>assert_allocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="313" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="313" bodyend="316"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1ababd32d56ecd6ff5928b5871273f2857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t NESO::Particles::BufferBase&lt; T &gt;::size_bytes</definition>
+        <argsstring>()</argsstring>
+        <name>size_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size of the allocation in bytes.</para>
+<para><simplesect kind="return"><para>size of buffer in bytes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="331" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="331" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1abc60eb9a9d24f1f1113a1b0f9bfe5247" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::BufferBase&lt; T &gt;::realloc_no_copy</definition>
+        <argsstring>(const std::size_t size)</argsstring>
+        <name>realloc_no_copy</name>
+        <param>
+          <type>const std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reallocate the buffer to hold at least the requested number of elements. May or may not reduce the buffer size if called with a size less than the current allocation. Current contents is not copied to the new buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum number of elements this buffer should be able to hold. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="340" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="340" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1a169e070870fe8f13b1f2d659b2cb78b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::BufferBase&lt; T &gt;::set_async</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>set_async</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asynchronously set the values in the buffer to those in a std::vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Event to wait on before using new values in the buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="356" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="356" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1ae989a4598f4df4e39bf70e6d3e6c8f33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferBase&lt; T &gt;::set</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the values in the buffer to those in a std::vector. Blocks until the copy is complete.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="376" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="376" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1ae77b2e1f9d942deb752bc0497be5d84e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::BufferBase&lt; T &gt;::get_async</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>get_async</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asynchronously get the values in the buffer into a std::vector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from buffer into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Event to wait on before using new values in the std::vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="386" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="386" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1a7574fdbba3df6fd9d47eeeb616efcc08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferBase&lt; T &gt;::get</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;data)</argsstring>
+        <name>get</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the values in the buffer into a std::vector. Blocks until copy is complete.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input vector to copy values from buffer into. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="404" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="404" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferBase_1ae56bd99f1ca953323d3e9450dd4a15ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; NESO::Particles::BufferBase&lt; T &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the values in the buffer into a std::vector.</para>
+<para><simplesect kind="return"><para>std::vector of values in the buffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="413" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="413" bodyend="417"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>NESO::Particles::BufferDevice&lt; INT &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NESO::Particles::BufferDevice&lt; int &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>NESO::Particles::BufferDevice&lt; char &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>NESO::Particles::BufferHost&lt; REAL &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::BufferBase&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferBase"/>
+      </node>
+      <node id="15">
+        <label>NESO::Particles::BufferHost&lt; INT *** &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>NESO::Particles::BufferDevice&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>NESO::Particles::BufferHost&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>NESO::Particles::BufferDevice&lt; REAL *** &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>NESO::Particles::BufferHost&lt; char &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>NESO::Particles::BufferHost&lt; int &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>NESO::Particles::BufferHost&lt; MPI_Request &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>NESO::Particles::BufferHost&lt; REAL *** &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>NESO::Particles::BufferShared&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferShared"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>NESO::Particles::BufferDevice&lt; INT *** &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>NESO::Particles::BufferHost&lt; INT &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::BufferDevice&lt; REAL &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDevice"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>NESO::Particles::BufferHost&lt; MPI_Status &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferHost"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="291" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="291" bodyend="418"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a9afa08d6887c98eac5ecd6b1122f2bac" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>assert_allocated</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a4c88a1e8642563dbe58b26f035d42010" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>BufferBase</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a08f1396df310f41a669ba2958fb3ce9f" prot="protected" virt="pure-virtual"><scope>NESO::Particles::BufferBase</scope><name>free_wrapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1aff8a6488dfe7c319b1d3b6cf00e432a5" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>generic_free</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae7117c28e09351b63bf666eded1583ca" prot="protected" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>generic_init</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a7574fdbba3df6fd9d47eeeb616efcc08" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae56bd99f1ca953323d3e9450dd4a15ff" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae77b2e1f9d942deb752bc0497be5d84e" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>get_async</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1af7d84ef8e5d2df1cb9809627662db794" prot="protected" virt="pure-virtual"><scope>NESO::Particles::BufferBase</scope><name>malloc_wrapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a4fa4e9e6d9ee4062b32ad8423ac2d5c6" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>ptr</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1abc60eb9a9d24f1f1113a1b0f9bfe5247" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>realloc_no_copy</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ae989a4598f4df4e39bf70e6d3e6c8f33" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>set</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a169e070870fe8f13b1f2d659b2cb78b0" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>set_async</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1a3524b68561d41cef6d751619ec350302" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>size</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1ababd32d56ecd6ff5928b5871273f2857" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>size_bytes</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferBase_1aa4087d350a7b29359e57c29c0fbf03e1" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferBase</scope><name>sycl_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

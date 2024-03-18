@@ -1,0 +1,92 @@
+\hypertarget{classNESO_1_1Particles_1_1BufferShared}{}\doxysection{NESO\+::Particles\+::Buffer\+Shared$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1BufferShared}\index{NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_a91c299ec16175789b18652f3a0fae96b}\label{classNESO_1_1Particles_1_1BufferShared_a91c299ec16175789b18652f3a0fae96b}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a91c299ec16175789b18652f3a0fae96b}{Buffer\+Shared}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{Buffer\+Shared}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_af7af79fef0f14a716b5cca8244187a3f}\label{classNESO_1_1Particles_1_1BufferShared_af7af79fef0f14a716b5cca8244187a3f}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{Buffer\+Shared}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_af7af79fef0f14a716b5cca8244187a3f}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{Buffer\+Shared}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a5b3384f4322ce3fc7f4f21fc93ad26c1}{Buffer\+Shared}} (SYCLTarget\+Shared\+Ptr \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a3c970a765f8c30f1dec44529414e5b0b}{sycl\+\_\+target}}, size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_aa3f5a8d891bed338f0b33fe8fe17142c}{size}})
+\item 
+size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a8c9ebaaea4e835bb8cbc6879bba5cabc}{size\+\_\+bytes}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_ac7ca0d59969d2e069598aa7b86c3711d}{realloc\+\_\+no\+\_\+copy}} (const size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_aa3f5a8d891bed338f0b33fe8fe17142c}{size}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_a3c970a765f8c30f1dec44529414e5b0b}\label{classNESO_1_1Particles_1_1BufferShared_a3c970a765f8c30f1dec44529414e5b0b}} 
+SYCLTarget\+Shared\+Ptr \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a3c970a765f8c30f1dec44529414e5b0b}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_a47a1e9fd7d34204927f52799d7a87a73}\label{classNESO_1_1Particles_1_1BufferShared_a47a1e9fd7d34204927f52799d7a87a73}} 
+T $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a47a1e9fd7d34204927f52799d7a87a73}{ptr}}
+\begin{DoxyCompactList}\small\item\em SYCL USM shared pointer, accessible on host and device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_aa3f5a8d891bed338f0b33fe8fe17142c}\label{classNESO_1_1Particles_1_1BufferShared_aa3f5a8d891bed338f0b33fe8fe17142c}} 
+size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_aa3f5a8d891bed338f0b33fe8fe17142c}{size}}
+\begin{DoxyCompactList}\small\item\em Number of elements allocated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Buffer\+Shared$<$ T $>$}
+
+Container around USM shared allocated memory that can be resized. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_a5b3384f4322ce3fc7f4f21fc93ad26c1}\label{classNESO_1_1Particles_1_1BufferShared_a5b3384f4322ce3fc7f4f21fc93ad26c1}} 
+\index{NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}!BufferShared@{BufferShared}}
+\index{BufferShared@{BufferShared}!NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferShared()}{BufferShared()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{NESO\+::\+Particles\+::\+Buffer\+Shared}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{Buffer\+Shared}} (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new Device\+Shared of a given number of elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em size} & Number of elements. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_ac7ca0d59969d2e069598aa7b86c3711d}\label{classNESO_1_1Particles_1_1BufferShared_ac7ca0d59969d2e069598aa7b86c3711d}} 
+\index{NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}!realloc\_no\_copy@{realloc\_no\_copy}}
+\index{realloc\_no\_copy@{realloc\_no\_copy}!NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{realloc\_no\_copy()}{realloc\_no\_copy()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{NESO\+::\+Particles\+::\+Buffer\+Shared}}$<$ T $>$\+::realloc\+\_\+no\+\_\+copy (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reallocate the buffer to hold at least the requested number of elements. May or may not reduce the buffer size if called with a size less than the current allocation. Current contents is not copied to the new buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Minimum number of elements this buffer should be able to hold. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferShared_a8c9ebaaea4e835bb8cbc6879bba5cabc}\label{classNESO_1_1Particles_1_1BufferShared_a8c9ebaaea4e835bb8cbc6879bba5cabc}} 
+\index{NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}!size\_bytes@{size\_bytes}}
+\index{size\_bytes@{size\_bytes}!NESO::Particles::BufferShared$<$ T $>$@{NESO::Particles::BufferShared$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size\_bytes()}{size\_bytes()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared}{NESO\+::\+Particles\+::\+Buffer\+Shared}}$<$ T $>$\+::size\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the size of the allocation in bytes.
+
+\begin{DoxyReturn}{Returns}
+size of buffer in bytes. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/compute\+\_\+target.\+hpp\end{DoxyCompactItemize}

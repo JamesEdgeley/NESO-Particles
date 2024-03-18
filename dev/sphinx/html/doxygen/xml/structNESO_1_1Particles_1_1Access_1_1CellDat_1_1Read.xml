@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::CellDat::Read</compoundname>
+    <includes refid="containers_2cell__dat_8hpp" local="no">cell_dat.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1ab8fd50db1ca8a4cec340e9d0a57c7740" prot="public" static="no" mutable="no">
+        <type>T *const  *const  *</type>
+        <definition>T* const* const* NESO::Particles::Access::CellDat::Read&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="23" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1ad593598f7cc3b57b541799afef9c161e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::CellDat::Read&lt; T &gt;::cell</definition>
+        <argsstring></argsstring>
+        <name>cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="24" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1aefef3231d82d2ba9dbcb1ee432c31684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::CellDat::Read&lt; T &gt;::Read</definition>
+        <argsstring>()=default</argsstring>
+        <name>Read</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1aa4a2d57eb01f4a77fc47858e952577ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T</type>
+        <definition>const T NESO::Particles::Access::CellDat::Read&lt; T &gt;::at</definition>
+        <argsstring>(const int row, const int col)</argsstring>
+        <name>at</name>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="25" column="18" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:CellDat::Read&lt;T&gt; read access cellwise. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="20" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="20" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1aa4a2d57eb01f4a77fc47858e952577ce" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Read</scope><name>at</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1ad593598f7cc3b57b541799afef9c161e" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Read</scope><name>cell</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1ab8fd50db1ca8a4cec340e9d0a57c7740" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Read</scope><name>ptr</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read_1aefef3231d82d2ba9dbcb1ee432c31684" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::CellDat::Read</scope><name>Read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

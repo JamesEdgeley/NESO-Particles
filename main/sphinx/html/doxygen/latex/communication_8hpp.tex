@@ -1,0 +1,67 @@
+\hypertarget{communication_8hpp}{}\doxysection{/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/communication.hpp File Reference}
+\label{communication_8hpp}\index{/tmp/repo-\/checkout/NESO-\/Particles/include/communication.hpp@{/tmp/repo-\/checkout/NESO-\/Particles/include/communication.hpp}}
+{\ttfamily \#include \char`\"{}typedefs.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$mpi.\+h$>$}\newline
+Include dependency graph for communication.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{communication_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{communication_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{NESO\+::\+Particles\+::\+Comm\+Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceNESO}{NESO}}
+\item 
+ \mbox{\hyperlink{namespaceNESO_1_1Particles}{NESO\+::\+Particles}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{communication_8hpp_a84f3dc60641da0ddf162ed6d8b1f7178}{\+\_\+\+MACRO\+\_\+\+STRING}}(x)~\#x
+\item 
+\#define \mbox{\hyperlink{communication_8hpp_a18d295a837ac71add5578860b55e5502}{STR}}(x)~\mbox{\hyperlink{communication_8hpp_a84f3dc60641da0ddf162ed6d8b1f7178}{\+\_\+\+MACRO\+\_\+\+STRING}}(x)
+\item 
+\#define \mbox{\hyperlink{communication_8hpp_a33b992f9d2178a2b11a3e307ac559bab}{MPICHK}}(cmd)~\mbox{\hyperlink{typedefs_8hpp_ac780e64fe76ab7e5f6b07c55de92d018}{NESOASSERT}}(cmd == MPI\+\_\+\+SUCCESS, \char`\"{}MPI ERROR\char`\"{});
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\MPI\+\_\+\+Datatype \mbox{\hyperlink{namespaceNESO_1_1Particles_aff8ce126d08385f7d6e54d0fca0d3e8d}{NESO\+::\+Particles\+::map\+\_\+ctype\+\_\+mpi\+\_\+type}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{communication_8hpp_a84f3dc60641da0ddf162ed6d8b1f7178}\label{communication_8hpp_a84f3dc60641da0ddf162ed6d8b1f7178}} 
+\index{communication.hpp@{communication.hpp}!\_MACRO\_STRING@{\_MACRO\_STRING}}
+\index{\_MACRO\_STRING@{\_MACRO\_STRING}!communication.hpp@{communication.hpp}}
+\doxysubsubsection{\texorpdfstring{\_MACRO\_STRING}{\_MACRO\_STRING}}
+{\footnotesize\ttfamily \#define \+\_\+\+MACRO\+\_\+\+STRING(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\#x}
+
+\mbox{\Hypertarget{communication_8hpp_a33b992f9d2178a2b11a3e307ac559bab}\label{communication_8hpp_a33b992f9d2178a2b11a3e307ac559bab}} 
+\index{communication.hpp@{communication.hpp}!MPICHK@{MPICHK}}
+\index{MPICHK@{MPICHK}!communication.hpp@{communication.hpp}}
+\doxysubsubsection{\texorpdfstring{MPICHK}{MPICHK}}
+{\footnotesize\ttfamily \#define MPICHK(\begin{DoxyParamCaption}\item[{}]{cmd }\end{DoxyParamCaption})~\mbox{\hyperlink{typedefs_8hpp_ac780e64fe76ab7e5f6b07c55de92d018}{NESOASSERT}}(cmd == MPI\+\_\+\+SUCCESS, \char`\"{}MPI ERROR\char`\"{});}
+
+\mbox{\Hypertarget{communication_8hpp_a18d295a837ac71add5578860b55e5502}\label{communication_8hpp_a18d295a837ac71add5578860b55e5502}} 
+\index{communication.hpp@{communication.hpp}!STR@{STR}}
+\index{STR@{STR}!communication.hpp@{communication.hpp}}
+\doxysubsubsection{\texorpdfstring{STR}{STR}}
+{\footnotesize\ttfamily \#define STR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{communication_8hpp_a84f3dc60641da0ddf162ed6d8b1f7178}{\+\_\+\+MACRO\+\_\+\+STRING}}(x)}
+

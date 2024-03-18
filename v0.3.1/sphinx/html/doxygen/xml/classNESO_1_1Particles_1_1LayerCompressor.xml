@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1LayerCompressor" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::LayerCompressor</compoundname>
+    <includes refid="cell__dat__compression_8hpp" local="no">cell_dat_compression.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a98291b34cdb6017fac59af0e84b374ad" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::LayerCompressor::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="31" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a67a822d2f415de52c56d24b1eb7de4be" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::LayerCompressor::ncell</definition>
+        <argsstring></argsstring>
+        <name>ncell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="32" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a442869d686b94e830bb340e9a9d0b9ea" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::LayerCompressor::d_remove_cells</definition>
+        <argsstring></argsstring>
+        <name>d_remove_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="33" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a2f3e0dda991eef14dcd24ffd87e19757" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::LayerCompressor::d_remove_layers</definition>
+        <argsstring></argsstring>
+        <name>d_remove_layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="34" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1ad8a22928154fcf08193ecaf67755bb5e" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::LayerCompressor::d_compress_cells_old</definition>
+        <argsstring></argsstring>
+        <name>d_compress_cells_old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="35" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a938e04f3d44b023aaa41b05beefe949c" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::LayerCompressor::d_compress_cells_new</definition>
+        <argsstring></argsstring>
+        <name>d_compress_cells_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="36" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1ab5b05f2b93b9b16bc81a7e8e35899278" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::LayerCompressor::d_compress_layers_old</definition>
+        <argsstring></argsstring>
+        <name>d_compress_layers_old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="37" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a98b9b53e34507293607ae9d90d3d8635" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::LayerCompressor::d_compress_layers_new</definition>
+        <argsstring></argsstring>
+        <name>d_compress_layers_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="38" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a5dd388693a587df7b64fbd644c394de3" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::LayerCompressor::d_npart_cell</definition>
+        <argsstring></argsstring>
+        <name>d_npart_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="42" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a80adba4c259b3c6e58bf54aa68ae76a1" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; int &gt;</type>
+        <definition>BufferHost&lt;int&gt; NESO::Particles::LayerCompressor::h_npart_cell</definition>
+        <argsstring></argsstring>
+        <name>h_npart_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="43" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a7905ac539e8a7d174b77f8f01f8d6895" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::LayerCompressor::d_move_counters</definition>
+        <argsstring></argsstring>
+        <name>d_move_counters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="44" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a330dd4dd785d9cfa6b367ff8995d9ea7" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt; NESO::Particles::LayerCompressor::cell_id_dat</definition>
+        <argsstring></argsstring>
+        <name>cell_id_dat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="47" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1ad9193ac0d374b92cdca93b7d04259d24" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt; &amp;</type>
+        <definition>std::map&lt;Sym&lt;REAL&gt;, ParticleDatSharedPtr&lt;REAL&gt; &gt;&amp; NESO::Particles::LayerCompressor::particle_dats_real</definition>
+        <argsstring></argsstring>
+        <name>particle_dats_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="48" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a512d4a29c4919861641e9599982200ec" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt; &amp;</type>
+        <definition>std::map&lt;Sym&lt;INT&gt;, ParticleDatSharedPtr&lt;INT&gt; &gt;&amp; NESO::Particles::LayerCompressor::particle_dats_int</definition>
+        <argsstring></argsstring>
+        <name>particle_dats_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="49" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1LayerCompressor_1a70b1e04f446d914ce3a4f28e41c58708" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1EventStack" kindref="compound">EventStack</ref></type>
+        <definition>EventStack NESO::Particles::LayerCompressor::event_stack</definition>
+        <argsstring></argsstring>
+        <name>event_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="51" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1a2518889e6fdd75424e360912c6ba5c77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::LayerCompressor::LayerCompressor</definition>
+        <argsstring>(const LayerCompressor &amp;st)=delete</argsstring>
+        <name>LayerCompressor</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1LayerCompressor" kindref="compound">LayerCompressor</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="55" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1a38f665aa7934eaabd128879fdb076e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1LayerCompressor" kindref="compound">LayerCompressor</ref> &amp;</type>
+        <definition>LayerCompressor&amp; NESO::Particles::LayerCompressor::operator=</definition>
+        <argsstring>(LayerCompressor const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1LayerCompressor" kindref="compound">LayerCompressor</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="57" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1ae9d87608e1b2a53cd1fa34e21d70bb56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::LayerCompressor::~LayerCompressor</definition>
+        <argsstring>()</argsstring>
+        <name>~LayerCompressor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="59" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1af1ef4877add6b9153ddd922dbd93c9a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::LayerCompressor::LayerCompressor</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, const int ncell, std::map&lt; Sym&lt; REAL &gt;, ParticleDatSharedPtr&lt; REAL &gt;&gt; &amp;particle_dats_real, std::map&lt; Sym&lt; INT &gt;, ParticleDatSharedPtr&lt; INT &gt;&gt; &amp;particle_dats_int)</argsstring>
+        <name>LayerCompressor</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>ncell</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_real</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;&gt; &amp;</type>
+          <declname>particle_dats_int</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new layer compressor to compress all ParticleDat instances that are contained within the passed containers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of cells within each ParticleDat. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_dats_real</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of ParticleDat instances of REAL type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_dats_int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of ParticleDat instances of INT type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="70" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="70" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1a2e51fca2b1050972d0a611a77697d3bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::LayerCompressor::set_cell_id_dat</definition>
+        <argsstring>(ParticleDatSharedPtr&lt; INT &gt; cell_id_dat)</argsstring>
+        <name>set_cell_id_dat</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>cell_id_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the ParticleDat which contains the cell ids of the particles. This is not a function which is expected to be called by a user.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell_id_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat containing particle cell ids. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="91" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1a15b02b5df24b5b7f4d2547457ce8dce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::LayerCompressor::compute_remove_compress_indicies</definition>
+        <argsstring>(const int npart, T *usm_cells, T *usm_layers)</argsstring>
+        <name>compute_remove_compress_indicies</name>
+        <param>
+          <type>const int</type>
+          <declname>npart</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>usm_cells</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>usm_layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For the specified N particles to remove at the given cells and rows (layers) compute the data migration required to keep the particle data contiguous.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>npart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of particles which are to be removed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usm_cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device accessible pointers to an array of length N that holds the cells of the particles that are to be removed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usm_layers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device accessible pointers to an array of length N that holds the layers of the particles that are to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>indicate this particle is removed by setting the / cell index to -1</para>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="107" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="107" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LayerCompressor_1a16befa763df7e3517a0523d45aa1ba67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::LayerCompressor::remove_particles</definition>
+        <argsstring>(const int npart, T *usm_cells, T *usm_layers)</argsstring>
+        <name>remove_particles</name>
+        <param>
+          <type>const int</type>
+          <declname>npart</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>usm_cells</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>usm_layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove particles from the ParticleDat instances.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>npart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of particles to remove. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usm_cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device accessible pointer to the particle cells. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usm_layers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device accessible pointer to the particle rows (layers). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="225" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="225" bodyend="296"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classNESO_1_1Particles_1_1LayerCompressor" kindref="compound">LayerCompressor</ref> is a tool to remove rows from ParticleDat instances that correspond to particle data where the particle has been removed. <ref refid="namespaceNESO_1_1Particles" kindref="compound">Particles</ref> are removed when they move between cells and when they are transferred to other MPI ranks. This ensures that particle data is not duplicated and that the particle data is contiguous. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" line="29" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_dat_compression.hpp" bodystart="29" bodyend="297"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a330dd4dd785d9cfa6b367ff8995d9ea7" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>cell_id_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a15b02b5df24b5b7f4d2547457ce8dce1" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>compute_remove_compress_indicies</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a938e04f3d44b023aaa41b05beefe949c" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_compress_cells_new</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1ad8a22928154fcf08193ecaf67755bb5e" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_compress_cells_old</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a98b9b53e34507293607ae9d90d3d8635" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_compress_layers_new</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1ab5b05f2b93b9b16bc81a7e8e35899278" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_compress_layers_old</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a7905ac539e8a7d174b77f8f01f8d6895" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_move_counters</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a5dd388693a587df7b64fbd644c394de3" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_npart_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a442869d686b94e830bb340e9a9d0b9ea" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_remove_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a2f3e0dda991eef14dcd24ffd87e19757" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>d_remove_layers</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a70b1e04f446d914ce3a4f28e41c58708" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>event_stack</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a80adba4c259b3c6e58bf54aa68ae76a1" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>h_npart_cell</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a2518889e6fdd75424e360912c6ba5c77" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>LayerCompressor</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1af1ef4877add6b9153ddd922dbd93c9a2" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>LayerCompressor</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a67a822d2f415de52c56d24b1eb7de4be" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>ncell</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a38f665aa7934eaabd128879fdb076e50" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a512d4a29c4919861641e9599982200ec" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>particle_dats_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1ad9193ac0d374b92cdca93b7d04259d24" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>particle_dats_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a16befa763df7e3517a0523d45aa1ba67" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>remove_particles</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a2e51fca2b1050972d0a611a77697d3bc" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>set_cell_id_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1a98291b34cdb6017fac59af0e84b374ad" prot="private" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1LayerCompressor_1ae9d87608e1b2a53cd1fa34e21d70bb56" prot="public" virt="non-virtual"><scope>NESO::Particles::LayerCompressor</scope><name>~LayerCompressor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

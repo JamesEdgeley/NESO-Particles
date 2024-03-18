@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::Access::ProductMatrix</compoundname>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" prot="public">NESO::Particles::Access::ProductMatrix::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Add" prot="public">NESO::Particles::Access::ProductMatrix::Add</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" prot="public">NESO::Particles::Access::ProductMatrix::Write</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines the access implementations and types for <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> objects. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="37" column="1"/>
+  </compounddef>
+</doxygen>

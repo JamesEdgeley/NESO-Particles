@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1DummyLocalMapperT" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::DummyLocalMapperT</compoundname>
+    <basecompoundref refid="classNESO_1_1Particles_1_1LocalMapper" prot="public" virt="non-virtual">NESO::Particles::LocalMapper</basecompoundref>
+    <includes refid="local__mapping_8hpp" local="no">local_mapping.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DummyLocalMapperT_1aee3bb17aae75e072ec511e00b5bb2086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::DummyLocalMapperT::DummyLocalMapperT</definition>
+        <argsstring>(const DummyLocalMapperT &amp;st)=delete</argsstring>
+        <name>DummyLocalMapperT</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1DummyLocalMapperT" kindref="compound">DummyLocalMapperT</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="52" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DummyLocalMapperT_1a181f3e3930e6304005531464d12dc864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1DummyLocalMapperT" kindref="compound">DummyLocalMapperT</ref> &amp;</type>
+        <definition>DummyLocalMapperT&amp; NESO::Particles::DummyLocalMapperT::operator=</definition>
+        <argsstring>(DummyLocalMapperT const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1DummyLocalMapperT" kindref="compound">DummyLocalMapperT</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="54" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DummyLocalMapperT_1a280f7794ff06c0a6315d1786522ed9e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::DummyLocalMapperT::~DummyLocalMapperT</definition>
+        <argsstring>()</argsstring>
+        <name>~DummyLocalMapperT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="56" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DummyLocalMapperT_1a278c2e0961670b0f415dce77ba20128b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::DummyLocalMapperT::DummyLocalMapperT</definition>
+        <argsstring>()</argsstring>
+        <name>DummyLocalMapperT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No-op Constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="61" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DummyLocalMapperT_1ad3d451f43ee9433de7507253490dd85b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::DummyLocalMapperT::map</definition>
+        <argsstring>(ParticleGroup &amp;particle_group, const int map_cell=-1)</argsstring>
+        <name>map</name>
+        <reimplements refid="classNESO_1_1Particles_1_1LocalMapper_1ab488f00e5073b75d73fc5642a2218bc1">map</reimplements>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>particle_group</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>map_cell</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No-op implementation of map. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="66" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DummyLocalMapperT_1a0c884e1e25abc776ec625df98f0913b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::DummyLocalMapperT::particle_group_callback</definition>
+        <argsstring>(ParticleGroup &amp;particle_group)</argsstring>
+        <name>particle_group_callback</name>
+        <reimplements refid="classNESO_1_1Particles_1_1LocalMapper_1ab3c7f02df9394e8ebbe9788b78fb5a75">particle_group_callback</reimplements>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>particle_group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No-op implementation of callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="71" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Dummy <ref refid="classNESO_1_1Particles_1_1LocalMapper" kindref="compound">LocalMapper</ref> implementation that does nothing to use as a default. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NESO::Particles::DummyLocalMapperT</label>
+        <link refid="classNESO_1_1Particles_1_1DummyLocalMapperT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::LocalMapper</label>
+        <link refid="classNESO_1_1Particles_1_1LocalMapper"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NESO::Particles::DummyLocalMapperT</label>
+        <link refid="classNESO_1_1Particles_1_1DummyLocalMapperT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::LocalMapper</label>
+        <link refid="classNESO_1_1Particles_1_1LocalMapper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="48" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="48" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1aee3bb17aae75e072ec511e00b5bb2086" prot="public" virt="non-virtual"><scope>NESO::Particles::DummyLocalMapperT</scope><name>DummyLocalMapperT</name></member>
+      <member refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1a278c2e0961670b0f415dce77ba20128b" prot="public" virt="non-virtual"><scope>NESO::Particles::DummyLocalMapperT</scope><name>DummyLocalMapperT</name></member>
+      <member refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1ad3d451f43ee9433de7507253490dd85b" prot="public" virt="virtual"><scope>NESO::Particles::DummyLocalMapperT</scope><name>map</name></member>
+      <member refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1a181f3e3930e6304005531464d12dc864" prot="public" virt="non-virtual"><scope>NESO::Particles::DummyLocalMapperT</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1a0c884e1e25abc776ec625df98f0913b2" prot="public" virt="virtual"><scope>NESO::Particles::DummyLocalMapperT</scope><name>particle_group_callback</name></member>
+      <member refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1a280f7794ff06c0a6315d1786522ed9e9" prot="public" virt="non-virtual"><scope>NESO::Particles::DummyLocalMapperT</scope><name>~DummyLocalMapperT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

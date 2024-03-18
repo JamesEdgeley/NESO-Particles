@@ -1,0 +1,10 @@
+<map id="NESO::Particles::ParticleGroup" name="NESO::Particles::ParticleGroup">
+<area shape="rect" id="node1" title=" " alt="" coords="705,141,883,182"/>
+<area shape="rect" id="node2" href="$classNESO_1_1Particles_1_1LayerCompressor.html" title=" " alt="" coords="293,5,536,32"/>
+<area shape="rect" id="node3" href="$classNESO_1_1Particles_1_1ParticleSpec.html" title=" " alt="" coords="311,56,519,83"/>
+<area shape="rect" id="node4" href="$classNESO_1_1Particles_1_1BufferHost.html" title=" " alt="" coords="315,107,514,149"/>
+<area shape="rect" id="node5" href="$classNESO_1_1Particles_1_1BufferBase.html" title=" " alt="" coords="5,148,244,175"/>
+<area shape="rect" id="node6" href="$classNESO_1_1Particles_1_1BufferDevice.html" title=" " alt="" coords="308,173,521,214"/>
+<area shape="rect" id="node7" href="$classNESO_1_1Particles_1_1CellMove.html" title=" " alt="" coords="319,239,510,265"/>
+<area shape="rect" id="node8" href="$classNESO_1_1Particles_1_1GlobalMove.html" title=" " alt="" coords="311,289,518,316"/>
+</map>

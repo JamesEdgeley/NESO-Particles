@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticleSet" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleSet</compoundname>
+    <includes refid="particle__set_8hpp" local="no">particle_set.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSet_1a8889af8d3f83abf37330c6bcd85964fc" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; REAL &gt;, std::vector&lt; REAL &gt; &gt;</type>
+        <definition>std::map&lt;Sym&lt;REAL&gt;, std::vector&lt;REAL&gt; &gt; NESO::Particles::ParticleSet::values_real</definition>
+        <argsstring></argsstring>
+        <name>values_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="22" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSet_1af9651a13430be0ea62c1da0d73231095" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; INT &gt;, std::vector&lt; INT &gt; &gt;</type>
+        <definition>std::map&lt;Sym&lt;INT&gt;, std::vector&lt;INT&gt; &gt; NESO::Particles::ParticleSet::values_int</definition>
+        <argsstring></argsstring>
+        <name>values_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="23" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSet_1a46955579199b716bdcc0ab7aeba3c780" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; REAL &gt;</type>
+        <definition>std::vector&lt;REAL&gt; NESO::Particles::ParticleSet::dummy_real</definition>
+        <argsstring></argsstring>
+        <name>dummy_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="25" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSet_1a54d0da97d7d68be7635da184164216e0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; INT &gt;</type>
+        <definition>std::vector&lt;INT&gt; NESO::Particles::ParticleSet::dummy_int</definition>
+        <argsstring></argsstring>
+        <name>dummy_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="26" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSet_1af6abbaa68af8817e480a2a38729fdee4" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int NESO::Particles::ParticleSet::npart</definition>
+        <argsstring></argsstring>
+        <name>npart</name>
+        <briefdescription>
+<para>Number of particles stored in the container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="30" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1adb7bb1f58d5af74e0e85ac3e3621db51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleSet::ParticleSet</definition>
+        <argsstring>(const int npart, ParticleSpec particle_spec)</argsstring>
+        <name>ParticleSet</name>
+        <param>
+          <type>const int</type>
+          <declname>npart</declname>
+        </param>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref></type>
+          <declname>particle_spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for a set of particles.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>npart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of particles required. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> instance that describes the particle properties. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="39" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="39" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1a8cf5ad3e7d843c65a8a035241da24d70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor" kindref="compound">ColumnMajorRowAccessor</ref>&lt; std::vector, REAL &gt;</type>
+        <definition>ColumnMajorRowAccessor&lt;std::vector, REAL&gt; NESO::Particles::ParticleSet::operator[]</definition>
+        <argsstring>(Sym&lt; REAL &gt; sym)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; REAL &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access the std::vectors that correspond to a Sym&lt;REAL&gt;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="55" column="33" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1a80fd4d962068fd061658bc3f86ba5268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor" kindref="compound">ColumnMajorRowAccessor</ref>&lt; std::vector, INT &gt;</type>
+        <definition>ColumnMajorRowAccessor&lt;std::vector, INT&gt; NESO::Particles::ParticleSet::operator[]</definition>
+        <argsstring>(Sym&lt; INT &gt; sym)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; INT &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access the std::vectors that correspond to a Sym&lt;INT&gt;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="63" column="33" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1aff3d2126647e5e04fde3a563c0047f97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; REAL &gt; &amp;</type>
+        <definition>std::vector&lt;REAL&gt;&amp; NESO::Particles::ParticleSet::get</definition>
+        <argsstring>(Sym&lt; REAL &gt; const &amp;sym)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; REAL &gt; const &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vector of values describing the particle data for a given Sym&lt;REAL&gt;. Will return an empty std::vector if the passed <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> is not a stored property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;REAL&gt; to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector of data or empty std::vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="76" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1ac0b4d60b8367771ac39ec5e50ac680b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; INT &gt; &amp;</type>
+        <definition>std::vector&lt;INT&gt;&amp; NESO::Particles::ParticleSet::get</definition>
+        <argsstring>(Sym&lt; INT &gt; const &amp;sym)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; INT &gt; const &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vector of values describing the particle data for a given Sym&lt;INT&gt;. Will return an empty std::vector if the passed <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> is not a stored property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;INT&gt; to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector of data or empty std::vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="91" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1adbe4ff16691f65c28823499732a676df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleSet::contains</definition>
+        <argsstring>(Sym&lt; REAL &gt; const &amp;sym)</argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; REAL &gt; const &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test to see if this <ref refid="classNESO_1_1Particles_1_1ParticleSet" kindref="compound">ParticleSet</ref> contains data for a given Sym&lt;REAL&gt;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;REAL&gt; to test for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Bool indicating if data exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="104" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSet_1adf9297b62539afc1289babf49c389ca9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleSet::contains</definition>
+        <argsstring>(Sym&lt; INT &gt; const &amp;sym)</argsstring>
+        <name>contains</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; INT &gt; const &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test to see if this <ref refid="classNESO_1_1Particles_1_1ParticleSet" kindref="compound">ParticleSet</ref> contains data for a given Sym&lt;INT&gt;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sym&lt;INT&gt; to test for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Bool indicating if data exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="113" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Container to hold particle data for a set of particles. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" line="19" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_set.hpp" bodystart="19" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1adbe4ff16691f65c28823499732a676df" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>contains</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1adf9297b62539afc1289babf49c389ca9" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>contains</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1a54d0da97d7d68be7635da184164216e0" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>dummy_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1a46955579199b716bdcc0ab7aeba3c780" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>dummy_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1aff3d2126647e5e04fde3a563c0047f97" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1ac0b4d60b8367771ac39ec5e50ac680b5" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>get</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1af6abbaa68af8817e480a2a38729fdee4" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>npart</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1a8cf5ad3e7d843c65a8a035241da24d70" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>operator[]</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1a80fd4d962068fd061658bc3f86ba5268" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>operator[]</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1adb7bb1f58d5af74e0e85ac3e3621db51" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>ParticleSet</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1af9651a13430be0ea62c1da0d73231095" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>values_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSet_1a8889af8d3f83abf37330c6bcd85964fc" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSet</scope><name>values_real</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

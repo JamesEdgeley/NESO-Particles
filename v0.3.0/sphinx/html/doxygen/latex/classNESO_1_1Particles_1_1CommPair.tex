@@ -1,0 +1,82 @@
+\hypertarget{classNESO_1_1Particles_1_1CommPair}{}\doxysection{NESO\+::Particles\+::Comm\+Pair Class Reference}
+\label{classNESO_1_1Particles_1_1CommPair}\index{NESO::Particles::CommPair@{NESO::Particles::CommPair}}
+
+
+{\ttfamily \#include $<$communication.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_af79d05f88315886c83272ca0114df905}\label{classNESO_1_1Particles_1_1CommPair_af79d05f88315886c83272ca0114df905}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_af79d05f88315886c83272ca0114df905}{Comm\+Pair}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_ac1d07be47035eea24ce83529a7461f64}\label{classNESO_1_1Particles_1_1CommPair_ac1d07be47035eea24ce83529a7461f64}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_ac1d07be47035eea24ce83529a7461f64}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_acce347ceb02cf088b0424eb3f91fb4bf}{Comm\+Pair}} (MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a3cbd6b0c78a13beefb79b2f94b7915e1}{comm\+\_\+parent}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a78b3ae9c7dfb105c37198df8e27f56c8}{free}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a3cbd6b0c78a13beefb79b2f94b7915e1}\label{classNESO_1_1Particles_1_1CommPair_a3cbd6b0c78a13beefb79b2f94b7915e1}} 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a3cbd6b0c78a13beefb79b2f94b7915e1}{comm\+\_\+parent}}
+\begin{DoxyCompactList}\small\item\em Parent (i.\+e. global for the simulation) MPI communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a0121da39bd4339625700611e46ee9350}\label{classNESO_1_1Particles_1_1CommPair_a0121da39bd4339625700611e46ee9350}} 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a0121da39bd4339625700611e46ee9350}{comm\+\_\+inter}}
+\begin{DoxyCompactList}\small\item\em Communicator between one rank on each shared memory region. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a822c3eb44d971baa887075a5d67f54ab}\label{classNESO_1_1Particles_1_1CommPair_a822c3eb44d971baa887075a5d67f54ab}} 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a822c3eb44d971baa887075a5d67f54ab}{comm\+\_\+intra}}
+\begin{DoxyCompactList}\small\item\em Communicator between the ranks in a shared memory region. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_afc5bc62604f7216469e42df1de8b8d3c}\label{classNESO_1_1Particles_1_1CommPair_afc5bc62604f7216469e42df1de8b8d3c}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_afc5bc62604f7216469e42df1de8b8d3c}{rank\+\_\+parent}}
+\begin{DoxyCompactList}\small\item\em MPI rank in the parent communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_ad40e7fb5b7e644354629de04d24d80dd}\label{classNESO_1_1Particles_1_1CommPair_ad40e7fb5b7e644354629de04d24d80dd}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_ad40e7fb5b7e644354629de04d24d80dd}{rank\+\_\+inter}}
+\begin{DoxyCompactList}\small\item\em MPI rank in the inter shared memory region communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_ad05280f3448bbfe566c4e5136b2f3ea4}\label{classNESO_1_1Particles_1_1CommPair_ad05280f3448bbfe566c4e5136b2f3ea4}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_ad05280f3448bbfe566c4e5136b2f3ea4}{rank\+\_\+intra}}
+\begin{DoxyCompactList}\small\item\em MPI rank within the shared memory region communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a03a30c8e1ac6a9070f92d96f1fc9d02e}\label{classNESO_1_1Particles_1_1CommPair_a03a30c8e1ac6a9070f92d96f1fc9d02e}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a03a30c8e1ac6a9070f92d96f1fc9d02e}{size\+\_\+parent}}
+\begin{DoxyCompactList}\small\item\em Size of the parent communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a95402d5a1704b6877dc3d7fd61596091}\label{classNESO_1_1Particles_1_1CommPair_a95402d5a1704b6877dc3d7fd61596091}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a95402d5a1704b6877dc3d7fd61596091}{size\+\_\+inter}}
+\begin{DoxyCompactList}\small\item\em Size of the inter shared memory communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a6a2b1aec91c2221b3f4dfc8236501f55}\label{classNESO_1_1Particles_1_1CommPair_a6a2b1aec91c2221b3f4dfc8236501f55}} 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair_a6a2b1aec91c2221b3f4dfc8236501f55}{size\+\_\+intra}}
+\begin{DoxyCompactList}\small\item\em Size of the intra shared memory communicator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper around a pair of inter and intra MPI Comms for shared memory purposes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_acce347ceb02cf088b0424eb3f91fb4bf}\label{classNESO_1_1Particles_1_1CommPair_acce347ceb02cf088b0424eb3f91fb4bf}} 
+\index{NESO::Particles::CommPair@{NESO::Particles::CommPair}!CommPair@{CommPair}}
+\index{CommPair@{CommPair}!NESO::Particles::CommPair@{NESO::Particles::CommPair}}
+\doxysubsubsection{\texorpdfstring{CommPair()}{CommPair()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Comm\+Pair\+::\+Comm\+Pair (\begin{DoxyParamCaption}\item[{MPI\+\_\+\+Comm}]{comm\+\_\+parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new set of inter and intra shared memory region communicators from a parent communicator. Must be called collectively on the parent communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em comm\+\_\+parent} & MPI communicator to derive intra and inter communicators from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CommPair_a78b3ae9c7dfb105c37198df8e27f56c8}\label{classNESO_1_1Particles_1_1CommPair_a78b3ae9c7dfb105c37198df8e27f56c8}} 
+\index{NESO::Particles::CommPair@{NESO::Particles::CommPair}!free@{free}}
+\index{free@{free}!NESO::Particles::CommPair@{NESO::Particles::CommPair}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Comm\+Pair\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Free the communicators held by the \mbox{\hyperlink{classNESO_1_1Particles_1_1CommPair}{Comm\+Pair}} instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/communication.\+hpp\end{DoxyCompactItemize}

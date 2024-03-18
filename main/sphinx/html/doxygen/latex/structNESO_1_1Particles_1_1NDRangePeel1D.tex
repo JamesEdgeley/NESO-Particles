@@ -1,0 +1,64 @@
+\hypertarget{structNESO_1_1Particles_1_1NDRangePeel1D}{}\doxysection{NESO\+::Particles\+::NDRange\+Peel1D Struct Reference}
+\label{structNESO_1_1Particles_1_1NDRangePeel1D}\index{NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sycl\+::nd\+\_\+range$<$ 1 $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1NDRangePeel1D_ace10098a8bd4b67a432ae5458af04058}{loop\+\_\+main}}
+\begin{DoxyCompactList}\small\item\em The main iteration set which does not need masking. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{structNESO_1_1Particles_1_1NDRangePeel1D_affa4eced0e2023879643ea0c554817ca}{peel\+\_\+exists}}
+\begin{DoxyCompactList}\small\item\em Bool to indicate if there is a peel loop. \end{DoxyCompactList}\item 
+const size\+\_\+t \mbox{\hyperlink{structNESO_1_1Particles_1_1NDRangePeel1D_a6b17a5d64e62a8f719211664295fbb95}{offset}}
+\begin{DoxyCompactList}\small\item\em Offset to apply to peel loop indices. \end{DoxyCompactList}\item 
+sycl\+::nd\+\_\+range$<$ 1 $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1NDRangePeel1D_a1b95033b969cd755193922fde416f578}{loop\+\_\+peel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main loop with peel loop for 1D nd\+\_\+range. The peel loop should be masked to remove the workitems past the loop extents. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1NDRangePeel1D_ace10098a8bd4b67a432ae5458af04058}\label{structNESO_1_1Particles_1_1NDRangePeel1D_ace10098a8bd4b67a432ae5458af04058}} 
+\index{NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}!loop\_main@{loop\_main}}
+\index{loop\_main@{loop\_main}!NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}}
+\doxysubsubsection{\texorpdfstring{loop\_main}{loop\_main}}
+{\footnotesize\ttfamily sycl\+::nd\+\_\+range$<$1$>$ NESO\+::\+Particles\+::\+NDRange\+Peel1\+D\+::loop\+\_\+main}
+
+
+
+The main iteration set which does not need masking. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1NDRangePeel1D_a1b95033b969cd755193922fde416f578}\label{structNESO_1_1Particles_1_1NDRangePeel1D_a1b95033b969cd755193922fde416f578}} 
+\index{NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}!loop\_peel@{loop\_peel}}
+\index{loop\_peel@{loop\_peel}!NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}}
+\doxysubsubsection{\texorpdfstring{loop\_peel}{loop\_peel}}
+{\footnotesize\ttfamily sycl\+::nd\+\_\+range$<$1$>$ NESO\+::\+Particles\+::\+NDRange\+Peel1\+D\+::loop\+\_\+peel}
+
+Peel loop description. Indicies from the loop should have offset added to compute the global index. This loop should be masked by a conditional for the original loop bounds. \mbox{\Hypertarget{structNESO_1_1Particles_1_1NDRangePeel1D_a6b17a5d64e62a8f719211664295fbb95}\label{structNESO_1_1Particles_1_1NDRangePeel1D_a6b17a5d64e62a8f719211664295fbb95}} 
+\index{NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}!offset@{offset}}
+\index{offset@{offset}!NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily const size\+\_\+t NESO\+::\+Particles\+::\+NDRange\+Peel1\+D\+::offset}
+
+
+
+Offset to apply to peel loop indices. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1NDRangePeel1D_affa4eced0e2023879643ea0c554817ca}\label{structNESO_1_1Particles_1_1NDRangePeel1D_affa4eced0e2023879643ea0c554817ca}} 
+\index{NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}!peel\_exists@{peel\_exists}}
+\index{peel\_exists@{peel\_exists}!NESO::Particles::NDRangePeel1D@{NESO::Particles::NDRangePeel1D}}
+\doxysubsubsection{\texorpdfstring{peel\_exists}{peel\_exists}}
+{\footnotesize\ttfamily const bool NESO\+::\+Particles\+::\+NDRange\+Peel1\+D\+::peel\+\_\+exists}
+
+
+
+Bool to indicate if there is a peel loop. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{compute__target_8hpp}{compute\+\_\+target.\+hpp}}\end{DoxyCompactItemize}

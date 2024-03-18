@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticleRemover" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleRemover</compoundname>
+    <includes refid="particle__remover_8hpp" local="no">particle_remover.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleRemover_1abb1fa0a500675ac89c4eece4edde638d" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::ParticleRemover::dh_remove_count</definition>
+        <argsstring></argsstring>
+        <name>dh_remove_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="18" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleRemover_1ac12ede7fd2f389997ed76f7d869a1883" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::ParticleRemover::d_remove_cells</definition>
+        <argsstring></argsstring>
+        <name>d_remove_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="19" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleRemover_1aec349a6aacb8c3cb7e92907aa1a45e4d" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::ParticleRemover::d_remove_layers</definition>
+        <argsstring></argsstring>
+        <name>d_remove_layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="20" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleRemover_1a1a3b74169c22a97377a321e88b485008" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::ParticleRemover::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="21" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleRemover_1aab88645b10fd090513bfce3ed4b2892b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleRemover::ParticleRemover</definition>
+        <argsstring>(const ParticleRemover &amp;st)=delete</argsstring>
+        <name>ParticleRemover</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1ParticleRemover" kindref="compound">ParticleRemover</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="25" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleRemover_1a9702df5e9cbb996a6d6443fdcebea1d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticleRemover" kindref="compound">ParticleRemover</ref> &amp;</type>
+        <definition>ParticleRemover&amp; NESO::Particles::ParticleRemover::operator=</definition>
+        <argsstring>(ParticleRemover const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleRemover" kindref="compound">ParticleRemover</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="27" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleRemover_1a3330cc9a6bba8e0fc16242a6835201d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleRemover::ParticleRemover</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target)</argsstring>
+        <name>ParticleRemover</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a remover that operates on ParticleGroups that use the given <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="35" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleRemover_1abc90e91305dc090ff804ce6f0c209a67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleRemover::remove</definition>
+        <argsstring>(ParticleGroupSharedPtr particle_group, ParticleDatSharedPtr&lt; T &gt; particle_dat, const U key)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a5b25ad0df23c80f6feed27e2527a5c51" kindref="member">ParticleGroupSharedPtr</ref></type>
+          <declname>particle_group</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; T &gt;</type>
+          <declname>particle_dat</declname>
+        </param>
+        <param>
+          <type>const U</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove particles from a <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> based on a value in a ParticleDat. For each particle, compares the first value in the ParticleDat with the passed Key. Removes the particle if the value matches the key.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> to remove particles from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat to inspect to determine if particles should be removed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to compare particle values with for removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="50" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="50" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility to aid removing particles from a <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> based on a condition. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" line="16" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp" bodystart="16" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1ac12ede7fd2f389997ed76f7d869a1883" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>d_remove_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1aec349a6aacb8c3cb7e92907aa1a45e4d" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>d_remove_layers</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1abb1fa0a500675ac89c4eece4edde638d" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>dh_remove_count</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1a9702df5e9cbb996a6d6443fdcebea1d6" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1aab88645b10fd090513bfce3ed4b2892b" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>ParticleRemover</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1a3330cc9a6bba8e0fc16242a6835201d8" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>ParticleRemover</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1abc90e91305dc090ff804ce6f0c209a67" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>remove</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleRemover_1a1a3b74169c22a97377a321e88b485008" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleRemover</scope><name>sycl_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

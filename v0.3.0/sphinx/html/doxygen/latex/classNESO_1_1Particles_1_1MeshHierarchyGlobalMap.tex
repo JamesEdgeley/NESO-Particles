@@ -1,0 +1,60 @@
+\hypertarget{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap}{}\doxysection{NESO\+::Particles\+::Mesh\+Hierarchy\+Global\+Map Class Reference}
+\label{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap}\index{NESO::Particles::MeshHierarchyGlobalMap@{NESO::Particles::MeshHierarchyGlobalMap}}
+
+
+{\ttfamily \#include $<$global\+\_\+mapping.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ad4f71c2dffddf1e2fb088d9304ec693d}\label{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ad4f71c2dffddf1e2fb088d9304ec693d}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ad4f71c2dffddf1e2fb088d9304ec693d}{Mesh\+Hierarchy\+Global\+Map}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap}{Mesh\+Hierarchy\+Global\+Map}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ab309b2baaa19b7824e68bcf7da44766a}\label{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ab309b2baaa19b7824e68bcf7da44766a}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap}{Mesh\+Hierarchy\+Global\+Map}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ab309b2baaa19b7824e68bcf7da44766a}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap}{Mesh\+Hierarchy\+Global\+Map}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ab8b95a00017350e88764d9d3d4f32779}{Mesh\+Hierarchy\+Global\+Map}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target, HMesh\+Shared\+Ptr h\+\_\+mesh, Particle\+Dat\+Shared\+Ptr$<$ REAL $>$ \&position\+\_\+dat, Particle\+Dat\+Shared\+Ptr$<$ INT $>$ \&cell\+\_\+id\+\_\+dat, Particle\+Dat\+Shared\+Ptr$<$ INT $>$ \&mpi\+\_\+rank\+\_\+dat)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_a50e48a4725df3f6f1623e305ff4024b3}{execute}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class maps global positions into the cells of a \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} and determines which MPI rank owns that cell. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ab8b95a00017350e88764d9d3d4f32779}\label{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_ab8b95a00017350e88764d9d3d4f32779}} 
+\index{NESO::Particles::MeshHierarchyGlobalMap@{NESO::Particles::MeshHierarchyGlobalMap}!MeshHierarchyGlobalMap@{MeshHierarchyGlobalMap}}
+\index{MeshHierarchyGlobalMap@{MeshHierarchyGlobalMap}!NESO::Particles::MeshHierarchyGlobalMap@{NESO::Particles::MeshHierarchyGlobalMap}}
+\doxysubsubsection{\texorpdfstring{MeshHierarchyGlobalMap()}{MeshHierarchyGlobalMap()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Global\+Map\+::\+Mesh\+Hierarchy\+Global\+Map (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target,  }\item[{HMesh\+Shared\+Ptr}]{h\+\_\+mesh,  }\item[{Particle\+Dat\+Shared\+Ptr$<$ REAL $>$ \&}]{position\+\_\+dat,  }\item[{Particle\+Dat\+Shared\+Ptr$<$ INT $>$ \&}]{cell\+\_\+id\+\_\+dat,  }\item[{Particle\+Dat\+Shared\+Ptr$<$ INT $>$ \&}]{mpi\+\_\+rank\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new global mapping instance for \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em h\+\_\+mesh} & \mbox{\hyperlink{classNESO_1_1Particles_1_1HMesh}{HMesh}} derived mesh to use for mapping. \\
+\hline
+{\em position\+\_\+dat} & Particle\+Dat containing particle positions. \\
+\hline
+{\em cell\+\_\+id\+\_\+dat} & Particle\+Dat containg particle cell ids. \\
+\hline
+{\em mpi\+\_\+rank\+\_\+dat} & Particle\+Dat containing the owning rank of particles. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_a50e48a4725df3f6f1623e305ff4024b3}\label{classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_a50e48a4725df3f6f1623e305ff4024b3}} 
+\index{NESO::Particles::MeshHierarchyGlobalMap@{NESO::Particles::MeshHierarchyGlobalMap}!execute@{execute}}
+\index{execute@{execute}!NESO::Particles::MeshHierarchyGlobalMap@{NESO::Particles::MeshHierarchyGlobalMap}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Global\+Map\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For each particle that does not have a non-\/negative MPI rank determined as a local owner obtain the MPI rank that owns the global cell which contains the particle. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/global\+\_\+mapping.\+hpp\end{DoxyCompactItemize}

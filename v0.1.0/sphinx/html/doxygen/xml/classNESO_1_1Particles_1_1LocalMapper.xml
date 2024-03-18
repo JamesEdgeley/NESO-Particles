@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1LocalMapper" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>NESO::Particles::LocalMapper</compoundname>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" prot="public" virt="non-virtual">NESO::Particles::CartesianHMeshLocalMapperT</derivedcompoundref>
+    <derivedcompoundref refid="classNESO_1_1Particles_1_1DummyLocalMapperT" prot="public" virt="non-virtual">NESO::Particles::DummyLocalMapperT</derivedcompoundref>
+    <includes refid="local__mapping_8hpp" local="no">local_mapping.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalMapper_1ab488f00e5073b75d73fc5642a2218bc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::LocalMapper::map</definition>
+        <argsstring>(ParticleGroup &amp;particle_group, const int map_cell=-1)=0</argsstring>
+        <name>map</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a143365c56d44cbfee917c7a9382922e5">map</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1ad3d451f43ee9433de7507253490dd85b">map</reimplementedby>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>particle_group</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>map_cell</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function maps particle positions to cells on the underlying mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> containing particle positions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="30" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1LocalMapper_1ab3c7f02df9394e8ebbe9788b78fb5a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::LocalMapper::particle_group_callback</definition>
+        <argsstring>(ParticleGroup &amp;particle_group)=0</argsstring>
+        <name>particle_group_callback</name>
+        <reimplementedby refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ae56046ac8c8813edca42cf5410c12f77">particle_group_callback</reimplementedby>
+        <reimplementedby refid="classNESO_1_1Particles_1_1DummyLocalMapperT_1a0c884e1e25abc776ec625df98f0913b2">particle_group_callback</reimplementedby>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>particle_group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback for <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> to execute for additional setup of the <ref refid="classNESO_1_1Particles_1_1LocalMapper" kindref="compound">LocalMapper</ref> that may involve the <ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="40" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract class to map positions to owning MPI ranks based on local information, i.e. halo cells. Could also use or set the cell id. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>NESO::Particles::DummyLocalMapperT</label>
+        <link refid="classNESO_1_1Particles_1_1DummyLocalMapperT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::LocalMapper</label>
+        <link refid="classNESO_1_1Particles_1_1LocalMapper"/>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::CartesianHMeshLocalMapperT</label>
+        <link refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" line="23" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/local_mapping.hpp" bodystart="23" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1LocalMapper_1ab488f00e5073b75d73fc5642a2218bc1" prot="public" virt="pure-virtual"><scope>NESO::Particles::LocalMapper</scope><name>map</name></member>
+      <member refid="classNESO_1_1Particles_1_1LocalMapper_1ab3c7f02df9394e8ebbe9788b78fb5a75" prot="public" virt="pure-virtual"><scope>NESO::Particles::LocalMapper</scope><name>particle_group_callback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1CellDatConstDeviceType" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::CellDatConstDeviceType</compoundname>
+    <includes refid="cell__dat__const_8hpp" local="no">cell_dat_const.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1CellDatConstDeviceType_1a2202c29ff4a70bec32e6f8b27647b018" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* NESO::Particles::CellDatConstDeviceType&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="13" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1CellDatConstDeviceType_1a708ffa6fdfad0d2f148a7c0427abb0d4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CellDatConstDeviceType&lt; T &gt;::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="14" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1CellDatConstDeviceType_1a4ce39096f956ef410bb84d578b8a47a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CellDatConstDeviceType&lt; T &gt;::nrow</definition>
+        <argsstring></argsstring>
+        <name>nrow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="15" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Type the implementation methods return; </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="12" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1CellDatConstDeviceType_1a4ce39096f956ef410bb84d578b8a47a7" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConstDeviceType</scope><name>nrow</name></member>
+      <member refid="structNESO_1_1Particles_1_1CellDatConstDeviceType_1a2202c29ff4a70bec32e6f8b27647b018" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConstDeviceType</scope><name>ptr</name></member>
+      <member refid="structNESO_1_1Particles_1_1CellDatConstDeviceType_1a708ffa6fdfad0d2f148a7c0427abb0d4" prot="public" virt="non-virtual"><scope>NESO::Particles::CellDatConstDeviceType</scope><name>stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

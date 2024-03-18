@@ -1,0 +1,141 @@
+\hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter}{}\doxysection{NESO\+::Particles\+::VTKMesh\+Hierarchy\+Cells\+Writer Class Reference}
+\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter}\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+
+
+{\ttfamily \#include $<$utility\+\_\+mesh\+\_\+hierarchy\+\_\+plotting.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_aa595d916db32d0e641f413f9f599407c}{VTKMesh\+Hierarchy\+Cells\+Writer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ad13a38553e1586c339a6e9f9e47b3210}{mesh\+\_\+hierarchy}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a3df7f807c9bd32c8d6f93b710b8d15bb}{push\+\_\+back}} (const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} linear\+\_\+index)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a96012e35f1a09eb7551975db7fdcfc0d}{write}} (std\+::string filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a00fae2148875e210db73d23752f0ac15}{get\+\_\+index}} (std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ vert)
+\item 
+std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a031d93e4ffcda889b1ae12f9d12b80e6}{to\+\_\+standard\+\_\+tuple}} (const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} linear\+\_\+index)
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a4953b78887263039862c5f25d71ae0d6}{get\+\_\+lines}} (std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ base)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ad13a38553e1586c339a6e9f9e47b3210}{mesh\+\_\+hierarchy}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ae3bf71b1c708536771624273a5605de7}{cells}}
+\item 
+std\+::map$<$ std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a1547abc952c64ff170a08dc7cbffa544}{verts\+\_\+to\+\_\+index}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ab74d086831e2844db5746ec764dad0bd}{index\+\_\+to\+\_\+verts}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_acac967b16b41976bff998ebc1a3b2686}{next\+\_\+vert\+\_\+index}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to write \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} cells to a vtk file as a collection of vertices and edges for visualisation in Paraview. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_aa595d916db32d0e641f413f9f599407c}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_aa595d916db32d0e641f413f9f599407c}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!VTKMeshHierarchyCellsWriter@{VTKMeshHierarchyCellsWriter}}
+\index{VTKMeshHierarchyCellsWriter@{VTKMeshHierarchyCellsWriter}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{VTKMeshHierarchyCellsWriter()}{VTKMeshHierarchyCellsWriter()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::\+VTKMesh\+Hierarchy\+Cells\+Writer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$}]{mesh\+\_\+hierarchy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create new instance of the writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mesh\+\_\+hierarchy} & \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} instance to use as source for cells. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a00fae2148875e210db73d23752f0ac15}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a00fae2148875e210db73d23752f0ac15}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!get\_index@{get\_index}}
+\index{get\_index@{get\_index}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{get\_index()}{get\_index()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::get\+\_\+index (\begin{DoxyParamCaption}\item[{std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{vert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a4953b78887263039862c5f25d71ae0d6}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a4953b78887263039862c5f25d71ae0d6}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!get\_lines@{get\_lines}}
+\index{get\_lines@{get\_lines}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{get\_lines()}{get\_lines()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$std\+::tuple$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$, std\+::tuple$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ $>$ $>$ NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::get\+\_\+lines (\begin{DoxyParamCaption}\item[{std\+::tuple$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a3df7f807c9bd32c8d6f93b710b8d15bb}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a3df7f807c9bd32c8d6f93b710b8d15bb}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}}]{linear\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a cell to the list of cells to be written to the output file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em linear\+\_\+index} & Index of cell. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a031d93e4ffcda889b1ae12f9d12b80e6}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a031d93e4ffcda889b1ae12f9d12b80e6}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!to\_standard\_tuple@{to\_standard\_tuple}}
+\index{to\_standard\_tuple@{to\_standard\_tuple}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{to\_standard\_tuple()}{to\_standard\_tuple()}}
+{\footnotesize\ttfamily std\+::tuple$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::to\+\_\+standard\+\_\+tuple (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}}]{linear\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a96012e35f1a09eb7551975db7fdcfc0d}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a96012e35f1a09eb7551975db7fdcfc0d}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!write@{write}}
+\index{write@{write}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::write (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write the output vtk file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filename} & Filename to write output to. Should end in .vtk. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ae3bf71b1c708536771624273a5605de7}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ae3bf71b1c708536771624273a5605de7}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!cells@{cells}}
+\index{cells@{cells}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{cells}{cells}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::cells\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ab74d086831e2844db5746ec764dad0bd}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ab74d086831e2844db5746ec764dad0bd}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!index\_to\_verts@{index\_to\_verts}}
+\index{index\_to\_verts@{index\_to\_verts}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{index\_to\_verts}{index\_to\_verts}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, std\+::tuple$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ $>$ NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::index\+\_\+to\+\_\+verts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ad13a38553e1586c339a6e9f9e47b3210}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_ad13a38553e1586c339a6e9f9e47b3210}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!mesh\_hierarchy@{mesh\_hierarchy}}
+\index{mesh\_hierarchy@{mesh\_hierarchy}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{mesh\_hierarchy}{mesh\_hierarchy}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}$>$ NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::mesh\+\_\+hierarchy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_acac967b16b41976bff998ebc1a3b2686}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_acac967b16b41976bff998ebc1a3b2686}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!next\_vert\_index@{next\_vert\_index}}
+\index{next\_vert\_index@{next\_vert\_index}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{next\_vert\_index}{next\_vert\_index}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::next\+\_\+vert\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a1547abc952c64ff170a08dc7cbffa544}\label{classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_a1547abc952c64ff170a08dc7cbffa544}} 
+\index{NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}!verts\_to\_index@{verts\_to\_index}}
+\index{verts\_to\_index@{verts\_to\_index}!NESO::Particles::VTKMeshHierarchyCellsWriter@{NESO::Particles::VTKMeshHierarchyCellsWriter}}
+\doxysubsubsection{\texorpdfstring{verts\_to\_index}{verts\_to\_index}}
+{\footnotesize\ttfamily std\+::map$<$std\+::tuple$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ NESO\+::\+Particles\+::\+VTKMesh\+Hierarchy\+Cells\+Writer\+::verts\+\_\+to\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{utility__mesh__hierarchy__plotting_8hpp}{utility\+\_\+mesh\+\_\+hierarchy\+\_\+plotting.\+hpp}}\end{DoxyCompactItemize}

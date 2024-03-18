@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1DescendantProducts" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::DescendantProducts</compoundname>
+    <basecompoundref refid="classNESO_1_1Particles_1_1ProductMatrix" prot="public" virt="non-virtual">NESO::Particles::ProductMatrix</basecompoundref>
+    <includes refid="descendant__products_8hpp" local="no">descendant_products.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1DescendantProducts_1accfc1abb2f69f7720d802ebc0e73117e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ParticleGroup</definition>
+        <argsstring></argsstring>
+        <name>ParticleGroup</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="138" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classNESO_1_1Particles_1_1DescendantProducts_1a72f3f5fe60ba5928817fdd30da5ca4e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1DescendantProductsGet" kindref="compound">DescendantProductsGet</ref></type>
+        <definition>DescendantProductsGet ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; DescendantProducts * &gt; &amp;a)</argsstring>
+        <name>ParticleLoopImplementation::create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1DescendantProducts" kindref="compound">DescendantProducts</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="140" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1DescendantProducts_1af84834364211cacc7eb7c50c40162826" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDevice&lt;INT&gt; &gt; NESO::Particles::DescendantProducts::d_parent_cells</definition>
+        <argsstring></argsstring>
+        <name>d_parent_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="145" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1DescendantProducts_1adb21a5474d3afcf90c8b59330780e18d" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDevice&lt;INT&gt; &gt; NESO::Particles::DescendantProducts::d_parent_layers</definition>
+        <argsstring></argsstring>
+        <name>d_parent_layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="146" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1DescendantProducts_1a77900fb73b2f55601d819b97d44890b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::DescendantProducts::num_products_per_parent</definition>
+        <argsstring></argsstring>
+        <name>num_products_per_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of products this data structure is expecting per parent particle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="163" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1DescendantProducts_1ac2b604a21457a5e2010bb9d3f41b3933" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::DescendantProducts::num_particles</definition>
+        <argsstring></argsstring>
+        <name>num_particles</name>
+        <briefdescription>
+<para>The current number of parent particles the container is allocated for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="165" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DescendantProducts_1a91cd22ab8a4780af1be7c3010c18bc08" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1DescendantProductsGet" kindref="compound">DescendantProductsGet</ref></type>
+        <definition>DescendantProductsGet NESO::Particles::DescendantProducts::impl_get</definition>
+        <argsstring>()</argsstring>
+        <name>impl_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="148" column="32" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="148" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DescendantProducts_1a3548007123d2b9a4a69f8abebd420fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::DescendantProducts::DescendantProducts</definition>
+        <argsstring>()=default</argsstring>
+        <name>DescendantProducts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="158" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DescendantProducts_1a2f7cd6040ba4c37cdc70feb710bda365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1DescendantProducts" kindref="compound">DescendantProducts</ref> &amp;</type>
+        <definition>DescendantProducts&amp; NESO::Particles::DescendantProducts::operator=</definition>
+        <argsstring>(const DescendantProducts &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1DescendantProducts" kindref="compound">DescendantProducts</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="159" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DescendantProducts_1a81386ab8e39ad6957a8feaca497a9b50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::DescendantProducts::DescendantProducts</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, std::shared_ptr&lt; ProductMatrixSpec &gt; spec, const int num_products_per_parent)</argsstring>
+        <name>DescendantProducts</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> &gt;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>num_products_per_parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an instance from a <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> that defines which particle properties should be available for writing in the particle loop kernel.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Compute device on which products will be made. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specification of properties which require specialisation in the creating kernel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_products_per_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of products required per parent particle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="177" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="177" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1DescendantProducts_1accc49400b892df3bbeba560dab700fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void NESO::Particles::DescendantProducts::reset</definition>
+        <argsstring>(const int num_particles) override</argsstring>
+        <name>reset</name>
+        <reimplements refid="classNESO_1_1Particles_1_1ProductMatrix_1aa1cab6680f0e17928d253ba02ebc581f">reset</reimplements>
+        <param>
+          <type>const int</type>
+          <declname>num_particles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize the container to hold space for the products of a number of parent particles.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of parent particles space is required for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="192" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="192" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to create M products from each parent particle. Products may inherit property values from the parent. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NESO::Particles::DescendantProducts</label>
+        <link refid="classNESO_1_1Particles_1_1DescendantProducts"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::ProductMatrix</label>
+        <link refid="classNESO_1_1Particles_1_1ProductMatrix"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NESO::Particles::DescendantProducts</label>
+        <link refid="classNESO_1_1Particles_1_1DescendantProducts"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::ProductMatrix</label>
+        <link refid="classNESO_1_1Particles_1_1ProductMatrix"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="137" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="137" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1acd8862302e451df9bf66deacd64b3036" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>d_data_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a4de28c1890fe75fe7dea47580a8eb920" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>d_data_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1af84834364211cacc7eb7c50c40162826" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>d_parent_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1adb21a5474d3afcf90c8b59330780e18d" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>d_parent_layers</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1a3548007123d2b9a4a69f8abebd420fe1" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>DescendantProducts</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1a81386ab8e39ad6957a8feaca497a9b50" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>DescendantProducts</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a2e84197159db429c900407a9c2a046da" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>dh_offsets_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1ae42ded6981e0e85018ea7e619995aa88" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>dh_offsets_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1a91cd22ab8a4780af1be7c3010c18bc08" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>impl_get</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a3bc081cdac6a89a5882917806845027c" prot="protected" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>impl_get_const</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1ac2b604a21457a5e2010bb9d3f41b3933" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>num_particles</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a394ec9d622b553c346868a0e1cc47c9b" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>num_products</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1a77900fb73b2f55601d819b97d44890b5" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>num_products_per_parent</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1a2f7cd6040ba4c37cdc70feb710bda365" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a9fee81f0ff3286fc1f4c72a6dd928b8e" prot="public" virt="non-virtual" ambiguityscope="NESO::Particles::ProductMatrix::"><scope>NESO::Particles::DescendantProducts</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1accfc1abb2f69f7720d802ebc0e73117e" prot="private" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>ParticleGroup</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1a72f3f5fe60ba5928817fdd30da5ca4e9" prot="private" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>ParticleLoopImplementation::create_loop_arg</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a1e99906277466047744de32bd3be98bc" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>ProductMatrix</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1a99922a29e95d64ce9e8db21626a87372" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>ProductMatrix</name></member>
+      <member refid="classNESO_1_1Particles_1_1DescendantProducts_1accc49400b892df3bbeba560dab700fb0" prot="public" virt="virtual"><scope>NESO::Particles::DescendantProducts</scope><name>reset</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1aea1943c82462d28199426c4b6480cfd6" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>spec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ProductMatrix_1aa975aae565164248c7b6e902c1102bb1" prot="public" virt="non-virtual"><scope>NESO::Particles::DescendantProducts</scope><name>sycl_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::MeshHierarchyDeviceMapper</compoundname>
+    <includes refid="mesh__hierarchy_8hpp" local="no">mesh_hierarchy.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a2f28614b0853623d4812d1c065af5e0e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::MeshHierarchyDeviceMapper::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <briefdescription>
+<para>Number of spatial dimensions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="413" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a3806c60bbf13391695e8bd48cccc4384" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> *</type>
+        <definition>REAL* NESO::Particles::MeshHierarchyDeviceMapper::origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <briefdescription>
+<para>ndim sized array holding the mesh origin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="415" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1ae562025cc52bb8f2301f5abf4f2b8644" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+        <definition>INT* NESO::Particles::MeshHierarchyDeviceMapper::dims</definition>
+        <argsstring></argsstring>
+        <name>dims</name>
+        <briefdescription>
+<para>ndim sized array holding the number of coarse cells in each direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="417" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a7ee50d7f88ab2321d911655090c9c4b2" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref></type>
+        <definition>REAL NESO::Particles::MeshHierarchyDeviceMapper::inverse_cell_width_coarse</definition>
+        <argsstring></argsstring>
+        <name>inverse_cell_width_coarse</name>
+        <briefdescription>
+<para>The inverse of the coarse cell width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="419" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1ab0ae6c0eab6b5a1503acad3c405dbb4f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref></type>
+        <definition>REAL NESO::Particles::MeshHierarchyDeviceMapper::inverse_cell_width_fine</definition>
+        <argsstring></argsstring>
+        <name>inverse_cell_width_fine</name>
+        <briefdescription>
+<para>The inverse of the fine cell width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="421" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a87aafa2a2e2066a633befef4caee5f9c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref></type>
+        <definition>REAL NESO::Particles::MeshHierarchyDeviceMapper::cell_width_coarse</definition>
+        <argsstring></argsstring>
+        <name>cell_width_coarse</name>
+        <briefdescription>
+<para>The coarse cell width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="423" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a300d3cd396a7dc167828ff12c7d27a44" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref></type>
+        <definition>REAL NESO::Particles::MeshHierarchyDeviceMapper::cell_width_fine</definition>
+        <argsstring></argsstring>
+        <name>cell_width_fine</name>
+        <briefdescription>
+<para>The fine cell width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="425" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a11a0b1bd1c656b92f6f99ab90852a7a9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::MeshHierarchyDeviceMapper::ncells_dim_fine</definition>
+        <argsstring></argsstring>
+        <name>ncells_dim_fine</name>
+        <briefdescription>
+<para>The number of fine cells in each dimension per dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="427" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a9b798367e8b1deef9f3e93b2717a68d8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::MeshHierarchyDeviceMapper::ncells_fine</definition>
+        <argsstring></argsstring>
+        <name>ncells_fine</name>
+        <briefdescription>
+<para>The total number of fine cells per coarse cell. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="429" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a3ea972bf017e2178c1b3ff0cb23c7531" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::MeshHierarchyDeviceMapper::map_to_tuple</definition>
+        <argsstring>(const REAL *position, INT *cell) const</argsstring>
+        <name>map_to_tuple</name>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> *</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For an input point find the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> cell that contains the point in tuple form. Output tuple should be: 1D: (coarse_x, fine_x) 2D: (coarse_x, coarse_y, fine_x, fine_y) 3D: (coarse_x, coarse_y, coarse_z, fine_x, fine_y, fine_z)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ouput, index represented as a tuple. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="440" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="440" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a62ae46c3a695837c7ea27cae75ac039e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::MeshHierarchyDeviceMapper::map_tuple_to_cart_tuple</definition>
+        <argsstring>(const INT *mh_tuple, INT *cart_tuple) const</argsstring>
+        <name>map_tuple_to_cart_tuple</name>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>mh_tuple</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>cart_tuple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For an input <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> tuple output the tuple which would index into a standard Cartesian mesh of the same structure. Input tuple should be: 1D: (coarse_x, fine_x) 2D: (coarse_x, coarse_y, fine_x, fine_y) 3D: (coarse_x, coarse_y, coarse_z, fine_x, fine_y, fine_z)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mh_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input tuple in global <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> form. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">cart_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N dimensional tuple which indexes into the Cartesian mesh view of the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="494" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="494" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a5a1d3bf23049e5f2f61fdc70a85c29ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::MeshHierarchyDeviceMapper::map_to_cart_tuple_no_trunc</definition>
+        <argsstring>(const REAL *position, INT *cell) const</argsstring>
+        <name>map_to_cart_tuple_no_trunc</name>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> *</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map position into the cartesian grid. Do not attempt to trucate the position into the mesh.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input position to map into the Cartesian view of the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N dimensional tuple that maps into the Cartesian view of the <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="510" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="510" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a22fb400a42050d04eb1f6e3df86f36fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::MeshHierarchyDeviceMapper::cart_tuple_to_tuple</definition>
+        <argsstring>(const INT *cart_tuple, INT *mh_tuple) const</argsstring>
+        <name>cart_tuple_to_tuple</name>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>cart_tuple</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>mh_tuple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a Cartesian tuple index into a <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> global tuple index.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cart_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cartesian tuple to convert. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">mh_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> global tuple representation of input tuple. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="537" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="537" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a8e5b7922c2fd0493e21d9c92808419d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::MeshHierarchyDeviceMapper::tuple_to_linear_global</definition>
+        <argsstring>(INT *index_tuple) const</argsstring>
+        <name>tuple_to_linear_global</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>index_tuple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a global index represented by a tuple into a linear index. tuple should be: 1D: (coarse_x, fine_x) 2D: (coarse_x, coarse_y, fine_x, fine_y) 3D: (coarse_x, coarse_y, coarse_z, fine_x, fine_y, fine_z)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index represented as a tuple. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Linear index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="556" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="556" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1ab082becf0a8edaa001c49c3cf64d3826" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::MeshHierarchyDeviceMapper::tuple_to_linear_coarse</definition>
+        <argsstring>(INT *index_tuple) const</argsstring>
+        <name>tuple_to_linear_coarse</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>index_tuple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a coarse mesh index represented by a tuple into a linear index. tuple should be: 1D: (coarse_x) 2D: (coarse_x, coarse_y) 3D: (coarse_x, coarse_y, coarse_z)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index represented as a tuple. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Linear index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="573" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="573" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a852bfb9a0cb534c597ebf099d8c36a31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::MeshHierarchyDeviceMapper::tuple_to_linear_fine</definition>
+        <argsstring>(INT *index_tuple) const</argsstring>
+        <name>tuple_to_linear_fine</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+          <declname>index_tuple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a fine mesh index represented by a tuple into a linear index. tuple should be: 1D: (fine_x) 2D: (fine_x, fine_y) 3D: (fine_x, fine_y, fine_z)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index represented as a tuple. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Linear index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="592" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="592" bodyend="599"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A struct to aid binning points into <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> cells. This type is device copyable such that points can be easilly binned into cells on the device. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="411" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="411" bodyend="600"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a22fb400a42050d04eb1f6e3df86f36fb" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>cart_tuple_to_tuple</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a87aafa2a2e2066a633befef4caee5f9c" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>cell_width_coarse</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a300d3cd396a7dc167828ff12c7d27a44" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>cell_width_fine</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1ae562025cc52bb8f2301f5abf4f2b8644" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>dims</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a7ee50d7f88ab2321d911655090c9c4b2" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>inverse_cell_width_coarse</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1ab0ae6c0eab6b5a1503acad3c405dbb4f" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>inverse_cell_width_fine</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a5a1d3bf23049e5f2f61fdc70a85c29ed" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>map_to_cart_tuple_no_trunc</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a3ea972bf017e2178c1b3ff0cb23c7531" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>map_to_tuple</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a62ae46c3a695837c7ea27cae75ac039e" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>map_tuple_to_cart_tuple</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a11a0b1bd1c656b92f6f99ab90852a7a9" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>ncells_dim_fine</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a9b798367e8b1deef9f3e93b2717a68d8" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>ncells_fine</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a2f28614b0853623d4812d1c065af5e0e" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>ndim</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a3806c60bbf13391695e8bd48cccc4384" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>origin</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1ab082becf0a8edaa001c49c3cf64d3826" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>tuple_to_linear_coarse</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a852bfb9a0cb534c597ebf099d8c36a31" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>tuple_to_linear_fine</name></member>
+      <member refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper_1a8e5b7922c2fd0493e21d9c92808419d8" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyDeviceMapper</scope><name>tuple_to_linear_global</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::ProductMatrix::Write</compoundname>
+    <includes refid="product__matrix_8hpp" local="no">product_matrix.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a84911c8a18e14671a1bb5bab56f4483e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> *</type>
+        <definition>REAL* NESO::Particles::Access::ProductMatrix::Write::ptr_real</definition>
+        <argsstring></argsstring>
+        <name>ptr_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="146" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a090627d1289b79d0b210a2cd801b4d17" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+        <definition>INT* NESO::Particles::Access::ProductMatrix::Write::ptr_int</definition>
+        <argsstring></argsstring>
+        <name>ptr_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="147" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a99796ac07983f837061a0431ceba2a83" prot="public" static="no" mutable="no">
+        <type>int const  *</type>
+        <definition>int const* NESO::Particles::Access::ProductMatrix::Write::offsets_real</definition>
+        <argsstring></argsstring>
+        <name>offsets_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="148" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1ae3b26a8cd3f6e7e6810f7389c6f1159a" prot="public" static="no" mutable="no">
+        <type>int const  *</type>
+        <definition>int const* NESO::Particles::Access::ProductMatrix::Write::offsets_int</definition>
+        <argsstring></argsstring>
+        <name>offsets_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="149" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1abf7bbb38a2afed9d48b85cface0d92f6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::ProductMatrix::Write::num_products</definition>
+        <argsstring></argsstring>
+        <name>num_products</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="150" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1af23f6e0c2e44e5b874209cdbeb1d924f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::Access::ProductMatrix::Write::Write</definition>
+        <argsstring>()=default</argsstring>
+        <name>Write</name>
+        <briefdescription>
+<para>Pointer to underlying data for the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="145" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a509e7d32ab1a794ac559676b22bad978" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &amp;</type>
+        <definition>REAL&amp; NESO::Particles::Access::ProductMatrix::Write::at_real</definition>
+        <argsstring>(const int product, const int property, const int component)</argsstring>
+        <name>at_real</name>
+        <param>
+          <type>const int</type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>property</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kindref="compound">Write</ref> access to REAL particle property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>product</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the product to access, i.e. the row in the product matrix. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>property</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle property to access using the ordering REAL <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref> instances were passed to the <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component of the property to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Modifiable reference to property value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="162" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a8be413685b28a0e67fbd287747b9292b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &amp;</type>
+        <definition>INT&amp; NESO::Particles::Access::ProductMatrix::Write::at_int</definition>
+        <argsstring>(const int product, const int property, const int component)</argsstring>
+        <name>at_int</name>
+        <param>
+          <type>const int</type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>property</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kindref="compound">Write</ref> access to INT particle property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>product</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the product to access, i.e. the row in the product matrix. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>property</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle property to access using the ordering INT <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref> instances were passed to the <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component of the property to access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Modifiable reference to property value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="177" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleLoop" kindref="compound">ParticleLoop</ref> access type for <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> <ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write" kindref="compound">Write</ref> access. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="143" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="143" bodyend="181"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a8be413685b28a0e67fbd287747b9292b" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>at_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a509e7d32ab1a794ac559676b22bad978" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>at_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1abf7bbb38a2afed9d48b85cface0d92f6" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>num_products</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1ae3b26a8cd3f6e7e6810f7389c6f1159a" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>offsets_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a99796ac07983f837061a0431ceba2a83" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>offsets_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a090627d1289b79d0b210a2cd801b4d17" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>ptr_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1a84911c8a18e14671a1bb5bab56f4483e" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>ptr_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_1af23f6e0c2e44e5b874209cdbeb1d924f" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::ProductMatrix::Write</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

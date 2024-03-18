@@ -1,0 +1,268 @@
+\hypertarget{classNESO_1_1Particles_1_1CellDatConst}{}\doxysection{NESO\+::Particles\+::Cell\+Dat\+Const$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1CellDatConst}\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+
+
+{\ttfamily \#include $<$cell\+\_\+dat.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a9d551075897310caea741a2e05bac9d8}{Cell\+Dat\+Const}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a773f946bfeeba849250f19ad292e3342}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_addd45393036cb2b6a5b54ef4d69ad15e}{$\sim$\+Cell\+Dat\+Const}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_aaa596afb0183c9026247fdc9a75bd5d6}{fill}} (const T value)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a5ddbedbf811b2fd433083b14542951df}{Cell\+Dat\+Const}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_af159149ec8ebc2b48cab658e4a80d041}{sycl\+\_\+target}}, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a8763c16f5be425db164c65e9ad5a44e1}{ncells}}, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a7dc4328fed6965d7dc849bac72096fad}{nrow}}, const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_ac4ca81e668841fe1c94134cbc4aed853}{ncol}})
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_aa60a6a3d78d0406b1d65eabd295d988f}{idx}} (const int cell, const int row, const int col)
+\item 
+T $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a0cb0df0ac8345020c683c2d5f047e117}{device\+\_\+ptr}} ()
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a8e7fbe7ef590c74d586c09da58870f8d}{Cell\+Data}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a177a9d573346877782b07a47fefaf49f}{get\+\_\+cell}} (const int cell)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_ab86f9f319854dc3a28ed5372e8e3fd5f}{set\+\_\+cell}} (const int cell, \mbox{\hyperlink{namespaceNESO_1_1Particles_a8e7fbe7ef590c74d586c09da58870f8d}{Cell\+Data}}$<$ T $>$ cell\+\_\+data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_af159149ec8ebc2b48cab658e4a80d041}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a8763c16f5be425db164c65e9ad5a44e1}{ncells}}
+\begin{DoxyCompactList}\small\item\em Number of cells, labeled 0,...,N-\/1. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a7dc4328fed6965d7dc849bac72096fad}{nrow}}
+\begin{DoxyCompactList}\small\item\em Number of rows in each cell. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_ac4ca81e668841fe1c94134cbc4aed853}{ncol}}
+\begin{DoxyCompactList}\small\item\em Number of columns in each cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1CellDatConstDeviceType}{Cell\+Dat\+Const\+Device\+Type}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a23bfd25bc37ce931636f7c46fb41cced}{impl\+\_\+get}} ()
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst}{Cell\+Dat\+Const\+Device\+Type\+Const}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a0b7257a185d5f9490808e9ac14792c8b}{impl\+\_\+get\+\_\+const}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\class \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst_a5781ba095359438118ce96e2e0eb4a8d}{Particle\+Loop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Cell\+Dat\+Const$<$ T $>$}
+
+Container that allocates on the device a matrix of fixed size nrow X ncol for N cells. Data stored in column major format. i.\+e. Data order from slowest to fastest is\+: cell, column, row. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a9d551075897310caea741a2e05bac9d8}\label{classNESO_1_1Particles_1_1CellDatConst_a9d551075897310caea741a2e05bac9d8}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!CellDatConst@{CellDatConst}}
+\index{CellDatConst@{CellDatConst}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CellDatConst()}{CellDatConst()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}}$<$ T $>$ \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_addd45393036cb2b6a5b54ef4d69ad15e}\label{classNESO_1_1Particles_1_1CellDatConst_addd45393036cb2b6a5b54ef4d69ad15e}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!````~CellDatConst@{$\sim$CellDatConst}}
+\index{````~CellDatConst@{$\sim$CellDatConst}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$CellDatConst()}{~CellDatConst()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a5ddbedbf811b2fd433083b14542951df}\label{classNESO_1_1Particles_1_1CellDatConst_a5ddbedbf811b2fd433083b14542951df}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!CellDatConst@{CellDatConst}}
+\index{CellDatConst@{CellDatConst}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CellDatConst()}{CellDatConst()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const int}]{ncells,  }\item[{const int}]{nrow,  }\item[{const int}]{ncol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create new \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}} on the specified compute target with a fixed cell count, fixed number of rows per cell and fixed number of columns per cell.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em ncells} & Number of cells. \\
+\hline
+{\em nrow} & Number of rows. \\
+\hline
+{\em ncol} & Number of columns. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a0cb0df0ac8345020c683c2d5f047e117}\label{classNESO_1_1Particles_1_1CellDatConst_a0cb0df0ac8345020c683c2d5f047e117}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!device\_ptr@{device\_ptr}}
+\index{device\_ptr@{device\_ptr}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{device\_ptr()}{device\_ptr()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::device\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the device pointer for the underlying data. Only accessible on the device.
+
+\begin{DoxyReturn}{Returns}
+Returns a device pointer on the compute target. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_aaa596afb0183c9026247fdc9a75bd5d6}\label{classNESO_1_1Particles_1_1CellDatConst_aaa596afb0183c9026247fdc9a75bd5d6}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!fill@{fill}}
+\index{fill@{fill}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::fill (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill all the entries with a given value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to place in all entries. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a177a9d573346877782b07a47fefaf49f}\label{classNESO_1_1Particles_1_1CellDatConst_a177a9d573346877782b07a47fefaf49f}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!get\_cell@{get\_cell}}
+\index{get\_cell@{get\_cell}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_cell()}{get\_cell()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a8e7fbe7ef590c74d586c09da58870f8d}{Cell\+Data}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::get\+\_\+cell (\begin{DoxyParamCaption}\item[{const int}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the data stored in a provided cell on the host as a Cell\+Data instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & Cell to access the underlying data for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell data for cell. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_aa60a6a3d78d0406b1d65eabd295d988f}\label{classNESO_1_1Particles_1_1CellDatConst_aa60a6a3d78d0406b1d65eabd295d988f}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!idx@{idx}}
+\index{idx@{idx}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{idx()}{idx()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::idx (\begin{DoxyParamCaption}\item[{const int}]{cell,  }\item[{const int}]{row,  }\item[{const int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function to index into the stored data. Note column major format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & Cell index to index into. \\
+\hline
+{\em row} & Row to access. \\
+\hline
+{\em col} & Column to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Linear index into data structure for the specified row and column. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a23bfd25bc37ce931636f7c46fb41cced}\label{classNESO_1_1Particles_1_1CellDatConst_a23bfd25bc37ce931636f7c46fb41cced}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!impl\_get@{impl\_get}}
+\index{impl\_get@{impl\_get}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get()}{impl\_get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1CellDatConstDeviceType}{Cell\+Dat\+Const\+Device\+Type}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::impl\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Non-\/const pointer to underlying device data. Intended for friend access from \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a0b7257a185d5f9490808e9ac14792c8b}\label{classNESO_1_1Particles_1_1CellDatConst_a0b7257a185d5f9490808e9ac14792c8b}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!impl\_get\_const@{impl\_get\_const}}
+\index{impl\_get\_const@{impl\_get\_const}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get\_const()}{impl\_get\_const()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst}{Cell\+Dat\+Const\+Device\+Type\+Const}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::impl\+\_\+get\+\_\+const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Const pointer to underlying device data. Intended for friend access from \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a773f946bfeeba849250f19ad292e3342}\label{classNESO_1_1Particles_1_1CellDatConst_a773f946bfeeba849250f19ad292e3342}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}}\& \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{Cell\+Dat\+Const}}$<$ T $>$ const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_ab86f9f319854dc3a28ed5372e8e3fd5f}\label{classNESO_1_1Particles_1_1CellDatConst_ab86f9f319854dc3a28ed5372e8e3fd5f}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!set\_cell@{set\_cell}}
+\index{set\_cell@{set\_cell}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set\_cell()}{set\_cell()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::set\+\_\+cell (\begin{DoxyParamCaption}\item[{const int}]{cell,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a8e7fbe7ef590c74d586c09da58870f8d}{Cell\+Data}}$<$ T $>$}]{cell\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the data in a cell using a Cell\+Data instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & Cell to set data for. \\
+\hline
+{\em cell\+\_\+data} & Source data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a5781ba095359438118ce96e2e0eb4a8d}\label{classNESO_1_1Particles_1_1CellDatConst_a5781ba095359438118ce96e2e0eb4a8d}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!ParticleLoop@{ParticleLoop}}
+\index{ParticleLoop@{ParticleLoop}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoop}{ParticleLoop}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename KERNEL , typename... ARGS$>$ \\
+friend class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a8763c16f5be425db164c65e9ad5a44e1}\label{classNESO_1_1Particles_1_1CellDatConst_a8763c16f5be425db164c65e9ad5a44e1}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!ncells@{ncells}}
+\index{ncells@{ncells}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ncells}{ncells}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::ncells}
+
+
+
+Number of cells, labeled 0,...,N-\/1. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_ac4ca81e668841fe1c94134cbc4aed853}\label{classNESO_1_1Particles_1_1CellDatConst_ac4ca81e668841fe1c94134cbc4aed853}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!ncol@{ncol}}
+\index{ncol@{ncol}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ncol}{ncol}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::ncol}
+
+
+
+Number of columns in each cell. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_a7dc4328fed6965d7dc849bac72096fad}\label{classNESO_1_1Particles_1_1CellDatConst_a7dc4328fed6965d7dc849bac72096fad}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!nrow@{nrow}}
+\index{nrow@{nrow}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{nrow}{nrow}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const int \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::nrow}
+
+
+
+Number of rows in each cell. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CellDatConst_af159149ec8ebc2b48cab658e4a80d041}\label{classNESO_1_1Particles_1_1CellDatConst_af159149ec8ebc2b48cab658e4a80d041}} 
+\index{NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::CellDatConst$<$ T $>$@{NESO::Particles::CellDatConst$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CellDatConst}{NESO\+::\+Particles\+::\+Cell\+Dat\+Const}}$<$ T $>$\+::sycl\+\_\+target}
+
+
+
+Compute device used by the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{cell__dat_8hpp}{cell\+\_\+dat.\+hpp}}\end{DoxyCompactItemize}

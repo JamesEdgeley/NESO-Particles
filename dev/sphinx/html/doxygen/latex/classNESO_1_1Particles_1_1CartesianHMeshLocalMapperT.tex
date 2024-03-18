@@ -1,0 +1,215 @@
+\hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{}\doxysection{NESO\+::Particles\+::Cartesian\+HMesh\+Local\+MapperT Class Reference}
+\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+
+
+{\ttfamily \#include $<$cartesian\+\_\+mesh.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Cartesian\+HMesh\+Local\+MapperT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for NESO\+::Particles\+::Cartesian\+HMesh\+Local\+MapperT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a5f26eed6e1e81b28825076b3b927b0e5}{Cartesian\+HMesh\+Local\+MapperT}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{Cartesian\+HMesh\+Local\+MapperT}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{Cartesian\+HMesh\+Local\+MapperT}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_abd2aeecfa77d6bad4ffd989dc0ba0a1c}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{Cartesian\+HMesh\+Local\+MapperT}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a67d157930f5c10be36878fa5b1865b02}{Cartesian\+HMesh\+Local\+MapperT}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeecd7506fd3374df55904279b77e3abc}{sycl\+\_\+target}}, \mbox{\hyperlink{namespaceNESO_1_1Particles_a072de8fe41e7c3032cea5a3c577b6981}{Cartesian\+HMesh\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac2417d93bcaa77b836b7d34807e3ca1b}{mesh}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a143365c56d44cbfee917c7a9382922e5}{map}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&particle\+\_\+group, const int map\+\_\+cell=-\/1)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ae56046ac8c8813edca42cf5410c12f77}{particle\+\_\+group\+\_\+callback}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&particle\+\_\+group)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a072de8fe41e7c3032cea5a3c577b6981}{Cartesian\+HMesh\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac2417d93bcaa77b836b7d34807e3ca1b}{mesh}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}} on which the lookup is based. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeecd7506fd3374df55904279b77e3abc}{sycl\+\_\+target}}
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a7f25a74446332de974ca1a8e9e8e1abd}{ndim}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_abc5c7c8e955fc9057fdf27b62f4fae27}{cell\+\_\+width\+\_\+fine}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac86ff5be36b8c9a5cca602a70c93f488}{inverse\+\_\+cell\+\_\+width\+\_\+fine}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a477e7c31177df2a9707ef8c229b82c1d}{dh\+\_\+cell\+\_\+lookups}} \mbox{[}3\mbox{]}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $\ast$ $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ad7472837087fcb743b42dd1f09cdf048}{dh\+\_\+cell\+\_\+lookup}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a463d231b0f35c7d3d2197eda31dc100d}{dh\+\_\+rank\+\_\+map}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeaf57ab5c6527b09efcd836005bb55d3}{dh\+\_\+dims}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ int $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a4550464bfa6118dcfcb787745d54262d}{dh\+\_\+cell\+\_\+counts}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper}{Local\+Mapper}} for \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}}. Maps particle positions within the stencil width of each MPI subdomain to the owning rank. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a5f26eed6e1e81b28825076b3b927b0e5}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a5f26eed6e1e81b28825076b3b927b0e5}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!CartesianHMeshLocalMapperT@{CartesianHMeshLocalMapperT}}
+\index{CartesianHMeshLocalMapperT@{CartesianHMeshLocalMapperT}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{CartesianHMeshLocalMapperT()}{CartesianHMeshLocalMapperT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::\+Cartesian\+HMesh\+Local\+MapperT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{Cartesian\+HMesh\+Local\+MapperT}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a67d157930f5c10be36878fa5b1865b02}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a67d157930f5c10be36878fa5b1865b02}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!CartesianHMeshLocalMapperT@{CartesianHMeshLocalMapperT}}
+\index{CartesianHMeshLocalMapperT@{CartesianHMeshLocalMapperT}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{CartesianHMeshLocalMapperT()}{CartesianHMeshLocalMapperT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::\+Cartesian\+HMesh\+Local\+MapperT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a072de8fe41e7c3032cea5a3c577b6981}{Cartesian\+HMesh\+Shared\+Ptr}}}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new mapper instance to map local particle positions to owing ranks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em mesh} & \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}} instance this mapping is based on. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a143365c56d44cbfee917c7a9382922e5}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a143365c56d44cbfee917c7a9382922e5}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!map@{map}}
+\index{map@{map}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&}]{particle\+\_\+group,  }\item[{const int}]{map\+\_\+cell = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Map positions to owning MPI ranks. Positions should be within the domain prior to calling map, i.\+e. particles should be within the domain extents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} to use. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper_ab488f00e5073b75d73fc5642a2218bc1}{NESO\+::\+Particles\+::\+Local\+Mapper}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_abd2aeecfa77d6bad4ffd989dc0ba0a1c}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_abd2aeecfa77d6bad4ffd989dc0ba0a1c}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{Cartesian\+HMesh\+Local\+MapperT}}\& NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT}{Cartesian\+HMesh\+Local\+MapperT}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ae56046ac8c8813edca42cf5410c12f77}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ae56046ac8c8813edca42cf5410c12f77}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!particle\_group\_callback@{particle\_group\_callback}}
+\index{particle\_group\_callback@{particle\_group\_callback}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{particle\_group\_callback()}{particle\_group\_callback()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::particle\+\_\+group\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&}]{particle\+\_\+group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+No-\/op implementation of callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper_ab3c7f02df9394e8ebbe9788b78fb5a75}{NESO\+::\+Particles\+::\+Local\+Mapper}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_abc5c7c8e955fc9057fdf27b62f4fae27}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_abc5c7c8e955fc9057fdf27b62f4fae27}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!cell\_width\_fine@{cell\_width\_fine}}
+\index{cell\_width\_fine@{cell\_width\_fine}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{cell\_width\_fine}{cell\_width\_fine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::cell\+\_\+width\+\_\+fine\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a4550464bfa6118dcfcb787745d54262d}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a4550464bfa6118dcfcb787745d54262d}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!dh\_cell\_counts@{dh\_cell\_counts}}
+\index{dh\_cell\_counts@{dh\_cell\_counts}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{dh\_cell\_counts}{dh\_cell\_counts}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ $>$ NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::dh\+\_\+cell\+\_\+counts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ad7472837087fcb743b42dd1f09cdf048}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ad7472837087fcb743b42dd1f09cdf048}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!dh\_cell\_lookup@{dh\_cell\_lookup}}
+\index{dh\_cell\_lookup@{dh\_cell\_lookup}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{dh\_cell\_lookup}{dh\_cell\_lookup}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int $\ast$$>$ $>$ NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::dh\+\_\+cell\+\_\+lookup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a477e7c31177df2a9707ef8c229b82c1d}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a477e7c31177df2a9707ef8c229b82c1d}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!dh\_cell\_lookups@{dh\_cell\_lookups}}
+\index{dh\_cell\_lookups@{dh\_cell\_lookups}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{dh\_cell\_lookups}{dh\_cell\_lookups}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ $>$ NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::dh\+\_\+cell\+\_\+lookups\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeaf57ab5c6527b09efcd836005bb55d3}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeaf57ab5c6527b09efcd836005bb55d3}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!dh\_dims@{dh\_dims}}
+\index{dh\_dims@{dh\_dims}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{dh\_dims}{dh\_dims}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ $>$ NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::dh\+\_\+dims\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a463d231b0f35c7d3d2197eda31dc100d}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a463d231b0f35c7d3d2197eda31dc100d}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!dh\_rank\_map@{dh\_rank\_map}}
+\index{dh\_rank\_map@{dh\_rank\_map}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{dh\_rank\_map}{dh\_rank\_map}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$int$>$ $>$ NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::dh\+\_\+rank\+\_\+map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac86ff5be36b8c9a5cca602a70c93f488}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac86ff5be36b8c9a5cca602a70c93f488}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!inverse\_cell\_width\_fine@{inverse\_cell\_width\_fine}}
+\index{inverse\_cell\_width\_fine@{inverse\_cell\_width\_fine}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{inverse\_cell\_width\_fine}{inverse\_cell\_width\_fine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::inverse\+\_\+cell\+\_\+width\+\_\+fine\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac2417d93bcaa77b836b7d34807e3ca1b}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ac2417d93bcaa77b836b7d34807e3ca1b}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!mesh@{mesh}}
+\index{mesh@{mesh}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a072de8fe41e7c3032cea5a3c577b6981}{Cartesian\+HMesh\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::mesh}
+
+
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}} on which the lookup is based. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a7f25a74446332de974ca1a8e9e8e1abd}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a7f25a74446332de974ca1a8e9e8e1abd}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!ndim@{ndim}}
+\index{ndim@{ndim}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{ndim}{ndim}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::ndim\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeecd7506fd3374df55904279b77e3abc}\label{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_aeecd7506fd3374df55904279b77e3abc}} 
+\index{NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::CartesianHMeshLocalMapperT@{NESO::Particles::CartesianHMeshLocalMapperT}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+Mapper\+T\+::sycl\+\_\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{cartesian__mesh_8hpp}{cartesian\+\_\+mesh.\+hpp}}\end{DoxyCompactItemize}

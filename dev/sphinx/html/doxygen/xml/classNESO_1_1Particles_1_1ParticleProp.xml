@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticleProp" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleProp</compoundname>
+    <includes refid="particle__spec_8hpp" local="no">particle_spec.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleProp_1ae7962074b7dba928e724cbba553fe5cd" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; T &gt;</type>
+        <definition>Sym&lt;T&gt; NESO::Particles::ParticleProp&lt; T &gt;::sym</definition>
+        <argsstring></argsstring>
+        <name>sym</name>
+        <briefdescription>
+<para>Symbol giving a label to the property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="50" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleProp_1aa3027118482ade4e73a17f51faa63e8d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string NESO::Particles::ParticleProp&lt; T &gt;::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>Name of the property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="52" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleProp_1a8fcd61be2b97acb589aaf19ef9549a60" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleProp&lt; T &gt;::ncomp</definition>
+        <argsstring></argsstring>
+        <name>ncomp</name>
+        <briefdescription>
+<para>Number of components required by this property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="54" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleProp_1a0f864e55dc4f8809f6a4a72d95891b02" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleProp&lt; T &gt;::positions</definition>
+        <argsstring></argsstring>
+        <name>positions</name>
+        <briefdescription>
+<para>Bool to indicate if this property is a particle position or cell id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="56" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleProp_1a305f4ca093f7569d540b4e6879fb204d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleProp&lt; T &gt;::ParticleProp</definition>
+        <argsstring>(const Sym&lt; T &gt; sym, int ncomp, bool positions=false)</argsstring>
+        <name>ParticleProp</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; T &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ncomp</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>positions</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for particle properties.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;T&gt;</ref> instance for the property. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncomp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of components for the property. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bool to indicate if the property hold positions or cells ids. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="65" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleProp_1a98088fbe0e173ae43279f6142e692b25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NESO::Particles::ParticleProp&lt; T &gt;::operator==</definition>
+        <argsstring>(const ParticleProp&lt; T &gt; &amp;prop) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; T &gt; &amp;</type>
+          <declname>prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="68" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to describe a property of a particle. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>NESO::Particles::ParticleProp&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleProp"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sym</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::Sym&lt; T &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1Sym"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="46" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="46" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticleProp_1aa3027118482ade4e73a17f51faa63e8d" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleProp</scope><name>name</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleProp_1a8fcd61be2b97acb589aaf19ef9549a60" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleProp</scope><name>ncomp</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleProp_1a98088fbe0e173ae43279f6142e692b25" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleProp</scope><name>operator==</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleProp_1a305f4ca093f7569d540b4e6879fb204d" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleProp</scope><name>ParticleProp</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleProp_1a0f864e55dc4f8809f6a4a72d95891b02" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleProp</scope><name>positions</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleProp_1ae7962074b7dba928e724cbba553fe5cd" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleProp</scope><name>sym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

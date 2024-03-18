@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</compoundname>
+    <includes refid="particle__sub__group_8hpp" local="no">particle_sub_group.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1a9021b0aadb6744b7e4bbe3fed177d3e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT::npart_local</definition>
+        <argsstring></argsstring>
+        <name>npart_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="45" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1ac0ffd372f95ecc4b15e39618ff9703be" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT::ncell</definition>
+        <argsstring></argsstring>
+        <name>ncell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="46" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1ac60f43ec7c78a4a1a24014fb4e4e6f21" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT::h_npart_cell</definition>
+        <argsstring></argsstring>
+        <name>h_npart_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="47" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1a8b44c4f4c261e4ab2edf3d44bf686b1b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT::d_npart_cell</definition>
+        <argsstring></argsstring>
+        <name>d_npart_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="48" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1ada1e66fdb6c35425a65388e68fa94236" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> *</type>
+        <definition>INT* NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT::d_npart_cell_es</definition>
+        <argsstring></argsstring>
+        <name>d_npart_cell_es</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="49" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1a8e2d829acfdeb9cdfae9efec31555af1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> ***</type>
+        <definition>INT*** NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT::d_map_cells_to_particles</definition>
+        <argsstring></argsstring>
+        <name>d_map_cells_to_particles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="50" column="9" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" line="44" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp" bodystart="44" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1a8e2d829acfdeb9cdfae9efec31555af1" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</scope><name>d_map_cells_to_particles</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1a8b44c4f4c261e4ab2edf3d44bf686b1b" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</scope><name>d_npart_cell</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1ada1e66fdb6c35425a65388e68fa94236" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</scope><name>d_npart_cell_es</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1ac60f43ec7c78a4a1a24014fb4e4e6f21" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</scope><name>h_npart_cell</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1ac0ffd372f95ecc4b15e39618ff9703be" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</scope><name>ncell</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT_1a9021b0aadb6744b7e4bbe3fed177d3e2" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector::SelectionT</scope><name>npart_local</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

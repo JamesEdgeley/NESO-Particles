@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1Write" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::Write</compoundname>
+    <basecompoundref refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric" prot="public" virt="non-virtual">NESO::Particles::Access::AccessGeneric&lt; T &gt;</basecompoundref>
+    <includes refid="particle__loop_8hpp" local="no">particle_loop.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Write</ref> access descriptor. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NESO::Particles::Access::AccessGeneric&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::Access::Write&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Write"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NESO::Particles::Access::AccessGeneric&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::Access::Write&lt; T &gt;</label>
+        <link refid="structNESO_1_1Particles_1_1Access_1_1Write"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" line="112" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp" bodystart="112" bodyend="112"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric_1adcf2b692e27c42e30bfedea17d68a4bc" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::Write</scope><name>obj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

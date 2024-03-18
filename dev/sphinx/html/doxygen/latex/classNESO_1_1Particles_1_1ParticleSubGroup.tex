@@ -1,0 +1,377 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup}{}\doxysection{NESO\+::Particles\+::Particle\+Sub\+Group Class Reference}
+\label{classNESO_1_1Particles_1_1ParticleSubGroup}\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+
+
+{\ttfamily \#include $<$particle\+\_\+sub\+\_\+group.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Particle\+Sub\+Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1ParticleSubGroup__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename PARENT , typename KERNEL , typename... ARGS$>$ }\\\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a6e673fb66c1a096622fc5bf7c7f92175}{Particle\+Sub\+Group}} (std\+::shared\+\_\+ptr$<$ PARENT $>$ parent, KERNEL kernel, ARGS... args)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a36bb9e1bbd374c5c1f67489cf6582945}{Particle\+Sub\+Group}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ad6419d52da005271b630d7e6e4ddf27b}{particle\+\_\+group}})
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ad41269d361a684eb306f5e66b2e539d6}{static\+\_\+status}} (const std\+::optional$<$ bool $>$ status=std\+::nullopt)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a8d0b18f9903c0baee82264b9cd6e306d}{create}} ()
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a1dd4ff54fa28aca5228c2ae0f8889b5e}{is\+\_\+valid}} ()
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a2d283c8bb620a329d058c409b9cc530a}{create\+\_\+if\+\_\+required}} ()
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_afa51a21ae31766ac13f9cb0744084283}{get\+\_\+npart\+\_\+local}} ()
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a6fe47a088aa94c83387e60d7e2a9337f}{get\+\_\+npart\+\_\+cell}} (const int cell)
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_afc79735ee1e3cb66eba4e775ca2a5c05}{get\+\_\+particle\+\_\+group}} ()
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a6dd8f916ad28633f0c1b50cc1f18fc63}{is\+\_\+entire\+\_\+particle\+\_\+group}} ()
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_aaee68f5229fd2541814a450ad90eb6cf}{Particle\+Set\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_af968b5937fcba035bb7a6ae548016587}{get\+\_\+particles}} (std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&cells, std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&layers)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$template$<$ typename $>$ typename T, typename U $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ad222ab5d4650da6b3e59db88b055b689}{check\+\_\+sym\+\_\+type}} (T$<$ U $>$ arg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_aab2cb6287942070e72c50ab8647dd60b}{check\+\_\+sym\+\_\+type}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a5ee96de18cd5766f9fc2ff2b719e6ad5}{Sym\+Vector\+Shared\+Ptr}}$<$ T $>$ sv)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a720a027ac84fd34c0a1e52907c5a8349}{check\+\_\+sym\+\_\+type}} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]} \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopIndex}{Particle\+Loop\+Index}} \&)
+\item 
+{\footnotesize template$<$template$<$ typename $>$ typename T, typename U $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_aafbde5415b54d2727983ed6ebcc1e60a}{check\+\_\+read\+\_\+access}} (T$<$ U $>$ arg)
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ac9c43324894c71bb28dbfecc475021cc}{Particle\+Sub\+Group}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector}{Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a6ec1b13a7880c1cbf232ad5dd16dc5bc}{selector}})
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a0880de589f0097a99a1d935d0dc39908}{get\+\_\+cells\+\_\+layers}} (std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&cells, std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&layers)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a74ffd1467be920317989c76127568d91}{get\+\_\+cells\+\_\+layers}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$d\+\_\+cells, \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$d\+\_\+layers)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ae09233998ff765d8a430feb9ebe87372}{create\+\_\+inner}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ad6bd9c075a4091be02c28937a2ac3d97}{create\+\_\+and\+\_\+update\+\_\+cache}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a4dcf2633ec8966b79aab81e4cc7b3dc7}{add\+\_\+parent\+\_\+dependencies}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} parent)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a7d031f7fb2b1f7e888cb940723af2fc5}{add\+\_\+parent\+\_\+dependencies}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} $>$ parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_aa899d77b4632d1958bd9dedac961e530}{is\+\_\+static}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ad6419d52da005271b630d7e6e4ddf27b}{particle\+\_\+group}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector}{Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a6ec1b13a7880c1cbf232ad5dd16dc5bc}{selector}}
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT}{Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::\+SelectionT}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a736c2cace1aa65d95ba8a80b92d95a9e}{selection}}
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a141485db78744b611653fb3a5840b805}{npart\+\_\+local}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup_af81070532c8a85f0f1b3afb4ef673bf1}{Particle\+Group\+::\+Particle\+Dat\+Version\+Tracker}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_a0b2926b99a752be1595a71c16f9d59e1}{particle\+\_\+dat\+\_\+versions}}
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ada58542e1f25a9f686b8c592465fbabf}{is\+\_\+whole\+\_\+particle\+\_\+group}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_ae9a3e14c1844585e5bc4c0a43f430978}{Particle\+Loop\+Sub\+Group}}
+\item 
+class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup_accfc1abb2f69f7720d802ebc0e73117e}{Particle\+Group}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} is a container that holds the description of a subset of the particles in a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}. For example a sub group could be constructed with all particles of even id. A \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} is a valid iteration set for a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}.
+
+A \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} with no selector lambda refers to the entire parent \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ac9c43324894c71bb28dbfecc475021cc}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ac9c43324894c71bb28dbfecc475021cc}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!ParticleSubGroup@{ParticleSubGroup}}
+\index{ParticleSubGroup@{ParticleSubGroup}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{ParticleSubGroup()}{ParticleSubGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::\+Particle\+Sub\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector}{Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector}}}]{selector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a6e673fb66c1a096622fc5bf7c7f92175}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a6e673fb66c1a096622fc5bf7c7f92175}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!ParticleSubGroup@{ParticleSubGroup}}
+\index{ParticleSubGroup@{ParticleSubGroup}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{ParticleSubGroup()}{ParticleSubGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename PARENT , typename KERNEL , typename... ARGS$>$ \\
+NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::\+Particle\+Sub\+Group (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ PARENT $>$}]{parent,  }\item[{KERNEL}]{kernel,  }\item[{ARGS...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} based on a kernel and arguments. The selector kernel must be a lambda which returns true for particles which are in the sub group and false for particles which are not in the sub group. The arguments for the selector kernel must be read access Syms, i.\+e. \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a5ac4ad4b7778690c9189204fbc612c14}{Access\+::read}}(\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+T$>$}}(\char`\"{}name\char`\"{})).
+
+For example if A is a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} with an INT \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} \char`\"{}\+ID\char`\"{} that holds particle ids then the following line creates a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} from the particles with even ids.
+
+auto A\+\_\+even = std\+::make\+\_\+shared$<$\+Particle\+Sub\+Group$>$( A, \mbox{[}=\mbox{]}(auto ID) \{ return ((ID\mbox{[}0\mbox{]} \% 2) == 0); \}, \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a5ac4ad4b7778690c9189204fbc612c14}{Access\+::read}}(\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+INT$>$}}(\char`\"{}\+ID\char`\"{})));
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} or \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} from which to form \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. \\
+\hline
+{\em kernel} & Lambda function (like a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}} kernel) that returns true for the particles which should be in the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. \\
+\hline
+{\em args} & Arguments in the form of access descriptors wrapping objects to pass to the kernel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a36bb9e1bbd374c5c1f67489cf6582945}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a36bb9e1bbd374c5c1f67489cf6582945}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!ParticleSubGroup@{ParticleSubGroup}}
+\index{ParticleSubGroup@{ParticleSubGroup}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{ParticleSubGroup()}{ParticleSubGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::\+Particle\+Sub\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}}}]{particle\+\_\+group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} which is simply a reference/view into an entire \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}. This constructor creates a sub-\/group which is equivalent to
+
+auto A\+\_\+all = std\+::make\+\_\+shared$<$\+Particle\+Sub\+Group$>$( A, \mbox{[}=\mbox{]}() \{ return true; \} );
+
+but can make additional optimisations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} or \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} from which to form \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a4dcf2633ec8966b79aab81e4cc7b3dc7}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a4dcf2633ec8966b79aab81e4cc7b3dc7}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!add\_parent\_dependencies@{add\_parent\_dependencies}}
+\index{add\_parent\_dependencies@{add\_parent\_dependencies}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{add\_parent\_dependencies()}{add\_parent\_dependencies()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::add\+\_\+parent\+\_\+dependencies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}}}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a7d031f7fb2b1f7e888cb940723af2fc5}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a7d031f7fb2b1f7e888cb940723af2fc5}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!add\_parent\_dependencies@{add\_parent\_dependencies}}
+\index{add\_parent\_dependencies@{add\_parent\_dependencies}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{add\_parent\_dependencies()}{add\_parent\_dependencies()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::add\+\_\+parent\+\_\+dependencies (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} $>$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_aafbde5415b54d2727983ed6ebcc1e60a}\label{classNESO_1_1Particles_1_1ParticleSubGroup_aafbde5415b54d2727983ed6ebcc1e60a}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!check\_read\_access@{check\_read\_access}}
+\index{check\_read\_access@{check\_read\_access}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{check\_read\_access()}{check\_read\_access()}}
+{\footnotesize\ttfamily template$<$template$<$ typename $>$ typename T, typename U $>$ \\
+void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::check\+\_\+read\+\_\+access (\begin{DoxyParamCaption}\item[{T$<$ U $>$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a720a027ac84fd34c0a1e52907c5a8349}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a720a027ac84fd34c0a1e52907c5a8349}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!check\_sym\_type@{check\_sym\_type}}
+\index{check\_sym\_type@{check\_sym\_type}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{check\_sym\_type()}{check\_sym\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::check\+\_\+sym\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]} \mbox{]} \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopIndex}{Particle\+Loop\+Index}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_aab2cb6287942070e72c50ab8647dd60b}\label{classNESO_1_1Particles_1_1ParticleSubGroup_aab2cb6287942070e72c50ab8647dd60b}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!check\_sym\_type@{check\_sym\_type}}
+\index{check\_sym\_type@{check\_sym\_type}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{check\_sym\_type()}{check\_sym\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::check\+\_\+sym\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a5ee96de18cd5766f9fc2ff2b719e6ad5}{Sym\+Vector\+Shared\+Ptr}}$<$ T $>$}]{sv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ad222ab5d4650da6b3e59db88b055b689}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ad222ab5d4650da6b3e59db88b055b689}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!check\_sym\_type@{check\_sym\_type}}
+\index{check\_sym\_type@{check\_sym\_type}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{check\_sym\_type()}{check\_sym\_type()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$template$<$ typename $>$ typename T, typename U $>$ \\
+void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::check\+\_\+sym\+\_\+type (\begin{DoxyParamCaption}\item[{T$<$ U $>$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a8d0b18f9903c0baee82264b9cd6e306d}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a8d0b18f9903c0baee82264b9cd6e306d}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!create@{create}}
+\index{create@{create}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Explicitly re-\/create the sub group. \mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ad6bd9c075a4091be02c28937a2ac3d97}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ad6bd9c075a4091be02c28937a2ac3d97}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!create\_and\_update\_cache@{create\_and\_update\_cache}}
+\index{create\_and\_update\_cache@{create\_and\_update\_cache}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{create\_and\_update\_cache()}{create\_and\_update\_cache()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::create\+\_\+and\+\_\+update\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a2d283c8bb620a329d058c409b9cc530a}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a2d283c8bb620a329d058c409b9cc530a}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!create\_if\_required@{create\_if\_required}}
+\index{create\_if\_required@{create\_if\_required}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{create\_if\_required()}{create\_if\_required()}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::create\+\_\+if\+\_\+required (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Re-\/create the sub group if required.
+
+\begin{DoxyReturn}{Returns}
+True if an update occured otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ae09233998ff765d8a430feb9ebe87372}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ae09233998ff765d8a430feb9ebe87372}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!create\_inner@{create\_inner}}
+\index{create\_inner@{create\_inner}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{create\_inner()}{create\_inner()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::create\+\_\+inner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a74ffd1467be920317989c76127568d91}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a74ffd1467be920317989c76127568d91}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!get\_cells\_layers@{get\_cells\_layers}}
+\index{get\_cells\_layers@{get\_cells\_layers}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{get\_cells\_layers()}{get\_cells\_layers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::get\+\_\+cells\+\_\+layers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{d\+\_\+cells,  }\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$}]{d\+\_\+layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a0880de589f0097a99a1d935d0dc39908}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a0880de589f0097a99a1d935d0dc39908}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!get\_cells\_layers@{get\_cells\_layers}}
+\index{get\_cells\_layers@{get\_cells\_layers}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{get\_cells\_layers()}{get\_cells\_layers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::get\+\_\+cells\+\_\+layers (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&}]{cells,  }\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&}]{layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Get the cells and layers of the particles in the sub group (slow) \mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a6fe47a088aa94c83387e60d7e2a9337f}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a6fe47a088aa94c83387e60d7e2a9337f}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!get\_npart\_cell@{get\_npart\_cell}}
+\index{get\_npart\_cell@{get\_npart\_cell}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{get\_npart\_cell()}{get\_npart\_cell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::get\+\_\+npart\+\_\+cell (\begin{DoxyParamCaption}\item[{const int}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The number of particles in a cell of the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_afa51a21ae31766ac13f9cb0744084283}\label{classNESO_1_1Particles_1_1ParticleSubGroup_afa51a21ae31766ac13f9cb0744084283}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!get\_npart\_local@{get\_npart\_local}}
+\index{get\_npart\_local@{get\_npart\_local}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{get\_npart\_local()}{get\_npart\_local()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::get\+\_\+npart\+\_\+local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The number of particles currently in the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_afc79735ee1e3cb66eba4e775ca2a5c05}\label{classNESO_1_1Particles_1_1ParticleSubGroup_afc79735ee1e3cb66eba4e775ca2a5c05}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!get\_particle\_group@{get\_particle\_group}}
+\index{get\_particle\_group@{get\_particle\_group}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{get\_particle\_group()}{get\_particle\_group()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::get\+\_\+particle\+\_\+group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The original \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} this \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} references. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_af968b5937fcba035bb7a6ae548016587}\label{classNESO_1_1Particles_1_1ParticleSubGroup_af968b5937fcba035bb7a6ae548016587}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!get\_particles@{get\_particles}}
+\index{get\_particles@{get\_particles}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{get\_particles()}{get\_particles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_aaee68f5229fd2541814a450ad90eb6cf}{Particle\+Set\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::get\+\_\+particles (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&}]{cells,  }\item[{std\+::vector$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ \&}]{layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet}{Particle\+Set}} containing the data from particles held in the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. e.\+g. to Extract the first two particles from the second cell\+:
+
+cells = \mbox{[}1, 1\mbox{]} layers = \mbox{[}0, 1\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cells} & Vector of cell indices of particles to extract. \\
+\hline
+{\em cells} & Vector of layer indices of particles to extract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSet}{Particle\+Set}} of particle data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a6dd8f916ad28633f0c1b50cc1f18fc63}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a6dd8f916ad28633f0c1b50cc1f18fc63}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!is\_entire\_particle\_group@{is\_entire\_particle\_group}}
+\index{is\_entire\_particle\_group@{is\_entire\_particle\_group}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{is\_entire\_particle\_group()}{is\_entire\_particle\_group()}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::is\+\_\+entire\+\_\+particle\+\_\+group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+True if this \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} references the entirety of the parent \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a1dd4ff54fa28aca5228c2ae0f8889b5e}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a1dd4ff54fa28aca5228c2ae0f8889b5e}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!is\_valid@{is\_valid}}
+\index{is\_valid@{is\_valid}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{is\_valid()}{is\_valid()}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::is\+\_\+valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test if a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} has been invalidated by an operation which irreparably invalidates the internal data structures. This method will always return true for a non-\/static \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} as non-\/static Particle\+Sub\+Groups are automatically rebuilt as needed.
+
+If the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} is static and this method returns false then the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} should not be used for any further operations. Note that the implementation calls this method internally to attempt to avoid miss-\/use of a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} and hence the user is not expected to routinely call this method.
+
+\begin{DoxyReturn}{Returns}
+False if a static \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} has been invalidated by an external operation which invalidated the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} (e.\+g. moving particles between cells or MPI ranks, adding or removing particles). Otherwise returns True. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ad41269d361a684eb306f5e66b2e539d6}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ad41269d361a684eb306f5e66b2e539d6}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!static\_status@{static\_status}}
+\index{static\_status@{static\_status}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{static\_status()}{static\_status()}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::static\+\_\+status (\begin{DoxyParamCaption}\item[{const std\+::optional$<$ bool $>$}]{status = {\ttfamily std\+:\+:nullopt} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get and optionally set the static status of the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Optional new static status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Static status. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_accfc1abb2f69f7720d802ebc0e73117e}\label{classNESO_1_1Particles_1_1ParticleSubGroup_accfc1abb2f69f7720d802ebc0e73117e}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!ParticleGroup@{ParticleGroup}}
+\index{ParticleGroup@{ParticleGroup}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{ParticleGroup}{ParticleGroup}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ae9a3e14c1844585e5bc4c0a43f430978}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ae9a3e14c1844585e5bc4c0a43f430978}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!ParticleLoopSubGroup@{ParticleLoopSubGroup}}
+\index{ParticleLoopSubGroup@{ParticleLoopSubGroup}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopSubGroup}{ParticleLoopSubGroup}}
+{\footnotesize\ttfamily template$<$typename KERNEL , typename... ARGS$>$ \\
+friend class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoopSubGroup}{Particle\+Loop\+Sub\+Group}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_aa899d77b4632d1958bd9dedac961e530}\label{classNESO_1_1Particles_1_1ParticleSubGroup_aa899d77b4632d1958bd9dedac961e530}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!is\_static@{is\_static}}
+\index{is\_static@{is\_static}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{is\_static}{is\_static}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::is\+\_\+static\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ada58542e1f25a9f686b8c592465fbabf}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ada58542e1f25a9f686b8c592465fbabf}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!is\_whole\_particle\_group@{is\_whole\_particle\_group}}
+\index{is\_whole\_particle\_group@{is\_whole\_particle\_group}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{is\_whole\_particle\_group}{is\_whole\_particle\_group}}
+{\footnotesize\ttfamily bool NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::is\+\_\+whole\+\_\+particle\+\_\+group\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a141485db78744b611653fb3a5840b805}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a141485db78744b611653fb3a5840b805}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!npart\_local@{npart\_local}}
+\index{npart\_local@{npart\_local}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{npart\_local}{npart\_local}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::npart\+\_\+local\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a0b2926b99a752be1595a71c16f9d59e1}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a0b2926b99a752be1595a71c16f9d59e1}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!particle\_dat\_versions@{particle\_dat\_versions}}
+\index{particle\_dat\_versions@{particle\_dat\_versions}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{particle\_dat\_versions}{particle\_dat\_versions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup_af81070532c8a85f0f1b3afb4ef673bf1}{Particle\+Group\+::\+Particle\+Dat\+Version\+Tracker}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::particle\+\_\+dat\+\_\+versions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_ad6419d52da005271b630d7e6e4ddf27b}\label{classNESO_1_1Particles_1_1ParticleSubGroup_ad6419d52da005271b630d7e6e4ddf27b}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!particle\_group@{particle\_group}}
+\index{particle\_group@{particle\_group}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{particle\_group}{particle\_group}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a5b25ad0df23c80f6feed27e2527a5c51}{Particle\+Group\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::particle\+\_\+group\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a736c2cace1aa65d95ba8a80b92d95a9e}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a736c2cace1aa65d95ba8a80b92d95a9e}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!selection@{selection}}
+\index{selection@{selection}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{selection}{selection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_1_1SelectionT}{Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::\+SelectionT}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::selection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroup_a6ec1b13a7880c1cbf232ad5dd16dc5bc}\label{classNESO_1_1Particles_1_1ParticleSubGroup_a6ec1b13a7880c1cbf232ad5dd16dc5bc}} 
+\index{NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}!selector@{selector}}
+\index{selector@{selector}!NESO::Particles::ParticleSubGroup@{NESO::Particles::ParticleSubGroup}}
+\doxysubsubsection{\texorpdfstring{selector}{selector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector}{Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+::selector\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{particle__sub__group_8hpp}{particle\+\_\+sub\+\_\+group.\+hpp}}\end{DoxyCompactItemize}

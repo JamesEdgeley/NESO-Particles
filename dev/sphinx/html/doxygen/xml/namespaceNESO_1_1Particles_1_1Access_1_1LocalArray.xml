@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1Access_1_1LocalArray" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::Access::LocalArray</compoundname>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" prot="public">NESO::Particles::Access::LocalArray::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" prot="public">NESO::Particles::Access::LocalArray::Add</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" prot="public">NESO::Particles::Access::LocalArray::Write</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines the access implementations and types for <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1LocalArray" kindref="compound">LocalArray</ref> objects. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

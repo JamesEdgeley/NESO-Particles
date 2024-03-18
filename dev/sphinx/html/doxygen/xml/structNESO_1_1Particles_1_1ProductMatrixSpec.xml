@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ProductMatrixSpec" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ProductMatrixSpec</compoundname>
+    <includes refid="product__matrix_8hpp" local="no">product_matrix.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae273bdefefb8f958d4bf4cb7a0c7a7b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::num_components_real</definition>
+        <argsstring></argsstring>
+        <name>num_components_real</name>
+        <briefdescription>
+<para>The total number of components of type REAL stored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="274" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9a7054fdc1b3a2474181858351e412bc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::num_components_int</definition>
+        <argsstring></argsstring>
+        <name>num_components_int</name>
+        <briefdescription>
+<para>The total number of components of type INT stored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="276" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::num_properties_real</definition>
+        <argsstring></argsstring>
+        <name>num_properties_real</name>
+        <briefdescription>
+<para>The number of REAL particle properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="278" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::num_properties_int</definition>
+        <argsstring></argsstring>
+        <name>num_properties_int</name>
+        <briefdescription>
+<para>The number of INT particle properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="280" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1ac72e1a4ad5464c7b97678c02c0af32ad" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;Sym&lt;REAL&gt; &gt; NESO::Particles::ProductMatrixSpec::syms_real</definition>
+        <argsstring></argsstring>
+        <name>syms_real</name>
+        <briefdescription>
+<para>The vector of REAL Syms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="282" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1aea4cc983e388d36ebb3ab47d02e2713d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;Sym&lt;INT&gt; &gt; NESO::Particles::ProductMatrixSpec::syms_int</definition>
+        <argsstring></argsstring>
+        <name>syms_int</name>
+        <briefdescription>
+<para>The vector of INT Syms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="284" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b2431397961c923f4f58ad08159a699" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; NESO::Particles::ProductMatrixSpec::components_real</definition>
+        <argsstring></argsstring>
+        <name>components_real</name>
+        <briefdescription>
+<para>The number of components per output property for REAL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="286" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1ad9ff6164237eb6d74171549702fff442" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; NESO::Particles::ProductMatrixSpec::components_int</definition>
+        <argsstring></argsstring>
+        <name>components_int</name>
+        <briefdescription>
+<para>The number of components per output property for INT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="288" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a4553b2c502650c65d4c4db1bcc9f3c7f" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, int &gt;, <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>std::map&lt;std::pair&lt;Sym&lt;REAL&gt;, int&gt;, REAL&gt; NESO::Particles::ProductMatrixSpec::default_values_real</definition>
+        <argsstring></argsstring>
+        <name>default_values_real</name>
+        <briefdescription>
+<para>Default values applied on call to reset for REAL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="290" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9f1269bcfdbc18f0ebdd1b4ad1c29d55" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, int &gt;, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>std::map&lt;std::pair&lt;Sym&lt;INT&gt;, int&gt;, INT&gt; NESO::Particles::ProductMatrixSpec::default_values_int</definition>
+        <argsstring></argsstring>
+        <name>default_values_int</name>
+        <briefdescription>
+<para>Default values applied on call to reset for INT. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="292" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a71678c9c640af008237c72b7b4031f29" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;, int &gt;</type>
+        <definition>std::map&lt;Sym&lt;REAL&gt;, int&gt; NESO::Particles::ProductMatrixSpec::map_sym_index_real</definition>
+        <argsstring></argsstring>
+        <name>map_sym_index_real</name>
+        <briefdescription>
+<para>Map from sym to integer index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="294" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1e1e971fce76dee24f8b97331a91f328" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, int &gt;</type>
+        <definition>std::map&lt;Sym&lt;INT&gt;, int&gt; NESO::Particles::ProductMatrixSpec::map_sym_index_int</definition>
+        <argsstring></argsstring>
+        <name>map_sym_index_int</name>
+        <briefdescription>
+<para>Map from sym to integer index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="296" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref></type>
+        <definition>ParticleSpec NESO::Particles::ProductMatrixSpec::particle_spec</definition>
+        <argsstring></argsstring>
+        <name>particle_spec</name>
+        <briefdescription>
+<para>The <ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> the instance was created from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="299" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a158f2d9e91561033eccc01802cb09a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ProductMatrixSpec::ProductMatrixSpec</definition>
+        <argsstring>()=default</argsstring>
+        <name>ProductMatrixSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="301" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae9072103019d477721f463db865f1dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> &amp;</type>
+        <definition>ProductMatrixSpec&amp; NESO::Particles::ProductMatrixSpec::operator=</definition>
+        <argsstring>(const ProductMatrixSpec &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structNESO_1_1Particles_1_1ProductMatrixSpec" kindref="compound">ProductMatrixSpec</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="302" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a5dfc076cb0df6971d26a272813af1fb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ProductMatrixSpec::ProductMatrixSpec</definition>
+        <argsstring>(ParticleSpec &amp;particle_spec)</argsstring>
+        <name>ProductMatrixSpec</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> &amp;</type>
+          <declname>particle_spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a specification for products based on a <ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specification for product particle properties. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="309" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="309" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b402151bc42788762a21a3439ff0604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ProductMatrixSpec::set_default_value</definition>
+        <argsstring>(Sym&lt; INT &gt; sym, const int component, const INT value)</argsstring>
+        <name>set_default_value</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default value for a particle property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> of particle property. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of particle property. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="344" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2c52ff03bd412f9e1fddfa2eab35495f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ProductMatrixSpec::set_default_value</definition>
+        <argsstring>(Sym&lt; REAL &gt; sym, const int component, const REAL value)</argsstring>
+        <name>set_default_value</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default value for a particle property.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sym</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> of particle property. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of particle property. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="356" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="356" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1acdb63dc057ce80cd35ec56d1f9be8b03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::get_sym_index</definition>
+        <argsstring>(const Sym&lt; REAL &gt; sym) const</argsstring>
+        <name>get_sym_index</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the integer index that corresponds to a <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> in the specification. Returns -1 if the <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> is not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="365" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="365" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a32a2d4fdf26bd2e56d3e0eecec888eb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::get_sym_index</definition>
+        <argsstring>(const Sym&lt; INT &gt; sym) const</argsstring>
+        <name>get_sym_index</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the integer index that corresponds to a <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> in the specification. Returns -1 if the <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> is not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="378" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="378" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1a9616219ab019b6d7c749d6199c0cb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::get_num_components</definition>
+        <argsstring>(const Sym&lt; REAL &gt; sym)</argsstring>
+        <name>get_num_components</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of components this spec stores for a <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="390" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="390" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1ProductMatrixSpec_1a832cc86477fee3843edcd029398007d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixSpec::get_num_components</definition>
+        <argsstring>(const Sym&lt; INT &gt; sym)</argsstring>
+        <name>get_num_components</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of components this spec stores for a <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="402" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="402" bodyend="409"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Type to describe the particle properties of products. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>NESO::Particles::ParticleSpec</label>
+        <link refid="classNESO_1_1Particles_1_1ParticleSpec"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::ProductMatrixSpec</label>
+        <link refid="structNESO_1_1Particles_1_1ProductMatrixSpec"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>particle_spec</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="272" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="272" bodyend="410"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ad9ff6164237eb6d74171549702fff442" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>components_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b2431397961c923f4f58ad08159a699" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>components_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9f1269bcfdbc18f0ebdd1b4ad1c29d55" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>default_values_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a4553b2c502650c65d4c4db1bcc9f3c7f" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>default_values_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1a9616219ab019b6d7c749d6199c0cb9" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>get_num_components</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a832cc86477fee3843edcd029398007d3" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>get_num_components</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1acdb63dc057ce80cd35ec56d1f9be8b03" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>get_sym_index</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a32a2d4fdf26bd2e56d3e0eecec888eb6" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>get_sym_index</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a1e1e971fce76dee24f8b97331a91f328" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>map_sym_index_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a71678c9c640af008237c72b7b4031f29" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>map_sym_index_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9a7054fdc1b3a2474181858351e412bc" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>num_components_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae273bdefefb8f958d4bf4cb7a0c7a7b5" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>num_components_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2d2ca1d16e2ac053c2a84e6523297f60" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>num_properties_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a60cbd37a27921801cf7114e34fcfa029" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>num_properties_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ae9072103019d477721f463db865f1dc4" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>operator=</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a7d894ef4cd7fe3bac8bf0c44cd53b7ab" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>particle_spec</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a158f2d9e91561033eccc01802cb09a24" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>ProductMatrixSpec</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a5dfc076cb0df6971d26a272813af1fb1" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>ProductMatrixSpec</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a9b402151bc42788762a21a3439ff0604" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>set_default_value</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1a2c52ff03bd412f9e1fddfa2eab35495f" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>set_default_value</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1aea4cc983e388d36ebb3ab47d02e2713d" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>syms_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixSpec_1ac72e1a4ad5464c7b97678c02c0af32ad" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixSpec</scope><name>syms_real</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

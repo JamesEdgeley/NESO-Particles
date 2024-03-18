@@ -1,0 +1,125 @@
+\hypertarget{classNESO_1_1Particles_1_1GlobalMove}{}\doxysection{NESO\+::Particles\+::Global\+Move Class Reference}
+\label{classNESO_1_1Particles_1_1GlobalMove}\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+
+
+{\ttfamily \#include $<$global\+\_\+move.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a039c636afde838ad15bbbcedf050e8e4}{Global\+Move}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove}{Global\+Move}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove}{Global\+Move}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_abe35ebcd70032c73afed8a2704239694}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove}{Global\+Move}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a55d37864db636b72006937d6ae262af3}{free}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a71c229b240aeac1e9dddd620892344e2}{$\sim$\+Global\+Move}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_af93c542c42cec8390b6a1387731f2df6}{Global\+Move}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a1e6445fdce9492b2d989c1a922542dca}{sycl\+\_\+target}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&layer\+\_\+compressor, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&particle\+\_\+dats\+\_\+real, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&particle\+\_\+dats\+\_\+int)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a30b2524ceb1f9ec43c7156ba6c75dc58}{set\+\_\+mpi\+\_\+rank\+\_\+dat}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ mpi\+\_\+rank\+\_\+dat)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a517a90a338c756f9f70880fd48be2aeb}{move}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove_a1e6445fdce9492b2d989c1a922542dca}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to move particles on the global mesh. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_a039c636afde838ad15bbbcedf050e8e4}\label{classNESO_1_1Particles_1_1GlobalMove_a039c636afde838ad15bbbcedf050e8e4}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!GlobalMove@{GlobalMove}}
+\index{GlobalMove@{GlobalMove}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{GlobalMove()}{GlobalMove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Global\+Move\+::\+Global\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove}{Global\+Move}} \&}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_a71c229b240aeac1e9dddd620892344e2}\label{classNESO_1_1Particles_1_1GlobalMove_a71c229b240aeac1e9dddd620892344e2}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!````~GlobalMove@{$\sim$GlobalMove}}
+\index{````~GlobalMove@{$\sim$GlobalMove}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{$\sim$GlobalMove()}{~GlobalMove()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Global\+Move\+::$\sim$\+Global\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_af93c542c42cec8390b6a1387731f2df6}\label{classNESO_1_1Particles_1_1GlobalMove_af93c542c42cec8390b6a1387731f2df6}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!GlobalMove@{GlobalMove}}
+\index{GlobalMove@{GlobalMove}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{GlobalMove()}{GlobalMove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Global\+Move\+::\+Global\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&}]{layer\+\_\+compressor,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $>$$>$ \&}]{particle\+\_\+dats\+\_\+real,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$, \mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$$>$ \&}]{particle\+\_\+dats\+\_\+int }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new global move instance to move particles between the cells of a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em layer\+\_\+compressor} & \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} to use to compress Particle\+Dat rows \\
+\hline
+{\em particle\+\_\+dats\+\_\+real} & Container of the REAL valued Particle\+Dats. \\
+\hline
+{\em particle\+\_\+dats\+\_\+int} & Container of the INT valued Particle\+Dats. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_a55d37864db636b72006937d6ae262af3}\label{classNESO_1_1Particles_1_1GlobalMove_a55d37864db636b72006937d6ae262af3}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!free@{free}}
+\index{free@{free}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_a517a90a338c756f9f70880fd48be2aeb}\label{classNESO_1_1Particles_1_1GlobalMove_a517a90a338c756f9f70880fd48be2aeb}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!move@{move}}
+\index{move@{move}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Use the MPI ranks stored in the first component of the MPI rank dat to move particles between the MPI ranks that own cells in a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}. \mbox{\hyperlink{namespaceNESO_1_1Particles}{Particles}} are unpacked into cell 0 of the receiving MPI rank. \mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_abe35ebcd70032c73afed8a2704239694}\label{classNESO_1_1Particles_1_1GlobalMove_abe35ebcd70032c73afed8a2704239694}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove}{Global\+Move}}\& NESO\+::\+Particles\+::\+Global\+Move\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalMove}{Global\+Move}} const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Disable (implicit) copies. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_a30b2524ceb1f9ec43c7156ba6c75dc58}\label{classNESO_1_1Particles_1_1GlobalMove_a30b2524ceb1f9ec43c7156ba6c75dc58}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!set\_mpi\_rank\_dat@{set\_mpi\_rank\_dat}}
+\index{set\_mpi\_rank\_dat@{set\_mpi\_rank\_dat}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{set\_mpi\_rank\_dat()}{set\_mpi\_rank\_dat()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Global\+Move\+::set\+\_\+mpi\+\_\+rank\+\_\+dat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_ac4ef9b71589140a5226f7c1e966c20bb}{Particle\+Dat\+Shared\+Ptr}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$}]{mpi\+\_\+rank\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the Particle\+Dat to use for MPI ranks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mpi\+\_\+rank\+\_\+dat} & Particle\+Dat to use for particle positions. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalMove_a1e6445fdce9492b2d989c1a922542dca}\label{classNESO_1_1Particles_1_1GlobalMove_a1e6445fdce9492b2d989c1a922542dca}} 
+\index{NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::GlobalMove@{NESO::Particles::GlobalMove}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Global\+Move\+::sycl\+\_\+target}
+
+
+
+Compute device used by the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{global__move_8hpp}{global\+\_\+move.\+hpp}}\end{DoxyCompactItemize}

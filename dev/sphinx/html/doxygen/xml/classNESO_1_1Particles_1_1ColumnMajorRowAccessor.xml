@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ColumnMajorRowAccessor" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ColumnMajorRowAccessor</compoundname>
+    <includes refid="access_8hpp" local="no">access.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>template&lt; typename... &gt; class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>typename U</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a32b7f2333ee146e3a9a1950a9664a528" prot="private" static="no" mutable="no">
+        <type>T&lt; U &gt; &amp;</type>
+        <definition>T&lt;U&gt;&amp; NESO::Particles::ColumnMajorRowAccessor&lt; T, U &gt;::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/access.hpp" line="48" column="5" bodyfile="/tmp/repo-checkout/NESO-Particles/include/access.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a32c6a901ed4ad0f0b598aebb3b8383df" prot="private" static="no" mutable="no">
+        <type>const int &amp;</type>
+        <definition>const int&amp; NESO::Particles::ColumnMajorRowAccessor&lt; T, U &gt;::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/access.hpp" line="49" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/access.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a5ad38729f448c0b7f35466955622ac81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ColumnMajorRowAccessor&lt; T, U &gt;::ColumnMajorRowAccessor</definition>
+        <argsstring>(T&lt; U &gt; &amp;base, const int &amp;stride)</argsstring>
+        <name>ColumnMajorRowAccessor</name>
+        <param>
+          <type>T&lt; U &gt; &amp;</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create new instance to underlying data structure of type <computeroutput>T&lt;U&gt;</computeroutput> which stores 2D data in a column major format using a given stride.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to index into. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows in the 2D object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/access.hpp" line="59" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/access.hpp" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a146b1c0b3906b73f3e6bf631ae155c27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1ColumnMajorColumnAccessor" kindref="compound">ColumnMajorColumnAccessor</ref>&lt; T, U &gt;</type>
+        <definition>ColumnMajorColumnAccessor&lt;T, U&gt; NESO::Particles::ColumnMajorRowAccessor&lt; T, U &gt;::operator[]</definition>
+        <argsstring>(const int &amp;rowx)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>rowx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a <ref refid="classNESO_1_1Particles_1_1ColumnMajorColumnAccessor" kindref="compound">ColumnMajorColumnAccessor</ref> instance which defines a subscript operator that can be used to access any column of the specified row.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rowx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row to provide access to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/access.hpp" line="68" column="36" bodyfile="/tmp/repo-checkout/NESO-Particles/include/access.hpp" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>One of a pair of classes that enable indexing like foo[row][col] for an object foo which stores data in a column major format. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/access.hpp" line="46" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/access.hpp" bodystart="46" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a32b7f2333ee146e3a9a1950a9664a528" prot="private" virt="non-virtual"><scope>NESO::Particles::ColumnMajorRowAccessor</scope><name>base</name></member>
+      <member refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a5ad38729f448c0b7f35466955622ac81" prot="public" virt="non-virtual"><scope>NESO::Particles::ColumnMajorRowAccessor</scope><name>ColumnMajorRowAccessor</name></member>
+      <member refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a146b1c0b3906b73f3e6bf631ae155c27" prot="public" virt="non-virtual"><scope>NESO::Particles::ColumnMajorRowAccessor</scope><name>operator[]</name></member>
+      <member refid="classNESO_1_1Particles_1_1ColumnMajorRowAccessor_1a32c6a901ed4ad0f0b598aebb3b8383df" prot="private" virt="non-virtual"><scope>NESO::Particles::ColumnMajorRowAccessor</scope><name>stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

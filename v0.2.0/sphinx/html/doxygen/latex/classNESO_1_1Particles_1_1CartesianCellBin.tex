@@ -1,0 +1,58 @@
+\hypertarget{classNESO_1_1Particles_1_1CartesianCellBin}{}\doxysection{NESO\+::Particles\+::Cartesian\+Cell\+Bin Class Reference}
+\label{classNESO_1_1Particles_1_1CartesianCellBin}\index{NESO::Particles::CartesianCellBin@{NESO::Particles::CartesianCellBin}}
+
+
+{\ttfamily \#include $<$cell\+\_\+binning.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianCellBin_abc0a91d8f7890476e3b2a87d28e045c2}\label{classNESO_1_1Particles_1_1CartesianCellBin_abc0a91d8f7890476e3b2a87d28e045c2}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin_abc0a91d8f7890476e3b2a87d28e045c2}{Cartesian\+Cell\+Bin}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin}{Cartesian\+Cell\+Bin}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianCellBin_aee6ee98d1b1b5bb46ab32b091f6001fa}\label{classNESO_1_1Particles_1_1CartesianCellBin_aee6ee98d1b1b5bb46ab32b091f6001fa}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin}{Cartesian\+Cell\+Bin}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin_aee6ee98d1b1b5bb46ab32b091f6001fa}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin}{Cartesian\+Cell\+Bin}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin_a2ebc33daf3d256242a9bb3d3695625e4}{Cartesian\+Cell\+Bin}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target, Cartesian\+HMesh\+Shared\+Ptr mesh, Particle\+Dat\+Shared\+Ptr$<$ REAL $>$ position\+\_\+dat, Particle\+Dat\+Shared\+Ptr$<$ INT $>$ cell\+\_\+id\+\_\+dat)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianCellBin_ae9032cac83c6ce6e332dd4492ed06949}{execute}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bin particle positions into the cells of a \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianCellBin_a2ebc33daf3d256242a9bb3d3695625e4}\label{classNESO_1_1Particles_1_1CartesianCellBin_a2ebc33daf3d256242a9bb3d3695625e4}} 
+\index{NESO::Particles::CartesianCellBin@{NESO::Particles::CartesianCellBin}!CartesianCellBin@{CartesianCellBin}}
+\index{CartesianCellBin@{CartesianCellBin}!NESO::Particles::CartesianCellBin@{NESO::Particles::CartesianCellBin}}
+\doxysubsubsection{\texorpdfstring{CartesianCellBin()}{CartesianCellBin()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Cartesian\+Cell\+Bin\+::\+Cartesian\+Cell\+Bin (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target,  }\item[{Cartesian\+HMesh\+Shared\+Ptr}]{mesh,  }\item[{Particle\+Dat\+Shared\+Ptr$<$ REAL $>$}]{position\+\_\+dat,  }\item[{Particle\+Dat\+Shared\+Ptr$<$ INT $>$}]{cell\+\_\+id\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create instance to bin particles into cells of a \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMesh}{Cartesian\+HMesh}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em mesh} & Cartesian\+HMesh\+Shared\+Ptr to containing the particles. \\
+\hline
+{\em position\+\_\+dat} & Particle\+Dat with components equal to the mesh dimension containing particle positions. \\
+\hline
+{\em cell\+\_\+id\+\_\+dat} & Particle\+Dat to write particle cell ids to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1CartesianCellBin_ae9032cac83c6ce6e332dd4492ed06949}\label{classNESO_1_1Particles_1_1CartesianCellBin_ae9032cac83c6ce6e332dd4492ed06949}} 
+\index{NESO::Particles::CartesianCellBin@{NESO::Particles::CartesianCellBin}!execute@{execute}}
+\index{execute@{execute}!NESO::Particles::CartesianCellBin@{NESO::Particles::CartesianCellBin}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Cartesian\+Cell\+Bin\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Apply the cell binning kernel to each particle stored on this MPI rank. Particles must be within the domain region owned by this MPI rank. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/cell\+\_\+binning.\+hpp\end{DoxyCompactItemize}

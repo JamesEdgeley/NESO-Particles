@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::VTKMeshHierarchyCellsWriter</compoundname>
+    <includes refid="utility__mesh__hierarchy__plotting_8hpp" local="no">utility_mesh_hierarchy_plotting.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ad13a38553e1586c339a6e9f9e47b3210" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MeshHierarchy&gt; NESO::Particles::VTKMeshHierarchyCellsWriter::mesh_hierarchy</definition>
+        <argsstring></argsstring>
+        <name>mesh_hierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="22" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ae3bf71b1c708536771624273a5605de7" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>std::vector&lt;INT&gt; NESO::Particles::VTKMeshHierarchyCellsWriter::cells</definition>
+        <argsstring></argsstring>
+        <name>cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="23" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a1547abc952c64ff170a08dc7cbffa544" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>std::map&lt;std::tuple&lt;INT, INT, INT&gt;, INT&gt; NESO::Particles::VTKMeshHierarchyCellsWriter::verts_to_index</definition>
+        <argsstring></argsstring>
+        <name>verts_to_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="24" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ab74d086831e2844db5746ec764dad0bd" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::map&lt;INT, std::tuple&lt;INT, INT, INT&gt; &gt; NESO::Particles::VTKMeshHierarchyCellsWriter::index_to_verts</definition>
+        <argsstring></argsstring>
+        <name>index_to_verts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="25" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1acac967b16b41976bff998ebc1a3b2686" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::VTKMeshHierarchyCellsWriter::next_vert_index</definition>
+        <argsstring></argsstring>
+        <name>next_vert_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="27" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a00fae2148875e210db73d23752f0ac15" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+        <definition>INT NESO::Particles::VTKMeshHierarchyCellsWriter::get_index</definition>
+        <argsstring>(std::tuple&lt; INT, INT, INT &gt; vert)</argsstring>
+        <name>get_index</name>
+        <param>
+          <type>std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>vert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="29" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="29" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a031d93e4ffcda889b1ae12f9d12b80e6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>std::tuple&lt;INT, INT, INT&gt; NESO::Particles::VTKMeshHierarchyCellsWriter::to_standard_tuple</definition>
+        <argsstring>(const INT linear_index)</argsstring>
+        <name>to_standard_tuple</name>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+          <declname>linear_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="41" column="21" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a296d9c53a590165748e466891c93972d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;INT, INT, INT&gt; &gt; NESO::Particles::VTKMeshHierarchyCellsWriter::get_coarse_tuples</definition>
+        <argsstring>()</argsstring>
+        <name>get_coarse_tuples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="55" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="55" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a4953b78887263039862c5f25d71ae0d6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;, std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt;std::tuple&lt;INT, INT, INT&gt;, std::tuple&lt;INT, INT, INT&gt; &gt; &gt; NESO::Particles::VTKMeshHierarchyCellsWriter::get_lines</definition>
+        <argsstring>(std::tuple&lt; INT, INT, INT &gt; base)</argsstring>
+        <name>get_lines</name>
+        <param>
+          <type>std::tuple&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref>, <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="85" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="85" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a0444d9a1368d8437371fa47dd81e263f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::VTKMeshHierarchyCellsWriter::write_inner</definition>
+        <argsstring>(std::string filename, const bool fine)</argsstring>
+        <name>write_inner</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>fine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="117" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="117" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1aa595d916db32d0e641f413f9f599407c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::VTKMeshHierarchyCellsWriter::VTKMeshHierarchyCellsWriter</definition>
+        <argsstring>(std::shared_ptr&lt; MeshHierarchy &gt; mesh_hierarchy)</argsstring>
+        <name>VTKMeshHierarchyCellsWriter</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> &gt;</type>
+          <declname>mesh_hierarchy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create new instance of the writer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mesh_hierarchy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> instance to use as source for cells. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="202" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="202" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a3df7f807c9bd32c8d6f93b710b8d15bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::VTKMeshHierarchyCellsWriter::push_back</definition>
+        <argsstring>(const INT linear_index)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type>const <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></type>
+          <declname>linear_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a cell to the list of cells to be written to the output file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">linear_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of cell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="210" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="210" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a96012e35f1a09eb7551975db7fdcfc0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::VTKMeshHierarchyCellsWriter::write</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>write</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write the output vtk file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filename to write output to. Should end in .vtk. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="219" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a0a3c863558f8b767adb12cf533d02694" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::VTKMeshHierarchyCellsWriter::write_all_fine</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>write_all_fine</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write all fine cells to the output file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filename to write fine cells to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="226" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="226" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ad74fe0ed19b0eaa1bd3f2f16e8d6060b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::VTKMeshHierarchyCellsWriter::write_all_coarse</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>write_all_coarse</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write all coarse cells to the output file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filename to write fine cells to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="242" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="242" bodyend="247"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class to write <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> cells to a vtk file as a collection of vertices and edges for visualisation in Paraview. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" line="20" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/utility_mesh_hierarchy_plotting.hpp" bodystart="20" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ae3bf71b1c708536771624273a5605de7" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a296d9c53a590165748e466891c93972d" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>get_coarse_tuples</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a00fae2148875e210db73d23752f0ac15" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>get_index</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a4953b78887263039862c5f25d71ae0d6" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>get_lines</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ab74d086831e2844db5746ec764dad0bd" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>index_to_verts</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ad13a38553e1586c339a6e9f9e47b3210" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>mesh_hierarchy</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1acac967b16b41976bff998ebc1a3b2686" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>next_vert_index</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a3df7f807c9bd32c8d6f93b710b8d15bb" prot="public" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>push_back</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a031d93e4ffcda889b1ae12f9d12b80e6" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>to_standard_tuple</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a1547abc952c64ff170a08dc7cbffa544" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>verts_to_index</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1aa595d916db32d0e641f413f9f599407c" prot="public" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>VTKMeshHierarchyCellsWriter</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a96012e35f1a09eb7551975db7fdcfc0d" prot="public" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>write</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1ad74fe0ed19b0eaa1bd3f2f16e8d6060b" prot="public" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>write_all_coarse</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a0a3c863558f8b767adb12cf533d02694" prot="public" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>write_all_fine</name></member>
+      <member refid="classNESO_1_1Particles_1_1VTKMeshHierarchyCellsWriter_1a0444d9a1368d8437371fa47dd81e263f" prot="protected" virt="non-virtual"><scope>NESO::Particles::VTKMeshHierarchyCellsWriter</scope><name>write_inner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

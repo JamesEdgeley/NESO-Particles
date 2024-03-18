@@ -1,0 +1,1303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="particle__group_8hpp" kind="file" language="C++">
+    <compoundname>particle_group.hpp</compoundname>
+    <includes local="no">CL/sycl.hpp</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mpi.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="access_8hpp" local="yes">access.hpp</includes>
+    <includes refid="cell__dat_8hpp" local="yes">cell_dat.hpp</includes>
+    <includes refid="cell__dat__compression_8hpp" local="yes">cell_dat_compression.hpp</includes>
+    <includes refid="cell__dat__move_8hpp" local="yes">cell_dat_move.hpp</includes>
+    <includes refid="compute__target_8hpp" local="yes">compute_target.hpp</includes>
+    <includes refid="domain_8hpp" local="yes">domain.hpp</includes>
+    <includes refid="global__mapping_8hpp" local="yes">global_mapping.hpp</includes>
+    <includes refid="global__move_8hpp" local="yes">global_move.hpp</includes>
+    <includes refid="local__move_8hpp" local="yes">local_move.hpp</includes>
+    <includes refid="packing__unpacking_8hpp" local="yes">packing_unpacking.hpp</includes>
+    <includes refid="particle__dat_8hpp" local="yes">particle_dat.hpp</includes>
+    <includes refid="particle__set_8hpp" local="yes">particle_set.hpp</includes>
+    <includes refid="particle__spec_8hpp" local="yes">particle_spec.hpp</includes>
+    <includes refid="profiling_8hpp" local="yes">profiling.hpp</includes>
+    <includes refid="typedefs_8hpp" local="yes">typedefs.hpp</includes>
+    <includedby refid="cartesian__mesh_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</includedby>
+    <includedby refid="particle__loop_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</includedby>
+    <includedby refid="parallel__initialisation_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</includedby>
+    <includedby refid="particle__remover_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</includedby>
+    <includedby refid="particle__io_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</includedby>
+    <includedby refid="particle__sub__group_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp</includedby>
+    <includedby refid="neso__particles_8hpp" local="yes">/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>access.hpp</label>
+        <link refid="access_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>global_move.hpp</label>
+        <link refid="global__move_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>functional</label>
+      </node>
+      <node id="27">
+        <label>limits</label>
+      </node>
+      <node id="19">
+        <label>compute_target.hpp</label>
+        <link refid="compute__target_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CL/sycl.hpp</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="29">
+        <label>particle_spec.hpp</label>
+        <link refid="particle__spec_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>local_mapping.hpp</label>
+        <link refid="local__mapping_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>cell_dat_move.hpp</label>
+        <link refid="cell__dat__move_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>cmath</label>
+      </node>
+      <node id="40">
+        <label>global_move_exchange.hpp</label>
+        <link refid="global__move__exchange_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>numeric</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="41">
+        <label>packing_unpacking.hpp</label>
+        <link refid="packing__unpacking_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>cell_dat_compression.hpp</label>
+        <link refid="cell__dat__compression_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>particle_dat.hpp</label>
+        <link refid="particle__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>mesh_hierarchy.hpp</label>
+        <link refid="mesh__hierarchy_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cstdio</label>
+      </node>
+      <node id="28">
+        <label>particle_set.hpp</label>
+        <link refid="particle__set_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>profiling.hpp</label>
+        <link refid="profiling_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>departing_particle_identification.hpp</label>
+        <link refid="departing__particle__identification_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cell_dat.hpp</label>
+        <link refid="cell__dat_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stack</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+      <node id="21">
+        <label>communication.hpp</label>
+        <link refid="communication_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>utility</label>
+      </node>
+      <node id="20">
+        <label>array</label>
+      </node>
+      <node id="9">
+        <label>typedefs.hpp</label>
+        <link refid="typedefs_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
+      <node id="42">
+        <label>local_move.hpp</label>
+        <link refid="local__move_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>chrono</label>
+      </node>
+      <node id="6">
+        <label>mpi.h</label>
+      </node>
+      <node id="36">
+        <label>set</label>
+      </node>
+      <node id="37">
+        <label>global_mapping.hpp</label>
+        <link refid="global__mapping_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>algorithm</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="35">
+        <label>mesh_interface.hpp</label>
+        <link refid="mesh__interface_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>domain.hpp</label>
+        <link refid="domain_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>/tmp/repo-checkout/NESO-Particles/include/parallel_initialisation.hpp</label>
+        <link refid="parallel__initialisation_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop.hpp</label>
+        <link refid="particle__loop_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp</label>
+        <link refid="cartesian__mesh_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/tmp/repo-checkout/NESO-Particles/include/departing_particle_identification_impl.hpp</label>
+        <link refid="departing__particle__identification__impl_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/tmp/repo-checkout/NESO-Particles/include/boundary_conditions.hpp</label>
+        <link refid="boundary__conditions_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/tmp/repo-checkout/NESO-Particles/include/neso_particles.hpp</label>
+        <link refid="neso__particles_8hpp"/>
+      </node>
+      <node id="9">
+        <label>/tmp/repo-checkout/NESO-Particles/include/global_mapping_impl.hpp</label>
+        <link refid="global__mapping__impl_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp</label>
+        <link refid="particle__group_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_dat_move_impl.hpp</label>
+        <link refid="cell__dat__move__impl_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp</label>
+        <link refid="cell__binning_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_remover.hpp</label>
+        <link refid="particle__remover_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_sub_group.hpp</label>
+        <link refid="particle__sub__group_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/tmp/repo-checkout/NESO-Particles/include/particle_io.hpp</label>
+        <link refid="particle__io_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleDatVersionT" prot="public">NESO::Particles::ParticleDatVersionT</innerclass>
+    <innerclass refid="classNESO_1_1Particles_1_1ParticleGroup" prot="public">NESO::Particles::ParticleGroup</innerclass>
+    <innernamespace refid="namespaceNESO">NESO</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles">NESO::Particles</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_NESO_PARTICLES_PARTICLE_GROUP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NESO_PARTICLES_PARTICLE_GROUP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CL/sycl.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="access_8hpp" kindref="compound">access.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cell__dat_8hpp" kindref="compound">cell_dat.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cell__dat__compression_8hpp" kindref="compound">cell_dat_compression.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cell__dat__move_8hpp" kindref="compound">cell_dat_move.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="compute__target_8hpp" kindref="compound">compute_target.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="domain_8hpp" kindref="compound">domain.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="global__mapping_8hpp" kindref="compound">global_mapping.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="global__move_8hpp" kindref="compound">global_move.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="local__move_8hpp" kindref="compound">local_move.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="packing__unpacking_8hpp" kindref="compound">packing_unpacking.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="particle__dat_8hpp" kindref="compound">particle_dat.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="particle__set_8hpp" kindref="compound">particle_set.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="particle__spec_8hpp" kindref="compound">particle_spec.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="profiling_8hpp" kindref="compound">profiling.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="typedefs_8hpp" kindref="compound">typedefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cl;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles" kindref="compound">NESO::Particles</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ParticleSubGroup;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structNESO_1_1Particles_1_1ParticleDatVersionT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a4cab5bdab35d6583dffddd95b1c97159" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a4cab5bdab35d6583dffddd95b1c97159" kindref="member">si</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a49c63a96cb041ce1fc2cc7cb0f32f09e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a49c63a96cb041ce1fc2cc7cb0f32f09e" kindref="member">sr</ref>;</highlight></codeline>
+<codeline lineno="39" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a69f3fb6506b40a14568d6af33cf496d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a69f3fb6506b40a14568d6af33cf496d1" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a9fab82c6d931e5c1890e1143263908d6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a9fab82c6d931e5c1890e1143263908d6" kindref="member">ParticleDatVersionT</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;si<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1abb787ea7b7656ee0d2b9b9ecdaa5135f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1abb787ea7b7656ee0d2b9b9ecdaa5135f" kindref="member">ParticleDatVersionT</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sr<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;index<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a959b831b128acba5f0b25a2d52ecf20d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a959b831b128acba5f0b25a2d52ecf20d" kindref="member">ParticleDatVersionT</ref>()<sp/>{<sp/>this-&gt;index<sp/>=<sp/>-1;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a25f6b0ec7198221408f7124a153af7f0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a25f6b0ec7198221408f7124a153af7f0" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1adbfc95edfb65bddc6f824b72d7207fe0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1adbfc95edfb65bddc6f824b72d7207fe0" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>&amp;s)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;si<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1af57e14647d815e7086585c36d1246eb7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/>&amp;<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1af57e14647d815e7086585c36d1246eb7" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>&amp;s)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sr<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;index<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="61" refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a705d8b290c5a31edb028a326b76f241c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a705d8b290c5a31edb028a326b76f241c" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/>&amp;v)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v.<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a69f3fb6506b40a14568d6af33cf496d1" kindref="member">index</ref><sp/>==<sp/>this-&gt;index)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;index<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;index<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;si<sp/>&lt;<sp/>v.<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a4cab5bdab35d6583dffddd95b1c97159" kindref="member">si</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;sr<sp/>&lt;<sp/>v.<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a49c63a96cb041ce1fc2cc7cb0f32f09e" kindref="member">sr</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;index<sp/>&lt;<sp/>v.<ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT_1a69f3fb6506b40a14568d6af33cf496d1" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classNESO_1_1Particles_1_1ParticleGroup" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref><sp/>{</highlight></codeline>
+<codeline lineno="81" refid="classNESO_1_1Particles_1_1ParticleGroup_1a74dec0a1dc6c9049b108dfcd8ced48c7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNESO_1_1Particles_1_1ParticleSubGroup" kindref="compound">ParticleSubGroup</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>type<sp/>should<sp/>be<sp/>replaceable<sp/>with<sp/>typedef<sp/>std::variant&lt;Sym&lt;INT&gt;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Sym&lt;REAL&gt;&gt;<sp/>ParticleDatVersion;<sp/>But<sp/>we<sp/>see<sp/>issues<sp/>with<sp/>nvc++.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classNESO_1_1Particles_1_1ParticleGroup_1ae137a578a118399389f058806ebddb86" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structNESO_1_1Particles_1_1ParticleDatVersionT" kindref="compound">ParticleDatVersionT</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1ae137a578a118399389f058806ebddb86" kindref="member">ParticleDatVersion</ref>;</highlight></codeline>
+<codeline lineno="87" refid="classNESO_1_1Particles_1_1ParticleGroup_1af81070532c8a85f0f1b3afb4ef673bf1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;ParticleDatVersion,<sp/>int64_t&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1af81070532c8a85f0f1b3afb4ef673bf1" kindref="member">ParticleDatVersionTracker</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncell;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost&lt;INT&gt;</ref><sp/>h_npart_cell;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice&lt;INT&gt;</ref><sp/>d_remove_cells;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice&lt;INT&gt;</ref><sp/>d_remove_layers;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>realloc_dat(<ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;T&gt;</ref><sp/>&amp;dat)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>dat-&gt;realloc(this-&gt;h_npart_cell);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>dat-&gt;wait_realloc();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push_particle_spec(<ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp&lt;T&gt;</ref><sp/>prop)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;particle_spec.push(prop);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>members<sp/>for<sp/>mpi<sp/>communication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>global<sp/>communication<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>GlobalMove<sp/>global_move_ctx;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>method<sp/>to<sp/>map<sp/>particle<sp/>positions<sp/>to<sp/>global<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;MeshHierarchyGlobalMap&gt;<sp/>mesh_hierarchy_global_map;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>neighbour<sp/>communication<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>LocalMove<sp/>local_move_ctx;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>members<sp/>for<sp/>moving<sp/>particles<sp/>between<sp/>local<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>CellMove<sp/>cell_move_ctx;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>std::map&lt;ParticleDatVersion,<sp/>std::tuple&lt;int64_t,<sp/>bool&gt;&gt;<sp/>particle_dat_versions;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>invalidate_callback_inner(ParticleDatVersion<sp/>sym,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>std::get&lt;0&gt;(this-&gt;particle_dat_versions.at(sym))++;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>std::get&lt;1&gt;(this-&gt;particle_dat_versions.at(sym))<sp/>=<sp/>(bool)mode;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>invalidate_callback_int(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sym&lt;INT&gt;<sp/>&amp;sym,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;invalidate_callback_inner(sym,<sp/>mode);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>invalidate_callback_real(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sym&lt;REAL&gt;<sp/>&amp;sym,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;invalidate_callback_inner(sym,<sp/>mode);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_invalidate_callback(ParticleDatSharedPtr&lt;INT&gt;<sp/>particle_dat)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>particle_dat-&gt;add_write_callback(</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;ParticleGroup::invalidate_callback_int,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::placeholders::_1,<sp/>std::placeholders::_2));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_invalidate_callback(ParticleDatSharedPtr&lt;REAL&gt;<sp/>particle_dat)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>particle_dat-&gt;add_write_callback(</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;ParticleGroup::invalidate_callback_real,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::placeholders::_1,<sp/>std::placeholders::_2));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_particle_dat_common(ParticleDatSharedPtr&lt;T&gt;<sp/>particle_dat)<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>realloc_dat(particle_dat);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>push_particle_spec(ParticleProp(particle_dat-&gt;sym,<sp/>particle_dat-&gt;ncomp,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_dat-&gt;positions));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>particle_dat-&gt;set_npart_cells_host(this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a698a4229e2e145f17f830fa493ced476" kindref="member">ptr</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>particle_dat-&gt;npart_host_to_device();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;add_invalidate_callback(particle_dat);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>store<sp/>is<sp/>initialised<sp/>with<sp/>1<sp/>and<sp/>the<sp/>to<sp/>test<sp/>keys<sp/>should<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialised<sp/>with<sp/>0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>ParticleDatVersion<sp/>key{particle_dat-&gt;sym};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>std::tuple&lt;int64_t,<sp/>bool&gt;<sp/>value<sp/>=<sp/>{1,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(this-&gt;particle_dat_versions.count(key)<sp/>==<sp/>0,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ParticleDat<sp/>already<sp/>in<sp/>version<sp/>tracker.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;particle_dat_versions[key]<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="163" refid="classNESO_1_1Particles_1_1ParticleGroup_1ab4774ba8a9f3b2696704f30375b908d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1ab4774ba8a9f3b2696704f30375b908d2" kindref="member">check_validation</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1af81070532c8a85f0f1b3afb4ef673bf1" kindref="member">ParticleDatVersionTracker</ref><sp/>&amp;to_check)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;item<sp/>:<sp/>to_check)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;key<sp/>=<sp/>item.first;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>to_check_value<sp/>=<sp/>item.second;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>local_entry<sp/>=<sp/>this-&gt;particle_dat_versions.at(key);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t<sp/>local_value<sp/>=<sp/>std::get&lt;0&gt;(local_entry);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>local_bool<sp/>=<sp/>std::get&lt;1&gt;(local_entry);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>a<sp/>local<sp/>count<sp/>is<sp/>different<sp/>to<sp/>the<sp/>count<sp/>on<sp/>the<sp/>to_check<sp/>then<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>updated<sp/>is<sp/>required<sp/>on<sp/>the<sp/>object<sp/>that<sp/>holds<sp/>to<sp/>check.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(local_value<sp/>!=<sp/>to_check_value)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>updated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to_check.at(key)<sp/>=<sp/>local_value;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>this<sp/>bool<sp/>has<sp/>been<sp/>set<sp/>then<sp/>an<sp/>update<sp/>is<sp/>always<sp/>required.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(local_bool)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>updated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>updated;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="187" refid="classNESO_1_1Particles_1_1ParticleGroup_1a8de3a677c9da2427ee036908b7a95eca" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a8de3a677c9da2427ee036908b7a95eca" kindref="member">ParticleGroup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref><sp/>&amp;st)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189" refid="classNESO_1_1Particles_1_1ParticleGroup_1a21cf8e3c5ae4d74b43799935075580a8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a21cf8e3c5ae4d74b43799935075580a8" kindref="member">operator=</ref>(<ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;a)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classNESO_1_1Particles_1_1ParticleGroup_1acb0ee8bf51e52a9f386c437db2427a20" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1ae44a4731c000de97b12328292de6b7c5" kindref="member">DomainSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1acb0ee8bf51e52a9f386c437db2427a20" kindref="member">domain</ref>;</highlight></codeline>
+<codeline lineno="194" refid="classNESO_1_1Particles_1_1ParticleGroup_1a79b4175ae60189ea6806b3714cb1fad4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a79b4175ae60189ea6806b3714cb1fad4" kindref="member">sycl_target</ref>;</highlight></codeline>
+<codeline lineno="196" refid="classNESO_1_1Particles_1_1ParticleGroup_1a9dd5dc6101f1c5d24461cbcd5bbf7656" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;Sym&lt;REAL&gt;,<sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;REAL&gt;</ref>&gt;<sp/>particle_dats_real{};</highlight></codeline>
+<codeline lineno="198" refid="classNESO_1_1Particles_1_1ParticleGroup_1a20cf9525b901adab4381a6e5f978ae6f" refkind="member"><highlight class="normal"><sp/><sp/>std::map&lt;Sym&lt;INT&gt;,<sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;INT&gt;</ref>&gt;<sp/>particle_dats_int{};</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classNESO_1_1Particles_1_1ParticleGroup_1af53fa2192c6c8da6bd1ff4b981481730" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Sym&lt;REAL&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1af53fa2192c6c8da6bd1ff4b981481730" kindref="member">position_sym</ref>;</highlight></codeline>
+<codeline lineno="203" refid="classNESO_1_1Particles_1_1ParticleGroup_1a4d4175cb8ddb7bb3cf37d5a56be3bd1c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;REAL&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a4d4175cb8ddb7bb3cf37d5a56be3bd1c" kindref="member">position_dat</ref>;</highlight></codeline>
+<codeline lineno="205" refid="classNESO_1_1Particles_1_1ParticleGroup_1acc66165803d60ad512ebc99740f35b51" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Sym&lt;INT&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1acc66165803d60ad512ebc99740f35b51" kindref="member">cell_id_sym</ref>;</highlight></codeline>
+<codeline lineno="207" refid="classNESO_1_1Particles_1_1ParticleGroup_1a9d2d18287dc1ab64a1adf7fd9b611ab7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;INT&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a9d2d18287dc1ab64a1adf7fd9b611ab7" kindref="member">cell_id_dat</ref>;</highlight></codeline>
+<codeline lineno="209" refid="classNESO_1_1Particles_1_1ParticleGroup_1a8d2c1da4f699a2cebef3d1da26b40e64" refkind="member"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Sym&lt;INT&gt;&gt;<sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a8d2c1da4f699a2cebef3d1da26b40e64" kindref="member">mpi_rank_sym</ref>;</highlight></codeline>
+<codeline lineno="211" refid="classNESO_1_1Particles_1_1ParticleGroup_1a5390097031ae828bf336ff9c0850447b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;INT&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a5390097031ae828bf336ff9c0850447b" kindref="member">mpi_rank_dat</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classNESO_1_1Particles_1_1ParticleGroup_1a4291b050f055345ac7852b54a7c2b367" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a4291b050f055345ac7852b54a7c2b367" kindref="member">particle_spec</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="classNESO_1_1Particles_1_1ParticleGroup_1a9de7e072d3a9a4c793c23e36dd8010fd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1LayerCompressor" kindref="compound">LayerCompressor</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a9de7e072d3a9a4c793c23e36dd8010fd" kindref="member">layer_compressor</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>destructor<sp/>calls.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classNESO_1_1Particles_1_1ParticleGroup_1a9d748cdd20923ff733ec2ebd6b1afd6f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a9d748cdd20923ff733ec2ebd6b1afd6f" kindref="member">free</ref>()<sp/>{<sp/>this-&gt;global_move_ctx.free();<sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="classNESO_1_1Particles_1_1ParticleGroup_1a048daf94cb6be0d24d918ec000c575f7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a048daf94cb6be0d24d918ec000c575f7" kindref="member">ParticleGroup</ref>(<ref refid="namespaceNESO_1_1Particles_1ae44a4731c000de97b12328292de6b7c5" kindref="member">DomainSharedPtr</ref><sp/>domain,<sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/>&amp;particle_spec,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref><sp/>sycl_target)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>domain(domain),<sp/>sycl_target(sycl_target),</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ncell(domain-&gt;mesh-&gt;get_cell_count()),<sp/>d_remove_cells(sycl_target,<sp/>1),</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_remove_layers(sycl_target,<sp/>1),<sp/>h_npart_cell(sycl_target,<sp/>1),</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layer_compressor(sycl_target,<sp/>ncell,<sp/>particle_dats_real,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_dats_int),</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_move_ctx(sycl_target,<sp/>layer_compressor,<sp/>particle_dats_real,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_dats_int),</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_move_ctx(</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sycl_target,<sp/>layer_compressor,<sp/>particle_dats_real,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_dats_int,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>domain-&gt;mesh-&gt;get_local_communication_neighbours().size(),</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>domain-&gt;mesh-&gt;get_local_communication_neighbours().data()),</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_move_ctx(sycl_target,<sp/>this-&gt;ncell,<sp/>layer_compressor,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_dats_real,<sp/>particle_dats_int)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a82781745175477c1851b4984575d3180" kindref="member">realloc_no_copy</ref>(this-&gt;ncell);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/>this-&gt;ncell;<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a698a4229e2e145f17f830fa493ced476" kindref="member">ptr</ref>[cellx]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;property<sp/>:<sp/>particle_spec.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" kindref="member">properties_real</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_particle_dat(<ref refid="namespaceNESO_1_1Particles_1ac8c576cdfa97a8900563312ecc17eadf" kindref="member">ParticleDat</ref>(sycl_target,<sp/>property,<sp/>this-&gt;ncell));</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;property<sp/>:<sp/>particle_spec.<ref refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" kindref="member">properties_int</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>add_particle_dat(<ref refid="namespaceNESO_1_1Particles_1ac8c576cdfa97a8900563312ecc17eadf" kindref="member">ParticleDat</ref>(sycl_target,<sp/>property,<sp/>this-&gt;ncell));</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>ParticleDat<sp/>to<sp/>store<sp/>the<sp/>MPI<sp/>rank<sp/>of<sp/>the<sp/>particles<sp/>in.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_rank_sym<sp/>=<sp/>std::make_shared&lt;Sym&lt;INT&gt;&gt;(</highlight><highlight class="stringliteral">&quot;NESO_MPI_RANK&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>mpi_rank_dat<sp/>=</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1ac8c576cdfa97a8900563312ecc17eadf" kindref="member">ParticleDat</ref>(sycl_target,<sp/><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>(*mpi_rank_sym,<sp/>2),<sp/>ncell);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>add_particle_dat(mpi_rank_dat);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;global_move_ctx.set_mpi_rank_dat(mpi_rank_dat);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;local_move_ctx.set_mpi_rank_dat(mpi_rank_dat);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;layer_compressor.<ref refid="classNESO_1_1Particles_1_1LayerCompressor_1a2e51fca2b1050972d0a611a77697d3bc" kindref="member">set_cell_id_dat</ref>(this-&gt;cell_id_dat);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;cell_move_ctx.set_cell_id_dat(this-&gt;cell_id_dat);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;mesh_hierarchy_global_map<sp/>=<sp/>std::make_shared&lt;MeshHierarchyGlobalMap&gt;(</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;sycl_target,<sp/>this-&gt;domain-&gt;mesh,<sp/>this-&gt;position_dat,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;cell_id_dat,<sp/>this-&gt;mpi_rank_dat);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>the<sp/>callback<sp/>on<sp/>the<sp/>local<sp/>mapper<sp/>to<sp/>complete<sp/>the<sp/>setup<sp/>of<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;domain-&gt;local_mapper-&gt;particle_group_callback(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281" refid="classNESO_1_1Particles_1_1ParticleGroup_1aec8c2b589deba06f1b47330648dac4c3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1aec8c2b589deba06f1b47330648dac4c3" kindref="member">~ParticleGroup</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_particle_dat(<ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;REAL&gt;</ref><sp/>particle_dat);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_particle_dat(<ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;INT&gt;</ref><sp/>particle_dat);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_particles();</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_particles(U<sp/>particle_data);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_particles_local(<ref refid="classNESO_1_1Particles_1_1ParticleSet" kindref="compound">ParticleSet</ref><sp/>&amp;particle_data);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="classNESO_1_1Particles_1_1ParticleGroup_1a3c55a244c06cf94f24b279fea9118ae5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a3c55a244c06cf94f24b279fea9118ae5" kindref="member">get_npart_local</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;position_dat-&gt;get_npart_local();<sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="classNESO_1_1Particles_1_1ParticleGroup_1aa73319f02b633a53b274d881d19a20fe" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1aa73319f02b633a53b274d881d19a20fe" kindref="member">contains_dat</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)this-&gt;particle_dats_real.count(sym);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classNESO_1_1Particles_1_1ParticleGroup_1ad478ab98e2109b3bce1a871c7596f82d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1ad478ab98e2109b3bce1a871c7596f82d" kindref="member">contains_dat</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)this-&gt;particle_dats_int.count(sym);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="360" refid="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;T&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a79bd87a921557027171715278f27796c" kindref="member">get_dat</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;T&gt;</ref><sp/>sym,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check_exists<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(check_exists)<sp/>{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dat_exists<sp/>=<sp/>this-&gt;contains_dat(sym);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(dat_exists,</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;This<sp/>ParticleGroup<sp/>does<sp/>not<sp/>contain<sp/>the<sp/>requested<sp/>dat.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">)[sym];</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376" refid="classNESO_1_1Particles_1_1ParticleGroup_1af6f2a39dfcd135ab1a8d347954c1a995" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;REAL&gt;</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1af6f2a39dfcd135ab1a8d347954c1a995" kindref="member">operator[]</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;particle_dats_real.at(sym);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="385" refid="classNESO_1_1Particles_1_1ParticleGroup_1a4e23ba882491c2d20d06862de2eecf89" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;INT&gt;</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a4e23ba882491c2d20d06862de2eecf89" kindref="member">operator[]</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;particle_dats_int.at(sym);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397" refid="classNESO_1_1Particles_1_1ParticleGroup_1a2a5d4700600c15fb2bde7ac65855bdc0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" kindref="member">CellData&lt;REAL&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a2a5d4700600c15fb2bde7ac65855bdc0" kindref="member">get_cell</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell)<sp/>{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>particle_dats_real[sym]-&gt;cell_dat.get_cell(cell);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="classNESO_1_1Particles_1_1ParticleGroup_1aa7fdef4e1698d0a404c9702225cefff0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a8e7fbe7ef590c74d586c09da58870f8d" kindref="member">CellData&lt;INT&gt;</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1aa7fdef4e1698d0a404c9702225cefff0" kindref="member">get_cell</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell)<sp/>{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>particle_dats_int[sym]-&gt;cell_dat.get_cell(cell);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remove_particles(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npart,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;INT&gt;<sp/>&amp;cells,</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;INT&gt;<sp/>&amp;layers);</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remove_particles(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npart,<sp/>T<sp/>*usm_cells,<sp/>T<sp/>*usm_layers);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438" refid="classNESO_1_1Particles_1_1ParticleGroup_1a21389d0a2476918d35af038a6a54d23b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a21389d0a2476918d35af038a6a54d23b" kindref="member">get_npart_cell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell)<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a698a4229e2e145f17f830fa493ced476" kindref="member">ptr</ref>[cell];</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="classNESO_1_1Particles_1_1ParticleGroup_1ad2c6b1b9c8c12897d7f0c7e72dab86c6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref><sp/>&amp;<ref refid="classNESO_1_1Particles_1_1ParticleGroup_1ad2c6b1b9c8c12897d7f0c7e72dab86c6" kindref="member">get_particle_spec</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;particle_spec;<sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>global_move();</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>local_move();</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>hybrid_move();</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>particle_size();</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="classNESO_1_1Particles_1_1ParticleGroup_1a4c36162067136b3892f1758554811ea0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a4c36162067136b3892f1758554811ea0" kindref="member">cell_move</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;cell_move_ctx.move();</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;set_npart_cell_from_dat();</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493" refid="classNESO_1_1Particles_1_1ParticleGroup_1ad3ba3e015dcefaa7419e67e30c16b787" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1ad3ba3e015dcefaa7419e67e30c16b787" kindref="member">set_npart_cell_from_dat</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/>this-&gt;ncell;<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a698a4229e2e145f17f830fa493ced476" kindref="member">ptr</ref>[cellx]<sp/>=<sp/>this-&gt;position_dat-&gt;h_npart_cell[cellx];</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print(T...<sp/>args);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513" refid="classNESO_1_1Particles_1_1ParticleGroup_1a966af3932641b732ae640b87ffc8cbff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a966af3932641b732ae640b87ffc8cbff" kindref="member">remove_particle_dat</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(this-&gt;particle_dats_real.count(sym)<sp/>==<sp/>1,</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ParticleDat<sp/>not<sp/>found.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;particle_dats_real.erase(sym);</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;particle_dat_versions.erase(sym);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="524" refid="classNESO_1_1Particles_1_1ParticleGroup_1a9ddf82001341b2bf04f857b7e2447f12" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a9ddf82001341b2bf04f857b7e2447f12" kindref="member">remove_particle_dat</ref>(<ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(this-&gt;particle_dats_int.count(sym)<sp/>==<sp/>1,</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ParticleDat<sp/>not<sp/>found.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;particle_dats_int.erase(sym);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;particle_dat_versions.erase(sym);</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="530"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="533" refid="classNESO_1_1Particles_1_1ParticleGroup_1a35092af27430a143db0dbc40430e8c62" refkind="member"><highlight class="normal">ParticleGroup::add_particle_dat(<ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;REAL&gt;</ref><sp/>particle_dat)<sp/>{</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(this-&gt;particle_dats_real.count(particle_dat-&gt;sym)<sp/>==<sp/>0,</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ParticleDat<sp/>Sym<sp/>already<sp/>exists<sp/>in<sp/>ParticleGroup.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/>this-&gt;particle_dats_real[particle_dat-&gt;sym]<sp/>=<sp/>particle_dat;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>this<sp/>dat<sp/>hold<sp/>particle<sp/>positions?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(particle_dat-&gt;positions)<sp/>{</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;position_dat<sp/>=<sp/>particle_dat;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;position_sym<sp/>=<sp/>std::make_shared&lt;Sym&lt;REAL&gt;&gt;(particle_dat-&gt;sym.name);</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/>add_particle_dat_common(particle_dat);</highlight></codeline>
+<codeline lineno="543"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="545" refid="classNESO_1_1Particles_1_1ParticleGroup_1ae3221692337199231ad4364715f379df" refkind="member"><highlight class="normal">ParticleGroup::add_particle_dat(<ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr&lt;INT&gt;</ref><sp/>particle_dat)<sp/>{</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(this-&gt;particle_dats_int.count(particle_dat-&gt;sym)<sp/>==<sp/>0,</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ParticleDat<sp/>Sym<sp/>already<sp/>exists<sp/>in<sp/>ParticleGroup.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/>this-&gt;particle_dats_int[particle_dat-&gt;sym]<sp/>=<sp/>particle_dat;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>this<sp/>dat<sp/>hold<sp/>particle<sp/>cell<sp/>ids?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(particle_dat-&gt;positions)<sp/>{</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;cell_id_dat<sp/>=<sp/>particle_dat;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;cell_id_sym<sp/>=<sp/>std::make_shared&lt;Sym&lt;INT&gt;&gt;(particle_dat-&gt;sym.name);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/>add_particle_dat_common(particle_dat);</highlight></codeline>
+<codeline lineno="555"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="557" refid="classNESO_1_1Particles_1_1ParticleGroup_1ae056f815037640ac0e5ed081537c1266" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::add_particles(){};</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="559" refid="classNESO_1_1Particles_1_1ParticleGroup_1aae10fe6d169135aa46e267f97edf9cae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::add_particles(U<sp/>particle_data){</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="564"><highlight class="comment"><sp/>*<sp/>Number<sp/>of<sp/>bytes<sp/>required<sp/>to<sp/>store<sp/>the<sp/>data<sp/>for<sp/>one<sp/>particle.</highlight></codeline>
+<codeline lineno="565"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566" refid="classNESO_1_1Particles_1_1ParticleGroup_1a0c0d3f9d6c4f60f72aa89af634b850f0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ParticleGroup::particle_size()<sp/>{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dat<sp/>:<sp/>this-&gt;particle_dats_real)<sp/>{</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>+=<sp/>dat.second-&gt;cell_dat.row_size();</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dat<sp/>:<sp/>this-&gt;particle_dats_int)<sp/>{</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>+=<sp/>dat.second-&gt;cell_dat.row_size();</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577" refid="classNESO_1_1Particles_1_1ParticleGroup_1a6770d444576949f95e15c0a21c2b9580" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::add_particles_local(<ref refid="classNESO_1_1Particles_1_1ParticleSet" kindref="compound">ParticleSet</ref><sp/>&amp;particle_data)<sp/>{</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>loop<sp/>over<sp/>the<sp/>cells<sp/>of<sp/>the<sp/>new<sp/>particles<sp/>and<sp/>allocate<sp/>more<sp/>space<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>dats</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npart_new<sp/>=<sp/>particle_data.<ref refid="classNESO_1_1Particles_1_1ParticleSet_1af6abbaa68af8817e480a2a38729fdee4" kindref="member">npart</ref>;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cellids<sp/>=<sp/>particle_data.<ref refid="classNESO_1_1Particles_1_1ParticleSet_1aff3d2126647e5e04fde3a563c0047f97" kindref="member">get</ref>(*this-&gt;cell_id_sym);</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/>std::vector&lt;INT&gt;<sp/>layers(npart_new);</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px<sp/>=<sp/>0;<sp/>px<sp/>&lt;<sp/>npart_new;<sp/>px++)<sp/>{</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cellindex<sp/>=<sp/>cellids[px];</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>((cellindex<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(cellindex<sp/>&lt;<sp/>this-&gt;ncell),</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>particle<sp/>cellid)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/>layers[px]<sp/>=<sp/>this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a698a4229e2e145f17f830fa493ced476" kindref="member">ptr</ref>[cellindex]++;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dat<sp/>:<sp/>this-&gt;particle_dats_real)<sp/>{</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/>realloc_dat(dat.second);</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/>dat.second-&gt;append_particle_data(npart_new,</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_data.<ref refid="classNESO_1_1Particles_1_1ParticleSet_1adbe4ff16691f65c28823499732a676df" kindref="member">contains</ref>(dat.first),<sp/>cellids,</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layers,<sp/>particle_data.<ref refid="classNESO_1_1Particles_1_1ParticleSet_1aff3d2126647e5e04fde3a563c0047f97" kindref="member">get</ref>(dat.first));</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dat<sp/>:<sp/>this-&gt;particle_dats_int)<sp/>{</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/>realloc_dat(dat.second);</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/>dat.second-&gt;append_particle_data(npart_new,</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>particle_data.<ref refid="classNESO_1_1Particles_1_1ParticleSet_1adbe4ff16691f65c28823499732a676df" kindref="member">contains</ref>(dat.first),<sp/>cellids,</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layers,<sp/>particle_data.<ref refid="classNESO_1_1Particles_1_1ParticleSet_1aff3d2126647e5e04fde3a563c0047f97" kindref="member">get</ref>(dat.first));</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>append<sp/>is<sp/>async</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/>this-&gt;sycl_target-&gt;queue.wait();</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dat<sp/>:<sp/>particle_dats_real)<sp/>{</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/>dat.second-&gt;npart_host_to_device();</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/>this-&gt;ncell;<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(dat.second-&gt;h_npart_cell[cellx]<sp/>==</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_npart_cell.ptr[cellx],</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>cell<sp/>count&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dat<sp/>:<sp/>particle_dats_int)<sp/>{</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/>dat.second-&gt;npart_host_to_device();</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/>this-&gt;ncell;<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(dat.second-&gt;h_npart_cell[cellx]<sp/>==</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;h_npart_cell.ptr[cellx],</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>cell<sp/>count&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="624"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="627" refid="classNESO_1_1Particles_1_1ParticleGroup_1ab506d1809f86cbf2b15ac616589c347a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::remove_particles(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npart,<sp/>T<sp/>*usm_cells,</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>*usm_layers)<sp/>{</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/>this-&gt;layer_compressor.remove_particles(npart,<sp/>usm_cells,<sp/>usm_layers);</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/>this-&gt;set_npart_cell_from_dat();</highlight></codeline>
+<codeline lineno="631"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="633" refid="classNESO_1_1Particles_1_1ParticleGroup_1a813a563022ab10a145ecc08d2357d086" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::remove_particles(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npart,</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;INT&gt;<sp/>&amp;cells,</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;INT&gt;<sp/>&amp;layers)<sp/>{</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/>this-&gt;d_remove_cells.<ref refid="classNESO_1_1Particles_1_1BufferDevice_1af677dae3fe3a7ebf98339a2b4112e400" kindref="member">realloc_no_copy</ref>(npart);</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/>this-&gt;d_remove_layers.<ref refid="classNESO_1_1Particles_1_1BufferDevice_1af677dae3fe3a7ebf98339a2b4112e400" kindref="member">realloc_no_copy</ref>(npart);</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>k_cells<sp/>=<sp/>this-&gt;d_remove_cells.<ref refid="classNESO_1_1Particles_1_1BufferDevice_1a990baf1bc71137b3112526099491b2de" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>k_layers<sp/>=<sp/>this-&gt;d_remove_layers.<ref refid="classNESO_1_1Particles_1_1BufferDevice_1a990baf1bc71137b3112526099491b2de" kindref="member">ptr</ref>;</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(cells.size()<sp/>&gt;=<sp/>npart,<sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>cells<sp/>length<sp/>compared<sp/>to<sp/>npart&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(layers.size()<sp/>&gt;=<sp/>npart,<sp/></highlight><highlight class="stringliteral">&quot;Bad<sp/>layers<sp/>length<sp/>compared<sp/>to<sp/>npart&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>b_cells<sp/>=<sp/>sycl::buffer&lt;INT&gt;(cells.data(),<sp/>sycl::range&lt;1&gt;(npart));</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>b_layers<sp/>=<sp/>sycl::buffer&lt;INT&gt;(layers.data(),<sp/>sycl::range&lt;1&gt;(npart));</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/>this-&gt;sycl_target-&gt;queue</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.submit([&amp;](sycl::handler<sp/>&amp;cgh)<sp/>{</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>a_cells<sp/>=<sp/>b_cells.get_access&lt;<ref refid="namespaceNESO_1_1Particles_1_1Access_1a5ac4ad4b7778690c9189204fbc612c14" kindref="member">sycl::access::mode::read</ref>&gt;(cgh);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>a_layers<sp/>=<sp/>b_layers.get_access&lt;<ref refid="namespaceNESO_1_1Particles_1_1Access_1a5ac4ad4b7778690c9189204fbc612c14" kindref="member">sycl::access::mode::read</ref>&gt;(cgh);</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cgh.parallel_for&lt;&gt;(sycl::range&lt;1&gt;(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(npart)),</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[=](sycl::id&lt;1&gt;<sp/>idx)<sp/>{</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k_cells[idx]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(a_cells[idx]);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k_layers[idx]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(a_layers[idx]);</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>})</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.wait_and_throw();</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/>this-&gt;remove_particles(npart,<sp/>this-&gt;d_remove_cells.<ref refid="classNESO_1_1Particles_1_1BufferDevice_1a990baf1bc71137b3112526099491b2de" kindref="member">ptr</ref>,</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;d_remove_layers.ptr);</highlight></codeline>
+<codeline lineno="663"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="666"><highlight class="comment"><sp/>*<sp/>Perform<sp/>global<sp/>move<sp/>operation<sp/>to<sp/>send<sp/>particles<sp/>to<sp/>the<sp/>MPI<sp/>ranks<sp/>stored<sp/>in</highlight></codeline>
+<codeline lineno="667"><highlight class="comment"><sp/>*<sp/>the<sp/>first<sp/>component<sp/>of<sp/>the<sp/>NESO_MPI_RANK<sp/>ParticleDat.<sp/>Must<sp/>be<sp/>called</highlight></codeline>
+<codeline lineno="668"><highlight class="comment"><sp/>*<sp/>collectively<sp/>on<sp/>the<sp/>communicator.</highlight></codeline>
+<codeline lineno="669"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="670" refid="classNESO_1_1Particles_1_1ParticleGroup_1a41f3dda81613c672467d34625d854391" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::global_move()<sp/>{</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/>this-&gt;global_move_ctx.move();</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/>this-&gt;set_npart_cell_from_dat();</highlight></codeline>
+<codeline lineno="673"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="676"><highlight class="comment"><sp/>*<sp/>Perform<sp/>local<sp/>move<sp/>operation<sp/>to<sp/>send<sp/>particles<sp/>to<sp/>the<sp/>MPI<sp/>ranks<sp/>stored<sp/>in</highlight></codeline>
+<codeline lineno="677"><highlight class="comment"><sp/>*<sp/>the<sp/>second<sp/>component<sp/>of<sp/>the<sp/>NESO_MPI_RANK<sp/>ParticleDat.<sp/>Must<sp/>be<sp/>called</highlight></codeline>
+<codeline lineno="678"><highlight class="comment"><sp/>*<sp/>collectively<sp/>on<sp/>the<sp/>communicator.</highlight></codeline>
+<codeline lineno="679"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="680" refid="classNESO_1_1Particles_1_1ParticleGroup_1aa35f9ba01eff5b809c315e144e4bf19e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::local_move()<sp/>{</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/>this-&gt;local_move_ctx.move();</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/>this-&gt;set_npart_cell_from_dat();</highlight></codeline>
+<codeline lineno="683"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685" refid="namespaceNESO_1_1Particles_1a6fbbd0c9a0b9d8808c1c6fa9a1a5fc70" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceNESO_1_1Particles_1adab45acb66663ead4d94f24b76bb0733" kindref="member">fixed_width_format</ref>(<ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err<sp/>=<sp/>snprintf(buffer,<sp/>128,<sp/></highlight><highlight class="stringliteral">&quot;%ld&quot;</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(buffer);</highlight></codeline>
+<codeline lineno="689"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="690" refid="namespaceNESO_1_1Particles_1adab45acb66663ead4d94f24b76bb0733" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceNESO_1_1Particles_1adab45acb66663ead4d94f24b76bb0733" kindref="member">fixed_width_format</ref>(<ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[128];</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err<sp/>=<sp/>snprintf(buffer,<sp/>128,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>value);</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(buffer);</highlight></codeline>
+<codeline lineno="694"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696" refid="classNESO_1_1Particles_1_1ParticleGroup_1a4f93fa94ba688d32baf556cb568fd07f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::print(T...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><ref refid="classNESO_1_1Particles_1_1SymStore" kindref="compound">SymStore</ref><sp/>print_spec(args...);</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===============================================================&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;=================&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellx<sp/>=<sp/>0;<sp/>cellx<sp/>&lt;<sp/>this-&gt;domain-&gt;mesh-&gt;get_cell_count();<sp/>cellx++)<sp/>{</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;h_npart_cell.<ref refid="classNESO_1_1Particles_1_1BufferHost_1a698a4229e2e145f17f830fa493ced476" kindref="member">ptr</ref>[cellx]<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;CellData&lt;REAL&gt;&gt;<sp/>cell_data_real;</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;CellData&lt;INT&gt;&gt;<sp/>cell_data_int;</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrow<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;symx<sp/>:<sp/>print_spec.<ref refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" kindref="member">syms_real</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cell_data<sp/>=</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;particle_dats_real[symx]-&gt;cell_dat.get_cell(cellx);</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data_real.push_back(cell_data);</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrow<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(nrow<sp/>==<sp/>cell_data-&gt;nrow,<sp/></highlight><highlight class="stringliteral">&quot;nrow<sp/>missmatch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nrow<sp/>=<sp/>cell_data-&gt;nrow;</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;symx<sp/>:<sp/>print_spec.<ref refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" kindref="member">syms_int</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cell_data<sp/>=</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;particle_dats_int[symx]-&gt;cell_dat.get_cell(cellx);</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_data_int.push_back(cell_data);</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrow<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="typedefs_8hpp_1ac780e64fe76ab7e5f6b07c55de92d018" kindref="member">NESOASSERT</ref>(nrow<sp/>==<sp/>cell_data-&gt;nrow,<sp/></highlight><highlight class="stringliteral">&quot;nrow<sp/>missmatch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nrow<sp/>=<sp/>cell_data-&gt;nrow;</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"></highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-------<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cellx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-------&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;symx<sp/>:<sp/>print_spec.<ref refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" kindref="member">syms_real</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>symx.name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;symx<sp/>:<sp/>print_spec.<ref refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" kindref="member">syms_int</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>symx.name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rowx<sp/>=<sp/>0;<sp/>rowx<sp/>&lt;<sp/>nrow;<sp/>rowx++)<sp/>{</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;cx<sp/>:<sp/>cell_data_real)<sp/>{</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>cx-&gt;ncol;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="namespaceNESO_1_1Particles_1adab45acb66663ead4d94f24b76bb0733" kindref="member">fixed_width_format</ref>((*cx)[colx][rowx])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;cx<sp/>:<sp/>cell_data_int)<sp/>{</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colx<sp/>=<sp/>0;<sp/>colx<sp/>&lt;<sp/>cx-&gt;ncol;<sp/>colx++)<sp/>{</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="namespaceNESO_1_1Particles_1adab45acb66663ead4d94f24b76bb0733" kindref="member">fixed_width_format</ref>((*cx)[colx][rowx])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===============================================================&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;=================&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="763"><highlight class="comment"><sp/>*<sp/>Perform<sp/>global<sp/>move<sp/>operation.<sp/>Uses<sp/>particle<sp/>positions<sp/>to<sp/>determine</highlight></codeline>
+<codeline lineno="764"><highlight class="comment"><sp/>*<sp/>global/neighbour<sp/>MPI<sp/>ranks<sp/>and<sp/>uses<sp/>the<sp/>global<sp/>then<sp/>local<sp/>move<sp/>methods<sp/>(in</highlight></codeline>
+<codeline lineno="765"><highlight class="comment"><sp/>*<sp/>that<sp/>order).<sp/>Must<sp/>be<sp/>called<sp/>collectively<sp/>on<sp/>the<sp/>communicator.</highlight></codeline>
+<codeline lineno="766"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="767" refid="classNESO_1_1Particles_1_1ParticleGroup_1a4071b09fcb79eb20fcd5fda772ebe138" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ParticleGroup::hybrid_move()<sp/>{</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"></highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><ref refid="namespaceNESO_1_1Particles_1ae047d1d641a93bd4e831429091bc3b6e" kindref="member">reset_mpi_ranks</ref>(this-&gt;mpi_rank_dat);</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/>this-&gt;domain-&gt;local_mapper-&gt;map(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/>this-&gt;mesh_hierarchy_global_map-&gt;execute();</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"></highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/>this-&gt;global_move_ctx.move();</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/>this-&gt;set_npart_cell_from_dat();</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/>this-&gt;domain-&gt;local_mapper-&gt;map(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><sp/><sp/>this-&gt;local_move_ctx.move();</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/>this-&gt;set_npart_cell_from_dat();</highlight></codeline>
+<codeline lineno="780"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782" refid="namespaceNESO_1_1Particles_1a36922f3691d365c84df0ccf64fc90ac9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ParticleGroup&gt;<sp/><ref refid="namespaceNESO_1_1Particles_1a36922f3691d365c84df0ccf64fc90ac9" kindref="member">ParticleGroupSharedPtr</ref>;</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NESO::Particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_group.hpp"/>
+  </compounddef>
+</doxygen>

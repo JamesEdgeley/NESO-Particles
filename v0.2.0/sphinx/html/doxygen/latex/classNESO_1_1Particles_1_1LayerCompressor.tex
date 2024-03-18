@@ -1,0 +1,105 @@
+\hypertarget{classNESO_1_1Particles_1_1LayerCompressor}{}\doxysection{NESO\+::Particles\+::Layer\+Compressor Class Reference}
+\label{classNESO_1_1Particles_1_1LayerCompressor}\index{NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}}
+
+
+{\ttfamily \#include $<$cell\+\_\+dat\+\_\+compression.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LayerCompressor_a2518889e6fdd75424e360912c6ba5c77}\label{classNESO_1_1Particles_1_1LayerCompressor_a2518889e6fdd75424e360912c6ba5c77}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor_a2518889e6fdd75424e360912c6ba5c77}{Layer\+Compressor}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LayerCompressor_a38f665aa7934eaabd128879fdb076e50}\label{classNESO_1_1Particles_1_1LayerCompressor_a38f665aa7934eaabd128879fdb076e50}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor_a38f665aa7934eaabd128879fdb076e50}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor_af1ef4877add6b9153ddd922dbd93c9a2}{Layer\+Compressor}} (SYCLTarget\+Shared\+Ptr sycl\+\_\+target, const int ncell, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ REAL $>$, Particle\+Dat\+Shared\+Ptr$<$ REAL $>$$>$ \&particle\+\_\+dats\+\_\+real, std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ INT $>$, Particle\+Dat\+Shared\+Ptr$<$ INT $>$$>$ \&particle\+\_\+dats\+\_\+int)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor_a2e51fca2b1050972d0a611a77697d3bc}{set\+\_\+cell\+\_\+id\+\_\+dat}} (Particle\+Dat\+Shared\+Ptr$<$ INT $>$ cell\+\_\+id\+\_\+dat)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor_a15b02b5df24b5b7f4d2547457ce8dce1}{compute\+\_\+remove\+\_\+compress\+\_\+indicies}} (const int npart, T $\ast$usm\+\_\+cells, T $\ast$usm\+\_\+layers)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor_a16befa763df7e3517a0523d45aa1ba67}{remove\+\_\+particles}} (const int npart, T $\ast$usm\+\_\+cells, T $\ast$usm\+\_\+layers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classNESO_1_1Particles_1_1LayerCompressor}{Layer\+Compressor}} is a tool to remove rows from Particle\+Dat instances that correspond to particle data where the particle has been removed. Particles are removed when they move between cells and when they are transferred to other MPI ranks. This ensures that particle data is not duplicated and that the particle data is contiguous. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LayerCompressor_af1ef4877add6b9153ddd922dbd93c9a2}\label{classNESO_1_1Particles_1_1LayerCompressor_af1ef4877add6b9153ddd922dbd93c9a2}} 
+\index{NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}!LayerCompressor@{LayerCompressor}}
+\index{LayerCompressor@{LayerCompressor}!NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}}
+\doxysubsubsection{\texorpdfstring{LayerCompressor()}{LayerCompressor()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Layer\+Compressor\+::\+Layer\+Compressor (\begin{DoxyParamCaption}\item[{SYCLTarget\+Shared\+Ptr}]{sycl\+\_\+target,  }\item[{const int}]{ncell,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ REAL $>$, Particle\+Dat\+Shared\+Ptr$<$ REAL $>$$>$ \&}]{particle\+\_\+dats\+\_\+real,  }\item[{std\+::map$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ INT $>$, Particle\+Dat\+Shared\+Ptr$<$ INT $>$$>$ \&}]{particle\+\_\+dats\+\_\+int }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new layer compressor to compress all Particle\+Dat instances that are contained within the passed containers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & SYCLTarget\+Shared\+Ptr to use as compute device. \\
+\hline
+{\em ncell} & Number of cells within each Particle\+Dat. \\
+\hline
+{\em particle\+\_\+dats\+\_\+real} & Container of Particle\+Dat instances of REAL type. \\
+\hline
+{\em particle\+\_\+dats\+\_\+int} & Container of Particle\+Dat instances of INT type. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LayerCompressor_a15b02b5df24b5b7f4d2547457ce8dce1}\label{classNESO_1_1Particles_1_1LayerCompressor_a15b02b5df24b5b7f4d2547457ce8dce1}} 
+\index{NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}!compute\_remove\_compress\_indicies@{compute\_remove\_compress\_indicies}}
+\index{compute\_remove\_compress\_indicies@{compute\_remove\_compress\_indicies}!NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}}
+\doxysubsubsection{\texorpdfstring{compute\_remove\_compress\_indicies()}{compute\_remove\_compress\_indicies()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void NESO\+::\+Particles\+::\+Layer\+Compressor\+::compute\+\_\+remove\+\_\+compress\+\_\+indicies (\begin{DoxyParamCaption}\item[{const int}]{npart,  }\item[{T $\ast$}]{usm\+\_\+cells,  }\item[{T $\ast$}]{usm\+\_\+layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For the specified N particles to remove at the given cells and rows (layers) compute the data migration required to keep the particle data contiguous.
+
+
+\begin{DoxyParams}{Parameters}
+{\em npart} & Number of particles which are to be removed. \\
+\hline
+{\em usm\+\_\+cells} & Device accessible pointers to an array of length N that holds the cells of the particles that are to be removed. \\
+\hline
+{\em usm\+\_\+layers} & Device accessible pointers to an array of length N that holds the layers of the particles that are to be removed. \\
+\hline
+\end{DoxyParams}
+indicate this particle is removed by setting the / cell index to -\/1\mbox{\Hypertarget{classNESO_1_1Particles_1_1LayerCompressor_a16befa763df7e3517a0523d45aa1ba67}\label{classNESO_1_1Particles_1_1LayerCompressor_a16befa763df7e3517a0523d45aa1ba67}} 
+\index{NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}!remove\_particles@{remove\_particles}}
+\index{remove\_particles@{remove\_particles}!NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}}
+\doxysubsubsection{\texorpdfstring{remove\_particles()}{remove\_particles()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void NESO\+::\+Particles\+::\+Layer\+Compressor\+::remove\+\_\+particles (\begin{DoxyParamCaption}\item[{const int}]{npart,  }\item[{T $\ast$}]{usm\+\_\+cells,  }\item[{T $\ast$}]{usm\+\_\+layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove particles from the Particle\+Dat instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em npart} & Number of particles to remove. \\
+\hline
+{\em usm\+\_\+cells} & Device accessible pointer to the particle cells. \\
+\hline
+{\em usm\+\_\+layers} & Device accessible pointer to the particle rows (layers). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LayerCompressor_a2e51fca2b1050972d0a611a77697d3bc}\label{classNESO_1_1Particles_1_1LayerCompressor_a2e51fca2b1050972d0a611a77697d3bc}} 
+\index{NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}!set\_cell\_id\_dat@{set\_cell\_id\_dat}}
+\index{set\_cell\_id\_dat@{set\_cell\_id\_dat}!NESO::Particles::LayerCompressor@{NESO::Particles::LayerCompressor}}
+\doxysubsubsection{\texorpdfstring{set\_cell\_id\_dat()}{set\_cell\_id\_dat()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+Layer\+Compressor\+::set\+\_\+cell\+\_\+id\+\_\+dat (\begin{DoxyParamCaption}\item[{Particle\+Dat\+Shared\+Ptr$<$ INT $>$}]{cell\+\_\+id\+\_\+dat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the Particle\+Dat which contains the cell ids of the particles. This is not a function which is expected to be called by a user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\+\_\+id\+\_\+dat} & Particle\+Dat containing particle cell ids. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/cell\+\_\+dat\+\_\+compression.\+hpp\end{DoxyCompactItemize}

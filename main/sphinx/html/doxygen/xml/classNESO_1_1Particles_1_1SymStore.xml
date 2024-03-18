@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1SymStore" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::SymStore</compoundname>
+    <includes refid="particle__spec_8hpp" local="no">particle_spec.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;Sym&lt;REAL&gt; &gt; NESO::Particles::SymStore::syms_real</definition>
+        <argsstring></argsstring>
+        <name>syms_real</name>
+        <briefdescription>
+<para>Container of <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref> symbols. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="132" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;Sym&lt;INT&gt; &gt; NESO::Particles::SymStore::syms_int</definition>
+        <argsstring></argsstring>
+        <name>syms_int</name>
+        <briefdescription>
+<para>Container of <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref> symbols. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="134" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1a605da39fb66d80c7473a5f9d9c8b45bb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::SymStore::push</definition>
+        <argsstring>(T... args)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="118" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1adc40c653bde1d9e6c46ee60aa0f7cb80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::SymStore::push</definition>
+        <argsstring>(Sym&lt; REAL &gt; pp)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="119" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1a4abe80b88dab590bfc7b774b305c606f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::SymStore::push</definition>
+        <argsstring>(Sym&lt; INT &gt; pp)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="120" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1a858fd10644a34b4539fa9cbc14cf0ff9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::SymStore::push</definition>
+        <argsstring>(Sym&lt; REAL &gt; pp, T... args)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="121" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1ab1b383f61e714899176770138e0535ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::SymStore::push</definition>
+        <argsstring>(Sym&lt; INT &gt; pp, T... args)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="125" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1afcbc3000e80860047fcf7c1702ae60ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>NESO::Particles::SymStore::SymStore</definition>
+        <argsstring>(T... args)</argsstring>
+        <name>SymStore</name>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for <ref refid="classNESO_1_1Particles_1_1SymStore" kindref="compound">SymStore</ref> should be called with a list of arguments which are <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> instances.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Passed arguments should be <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;REAL&gt;</ref> or <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym&lt;INT&gt;</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="141" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1a9c48b3daf20815f54ef059bc4f024bf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::SymStore::SymStore</definition>
+        <argsstring>()</argsstring>
+        <name>SymStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="143" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SymStore_1a3d8cf0accf4ecd77d45fa3ec103a0dda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::SymStore::~SymStore</definition>
+        <argsstring>()</argsstring>
+        <name>~SymStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="144" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="144" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper class to hold a collection of <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> instances for <ref refid="classNESO_1_1Particles_1_1ParticleGroup_1a4f93fa94ba688d32baf556cb568fd07f" kindref="member">ParticleGroup::print</ref>. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="116" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="116" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a605da39fb66d80c7473a5f9d9c8b45bb" prot="private" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1adc40c653bde1d9e6c46ee60aa0f7cb80" prot="private" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a4abe80b88dab590bfc7b774b305c606f" prot="private" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a858fd10644a34b4539fa9cbc14cf0ff9" prot="private" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1ab1b383f61e714899176770138e0535ac" prot="private" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a956a5140f0420aa53e6dec11abe36ecf" prot="public" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>syms_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a6f0f3b936142014490a9d48b8a540679" prot="public" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>syms_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1afcbc3000e80860047fcf7c1702ae60ed" prot="public" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>SymStore</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a9c48b3daf20815f54ef059bc4f024bf6" prot="public" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>SymStore</name></member>
+      <member refid="classNESO_1_1Particles_1_1SymStore_1a3d8cf0accf4ecd77d45fa3ec103a0dda" prot="public" virt="non-virtual"><scope>NESO::Particles::SymStore</scope><name>~SymStore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

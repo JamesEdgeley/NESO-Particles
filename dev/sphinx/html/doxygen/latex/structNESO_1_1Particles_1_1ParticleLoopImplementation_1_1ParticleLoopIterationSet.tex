@@ -1,0 +1,128 @@
+\hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet}{}\doxysection{NESO\+::Particles\+::Particle\+Loop\+Implementation\+::Particle\+Loop\+Iteration\+Set Struct Reference}
+\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet}\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+
+
+{\ttfamily \#include $<$particle\+\_\+loop.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5a9baba528b45d1bf3507f94288b7095}{Particle\+Loop\+Iteration\+Set}} (const int \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_afeac8e8f6fe6303687efd09cc2a5692c}{nbin}}, const int \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a38c846d79cf7fbc63d53312c49ba7b34}{ncell}}, int $\ast$\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5f08187380c6ca2861ff3d7df93b2b99}{h\+\_\+npart\+\_\+cell}})
+\item 
+std\+::tuple$<$ int, std\+::vector$<$ sycl\+::nd\+\_\+range$<$ 2 $>$ $>$ \&, std\+::vector$<$ std\+::size\+\_\+t $>$ \& $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a73b8354168869bcbad6760ccb03cc9a0}{get}} (const std\+::optional$<$ int $>$ cell=std\+::nullopt, const size\+\_\+t local\+\_\+size=256)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_afeac8e8f6fe6303687efd09cc2a5692c}{nbin}}
+\begin{DoxyCompactList}\small\item\em The number of blocks of cells. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a38c846d79cf7fbc63d53312c49ba7b34}{ncell}}
+\begin{DoxyCompactList}\small\item\em The number of cells. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5f08187380c6ca2861ff3d7df93b2b99}{h\+\_\+npart\+\_\+cell}}
+\begin{DoxyCompactList}\small\item\em Host accessible pointer to the number of particles in each cell. \end{DoxyCompactList}\item 
+std\+::vector$<$ sycl\+::nd\+\_\+range$<$ 2 $>$ $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a73e6583852025fc11364685abd383046}{iteration\+\_\+set}}
+\begin{DoxyCompactList}\small\item\em Container to store the sycl\+::nd\+\_\+ranges. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::size\+\_\+t $>$ \mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_ab3ffba5553de799675c7bc09ce310dcf}{cell\+\_\+offsets}}
+\begin{DoxyCompactList}\small\item\em Offsets to add to the cell index to map to the correct cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+For a set of cells containing particles create several sycl\+::nd\+\_\+range instances which cover the iteration space of all particles. This exists to create an iteration set over all particles which is blocked, to reduce the number of kernel launches, and reasonably robust to non-\/uniform. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5a9baba528b45d1bf3507f94288b7095}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5a9baba528b45d1bf3507f94288b7095}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!ParticleLoopIterationSet@{ParticleLoopIterationSet}}
+\index{ParticleLoopIterationSet@{ParticleLoopIterationSet}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopIterationSet()}{ParticleLoopIterationSet()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::\+Particle\+Loop\+Iteration\+Set (\begin{DoxyParamCaption}\item[{const int}]{nbin,  }\item[{const int}]{ncell,  }\item[{int $\ast$}]{h\+\_\+npart\+\_\+cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates iteration set creator for a given set of cell particle counts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbin} & Number of blocks of cells. \\
+\hline
+{\em ncell} & Number of cells. \\
+\hline
+{\em h\+\_\+npart\+\_\+cell} & Host accessible array of cell particle counts. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a73b8354168869bcbad6760ccb03cc9a0}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a73b8354168869bcbad6760ccb03cc9a0}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!get@{get}}
+\index{get@{get}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::tuple$<$int, std\+::vector$<$sycl\+::nd\+\_\+range$<$2$>$ $>$ \&, std\+::vector$<$std\+::size\+\_\+t$>$ \&$>$ NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::get (\begin{DoxyParamCaption}\item[{const std\+::optional$<$ int $>$}]{cell = {\ttfamily std\+:\+:nullopt},  }\item[{const size\+\_\+t}]{local\+\_\+size = {\ttfamily 256} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create and return an iteration set which is formed as nbin sycl\+::nd\+\_\+ranges.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & If set iteration set will only cover this cell. \\
+\hline
+{\em local\+\_\+size} & Optional size of SYCL work groups. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Tuple}{Tuple}} containing\+: Number of bins, sycl\+::nd\+\_\+ranges, cell index offsets. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_ab3ffba5553de799675c7bc09ce310dcf}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_ab3ffba5553de799675c7bc09ce310dcf}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!cell\_offsets@{cell\_offsets}}
+\index{cell\_offsets@{cell\_offsets}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{cell\_offsets}{cell\_offsets}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::size\+\_\+t$>$ NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::cell\+\_\+offsets}
+
+
+
+Offsets to add to the cell index to map to the correct cell. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5f08187380c6ca2861ff3d7df93b2b99}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a5f08187380c6ca2861ff3d7df93b2b99}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!h\_npart\_cell@{h\_npart\_cell}}
+\index{h\_npart\_cell@{h\_npart\_cell}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{h\_npart\_cell}{h\_npart\_cell}}
+{\footnotesize\ttfamily int$\ast$ NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::h\+\_\+npart\+\_\+cell}
+
+
+
+Host accessible pointer to the number of particles in each cell. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a73e6583852025fc11364685abd383046}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a73e6583852025fc11364685abd383046}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!iteration\_set@{iteration\_set}}
+\index{iteration\_set@{iteration\_set}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{iteration\_set}{iteration\_set}}
+{\footnotesize\ttfamily std\+::vector$<$sycl\+::nd\+\_\+range$<$2$>$ $>$ NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::iteration\+\_\+set}
+
+
+
+Container to store the sycl\+::nd\+\_\+ranges. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_afeac8e8f6fe6303687efd09cc2a5692c}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_afeac8e8f6fe6303687efd09cc2a5692c}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!nbin@{nbin}}
+\index{nbin@{nbin}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{nbin}{nbin}}
+{\footnotesize\ttfamily const int NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::nbin}
+
+
+
+The number of blocks of cells. 
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a38c846d79cf7fbc63d53312c49ba7b34}\label{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet_a38c846d79cf7fbc63d53312c49ba7b34}} 
+\index{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}!ncell@{ncell}}
+\index{ncell@{ncell}!NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet@{NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet}}
+\doxysubsubsection{\texorpdfstring{ncell}{ncell}}
+{\footnotesize\ttfamily const int NESO\+::\+Particles\+::\+Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Iteration\+Set\+::ncell}
+
+
+
+The number of cells. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/loop/\mbox{\hyperlink{particle__loop_8hpp}{particle\+\_\+loop.\+hpp}}\end{DoxyCompactItemize}

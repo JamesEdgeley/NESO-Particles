@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['layer_5fcompressor_188',['layer_compressor',['../classNESO_1_1Particles_1_1ParticleGroup.html#a9de7e072d3a9a4c793c23e36dd8010fd',1,'NESO::Particles::ParticleGroup']]],
+  ['layercompressor_189',['LayerCompressor',['../classNESO_1_1Particles_1_1LayerCompressor.html#a2518889e6fdd75424e360912c6ba5c77',1,'NESO::Particles::LayerCompressor::LayerCompressor(const LayerCompressor &amp;st)=delete'],['../classNESO_1_1Particles_1_1LayerCompressor.html#af1ef4877add6b9153ddd922dbd93c9a2',1,'NESO::Particles::LayerCompressor::LayerCompressor(SYCLTargetSharedPtr sycl_target, const int ncell, std::map&lt; Sym&lt; REAL &gt;, ParticleDatSharedPtr&lt; REAL &gt;&gt; &amp;particle_dats_real, std::map&lt; Sym&lt; INT &gt;, ParticleDatSharedPtr&lt; INT &gt;&gt; &amp;particle_dats_int)'],['../classNESO_1_1Particles_1_1LayerCompressor.html',1,'NESO::Particles::LayerCompressor']]],
+  ['linear_5fto_5ftuple_5fcoarse_190',['linear_to_tuple_coarse',['../classNESO_1_1Particles_1_1MeshHierarchy.html#ad52c4af8b604c43b7a80a26703561050',1,'NESO::Particles::MeshHierarchy']]],
+  ['linear_5fto_5ftuple_5ffine_191',['linear_to_tuple_fine',['../classNESO_1_1Particles_1_1MeshHierarchy.html#a973f0cbd38a2b40e677936a5e79d65e9',1,'NESO::Particles::MeshHierarchy']]],
+  ['linear_5fto_5ftuple_5fglobal_192',['linear_to_tuple_global',['../classNESO_1_1Particles_1_1MeshHierarchy.html#a4252d5e33b5665a4bd1a92b00d45d2b7',1,'NESO::Particles::MeshHierarchy']]],
+  ['local_5fmapper_193',['local_mapper',['../classNESO_1_1Particles_1_1Domain.html#aab882997417a032c729e4768d1ce56d6',1,'NESO::Particles::Domain']]],
+  ['local_5fmapping_2ehpp_194',['local_mapping.hpp',['../local__mapping_8hpp.html',1,'']]],
+  ['local_5fmove_195',['local_move',['../classNESO_1_1Particles_1_1ParticleGroup.html#aa35f9ba01eff5b809c315e144e4bf19e',1,'NESO::Particles::ParticleGroup']]],
+  ['local_5fmove_2ehpp_196',['local_move.hpp',['../local__move_8hpp.html',1,'']]],
+  ['localdecompositionhmesh_197',['LocalDecompositionHMesh',['../classNESO_1_1Particles_1_1LocalDecompositionHMesh.html#a5f244334f8db75a2d3d05e91bb1d28ef',1,'NESO::Particles::LocalDecompositionHMesh::LocalDecompositionHMesh()'],['../classNESO_1_1Particles_1_1LocalDecompositionHMesh.html',1,'NESO::Particles::LocalDecompositionHMesh']]],
+  ['localmapper_198',['LocalMapper',['../classNESO_1_1Particles_1_1LocalMapper.html',1,'NESO::Particles']]],
+  ['localmappersharedptr_199',['LocalMapperSharedPtr',['../namespaceNESO_1_1Particles.html#a7556c18624e086cb8721c30ac70552a1',1,'NESO::Particles']]],
+  ['localmove_200',['LocalMove',['../classNESO_1_1Particles_1_1LocalMove.html#aa082fc92548a3649a8f759b21d83667b',1,'NESO::Particles::LocalMove::LocalMove(const LocalMove &amp;st)=delete'],['../classNESO_1_1Particles_1_1LocalMove.html#a57557ec213609115ed38c561342dbdfb',1,'NESO::Particles::LocalMove::LocalMove(SYCLTargetSharedPtr sycl_target, LayerCompressor &amp;layer_compressor, std::map&lt; Sym&lt; REAL &gt;, ParticleDatSharedPtr&lt; REAL &gt;&gt; &amp;particle_dats_real, std::map&lt; Sym&lt; INT &gt;, ParticleDatSharedPtr&lt; INT &gt;&gt; &amp;particle_dats_int, const int nranks=0, const int *ranks=nullptr)'],['../classNESO_1_1Particles_1_1LocalMove.html',1,'NESO::Particles::LocalMove']]]
+];

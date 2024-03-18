@@ -1,0 +1,107 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector}{}\doxysection{NESO\+::Particles\+::Particle\+Sub\+Group\+Implementation\+::Sub\+Group\+Selector Class Reference}
+\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector}\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+
+
+{\ttfamily \#include $<$particle\+\_\+sub\+\_\+group.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Particle\+Sub\+Group\+Implementation\+::Sub\+Group\+Selector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a4f99ceda468b5ce7e91ada92d6cf2a3d}{Sub\+Group\+Selector}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a36922f3691d365c84df0ccf64fc90ac9}{Particle\+Group\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a72e0f520fe13247cbe0c69afd023541a}{particle\+\_\+group}}, KERNEL kernel, ARGS... args)
+\item 
+std\+::tuple$<$ int, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ $>$, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $>$ $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a401671b3e8fa90c6af308350d510fc67}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a36922f3691d365c84df0ccf64fc90ac9}{Particle\+Group\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a72e0f520fe13247cbe0c69afd023541a}{particle\+\_\+group}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$ int $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_ac8f260eaa99f538504d3ed21e2676971}{index}}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$ \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a77247d601fc34ff3c46318b5815d99ca}{ptrs}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_adb62770883a0f2a6ac09c556a4357341}{Particle\+Loop\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a6df69cb292f4ca0b5bdc6840f7e0d114}{loop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to consume the lambda which selects which particles are to be in a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} and provide to the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}} a list of cells and layers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a4f99ceda468b5ce7e91ada92d6cf2a3d}\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a4f99ceda468b5ce7e91ada92d6cf2a3d}} 
+\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}!SubGroupSelector@{SubGroupSelector}}
+\index{SubGroupSelector@{SubGroupSelector}!NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+\doxysubsubsection{\texorpdfstring{SubGroupSelector()}{SubGroupSelector()}}
+{\footnotesize\ttfamily template$<$typename KERNEL , typename... ARGS$>$ \\
+NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::\+Sub\+Group\+Selector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a36922f3691d365c84df0ccf64fc90ac9}{Particle\+Group\+Shared\+Ptr}}}]{particle\+\_\+group,  }\item[{KERNEL}]{kernel,  }\item[{ARGS...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a selector based on a kernel and arguments. The selector kernel must be a lambda which returns true for particles which are in the sub group and false for particles which are not in the sub group. The arguments for the selector kernel must be read access Syms, i.\+e. \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_a5ac4ad4b7778690c9189204fbc612c14}{Access\+::read}}(\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+T$>$}}(\char`\"{}name\char`\"{})).
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & Parent \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} from which to form \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. \\
+\hline
+{\em kernel} & Lambda function (like a \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}} kernel) that returns true for the particles which should be in the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleSubGroup}{Particle\+Sub\+Group}}. \\
+\hline
+{\em args} & Arguments in the form of access descriptors wrapping objects to pass to the kernel. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a401671b3e8fa90c6af308350d510fc67}\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a401671b3e8fa90c6af308350d510fc67}} 
+\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}!get@{get}}
+\index{get@{get}!NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::tuple$<$int, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ $>$, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$>$ $>$ $>$ NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get two \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}} objects that hold the cells and layers of the particles which currently are selected by the selector kernel.
+
+\begin{DoxyReturn}{Returns}
+List of cells and layers of particles in the sub group. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_ac8f260eaa99f538504d3ed21e2676971}\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_ac8f260eaa99f538504d3ed21e2676971}} 
+\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}!index@{index}}
+\index{index@{index}!NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$int$>$ NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a6df69cb292f4ca0b5bdc6840f7e0d114}\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a6df69cb292f4ca0b5bdc6840f7e0d114}} 
+\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}!loop@{loop}}
+\index{loop@{loop}!NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+\doxysubsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_adb62770883a0f2a6ac09c556a4357341}{Particle\+Loop\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a72e0f520fe13247cbe0c69afd023541a}\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a72e0f520fe13247cbe0c69afd023541a}} 
+\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}!particle\_group@{particle\_group}}
+\index{particle\_group@{particle\_group}!NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+\doxysubsubsection{\texorpdfstring{particle\_group}{particle\_group}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a36922f3691d365c84df0ccf64fc90ac9}{Particle\+Group\+Shared\+Ptr}} NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::particle\+\_\+group}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a77247d601fc34ff3c46318b5815d99ca}\label{classNESO_1_1Particles_1_1ParticleSubGroupImplementation_1_1SubGroupSelector_a77247d601fc34ff3c46318b5815d99ca}} 
+\index{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}!ptrs@{ptrs}}
+\index{ptrs@{ptrs}!NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector@{NESO::Particles::ParticleSubGroupImplementation::SubGroupSelector}}
+\doxysubsubsection{\texorpdfstring{ptrs}{ptrs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalArray}{Local\+Array}}$<$\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$$>$ NESO\+::\+Particles\+::\+Particle\+Sub\+Group\+Implementation\+::\+Sub\+Group\+Selector\+::ptrs\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{particle__sub__group_8hpp}{particle\+\_\+sub\+\_\+group.\+hpp}}\end{DoxyCompactItemize}

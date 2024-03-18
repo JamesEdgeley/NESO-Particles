@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Access::SymVector::Read</compoundname>
+    <includes refid="sym__vector_8hpp" local="no">sym_vector.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a2582a6e188566bf67039e8f17de98f7d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::SymVector::Read&lt; T &gt;::cell</definition>
+        <argsstring></argsstring>
+        <name>cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="32" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a6b1e8d1e101d4f5c581f713137972633" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::Access::SymVector::Read&lt; T &gt;::layer</definition>
+        <argsstring></argsstring>
+        <name>layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="33" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a8938d3d5dcc265127d8ffeccaeb46260" prot="public" static="no" mutable="no">
+        <type>T *const  *const  **</type>
+        <definition>T* const* const** NESO::Particles::Access::SymVector::Read&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+<para>Pointer to underlying data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="35" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1aeb41bcd061e968f05c108b5b109b2943" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; NESO::Particles::Access::SymVector::Read&lt; T &gt;::at</definition>
+        <argsstring>(const int dat_index, const int cell, const int layer, const int component) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>const int</type>
+          <declname>dat_index</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="36" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a3f2dc42919234f12834bf86e3c7aee07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; NESO::Particles::Access::SymVector::Read&lt; T &gt;::at</definition>
+        <argsstring>(const int dat_index, const Access::LoopIndex::Read &amp;particle_index, const int component) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>const int</type>
+          <declname>dat_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structNESO_1_1Particles_1_1Access_1_1LoopIndex_1_1Read" kindref="compound">Access::LoopIndex::Read</ref> &amp;</type>
+          <declname>particle_index</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="40" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a18c83a96b3cc94b77588be772bcd5fa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const  &amp;</type>
+        <definition>T const&amp; NESO::Particles::Access::SymVector::Read&lt; T &gt;::at</definition>
+        <argsstring>(const int dat_index, const int component) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>const int</type>
+          <declname>dat_index</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="45" column="11" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Access:SymVector::Read&lt;T&gt; and Access:SymVector::Read&lt;T&gt; are the kernel argument types for accessing particle data in a kernel via a <ref refid="namespaceNESO_1_1Particles_1_1Access_1_1SymVector" kindref="compound">SymVector</ref>. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="31" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="31" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1aeb41bcd061e968f05c108b5b109b2943" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::SymVector::Read</scope><name>at</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a3f2dc42919234f12834bf86e3c7aee07" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::SymVector::Read</scope><name>at</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a18c83a96b3cc94b77588be772bcd5fa5" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::SymVector::Read</scope><name>at</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a2582a6e188566bf67039e8f17de98f7d" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::SymVector::Read</scope><name>cell</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a6b1e8d1e101d4f5c581f713137972633" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::SymVector::Read</scope><name>layer</name></member>
+      <member refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read_1a8938d3d5dcc265127d8ffeccaeb46260" prot="public" virt="non-virtual"><scope>NESO::Particles::Access::SymVector::Read</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

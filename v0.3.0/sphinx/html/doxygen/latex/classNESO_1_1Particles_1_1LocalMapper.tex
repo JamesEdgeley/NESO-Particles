@@ -1,0 +1,68 @@
+\hypertarget{classNESO_1_1Particles_1_1LocalMapper}{}\doxysection{NESO\+::Particles\+::Local\+Mapper Class Reference}
+\label{classNESO_1_1Particles_1_1LocalMapper}\index{NESO::Particles::LocalMapper@{NESO::Particles::LocalMapper}}
+
+
+{\ttfamily \#include $<$local\+\_\+mapping.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Local\+Mapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNESO_1_1Particles_1_1LocalMapper__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper_ab488f00e5073b75d73fc5642a2218bc1}{map}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&particle\+\_\+group, const int map\+\_\+cell=-\/1)=0
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper_ab3c7f02df9394e8ebbe9788b78fb5a75}{particle\+\_\+group\+\_\+callback}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&particle\+\_\+group)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class to map positions to owning MPI ranks based on local information, i.\+e. halo cells. Could also use or set the cell id. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMapper_ab488f00e5073b75d73fc5642a2218bc1}\label{classNESO_1_1Particles_1_1LocalMapper_ab488f00e5073b75d73fc5642a2218bc1}} 
+\index{NESO::Particles::LocalMapper@{NESO::Particles::LocalMapper}!map@{map}}
+\index{map@{map}!NESO::Particles::LocalMapper@{NESO::Particles::LocalMapper}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily virtual void NESO\+::\+Particles\+::\+Local\+Mapper\+::map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&}]{particle\+\_\+group,  }\item[{const int}]{map\+\_\+cell = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+This function maps particle positions to cells on the underlying mesh.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} containing particle positions. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1DummyLocalMapperT_ad3d451f43ee9433de7507253490dd85b}{NESO\+::\+Particles\+::\+Dummy\+Local\+MapperT}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_a143365c56d44cbfee917c7a9382922e5}{NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+MapperT}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1LocalMapper_ab3c7f02df9394e8ebbe9788b78fb5a75}\label{classNESO_1_1Particles_1_1LocalMapper_ab3c7f02df9394e8ebbe9788b78fb5a75}} 
+\index{NESO::Particles::LocalMapper@{NESO::Particles::LocalMapper}!particle\_group\_callback@{particle\_group\_callback}}
+\index{particle\_group\_callback@{particle\_group\_callback}!NESO::Particles::LocalMapper@{NESO::Particles::LocalMapper}}
+\doxysubsubsection{\texorpdfstring{particle\_group\_callback()}{particle\_group\_callback()}}
+{\footnotesize\ttfamily virtual void NESO\+::\+Particles\+::\+Local\+Mapper\+::particle\+\_\+group\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} \&}]{particle\+\_\+group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+Callback for \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} to execute for additional setup of the \mbox{\hyperlink{classNESO_1_1Particles_1_1LocalMapper}{Local\+Mapper}} that may involve the \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+\_\+group} & \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleGroup}{Particle\+Group}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1DummyLocalMapperT_a0c884e1e25abc776ec625df98f0913b2}{NESO\+::\+Particles\+::\+Dummy\+Local\+MapperT}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_ae56046ac8c8813edca42cf5410c12f77}{NESO\+::\+Particles\+::\+Cartesian\+HMesh\+Local\+MapperT}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/local\+\_\+mapping.\+hpp\end{DoxyCompactItemize}

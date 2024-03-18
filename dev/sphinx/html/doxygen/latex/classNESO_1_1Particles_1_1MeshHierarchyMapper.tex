@@ -1,0 +1,66 @@
+\hypertarget{classNESO_1_1Particles_1_1MeshHierarchyMapper}{}\doxysection{NESO\+::Particles\+::Mesh\+Hierarchy\+Mapper Class Reference}
+\label{classNESO_1_1Particles_1_1MeshHierarchyMapper}\index{NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}}
+
+
+{\ttfamily \#include $<$mesh\+\_\+hierarchy.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyMapper_a4412ce283cfc2ad114657573b4314559}{Mesh\+Hierarchy\+Mapper}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} sycl\+\_\+target, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$ mesh\+\_\+hierarchy)
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper}{Mesh\+Hierarchy\+Device\+Mapper}} \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyMapper_ac5946052cdfb1541da66f5c5300017f3}{get\+\_\+device\+\_\+mapper}} ()
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper}{Mesh\+Hierarchy\+Device\+Mapper}} \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchyMapper_a5b1877b0149eba73eaec55eab923ba4c}{get\+\_\+host\+\_\+mapper}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to provide methods to bin points into \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} cells and transform between representations of \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} indexing. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyMapper_a4412ce283cfc2ad114657573b4314559}\label{classNESO_1_1Particles_1_1MeshHierarchyMapper_a4412ce283cfc2ad114657573b4314559}} 
+\index{NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}!MeshHierarchyMapper@{MeshHierarchyMapper}}
+\index{MeshHierarchyMapper@{MeshHierarchyMapper}!NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}}
+\doxysubsubsection{\texorpdfstring{MeshHierarchyMapper()}{MeshHierarchyMapper()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Mapper\+::\+Mesh\+Hierarchy\+Mapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} $>$}]{mesh\+\_\+hierarchy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create new instance of helper mapper class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sycl\+\_\+target} & The compute device to provide device copyable mapper structs for. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mesh\+\_\+hierarchy} & The \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} for which to create a mapper class for. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyMapper_ac5946052cdfb1541da66f5c5300017f3}\label{classNESO_1_1Particles_1_1MeshHierarchyMapper_ac5946052cdfb1541da66f5c5300017f3}} 
+\index{NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}!get\_device\_mapper@{get\_device\_mapper}}
+\index{get\_device\_mapper@{get\_device\_mapper}!NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}}
+\doxysubsubsection{\texorpdfstring{get\_device\_mapper()}{get\_device\_mapper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper}{Mesh\+Hierarchy\+Device\+Mapper}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Mapper\+::get\+\_\+device\+\_\+mapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a device copyable struct with device callable methods for interfacing with a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}}.
+
+\begin{DoxyReturn}{Returns}
+New mapper struct. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1MeshHierarchyMapper_a5b1877b0149eba73eaec55eab923ba4c}\label{classNESO_1_1Particles_1_1MeshHierarchyMapper_a5b1877b0149eba73eaec55eab923ba4c}} 
+\index{NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}!get\_host\_mapper@{get\_host\_mapper}}
+\index{get\_host\_mapper@{get\_host\_mapper}!NESO::Particles::MeshHierarchyMapper@{NESO::Particles::MeshHierarchyMapper}}
+\doxysubsubsection{\texorpdfstring{get\_host\_mapper()}{get\_host\_mapper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper}{Mesh\+Hierarchy\+Device\+Mapper}} NESO\+::\+Particles\+::\+Mesh\+Hierarchy\+Mapper\+::get\+\_\+host\+\_\+mapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a host struct with methods to interface with a \mbox{\hyperlink{classNESO_1_1Particles_1_1MeshHierarchy}{Mesh\+Hierarchy}} instance.
+
+\begin{DoxyReturn}{Returns}
+New mapper struct. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{mesh__hierarchy_8hpp}{mesh\+\_\+hierarchy.\+hpp}}\end{DoxyCompactItemize}

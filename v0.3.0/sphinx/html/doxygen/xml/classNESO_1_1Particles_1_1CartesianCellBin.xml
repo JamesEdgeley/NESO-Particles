@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1CartesianCellBin" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::CartesianCellBin</compoundname>
+    <includes refid="cell__binning_8hpp" local="no">cell_binning.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1ada86f4f53ebfb7e92c862cbc2e4d674f" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::CartesianCellBin::d_cell_counts</definition>
+        <argsstring></argsstring>
+        <name>d_cell_counts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="21" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1a4718ddbf559a955d8d6c6bf85b9a31a4" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::CartesianCellBin::d_cell_starts</definition>
+        <argsstring></argsstring>
+        <name>d_cell_starts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="22" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1a10e31c56ecab8e677beeb8f4f755a425" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::CartesianCellBin::d_cell_ends</definition>
+        <argsstring></argsstring>
+        <name>d_cell_ends</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="23" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1a163af2821afc91c6a455d2e4af00f921" prot="private" static="no" mutable="no">
+        <type>SYCLTargetSharedPtr</type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::CartesianCellBin::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="25" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1a1d4f5c611feb8f5783921ae2ad84a23c" prot="private" static="no" mutable="no">
+        <type>CartesianHMeshSharedPtr</type>
+        <definition>CartesianHMeshSharedPtr NESO::Particles::CartesianCellBin::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="26" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1adec0783deb96223ca8b9e109f0d9035c" prot="private" static="no" mutable="no">
+        <type>ParticleDatSharedPtr&lt; REAL &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;REAL&gt; NESO::Particles::CartesianCellBin::position_dat</definition>
+        <argsstring></argsstring>
+        <name>position_dat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="27" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianCellBin_1a86d568db61f2abd2c608a444295c2f0d" prot="private" static="no" mutable="no">
+        <type>ParticleDatSharedPtr&lt; INT &gt;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt; NESO::Particles::CartesianCellBin::cell_id_dat</definition>
+        <argsstring></argsstring>
+        <name>cell_id_dat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="28" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianCellBin_1abc0a91d8f7890476e3b2a87d28e045c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianCellBin::CartesianCellBin</definition>
+        <argsstring>(const CartesianCellBin &amp;st)=delete</argsstring>
+        <name>CartesianCellBin</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1CartesianCellBin" kindref="compound">CartesianCellBin</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianCellBin_1aee6ee98d1b1b5bb46ab32b091f6001fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1CartesianCellBin" kindref="compound">CartesianCellBin</ref> &amp;</type>
+        <definition>CartesianCellBin&amp; NESO::Particles::CartesianCellBin::operator=</definition>
+        <argsstring>(CartesianCellBin const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1CartesianCellBin" kindref="compound">CartesianCellBin</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="34" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianCellBin_1a4fe4f801922511eb2f25c53cfeed76db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianCellBin::~CartesianCellBin</definition>
+        <argsstring>()</argsstring>
+        <name>~CartesianCellBin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="36" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianCellBin_1a2ebc33daf3d256242a9bb3d3695625e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianCellBin::CartesianCellBin</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, CartesianHMeshSharedPtr mesh, ParticleDatSharedPtr&lt; REAL &gt; position_dat, ParticleDatSharedPtr&lt; INT &gt; cell_id_dat)</argsstring>
+        <name>CartesianCellBin</name>
+        <param>
+          <type>SYCLTargetSharedPtr</type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>CartesianHMeshSharedPtr</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>ParticleDatSharedPtr&lt; REAL &gt;</type>
+          <declname>position_dat</declname>
+        </param>
+        <param>
+          <type>ParticleDatSharedPtr&lt; INT &gt;</type>
+          <declname>cell_id_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create instance to bin particles into cells of a <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CartesianHMeshSharedPtr to containing the particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat with components equal to the mesh dimension containing particle positions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cell_id_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat to write particle cell ids to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="47" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="47" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianCellBin_1ae9032cac83c6ce6e332dd4492ed06949" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::CartesianCellBin::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply the cell binning kernel to each particle stored on this MPI rank. Particles must be within the domain region owned by this MPI rank. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="78" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="78" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Bin particle positions into the cells of a <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref>. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" line="19" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cell_binning.hpp" bodystart="19" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1abc0a91d8f7890476e3b2a87d28e045c2" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>CartesianCellBin</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a2ebc33daf3d256242a9bb3d3695625e4" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>CartesianCellBin</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a86d568db61f2abd2c608a444295c2f0d" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>cell_id_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1ada86f4f53ebfb7e92c862cbc2e4d674f" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>d_cell_counts</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a10e31c56ecab8e677beeb8f4f755a425" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>d_cell_ends</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a4718ddbf559a955d8d6c6bf85b9a31a4" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>d_cell_starts</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1ae9032cac83c6ce6e332dd4492ed06949" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>execute</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a1d4f5c611feb8f5783921ae2ad84a23c" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>mesh</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1aee6ee98d1b1b5bb46ab32b091f6001fa" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1adec0783deb96223ca8b9e109f0d9035c" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>position_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a163af2821afc91c6a455d2e4af00f921" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianCellBin_1a4fe4f801922511eb2f25c53cfeed76db" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianCellBin</scope><name>~CartesianCellBin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

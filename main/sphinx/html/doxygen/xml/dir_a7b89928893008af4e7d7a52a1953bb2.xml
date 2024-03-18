@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a7b89928893008af4e7d7a52a1953bb2" kind="dir">
+    <compoundname>/tmp/repo-checkout/NESO-Particles/include/loop</compoundname>
+    <innerfile refid="particle__loop_8hpp">particle_loop.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/"/>
+  </compounddef>
+</doxygen>

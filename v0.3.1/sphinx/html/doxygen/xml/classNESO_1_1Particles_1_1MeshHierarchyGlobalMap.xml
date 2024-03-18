@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::MeshHierarchyGlobalMap</compoundname>
+    <includes refid="global__mapping_8hpp" local="no">global_mapping.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a3245631d36ca5960c24d4eff84bfce0c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::MeshHierarchyGlobalMap::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>Compute device used by the instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="22" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a4f7eacf7f16b14573ea08545de558ec2" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1af1414ddefa54150d126f00f41e5b747d" kindref="member">HMeshSharedPtr</ref></type>
+        <definition>HMeshSharedPtr NESO::Particles::MeshHierarchyGlobalMap::h_mesh</definition>
+        <argsstring></argsstring>
+        <name>h_mesh</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref> instance on which particles live. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="24" column="18" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ae42c7ed7bc7fbe3f88c297e0f8e083ad" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &amp;</type>
+        <definition>ParticleDatSharedPtr&lt;REAL&gt;&amp; NESO::Particles::MeshHierarchyGlobalMap::position_dat</definition>
+        <argsstring></argsstring>
+        <name>position_dat</name>
+        <briefdescription>
+<para>ParticleDat storing Positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="26" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ad1089b3eaca4d770747f8b66d78e6bdc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt;&amp; NESO::Particles::MeshHierarchyGlobalMap::cell_id_dat</definition>
+        <argsstring></argsstring>
+        <name>cell_id_dat</name>
+        <briefdescription>
+<para>ParticleDat storing cell ids. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="28" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a0136b5c0847f1412db090a7fe2d0c708" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+        <definition>ParticleDatSharedPtr&lt;INT&gt;&amp; NESO::Particles::MeshHierarchyGlobalMap::mpi_rank_dat</definition>
+        <argsstring></argsstring>
+        <name>mpi_rank_dat</name>
+        <briefdescription>
+<para>ParticleDat storing MPI rank. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="30" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ae241651ce4fbad77bc43c56a97d7ace9" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; int &gt;</type>
+        <definition>BufferHost&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::h_lookup_count</definition>
+        <argsstring></argsstring>
+        <name>h_lookup_count</name>
+        <briefdescription>
+<para>Host buffer containing the number of particles to query owning MPI rank. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="33" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a2ef145e715b9826acd8a79d2f057ef40" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::d_lookup_count</definition>
+        <argsstring></argsstring>
+        <name>d_lookup_count</name>
+        <briefdescription>
+<para>Device buffer containing the number of particles to query owning MPI rank. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="35" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a8f9bec8e95e6c40ee66d28fb375d3bc1" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferHost&lt;INT&gt; NESO::Particles::MeshHierarchyGlobalMap::h_lookup_global_cells</definition>
+        <argsstring></argsstring>
+        <name>h_lookup_global_cells</name>
+        <briefdescription>
+<para>Host buffer of global cells on <ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref> to query owner of. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="38" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ae0fa58400b7ee097c9e3bca490c27682" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+        <definition>BufferDevice&lt;INT&gt; NESO::Particles::MeshHierarchyGlobalMap::d_lookup_global_cells</definition>
+        <argsstring></argsstring>
+        <name>d_lookup_global_cells</name>
+        <briefdescription>
+<para>Device buffer of global cells on <ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref> to query owner of. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="40" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a81b172b5c69b9ba5abc02ce16a5bd2f0" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; int &gt;</type>
+        <definition>BufferHost&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::h_lookup_ranks</definition>
+        <argsstring></argsstring>
+        <name>h_lookup_ranks</name>
+        <briefdescription>
+<para>Space to store the ranks owning the lookup cells on the host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="42" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a564c424846e9ae482a4dbaf07b269b46" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::d_lookup_ranks</definition>
+        <argsstring></argsstring>
+        <name>d_lookup_ranks</name>
+        <briefdescription>
+<para>Space to store the ranks owning the lookup cells on the Device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="44" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ac56a8653c1c501bf95e6387dece2cb53" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::d_lookup_local_cells</definition>
+        <argsstring></argsstring>
+        <name>d_lookup_local_cells</name>
+        <briefdescription>
+<para>Cells of the particles for which the lookup is being performed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="47" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a3970be98eb704fdd775cda5ed0d96e04" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::d_lookup_local_layers</definition>
+        <argsstring></argsstring>
+        <name>d_lookup_local_layers</name>
+        <briefdescription>
+<para>Layers of the particles for which the lookup is being performed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="49" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ad1888ae33a8d6becb9919423d5d7d86b" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>BufferHost&lt;REAL&gt; NESO::Particles::MeshHierarchyGlobalMap::h_origin</definition>
+        <argsstring></argsstring>
+        <name>h_origin</name>
+        <briefdescription>
+<para>Host buffer holding the origin of <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="52" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a96eb333b1898ab13d47e2e8cd89662c2" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+        <definition>BufferDevice&lt;REAL&gt; NESO::Particles::MeshHierarchyGlobalMap::d_origin</definition>
+        <argsstring></argsstring>
+        <name>d_origin</name>
+        <briefdescription>
+<para>Device buffer holding the origin of <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="54" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a01bfdea67138f5887ef79a5af08fc5c0" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; int &gt;</type>
+        <definition>BufferHost&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::h_dims</definition>
+        <argsstring></argsstring>
+        <name>h_dims</name>
+        <briefdescription>
+<para>Host buffer containing the dims of <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="56" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a80a98132e1c225f829b00c8f580d0918" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; int &gt;</type>
+        <definition>BufferDevice&lt;int&gt; NESO::Particles::MeshHierarchyGlobalMap::d_dims</definition>
+        <argsstring></argsstring>
+        <name>d_dims</name>
+        <briefdescription>
+<para>Device buffer containing the dims of <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="58" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1affafd850d923a26743961faeebef37ba" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1ErrorPropagate" kindref="compound">ErrorPropagate</ref></type>
+        <definition>ErrorPropagate NESO::Particles::MeshHierarchyGlobalMap::error_propagate</definition>
+        <argsstring></argsstring>
+        <name>error_propagate</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ErrorPropagate" kindref="compound">ErrorPropagate</ref> for detecting errors in kernels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="61" column="18" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ad4f71c2dffddf1e2fb088d9304ec693d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::MeshHierarchyGlobalMap::MeshHierarchyGlobalMap</definition>
+        <argsstring>(const MeshHierarchyGlobalMap &amp;st)=delete</argsstring>
+        <name>MeshHierarchyGlobalMap</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap" kindref="compound">MeshHierarchyGlobalMap</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="65" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ab309b2baaa19b7824e68bcf7da44766a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap" kindref="compound">MeshHierarchyGlobalMap</ref> &amp;</type>
+        <definition>MeshHierarchyGlobalMap&amp; NESO::Particles::MeshHierarchyGlobalMap::operator=</definition>
+        <argsstring>(MeshHierarchyGlobalMap const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap" kindref="compound">MeshHierarchyGlobalMap</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="67" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a2dcaf256ef55c3cb8cd3a90b78e946db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::MeshHierarchyGlobalMap::~MeshHierarchyGlobalMap</definition>
+        <argsstring>()</argsstring>
+        <name>~MeshHierarchyGlobalMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="69" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ab8b95a00017350e88764d9d3d4f32779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::MeshHierarchyGlobalMap::MeshHierarchyGlobalMap</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, HMeshSharedPtr h_mesh, ParticleDatSharedPtr&lt; REAL &gt; &amp;position_dat, ParticleDatSharedPtr&lt; INT &gt; &amp;cell_id_dat, ParticleDatSharedPtr&lt; INT &gt; &amp;mpi_rank_dat)</argsstring>
+        <name>MeshHierarchyGlobalMap</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1af1414ddefa54150d126f00f41e5b747d" kindref="member">HMeshSharedPtr</ref></type>
+          <declname>h_mesh</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &amp;</type>
+          <declname>position_dat</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+          <declname>cell_id_dat</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1ac4ef9b71589140a5226f7c1e966c20bb" kindref="member">ParticleDatSharedPtr</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &amp;</type>
+          <declname>mpi_rank_dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new global mapping instance for <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref> derived mesh to use for mapping. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat containing particle positions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cell_id_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat containg particle cell ids. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mpi_rank_dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleDat containing the owning rank of particles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="80" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="80" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a50e48a4725df3f6f1623e305ff4024b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::MeshHierarchyGlobalMap::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For each particle that does not have a non-negative MPI rank determined as a local owner obtain the MPI rank that owns the global cell which contains the particle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="99" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="99" bodyend="297"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class maps global positions into the cells of a <ref refid="classNESO_1_1Particles_1_1HMesh" kindref="compound">HMesh</ref> and determines which MPI rank owns that cell. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" line="19" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/global_mapping.hpp" bodystart="19" bodyend="298"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ad1089b3eaca4d770747f8b66d78e6bdc" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>cell_id_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a80a98132e1c225f829b00c8f580d0918" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_dims</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a2ef145e715b9826acd8a79d2f057ef40" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_lookup_count</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ae0fa58400b7ee097c9e3bca490c27682" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_lookup_global_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ac56a8653c1c501bf95e6387dece2cb53" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_lookup_local_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a3970be98eb704fdd775cda5ed0d96e04" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_lookup_local_layers</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a564c424846e9ae482a4dbaf07b269b46" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_lookup_ranks</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a96eb333b1898ab13d47e2e8cd89662c2" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>d_origin</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1affafd850d923a26743961faeebef37ba" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>error_propagate</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a50e48a4725df3f6f1623e305ff4024b3" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>execute</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a01bfdea67138f5887ef79a5af08fc5c0" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>h_dims</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ae241651ce4fbad77bc43c56a97d7ace9" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>h_lookup_count</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a8f9bec8e95e6c40ee66d28fb375d3bc1" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>h_lookup_global_cells</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a81b172b5c69b9ba5abc02ce16a5bd2f0" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>h_lookup_ranks</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a4f7eacf7f16b14573ea08545de558ec2" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>h_mesh</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ad1888ae33a8d6becb9919423d5d7d86b" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>h_origin</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ad4f71c2dffddf1e2fb088d9304ec693d" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>MeshHierarchyGlobalMap</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ab8b95a00017350e88764d9d3d4f32779" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>MeshHierarchyGlobalMap</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a0136b5c0847f1412db090a7fe2d0c708" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>mpi_rank_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ab309b2baaa19b7824e68bcf7da44766a" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1ae42c7ed7bc7fbe3f88c297e0f8e083ad" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>position_dat</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a3245631d36ca5960c24d4eff84bfce0c" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyGlobalMap_1a2dcaf256ef55c3cb8cd3a90b78e946db" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyGlobalMap</scope><name>~MeshHierarchyGlobalMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

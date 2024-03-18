@@ -1,0 +1,259 @@
+\hypertarget{classNESO_1_1Particles_1_1GlobalArray}{}\doxysection{NESO\+::Particles\+::Global\+Array$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1GlobalArray}\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+
+
+{\ttfamily \#include $<$global\+\_\+array.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a6ef98a8908c8a2ef04c9b4d37dd84678}{Global\+Array}} ()=default
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ \& \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_aa3b107b0636ae8b60cb92c75ef5392c2}{operator=}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ \&)=default
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_ad16425240751e9aad892dd44248e13f7}{Global\+Array}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a5f2abb61148f954db487139de0a1bee9}{sycl\+\_\+target}}, const std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a28dd1232d8d752d594f536b0518f49b4}{size}}, const std\+::optional$<$ T $>$ init\+\_\+value=std\+::nullopt)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a3366dfa06ef571ed849ca99bd2389a81}{fill}} (const T value)
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_aa9523437fb44f417dc9d0450af837dd3}{get\+\_\+async}} (std\+::vector$<$ T $>$ \&data)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_ae6be8c667cd232c28d1734ef4258562f}{get}} (std\+::vector$<$ T $>$ \&data)
+\item 
+std\+::vector$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_ac2cd0f907b28104bc7a3ba9d1df4a2b1}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a5f2abb61148f954db487139de0a1bee9}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} the \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} is created on. \end{DoxyCompactList}\item 
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a76607b1f2eb52e9be3867f5a64b327f4}{comm}}
+\begin{DoxyCompactList}\small\item\em The MPI communicator reductions are made over. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a28dd1232d8d752d594f536b0518f49b4}{size}} = \{0\}
+\begin{DoxyCompactList}\small\item\em The number of elements in the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a35560e9559a0a254e218ba54c08c3204}{Global\+Array\+Impl\+GetT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_abd76cb0b86106decf33cea06b9194787}{impl\+\_\+get}} ()
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a9f23675b1b14a8be48d5b433693195ed}{Global\+Array\+Impl\+Get\+ConstT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_af7f1e82f3e466992df4c738e7ff0d49e}{impl\+\_\+get\+\_\+const}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a03a9002893c67906683ba8a633cabc9e}{impl\+\_\+post\+\_\+loop\+\_\+add}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$ T $>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a942dbfb46048dfd59dfc703381480bb5}{buffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename KERNEL , typename... ARGS$>$ }\\class \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a5781ba095359438118ce96e2e0eb4a8d}{Particle\+Loop}}
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a982598d16b43b8e6bf8338c836df8036}{Particle\+Loop\+Implementation\+::post\+\_\+loop}} (\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$global\+\_\+info, \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Access\+::\+Add}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ $\ast$ $>$ \&arg)
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a9f23675b1b14a8be48d5b433693195ed}{Global\+Array\+Impl\+Get\+ConstT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a72537398d6a5a2426495226f3a469af1}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$global\+\_\+info, sycl\+::handler \&cgh, \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Access\+::\+Read}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ $\ast$ $>$ \&a)
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a35560e9559a0a254e218ba54c08c3204}{Global\+Array\+Impl\+GetT}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray_a2efc2178ee99f37cc56ae4bed4e3c589}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$global\+\_\+info, sycl\+::handler \&cgh, \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Access\+::\+Add}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ $\ast$ $>$ \&a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Global\+Array$<$ T $>$}
+
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} is an array type which can be accessed from kernels in read or atomic add mode. Post loop execution, with add access mode, the global array values are automatically reduced across the MPI communicator. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a6ef98a8908c8a2ef04c9b4d37dd84678}\label{classNESO_1_1Particles_1_1GlobalArray_a6ef98a8908c8a2ef04c9b4d37dd84678}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!GlobalArray@{GlobalArray}}
+\index{GlobalArray@{GlobalArray}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GlobalArray()}{GlobalArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_ad16425240751e9aad892dd44248e13f7}\label{classNESO_1_1Particles_1_1GlobalArray_ad16425240751e9aad892dd44248e13f7}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!GlobalArray@{GlobalArray}}
+\index{GlobalArray@{GlobalArray}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GlobalArray()}{GlobalArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{const std\+::size\+\_\+t}]{size,  }\item[{const std\+::optional$<$ T $>$}]{init\+\_\+value = {\ttfamily std\+:\+:nullopt} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} on a compute target and given size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sycl\+\_\+target} & Device to create \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} on. \\
+\hline
+{\em size} & Number of elements in array. \\
+\hline
+{\em Default} & value to initialise values to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a3366dfa06ef571ed849ca99bd2389a81}\label{classNESO_1_1Particles_1_1GlobalArray_a3366dfa06ef571ed849ca99bd2389a81}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!fill@{fill}}
+\index{fill@{fill}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::fill (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill the array with a value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to fill the array with -\/ not reduced across MPI ranks. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_ac2cd0f907b28104bc7a3ba9d1df4a2b1}\label{classNESO_1_1Particles_1_1GlobalArray_ac2cd0f907b28104bc7a3ba9d1df4a2b1}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!get@{get}}
+\index{get@{get}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the values in the local array into a std\+::vector.
+
+\begin{DoxyReturn}{Returns}
+std\+::vector of values in the \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_ae6be8c667cd232c28d1734ef4258562f}\label{classNESO_1_1Particles_1_1GlobalArray_ae6be8c667cd232c28d1734ef4258562f}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!get@{get}}
+\index{get@{get}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the values in the local array into a std\+::vector. Blocks until copy is complete.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em data} & Input vector to copy values from \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} into. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_aa9523437fb44f417dc9d0450af837dd3}\label{classNESO_1_1Particles_1_1GlobalArray_aa9523437fb44f417dc9d0450af837dd3}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!get\_async@{get\_async}}
+\index{get\_async@{get\_async}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_async()}{get\_async()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::get\+\_\+async (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Asynchronously get the values in the local array into a std\+::vector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em data} & Input vector to copy values from \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Event to wait on before using new values in the std\+::vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_abd76cb0b86106decf33cea06b9194787}\label{classNESO_1_1Particles_1_1GlobalArray_abd76cb0b86106decf33cea06b9194787}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!impl\_get@{impl\_get}}
+\index{impl\_get@{impl\_get}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get()}{impl\_get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a35560e9559a0a254e218ba54c08c3204}{Global\+Array\+Impl\+GetT}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::impl\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Non-\/const pointer to underlying device data. Intended for friend access from \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_af7f1e82f3e466992df4c738e7ff0d49e}\label{classNESO_1_1Particles_1_1GlobalArray_af7f1e82f3e466992df4c738e7ff0d49e}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!impl\_get\_const@{impl\_get\_const}}
+\index{impl\_get\_const@{impl\_get\_const}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_get\_const()}{impl\_get\_const()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a9f23675b1b14a8be48d5b433693195ed}{Global\+Array\+Impl\+Get\+ConstT}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::impl\+\_\+get\+\_\+const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Const pointer to underlying device data. Intended for friend access from \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}. \mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a03a9002893c67906683ba8a633cabc9e}\label{classNESO_1_1Particles_1_1GlobalArray_a03a9002893c67906683ba8a633cabc9e}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!impl\_post\_loop\_add@{impl\_post\_loop\_add}}
+\index{impl\_post\_loop\_add@{impl\_post\_loop\_add}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{impl\_post\_loop\_add()}{impl\_post\_loop\_add()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::impl\+\_\+post\+\_\+loop\+\_\+add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Post kernel execution reduction. \mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_aa3b107b0636ae8b60cb92c75ef5392c2}\label{classNESO_1_1Particles_1_1GlobalArray_aa3b107b0636ae8b60cb92c75ef5392c2}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$T$>$\& \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Note that the copy operator creates shallow copies of the array. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a5781ba095359438118ce96e2e0eb4a8d}\label{classNESO_1_1Particles_1_1GlobalArray_a5781ba095359438118ce96e2e0eb4a8d}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!ParticleLoop@{ParticleLoop}}
+\index{ParticleLoop@{ParticleLoop}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoop}{ParticleLoop}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename KERNEL , typename... ARGS$>$ \\
+friend class \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a2efc2178ee99f37cc56ae4bed4e3c589}\label{classNESO_1_1Particles_1_1GlobalArray_a2efc2178ee99f37cc56ae4bed4e3c589}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}}
+\index{ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopImplementation::create\_loop\_arg}{ParticleLoopImplementation::create\_loop\_arg}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a35560e9559a0a254e218ba54c08c3204}{Global\+Array\+Impl\+GetT}}$<$T$>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_acc145e1ca44fcfde703b028c42a14b83}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$}]{global\+\_\+info,  }\item[{sycl\+::handler \&}]{cgh,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Access\+::\+Add}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ $\ast$ $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a72537398d6a5a2426495226f3a469af1}\label{classNESO_1_1Particles_1_1GlobalArray_a72537398d6a5a2426495226f3a469af1}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}}
+\index{ParticleLoopImplementation::create\_loop\_arg@{ParticleLoopImplementation::create\_loop\_arg}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopImplementation::create\_loop\_arg}{ParticleLoopImplementation::create\_loop\_arg}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a9f23675b1b14a8be48d5b433693195ed}{Global\+Array\+Impl\+Get\+ConstT}}$<$T$>$ \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_acc145e1ca44fcfde703b028c42a14b83}{Particle\+Loop\+Implementation\+::create\+\_\+loop\+\_\+arg}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$}]{global\+\_\+info,  }\item[{sycl\+::handler \&}]{cgh,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Read}{Access\+::\+Read}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ $\ast$ $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a982598d16b43b8e6bf8338c836df8036}\label{classNESO_1_1Particles_1_1GlobalArray_a982598d16b43b8e6bf8338c836df8036}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!ParticleLoopImplementation::post\_loop@{ParticleLoopImplementation::post\_loop}}
+\index{ParticleLoopImplementation::post\_loop@{ParticleLoopImplementation::post\_loop}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleLoopImplementation::post\_loop}{ParticleLoopImplementation::post\_loop}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_ad6384ea6e06770c4a4ae7ddd64c12ba9}{Particle\+Loop\+Implementation\+::post\+\_\+loop}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo}{Particle\+Loop\+Implementation\+::\+Particle\+Loop\+Global\+Info}} $\ast$}]{global\+\_\+info,  }\item[{\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1Add}{Access\+::\+Add}}$<$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}}$<$ T $>$ $\ast$ $>$ \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a942dbfb46048dfd59dfc703381480bb5}\label{classNESO_1_1Particles_1_1GlobalArray_a942dbfb46048dfd59dfc703381480bb5}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!buffer@{buffer}}
+\index{buffer@{buffer}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDeviceHost}{Buffer\+Device\+Host}}$<$T$>$ $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a76607b1f2eb52e9be3867f5a64b327f4}\label{classNESO_1_1Particles_1_1GlobalArray_a76607b1f2eb52e9be3867f5a64b327f4}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!comm@{comm}}
+\index{comm@{comm}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{comm}{comm}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+MPI\+\_\+\+Comm \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::comm}
+
+
+
+The MPI communicator reductions are made over. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a28dd1232d8d752d594f536b0518f49b4}\label{classNESO_1_1Particles_1_1GlobalArray_a28dd1232d8d752d594f536b0518f49b4}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!size@{size}}
+\index{size@{size}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::size = \{0\}}
+
+
+
+The number of elements in the array. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1GlobalArray_a5f2abb61148f954db487139de0a1bee9}\label{classNESO_1_1Particles_1_1GlobalArray_a5f2abb61148f954db487139de0a1bee9}} 
+\index{NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::GlobalArray$<$ T $>$@{NESO::Particles::GlobalArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{NESO\+::\+Particles\+::\+Global\+Array}}$<$ T $>$\+::sycl\+\_\+target}
+
+
+
+The \mbox{\hyperlink{classNESO_1_1Particles_1_1SYCLTarget}{SYCLTarget}} the \mbox{\hyperlink{classNESO_1_1Particles_1_1GlobalArray}{Global\+Array}} is created on. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/\mbox{\hyperlink{global__array_8hpp}{global\+\_\+array.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ProductMatrixGetConst" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ProductMatrixGetConst</compoundname>
+    <includes refid="product__matrix_8hpp" local="no">product_matrix.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a6b7948ee6a0f420eb2064e207e0bf7c6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> const  *</type>
+        <definition>REAL const* NESO::Particles::ProductMatrixGetConst::ptr_real</definition>
+        <argsstring></argsstring>
+        <name>ptr_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="27" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a3d0ef94213054ab1ff3b247d15401a9a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> const  *</type>
+        <definition>INT const* NESO::Particles::ProductMatrixGetConst::ptr_int</definition>
+        <argsstring></argsstring>
+        <name>ptr_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="28" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGetConst_1acdf3a3c4288178483f219b558350d87d" prot="public" static="no" mutable="no">
+        <type>int const  *</type>
+        <definition>int const* NESO::Particles::ProductMatrixGetConst::offsets_real</definition>
+        <argsstring></argsstring>
+        <name>offsets_real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="29" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a7746eaa22c0e658a819ef028fcd36d25" prot="public" static="no" mutable="no">
+        <type>int const  *</type>
+        <definition>int const* NESO::Particles::ProductMatrixGetConst::offsets_int</definition>
+        <argsstring></argsstring>
+        <name>offsets_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="30" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a19384039656e013c133882369a7903eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ProductMatrixGetConst::num_products</definition>
+        <argsstring></argsstring>
+        <name>num_products</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="31" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="26" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="26" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a19384039656e013c133882369a7903eb" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGetConst</scope><name>num_products</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a7746eaa22c0e658a819ef028fcd36d25" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGetConst</scope><name>offsets_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1acdf3a3c4288178483f219b558350d87d" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGetConst</scope><name>offsets_real</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a3d0ef94213054ab1ff3b247d15401a9a" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGetConst</scope><name>ptr_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ProductMatrixGetConst_1a6b7948ee6a0f420eb2064e207e0bf7c6" prot="public" virt="non-virtual"><scope>NESO::Particles::ProductMatrixGetConst</scope><name>ptr_real</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

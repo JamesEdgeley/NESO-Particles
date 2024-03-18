@@ -1,0 +1,254 @@
+\hypertarget{classNESO_1_1Particles_1_1BufferBase}{}\doxysection{NESO\+::Particles\+::Buffer\+Base$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1BufferBase}\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+
+
+{\ttfamily \#include $<$compute\+\_\+target.\+hpp$>$}
+
+
+
+Inheritance diagram for NESO\+::Particles\+::Buffer\+Base$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classNESO_1_1Particles_1_1BufferBase__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_ababd32d56ecd6ff5928b5871273f2857}{size\+\_\+bytes}} ()
+\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_abc60eb9a9d24f1f1113a1b0f9bfe5247}{realloc\+\_\+no\+\_\+copy}} (const std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a3524b68561d41cef6d751619ec350302}{size}})
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a169e070870fe8f13b1f2d659b2cb78b0}{set\+\_\+async}} (const std\+::vector$<$ T $>$ \&data)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_ae989a4598f4df4e39bf70e6d3e6c8f33}{set}} (const std\+::vector$<$ T $>$ \&data)
+\item 
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_ae77b2e1f9d942deb752bc0497be5d84e}{get\+\_\+async}} (std\+::vector$<$ T $>$ \&data)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a7574fdbba3df6fd9d47eeeb616efcc08}{get}} (std\+::vector$<$ T $>$ \&data)
+\item 
+std\+::vector$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_ae56bd99f1ca953323d3e9450dd4a15ff}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_aa4087d350a7b29359e57c29c0fbf03e1}{sycl\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em Compute device used by the instance. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a4fa4e9e6d9ee4062b32ad8423ac2d5c6}{ptr}}
+\begin{DoxyCompactList}\small\item\em SYCL USM pointer to data. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a3524b68561d41cef6d751619ec350302}{size}}
+\begin{DoxyCompactList}\small\item\em Number of elements allocated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual T $\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_af7d84ef8e5d2df1cb9809627662db794}{malloc\+\_\+wrapper}} (const std\+::size\+\_\+t num\+\_\+bytes)=0
+\item 
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a08f1396df310f41a669ba2958fb3ce9f}{free\+\_\+wrapper}} (T $\ast$\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a4fa4e9e6d9ee4062b32ad8423ac2d5c6}{ptr}})=0
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_ae7117c28e09351b63bf666eded1583ca}{generic\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_aff8a6488dfe7c319b1d3b6cf00e432a5}{generic\+\_\+free}} ()
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a4c88a1e8642563dbe58b26f035d42010}{Buffer\+Base}} (\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_aa4087d350a7b29359e57c29c0fbf03e1}{sycl\+\_\+target}}, std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a3524b68561d41cef6d751619ec350302}{size}})
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase_a9afa08d6887c98eac5ecd6b1122f2bac}{assert\+\_\+allocated}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a4c88a1e8642563dbe58b26f035d42010}\label{classNESO_1_1Particles_1_1BufferBase_a4c88a1e8642563dbe58b26f035d42010}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!BufferBase@{BufferBase}}
+\index{BufferBase@{BufferBase}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferBase()}{BufferBase()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{Buffer\+Base}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}}}]{sycl\+\_\+target,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a9afa08d6887c98eac5ecd6b1122f2bac}\label{classNESO_1_1Particles_1_1BufferBase_a9afa08d6887c98eac5ecd6b1122f2bac}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!assert\_allocated@{assert\_allocated}}
+\index{assert\_allocated@{assert\_allocated}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assert\_allocated()}{assert\_allocated()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::assert\+\_\+allocated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a08f1396df310f41a669ba2958fb3ce9f}\label{classNESO_1_1Particles_1_1BufferBase_a08f1396df310f41a669ba2958fb3ce9f}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!free\_wrapper@{free\_wrapper}}
+\index{free\_wrapper@{free\_wrapper}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{free\_wrapper()}{free\_wrapper()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::free\+\_\+wrapper (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a5c88dc54a1b4cf1c5e243c2ded7e0f15}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ T $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_a44b9eba712ad6292867c5397d04e126f}{NESO\+::\+Particles\+::\+Buffer\+Shared$<$ T $>$}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_a741fa9b6b7334f2ba614219ad7840174}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ T $>$}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_aff8a6488dfe7c319b1d3b6cf00e432a5}\label{classNESO_1_1Particles_1_1BufferBase_aff8a6488dfe7c319b1d3b6cf00e432a5}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!generic\_free@{generic\_free}}
+\index{generic\_free@{generic\_free}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{generic\_free()}{generic\_free()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::generic\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_ae7117c28e09351b63bf666eded1583ca}\label{classNESO_1_1Particles_1_1BufferBase_ae7117c28e09351b63bf666eded1583ca}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!generic\_init@{generic\_init}}
+\index{generic\_init@{generic\_init}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{generic\_init()}{generic\_init()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::generic\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_ae56bd99f1ca953323d3e9450dd4a15ff}\label{classNESO_1_1Particles_1_1BufferBase_ae56bd99f1ca953323d3e9450dd4a15ff}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!get@{get}}
+\index{get@{get}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the values in the buffer into a std\+::vector.
+
+\begin{DoxyReturn}{Returns}
+std\+::vector of values in the buffer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a7574fdbba3df6fd9d47eeeb616efcc08}\label{classNESO_1_1Particles_1_1BufferBase_a7574fdbba3df6fd9d47eeeb616efcc08}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!get@{get}}
+\index{get@{get}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the values in the buffer into a std\+::vector. Blocks until copy is complete.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em data} & Input vector to copy values from buffer into. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_ae77b2e1f9d942deb752bc0497be5d84e}\label{classNESO_1_1Particles_1_1BufferBase_ae77b2e1f9d942deb752bc0497be5d84e}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!get\_async@{get\_async}}
+\index{get\_async@{get\_async}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_async()}{get\_async()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::get\+\_\+async (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Asynchronously get the values in the buffer into a std\+::vector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em data} & Input vector to copy values from buffer into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Event to wait on before using new values in the std\+::vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_af7d84ef8e5d2df1cb9809627662db794}\label{classNESO_1_1Particles_1_1BufferBase_af7d84ef8e5d2df1cb9809627662db794}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!malloc\_wrapper@{malloc\_wrapper}}
+\index{malloc\_wrapper@{malloc\_wrapper}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{malloc\_wrapper()}{malloc\_wrapper()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual T$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::malloc\+\_\+wrapper (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{num\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ T $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ REAL $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ int $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ MPI\+\_\+\+Request $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ INT $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ MPI\+\_\+\+Status $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ char $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ REAL $\ast$$\ast$$\ast$ $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferHost_a4021d447d00078a6cbc912256336a982}{NESO\+::\+Particles\+::\+Buffer\+Host$<$ INT $\ast$$\ast$$\ast$ $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferShared_aeb4391bc97436634530dc9d5afd708f2}{NESO\+::\+Particles\+::\+Buffer\+Shared$<$ T $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ T $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ REAL $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ int $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ INT $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ char $>$}}, \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ REAL $\ast$$\ast$$\ast$ $>$}}, and \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferDevice_abaa600d953d48844ca62dc35beb5cfd5}{NESO\+::\+Particles\+::\+Buffer\+Device$<$ INT $\ast$$\ast$$\ast$ $>$}}.
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_abc60eb9a9d24f1f1113a1b0f9bfe5247}\label{classNESO_1_1Particles_1_1BufferBase_abc60eb9a9d24f1f1113a1b0f9bfe5247}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!realloc\_no\_copy@{realloc\_no\_copy}}
+\index{realloc\_no\_copy@{realloc\_no\_copy}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{realloc\_no\_copy()}{realloc\_no\_copy()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::realloc\+\_\+no\+\_\+copy (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reallocate the buffer to hold at least the requested number of elements. May or may not reduce the buffer size if called with a size less than the current allocation. Current contents is not copied to the new buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Minimum number of elements this buffer should be able to hold. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_ae989a4598f4df4e39bf70e6d3e6c8f33}\label{classNESO_1_1Particles_1_1BufferBase_ae989a4598f4df4e39bf70e6d3e6c8f33}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!set@{set}}
+\index{set@{set}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the values in the buffer to those in a std\+::vector. Blocks until the copy is complete.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Input vector to copy values from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a169e070870fe8f13b1f2d659b2cb78b0}\label{classNESO_1_1Particles_1_1BufferBase_a169e070870fe8f13b1f2d659b2cb78b0}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!set\_async@{set\_async}}
+\index{set\_async@{set\_async}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set\_async()}{set\_async()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+sycl\+::event \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::set\+\_\+async (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Asynchronously set the values in the buffer to those in a std\+::vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Input vector to copy values from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Event to wait on before using new values in the buffer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_ababd32d56ecd6ff5928b5871273f2857}\label{classNESO_1_1Particles_1_1BufferBase_ababd32d56ecd6ff5928b5871273f2857}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!size\_bytes@{size\_bytes}}
+\index{size\_bytes@{size\_bytes}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size\_bytes()}{size\_bytes()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::size\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the size of the allocation in bytes.
+
+\begin{DoxyReturn}{Returns}
+size of buffer in bytes. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a4fa4e9e6d9ee4062b32ad8423ac2d5c6}\label{classNESO_1_1Particles_1_1BufferBase_a4fa4e9e6d9ee4062b32ad8423ac2d5c6}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!ptr@{ptr}}
+\index{ptr@{ptr}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::ptr}
+
+
+
+SYCL USM pointer to data. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_a3524b68561d41cef6d751619ec350302}\label{classNESO_1_1Particles_1_1BufferBase_a3524b68561d41cef6d751619ec350302}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!size@{size}}
+\index{size@{size}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::size}
+
+
+
+Number of elements allocated. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1BufferBase_aa4087d350a7b29359e57c29c0fbf03e1}\label{classNESO_1_1Particles_1_1BufferBase_aa4087d350a7b29359e57c29c0fbf03e1}} 
+\index{NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}!sycl\_target@{sycl\_target}}
+\index{sycl\_target@{sycl\_target}!NESO::Particles::BufferBase$<$ T $>$@{NESO::Particles::BufferBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sycl\_target}{sycl\_target}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a897f23893a83614b3f78e2f08d7aad71}{SYCLTarget\+Shared\+Ptr}} \mbox{\hyperlink{classNESO_1_1Particles_1_1BufferBase}{NESO\+::\+Particles\+::\+Buffer\+Base}}$<$ T $>$\+::sycl\+\_\+target}
+
+
+
+Compute device used by the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{compute__target_8hpp}{compute\+\_\+target.\+hpp}}\end{DoxyCompactItemize}

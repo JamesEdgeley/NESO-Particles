@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1SYCLTarget" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::SYCLTarget</compoundname>
+    <includes refid="compute__target_8hpp" local="no">compute_target.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SYCLTarget_1a39c2804de1d149a55d2a2e04eae889e6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned char *, size_t &gt;</type>
+        <definition>std::map&lt;unsigned char *, size_t&gt; NESO::Particles::SYCLTarget::ptr_map</definition>
+        <argsstring></argsstring>
+        <name>ptr_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="58" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SYCLTarget_1a0dff55210b17655aea30b6da975db5a7" prot="public" static="no" mutable="no">
+        <type>sycl::device</type>
+        <definition>sycl::device NESO::Particles::SYCLTarget::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+<para>SYCL device in use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="67" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SYCLTarget_1a95689246305f03b63e80867736f29726" prot="public" static="no" mutable="no">
+        <type>sycl::queue</type>
+        <definition>sycl::queue NESO::Particles::SYCLTarget::queue</definition>
+        <argsstring></argsstring>
+        <name>queue</name>
+        <briefdescription>
+<para>Main SYCL queue to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="69" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SYCLTarget_1abb607ca8492a7a29082d7d4c23ffefb1" prot="public" static="no" mutable="no">
+        <type>MPI_Comm</type>
+        <definition>MPI_Comm NESO::Particles::SYCLTarget::comm</definition>
+        <argsstring></argsstring>
+        <name>comm</name>
+        <briefdescription>
+<para>Parent MPI communicator to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="71" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SYCLTarget_1a7317afc757d61abac977af2875d1435f" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref></type>
+        <definition>CommPair NESO::Particles::SYCLTarget::comm_pair</definition>
+        <argsstring></argsstring>
+        <name>comm_pair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref> to pass around inter and intra communicators for shared memory regions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="74" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1SYCLTarget_1aa76c7f29750a02899daf9d9bed0ee41a" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1ProfileMap" kindref="compound">ProfileMap</ref></type>
+        <definition>ProfileMap NESO::Particles::SYCLTarget::profile_map</definition>
+        <argsstring></argsstring>
+        <name>profile_map</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ProfileMap" kindref="compound">ProfileMap</ref> to log profiling data related to this <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="76" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1a1d679853013a4b67a0883378add51dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::SYCLTarget::SYCLTarget</definition>
+        <argsstring>(const SYCLTarget &amp;st)=delete</argsstring>
+        <name>SYCLTarget</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="79" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1ad10647c1238a0f016aaa262aaff500dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> &amp;</type>
+        <definition>SYCLTarget&amp; NESO::Particles::SYCLTarget::operator=</definition>
+        <argsstring>(SYCLTarget const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1a924afce0bb239991413771fd2254013c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::SYCLTarget::SYCLTarget</definition>
+        <argsstring>(const int gpu_device, MPI_Comm comm, int local_rank=-1)</argsstring>
+        <name>SYCLTarget</name>
+        <param>
+          <type>const int</type>
+          <declname>gpu_device</declname>
+        </param>
+        <param>
+          <type>MPI_Comm</type>
+          <declname>comm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>local_rank</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> using a flag to specifiy device type and a parent MPI communicator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gpu_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify how to search for SYCL device. 0 uses default selector, 1 explicitly use a GPU selector and -1 use an explicit CPU selector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MPI Communicator on which the <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> is based. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>local_rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Explicitly pass the local rank used to assign devices to MPI ranks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="94" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="94" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1ae347865364f693955c1cb69f6eccaa5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::SYCLTarget::~SYCLTarget</definition>
+        <argsstring>()</argsstring>
+        <name>~SYCLTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="154" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="154" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1a049cff60dfcccfefeb7b59b2f27c2db1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::SYCLTarget::free</definition>
+        <argsstring>()</argsstring>
+        <name>free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the <ref refid="classNESO_1_1Particles_1_1SYCLTarget" kindref="compound">SYCLTarget</ref> and underlying <ref refid="classNESO_1_1Particles_1_1CommPair" kindref="compound">CommPair</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="169" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1aadec63cba71d351b617d544a36d577d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* NESO::Particles::SYCLTarget::malloc_device</definition>
+        <argsstring>(size_t size_bytes)</argsstring>
+        <name>malloc_device</name>
+        <param>
+          <type>size_t</type>
+          <declname>size_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate memory on device using sycl::malloc_device.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to allocate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="176" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="176" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1a93d9320f2655bdb887ab9a8398a030b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* NESO::Particles::SYCLTarget::malloc_host</definition>
+        <argsstring>(size_t size_bytes)</argsstring>
+        <name>malloc_host</name>
+        <param>
+          <type>size_t</type>
+          <declname>size_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocate memory on the host using sycl::malloc_host.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to allocate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="205" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="205" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1a0dad49ff080e8d96155b6c13bfaf26e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::SYCLTarget::free</definition>
+        <argsstring>(T *ptr_in)</argsstring>
+        <name>free</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a pointer allocated with malloc_device.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to free. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="234" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="234" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1af3ef5873f83476daf5b8134c89f20380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::SYCLTarget::check_ptrs</definition>
+        <argsstring>()</argsstring>
+        <name>check_ptrs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="250" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="250" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1SYCLTarget_1a607a5b1d5b3078642a2b7b2940e59732" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::SYCLTarget::check_ptr</definition>
+        <argsstring>(unsigned char *ptr_user, const size_t size_bytes)</argsstring>
+        <name>check_ptr</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>ptr_user</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>size_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="256" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="256" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Container for SYCL devices and queues such that they can be easily passed around. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>NESO::Particles::SYCLTarget</label>
+        <link refid="classNESO_1_1Particles_1_1SYCLTarget"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>comm_pair</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>profile_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::CommPair</label>
+        <link refid="classNESO_1_1Particles_1_1CommPair"/>
+      </node>
+      <node id="3">
+        <label>NESO::Particles::ProfileMap</label>
+        <link refid="classNESO_1_1Particles_1_1ProfileMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="56" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="56" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a607a5b1d5b3078642a2b7b2940e59732" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>check_ptr</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1af3ef5873f83476daf5b8134c89f20380" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>check_ptrs</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1abb607ca8492a7a29082d7d4c23ffefb1" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>comm</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a7317afc757d61abac977af2875d1435f" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>comm_pair</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a0dff55210b17655aea30b6da975db5a7" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>device</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a049cff60dfcccfefeb7b59b2f27c2db1" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>free</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a0dad49ff080e8d96155b6c13bfaf26e5" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>free</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1aadec63cba71d351b617d544a36d577d5" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>malloc_device</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a93d9320f2655bdb887ab9a8398a030b0" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>malloc_host</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1ad10647c1238a0f016aaa262aaff500dd" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1aa76c7f29750a02899daf9d9bed0ee41a" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>profile_map</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a39c2804de1d149a55d2a2e04eae889e6" prot="private" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>ptr_map</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a95689246305f03b63e80867736f29726" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>queue</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a1d679853013a4b67a0883378add51dc0" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>SYCLTarget</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1a924afce0bb239991413771fd2254013c" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>SYCLTarget</name></member>
+      <member refid="classNESO_1_1Particles_1_1SYCLTarget_1ae347865364f693955c1cb69f6eccaa5e" prot="public" virt="non-virtual"><scope>NESO::Particles::SYCLTarget</scope><name>~SYCLTarget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

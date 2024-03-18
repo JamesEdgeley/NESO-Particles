@@ -1,0 +1,123 @@
+\hypertarget{classNESO_1_1Particles_1_1ParticleProp}{}\doxysection{NESO\+::Particles\+::Particle\+Prop$<$ T $>$ Class Template Reference}
+\label{classNESO_1_1Particles_1_1ParticleProp}\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+
+
+{\ttfamily \#include $<$particle\+\_\+spec.\+hpp$>$}
+
+
+
+Collaboration diagram for NESO\+::Particles\+::Particle\+Prop$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classNESO_1_1Particles_1_1ParticleProp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_a305f4ca093f7569d540b4e6879fb204d}{Particle\+Prop}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_ae7962074b7dba928e724cbba553fe5cd}{sym}}, int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_a8fcd61be2b97acb589aaf19ef9549a60}{ncomp}}, bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_a0f864e55dc4f8809f6a4a72d95891b02}{positions}}=false)
+\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_a98088fbe0e173ae43279f6142e692b25}{operator==}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ T $>$ \&prop) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_ae7962074b7dba928e724cbba553fe5cd}{sym}}
+\begin{DoxyCompactList}\small\item\em Symbol giving a label to the property. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_aa3027118482ade4e73a17f51faa63e8d}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the property. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_a8fcd61be2b97acb589aaf19ef9549a60}{ncomp}}
+\begin{DoxyCompactList}\small\item\em Number of components required by this property. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp_a0f864e55dc4f8809f6a4a72d95891b02}{positions}}
+\begin{DoxyCompactList}\small\item\em Bool to indicate if this property is a particle position or cell id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class NESO\+::\+Particles\+::\+Particle\+Prop$<$ T $>$}
+
+Class to describe a property of a particle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleProp_a305f4ca093f7569d540b4e6879fb204d}\label{classNESO_1_1Particles_1_1ParticleProp_a305f4ca093f7569d540b4e6879fb204d}} 
+\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}!ParticleProp@{ParticleProp}}
+\index{ParticleProp@{ParticleProp}!NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParticleProp()}{ParticleProp()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{NESO\+::\+Particles\+::\+Particle\+Prop}}$<$ T $>$\+::\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$ T $>$}]{sym,  }\item[{int}]{ncomp,  }\item[{bool}]{positions = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for particle properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym$<$\+T$>$}} instance for the property. \\
+\hline
+{\em ncomp} & Number of components for the property. \\
+\hline
+{\em positions} & Bool to indicate if the property hold positions or cells ids. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleProp_a98088fbe0e173ae43279f6142e692b25}\label{classNESO_1_1Particles_1_1ParticleProp_a98088fbe0e173ae43279f6142e692b25}} 
+\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{NESO\+::\+Particles\+::\+Particle\+Prop}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}}$<$ T $>$ \&}]{prop }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleProp_aa3027118482ade4e73a17f51faa63e8d}\label{classNESO_1_1Particles_1_1ParticleProp_aa3027118482ade4e73a17f51faa63e8d}} 
+\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}!name@{name}}
+\index{name@{name}!NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{NESO\+::\+Particles\+::\+Particle\+Prop}}$<$ T $>$\+::name}
+
+
+
+Name of the property. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleProp_a8fcd61be2b97acb589aaf19ef9549a60}\label{classNESO_1_1Particles_1_1ParticleProp_a8fcd61be2b97acb589aaf19ef9549a60}} 
+\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}!ncomp@{ncomp}}
+\index{ncomp@{ncomp}!NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ncomp}{ncomp}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{NESO\+::\+Particles\+::\+Particle\+Prop}}$<$ T $>$\+::ncomp}
+
+
+
+Number of components required by this property. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleProp_a0f864e55dc4f8809f6a4a72d95891b02}\label{classNESO_1_1Particles_1_1ParticleProp_a0f864e55dc4f8809f6a4a72d95891b02}} 
+\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}!positions@{positions}}
+\index{positions@{positions}!NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{positions}{positions}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{NESO\+::\+Particles\+::\+Particle\+Prop}}$<$ T $>$\+::positions}
+
+
+
+Bool to indicate if this property is a particle position or cell id. 
+
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1ParticleProp_ae7962074b7dba928e724cbba553fe5cd}\label{classNESO_1_1Particles_1_1ParticleProp_ae7962074b7dba928e724cbba553fe5cd}} 
+\index{NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}!sym@{sym}}
+\index{sym@{sym}!NESO::Particles::ParticleProp$<$ T $>$@{NESO::Particles::ParticleProp$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sym}{sym}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classNESO_1_1Particles_1_1Sym}{Sym}}$<$T$>$ \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{NESO\+::\+Particles\+::\+Particle\+Prop}}$<$ T $>$\+::sym}
+
+
+
+Symbol giving a label to the property. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/\mbox{\hyperlink{particle__spec_8hpp}{particle\+\_\+spec.\+hpp}}\end{DoxyCompactItemize}

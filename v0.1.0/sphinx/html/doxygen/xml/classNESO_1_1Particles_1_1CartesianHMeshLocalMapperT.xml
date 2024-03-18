@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::CartesianHMeshLocalMapperT</compoundname>
+    <basecompoundref refid="classNESO_1_1Particles_1_1LocalMapper" prot="public" virt="non-virtual">NESO::Particles::LocalMapper</basecompoundref>
+    <includes refid="cartesian__mesh_8hpp" local="no">cartesian_mesh.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1aeecd7506fd3374df55904279b77e3abc" prot="private" static="no" mutable="no">
+        <type>SYCLTargetSharedPtr</type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::CartesianHMeshLocalMapperT::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="24" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a913a79a904114e401c68433bd4d98dd5" prot="private" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::CartesianHMeshLocalMapperT::dh_dims</definition>
+        <argsstring></argsstring>
+        <name>dh_dims</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="25" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a7f25a74446332de974ca1a8e9e8e1abd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CartesianHMeshLocalMapperT::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="26" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1abc5c7c8e955fc9057fdf27b62f4fae27" prot="private" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL NESO::Particles::CartesianHMeshLocalMapperT::cell_width_fine</definition>
+        <argsstring></argsstring>
+        <name>cell_width_fine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="27" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ac86ff5be36b8c9a5cca602a70c93f488" prot="private" static="no" mutable="no">
+        <type>REAL</type>
+        <definition>REAL NESO::Particles::CartesianHMeshLocalMapperT::inverse_cell_width_fine</definition>
+        <argsstring></argsstring>
+        <name>inverse_cell_width_fine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="28" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1af64fd2d76c6d34a79c9e1b4a1fba8110" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::CartesianHMeshLocalMapperT::dh_lookup</definition>
+        <argsstring></argsstring>
+        <name>dh_lookup</name>
+        <briefdescription>
+<para>Map from MPI rank to local index in the lookup map for each dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="38" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ab391a9394eef0efce57d5380de9c61a4" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::CartesianHMeshLocalMapperT::dh_lookup_dims</definition>
+        <argsstring></argsstring>
+        <name>dh_lookup_dims</name>
+        <briefdescription>
+<para>Strides of the lookup map such that tuple indices can be converted into a. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="41" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a30056f84d3a1119fe1cac9e61fc99d33" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; int &gt;</type>
+        <definition>BufferDeviceHost&lt;int&gt; NESO::Particles::CartesianHMeshLocalMapperT::dh_map</definition>
+        <argsstring></argsstring>
+        <name>dh_map</name>
+        <briefdescription>
+<para>Actual map from cells to owning MPI ranks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="43" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a64f27daf5d74373b3511513e9afc7ae3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::CartesianHMeshLocalMapperT::lookup_stride</definition>
+        <argsstring></argsstring>
+        <name>lookup_stride</name>
+        <briefdescription>
+<para>Stride for the local index lookup per dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="45" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ac2417d93bcaa77b836b7d34807e3ca1b" prot="public" static="no" mutable="no">
+        <type>CartesianHMeshSharedPtr</type>
+        <definition>CartesianHMeshSharedPtr NESO::Particles::CartesianHMeshLocalMapperT::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+<para><ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref> on which the lookup is based. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="47" column="27" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a5f26eed6e1e81b28825076b3b927b0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianHMeshLocalMapperT::CartesianHMeshLocalMapperT</definition>
+        <argsstring>(const CartesianHMeshLocalMapperT &amp;st)=delete</argsstring>
+        <name>CartesianHMeshLocalMapperT</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" kindref="compound">CartesianHMeshLocalMapperT</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1abd2aeecfa77d6bad4ffd989dc0ba0a1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" kindref="compound">CartesianHMeshLocalMapperT</ref> &amp;</type>
+        <definition>CartesianHMeshLocalMapperT&amp; NESO::Particles::CartesianHMeshLocalMapperT::operator=</definition>
+        <argsstring>(CartesianHMeshLocalMapperT const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT" kindref="compound">CartesianHMeshLocalMapperT</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a67d157930f5c10be36878fa5b1865b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::CartesianHMeshLocalMapperT::CartesianHMeshLocalMapperT</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, CartesianHMeshSharedPtr mesh)</argsstring>
+        <name>CartesianHMeshLocalMapperT</name>
+        <param>
+          <type>SYCLTargetSharedPtr</type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>CartesianHMeshSharedPtr</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new mapper instance to map local particle positions to owing ranks.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mesh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref> instance this mapping is based on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="55" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="55" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a143365c56d44cbfee917c7a9382922e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::CartesianHMeshLocalMapperT::map</definition>
+        <argsstring>(ParticleGroup &amp;particle_group, const int map_cell=-1)</argsstring>
+        <name>map</name>
+        <reimplements refid="classNESO_1_1Particles_1_1LocalMapper_1ab488f00e5073b75d73fc5642a2218bc1">map</reimplements>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>particle_group</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>map_cell</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map positions to owning MPI ranks. Positions should be within the domain prior to calling map, i.e. particles should be within the domain extents.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="177" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="177" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ae56046ac8c8813edca42cf5410c12f77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::CartesianHMeshLocalMapperT::particle_group_callback</definition>
+        <argsstring>(ParticleGroup &amp;particle_group)</argsstring>
+        <name>particle_group_callback</name>
+        <reimplements refid="classNESO_1_1Particles_1_1LocalMapper_1ab3c7f02df9394e8ebbe9788b78fb5a75">particle_group_callback</reimplements>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref> &amp;</type>
+          <declname>particle_group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No-op implementation of callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle_group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleGroup" kindref="compound">ParticleGroup</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="253" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="253" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classNESO_1_1Particles_1_1LocalMapper" kindref="compound">LocalMapper</ref> for <ref refid="classNESO_1_1Particles_1_1CartesianHMesh" kindref="compound">CartesianHMesh</ref>. Maps particle positions within the stencil width of each MPI subdomain to the owning rank. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NESO::Particles::LocalMapper</label>
+        <link refid="classNESO_1_1Particles_1_1LocalMapper"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::CartesianHMeshLocalMapperT</label>
+        <link refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>NESO::Particles::BufferDeviceHost&lt; int &gt;</label>
+        <link refid="classNESO_1_1Particles_1_1BufferDeviceHost"/>
+      </node>
+      <node id="2">
+        <label>NESO::Particles::LocalMapper</label>
+        <link refid="classNESO_1_1Particles_1_1LocalMapper"/>
+      </node>
+      <node id="1">
+        <label>NESO::Particles::CartesianHMeshLocalMapperT</label>
+        <link refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dh_lookup</edgelabel>
+          <edgelabel>dh_lookup_dims</edgelabel>
+          <edgelabel>dh_map</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" line="22" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/cartesian_mesh.hpp" bodystart="22" bodyend="254"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a5f26eed6e1e81b28825076b3b927b0e5" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>CartesianHMeshLocalMapperT</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a67d157930f5c10be36878fa5b1865b02" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>CartesianHMeshLocalMapperT</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1abc5c7c8e955fc9057fdf27b62f4fae27" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>cell_width_fine</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a913a79a904114e401c68433bd4d98dd5" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>dh_dims</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1af64fd2d76c6d34a79c9e1b4a1fba8110" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>dh_lookup</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ab391a9394eef0efce57d5380de9c61a4" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>dh_lookup_dims</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a30056f84d3a1119fe1cac9e61fc99d33" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>dh_map</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ac86ff5be36b8c9a5cca602a70c93f488" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>inverse_cell_width_fine</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a64f27daf5d74373b3511513e9afc7ae3" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>lookup_stride</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a143365c56d44cbfee917c7a9382922e5" prot="public" virt="virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>map</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ac2417d93bcaa77b836b7d34807e3ca1b" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>mesh</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1a7f25a74446332de974ca1a8e9e8e1abd" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>ndim</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1abd2aeecfa77d6bad4ffd989dc0ba0a1c" prot="public" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1ae56046ac8c8813edca42cf5410c12f77" prot="public" virt="virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>particle_group_callback</name></member>
+      <member refid="classNESO_1_1Particles_1_1CartesianHMeshLocalMapperT_1aeecd7506fd3374df55904279b77e3abc" prot="private" virt="non-virtual"><scope>NESO::Particles::CartesianHMeshLocalMapperT</scope><name>sycl_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

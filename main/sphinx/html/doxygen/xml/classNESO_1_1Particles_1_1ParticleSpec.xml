@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1ParticleSpec" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleSpec</compoundname>
+    <includes refid="particle__spec_8hpp" local="no">particle_spec.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;ParticleProp&lt;REAL&gt; &gt; NESO::Particles::ParticleSpec::properties_real</definition>
+        <argsstring></argsstring>
+        <name>properties_real</name>
+        <briefdescription>
+<para>Collection of REAL <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="86" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;ParticleProp&lt;INT&gt; &gt; NESO::Particles::ParticleSpec::properties_int</definition>
+        <argsstring></argsstring>
+        <name>properties_int</name>
+        <briefdescription>
+<para>Collection of INT <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="88" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1a702dc98aafecf134336e2484276c28c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleSpec::push</definition>
+        <argsstring>(T... args)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="74" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1acb841b8304ef2e7527afe904a905154c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleSpec::push</definition>
+        <argsstring>(ParticleProp&lt; REAL &gt; pp, T... args)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="75" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1a225d9cf721f8937f6b2ef60f183687a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleSpec::push</definition>
+        <argsstring>(ParticleProp&lt; INT &gt; pp, T... args)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="79" column="20" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1abb928645e1251558fe1dd4485e060ab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>NESO::Particles::ParticleSpec::ParticleSpec</definition>
+        <argsstring>(T... args)</argsstring>
+        <name>ParticleSpec</name>
+        <param>
+          <type>T...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to create a particle specification.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> is called with a set of <ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref> arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="95" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1a276b2968f86135d0aa2b990818f103d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleSpec::push</definition>
+        <argsstring>(ParticleProp&lt; REAL &gt; pp)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a ParticleProp&lt;REAL&gt; property onto the specification.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleProp&lt;REAL&gt; to add to the specification. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="101" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1adab06be6b2b8bd82f0ba97c12bf6ec12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleSpec::push</definition>
+        <argsstring>(ParticleProp&lt; INT &gt; pp)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1ParticleProp" kindref="compound">ParticleProp</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt;</type>
+          <declname>pp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push a ParticleProp&lt;INT&gt; property onto the specification.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ParticleProp&lt;INT&gt; to add to the specification. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="107" column="8" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1a30ba7521427ced460f4bedf5258669a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleSpec::ParticleSpec</definition>
+        <argsstring>()</argsstring>
+        <name>ParticleSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="109" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1ParticleSpec_1ab753875cb1714f3a79369fa8bcd8d4e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::ParticleSpec::~ParticleSpec</definition>
+        <argsstring>()</argsstring>
+        <name>~ParticleSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="110" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classNESO_1_1Particles_1_1ParticleSpec" kindref="compound">ParticleSpec</ref> is a particle specification described by a collection of particle properties. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" line="72" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/particle_spec.hpp" bodystart="72" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1abb928645e1251558fe1dd4485e060ab4" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>ParticleSpec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1a30ba7521427ced460f4bedf5258669a2" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>ParticleSpec</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1aeb5bac880755c38534d630b16de36004" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>properties_int</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1aa33c982494fe5adb6007f3daad7fb622" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>properties_real</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1a702dc98aafecf134336e2484276c28c8" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1acb841b8304ef2e7527afe904a905154c" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1a225d9cf721f8937f6b2ef60f183687a3" prot="private" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1a276b2968f86135d0aa2b990818f103d1" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1adab06be6b2b8bd82f0ba97c12bf6ec12" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>push</name></member>
+      <member refid="classNESO_1_1Particles_1_1ParticleSpec_1ab753875cb1714f3a79369fa8bcd8d4e8" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleSpec</scope><name>~ParticleSpec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

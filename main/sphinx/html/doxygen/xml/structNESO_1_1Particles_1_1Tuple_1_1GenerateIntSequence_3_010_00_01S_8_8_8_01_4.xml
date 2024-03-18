@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence_3_010_00_01S_8_8_8_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::Tuple::GenerateIntSequence&lt; 0, S... &gt;</compoundname>
+    <includes refid="tuple_8hpp" local="no">tuple.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t...</type>
+        <declname>S</declname>
+        <defname>S</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence_3_010_00_01S_8_8_8_01_4_1ac429dab8b537fa2f5d05dd2224dace2a" prot="public" static="no">
+        <type><ref refid="structNESO_1_1Particles_1_1Tuple_1_1IntSequence" kindref="compound">IntSequence</ref>&lt; S... &gt;</type>
+        <definition>using NESO::Particles::Tuple::GenerateIntSequence&lt; 0, S... &gt;::type =  IntSequence&lt;S...&gt;</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="55" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" line="54" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/tuple.hpp" bodystart="54" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1Tuple_1_1GenerateIntSequence_3_010_00_01S_8_8_8_01_4_1ac429dab8b537fa2f5d05dd2224dace2a" prot="public" virt="non-virtual"><scope>NESO::Particles::Tuple::GenerateIntSequence&lt; 0, S... &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

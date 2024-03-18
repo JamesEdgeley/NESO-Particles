@@ -1,0 +1,1408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::ParticleLoopImplementation</compoundname>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01CellDat_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; CellDat&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01CellDat_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; CellDat&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01CellDat_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; CellDat&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01CellDat_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; CellDat&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01CellDat_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; CellDat&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01CellDat_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; CellDat&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01CellDatConst_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01CellDatConst_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Min_3_01CellDatConst_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Min&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Max_3_01CellDatConst_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Max&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_0115fe96e7c7ce802033f9d753c34f19b0" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01Cc9c54e6d1f163bc62e27958767ef4f05" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Min_3_01C89b45e89a9de883cade472374906ccfe" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Min&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Max_3_01C411eec67eb215f8d1077b27f2230fc3b" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Max&lt; CellDatConst&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01DescendantProducts_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; DescendantProducts &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01DescendantProducts_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; DescendantProducts &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01GlobalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; GlobalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01GlobalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; GlobalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_0162c1cf6eba4b5cf6448eddf3e1dd66fc" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; GlobalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01GlobalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; GlobalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_0285f9de1a226fb130adb16fb121416fd" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01LocalArray_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; LocalArray&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Add&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Add_3_01ProductMatrix_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Add&lt; ProductMatrix &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01SymVector_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; SymVector&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01SymVector_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; SymVector&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01SymVector_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; SymVector&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01SymVector_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; SymVector&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIterationSet" prot="public">NESO::Particles::ParticleLoopImplementation::ParticleLoopIterationSet</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; T&lt; std::shared_ptr&lt; U &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01T_3_01std_1_1shared__ptr_3_01U_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; T&lt; std::shared_ptr&lt; U &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" prot="public">NESO::Particles::ParticleLoopImplementation::ParticleLoopGlobalInfo</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" prot="public">NESO::Particles::ParticleLoopImplementation::ParticleLoopIteration</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01ParticleLoopIndex_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; ParticleLoopIndex &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT" prot="public">NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ParticleLoopIndex_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; ParticleLoopIndex &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Read_3_01ParticleDatT_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Read&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1LoopParameter_3_01Access_1_1Write_3_01Padf37f47bdda97bcd844c99704effa7d" prot="public">NESO::Particles::ParticleLoopImplementation::LoopParameter&lt; Access::Write&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_01Sym_3_01T_01_4_01_4_01_4" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; Sym&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Read_3_016acffd4a313eef947f0de332a72831a3" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Read&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1KernelParameter_3_01Access_1_1Write_3_08a0335dad42b7beb98cf42b48e78b19f" prot="public">NESO::Particles::ParticleLoopImplementation::KernelParameter&lt; Access::Write&lt; ParticleDatT&lt; T &gt; &gt; &gt;</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af4dcf9f325fb9449418a41ce0fc6d746" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T *const *const *&amp;rhs, Access::CellDat::Read&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T *const *const *&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Read" kindref="compound">Access::CellDat::Read</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="78" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a2ddb94fa3d6e90364acadde4ff462aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T ***&amp;rhs, Access::CellDat::Write&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T ***&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Write" kindref="compound">Access::CellDat::Write</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="85" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a836a23d148eb7e144131d5b643916341" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T ***&amp;rhs, Access::CellDat::Add&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T ***&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDat_1_1Add" kindref="compound">Access::CellDat::Add</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="91" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acc145e1ca44fcfde703b028c42a14b83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *const  *const  *</type>
+        <definition>T* const* const* NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; CellDat&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="97" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aab5251da774539dd1f7678ad5aaca365" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T ***</type>
+        <definition>T*** NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; CellDat&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="103" column="10" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acf798758bf7203b99063a36920c3e45d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T ***</type>
+        <definition>T*** NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; CellDat&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDat" kindref="compound">CellDat</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="109" column="10" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ad0258071551577b79b83b42d9b1c10e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, CellDatConstDeviceTypeConst&lt; T &gt; &amp;rhs, Access::CellDatConst::Read&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst" kindref="compound">CellDatConstDeviceTypeConst</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Read" kindref="compound">Access::CellDatConst::Read</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="152" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ad06a2836392c349ffae890f5d77d487e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, CellDatConstDeviceType&lt; T &gt; &amp;rhs, Access::CellDatConst::Add&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceType" kindref="compound">CellDatConstDeviceType</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Add" kindref="compound">Access::CellDatConst::Add</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> add access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="163" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="163" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ae26831871708bf14245f88a8112a6a93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, CellDatConstDeviceType&lt; T &gt; &amp;rhs, Access::CellDatConst::Min&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceType" kindref="compound">CellDatConstDeviceType</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Min" kindref="compound">Access::CellDatConst::Min</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> min access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="174" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="174" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ac5f8697a74cb13d6d16e6aa30548928f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, CellDatConstDeviceType&lt; T &gt; &amp;rhs, Access::CellDatConst::Max&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceType" kindref="compound">CellDatConstDeviceType</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1CellDatConst_1_1Max" kindref="compound">Access::CellDatConst::Max</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> max access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="185" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="185" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a11fe8afcd73062f038c7fca60f734dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceTypeConst" kindref="compound">CellDatConstDeviceTypeConst</ref>&lt; T &gt;</type>
+        <definition>CellDatConstDeviceTypeConst&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; CellDatConst&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> (read) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="198" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a2a2912568461b16647d98ac024fff3f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceType" kindref="compound">CellDatConstDeviceType</ref>&lt; T &gt;</type>
+        <definition>CellDatConstDeviceType&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; CellDatConst&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> (add) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="207" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a1f2a1bd57cf7c64177ba6ab7269964bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceType" kindref="compound">CellDatConstDeviceType</ref>&lt; T &gt;</type>
+        <definition>CellDatConstDeviceType&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Min&lt; CellDatConst&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Min" kindref="compound">Access::Min</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> (min) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="216" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a68377402304e55480ce1e6a42062d2f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1CellDatConstDeviceType" kindref="compound">CellDatConstDeviceType</ref>&lt; T &gt;</type>
+        <definition>CellDatConstDeviceType&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Max&lt; CellDatConst&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Max" kindref="compound">Access::Max</ref>&lt; <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1CellDatConst" kindref="compound">CellDatConst</ref> (max) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" line="225" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat_const.hpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a338541c1a7650c63a5f617dd6a1917b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, DescendantProductsGet &amp;rhs, Access::DescendantProducts::Write &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1DescendantProductsGet" kindref="compound">DescendantProductsGet</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1DescendantProducts_1_1Write" kindref="compound">Access::DescendantProducts::Write</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1DescendantProducts" kindref="compound">DescendantProducts</ref> write access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="112" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1af3cbf9b598f58f693b946fdb3b7019a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1DescendantProductsGet" kindref="compound">DescendantProductsGet</ref></type>
+        <definition>DescendantProductsGet NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; DescendantProducts * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1DescendantProducts" kindref="compound">DescendantProducts</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1DescendantProducts" kindref="compound">DescendantProducts</ref> (write) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" line="213" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" bodystart="213" bodyend="216" declfile="/tmp/repo-checkout/NESO-Particles/include/containers/descendant_products.hpp" declline="129" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1abc5b9a590ec5bd3335c6d9874d6cd640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T const *rhs, Access::GlobalArray::Read&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Read" kindref="compound">Access::GlobalArray::Read</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref> read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="95" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a539d3b05015ffc149ffa2107b21807e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T *rhs, Access::GlobalArray::Add&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1GlobalArray_1_1Add" kindref="compound">Access::GlobalArray::Add</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref> add access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="103" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ad6384ea6e06770c4a4ae7ddd64c12ba9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::post_loop</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, Access::Add&lt; GlobalArray&lt; T &gt; * &gt; &amp;arg)</argsstring>
+        <name>post_loop</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Post loop execution function for <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref> write. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="112" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a15111d7e2d4495a2445002a64255c69c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1a9f23675b1b14a8be48d5b433693195ed" kindref="member">GlobalArrayImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>GlobalArrayImplGetConstT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; GlobalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref> (read) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="122" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a001d55150b95f6f2839f39be82c17ba8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1a35560e9559a0a254e218ba54c08c3204" kindref="member">GlobalArrayImplGetT</ref>&lt; T &gt;</type>
+        <definition>GlobalArrayImplGetT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; GlobalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1GlobalArray" kindref="compound">GlobalArray</ref> (add) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" line="131" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/global_array.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aa8e07c011ff287848e35372ca9f51755" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T const *rhs, Access::LocalArray::Read&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Read" kindref="compound">Access::LocalArray::Read</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="115" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aec1840e8cdc1dec2ac6f21d8797de342" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T *rhs, Access::LocalArray::Write&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Write" kindref="compound">Access::LocalArray::Write</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> write access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="123" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a1c1c383ffe44fd112cda1c3e07f42013" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T *rhs, Access::LocalArray::Add&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1LocalArray_1_1Add" kindref="compound">Access::LocalArray::Add</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> add access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="131" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a4677fb06ce6977f614e0977b1a4f0abb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1adf82d96678d242f3d20d120a78b5f7e4" kindref="member">LocalArrayImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetConstT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; LocalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> (read) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="141" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a55429e7f632e9628341ef31663b02f7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; LocalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> (write) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="150" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a8542f7782a689c5e53f488ec19342f30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ace175e00be7a1c9efaba24beda93cc3e" kindref="member">LocalArrayImplGetT</ref>&lt; T &gt;</type>
+        <definition>LocalArrayImplGetT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; LocalArray&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1LocalArray" kindref="compound">LocalArray</ref> (add) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" line="159" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/local_array.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a0ee19bf5c390251e52103e36ee91a767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, ProductMatrixGetConst &amp;rhs, Access::ProductMatrix::Read &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Read" kindref="compound">Access::ProductMatrix::Read</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="226" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="226" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ac8c49152dbbf36c173e490c9578f6127" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, ProductMatrixGet &amp;rhs, T &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> write/add access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="239" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="239" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a590eb99e2ec1c2031619df1e138e4542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGetConst" kindref="compound">ProductMatrixGetConst</ref></type>
+        <definition>ProductMatrixGetConst NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; ProductMatrix * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> (read) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="579" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="579" bodyend="582" declfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" declline="252" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aebefb762a94879b583f0ab81d2f46a0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref></type>
+        <definition>ProductMatrixGet NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; ProductMatrix * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> (write) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="586" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="586" bodyend="590" declfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" declline="257" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a2cf18f64a4f7ced48179a1b52c26108e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ProductMatrixGet" kindref="compound">ProductMatrixGet</ref></type>
+        <definition>ProductMatrixGet NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Add&lt; ProductMatrix * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1ProductMatrix" kindref="compound">ProductMatrix</ref> (add) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" line="594" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" bodystart="594" bodyend="598" declfile="/tmp/repo-checkout/NESO-Particles/include/containers/product_matrix.hpp" declline="263" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1acadeb5a67af4a74948e187afb7f58143" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1aa900ac23bad7d69c2ee62ace9696890d" kindref="member">SymVectorImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>SymVectorImplGetConstT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; SymVector&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref> (read). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="101" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a45a3f216427715d8330c6c92300e8882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1a2036902331af5fea0fcb270cfd6170fc" kindref="member">SymVectorImplGetT</ref>&lt; T &gt;</type>
+        <definition>SymVectorImplGetT&lt;T&gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; SymVector&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref> (write). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="109" column="26" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ad37b202933063ca9cee3e5cecd0185fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T *const *const **rhs, Access::SymVector::Read&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T *const *const **</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Read" kindref="compound">Access::SymVector::Read</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref> read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="119" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a539630cb03746af539041f2db84955d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T ****rhs, Access::SymVector::Write&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T ****</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1SymVector_1_1Write" kindref="compound">Access::SymVector::Write</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="classNESO_1_1Particles_1_1SymVector" kindref="compound">SymVector</ref> write access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" line="130" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/containers/sym_vector.hpp" bodystart="130" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ac08c1d0003b9fc039a51eddca31faf4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::post_loop</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, T &amp;arg)</argsstring>
+        <name>post_loop</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The functions to run for each argument to the kernel post loop completion. Default post loop execution function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" line="65" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_base.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a100d856566f4c776965c3a717bc7ec57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT" kindref="compound">ParticleLoopIndexKernelT</ref></type>
+        <definition>ParticleLoopIndexKernelT NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopImplementation::ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; ParticleLoopIndex * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopImplementation::ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="structNESO_1_1Particles_1_1ParticleLoopIndex" kindref="compound">ParticleLoopIndex</ref> * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a <ref refid="structNESO_1_1Particles_1_1ParticleLoopIndex" kindref="compound">ParticleLoopIndex</ref> (read) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="100" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="100" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aeb868a846ef85d22116b512bbda2659f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, ParticleLoopIndexKernelT &amp;rhs, Access::LoopIndex::Read &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT" kindref="compound">ParticleLoopIndexKernelT</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1LoopIndex_1_1Read" kindref="compound">Access::LoopIndex::Read</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for <ref refid="structNESO_1_1Particles_1_1ParticleLoopIndex" kindref="compound">ParticleLoopIndex</ref> read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="114" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="114" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1ae274b406321a2fefc287760e85c38d9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ab57d44f62ea102bdb35a06ab150222e1" kindref="member">ParticleDatImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>ParticleDatImplGetConstT&lt; T &gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; Sym&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a particle dat (read) - via <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" line="93" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" bodystart="93" bodyend="97" declfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" declline="46" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a5e348a82f1a14404cac0cca6fca6f483" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1a40440ca7be104e7a3cc72b43b839e2a6" kindref="member">ParticleDatImplGetT</ref>&lt; T &gt;</type>
+        <definition>ParticleDatImplGetT&lt; T &gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; Sym&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a particle dat (write) - via <ref refid="classNESO_1_1Particles_1_1Sym" kindref="compound">Sym</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" line="103" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" bodystart="103" bodyend="107" declfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" declline="53" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1aba2d95dedbe67ff392a7dd96fe48b37e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1ab57d44f62ea102bdb35a06ab150222e1" kindref="member">ParticleDatImplGetConstT</ref>&lt; T &gt;</type>
+        <definition>ParticleDatImplGetConstT&lt; T &gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Read&lt; ParticleDatT&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ParticleDatT" kindref="compound">ParticleDatT</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a particle dat (read). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" line="113" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" bodystart="113" bodyend="116" declfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" declline="60" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a5e7a3099fbe6d8f208f0635aa2c53128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespaceNESO_1_1Particles_1a40440ca7be104e7a3cc72b43b839e2a6" kindref="member">ParticleDatImplGetT</ref>&lt; T &gt;</type>
+        <definition>ParticleDatImplGetT&lt; T &gt; NESO::Particles::ParticleLoopImplementation::create_loop_arg</definition>
+        <argsstring>(ParticleLoopGlobalInfo *global_info, sycl::handler &amp;cgh, Access::Write&lt; ParticleDatT&lt; T &gt; * &gt; &amp;a)</argsstring>
+        <name>create_loop_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopGlobalInfo" kindref="compound">ParticleLoopGlobalInfo</ref> *</type>
+          <declname>global_info</declname>
+        </param>
+        <param>
+          <type>sycl::handler &amp;</type>
+          <declname>cgh</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref>&lt; <ref refid="classNESO_1_1Particles_1_1ParticleDatT" kindref="compound">ParticleDatT</ref>&lt; T &gt; * &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to compute access to a particle dat (write). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" line="122" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" bodystart="122" bodyend="125" declfile="/tmp/repo-checkout/NESO-Particles/include/particle_dat.hpp" declline="67" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a2d30c993c1c18ca6504faa88dd12af5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T *const *const *rhs, Access::ParticleDat::Read&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T *const *const *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Read" kindref="compound">Access::ParticleDat::Read</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for ParticleDat read access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" line="131" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" bodystart="131" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1ParticleLoopImplementation_1a4979201168e994fae6d89e2dd3c202d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void NESO::Particles::ParticleLoopImplementation::create_kernel_arg</definition>
+        <argsstring>(ParticleLoopIteration &amp;iterationx, T ***rhs, Access::ParticleDat::Write&lt; T &gt; &amp;lhs)</argsstring>
+        <name>create_kernel_arg</name>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIteration" kindref="compound">ParticleLoopIteration</ref> &amp;</type>
+          <declname>iterationx</declname>
+        </param>
+        <param>
+          <type>T ***</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="structNESO_1_1Particles_1_1Access_1_1ParticleDat_1_1Write" kindref="compound">Access::ParticleDat::Write</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to create the kernel argument for ParticleDat write access. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" line="141" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/pli_particle_dat.hpp" bodystart="141" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="58" column="1"/>
+  </compounddef>
+</doxygen>

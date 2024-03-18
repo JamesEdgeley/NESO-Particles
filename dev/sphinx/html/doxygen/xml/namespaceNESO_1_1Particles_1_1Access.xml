@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceNESO_1_1Particles_1_1Access" kind="namespace" language="C++">
+    <compoundname>NESO::Particles::Access</compoundname>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1AccessGeneric" prot="public">NESO::Particles::Access::AccessGeneric</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1Read" prot="public">NESO::Particles::Access::Read</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1Write" prot="public">NESO::Particles::Access::Write</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1Add" prot="public">NESO::Particles::Access::Add</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1Min" prot="public">NESO::Particles::Access::Min</innerclass>
+    <innerclass refid="structNESO_1_1Particles_1_1Access_1_1Max" prot="public">NESO::Particles::Access::Max</innerclass>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1CellDat">NESO::Particles::Access::CellDat</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1CellDatConst">NESO::Particles::Access::CellDatConst</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1DescendantProducts">NESO::Particles::Access::DescendantProducts</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1GlobalArray">NESO::Particles::Access::GlobalArray</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1LocalArray">NESO::Particles::Access::LocalArray</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1LoopIndex">NESO::Particles::Access::LoopIndex</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1ParticleDat">NESO::Particles::Access::ParticleDat</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix">NESO::Particles::Access::ProductMatrix</innernamespace>
+    <innernamespace refid="namespaceNESO_1_1Particles_1_1Access_1_1SymVector">NESO::Particles::Access::SymVector</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Access_1a5ac4ad4b7778690c9189204fbc612c14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Read</ref>&lt; T &gt;</type>
+        <definition>Read&lt;T&gt; NESO::Particles::Access::read</definition>
+        <argsstring>(T t)</argsstring>
+        <name>read</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function that allows a loop to be constructed with a read-only parameter passed like:</para>
+<para>Access::read(object)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to pass with read-only access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structNESO_1_1Particles_1_1Access_1_1Read" kindref="compound">Access::Read</ref> object that wraps passed object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="47" column="25" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Access_1ab23cc37df2a295331f0390b81c7ff6e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Write</ref>&lt; T &gt;</type>
+        <definition>Write&lt;T&gt; NESO::Particles::Access::write</definition>
+        <argsstring>(T t)</argsstring>
+        <name>write</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function that allows a loop to be constructed with a write parameter passed like:</para>
+<para>Access::write(object)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to pass with write access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structNESO_1_1Particles_1_1Access_1_1Write" kindref="compound">Access::Write</ref> object that wraps passed object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="58" column="26" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Access_1a70dc48e6380d04b2afdf8c644e44e2e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Add</ref>&lt; T &gt;</type>
+        <definition>Add&lt;T&gt; NESO::Particles::Access::add</definition>
+        <argsstring>(T t)</argsstring>
+        <name>add</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function that allows a loop to be constructed with a write parameter which is atomic addition passed like:</para>
+<para>Access::add(object)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to pass with atomic add access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structNESO_1_1Particles_1_1Access_1_1Add" kindref="compound">Access::Add</ref> object that wraps passed object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="69" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Access_1a1241d8db57a1cf3c8a5ac101bb058b3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Min" kindref="compound">Min</ref>&lt; T &gt;</type>
+        <definition>Min&lt;T&gt; NESO::Particles::Access::min</definition>
+        <argsstring>(T t)</argsstring>
+        <name>min</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function that allows a loop to be constructed with a write parameter which is atomic minimum passed like:</para>
+<para>Access::min(object)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to pass with atomic min access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structNESO_1_1Particles_1_1Access_1_1Min" kindref="compound">Access::Min</ref> object that wraps passed object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="80" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNESO_1_1Particles_1_1Access_1a42fc14049b4d594f610ad62b9100aac7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structNESO_1_1Particles_1_1Access_1_1Max" kindref="compound">Max</ref>&lt; T &gt;</type>
+        <definition>Max&lt;T&gt; NESO::Particles::Access::max</definition>
+        <argsstring>(T t)</argsstring>
+        <name>max</name>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper function that allows a loop to be constructed with a write parameter which is atomic maximum passed like:</para>
+<para>Access::max(object)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to pass with atomic max access. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structNESO_1_1Particles_1_1Access_1_1Max" kindref="compound">Access::Max</ref> object that wraps passed object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" line="91" column="24" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/access_descriptors.hpp" bodystart="91" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Types and functions relating to access descriptors for loops. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/containers/cell_dat.hpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

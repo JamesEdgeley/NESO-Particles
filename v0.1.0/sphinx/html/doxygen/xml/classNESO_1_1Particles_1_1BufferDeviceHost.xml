@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1BufferDeviceHost" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::BufferDeviceHost</compoundname>
+    <includes refid="compute__target_8hpp" local="no">compute_target.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a602e35154b4a6e6f52ca21a604bd03b7" prot="public" static="no" mutable="no">
+        <type>SYCLTargetSharedPtr</type>
+        <definition>SYCLTargetSharedPtr NESO::Particles::BufferDeviceHost&lt; T &gt;::sycl_target</definition>
+        <argsstring></argsstring>
+        <name>sycl_target</name>
+        <briefdescription>
+<para>Compute device used by the instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="476" column="23" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a283a6ed6915381585ceacb1e6a0b76ba" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t NESO::Particles::BufferDeviceHost&lt; T &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of the allocation on device and host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="478" column="10" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a1ff186642e20b8eab83618f270d2399f" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>&lt; T &gt;</type>
+        <definition>BufferDevice&lt;T&gt; NESO::Particles::BufferDeviceHost&lt; T &gt;::d_buffer</definition>
+        <argsstring></argsstring>
+        <name>d_buffer</name>
+        <briefdescription>
+<para>Wrapped <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="481" column="16" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a83aa01895446461fd429ccbbb3284f04" prot="public" static="no" mutable="no">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>&lt; T &gt;</type>
+        <definition>BufferHost&lt;T&gt; NESO::Particles::BufferDeviceHost&lt; T &gt;::h_buffer</definition>
+        <argsstring></argsstring>
+        <name>h_buffer</name>
+        <briefdescription>
+<para>Wrapped <ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="483" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a6bea6e297d85770e66ec31a489b1124e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferDeviceHost&lt; T &gt;::BufferDeviceHost</definition>
+        <argsstring>(const BufferDeviceHost &amp;st)=delete</argsstring>
+        <name>BufferDeviceHost</name>
+        <param>
+          <type>const <ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="471" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a05e6aa0544dff428b733473ae224d373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref> &amp;</type>
+        <definition>BufferDeviceHost&amp; NESO::Particles::BufferDeviceHost&lt; T &gt;::operator=</definition>
+        <argsstring>(BufferDeviceHost const &amp;a)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Disable (implicit) copies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="473" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a421b0e3e919c6fcce8bbdb442ea8c716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferDeviceHost&lt; T &gt;::~BufferDeviceHost</definition>
+        <argsstring>()</argsstring>
+        <name>~BufferDeviceHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="485" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="485" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1acc9746bde169dcb477c0c2049e262e2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::BufferDeviceHost&lt; T &gt;::BufferDeviceHost</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, size_t size)</argsstring>
+        <name>BufferDeviceHost</name>
+        <param>
+          <type>SYCLTargetSharedPtr</type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new <ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref> of the request size on the requested compute target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SYCLTargetSharedPtr to use as compute device. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of elements to initially allocate on the device and host. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="495" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="495" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1aaed114b01a513e5f225cd1832ddb0248" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t NESO::Particles::BufferDeviceHost&lt; T &gt;::size_bytes</definition>
+        <argsstring>()</argsstring>
+        <name>size_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size in bytes of the allocation on the host and device.</para>
+<para><simplesect kind="return"><para>Number of bytes allocated on the host and device. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="504" column="17" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="504" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a0a22e4edb8bc351f1968eb04d821ad69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int NESO::Particles::BufferDeviceHost&lt; T &gt;::realloc_no_copy</definition>
+        <argsstring>(const size_t size)</argsstring>
+        <name>realloc_no_copy</name>
+        <param>
+          <type>const size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reallocate both the device and host buffers to hold at least the requested number of elements. May or may not reduce the buffer size if called with a size less than the current allocation. Current contents is not copied to the new buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum number of elements this buffer should be able to hold. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="514" column="14" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="514" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a05a8c58f476616576a3eb15d4f8a185e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferDeviceHost&lt; T &gt;::host_to_device</definition>
+        <argsstring>()</argsstring>
+        <name>host_to_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy the contents of the host buffer to the device buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="524" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="524" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a83c4d8b9ad98ba60aaab700a40750653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NESO::Particles::BufferDeviceHost&lt; T &gt;::device_to_host</definition>
+        <argsstring>()</argsstring>
+        <name>device_to_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy the contents of the device buffer to the host buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="534" column="15" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="534" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a0e104498ab81355a75220e43830776d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::BufferDeviceHost&lt; T &gt;::async_host_to_device</definition>
+        <argsstring>()</argsstring>
+        <name>async_host_to_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start an asynchronous copy of the host data to the device buffer.</para>
+<para><simplesect kind="return"><para>sycl::event to wait on for completion of data movement. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="546" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="546" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1BufferDeviceHost_1a226b5f71b3afe4cb3506114142014e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sycl::event</type>
+        <definition>sycl::event NESO::Particles::BufferDeviceHost&lt; T &gt;::async_device_to_host</definition>
+        <argsstring>()</argsstring>
+        <name>async_device_to_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start an asynchronous copy of the device data to the host buffer.</para>
+<para><simplesect kind="return"><para>sycl::event to wait on for completion of data movement. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="556" column="22" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="556" bodyend="560"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wrapper around a <ref refid="classNESO_1_1Particles_1_1BufferDevice" kindref="compound">BufferDevice</ref> and a <ref refid="classNESO_1_1Particles_1_1BufferHost" kindref="compound">BufferHost</ref> to store data on the device and the host. To be used as an alternative to <ref refid="classNESO_1_1Particles_1_1BufferShared" kindref="compound">BufferShared</ref> where the programmer wants to explicitly handle when data is copied between the device and the host. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" line="467" column="12" bodyfile="/tmp/repo-checkout/NESO-Particles/include/compute_target.hpp" bodystart="467" bodyend="561"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a226b5f71b3afe4cb3506114142014e0c" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>async_device_to_host</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a0e104498ab81355a75220e43830776d7" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>async_host_to_device</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a6bea6e297d85770e66ec31a489b1124e" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>BufferDeviceHost</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1acc9746bde169dcb477c0c2049e262e2f" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>BufferDeviceHost</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a1ff186642e20b8eab83618f270d2399f" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>d_buffer</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a83c4d8b9ad98ba60aaab700a40750653" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>device_to_host</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a83aa01895446461fd429ccbbb3284f04" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>h_buffer</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a05a8c58f476616576a3eb15d4f8a185e" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>host_to_device</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a05e6aa0544dff428b733473ae224d373" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>operator=</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a0a22e4edb8bc351f1968eb04d821ad69" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>realloc_no_copy</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a283a6ed6915381585ceacb1e6a0b76ba" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>size</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1aaed114b01a513e5f225cd1832ddb0248" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>size_bytes</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a602e35154b4a6e6f52ca21a604bd03b7" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>sycl_target</name></member>
+      <member refid="classNESO_1_1Particles_1_1BufferDeviceHost_1a421b0e3e919c6fcce8bbdb442ea8c716" prot="public" virt="non-virtual"><scope>NESO::Particles::BufferDeviceHost</scope><name>~BufferDeviceHost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

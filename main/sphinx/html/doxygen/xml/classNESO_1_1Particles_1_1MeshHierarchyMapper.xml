@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNESO_1_1Particles_1_1MeshHierarchyMapper" kind="class" language="C++" prot="public">
+    <compoundname>NESO::Particles::MeshHierarchyMapper</compoundname>
+    <includes refid="mesh__hierarchy_8hpp" local="no">mesh_hierarchy.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a1a2c4cc3a91811b462087a86dc1c399d" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a15dc55e8042484773cf877b8058eb67b" kindref="member">REAL</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDeviceHost&lt;REAL&gt; &gt; NESO::Particles::MeshHierarchyMapper::dh_origin</definition>
+        <argsstring></argsstring>
+        <name>dh_origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="608" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1ac7d7b4f8b16cbebc0835fc08ec8d1fbd" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1BufferDeviceHost" kindref="compound">BufferDeviceHost</ref>&lt; <ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;BufferDeviceHost&lt;INT&gt; &gt; NESO::Particles::MeshHierarchyMapper::dh_dims</definition>
+        <argsstring></argsstring>
+        <name>dh_dims</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="609" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a6354a056cc32b0c699a4eae35e923b0e" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MeshHierarchy&gt; NESO::Particles::MeshHierarchyMapper::mesh_hierarchy</definition>
+        <argsstring></argsstring>
+        <name>mesh_hierarchy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="610" column="19" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1af2eeabf05872e0f0f40cb40c392e171c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper" kindref="compound">MeshHierarchyDeviceMapper</ref></type>
+        <definition>MeshHierarchyDeviceMapper NESO::Particles::MeshHierarchyMapper::get_generic_mapper</definition>
+        <argsstring>()</argsstring>
+        <name>get_generic_mapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="612" column="36" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="612" bodyend="625"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a4412ce283cfc2ad114657573b4314559" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NESO::Particles::MeshHierarchyMapper::MeshHierarchyMapper</definition>
+        <argsstring>(SYCLTargetSharedPtr sycl_target, std::shared_ptr&lt; MeshHierarchy &gt; mesh_hierarchy)</argsstring>
+        <name>MeshHierarchyMapper</name>
+        <param>
+          <type><ref refid="namespaceNESO_1_1Particles_1a897f23893a83614b3f78e2f08d7aad71" kindref="member">SYCLTargetSharedPtr</ref></type>
+          <declname>sycl_target</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> &gt;</type>
+          <declname>mesh_hierarchy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create new instance of helper mapper class.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sycl_target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The compute device to provide device copyable mapper structs for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mesh_hierarchy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> for which to create a mapper class for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="636" column="3" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="636" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1ac5946052cdfb1541da66f5c5300017f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper" kindref="compound">MeshHierarchyDeviceMapper</ref></type>
+        <definition>MeshHierarchyDeviceMapper NESO::Particles::MeshHierarchyMapper::get_device_mapper</definition>
+        <argsstring>()</argsstring>
+        <name>get_device_mapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a device copyable struct with device callable methods for interfacing with a <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref>.</para>
+<para><simplesect kind="return"><para>New mapper struct. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="663" column="36" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="663" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a5b1877b0149eba73eaec55eab923ba4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structNESO_1_1Particles_1_1MeshHierarchyDeviceMapper" kindref="compound">MeshHierarchyDeviceMapper</ref></type>
+        <definition>MeshHierarchyDeviceMapper NESO::Particles::MeshHierarchyMapper::get_host_mapper</definition>
+        <argsstring>()</argsstring>
+        <name>get_host_mapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a host struct with methods to interface with a <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> instance.</para>
+<para><simplesect kind="return"><para>New mapper struct. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="675" column="36" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="675" bodyend="680"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A class to provide methods to bin points into <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> cells and transform between representations of <ref refid="classNESO_1_1Particles_1_1MeshHierarchy" kindref="compound">MeshHierarchy</ref> indexing. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" line="606" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/mesh_hierarchy.hpp" bodystart="606" bodyend="681"/>
+    <listofallmembers>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1ac7d7b4f8b16cbebc0835fc08ec8d1fbd" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>dh_dims</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a1a2c4cc3a91811b462087a86dc1c399d" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>dh_origin</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1ac5946052cdfb1541da66f5c5300017f3" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>get_device_mapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1af2eeabf05872e0f0f40cb40c392e171c" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>get_generic_mapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a5b1877b0149eba73eaec55eab923ba4c" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>get_host_mapper</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a6354a056cc32b0c699a4eae35e923b0e" prot="private" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>mesh_hierarchy</name></member>
+      <member refid="classNESO_1_1Particles_1_1MeshHierarchyMapper_1a4412ce283cfc2ad114657573b4314559" prot="public" virt="non-virtual"><scope>NESO::Particles::MeshHierarchyMapper</scope><name>MeshHierarchyMapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

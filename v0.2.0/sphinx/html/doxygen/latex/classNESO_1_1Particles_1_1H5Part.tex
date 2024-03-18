@@ -1,0 +1,66 @@
+\hypertarget{classNESO_1_1Particles_1_1H5Part}{}\doxysection{NESO\+::Particles\+::H5\+Part Class Reference}
+\label{classNESO_1_1Particles_1_1H5Part}\index{NESO::Particles::H5Part@{NESO::Particles::H5Part}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1H5Part_a5815038ab22d1172ea7860c80df86610}\label{classNESO_1_1Particles_1_1H5Part_a5815038ab22d1172ea7860c80df86610}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part_a5815038ab22d1172ea7860c80df86610}{H5\+Part}} (const \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part}{H5\+Part}} \&st)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1H5Part_a59b79c0dd14dbad7f336f5b22ac8e79f}\label{classNESO_1_1Particles_1_1H5Part_a59b79c0dd14dbad7f336f5b22ac8e79f}} 
+\mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part}{H5\+Part}} \& \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part_a59b79c0dd14dbad7f336f5b22ac8e79f}{operator=}} (\mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part}{H5\+Part}} const \&a)=delete
+\begin{DoxyCompactList}\small\item\em Disable (implicit) copies. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... T$>$ }\\\mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part_aecb3acd38d3173615b34315434df42b2}{H5\+Part}} (std\+::string filename, Particle\+Group\+Shared\+Ptr particle\+\_\+group, T... args)
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part_ac0ff9711f45d81559da173b490971302}{close}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part_a6ad5f3bd125a6fbf3ac65733957b145d}{enable\+\_\+multi\+\_\+dim\+\_\+mode}} ()
+\item 
+void \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part_a1f7f049c1eec4a234152ab9e0b659616}{write}} (INT step\+\_\+in=-\/1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1H5Part_aecb3acd38d3173615b34315434df42b2}\label{classNESO_1_1Particles_1_1H5Part_aecb3acd38d3173615b34315434df42b2}} 
+\index{NESO::Particles::H5Part@{NESO::Particles::H5Part}!H5Part@{H5Part}}
+\index{H5Part@{H5Part}!NESO::Particles::H5Part@{NESO::Particles::H5Part}}
+\doxysubsubsection{\texorpdfstring{H5Part()}{H5Part()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+NESO\+::\+Particles\+::\+H5\+Part\+::\+H5\+Part (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{Particle\+Group\+Shared\+Ptr}]{particle\+\_\+group,  }\item[{T...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part}{H5\+Part}} writer for a given set of Particle\+Dats described by Sym$<$type$>$(name) instances. Must be called collectively on the communicator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Output filename, e.\+g. \char`\"{}foo.\+h5part\char`\"{}. \\
+\hline
+{\em particle\+\_\+group} & Particle\+Group\+Shared\+Ptr instance. \\
+\hline
+{\em args} & Remaining arguments (variable length) should be sym instances indicating which Particle\+Dats are to be written. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNESO_1_1Particles_1_1H5Part_ac0ff9711f45d81559da173b490971302}\label{classNESO_1_1Particles_1_1H5Part_ac0ff9711f45d81559da173b490971302}} 
+\index{NESO::Particles::H5Part@{NESO::Particles::H5Part}!close@{close}}
+\index{close@{close}!NESO::Particles::H5Part@{NESO::Particles::H5Part}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+H5\+Part\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Close the \mbox{\hyperlink{classNESO_1_1Particles_1_1H5Part}{H5\+Part}} writer. Must be called. Must be called collectively on the communicator. \mbox{\Hypertarget{classNESO_1_1Particles_1_1H5Part_a6ad5f3bd125a6fbf3ac65733957b145d}\label{classNESO_1_1Particles_1_1H5Part_a6ad5f3bd125a6fbf3ac65733957b145d}} 
+\index{NESO::Particles::H5Part@{NESO::Particles::H5Part}!enable\_multi\_dim\_mode@{enable\_multi\_dim\_mode}}
+\index{enable\_multi\_dim\_mode@{enable\_multi\_dim\_mode}!NESO::Particles::H5Part@{NESO::Particles::H5Part}}
+\doxysubsubsection{\texorpdfstring{enable\_multi\_dim\_mode()}{enable\_multi\_dim\_mode()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+H5\+Part\+::enable\+\_\+multi\+\_\+dim\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write Particle\+Dats as 2D arrays in the HDF5 file. \mbox{\Hypertarget{classNESO_1_1Particles_1_1H5Part_a1f7f049c1eec4a234152ab9e0b659616}\label{classNESO_1_1Particles_1_1H5Part_a1f7f049c1eec4a234152ab9e0b659616}} 
+\index{NESO::Particles::H5Part@{NESO::Particles::H5Part}!write@{write}}
+\index{write@{write}!NESO::Particles::H5Part@{NESO::Particles::H5Part}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void NESO\+::\+Particles\+::\+H5\+Part\+::write (\begin{DoxyParamCaption}\item[{INT}]{step\+\_\+in = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Write the current particle data to the HDF5 file as a new time step. Must be called collectively on the communicator. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/particle\+\_\+io.\+hpp\end{DoxyCompactItemize}

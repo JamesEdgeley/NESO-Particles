@@ -1,0 +1,125 @@
+\hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write}{}\doxysection{NESO\+::Particles\+::Access\+::Product\+Matrix\+::Write Struct Reference}
+\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write}\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+
+
+{\ttfamily \#include $<$product\+\_\+matrix.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_af23f6e0c2e44e5b874209cdbeb1d924f}{Write}} ()=default
+\begin{DoxyCompactList}\small\item\em Pointer to underlying data for the array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} \& \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a509e7d32ab1a794ac559676b22bad978}{at\+\_\+real}} (const int product, const int property, const int component)
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} \& \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a8be413685b28a0e67fbd287747b9292b}{at\+\_\+int}} (const int product, const int property, const int component)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}} $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a84911c8a18e14671a1bb5bab56f4483e}{ptr\+\_\+real}}
+\item 
+\mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}} $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a090627d1289b79d0b210a2cd801b4d17}{ptr\+\_\+int}}
+\item 
+int const  $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a99796ac07983f837061a0431ceba2a83}{offsets\+\_\+real}}
+\item 
+int const  $\ast$ \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_ae3b26a8cd3f6e7e6810f7389c6f1159a}{offsets\+\_\+int}}
+\item 
+int \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_abf7bbb38a2afed9d48b85cface0d92f6}{num\+\_\+products}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleLoop}{Particle\+Loop}} access type for \mbox{\hyperlink{namespaceNESO_1_1Particles_1_1Access_1_1ProductMatrix}{Product\+Matrix}} \mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write}{Write}} access. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_af23f6e0c2e44e5b874209cdbeb1d924f}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_af23f6e0c2e44e5b874209cdbeb1d924f}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!Write@{Write}}
+\index{Write@{Write}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Pointer to underlying data for the array. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a8be413685b28a0e67fbd287747b9292b}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a8be413685b28a0e67fbd287747b9292b}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!at\_int@{at\_int}}
+\index{at\_int@{at\_int}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{at\_int()}{at\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}\& NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::at\+\_\+int (\begin{DoxyParamCaption}\item[{const int}]{product,  }\item[{const int}]{property,  }\item[{const int}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write}{Write}} access to INT particle property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & The index of the product to access, i.\+e. the row in the product matrix. \\
+\hline
+{\em property} & The particle property to access using the ordering INT \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} instances were passed to the \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec}{Product\+Matrix\+Spec}} \\
+\hline
+{\em component} & The component of the property to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Modifiable reference to property value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a509e7d32ab1a794ac559676b22bad978}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a509e7d32ab1a794ac559676b22bad978}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!at\_real@{at\_real}}
+\index{at\_real@{at\_real}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{at\_real()}{at\_real()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}\& NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::at\+\_\+real (\begin{DoxyParamCaption}\item[{const int}]{product,  }\item[{const int}]{property,  }\item[{const int}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write}{Write}} access to REAL particle property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & The index of the product to access, i.\+e. the row in the product matrix. \\
+\hline
+{\em property} & The particle property to access using the ordering REAL \mbox{\hyperlink{classNESO_1_1Particles_1_1ParticleProp}{Particle\+Prop}} instances were passed to the \mbox{\hyperlink{structNESO_1_1Particles_1_1ProductMatrixSpec}{Product\+Matrix\+Spec}} \\
+\hline
+{\em component} & The component of the property to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Modifiable reference to property value. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_abf7bbb38a2afed9d48b85cface0d92f6}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_abf7bbb38a2afed9d48b85cface0d92f6}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!num\_products@{num\_products}}
+\index{num\_products@{num\_products}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{num\_products}{num\_products}}
+{\footnotesize\ttfamily int NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::num\+\_\+products}
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_ae3b26a8cd3f6e7e6810f7389c6f1159a}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_ae3b26a8cd3f6e7e6810f7389c6f1159a}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!offsets\_int@{offsets\_int}}
+\index{offsets\_int@{offsets\_int}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{offsets\_int}{offsets\_int}}
+{\footnotesize\ttfamily int const$\ast$ NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::offsets\+\_\+int}
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a99796ac07983f837061a0431ceba2a83}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a99796ac07983f837061a0431ceba2a83}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!offsets\_real@{offsets\_real}}
+\index{offsets\_real@{offsets\_real}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{offsets\_real}{offsets\_real}}
+{\footnotesize\ttfamily int const$\ast$ NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::offsets\+\_\+real}
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a090627d1289b79d0b210a2cd801b4d17}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a090627d1289b79d0b210a2cd801b4d17}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!ptr\_int@{ptr\_int}}
+\index{ptr\_int@{ptr\_int}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{ptr\_int}{ptr\_int}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a4eac77e3de191a85cc05f4b1700cd605}{INT}}$\ast$ NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::ptr\+\_\+int}
+
+\mbox{\Hypertarget{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a84911c8a18e14671a1bb5bab56f4483e}\label{structNESO_1_1Particles_1_1Access_1_1ProductMatrix_1_1Write_a84911c8a18e14671a1bb5bab56f4483e}} 
+\index{NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}!ptr\_real@{ptr\_real}}
+\index{ptr\_real@{ptr\_real}!NESO::Particles::Access::ProductMatrix::Write@{NESO::Particles::Access::ProductMatrix::Write}}
+\doxysubsubsection{\texorpdfstring{ptr\_real}{ptr\_real}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceNESO_1_1Particles_a15dc55e8042484773cf877b8058eb67b}{REAL}}$\ast$ NESO\+::\+Particles\+::\+Access\+::\+Product\+Matrix\+::\+Write\+::ptr\+\_\+real}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/tmp/repo-\/checkout/\+NESO-\/\+Particles/include/containers/\mbox{\hyperlink{product__matrix_8hpp}{product\+\_\+matrix.\+hpp}}\end{DoxyCompactItemize}

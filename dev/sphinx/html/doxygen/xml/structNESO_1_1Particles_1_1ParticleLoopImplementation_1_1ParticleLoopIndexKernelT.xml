@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT" kind="struct" language="C++" prot="public">
+    <compoundname>NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT</compoundname>
+    <includes refid="particle__loop__index_8hpp" local="no">particle_loop_index.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1a9040a318cb60c5f8210452e521e3d402" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT::starting_cell</definition>
+        <argsstring></argsstring>
+        <name>starting_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="84" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1a149ef29f1d774ddfc0025182870c988f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT::loop_type_int</definition>
+        <argsstring></argsstring>
+        <name>loop_type_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="85" column="7" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1ad93d22df38ad4c4a01ade95f3a1d99c4" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> const  *</type>
+        <definition>INT const* NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT::npart_cell_es</definition>
+        <argsstring></argsstring>
+        <name>npart_cell_es</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="86" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1a2769e9dca7a42a11d4f27bc5a2e7cf4e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceNESO_1_1Particles_1a4eac77e3de191a85cc05f4b1700cd605" kindref="member">INT</ref> const  *</type>
+        <definition>INT const* NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT::npart_cell_es_lb</definition>
+        <argsstring></argsstring>
+        <name>npart_cell_es_lb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="87" column="13" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Host to loop type for index. </para>
+    </detaileddescription>
+    <location file="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" line="83" column="1" bodyfile="/tmp/repo-checkout/NESO-Particles/include/loop/particle_loop_index.hpp" bodystart="83" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1a149ef29f1d774ddfc0025182870c988f" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT</scope><name>loop_type_int</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1ad93d22df38ad4c4a01ade95f3a1d99c4" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT</scope><name>npart_cell_es</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1a2769e9dca7a42a11d4f27bc5a2e7cf4e" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT</scope><name>npart_cell_es_lb</name></member>
+      <member refid="structNESO_1_1Particles_1_1ParticleLoopImplementation_1_1ParticleLoopIndexKernelT_1a9040a318cb60c5f8210452e521e3d402" prot="public" virt="non-virtual"><scope>NESO::Particles::ParticleLoopImplementation::ParticleLoopIndexKernelT</scope><name>starting_cell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
