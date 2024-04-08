@@ -8,6 +8,11 @@ project(
 set(CMAKE_CXX_STANDARD 17)
 option(ENABLE_NESO_PARTICLES_TESTS "Build unit tests for this project." ON)
 
+find_package(Nektar++ REQUIRED)
+include_directories(SYSTEM ${NEKTAR++_INCLUDE_DIRS} ${NEKTAR++_TP_INCLUDE_DIRS})
+link_directories(${NEKTAR++_LIBRARY_DIRS} ${NEKTAR++_TP_LIBRARY_DIRS})
+message(STATUS "Found Nektar++: version ${NEKTAR++_VERSION}")
+
 if(ENABLE_NESO_PARTICLES_TESTS)
   # set build type
   if(NOT CMAKE_BUILD_TYPE)
