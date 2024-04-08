@@ -15,6 +15,8 @@
 #include "profiling.hpp"
 #include "typedefs.hpp"
 
+#include <Execution/Execution.hpp>
+
 using namespace cl;
 
 namespace NESO::Particles {

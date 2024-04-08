@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.14)
 project(NESO-Particles VERSION 0.0.1)
 
 # GoogleTest requires at least C++11 DataParallel C++ requires at least C++17
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 add_definitions(-DGPU_SELECTOR=0)
 
