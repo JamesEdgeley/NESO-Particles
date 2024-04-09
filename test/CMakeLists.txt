@@ -32,7 +32,7 @@ file(GLOB TEST_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/test_*.cpp
 # options common to both fftw/mkl
 set(LINK_LIBRARIES_COMMON
     ${MPI_CXX_LINK_FLAGS} ${MPI_CXX_LIBRARIES} ${NESO_PARTICLES_LIBRARIES}
-    ${NESO_PARTICLES_LINK_FLAGS} GTest::gtest)
+    ${NESO_PARTICLES_LINK_FLAGS} ${NEKTAR++_LIBRARIES} ${NEKTAR++_TP_LIBRARIES} GTest::gtest)
 
 set(INCLUDE_DIRECTORIES_COMMON
     ${CMAKE_SOURCE_DIR}/include ${MPI_CXX_INCLUDE_PATH}
@@ -50,6 +50,7 @@ foreach(TEST ${TEST_SRCS})
 
   target_link_libraries(${TEST_NAME} PRIVATE ${LINK_LIBRARIES_COMMON})
   target_include_directories(${TEST_NAME} PRIVATE ${INCLUDE_DIRECTORIES_COMMON})
+  target_compile_definitions(${TEST_NAME} PRIVATE ${NEKTAR++_DEFINITIONS})
 
   add_sycl_to_target(TARGET ${TEST_NAME} SOURCES ${TEST_SOURCES})
   gtest_add_tests(TARGET ${TEST_NAME})

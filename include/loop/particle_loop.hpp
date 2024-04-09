@@ -22,6 +22,8 @@
 #include <typeinfo>
 #include <vector>
 
+#include <Operators/Operator.hpp>
+
 namespace NESO::Particles::ParticleLoopImplementation {
 
 /**
